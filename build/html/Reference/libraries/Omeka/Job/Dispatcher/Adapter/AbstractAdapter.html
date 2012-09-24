@@ -1,0 +1,212 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_Job_Dispatcher_Adapter_AbstractAdapter &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../../_static/doctools.js"></script>
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../../../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-job-dispatcher-adapter-abstractadapter">
+<h1>Omeka_Job_Dispatcher_Adapter_AbstractAdapter<a class="headerlink" href="#omeka-job-dispatcher-adapter-abstractadapter" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_Job_Dispatcher_Adapter_AbstractAdapter">
+<em class="property">class </em><tt class="descname">Omeka_Job_Dispatcher_Adapter_AbstractAdapter</tt><a class="headerlink" href="#Omeka_Job_Dispatcher_Adapter_AbstractAdapter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Abstract class for job dispatcher adapters.</p>
+<dl class="attr">
+<dt id="Omeka_Job_Dispatcher_Adapter_AbstractAdapter::$_options">
+<em class="property">property </em><tt class="descname">_options</tt><a class="headerlink" href="#Omeka_Job_Dispatcher_Adapter_AbstractAdapter::$_options" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Job_Dispatcher_Adapter_AbstractAdapter::__construct">
+<tt class="descname">__construct</tt><big>(</big><em>array|null $options</em><big>)</big><a class="headerlink" href="#Omeka_Job_Dispatcher_Adapter_AbstractAdapter::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$options</strong> (<em>array|null</em>) &#8211; Optional Options to instantiate in the adapter.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Job_Dispatcher_Adapter_AbstractAdapter::_setOptions">
+<tt class="descname">_setOptions</tt><big>(</big><em>$options</em><big>)</big><a class="headerlink" href="#Omeka_Job_Dispatcher_Adapter_AbstractAdapter::_setOptions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$options</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Job_Dispatcher_Adapter_AbstractAdapter::getOption">
+<tt class="descname">getOption</tt><big>(</big><em>string $name</em><big>)</big><a class="headerlink" href="#Omeka_Job_Dispatcher_Adapter_AbstractAdapter::getOption" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve an option by name as it was passed to the constructor of the
+adapter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Job_Dispatcher_Adapter_AbstractAdapter::hasOption">
+<tt class="descname">hasOption</tt><big>(</big><em>string $name</em><big>)</big><a class="headerlink" href="#Omeka_Job_Dispatcher_Adapter_AbstractAdapter::hasOption" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether or not the given option has been set.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Job_Dispatcher_Adapter_AbstractAdapter::setQueueName">
+<tt class="descname">setQueueName</tt><big>(</big><em>$name</em><big>)</big><a class="headerlink" href="#Omeka_Job_Dispatcher_Adapter_AbstractAdapter::setQueueName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adapter implementations do not understand named queues by default, so
+this default implementation returns false.  Override this in subclasses
+to specify the correct behavior.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$name</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Job_Dispatcher_Adapter_AbstractAdapter::send">
+<tt class="descname">send</tt><big>(</big><em>string $encodedJob</em>, <em>array $metadata</em><big>)</big><a class="headerlink" href="#Omeka_Job_Dispatcher_Adapter_AbstractAdapter::send" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send the job to whatever underlying system is used by the adapter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$encodedJob</strong> (<em>string</em>) &#8211; The job encoded as a string.  In most cases, this will be passed directly into whatever client or queue the adapter uses.</li>
+<li><strong>$metadata</strong> (<em>array</em>) &#8211; An array containing all the metadata for the job. This is the unencoded version of the first argument and exists as a convenience so that adapter writers do not have to attempt to decode the first argument manually. This array contains the following keys: &lt;ul&gt; &lt;li&gt;className - Corresponds to the class name of the job.&lt;/li&gt; &lt;li&gt;options - Options that are passed to the job when it is instantiated.&lt;/li&gt; &lt;li&gt;createdBy - User object (or null) corresponding to the user who created this job.&lt;/li&gt; &lt;li&gt;createdAt - Zend_Date corresponding to the date/time at which this job was created.&lt;/li&gt; &lt;/ul&gt;</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../../../../index.html">
+              <img class="logo" src="../../../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/libraries/Omeka/Job/Dispatcher/Adapter/AbstractAdapter.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

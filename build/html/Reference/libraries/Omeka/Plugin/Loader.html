@@ -1,0 +1,410 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_Plugin_Loader &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-plugin-loader">
+<h1>Omeka_Plugin_Loader<a class="headerlink" href="#omeka-plugin-loader" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_Plugin_Loader">
+<em class="property">class </em><tt class="descname">Omeka_Plugin_Loader</tt><a class="headerlink" href="#Omeka_Plugin_Loader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads plugins for any given request.</p>
+<p>This will iterate through the plugins root directory and load all plugin.php files by require()&#8217;ing them.</p>
+<dl class="attr">
+<dt id="Omeka_Plugin_Loader::$_broker">
+<em class="property">property </em><tt class="descname">_broker</tt><a class="headerlink" href="#Omeka_Plugin_Loader::$_broker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plugin broker object.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Plugin_Loader::$_iniReader">
+<em class="property">property </em><tt class="descname">_iniReader</tt><a class="headerlink" href="#Omeka_Plugin_Loader::$_iniReader" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plugin INI reader object.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Plugin_Loader::$_mvc">
+<em class="property">property </em><tt class="descname">_mvc</tt><a class="headerlink" href="#Omeka_Plugin_Loader::$_mvc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plugin MVC object.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Plugin_Loader::$_basePath">
+<em class="property">property </em><tt class="descname">_basePath</tt><a class="headerlink" href="#Omeka_Plugin_Loader::$_basePath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plugins directory.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Plugin_Loader::$_plugins">
+<em class="property">property </em><tt class="descname">_plugins</tt><a class="headerlink" href="#Omeka_Plugin_Loader::$_plugins" title="Permalink to this definition">¶</a></dt>
+<dd><p>An array of all plugins (installed or not) that are currently located
+in the plugins/ directory.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Loader::__construct">
+<tt class="descname">__construct</tt><big>(</big><em>Omeka_Plugin_Broker $broker</em>, <em>Omeka_Plugin_Ini $iniReader</em>, <em>Omeka_Plugin_Mvc $mvc</em>, <em>string $pluginsBaseDir</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Loader::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$broker</strong> (<a class="reference internal" href="Broker.html#Omeka_Plugin_Broker" title="Omeka_Plugin_Broker"><em>Omeka_Plugin_Broker</em></a>) &#8211; Plugin broker.</li>
+<li><strong>$iniReader</strong> (<a class="reference internal" href="Ini.html#Omeka_Plugin_Ini" title="Omeka_Plugin_Ini"><em>Omeka_Plugin_Ini</em></a>) &#8211; plugin.ini reader.</li>
+<li><strong>$mvc</strong> (<a class="reference internal" href="Mvc.html#Omeka_Plugin_Mvc" title="Omeka_Plugin_Mvc"><em>Omeka_Plugin_Mvc</em></a>) &#8211; Plugin MVC object.</li>
+<li><strong>$pluginsBaseDir</strong> (<em>string</em>) &#8211; Plugins directory.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Loader::loadPlugins">
+<tt class="descname">loadPlugins</tt><big>(</big><em>array $plugins</em>, <em>boolean $force =</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Loader::loadPlugins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load a list of plugins.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$plugins</strong> (<em>array</em>) &#8211; List of Plugin records to load.</li>
+<li><strong>$force</strong> (<em>boolean</em>) &#8211; If true, throws exceptions for plugins that cannot be loaded for some reason.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Loader::registerPlugin">
+<tt class="descname">registerPlugin</tt><big>(</big><em>Plugin $plugin</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Loader::registerPlugin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Register a plugin so that it can be accessed by other plugins (if
+necessary)
+during the load process.</p>
+<p>There should only be a single instance of a plugin per directory name.
+Registering a plugin more than once, i.e. loading a plugin again after the
+first time failed, will not cause a problem as long as the same instance
+was registered.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$plugin</strong> (<a class="reference internal" href="../../../models/Plugin.html#Plugin" title="Plugin"><em>Plugin</em></a>) &#8211; Record of plugin to register.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Loader::isRegistered">
+<tt class="descname">isRegistered</tt><big>(</big><em>Plugin $plugin</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Loader::isRegistered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether a plugin is registered or not.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$plugin</strong> (<a class="reference internal" href="../../../models/Plugin.html#Plugin" title="Plugin"><em>Plugin</em></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean Whether the plugin is registered or not.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Loader::load">
+<tt class="descname">load</tt><big>(</big><em>Plugin $plugin</em>, <em>boolean $force =</em>, <em>array $pluginsWaitingToLoad = Array</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Loader::load" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load a plugin (and make sure the plugin API is available).</p>
+<p>To be loaded, the plugin must be installed, active, and not have a newer
+version. If loaded, the plugin will attempt to first load all plugins,
+both required and optional, that the plugin uses.  However, it will not
+load a plugin that it uses if that plugin is not installed and activated.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$plugin</strong> (<a class="reference internal" href="../../../models/Plugin.html#Plugin" title="Plugin"><em>Plugin</em></a>) &#8211; </li>
+<li><strong>$force</strong> (<em>boolean</em>) &#8211; If true, throws exceptions if a plugin can&#8217;t be loaded.</li>
+<li><strong>$pluginsWaitingToLoad</strong> (<em>array</em>) &#8211; Plugins waiting to be loaded</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Loader::_canLoad">
+<tt class="descname">_canLoad</tt><big>(</big><em>Plugin $plugin</em>, <em>boolean $force</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Loader::_canLoad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine whether or not a plugin can be loaded.  To be loaded, it must
+meet the following criteria:
+- Has a plugin.php file.
+- Is installed.
+- Is active.
+- Meets the minimum required version of Omeka (in plugin.ini).
+- Is not already loaded.
+- Does not have a new version available.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$plugin</strong> (<a class="reference internal" href="../../../models/Plugin.html#Plugin" title="Plugin"><em>Plugin</em></a>) &#8211; Plugin to test.</li>
+<li><strong>$force</strong> (<em>boolean</em>) &#8211; If true, throw an exception if the plugin can&#8217;t be loaded.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Loader::hasPluginBootstrap">
+<tt class="descname">hasPluginBootstrap</tt><big>(</big><em>string|Plugin $pluginDirName</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Loader::hasPluginBootstrap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check whether a plugin has a bootstrap file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$pluginDirName</strong> (<em>string|Plugin</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Loader::getPluginClassName">
+<tt class="descname">getPluginClassName</tt><big>(</big><em>string $pluginDirName</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Loader::getPluginClassName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the valid plugin class name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$pluginDirName</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Loader::getPluginFilePath">
+<tt class="descname">getPluginFilePath</tt><big>(</big><em>string $pluginDirName</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Loader::getPluginFilePath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the path to the plugin.php file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$pluginDirName</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Loader::getPluginClassFilePath">
+<tt class="descname">getPluginClassFilePath</tt><big>(</big><em>string $pluginDirName</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Loader::getPluginClassFilePath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the path to the plugin class file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$pluginDirName</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Loader::getPlugins">
+<tt class="descname">getPlugins</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Plugin_Loader::getPlugins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of all the plugins that have been loaded (or attempted to
+be loaded) thus far.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array List of Plugin objects.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Loader::getPlugin">
+<tt class="descname">getPlugin</tt><big>(</big><em>string $directoryName</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Loader::getPlugin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a plugin object by name (plugin subdirectory name).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$directoryName</strong> (<em>string</em>) &#8211; Plugin name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Plugin|null</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Loader::_loadPluginBootstrap">
+<tt class="descname">_loadPluginBootstrap</tt><big>(</big><em>Plugin $plugin</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Loader::_loadPluginBootstrap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the plugin bootstrap file for a plugin.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$plugin</strong> (<a class="reference internal" href="../../../models/Plugin.html#Plugin" title="Plugin"><em>Plugin</em></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../../index.html">
+              <img class="logo" src="../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/libraries/Omeka/Plugin/Loader.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

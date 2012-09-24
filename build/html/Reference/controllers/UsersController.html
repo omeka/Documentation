@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>UsersController &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
+    <link rel="up" title="Controllers" href="index.html" />
+    <link rel="next" title="Models" href="../models/index.html" />
+    <link rel="prev" title="UpgradeController" href="UpgradeController.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../models/index.html" title="Models"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="UpgradeController.html" title="UpgradeController"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Controllers</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="userscontroller">
+<h1>UsersController<a class="headerlink" href="#userscontroller" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="UsersController">
+<em class="property">class </em><tt class="descname">UsersController</tt><a class="headerlink" href="#UsersController" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="attr">
+<dt id="UsersController::$_publicActions">
+<em class="property">property </em><tt class="descname">_publicActions</tt><a class="headerlink" href="#UsersController::$_publicActions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Actions that are accessible by anonymous users.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="UsersController::$_browseRecordsPerPage">
+<em class="property">property </em><tt class="descname">_browseRecordsPerPage</tt><a class="headerlink" href="#UsersController::$_browseRecordsPerPage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="UsersController::init">
+<tt class="descname">init</tt><big>(</big><big>)</big><a class="headerlink" href="#UsersController::init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="UsersController::_handlePublicActions">
+<tt class="descname">_handlePublicActions</tt><big>(</big><big>)</big><a class="headerlink" href="#UsersController::_handlePublicActions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Peform common processing for the publicly accessible actions.</p>
+<p>Set a view script variable for header and footer view scripts and don&#8217;t
+allow logged-in users access.</p>
+<p>The script variables are set for actions in $_publicActions, so the
+scripts for those actions should use these variables.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="UsersController::forgotPasswordAction">
+<tt class="descname">forgotPasswordAction</tt><big>(</big><big>)</big><a class="headerlink" href="#UsersController::forgotPasswordAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send an email providing a link that allows the user to reset their
+password.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="UsersController::_sendResetPasswordEmail">
+<tt class="descname">_sendResetPasswordEmail</tt><big>(</big><em>$toEmail</em>, <em>$activationCode</em><big>)</big><a class="headerlink" href="#UsersController::_sendResetPasswordEmail" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$toEmail</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$activationCode</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="UsersController::activateAction">
+<tt class="descname">activateAction</tt><big>(</big><big>)</big><a class="headerlink" href="#UsersController::activateAction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="UsersController::addAction">
+<tt class="descname">addAction</tt><big>(</big><big>)</big><a class="headerlink" href="#UsersController::addAction" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="UsersController::editAction">
+<tt class="descname">editAction</tt><big>(</big><big>)</big><a class="headerlink" href="#UsersController::editAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Similar to &#8216;add&#8217; action, except this requires a pre-existing record.</p>
+<p>The ID For this record must be passed via the &#8216;id&#8217; parameter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="UsersController::_getDeleteSuccessMessage">
+<tt class="descname">_getDeleteSuccessMessage</tt><big>(</big><em>$record</em><big>)</big><a class="headerlink" href="#UsersController::_getDeleteSuccessMessage" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$record</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="UsersController::_getDeleteConfirmMessage">
+<tt class="descname">_getDeleteConfirmMessage</tt><big>(</big><em>$record</em><big>)</big><a class="headerlink" href="#UsersController::_getDeleteConfirmMessage" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$record</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="UsersController::sendActivationEmail">
+<tt class="descname">sendActivationEmail</tt><big>(</big><em>User $user</em><big>)</big><a class="headerlink" href="#UsersController::sendActivationEmail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send an activation email to a new user telling them how to activate
+their account.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$user</strong> (<a class="reference internal" href="../models/User.html#User" title="User"><em>User</em></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean True if the email was successfully sent, false otherwise.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="UsersController::loginAction">
+<tt class="descname">loginAction</tt><big>(</big><big>)</big><a class="headerlink" href="#UsersController::loginAction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="UsersController::getLoginErrorMessages">
+<tt class="descname">getLoginErrorMessages</tt><big>(</big><em>Zend_Auth_Result $result</em><big>)</big><a class="headerlink" href="#UsersController::getLoginErrorMessages" title="Permalink to this definition">¶</a></dt>
+<dd><p>This exists to customize the messages that people see when their attempt
+to login fails. ZF has some built-in default messages, but it seems like
+those messages may not make sense to a majority of people using the
+software.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$result</strong> (<em>Zend_Auth_Result</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="UsersController::logoutAction">
+<tt class="descname">logoutAction</tt><big>(</big><big>)</big><a class="headerlink" href="#UsersController::logoutAction" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="UsersController::_getUserForm">
+<tt class="descname">_getUserForm</tt><big>(</big><em>User $user</em><big>)</big><a class="headerlink" href="#UsersController::_getUserForm" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$user</strong> (<a class="reference internal" href="../models/User.html#User" title="User"><em>User</em></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="UsersController::_getLog">
+<tt class="descname">_getLog</tt><big>(</big><big>)</big><a class="headerlink" href="#UsersController::_getLog" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="UpgradeController.html"
+                        title="previous chapter">UpgradeController</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../models/index.html"
+                        title="next chapter">Models</a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/controllers/UsersController.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../models/index.html" title="Models"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="UpgradeController.html" title="UpgradeController"
+             >previous</a> |</li>
+        <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="index.html" >Controllers</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

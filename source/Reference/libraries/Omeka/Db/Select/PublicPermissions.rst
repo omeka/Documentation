@@ -1,0 +1,33 @@
+---------------------------------
+Omeka_Db_Select_PublicPermissions
+---------------------------------
+
+.. php:class:: Omeka_Db_Select_PublicPermissions
+
+    Encapsulates the permissions check for a record that can be public or private.
+
+    .. php:attr:: _allPermission
+    
+
+
+    .. php:attr:: _selfPermission
+    
+
+
+    .. php:method:: __construct(string $resource)
+    
+        Create the permissions object and perform the ACL checks.
+        
+        The permissions check relies on 'showNotPublic' and (optionally)
+        'showSelfNotPublic' privileges on the give resource.
+        
+        :param string $resource: ACL resource name to check.
+
+    .. php:method:: apply(Omeka_Db_Select $select, string $alias, string $ownerColumn = owner_id)
+    
+        Apply the permissions to an SQL select object.
+        
+        :param Omeka_Db_Select $select: 
+        :param string $alias: Table alias to query against
+        :param string $ownerColumn: Optional column for checking for ownership. If falsy, the ownership check is skipped.
+

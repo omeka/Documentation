@@ -1,0 +1,270 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_Plugin_Mvc &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-plugin-mvc">
+<h1>Omeka_Plugin_Mvc<a class="headerlink" href="#omeka-plugin-mvc" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_Plugin_Mvc">
+<em class="property">class </em><tt class="descname">Omeka_Plugin_Mvc</tt><a class="headerlink" href="#Omeka_Plugin_Mvc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connects plugins with Omeka&#8217;s model-view-controller system.</p>
+<dl class="attr">
+<dt id="Omeka_Plugin_Mvc::$_basePath">
+<em class="property">property </em><tt class="descname">_basePath</tt><a class="headerlink" href="#Omeka_Plugin_Mvc::$_basePath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path to the root plugins directory.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Plugin_Mvc::$_pluginViewDirs">
+<em class="property">property </em><tt class="descname">_pluginViewDirs</tt><a class="headerlink" href="#Omeka_Plugin_Mvc::$_pluginViewDirs" title="Permalink to this definition">¶</a></dt>
+<dd><p>View script directories that have been added by plugins.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Mvc::__construct">
+<tt class="descname">__construct</tt><big>(</big><em>string $basePath</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Mvc::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$basePath</strong> (<em>string</em>) &#8211; Plugins directory path.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Mvc::addThemeDir">
+<tt class="descname">addThemeDir</tt><big>(</big><em>string $pluginDirName</em>, <em>string $path</em>, <em>string $themeType</em>, <em>string $moduleName</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Mvc::addThemeDir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a theme directory to the list of plugin-added view directories.</p>
+<p>Used by the add_theme_pages() helper to create a list of directories that
+can store static pages that integrate into the themes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$pluginDirName</strong> (<em>string</em>) &#8211; Plugin name.</li>
+<li><strong>$path</strong> (<em>string</em>) &#8211; Path to directory to add.</li>
+<li><strong>$themeType</strong> (<em>string</em>) &#8211; Type of theme (&#8216;public&#8217;, &#8216;admin&#8217;, or &#8216;shared&#8217;).</li>
+<li><strong>$moduleName</strong> (<em>string</em>) &#8211; MVC module name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Mvc::getModuleViewScriptDirs">
+<tt class="descname">getModuleViewScriptDirs</tt><big>(</big><em>string $moduleName</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Mvc::getModuleViewScriptDirs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the list of plugin-added view script directories.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$moduleName</strong> (<em>string</em>) &#8211; (optional) MVC module name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array List of indexed directory names.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Mvc::addControllerDir">
+<tt class="descname">addControllerDir</tt><big>(</big><em>string $pluginDirName</em>, <em>string $moduleName</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Mvc::addControllerDir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make an entire directory of controllers available to the front
+controller.</p>
+<p>This has to use addControllerDirectory() instead of addModuleDirectory()
+because module names are case-sensitive and module directories need to be
+lowercased to conform to Zend&#8217;s weird naming conventions.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$pluginDirName</strong> (<em>string</em>) &#8211; Plugin name.</li>
+<li><strong>$moduleName</strong> (<em>string</em>) &#8211; MVC module name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Mvc::addApplicationDirs">
+<tt class="descname">addApplicationDirs</tt><big>(</big><em>string $pluginDirName</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Mvc::addApplicationDirs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set up the following directory structure for plugins:</p>
+<p>controllers/
+models/
+libraries/
+views/
+admin/
+public/
+shared/</p>
+<p>This also adds these folders to the correct include paths.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$pluginDirName</strong> (<em>string</em>) &#8211; Plugin name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Mvc::_getModuleName">
+<tt class="descname">_getModuleName</tt><big>(</big><em>string $pluginDirName</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Mvc::_getModuleName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the module name for the plugin (based on the directory name
+of the plugin).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$pluginDirName</strong> (<em>string</em>) &#8211; Plugin name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string Plugin MVC module name.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Plugin_Mvc::_hasIncludePath">
+<tt class="descname">_hasIncludePath</tt><big>(</big><em>string $path</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Mvc::_hasIncludePath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check include path to see if it already contains a specific path.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$path</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../../index.html">
+              <img class="logo" src="../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/libraries/Omeka/Plugin/Mvc.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

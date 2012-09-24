@@ -1,0 +1,258 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_Controller_Plugin_HtmlPurifier &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-controller-plugin-htmlpurifier">
+<h1>Omeka_Controller_Plugin_HtmlPurifier<a class="headerlink" href="#omeka-controller-plugin-htmlpurifier" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_Controller_Plugin_HtmlPurifier">
+<em class="property">class </em><tt class="descname">Omeka_Controller_Plugin_HtmlPurifier</tt><a class="headerlink" href="#Omeka_Controller_Plugin_HtmlPurifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>This ZF controller plugin allows the HtmlPurifier to filter the existing
+forms (items, collections, users, etc.) so that fields that are allowed to
+contain HTML are properly filtered.</p>
+<p>Note that this will not operate on any of the plugins.</p>
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_HtmlPurifier::routeStartup">
+<tt class="descname">routeStartup</tt><big>(</big><em>Zend_Controller_Request_Abstract $request</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_HtmlPurifier::routeStartup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add the HtmlPurifier options if needed.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$request</strong> (<em>Zend_Controller_Request_Abstract</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_HtmlPurifier::preDispatch">
+<tt class="descname">preDispatch</tt><big>(</big><em>Zend_Controller_Request_Abstract $request</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_HtmlPurifier::preDispatch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine whether or not to filter form submissions for various
+controllers.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$request</strong> (<em>Zend_Controller_Request_Abstract</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_HtmlPurifier::isFormSubmission">
+<tt class="descname">isFormSubmission</tt><big>(</big><em>Zend_Controller_Request_Abstract $request</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_HtmlPurifier::isFormSubmission" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine whether or not the request contains a form submission to either
+the &#8216;add&#8217;, &#8216;edit&#8217;, or &#8216;config&#8217; actions.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$request</strong> (<em>Zend_Controller_Request_Abstract</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_HtmlPurifier::filterCollectionsForm">
+<tt class="descname">filterCollectionsForm</tt><big>(</big><em>Zend_Controller_Request_Abstract $request</em>, <em>Omeka_Filter_HtmlPurifier $htmlPurifierFilter</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_HtmlPurifier::filterCollectionsForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Title = Plain text.
+Description = HTML.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$request</strong> (<em>Zend_Controller_Request_Abstract</em>) &#8211; </li>
+<li><strong>$htmlPurifierFilter</strong> (<a class="reference internal" href="../../Filter/HtmlPurifier.html#Omeka_Filter_HtmlPurifier" title="Omeka_Filter_HtmlPurifier"><em>Omeka_Filter_HtmlPurifier</em></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_HtmlPurifier::filterThemesForm">
+<tt class="descname">filterThemesForm</tt><big>(</big><em>Zend_Controller_Request_Abstract $request</em>, <em>Omeka_Filter_HtmlPurifier $htmlPurifierFilter</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_HtmlPurifier::filterThemesForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Purify all of the data in the theme settings</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$request</strong> (<em>Zend_Controller_Request_Abstract</em>) &#8211; </li>
+<li><strong>$htmlPurifierFilter</strong> (<a class="reference internal" href="../../Filter/HtmlPurifier.html#Omeka_Filter_HtmlPurifier" title="Omeka_Filter_HtmlPurifier"><em>Omeka_Filter_HtmlPurifier</em></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_HtmlPurifier::_purifyArray">
+<tt class="descname">_purifyArray</tt><big>(</big><em>$dataArray = Array</em>, <em>Omeka_Filter_HtmlPurifier $htmlPurifierFilter</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_HtmlPurifier::_purifyArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recurisvely purify an array</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$dataArray</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$htmlPurifierFilter</strong> (<a class="reference internal" href="../../Filter/HtmlPurifier.html#Omeka_Filter_HtmlPurifier" title="Omeka_Filter_HtmlPurifier"><em>Omeka_Filter_HtmlPurifier</em></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array A purified array of string or array values</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_HtmlPurifier::filterItemsForm">
+<tt class="descname">filterItemsForm</tt><big>(</big><em>Zend_Controller_Request_Abstract $request</em>, <em>Omeka_Filter_HtmlPurifier $htmlPurifierFilter</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_HtmlPurifier::filterItemsForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter the &#8216;Elements&#8217; array of the POST.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$request</strong> (<em>Zend_Controller_Request_Abstract</em>) &#8211; </li>
+<li><strong>$htmlPurifierFilter</strong> (<a class="reference internal" href="../../Filter/HtmlPurifier.html#Omeka_Filter_HtmlPurifier" title="Omeka_Filter_HtmlPurifier"><em>Omeka_Filter_HtmlPurifier</em></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_HtmlPurifier::_setupHtmlPurifierOptions">
+<tt class="descname">_setupHtmlPurifierOptions</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_HtmlPurifier::_setupHtmlPurifierOptions" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../../../index.html">
+              <img class="logo" src="../../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/libraries/Omeka/Controller/Plugin/HtmlPurifier.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>
