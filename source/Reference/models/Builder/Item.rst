@@ -60,24 +60,19 @@ Builder_Item
     
         Add files to an item.
         
-        <li>'Url|Filesystem' => string|array If a string is given, this represents
-        the source identifier of a single file (the URL representing the file, or
-        the absolute file path, respectively).  If an array is given, it assumes
-        that each entry in the array must be either an array or a string.  If it
-        an array, there are several default keys that may be present:
+        <li>'Url|Filesystem' => string|array If a string is given, this represents the source identifier of a single file
+        (the URL representing the file, or the absolute file path, respectively).  If an array is given, it assumes that
+        each entry in the array must be either an array or a string.  If it an array, there are several default keys that
+        may be present:
         <ul>
-        <li>'source' => Any identifier that is appropriate to the transfer
-        strategy in use.  For 'Url', this should be a valid URL.  For
-        'Filesystem',
+        <li>'source' => Any identifier that is appropriate to the transfer strategy in use.  For 'Url', this should be a
+        valid URL.  For 'Filesystem',
         it must be an absolute path to the source file to be transferred.</li>
-        <li>'name' => OPTIONAL The filename to give to the transferred file.  This
-        can be any arbitrary filename and will be listed as the original filename
-        of the file.  This will also be used to generate the archival filename for
-        the file.  If none is given, this defaults to using the
-        getOriginalFileName() method of the transfer adapter.</li>
-        <li>'metadata' => OPTIONAL This could contain any metadata that needs to
-        be associated with the file.  This should be indexed in the same fashion
-        as for items.  See ActsAsElementText::addTextsByArray()</li>
+        <li>'name' => OPTIONAL The filename to give to the transferred file.  This can be any arbitrary filename and will be
+        listed as the original filename of the file.  This will also be used to generate the archival filename for the file.
+         If none is given, this defaults to using the getOriginalFileName() method of the transfer adapter.</li>
+        <li>'metadata' => OPTIONAL This could contain any metadata that needs to be associated with the file.  This should
+        be indexed in the same fashion as for items.  See ActsAsElementText::addTextsByArray()</li>
         </ul></li>
         </ul>
         
@@ -93,8 +88,7 @@ Builder_Item
         The default validators are whitelists for file extensions and MIME types,
         and those lists can be configured via the admin settings form.
         
-        These default validators can be disabled by the
-        'disable_default_file_validation'
+        These default validators can be disabled by the 'disable_default_file_validation'
         flag in the settings panel.
         
         Plugins can add/remove/modify validators via the 'file_ingest_validators'

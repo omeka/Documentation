@@ -31,8 +31,7 @@ Mixin_PublicFeatured
 
     .. php:method:: getHookName($state, $flag)
     
-        Retrieve formatted hooks like 'make_item_public',
-        'make_collection_not_featured', etc.
+        Retrieve formatted hooks like 'make_item_public', 'make_collection_not_featured', etc.
         
         :param unknown $state: 
         :param unknown $flag: 

@@ -26,8 +26,7 @@ Mixin_Tag
     .. php:method:: beforeDelete()
     
         Fires whenever deleting a record that is taggable
-        This will actually delete all the references to a specific tag for a
-        specific record
+        This will actually delete all the references to a specific tag for a specific record
         
         :returns: void
 
@@ -41,8 +40,7 @@ Mixin_Tag
 
     .. php:method:: getTaggings()
     
-        Retrieve all the Taggings objects that represent between a specific tag
-        and the current record
+        Retrieve all the Taggings objects that represent between a specific tag and the current record
         Called by whatever record has enabled this module
         
         :returns: array of Taggings
@@ -64,8 +62,7 @@ Mixin_Tag
 
     .. php:method:: hasTag($tag)
     
-        If the $tag were a string and the keys of Tags were just the names of the
-        tags, this would be:
+        If the $tag were a string and the keys of Tags were just the names of the tags, this would be:
         in_array(array_keys($this->Tags))
         
         :param unknown $tag: 
@@ -98,8 +95,7 @@ Mixin_Tag
 
     .. php:method:: applyTagString(string $string, $delimiter)
     
-        This will add tags that are in the tag string and remove those that are no
-        longer in the tag string
+        This will add tags that are in the tag string and remove those that are no longer in the tag string
         
         :param string $string: A string of tags delimited by $delimiter
         :param unknown $delimiter: 

@@ -64,8 +64,7 @@ Item
     
         Retrieve a set of elements associated with the item type of the item.
         
-        Each one of the Element records that is retrieved should contain all the
-        element text values associated with it.
+        Each one of the Element records that is retrieved should contain all the element text values associated with it.
         
         :returns: array Element records that are associated with the item type of the item.  This array will be empty if the item does not have an associated type.
 
@@ -106,9 +105,8 @@ Item
     
         Delete files associated with the item.
         
-        If the IDs of specific files are passed in, this will delete only those
-        files (e.g. form submission).  Otherwise, it will delete all files
-        associated with the item.
+        If the IDs of specific files are passed in, this will delete only those files (e.g. form submission).  Otherwise, it
+        will delete all files associated with the item.
         
         :param array $fileIds: Optional
         :returns: void
@@ -162,8 +160,7 @@ Item
     
         Associate an unsaved (new) File record with this Item.
         
-        These File records will not be persisted in the database until the item is
-        saved or saveFiles() is invoked.
+        These File records will not be persisted in the database until the item is saved or saveFiles() is invoked.
         
         :param File $file: 
         :returns: void

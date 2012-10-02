@@ -28,8 +28,7 @@ Table_Tag
 
     .. php:method:: filterByTagType($select, $type)
     
-        Filter SELECT statement based on the type of tags to view (Item, Exhibit,
-        etc.)
+        Filter SELECT statement based on the type of tags to view (Item, Exhibit, etc.)
         
         :param unknown $select: 
         :param unknown $type: 
@@ -37,8 +36,7 @@ Table_Tag
 
     .. php:method:: filterByTagNameLike($select, $partialTagName)
     
-        Filter SELECT statement based on whether the tag contains the partial tag
-        name
+        Filter SELECT statement based on whether the tag contains the partial tag name
         
         :param unknown $select: 
         :param unknown $partialTagName: 

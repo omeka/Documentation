@@ -9,8 +9,7 @@ Table_ElementSet
     .. php:method:: findByRecordType($recordTypeName, $includeAll = 1)
     
         Find all the element sets that correspond to a particular record type.  
-        If the second param is set, this will include all element sets that belong
-        
+        If the second param is set, this will include all element sets that belong 
         to the 'All' record type.
         
         :param unknown $recordTypeName: 

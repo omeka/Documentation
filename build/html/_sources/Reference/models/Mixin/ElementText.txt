@@ -9,8 +9,7 @@ Mixin_ElementText
 
     .. php:attr:: _textsByNaturalOrder
     
-        ElementText records stored in the order they were retrieved from the
-        database.
+        ElementText records stored in the order they were retrieved from the database.
 
     .. php:attr:: _textsByElementId
     
@@ -29,8 +28,7 @@ Mixin_ElementText
     .. php:attr:: _elementsOnForm
     
         List of elements that were output on the form.  This can be used to 
-        determine the DELETE SQL to use to reset the elements when saving the
-        form.
+        determine the DELETE SQL to use to reset the elements when saving the form.
 
     .. php:attr:: _textsToSave
     
@@ -70,8 +68,7 @@ Mixin_ElementText
         Load all the ElementText records for the given record (Item, File, etc.).
         These will be indexed by [element_id].
         
-        Also load all the Element records and index those by their name and set
-        name.
+        Also load all the Element records and index those by their name and set name.
         
         :param boolean $reload: Whether or not reload all the data that was previously loaded.
         :returns: void
@@ -114,18 +111,17 @@ Mixin_ElementText
         
         :returns: array Set of ElementText records.
 
-    .. php:method:: getElementsBySetName($elementSetName)
+    .. php:method:: getElementsBySetName(string $elementSetName)
     
         Retrieve the Element records for the given ElementSet.
         
-        :param unknown $elementSetName: 
+        :param string $elementSetName: 
         :returns: array Set of Element records
 
     .. php:method:: getAllElements()
     
         Retrieve ALL the Element records for the object, organized by ElementSet.
-        For example, $elements['Dublin Core'] = array(Element instance, Element
-        instance, ...)
+        For example, $elements['Dublin Core'] = array(Element instance, Element instance, ...)
         
         :returns: array Set of Element records
 
@@ -155,8 +151,7 @@ Mixin_ElementText
     .. php:method:: _indexElementsBySet(array $elementRecords)
     
         Index a set of Elements based on their name. The result is a doubly
-        associative array, with the first key being element set name and the
-        second
+        associative array, with the first key being element set name and the second
         being element name.
         
         i.e., $indexed['Dublin Core']['Creator'] = Element instance
@@ -175,11 +170,9 @@ Mixin_ElementText
     
         Add a string of text for an element.
         
-        Creates a new ElementText record, populates it with the specified text
-        value and assigns it to the element.
+        Creates a new ElementText record, populates it with the specified text value and assigns it to the element.
         
-        saveElementTexts() must be called after this in order to save the element
-        texts to the database.
+        saveElementTexts() must be called after this in order to save the element texts to the database.
         
         :param Element $element: Element which text should be created for
         :param string $elementText: Text to be added
@@ -190,21 +183,22 @@ Mixin_ElementText
         Add element texts for a record based on a formatted array of values.
         The array must be formatted as follows:
         
-        <code>
-        'Element Set Name' => 
-        array('Element Name' => 
-        array(array('text' => 'foo', 'html' => false)))
-        </code>
+        .. code-block:: php 
+        
+                          'Element Set Name' => 
+                              array('Element Name' => 
+                                  array(array('text' => 'foo', 'html' => false)))
+        
         
         Since 1.4, the array can also be formatted thusly:
         
-        <code>
-        array(
-        array('element_id' => 1,
-        'text' => 'foo',
-        'html' => false)
-        )
-        </code>
+        .. code-block:: php 
+        
+                  array(
+                      array('element_id' => 1,
+                            'text' => 'foo',
+                            'html' => false)
+                  )
         
         :param array $elementTexts:
 
@@ -221,10 +215,8 @@ Mixin_ElementText
         The application flow is thus:
         
         1) Build ElementText objects from the POST.
-        2) Validate the ElementText objects and assign error messages if
-        necessary.
-        3) After the item saves correctly, delete all the ElementText records for
-        the Item.
+        2) Validate the ElementText objects and assign error messages if necessary.
+        3) After the item saves correctly, delete all the ElementText records for the Item.
         4) Save the new ElementText objects to the database.
         
         :param unknown $post:

@@ -64,8 +64,7 @@ Theme
 
     .. php:method:: getScriptPathForPlugin(string $pluginModuleName)
     
-        Get the physical path to the theme's override scripts for the given
-        plugin.
+        Get the physical path to the theme's override scripts for the given plugin.
         
         :param string $pluginModuleName: (i.e., 'exhibit-builder')
         :returns: string Physical path.
@@ -143,8 +142,7 @@ Theme
 
     .. php:method:: getOptionName(string $themeName)
     
-        Get the name of a specific theme's option.  Each theme has a single option
-        in the option's table, 
+        Get the name of a specific theme's option.  Each theme has a single option in the option's table, 
         which stores all of the configuration options for that theme
         
         :param string $themeName:  The name of the theme

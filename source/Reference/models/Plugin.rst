@@ -80,8 +80,7 @@ Plugin
     
         Get the human-readable name of the plugin, e.g. "Dublin Core Extended".
         
-        If there is no human-readable name available, returns the directory name
-        instead.
+        If there is no human-readable name available, returns the directory name instead.
 
     .. php:method:: setDisplayName(string $name)
     
@@ -230,11 +229,10 @@ Plugin
 
     .. php:method:: meetsOmekaMinimumVersion()
     
-        Determine whether the plugin meets the minimum version requirements for
-        Omeka.
+        Determine whether the plugin meets the minimum version requirements for Omeka.
         
-        If the field is not set, assume that it meets the requirements.  If the
-        field is set, it must be greater than the current version of Omeka.
+        If the field is not set, assume that it meets the requirements.  If the field is set, it must be greater than the
+        current version of Omeka.
 
     .. php:method:: meetsOmekaTestedUpToVersion()
 

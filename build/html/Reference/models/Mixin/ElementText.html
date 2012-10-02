@@ -50,8 +50,7 @@ corresponding behaviors to a record.</p>
 <dl class="attr">
 <dt id="Mixin_ElementText::$_textsByNaturalOrder">
 <em class="property">property </em><tt class="descname">_textsByNaturalOrder</tt><a class="headerlink" href="#Mixin_ElementText::$_textsByNaturalOrder" title="Permalink to this definition">¶</a></dt>
-<dd><p>ElementText records stored in the order they were retrieved from the
-database.</p>
+<dd><p>ElementText records stored in the order they were retrieved from the database.</p>
 </dd></dl>
 
 <dl class="attr">
@@ -77,8 +76,7 @@ database.</p>
 <dt id="Mixin_ElementText::$_elementsOnForm">
 <em class="property">property </em><tt class="descname">_elementsOnForm</tt><a class="headerlink" href="#Mixin_ElementText::$_elementsOnForm" title="Permalink to this definition">¶</a></dt>
 <dd><p>List of elements that were output on the form.  This can be used to
-determine the DELETE SQL to use to reset the elements when saving the
-form.</p>
+determine the DELETE SQL to use to reset the elements when saving the form.</p>
 </dd></dl>
 
 <dl class="attr">
@@ -152,8 +150,7 @@ texts to the search text.</p>
 <tt class="descname">loadElementsAndTexts</tt><big>(</big><em>boolean $reload =</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::loadElementsAndTexts" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load all the ElementText records for the given record (Item, File, etc.).
 These will be indexed by [element_id].</p>
-<p>Also load all the Element records and index those by their name and set
-name.</p>
+<p>Also load all the Element records and index those by their name and set name.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -272,14 +269,14 @@ element set name.</p>
 
 <dl class="method">
 <dt id="Mixin_ElementText::getElementsBySetName">
-<tt class="descname">getElementsBySetName</tt><big>(</big><em>$elementSetName</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::getElementsBySetName" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">getElementsBySetName</tt><big>(</big><em>string $elementSetName</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::getElementsBySetName" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve the Element records for the given ElementSet.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$elementSetName</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$elementSetName</strong> (<em>string</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -294,8 +291,7 @@ element set name.</p>
 <dt id="Mixin_ElementText::getAllElements">
 <tt class="descname">getAllElements</tt><big>(</big><big>)</big><a class="headerlink" href="#Mixin_ElementText::getAllElements" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve ALL the Element records for the object, organized by ElementSet.
-For example, $elements[&#8216;Dublin Core&#8217;] = array(Element instance, Element
-instance, ...)</p>
+For example, $elements[&#8216;Dublin Core&#8217;] = array(Element instance, Element instance, ...)</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -372,8 +368,7 @@ element set name.</p>
 <dt id="Mixin_ElementText::_indexElementsBySet">
 <tt class="descname">_indexElementsBySet</tt><big>(</big><em>array $elementRecords</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::_indexElementsBySet" title="Permalink to this definition">¶</a></dt>
 <dd><p>Index a set of Elements based on their name. The result is a doubly
-associative array, with the first key being element set name and the
-second
+associative array, with the first key being element set name and the second
 being element name.</p>
 <p>i.e., $indexed[&#8216;Dublin Core&#8217;][&#8216;Creator&#8217;] = Element instance</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -416,10 +411,8 @@ being element name.</p>
 <dt id="Mixin_ElementText::addTextForElement">
 <tt class="descname">addTextForElement</tt><big>(</big><em>Element $element</em>, <em>string $elementText</em>, <em>bool $isHtml =</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::addTextForElement" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a string of text for an element.</p>
-<p>Creates a new ElementText record, populates it with the specified text
-value and assigns it to the element.</p>
-<p>saveElementTexts() must be called after this in order to save the element
-texts to the database.</p>
+<p>Creates a new ElementText record, populates it with the specified text value and assigns it to the element.</p>
+<p>saveElementTexts() must be called after this in order to save the element texts to the database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -440,19 +433,19 @@ texts to the database.</p>
 <tt class="descname">addElementTextsByArray</tt><big>(</big><em>array $elementTexts</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::addElementTextsByArray" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add element texts for a record based on a formatted array of values.
 The array must be formatted as follows:</p>
-<p>&lt;code&gt;
-&#8216;Element Set Name&#8217; =&gt;
-array(&#8216;Element Name&#8217; =&gt;
-array(array(&#8216;text&#8217; =&gt; &#8216;foo&#8217;, &#8216;html&#8217; =&gt; false)))
-&lt;/code&gt;</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="s1">&#39;Element Set Name&#39;</span> <span class="o">=&gt;</span>
+    <span class="k">array</span><span class="p">(</span><span class="s1">&#39;Element Name&#39;</span> <span class="o">=&gt;</span>
+        <span class="k">array</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;text&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="s1">&#39;html&#39;</span> <span class="o">=&gt;</span> <span class="k">false</span><span class="p">)))</span>
+</pre></div>
+</div>
 <p>Since 1.4, the array can also be formatted thusly:</p>
-<p>&lt;code&gt;
-array(
-array(&#8216;element_id&#8217; =&gt; 1,
-&#8216;text&#8217; =&gt; &#8216;foo&#8217;,
-&#8216;html&#8217; =&gt; false)
-)
-&lt;/code&gt;</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">array</span><span class="p">(</span>
+    <span class="k">array</span><span class="p">(</span><span class="s1">&#39;element_id&#39;</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">,</span>
+          <span class="s1">&#39;text&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;html&#39;</span> <span class="o">=&gt;</span> <span class="k">false</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -504,12 +497,10 @@ array(&#8216;element_id&#8217; =&gt; 1,
 <dd><p>The application flow is thus:</p>
 <ol class="arabic simple">
 <li>Build ElementText objects from the POST.</li>
+<li>Validate the ElementText objects and assign error messages if necessary.</li>
+<li>After the item saves correctly, delete all the ElementText records for the Item.</li>
+<li>Save the new ElementText objects to the database.</li>
 </ol>
-<p>2) Validate the ElementText objects and assign error messages if
-necessary.
-3) After the item saves correctly, delete all the ElementText records for
-the Item.
-4) Save the new ElementText objects to the database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

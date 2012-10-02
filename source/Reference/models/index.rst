@@ -1,3 +1,5 @@
+.. Models . 
+
 ``````
 Models
 ``````
@@ -13,6 +15,7 @@ Models
     ItemType
     ItemTypesElements
     MimeElementSetLookup
+    Mixin/index
     Option
     Plugin
     Process

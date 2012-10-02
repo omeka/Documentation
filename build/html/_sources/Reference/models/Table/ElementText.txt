@@ -12,8 +12,7 @@ Table_ElementText
 
     .. php:method:: findByRecord(Omeka_Record_AbstractRecord $record)
     
-        Find all ElementText records for a given database record (Item, File,
-        etc).
+        Find all ElementText records for a given database record (Item, File, etc).
         
         :param Omeka_Record_AbstractRecord $record: 
         :returns: array

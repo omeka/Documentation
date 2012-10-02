@@ -64,10 +64,9 @@ Mixin_Search
     
         Save a search text row.
         
-        Call this statically only when necessary. Used primarily when in a record
-        that does not implement Mixin_Search but contains text that is needed for
-        another record's search text. For example, when saving a child record that
-        contains search text that should be saved to its parent record.
+        Call this statically only when necessary. Used primarily when in a record that does not implement Mixin_Search but
+        contains text that is needed for another record's search text. For example, when saving a child record that contains
+        search text that should be saved to its parent record.
         
         :param string $recordType: 
         :param int $recordId: 
@@ -79,10 +78,8 @@ Mixin_Search
     
         Get the search record types.
         
-        Returns an array containing all record types (i.e. class names) in the
-        application/models directory that should be indexed and searchable. These
-        classes must extend Omeka_Record_AbstractRecord and implement this search
-        mixin.
+        Returns an array containing all record types (i.e. class names) in the application/models directory that should be
+        indexed and searchable. These classes must extend Omeka_Record_AbstractRecord and implement this search mixin.
         
         :returns: array
 

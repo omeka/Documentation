@@ -126,11 +126,9 @@ File
 
     .. php:method:: setDefaults($filepath, $options = Array)
     
-        Set the default values that will be stored for this file in the 'files'
-        table.
+        Set the default values that will be stored for this file in the 'files' table.
         
-        These values include 'size', 'authentication', 'mime_browser', 'mime_os',
-        'type_os'
+        These values include 'size', 'authentication', 'mime_browser', 'mime_os', 'type_os'
         and 'filename.
         
         :param unknown $filepath: 

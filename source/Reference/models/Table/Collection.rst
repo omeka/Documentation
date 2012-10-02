@@ -13,8 +13,7 @@ Table_Collection
 
     .. php:method:: getSelect()
     
-        Apply permissions checks to all SQL statements retrieving collections from
-        the table
+        Apply permissions checks to all SQL statements retrieving collections from the table
         
         :returns: void
 
@@ -30,8 +29,7 @@ Table_Collection
 
     .. php:method:: filterByFeatured($select, $isFeatured)
     
-        Apply a filter to the collections based on whether or not they are
-        featured
+        Apply a filter to the collections based on whether or not they are featured
         
         :param unknown $select: 
         :param unknown $isFeatured: 

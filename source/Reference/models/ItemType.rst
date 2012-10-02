@@ -68,10 +68,8 @@ ItemType
 
     .. php:method:: reorderElements(Array $elementOrderingArray)
     
-        This extracts the ordering for the elements from the form's POST, then
-        uses
-        the given ordering to resort the join records from item_types_elements
-        into
+        This extracts the ordering for the elements from the form's POST, then uses
+        the given ordering to resort the join records from item_types_elements into
         a new ordering, which is then saved.
         
         :param Array $elementOrderingArray: An array of numbers representing
@@ -117,8 +115,7 @@ ItemType
     .. php:method:: hasElement(Element|string $element)
     
         Determines whether a saved version of the item type has an element.
-        It does not correctly determine the presence of elements that were added
-        or
+        It does not correctly determine the presence of elements that were added or
         removed without saving the item type object.
         
         :param Element|string $element:  The element object or the element id.
