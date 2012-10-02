@@ -1,0 +1,233 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_View_Helper_ElementInput &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-view-helper-elementinput">
+<h1>Omeka_View_Helper_ElementInput<a class="headerlink" href="#omeka-view-helper-elementinput" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_View_Helper_ElementInput">
+<em class="property">class </em><tt class="descname">Omeka_View_Helper_ElementInput</tt><a class="headerlink" href="#Omeka_View_Helper_ElementInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate the form markup for entering one HTML input for an Element.</p>
+<dl class="attr">
+<dt id="Omeka_View_Helper_ElementInput::$_element">
+<em class="property">property </em><tt class="descname">_element</tt><a class="headerlink" href="#Omeka_View_Helper_ElementInput::$_element" title="Permalink to this definition">¶</a></dt>
+<dd><p>Element record to display the input for.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_View_Helper_ElementInput::$_record">
+<em class="property">property </em><tt class="descname">_record</tt><a class="headerlink" href="#Omeka_View_Helper_ElementInput::$_record" title="Permalink to this definition">¶</a></dt>
+<dd><p>Omeka_Record_AbstractRecord to display the input for.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_ElementInput::elementInput">
+<tt class="descname">elementInput</tt><big>(</big><em>Element $element</em>, <em>Omeka_Record_AbstractRecord $record</em>, <em>int $index = 0</em>, <em>string $value =</em>, <em>bool $isHtml =</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_ElementInput::elementInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display one form input for an Element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$element</strong> (<a class="reference internal" href="../../models/Element.html#Element" title="Element"><em>Element</em></a>) &#8211; The Element to display the input for.</li>
+<li><strong>$record</strong> (<em>Omeka_Record_AbstractRecord</em>) &#8211; The record to display the input for.</li>
+<li><strong>$index</strong> (<em>int</em>) &#8211; The index of this input. (starting at zero).</li>
+<li><strong>$value</strong> (<em>string</em>) &#8211; The default value of this input.</li>
+<li><strong>$isHtml</strong> (<em>bool</em>) &#8211; Whether this input&#8217;s value is HTML.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_ElementInput::_getFieldNameStem">
+<tt class="descname">_getFieldNameStem</tt><big>(</big><em>int $index</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_ElementInput::_getFieldNameStem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the leading part of the &#8220;name&#8221; element for the input.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$index</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_ElementInput::_getFormInput">
+<tt class="descname">_getFormInput</tt><big>(</big><em>string $inputNameStem</em>, <em>string $value</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_ElementInput::_getFormInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the actual HTML input for this Element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$inputNameStem</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$value</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_ElementInput::_getPluginFilterForFormInput">
+<tt class="descname">_getPluginFilterForFormInput</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_View_Helper_ElementInput::_getPluginFilterForFormInput" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the &#8220;name&#8221; of the filter that allows plugins to override this form
+input.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_ElementInput::_getFormControls">
+<tt class="descname">_getFormControls</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_View_Helper_ElementInput::_getFormControls" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the button that will allow a user to remove this form input.
+The submit input has a class of &#8216;add-element&#8217;, which is used by the
+Javascript to do stuff.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_ElementInput::_getHtmlCheckbox">
+<tt class="descname">_getHtmlCheckbox</tt><big>(</big><em>string $inputNameStem</em>, <em>int $index</em>, <em>bool $isHtml</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_ElementInput::_getHtmlCheckbox" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the HTML checkbox that lets users toggle the editor.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$inputNameStem</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$index</strong> (<em>int</em>) &#8211; </li>
+<li><strong>$isHtml</strong> (<em>bool</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/views/helpers/ElementInput.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

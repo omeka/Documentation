@@ -57,8 +57,7 @@ Omeka_Controller_Action_Helper_Db
 
     .. php:method:: findById($id, $table)
     
-        Find a particular record given its unique ID # and (optionally) its class
-        name.
+        Find a particular record given its unique ID # and (optionally) its class name.
         
         :param unknown $id: 
         :param unknown $table: 

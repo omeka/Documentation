@@ -4,6 +4,7 @@ Controllers
 
 .. toctree::
 
+    AppearanceController
     CollectionsController
     ElementSetsController
     ElementsController

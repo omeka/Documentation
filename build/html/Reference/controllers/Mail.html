@@ -1,0 +1,248 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_Controller_Action_Helper_Mail &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
+    <link rel="up" title="Controllers" href="index.html" />
+    <link rel="next" title="NavigationController" href="NavigationController.html" />
+    <link rel="prev" title="ItemsController" href="ItemsController.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="NavigationController.html" title="NavigationController"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="ItemsController.html" title="ItemsController"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Controllers</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-controller-action-helper-mail">
+<h1>Omeka_Controller_Action_Helper_Mail<a class="headerlink" href="#omeka-controller-action-helper-mail" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_Controller_Action_Helper_Mail">
+<em class="property">class </em><tt class="descname">Omeka_Controller_Action_Helper_Mail</tt><a class="headerlink" href="#Omeka_Controller_Action_Helper_Mail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Action helper for sending email.</p>
+<dl class="attr">
+<dt id="Omeka_Controller_Action_Helper_Mail::$_view">
+<em class="property">property </em><tt class="descname">_view</tt><a class="headerlink" href="#Omeka_Controller_Action_Helper_Mail::$_view" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Controller_Action_Helper_Mail::$_subject">
+<em class="property">property </em><tt class="descname">_subject</tt><a class="headerlink" href="#Omeka_Controller_Action_Helper_Mail::$_subject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subject of the email.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Controller_Action_Helper_Mail::$_subjectPrefix">
+<em class="property">property </em><tt class="descname">_subjectPrefix</tt><a class="headerlink" href="#Omeka_Controller_Action_Helper_Mail::$_subjectPrefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prefix (prepended to the subject).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Action_Helper_Mail::__construct">
+<tt class="descname">__construct</tt><big>(</big><em>Zend_View $view</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Action_Helper_Mail::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$view</strong> (<em>Zend_View</em>) &#8211; View to render as the message body.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Action_Helper_Mail::__call">
+<tt class="descname">__call</tt><big>(</big><em>string $method</em>, <em>array $args</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Action_Helper_Mail::__call" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delegate to the Zend_Mail instance.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$method</strong> (<em>string</em>) &#8211; Method called.</li>
+<li><strong>$args</strong> (<em>array</em>) &#8211; Arguments to method.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Action_Helper_Mail::setSubjectPrefix">
+<tt class="descname">setSubjectPrefix</tt><big>(</big><em>string $prefix</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Action_Helper_Mail::setSubjectPrefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the prefix for the subject header.  Typically takes the form &#8220;[Site Name] &#8221;.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$prefix</strong> (<em>string</em>) &#8211; Subject prefix.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Action_Helper_Mail::setSubject">
+<tt class="descname">setSubject</tt><big>(</big><em>string $subject</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Action_Helper_Mail::setSubject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the subject of the email.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$subject</strong> (<em>string</em>) &#8211; Email subject.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Action_Helper_Mail::setBodyFromView">
+<tt class="descname">setBodyFromView</tt><big>(</big><em>string $viewScript</em>, <em>boolean $html =</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Action_Helper_Mail::setBodyFromView" title="Permalink to this definition">¶</a></dt>
+<dd><p>Render the given view and use it as the body of the email.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$viewScript</strong> (<em>string</em>) &#8211; View script path.</li>
+<li><strong>$html</strong> (<em>boolean</em>) &#8211; Whether or not the assigned view script will render as HTML.  Defaults to false.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Action_Helper_Mail::send">
+<tt class="descname">send</tt><big>(</big><em>Zend_Mail_Transport_Abstract $transport</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Action_Helper_Mail::send" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send the email.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$transport</strong> (<em>Zend_Mail_Transport_Abstract</em>) &#8211; Optional defaults to null.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="ItemsController.html"
+                        title="previous chapter">ItemsController</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="NavigationController.html"
+                        title="next chapter">NavigationController</a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/controllers/Mail.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="NavigationController.html" title="NavigationController"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="ItemsController.html" title="ItemsController"
+             >previous</a> |</li>
+        <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+          <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="index.html" >Controllers</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

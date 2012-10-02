@@ -111,11 +111,11 @@ Mixin_ElementText
         
         :returns: array Set of ElementText records.
 
-    .. php:method:: getElementsBySetName(string $elementSetName)
+    .. php:method:: getElementsBySetName($elementSetName)
     
         Retrieve the Element records for the given ElementSet.
         
-        :param string $elementSetName: 
+        :param unknown $elementSetName: 
         :returns: array Set of Element records
 
     .. php:method:: getAllElements()

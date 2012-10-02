@@ -16,8 +16,7 @@ UpgradeController
 
     .. php:method:: migrateAction()
     
-        Run the migration script, obtain any success/error output and display it
-        in a pretty way
+        Run the migration script, obtain any success/error output and display it in a pretty way
         
         :returns: void
 

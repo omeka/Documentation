@@ -24,8 +24,8 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Reference Documentation for Omeka" href="../index.html" />
-    <link rel="next" title="Collection" href="Collection.html" />
-    <link rel="prev" title="UsersController" href="../controllers/UsersController.html" /> 
+    <link rel="next" title="Models/Builder" href="Builder/index.html" />
+    <link rel="prev" title="Omeka_Controller_Action_Helper_ThemeConfiguration" href="../controllers/helpers/ThemeConfiguration.html" /> 
   </head>
   <body>
     <div class="related">
@@ -35,10 +35,10 @@
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="Collection.html" title="Collection"
+          <a href="Builder/index.html" title="Models/Builder"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../controllers/UsersController.html" title="UsersController"
+          <a href="../controllers/helpers/ThemeConfiguration.html" title="Omeka_Controller_Action_Helper_ThemeConfiguration"
              accesskey="P">previous</a> |</li>
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
           <li><a href="../index.html" accesskey="U">Reference Documentation for Omeka</a> &raquo;</li> 
@@ -54,16 +54,46 @@
 <h1>Models<a class="headerlink" href="#models" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="Builder/index.html">Models/Builder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Builder/Collection.html">Builder_Collection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Builder/ElementSet.html">Builder_ElementSet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Builder/Item.html">Builder_Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Builder/ItemType.html">Builder_ItemType</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Collection.html">Collection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Element.html">Element</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ElementSet.html">ElementSet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ElementText.html">ElementText</a></li>
 <li class="toctree-l1"><a class="reference internal" href="File.html">File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Installer/index.html">Models/Installer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Installer/Default.html">Installer_Default</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Installer/Exception.html">Installer_Exception</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Installer/InstallerInterface.html">Installer_InstallerInterface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Installer/Requirements.html">Installer_Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Installer/Task/index.html">Models/Installer/Task</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Installer/Task/Exception.html">Installer_Task_Exception</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Installer/Task/Migrations.html">Installer_Task_Migrations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Installer/Task/Options.html">Installer_Task_Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Installer/Task/Schema.html">Installer_Task_Schema</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Installer/Task/User.html">Installer_Task_User</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Installer/TaskInterface.html">Installer_TaskInterface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Installer/Test.html">Installer_Test</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Item.html">Item</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ItemType.html">ItemType</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ItemTypesElements.html">ItemTypesElements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Job/index.html">Models/Job</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Job/FileProcessUpload.html">Job_FileProcessUpload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Job/ItemBatchEdit.html">Job_ItemBatchEdit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Job/SearchTextIndex.html">Job_SearchTextIndex</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="MimeElementSetLookup.html">MimeElementSetLookup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Mixin/index.html">Mixin</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="Mixin/index.html">Models/Mixin</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Mixin/ElementText.html">Mixin_ElementText</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Mixin/Owner.html">Mixin_Owner</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Mixin/PublicFeatured.html">Mixin_PublicFeatured</a></li>
@@ -73,6 +103,17 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Option.html">Option</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Output/index.html">Models/Output</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Output/CollectionOmekaXml.html">Output_CollectionOmekaXml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output/FileOmekaXml.html">Output_FileOmekaXml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output/ItemAtom.html">Output_ItemAtom</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output/ItemContainerOmekaXml.html">Output_ItemContainerOmekaXml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output/ItemDcmesXml.html">Output_ItemDcmesXml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output/ItemOmekaXml.html">Output_ItemOmekaXml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output/ItemRss2.html">Output_ItemRss2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output/OmekaJson.html">Output_OmekaJson</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Plugin.html">Plugin</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Process.html">Process</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SearchText.html">SearchText</a></li>
@@ -95,11 +136,11 @@
               <img class="logo" src="../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../controllers/UsersController.html"
-                        title="previous chapter">UsersController</a></p>
+  <p class="topless"><a href="../controllers/helpers/ThemeConfiguration.html"
+                        title="previous chapter">Omeka_Controller_Action_Helper_ThemeConfiguration</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="Collection.html"
-                        title="next chapter">Collection</a></p>
+  <p class="topless"><a href="Builder/index.html"
+                        title="next chapter">Models/Builder</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -134,10 +175,10 @@
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="Collection.html" title="Collection"
+          <a href="Builder/index.html" title="Models/Builder"
              >next</a> |</li>
         <li class="right" >
-          <a href="../controllers/UsersController.html" title="UsersController"
+          <a href="../controllers/helpers/ThemeConfiguration.html" title="Omeka_Controller_Action_Helper_ThemeConfiguration"
              >previous</a> |</li>
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
           <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li> 

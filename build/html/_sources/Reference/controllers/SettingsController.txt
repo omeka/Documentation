@@ -15,11 +15,9 @@ SettingsController
         Determine whether or not ImageMagick has been correctly installed and
         configured.
         
-        In a few cases, this will indicate failure even though the ImageMagick
-        program works properly.  In those cases, users may ignore the results of
-        this test.  This is because the 'convert' command may have returned a
-        non-zero status code for some reason.  Keep in mind that a 0 status code
-        always indicates success.
+        In a few cases, this will indicate failure even though the ImageMagick program works properly.  In those cases,
+        users may ignore the results of this test.  This is because the 'convert' command may have returned a non-zero
+        status code for some reason.  Keep in mind that a 0 status code always indicates success.
         
         :returns: boolean True if the command line return status is 0 when attempting to run ImageMagick's convert utility, false otherwise.
 

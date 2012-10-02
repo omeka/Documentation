@@ -18,16 +18,14 @@ UsersController
     
         Peform common processing for the publicly accessible actions.
         
-        Set a view script variable for header and footer view scripts and don't
-        allow logged-in users access.
+        Set a view script variable for header and footer view scripts and don't allow logged-in users access.
         
-        The script variables are set for actions in $_publicActions, so the
-        scripts for those actions should use these variables.
+        The script variables are set for actions in $_publicActions, so the scripts for those actions should use these
+        variables.
 
     .. php:method:: forgotPasswordAction()
     
-        Send an email providing a link that allows the user to reset their
-        password.
+        Send an email providing a link that allows the user to reset their password.
 
     .. php:method:: _sendResetPasswordEmail($toEmail, $activationCode)
     

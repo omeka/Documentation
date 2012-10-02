@@ -31,8 +31,7 @@ Omeka_Controller_Action_Helper_Mail
 
     .. php:method:: setSubjectPrefix(string $prefix)
     
-        Set the prefix for the subject header.  Typically takes the form "[Site
-        Name] ".
+        Set the prefix for the subject header.  Typically takes the form "[Site Name] ".
         
         :param string $prefix: Subject prefix.
 

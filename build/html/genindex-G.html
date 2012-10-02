@@ -62,7 +62,6 @@
     <dt><a href="Reference/libraries/Omeka/File/Extract/Image.html#Omeka_File_Extract_Image::getChannels">getChannels() (Omeka_File_Extract_Image method)</a></dt>
     <dt><a href="Reference/models/Installer/Exception.html#Installer_Exception::getCode">getCode() (Installer_Exception method)</a></dt>
     <dd><dl>
-      <dt><a href="Reference/models/Installer/Task/Exception.html#Installer_Task_Exception::getCode">(Installer_Task_Exception method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Application/Resource/Jobs/InvalidAdapterException.html#Omeka_Application_Resource_Jobs_InvalidAdapterException::getCode">(Omeka_Application_Resource_Jobs_InvalidAdapterException method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Db/Migration/Exception.html#Omeka_Db_Migration_Exception::getCode">(Omeka_Db_Migration_Exception method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/File/Derivative/Exception.html#Omeka_File_Derivative_Exception::getCode">(Omeka_File_Derivative_Exception method)</a></dt>
@@ -85,13 +84,14 @@
     <dt><a href="Reference/libraries/Omeka/Db/Table.html#Omeka_Db_Table::getColumns">getColumns() (Omeka_Db_Table method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Test/Bootstrap.html#Omeka_Test_Bootstrap::getContainer">getContainer() (Omeka_Test_Bootstrap method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/File/Derivative/Image/Creator.html#Omeka_File_Derivative_Image_Creator::getConvertPath">getConvertPath() (Omeka_File_Derivative_Image_Creator method)</a></dt>
-    <dt><a href="Reference/controllers/helpers/FlashMessenger.html#Omeka_Controller_Action_Helper_FlashMessenger::getCurrentMessages">getCurrentMessages() (Omeka_Controller_Action_Helper_FlashMessenger method)</a></dt>
+    <dt><a href="Reference/controllers/helpers/FlashMessenger.html#Omeka_Controller_Action_Helper_FlashMessenger::getCurrentMessages">getCurrentMessages() (Omeka_Controller_Action_Helper_FlashMessenger method)</a>, <a href="Reference/controllers/FlashMessenger.html#Omeka_Controller_Action_Helper_FlashMessenger::getCurrentMessages">[1]</a></dt>
     <dt><a href="Reference/libraries/Omeka/Plugin/Broker.html#Omeka_Plugin_Broker::getCurrentPluginDirName">getCurrentPluginDirName() (Omeka_Plugin_Broker method)</a></dt>
+    <dt><a href="Reference/views/helpers/GetCurrentRecord.html#Omeka_View_Helper_GetCurrentRecord::getCurrentRecord">getCurrentRecord() (Omeka_View_Helper_GetCurrentRecord method)</a></dt>
     <dt><a href="Reference/models/Theme.html#Theme::getCurrentThemeName">getCurrentThemeName() (Theme method)</a></dt>
     <dt><a href="Reference/models/Installer/Default.html#Installer_Default::getDb">getDb() (Installer_Default method)</a></dt>
     <dd><dl>
       <dt><a href="Reference/models/Installer/Test.html#Installer_Test::getDb">(Installer_Test method)</a></dt>
-      <dt><a href="Reference/controllers/helpers/Db.html#Omeka_Controller_Action_Helper_Db::getDb">(Omeka_Controller_Action_Helper_Db method)</a></dt>
+      <dt><a href="Reference/controllers/helpers/Db.html#Omeka_Controller_Action_Helper_Db::getDb">(Omeka_Controller_Action_Helper_Db method)</a>, <a href="Reference/controllers/Db.html#Omeka_Controller_Action_Helper_Db::getDb">[1]</a></dt>
       <dt><a href="Reference/libraries/Omeka/Db/Migration/AbstractMigration.html#Omeka_Db_Migration_AbstractMigration::getDb">(Omeka_Db_Migration_AbstractMigration method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Db/Table.html#Omeka_Db_Table::getDb">(Omeka_Db_Table method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Job/Mock.html#Omeka_Job_Mock::getDb">(Omeka_Job_Mock method)</a></dt>
@@ -103,7 +103,7 @@
     <dt><a href="Reference/libraries/Omeka/Filter/HtmlPurifier.html#Omeka_Filter_HtmlPurifier::getDefaultAllowedHtmlAttributes">getDefaultAllowedHtmlAttributes() (Omeka_Filter_HtmlPurifier method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Filter/HtmlPurifier.html#Omeka_Filter_HtmlPurifier::getDefaultAllowedHtmlElements">getDefaultAllowedHtmlElements() (Omeka_Filter_HtmlPurifier method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/File/Derivative/Image/Creator.html#Omeka_File_Derivative_Image_Creator::getDefaultImageMagickDir">getDefaultImageMagickDir() (Omeka_File_Derivative_Image_Creator method)</a></dt>
-    <dt><a href="Reference/controllers/helpers/Db.html#Omeka_Controller_Action_Helper_Db::getDefaultModelName">getDefaultModelName() (Omeka_Controller_Action_Helper_Db method)</a></dt>
+    <dt><a href="Reference/controllers/helpers/Db.html#Omeka_Controller_Action_Helper_Db::getDefaultModelName">getDefaultModelName() (Omeka_Controller_Action_Helper_Db method)</a>, <a href="Reference/controllers/Db.html#Omeka_Controller_Action_Helper_Db::getDefaultModelName">[1]</a></dt>
     <dt><a href="Reference/libraries/Omeka/Application/Resource/Helpers.html#Omeka_Application_Resource_Helpers::getDefaultResponseContexts">getDefaultResponseContexts() (Omeka_Application_Resource_Helpers method)</a></dt>
     <dt><a href="Reference/models/File.html#File::getDerivativeFilename">getDerivativeFilename() (File method)</a></dt>
     <dt><a href="Reference/models/Plugin.html#Plugin::getDescription">getDescription() (Plugin method)</a></dt>
@@ -121,6 +121,9 @@
     <dt><a href="Reference/models/Mixin/ElementText.html#Mixin_ElementText::getElementsBySetName">getElementsBySetName() (Mixin_ElementText method)</a></dt>
     <dt><a href="Reference/models/Element.html#Element::getElementSet">getElementSet() (Element method)</a></dt>
     <dt><a href="Reference/models/Mixin/ElementText.html#Mixin_ElementText::getElementTexts">getElementTexts() (Mixin_ElementText method)</a></dt>
+    <dd><dl>
+      <dt><a href="Reference/views/helpers/ElementForm.html#Omeka_View_Helper_ElementForm::getElementTexts">(Omeka_View_Helper_ElementForm method)</a></dt>
+  </dl></dd>
     <dt><a href="Reference/models/Mixin/ElementText.html#Mixin_ElementText::getElementTextsByRecord">getElementTextsByRecord() (Mixin_ElementText method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/File/Extract/Image.html#Omeka_File_Extract_Image::getEmbeddedMetadataString">getEmbeddedMetadataString() (Omeka_File_Extract_Image method)</a></dt>
     <dt><a href="Reference/models/Installer/Requirements.html#Installer_Requirements::getErrorMessages">getErrorMessages() (Installer_Requirements method)</a></dt>
@@ -132,7 +135,6 @@
     <dt><a href="Reference/libraries/Omeka/Validate/Confirmation.html#Omeka_Validate_Confirmation::getField">getField() (Omeka_Validate_Confirmation method)</a></dt>
     <dt><a href="Reference/models/Installer/Exception.html#Installer_Exception::getFile">getFile() (Installer_Exception method)</a></dt>
     <dd><dl>
-      <dt><a href="Reference/models/Installer/Task/Exception.html#Installer_Task_Exception::getFile">(Installer_Task_Exception method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Application/Resource/Jobs/InvalidAdapterException.html#Omeka_Application_Resource_Jobs_InvalidAdapterException::getFile">(Omeka_Application_Resource_Jobs_InvalidAdapterException method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Db/Migration/Exception.html#Omeka_Db_Migration_Exception::getFile">(Omeka_Db_Migration_Exception method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/File/Derivative/Exception.html#Omeka_File_Derivative_Exception::getFile">(Omeka_File_Derivative_Exception method)</a></dt>
@@ -170,15 +172,14 @@
     <dt><a href="Reference/models/File.html#File::getItem">getItem() (File method)</a></dt>
     <dt><a href="Reference/models/ItemType.html#ItemType::getItems">getItems() (ItemType method)</a></dt>
     <dt><a href="Reference/models/Item.html#Item::getItemType">getItemType() (Item method)</a></dt>
-    <dt><a href="Reference/models/Item.html#Item::getItemTypeElements">getItemTypeElements() (Item method)</a></dt>
 </dl></td>
   <td style="width: 33%" valign="top"><dl>
+    <dt><a href="Reference/models/Item.html#Item::getItemTypeElements">getItemTypeElements() (Item method)</a></dt>
     <dt><a href="Reference/models/ItemType.html#ItemType::getItemTypeElementSet">getItemTypeElementSet() (ItemType method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Job/Dispatcher/Adapter/Array.html#Omeka_Job_Dispatcher_Adapter_Array::getJob">getJob() (Omeka_Job_Dispatcher_Adapter_Array method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Job/Dispatcher/Adapter/Array.html#Omeka_Job_Dispatcher_Adapter_Array::getJobs">getJobs() (Omeka_Job_Dispatcher_Adapter_Array method)</a></dt>
     <dt><a href="Reference/models/Installer/Exception.html#Installer_Exception::getLine">getLine() (Installer_Exception method)</a></dt>
     <dd><dl>
-      <dt><a href="Reference/models/Installer/Task/Exception.html#Installer_Task_Exception::getLine">(Installer_Task_Exception method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Application/Resource/Jobs/InvalidAdapterException.html#Omeka_Application_Resource_Jobs_InvalidAdapterException::getLine">(Omeka_Application_Resource_Jobs_InvalidAdapterException method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Db/Migration/Exception.html#Omeka_Db_Migration_Exception::getLine">(Omeka_Db_Migration_Exception method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/File/Derivative/Exception.html#Omeka_File_Derivative_Exception::getLine">(Omeka_File_Derivative_Exception method)</a></dt>
@@ -197,10 +198,10 @@
   </dl></dd>
     <dt><a href="Reference/models/Plugin.html#Plugin::getLinkUrl">getLinkUrl() (Plugin method)</a></dt>
     <dt><a href="Reference/controllers/UsersController.html#UsersController::getLoginErrorMessages">getLoginErrorMessages() (UsersController method)</a></dt>
+    <dt><a href="Reference/views/helpers/GetLoopRecords.html#Omeka_View_Helper_GetLoopRecords::getLoopRecords">getLoopRecords() (Omeka_View_Helper_GetLoopRecords method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Test/Helper/Mail.html#Omeka_Test_Helper_Mail::getMailText">getMailText() (Omeka_Test_Helper_Mail method)</a></dt>
     <dt><a href="Reference/models/Installer/Exception.html#Installer_Exception::getMessage">getMessage() (Installer_Exception method)</a></dt>
     <dd><dl>
-      <dt><a href="Reference/models/Installer/Task/Exception.html#Installer_Task_Exception::getMessage">(Installer_Task_Exception method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Application/Resource/Jobs/InvalidAdapterException.html#Omeka_Application_Resource_Jobs_InvalidAdapterException::getMessage">(Omeka_Application_Resource_Jobs_InvalidAdapterException method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Db/Migration/Exception.html#Omeka_Db_Migration_Exception::getMessage">(Omeka_Db_Migration_Exception method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/File/Derivative/Exception.html#Omeka_File_Derivative_Exception::getMessage">(Omeka_File_Derivative_Exception method)</a></dt>
@@ -217,7 +218,7 @@
       <dt><a href="Reference/libraries/Omeka/Validator/Exception.html#Omeka_Validator_Exception::getMessage">(Omeka_Validator_Exception method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/View/Exception.html#Omeka_View_Exception::getMessage">(Omeka_View_Exception method)</a></dt>
   </dl></dd>
-    <dt><a href="Reference/controllers/helpers/FlashMessenger.html#Omeka_Controller_Action_Helper_FlashMessenger::getMessages">getMessages() (Omeka_Controller_Action_Helper_FlashMessenger method)</a></dt>
+    <dt><a href="Reference/controllers/helpers/FlashMessenger.html#Omeka_Controller_Action_Helper_FlashMessenger::getMessages">getMessages() (Omeka_Controller_Action_Helper_FlashMessenger method)</a>, <a href="Reference/controllers/FlashMessenger.html#Omeka_Controller_Action_Helper_FlashMessenger::getMessages">[1]</a></dt>
     <dt><a href="Reference/models/File.html#File::getMimeType">getMimeType() (File method)</a></dt>
     <dt><a href="Reference/models/Plugin.html#Plugin::getMinimumOmekaVersion">getMinimumOmekaVersion() (Plugin method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Job/Mock.html#Omeka_Job_Mock::getMiscOptions">getMiscOptions() (Omeka_Job_Mock method)</a></dt>
@@ -250,7 +251,6 @@
     <dt><a href="Reference/libraries/Omeka/Plugin/Loader.html#Omeka_Plugin_Loader::getPlugins">getPlugins() (Omeka_Plugin_Loader method)</a></dt>
     <dt><a href="Reference/models/Installer/Exception.html#Installer_Exception::getPrevious">getPrevious() (Installer_Exception method)</a></dt>
     <dd><dl>
-      <dt><a href="Reference/models/Installer/Task/Exception.html#Installer_Task_Exception::getPrevious">(Installer_Task_Exception method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Application/Resource/Jobs/InvalidAdapterException.html#Omeka_Application_Resource_Jobs_InvalidAdapterException::getPrevious">(Omeka_Application_Resource_Jobs_InvalidAdapterException method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Db/Migration/Exception.html#Omeka_Db_Migration_Exception::getPrevious">(Omeka_Db_Migration_Exception method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/File/Derivative/Exception.html#Omeka_File_Derivative_Exception::getPrevious">(Omeka_File_Derivative_Exception method)</a></dt>
@@ -273,7 +273,6 @@
       <dt><a href="Reference/models/File.html#File::getProperty">(File method)</a></dt>
       <dt><a href="Reference/models/Item.html#Item::getProperty">(Item method)</a></dt>
   </dl></dd>
-    <dt><a href="Reference/models/Table/File.html#Table_File::getRandomFileWithImage">getRandomFileWithImage() (Table_File method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Record/Builder/AbstractBuilder.html#Omeka_Record_Builder_AbstractBuilder::getRecord">getRecord() (Omeka_Record_Builder_AbstractBuilder method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Record/Builder/AbstractBuilder.html#Omeka_Record_Builder_AbstractBuilder::getRecordMetadata">getRecordMetadata() (Omeka_Record_Builder_AbstractBuilder method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Controller/Plugin/Admin.html#Omeka_Controller_Plugin_Admin::getRedirector">getRedirector() (Omeka_Controller_Plugin_Admin method)</a></dt>
@@ -286,7 +285,7 @@
       <dt><a href="Reference/models/Plugin.html#Plugin::getResourceId">(Plugin method)</a></dt>
       <dt><a href="Reference/models/User.html#User::getResourceId">(User method)</a></dt>
   </dl></dd>
-    <dt><a href="Reference/controllers/helpers/Acl.html#Omeka_Controller_Action_Helper_Acl::getResourceName">getResourceName() (Omeka_Controller_Action_Helper_Acl method)</a></dt>
+    <dt><a href="Reference/controllers/Acl.html#Omeka_Controller_Action_Helper_Acl::getResourceName">getResourceName() (Omeka_Controller_Action_Helper_Acl method)</a>, <a href="Reference/controllers/helpers/Acl.html#Omeka_Controller_Action_Helper_Acl::getResourceName">[1]</a></dt>
     <dt><a href="Reference/models/User.html#User::getRoleId">getRoleId() (User method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Test/Helper/Db.html#Omeka_Test_Helper_Db::getRowCount">getRowCount() (Omeka_Test_Helper_Db method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/File/Extract/Video.html#Omeka_File_Extract_Video::getSampleRate">getSampleRate() (Omeka_File_Extract_Video method)</a></dt>
@@ -294,21 +293,12 @@
     <dt><a href="Reference/models/Theme.html#Theme::getScriptPathForPlugin">getScriptPathForPlugin() (Theme method)</a></dt>
     <dt><a href="Reference/models/Mixin/Search.html#Mixin_Search::getSearchRecordTypes">getSearchRecordTypes() (Mixin_Search method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Db/Table.html#Omeka_Db_Table::getSelect">getSelect() (Omeka_Db_Table method)</a></dt>
-    <dd><dl>
-      <dt><a href="Reference/models/Table/Collection.html#Table_Collection::getSelect">(Table_Collection method)</a></dt>
-      <dt><a href="Reference/models/Table/Element.html#Table_Element::getSelect">(Table_Element method)</a></dt>
-      <dt><a href="Reference/models/Table/ElementSet.html#Table_ElementSet::getSelect">(Table_ElementSet method)</a></dt>
-      <dt><a href="Reference/models/Table/File.html#Table_File::getSelect">(Table_File method)</a></dt>
-      <dt><a href="Reference/models/Table/Item.html#Table_Item::getSelect">(Table_Item method)</a></dt>
-      <dt><a href="Reference/models/Table/Tag.html#Table_Tag::getSelect">(Table_Tag method)</a></dt>
-  </dl></dd>
     <dt><a href="Reference/libraries/Omeka/Db/Table.html#Omeka_Db_Table::getSelectForCount">getSelectForCount() (Omeka_Db_Table method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Db/Table.html#Omeka_Db_Table::getSelectForFind">getSelectForFind() (Omeka_Db_Table method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Db/Table.html#Omeka_Db_Table::getSelectForFindBy">getSelectForFindBy() (Omeka_Db_Table method)</a></dt>
-    <dt><a href="Reference/models/Table/ElementText.html#Table_ElementText::getSelectForRecord">getSelectForRecord() (Table_ElementText method)</a></dt>
     <dt><a href="Reference/models/File.html#File::getStorage">getStorage() (File method)</a></dt>
     <dt><a href="Reference/models/File.html#File::getStoragePath">getStoragePath() (File method)</a></dt>
-    <dt><a href="Reference/controllers/helpers/Db.html#Omeka_Controller_Action_Helper_Db::getTable">getTable() (Omeka_Controller_Action_Helper_Db method)</a></dt>
+    <dt><a href="Reference/controllers/helpers/Db.html#Omeka_Controller_Action_Helper_Db::getTable">getTable() (Omeka_Controller_Action_Helper_Db method)</a>, <a href="Reference/controllers/Db.html#Omeka_Controller_Action_Helper_Db::getTable">[1]</a></dt>
     <dt><a href="Reference/libraries/Omeka/Db/Table.html#Omeka_Db_Table::getTableAlias">getTableAlias() (Omeka_Db_Table method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Test/Helper/Db.html#Omeka_Test_Helper_Db::getTableCount">getTableCount() (Omeka_Test_Helper_Db method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Db/Table.html#Omeka_Db_Table::getTableName">getTableName() (Omeka_Db_Table method)</a></dt>
@@ -325,7 +315,6 @@
     <dt><a href="Reference/libraries/Omeka/Controller/Plugin/ViewScripts.html#Omeka_Controller_Plugin_ViewScripts::getThemeOption">getThemeOption() (Omeka_Controller_Plugin_ViewScripts method)</a></dt>
     <dt><a href="Reference/models/Installer/Exception.html#Installer_Exception::getTrace">getTrace() (Installer_Exception method)</a></dt>
     <dd><dl>
-      <dt><a href="Reference/models/Installer/Task/Exception.html#Installer_Task_Exception::getTrace">(Installer_Task_Exception method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Application/Resource/Jobs/InvalidAdapterException.html#Omeka_Application_Resource_Jobs_InvalidAdapterException::getTrace">(Omeka_Application_Resource_Jobs_InvalidAdapterException method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Db/Migration/Exception.html#Omeka_Db_Migration_Exception::getTrace">(Omeka_Db_Migration_Exception method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/File/Derivative/Exception.html#Omeka_File_Derivative_Exception::getTrace">(Omeka_File_Derivative_Exception method)</a></dt>
@@ -344,7 +333,6 @@
   </dl></dd>
     <dt><a href="Reference/models/Installer/Exception.html#Installer_Exception::getTraceAsString">getTraceAsString() (Installer_Exception method)</a></dt>
     <dd><dl>
-      <dt><a href="Reference/models/Installer/Task/Exception.html#Installer_Task_Exception::getTraceAsString">(Installer_Task_Exception method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Application/Resource/Jobs/InvalidAdapterException.html#Omeka_Application_Resource_Jobs_InvalidAdapterException::getTraceAsString">(Omeka_Application_Resource_Jobs_InvalidAdapterException method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Db/Migration/Exception.html#Omeka_Db_Migration_Exception::getTraceAsString">(Omeka_Db_Migration_Exception method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/File/Derivative/Exception.html#Omeka_File_Derivative_Exception::getTraceAsString">(Omeka_File_Derivative_Exception method)</a></dt>

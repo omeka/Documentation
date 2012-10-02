@@ -12,11 +12,8 @@ Table_SearchText
         :param int $recordId: 
         :returns: SearchText|null
 
-    .. php:method:: search(string $query, string $recordType)
+    .. php:method:: applySearchFilters($select, $params)
     
-        Perform a fulltext search.
-        
-        :param string $query: 
-        :param string $recordType: Limit results to this record type.
-        :returns: array
+        :param unknown $select: 
+        :param unknown $params:
 

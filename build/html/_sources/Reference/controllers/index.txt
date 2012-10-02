@@ -4,14 +4,20 @@ Controllers
 
 .. toctree::
 
+    Acl
+    AppearanceController
     CollectionsController
+    ContextSwitch
+    Db
     ElementSetsController
     ElementsController
     ErrorController
     FilesController
+    FlashMessenger
     IndexController
     ItemTypesController
     ItemsController
+    Mail
     NavigationController
     PluginsController
     SearchController
@@ -19,6 +25,7 @@ Controllers
     SettingsController
     SystemInfoController
     TagsController
+    ThemeConfiguration
     ThemesController
     UpgradeController
     UsersController
