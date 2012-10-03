@@ -85,7 +85,7 @@ be all of the fields for the record.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$db</strong> (<em>Omeka_Db</em>) &#8211; </li>
+<li><strong>$db</strong> (<a class="reference internal" href="../../Db.html#Omeka_Db" title="Omeka_Db"><em>Omeka_Db</em></a>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -112,8 +112,7 @@ necessary.</p>
 <dt id="Omeka_Record_Builder_AbstractBuilder::setRecordMetadata">
 <tt class="descname">setRecordMetadata</tt><big>(</big><em>array $metadata</em><big>)</big><a class="headerlink" href="#Omeka_Record_Builder_AbstractBuilder::setRecordMetadata" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set basic metadata for the record.</p>
-<p>Note that the columns to be set must be specified in the
-$_settableProperties property of subclassed Builders.</p>
+<p>Note that the columns to be set must be specified in the $_settableProperties property of subclassed Builders.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -148,8 +147,8 @@ $_settableProperties property of subclassed Builders.</p>
 <dt id="Omeka_Record_Builder_AbstractBuilder::getRecord">
 <tt class="descname">getRecord</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_Builder_AbstractBuilder::getRecord" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the record that is being acted upon by the builder.</p>
-<p>When an Omeka_Record_AbstractRecord instance has been provided via
-setRecord(), that will be returned.  If a record ID has been provided,
+<p>When an Omeka_Record_AbstractRecord instance has been provided via setRecord(), that will be returned.  If a record
+ID has been provided,
 then the appropriate record will be returned.</p>
 <p>Otherwise, a new instance of Omeka_Record_AbstractRecord will be returned.</p>
 <table class="docutils field-list" frame="void" rules="none">

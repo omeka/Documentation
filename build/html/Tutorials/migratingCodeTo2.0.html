@@ -24,7 +24,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../index.html" />
     <link rel="up" title="Tutorials for Plugin and Theme Developers" href="index.html" />
-    <link rel="next" title="Understanding Omeka_Controller_AbstractActionController" href="understandingOmekaControllerAbstractActionController.html" />
+    <link rel="next" title="Principles of Omeka 2.0" href="principlesOfOmeka2.html" />
     <link rel="prev" title="Tutorials for Plugin and Theme Developers" href="index.html" /> 
   </head>
   <body>
@@ -35,7 +35,7 @@
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="understandingOmekaControllerAbstractActionController.html" title="Understanding Omeka_Controller_AbstractActionController"
+          <a href="principlesOfOmeka2.html" title="Principles of Omeka 2.0"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="index.html" title="Tutorials for Plugin and Theme Developers"
@@ -52,19 +52,17 @@
             
   <div class="section" id="migrating-your-code-to-omeka-2-0">
 <h1>Migrating your code to Omeka 2.0<a class="headerlink" href="#migrating-your-code-to-omeka-2-0" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="principles-of-omeka-2-0">
-<h2>Principles of Omeka 2.0<a class="headerlink" href="#principles-of-omeka-2-0" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="upgrading-plugins">
-<h3>Upgrading Plugins<a class="headerlink" href="#upgrading-plugins" title="Permalink to this headline">¶</a></h3>
+<h2>Upgrading Plugins<a class="headerlink" href="#upgrading-plugins" title="Permalink to this headline">¶</a></h2>
 <p>The basic tasks you will need to do to upgrade your plugins for Omeka 2.0 are:</p>
 <ul class="simple">
 <li>Change the classes your controllers and models extend from</li>
 </ul>
 <p>** Omeka_Controller_Action becomes <em class="xref std std-ref">Omeka_Controller_AbstractActionController</em>
-** Omeka_Record becomes Omeka_Record_AbstractRecord</p>
+** Omeka_Record becomes Omeka_Record_AbstractRecord <em class="xref std std-ref">Omeka_Controller_AbstractRecord</em></p>
 <ul class="simple">
 <li>Update any helper functions you use in hooks for filters</li>
-<li>Change your hook and filter callbacks to have an array passed in.</li>
+<li>Change your hook callbacks to have an array passed in.</li>
 </ul>
 <p>Typically, the expected variable name passed in in version 1.5 (e.g. <tt class="docutils literal"><span class="pre">$user</span></tt>) becomes the key for the corresponding data in the
 array, e.g. <tt class="docutils literal"><span class="pre">$user</span> <span class="pre">=</span> <span class="pre">$args['user'];</span></tt> See <a class="reference external" href="http://omeka.org/codex/Updating_Plugins_For_2.0#Hooks_and_Filters">Updating Plugins for 2.0: Hooks and Filters</a></p>
@@ -77,33 +75,31 @@ array, e.g. <tt class="docutils literal"><span class="pre">$user</span> <span cl
 <li>Change usage of function that previously echoed content. For example, <tt class="docutils literal"><span class="pre">&lt;?php</span> <span class="pre">head();</span> <span class="pre">?&gt;</span></tt> should now be <tt class="docutils literal"><span class="pre">&lt;?php</span> <span class="pre">echo</span> <span class="pre">head();</span> <span class="pre">?&gt;</span></tt>.</li>
 </ul>
 <div class="section" id="controllers">
-<h4>Controllers<a class="headerlink" href="#controllers" title="Permalink to this headline">¶</a></h4>
+<h3>Controllers<a class="headerlink" href="#controllers" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Update wrapper methods <tt class="docutils literal"><span class="pre">findById()</span></tt>, <tt class="docutils literal"><span class="pre">getTable('TableName')</span></tt>, <tt class="docutils literal"><span class="pre">getDb()</span></tt></li>
 </ul>
 </div>
 <div class="section" id="views">
-<h4>Views<a class="headerlink" href="#views" title="Permalink to this headline">¶</a></h4>
+<h3>Views<a class="headerlink" href="#views" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="admin-views">
-<h5>Admin Views<a class="headerlink" href="#admin-views" title="Permalink to this headline">¶</a></h5>
+<h4>Admin Views<a class="headerlink" href="#admin-views" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>Admin theme now displays an <tt class="docutils literal"><span class="pre">&lt;h1&gt;</span></tt> with the title you set for the page. You can remove those from your admin views</li>
-<li>replace form</li>
 </ul>
 </div>
-</div>
-</div>
 <div class="section" id="edit-add-views">
-<h3>Edit/Add Views<a class="headerlink" href="#edit-add-views" title="Permalink to this headline">¶</a></h3>
+<h4>Edit/Add Views<a class="headerlink" href="#edit-add-views" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li>Use new panel</li>
 </ul>
 </div>
 <div class="section" id="browse-views">
-<h3>Browse Views<a class="headerlink" href="#browse-views" title="Permalink to this headline">¶</a></h3>
+<h4>Browse Views<a class="headerlink" href="#browse-views" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li></li>
 </ul>
+</div>
 </div>
 </div>
 </div>
@@ -120,17 +116,14 @@ array, e.g. <tt class="docutils literal"><span class="pre">$user</span> <span cl
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Migrating your code to Omeka 2.0</a><ul>
-<li><a class="reference internal" href="#principles-of-omeka-2-0">Principles of Omeka 2.0</a><ul>
 <li><a class="reference internal" href="#upgrading-plugins">Upgrading Plugins</a><ul>
 <li><a class="reference internal" href="#controllers">Controllers</a></li>
 <li><a class="reference internal" href="#views">Views</a><ul>
 <li><a class="reference internal" href="#admin-views">Admin Views</a></li>
-</ul>
-</li>
-</ul>
-</li>
 <li><a class="reference internal" href="#edit-add-views">Edit/Add Views</a></li>
 <li><a class="reference internal" href="#browse-views">Browse Views</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -141,8 +134,8 @@ array, e.g. <tt class="docutils literal"><span class="pre">$user</span> <span cl
   <p class="topless"><a href="index.html"
                         title="previous chapter">Tutorials for Plugin and Theme Developers</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="understandingOmekaControllerAbstractActionController.html"
-                        title="next chapter">Understanding Omeka_Controller_AbstractActionController</a></p>
+  <p class="topless"><a href="principlesOfOmeka2.html"
+                        title="next chapter">Principles of Omeka 2.0</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -177,7 +170,7 @@ array, e.g. <tt class="docutils literal"><span class="pre">$user</span> <span cl
           <a href="../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="understandingOmekaControllerAbstractActionController.html" title="Understanding Omeka_Controller_AbstractActionController"
+          <a href="principlesOfOmeka2.html" title="Principles of Omeka 2.0"
              >next</a> |</li>
         <li class="right" >
           <a href="index.html" title="Tutorials for Plugin and Theme Developers"

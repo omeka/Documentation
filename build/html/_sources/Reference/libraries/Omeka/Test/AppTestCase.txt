@@ -8,8 +8,7 @@ Omeka_Test_AppTestCase
 
     .. php:attr:: _isAdminTest
     
-        Flag that determines whether the test should run against admin or public. 
-        
+        Flag that determines whether the test should run against admin or public.  
         Defaults to true (for admin).
 
     .. php:attr:: _dbChanged

@@ -22,7 +22,10 @@
     <script type="text/javascript" src="../../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../../_static/doctools.js"></script>
-    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" /> 
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" />
+    <link rel="up" title="Libraries/Omeka/Db" href="index.html" />
+    <link rel="next" title="Omeka_Db" href="../Db.html" />
+    <link rel="prev" title="Omeka_Db_Select" href="Select.html" /> 
   </head>
   <body>
     <div class="related">
@@ -31,7 +34,16 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="../Db.html" title="Omeka_Db"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Select.html" title="Omeka_Db_Select"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Libraries/Omeka/Db</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -45,44 +57,47 @@
 <dl class="class">
 <dt id="Omeka_Db_Table">
 <em class="property">class </em><tt class="descname">Omeka_Db_Table</tt><a class="headerlink" href="#Omeka_Db_Table" title="Permalink to this definition">¶</a></dt>
-<dd><p>Table classes are instantiated by Omeka_Db.</p>
-<p>Subclasses attached to models must follow the naming convention: model name +
-Table (e.g, ExhibitTable).</p>
+<dd><p>Database table classes.</p>
+<p>Subclasses attached to models must follow the naming convention:
+Table_TableName, e.g. Table_ElementSet in models/Table/ElementSet.php.</p>
 <dl class="attr">
 <dt id="Omeka_Db_Table::$_target">
 <em class="property">property </em><tt class="descname">_target</tt><a class="headerlink" href="#Omeka_Db_Table::$_target" title="Permalink to this definition">¶</a></dt>
-<dd><p>The name of the model that this table will retrieve objects for.</p>
+<dd><p>The name of the model for which this table will retrieve objects.</p>
 </dd></dl>
 
 <dl class="attr">
 <dt id="Omeka_Db_Table::$_name">
 <em class="property">property </em><tt class="descname">_name</tt><a class="headerlink" href="#Omeka_Db_Table::$_name" title="Permalink to this definition">¶</a></dt>
-<dd><p>The name of the table (sans prefix).  If this is not given, it will
-be inflected magically.</p>
+<dd><p>The name of the table (sans prefix).</p>
+<p>If this is not given, it will be inflected.</p>
 </dd></dl>
 
 <dl class="attr">
 <dt id="Omeka_Db_Table::$_tablePrefix">
 <em class="property">property </em><tt class="descname">_tablePrefix</tt><a class="headerlink" href="#Omeka_Db_Table::$_tablePrefix" title="Permalink to this definition">¶</a></dt>
-<dd><p>Table prefix.
-Generally used to differentiate Omeka installations sharing a DB.</p>
+<dd><p>The table prefix.</p>
+<p>Generally used to differentiate Omeka installations sharing a database.</p>
 </dd></dl>
 
 <dl class="attr">
 <dt id="Omeka_Db_Table::$_db">
 <em class="property">property </em><tt class="descname">_db</tt><a class="headerlink" href="#Omeka_Db_Table::$_db" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>The Omeka database object.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="Omeka_Db_Table::__construct">
 <tt class="descname">__construct</tt><big>(</big><em>string $targetModel</em>, <em>Omeka_Db $db</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::__construct" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dd><p>Construct the database table object.</p>
+<p>Do not instantiate this by itself. Access instances only via Omeka_Db::getTable().</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>$targetModel</strong> (<em>string</em>) &#8211; Class name of the table&#8217;s model.</li>
-<li><strong>$db</strong> (<em>Omeka_Db</em>) &#8211; Database object to use for queries.</li>
+<li><strong>$db</strong> (<a class="reference internal" href="../Db.html#Omeka_Db" title="Omeka_Db"><em>Omeka_Db</em></a>) &#8211; Database object to use for queries.</li>
 </ul>
 </td>
 </tr>
@@ -93,8 +108,9 @@ Generally used to differentiate Omeka installations sharing a DB.</p>
 <dl class="method">
 <dt id="Omeka_Db_Table::__call">
 <tt class="descname">__call</tt><big>(</big><em>string $m</em>, <em>array $a</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::__call" title="Permalink to this definition">¶</a></dt>
-<dd><p>Delegate to the DB adapter. Used primarily as a convenience method.</p>
-<p>For example, now you can call fetchOne() from this table object.</p>
+<dd><p>Delegate to the database adapter.</p>
+<p>Used primarily as a convenience method. For example, you can call fetchOne() and fetchAll() directly from this
+object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -143,7 +159,7 @@ Generally used to differentiate Omeka installations sharing a DB.</p>
 <dl class="method">
 <dt id="Omeka_Db_Table::hasColumn">
 <tt class="descname">hasColumn</tt><big>(</big><em>string $field</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::hasColumn" title="Permalink to this definition">¶</a></dt>
-<dd><p>Determine whether or not a model has a given column.</p>
+<dd><p>Determine whether a model has a given column.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -164,6 +180,9 @@ Generally used to differentiate Omeka installations sharing a DB.</p>
 <dt id="Omeka_Db_Table::getColumns">
 <tt class="descname">getColumns</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Db_Table::getColumns" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve a list of all the columns for a given model.</p>
+<p>This should be here and not in the model class because get_class_vars()
+returns private/protected properties when called from within the class.
+Will only return public properties when called in this fashion.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -178,8 +197,8 @@ Generally used to differentiate Omeka installations sharing a DB.</p>
 <dt id="Omeka_Db_Table::getTableName">
 <tt class="descname">getTableName</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Db_Table::getTableName" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve the name of the table for the current table (used in SQL
-statements).
-If the table name has not been set, then it will inflect the table name</p>
+statements).</p>
+<p>If the table name has not been set, it will inflect the table name.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -194,8 +213,8 @@ If the table name has not been set, then it will inflect the table name</p>
 <dt id="Omeka_Db_Table::setTableName">
 <tt class="descname">setTableName</tt><big>(</big><em>string $name</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::setTableName" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the name of the database table accessed by this class.</p>
-<p>If no name is provided, it will inflect the table name from the name of
-the model defined in the constructor.  For example, Item &#8211;&gt; items</p>
+<p>If no name is provided, it will inflect the table name from the name of the model defined in the constructor. For
+example, Item -&gt; items.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -229,21 +248,16 @@ the model defined in the constructor.  For example, Item &#8211;&gt; items</p>
 <dl class="method">
 <dt id="Omeka_Db_Table::setTablePrefix">
 <tt class="descname">setTablePrefix</tt><big>(</big><em>string|null $tablePrefix</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::setTablePrefix" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the table prefix.  Defaults to the table prefix defined by the
-Omeka_Db instance.</p>
-<p>In most cases, this should remain the default.  However, edge cases may
-require customization, e.g. creating wrappers for tables generated by
-other applications.</p>
+<dd><p>Set the table prefix.</p>
+<p>Defaults to the table prefix defined by the Omeka_Db instance. This should remain the default in most cases.
+However, edge cases may require customization, e.g. creating wrappers for tables generated by other applications.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>$tablePrefix</strong> (<em>string|null</em>) &#8211; </li>
 </ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
 </td>
 </tr>
 </tbody>
@@ -274,8 +288,7 @@ other applications.</p>
 <dt id="Omeka_Db_Table::findAll">
 <tt class="descname">findAll</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Db_Table::findAll" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a set of objects corresponding to all the rows in the table</p>
-<p>WARNING: This will be memory intensive and is thus not recommended for
-large data sets.</p>
+<p>WARNING: This will be memory intensive and is thus not recommended for large data sets.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -290,13 +303,13 @@ large data sets.</p>
 <dt id="Omeka_Db_Table::findPairsForSelectForm">
 <tt class="descname">findPairsForSelectForm</tt><big>(</big><em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::findPairsForSelectForm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve an array of key=&gt;value pairs that can be used as options in a
-&lt;select&gt; form input.  As it applies to the given table.</p>
+&lt;select&gt; form input.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$options</strong> (<em>array</em>) &#8211; (optional) Set of parameters for searching/filtering results.</li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; (optional) Set of parameters for searching/ filtering results.</li>
 </ul>
 </td>
 </tr>
@@ -311,9 +324,8 @@ large data sets.</p>
 <dt id="Omeka_Db_Table::_getColumnPairs">
 <tt class="descname">_getColumnPairs</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Db_Table::_getColumnPairs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve the array of columns that are used by findPairsForSelectForm().</p>
-<p>This is a template method because these columns are different for every
-table, but the underlying logic that retrieves the pairs from the database
-is the same in every instance.  This is an attempt to stay DRY.</p>
+<p>This is a template method because these columns are different for every table, but the underlying logic that
+retrieves the pairs from the database is the same in every instance.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -333,7 +345,7 @@ is the same in every instance.  This is an attempt to stay DRY.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$params</strong> (<em>array</em>) &#8211; A set of parameters by which to filter the objects that get returned from the DB.</li>
+<li><strong>$params</strong> (<em>array</em>) &#8211; A set of parameters by which to filter the objects that get returned from the database.</li>
 <li><strong>$limit</strong> (<em>integer</em>) &#8211; Number of objects to return per &#8220;page&#8221;.</li>
 <li><strong>$page</strong> (<em>integer</em>) &#8211; Page to retrieve.</li>
 </ul>
@@ -349,7 +361,7 @@ is the same in every instance.  This is an attempt to stay DRY.</p>
 <dl class="method">
 <dt id="Omeka_Db_Table::getSelect">
 <tt class="descname">getSelect</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Db_Table::getSelect" title="Permalink to this definition">¶</a></dt>
-<dd><p>Retrieve a SELECT object for this table.</p>
+<dd><p>Retrieve a select object for this table.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -363,7 +375,7 @@ is the same in every instance.  This is an attempt to stay DRY.</p>
 <dl class="method">
 <dt id="Omeka_Db_Table::getSelectForFindBy">
 <tt class="descname">getSelectForFindBy</tt><big>(</big><em>array $params = Array</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::getSelectForFindBy" title="Permalink to this definition">¶</a></dt>
-<dd><p>Retrieve a SELECT object that has had search filters applied to it.</p>
+<dd><p>Retrieve a select object that has had search filters applied to it.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -383,7 +395,7 @@ is the same in every instance.  This is an attempt to stay DRY.</p>
 <dl class="method">
 <dt id="Omeka_Db_Table::getSelectForFind">
 <tt class="descname">getSelectForFind</tt><big>(</big><em>integer $recordId</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::getSelectForFind" title="Permalink to this definition">¶</a></dt>
-<dd><p>Retrieve a SELECT object that is used for retrieving a single record from
+<dd><p>Retrieve a select object that is used for retrieving a single record from
 the database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -404,21 +416,16 @@ the database.</p>
 <dl class="method">
 <dt id="Omeka_Db_Table::applySearchFilters">
 <tt class="descname">applySearchFilters</tt><big>(</big><em>Omeka_Db_Select $select</em>, <em>array $params</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::applySearchFilters" title="Permalink to this definition">¶</a></dt>
-<dd><p>Apply a set of filters to a Select object based on the parameters
-given.</p>
-<p>This template method must be implemented by subclasses in order to define
-search behaviors.</p>
+<dd><p>Apply a set of filters to a Select object based on the parameters given.</p>
+<p>This template method must be implemented by subclasses in order to define search behaviors.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>$select</strong> (<a class="reference internal" href="Select.html#Omeka_Db_Select" title="Omeka_Db_Select"><em>Omeka_Db_Select</em></a>) &#8211; </li>
 <li><strong>$params</strong> (<em>array</em>) &#8211; </li>
 </ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
 </td>
 </tr>
 </tbody>
@@ -428,7 +435,7 @@ search behaviors.</p>
 <dl class="method">
 <dt id="Omeka_Db_Table::applySorting">
 <tt class="descname">applySorting</tt><big>(</big><em>Omeka_Db_Select $select</em>, <em>string $sortField</em>, <em>string $sortDir</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::applySorting" title="Permalink to this definition">¶</a></dt>
-<dd><p>Applies default column-based sorting for a table.</p>
+<dd><p>Apply default column-based sorting for a table.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -447,7 +454,7 @@ search behaviors.</p>
 <dl class="method">
 <dt id="Omeka_Db_Table::applyPagination">
 <tt class="descname">applyPagination</tt><big>(</big><em>Zend_Db_Select $select</em>, <em>integer $limit</em>, <em>integer|null $page</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::applyPagination" title="Permalink to this definition">¶</a></dt>
-<dd><p>Apply pagination to a SELECT object via the LIMIT and OFFSET clauses.</p>
+<dd><p>Apply pagination to a select object via the LIMIT and OFFSET clauses.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -476,7 +483,7 @@ search behaviors.</p>
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>$sqlWhereClause</strong> (<em>string</em>) &#8211; </li>
-<li><strong>$params</strong> (<em>array</em>) &#8211; optional Set of parameters to bind to the WHERE clause.  Used to prevent security flaws.</li>
+<li><strong>$params</strong> (<em>array</em>) &#8211; optional Set of parameters to bind to the WHERE clause. Used to prevent security flaws.</li>
 <li><strong>$findOne</strong> (<em>boolean</em>) &#8211; optional Whether or not to retrieve a single record or the whole set (retrieve all by default).</li>
 </ul>
 </td>
@@ -511,8 +518,7 @@ search behaviors.</p>
 <dl class="method">
 <dt id="Omeka_Db_Table::getSelectForCount">
 <tt class="descname">getSelectForCount</tt><big>(</big><em>array $params = Array</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::getSelectForCount" title="Permalink to this definition">¶</a></dt>
-<dd><p>Retrieve a Select object that is used to retrieve a count of all the rows
-in the table.</p>
+<dd><p>Retrieve a select object used to retrieve a count of all the table rows.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -532,9 +538,8 @@ in the table.</p>
 <dl class="method">
 <dt id="Omeka_Db_Table::checkExists">
 <tt class="descname">checkExists</tt><big>(</big><em>int $id</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::checkExists" title="Permalink to this definition">¶</a></dt>
-<dd><p>Check whether or not a given row exists in the database.</p>
-<p>Currently used to verify that a row exists even though the current user
-may not have permissions to access it.</p>
+<dd><p>Check whether a given row exists in the database.</p>
+<p>Currently used to verify that a row exists even though the current user may not have permissions to access it.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -575,7 +580,7 @@ may not have permissions to access it.</p>
 <dl class="method">
 <dt id="Omeka_Db_Table::fetchObject">
 <tt class="descname">fetchObject</tt><big>(</big><em>string $sql</em>, <em>string $params = Array</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::fetchObject" title="Permalink to this definition">¶</a></dt>
-<dd><p>Retrieve a single record from the database.</p>
+<dd><p>Retrieve a single record object from the database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -617,8 +622,7 @@ may not have permissions to access it.</p>
 <dt id="Omeka_Db_Table::_getSortParams">
 <tt class="descname">_getSortParams</tt><big>(</big><em>array $params</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::_getSortParams" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get and parse sorting parameters to pass to applySorting.</p>
-<p>A sorting direction of &#8216;ASC&#8217; will be used if no direction parameter is
-passed.</p>
+<p>A sorting direction of &#8216;ASC&#8217; will be used if no direction parameter is passed.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -668,6 +672,12 @@ passed.</p>
             <p class="logo"><a href="../../../../index.html">
               <img class="logo" src="../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Select.html"
+                        title="previous chapter">Omeka_Db_Select</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../Db.html"
+                        title="next chapter">Omeka_Db</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -701,7 +711,16 @@ passed.</p>
         <li class="right" style="margin-right: 10px">
           <a href="../../../../genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="../Db.html" title="Omeka_Db"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Select.html" title="Omeka_Db_Select"
+             >previous</a> |</li>
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" >Libraries/Omeka/Db</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

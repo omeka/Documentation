@@ -16,8 +16,8 @@ Omeka_Application_Resource_Helpers
     
         Define the custom response format contexts for Omeka.
         
-        Plugin writers should use the 'define_response_contexts' filter to modify
-        or expand the list of formats that existing controllers may respond to.
+        Plugin writers should use the 'define_response_contexts' filter to modify or expand the list of formats that
+        existing controllers may respond to.
         
         
         Example of a definition of a response context through the ZF API:

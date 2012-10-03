@@ -43,8 +43,7 @@ Omeka_Record_Builder_AbstractBuilder
     
         Set basic metadata for the record.
         
-        Note that the columns to be set must be specified in the
-        $_settableProperties property of subclassed Builders.
+        Note that the columns to be set must be specified in the $_settableProperties property of subclassed Builders.
         
         :param array $metadata: 
         :returns: void
@@ -59,8 +58,8 @@ Omeka_Record_Builder_AbstractBuilder
     
         Get the record that is being acted upon by the builder.
         
-        When an Omeka_Record_AbstractRecord instance has been provided via
-        setRecord(), that will be returned.  If a record ID has been provided, 
+        When an Omeka_Record_AbstractRecord instance has been provided via setRecord(), that will be returned.  If a record
+        ID has been provided, 
         then the appropriate record will be returned.
         
         Otherwise, a new instance of Omeka_Record_AbstractRecord will be returned.

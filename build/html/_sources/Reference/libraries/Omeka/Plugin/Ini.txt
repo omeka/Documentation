@@ -22,8 +22,7 @@ Omeka_Plugin_Ini
     
         Retrieve a value in plugin.ini for a given key.
         
-        Will return a null value if no value can be found in the ini file for the
-        key.
+        Will return a null value if no value can be found in the ini file for the key.
         
         :param string $pluginDirName: Plugin name.
         :param string $iniKeyName: INI key to retrieve.

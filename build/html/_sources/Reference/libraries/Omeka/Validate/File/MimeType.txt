@@ -16,8 +16,7 @@ Omeka_Validate_File_MimeType
     
         Constructor.
         
-        Use the 'file_mime_type_whitelist' option if nothing is passed in as the
-        default.
+        Use the 'file_mime_type_whitelist' option if nothing is passed in as the default.
         
         :param mixed $options: 
         :returns: void

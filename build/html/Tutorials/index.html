@@ -24,7 +24,7 @@
     <script type="text/javascript" src="../_static/doctools.js"></script>
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../index.html" />
     <link rel="next" title="Migrating your code to Omeka 2.0" href="migratingCodeTo2.0.html" />
-    <link rel="prev" title="UsersActivations" href="../Reference/models/UsersActivations.html" /> 
+    <link rel="prev" title="Omeka_View_Helper_Url" href="../Reference/views/helpers/Url.html" /> 
   </head>
   <body>
     <div class="related">
@@ -37,7 +37,7 @@
           <a href="migratingCodeTo2.0.html" title="Migrating your code to Omeka 2.0"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../Reference/models/UsersActivations.html" title="UsersActivations"
+          <a href="../Reference/views/helpers/Url.html" title="Omeka_View_Helper_Url"
              accesskey="P">previous</a> |</li>
         <li><a href="../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
       </ul>
@@ -53,23 +53,32 @@
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="migratingCodeTo2.0.html">Migrating your code to Omeka 2.0</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="migratingCodeTo2.0.html#principles-of-omeka-2-0">Principles of Omeka 2.0</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="migratingCodeTo2.0.html#upgrading-plugins">Upgrading Plugins</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="migratingCodeTo2.0.html#controllers">Controllers</a></li>
-<li class="toctree-l4"><a class="reference internal" href="migratingCodeTo2.0.html#views">Views</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="migratingCodeTo2.0.html#admin-views">Admin Views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migratingCodeTo2.0.html#upgrading-plugins">Upgrading Plugins</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="migratingCodeTo2.0.html#controllers">Controllers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="migratingCodeTo2.0.html#views">Views</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="migratingCodeTo2.0.html#admin-views">Admin Views</a></li>
+<li class="toctree-l4"><a class="reference internal" href="migratingCodeTo2.0.html#edit-add-views">Edit/Add Views</a></li>
+<li class="toctree-l4"><a class="reference internal" href="migratingCodeTo2.0.html#browse-views">Browse Views</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="migratingCodeTo2.0.html#edit-add-views">Edit/Add Views</a></li>
-<li class="toctree-l3"><a class="reference internal" href="migratingCodeTo2.0.html#browse-views">Browse Views</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="principlesOfOmeka2.html">Principles of Omeka 2.0</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="principlesOfOmeka2.html#record-centric">Record-centric</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principlesOfOmeka2.html#function-naming-conventions">Function Naming Conventions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="principlesOfOmeka2.html#zend-2-0-class-naming-conventions">Zend 2.0 Class Naming Conventions</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="settingUpPHPUnit.html">Setting up PHPUnit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="understandingFilters.html">Understanding Filters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="understandingFormElements.html">Understanding Form Elements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="understandingHooks.html">Understanding Hooks</a></li>
 <li class="toctree-l1"><a class="reference internal" href="understandingOmekaControllerAbstractActionController.html">Understanding Omeka_Controller_AbstractActionController</a></li>
 <li class="toctree-l1"><a class="reference internal" href="understandingOmekaRecordAbstractRecord.html">Understanding Omeka_Record_AbstractRecord</a></li>
+<li class="toctree-l1"><a class="reference internal" href="understandingOmeka_Plugin_AbstractPlugin.html">Understanding Omeka_Plugin_AbstractPlugin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="understandingPartials.html">Understanding Partials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="workingWithTheAdminTheme.html">Working with the admin theme</a></li>
 </ul>
 </div>
@@ -85,8 +94,8 @@
               <img class="logo" src="../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../Reference/models/UsersActivations.html"
-                        title="previous chapter">UsersActivations</a></p>
+  <p class="topless"><a href="../Reference/views/helpers/Url.html"
+                        title="previous chapter">Omeka_View_Helper_Url</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="migratingCodeTo2.0.html"
                         title="next chapter">Migrating your code to Omeka 2.0</a></p>
@@ -127,7 +136,7 @@
           <a href="migratingCodeTo2.0.html" title="Migrating your code to Omeka 2.0"
              >next</a> |</li>
         <li class="right" >
-          <a href="../Reference/models/UsersActivations.html" title="UsersActivations"
+          <a href="../Reference/views/helpers/Url.html" title="Omeka_View_Helper_Url"
              >previous</a> |</li>
         <li><a href="../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
       </ul>

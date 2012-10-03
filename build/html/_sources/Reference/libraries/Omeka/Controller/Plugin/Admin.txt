@@ -13,8 +13,7 @@ Omeka_Controller_Plugin_Admin
 
     .. php:attr:: _adminWhitelist
     
-        Controller/Action list for admin actions that do not require being
-        logged-in
+        Controller/Action list for admin actions that do not require being logged-in
 
     .. php:method:: routeStartup(Zend_Controller_Request_Abstract $request)
     

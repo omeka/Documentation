@@ -23,10 +23,8 @@ Omeka_Test_Helper_Plugin
 
     .. php:method:: initialize(string $pluginName)
     
-        Initializes the plugin hooks and filters fired in the core resources for a
-        plugin
-        Note: Normally used in the setUp() function of the subclasses that test
-        plugins.
+        Initializes the plugin hooks and filters fired in the core resources for a plugin
+        Note: Normally used in the setUp() function of the subclasses that test plugins.
         
         :param string $pluginName: If omitted, initialize all installed plugins.
         :returns: void
@@ -71,10 +69,9 @@ Omeka_Test_Helper_Plugin
     
         Lazy-loading for helper properties.
         
-        When a property is not set, attempts to load a default through standard
-        Omeka global state.  If this state is unavailable or undesireable,
-        use the set*() methods before calling any of the other public methods of
-        this class.
+        When a property is not set, attempts to load a default through standard Omeka global state.  If this state is
+        unavailable or undesireable,
+        use the set*() methods before calling any of the other public methods of this class.
         
         :param unknown $name: 
         :returns: mixed

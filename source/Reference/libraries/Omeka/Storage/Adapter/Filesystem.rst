@@ -33,8 +33,7 @@ Omeka_Storage_Adapter_Filesystem
         Check whether the adapter is set up correctly to be able to store
         files.
         
-        Specifically, this checks to see if the local storage directory is
-        writable.
+        Specifically, this checks to see if the local storage directory is writable.
         
         :returns: boolean
 

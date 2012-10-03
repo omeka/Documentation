@@ -22,7 +22,10 @@
     <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
-    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../../index.html" /> 
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../../index.html" />
+    <link rel="up" title="Libraries/Omeka/File/Ingest" href="index.html" />
+    <link rel="next" title="Omeka_File_Ingest_AbstractSourceIngest" href="AbstractSourceIngest.html" />
+    <link rel="prev" title="Libraries/Omeka/File/Ingest" href="index.html" /> 
   </head>
   <body>
     <div class="related">
@@ -31,7 +34,17 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="AbstractSourceIngest.html" title="Omeka_File_Ingest_AbstractSourceIngest"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Libraries/Omeka/File/Ingest"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+          <li><a href="../../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka/File</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Libraries/Omeka/File/Ingest</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -52,10 +65,12 @@
 - Inserting a new record into the files table that corresponds to the transferred file&#8217;s metadata.
 - Returning a collection of the records associated with the ingested files.</p>
 <p>Typical usage is via the factory() method:</p>
-<p>&lt;code&gt;
-$ingest = Omeka_File_Ingest_AbstractIngest::factory(&#8216;Url&#8217;, $item);
-$fileRecords = $ingest-&gt;ingest(&#8216;<a class="reference external" href="http://www.example.com">http://www.example.com</a>&#8216;);
-&lt;/code&gt;</p>
+<blockquote>
+<div><div class="highlight-php"><div class="highlight"><pre><span class="nv">$ingest</span> <span class="o">=</span> <span class="nx">Omeka_File_Ingest_AbstractIngest</span><span class="o">::</span><span class="na">factory</span><span class="p">(</span><span class="s1">&#39;Url&#39;</span><span class="p">,</span> <span class="nv">$item</span><span class="p">);</span>
+<span class="nv">$fileRecords</span> <span class="o">=</span> <span class="nv">$ingest</span><span class="o">-&gt;</span><span class="na">ingest</span><span class="p">(</span><span class="s1">&#39;http://www.example.com&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div></blockquote>
 <dl class="attr">
 <dt id="Omeka_File_Ingest_AbstractIngest::$_item">
 <em class="property">property </em><tt class="descname">_item</tt><a class="headerlink" href="#Omeka_File_Ingest_AbstractIngest::$_item" title="Permalink to this definition">¶</a></dt>
@@ -139,9 +154,8 @@ $fileRecords = $ingest-&gt;ingest(&#8216;<a class="reference external" href="htt
 <dt id="Omeka_File_Ingest_AbstractIngest::_transferFile">
 <tt class="descname">_transferFile</tt><big>(</big><em>array $fileInfo</em>, <em>string $originalFilename</em><big>)</big><a class="headerlink" href="#Omeka_File_Ingest_AbstractIngest::_transferFile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Transfer the file to Omeka.</p>
-<p>To indicate validation errors, Omeka_File_Ingest_InvalidException can be
-thrown at any time.  To indicate other types of non-recoverable errors
-related to file ingest, throw Omeka_File_Ingest_Exception.</p>
+<p>To indicate validation errors, Omeka_File_Ingest_InvalidException can be thrown at any time.  To indicate other
+types of non-recoverable errors related to file ingest, throw Omeka_File_Ingest_Exception.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -206,9 +220,8 @@ can be ingested from a single identifier.</p>
 <dt id="Omeka_File_Ingest_AbstractIngest::ingest">
 <tt class="descname">ingest</tt><big>(</big><em>mixed $fileInfo</em><big>)</big><a class="headerlink" href="#Omeka_File_Ingest_AbstractIngest::ingest" title="Permalink to this definition">¶</a></dt>
 <dd><p>Ingest based on arbitrary file identifier info.</p>
-<p>If this is an array that has a &#8216;metadata&#8217; key, that should be an array
-representing element text metadata to assign to the file.  See
-ActsAsElementText::addElementTextsByArray() for more details.</p>
+<p>If this is an array that has a &#8216;metadata&#8217; key, that should be an array representing element text metadata to assign
+to the file.  See ActsAsElementText::addElementTextsByArray() for more details.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -289,10 +302,9 @@ so they don&#8217;t actually kill the file ingest process.</p>
 <dt id="Omeka_File_Ingest_AbstractIngest::_getDestination">
 <tt class="descname">_getDestination</tt><big>(</big><em>string $fromFilename</em><big>)</big><a class="headerlink" href="#Omeka_File_Ingest_AbstractIngest::_getDestination" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve the destination path for the file to be transferred.</p>
-<p>This will generate an archival filename in order to prevent naming
-conflicts between ingested files.</p>
-<p>This should be used as necessary by Omeka_File_Ingest_AbstractIngest
-implementations in order to determine where to transfer any given file.</p>
+<p>This will generate an archival filename in order to prevent naming conflicts between ingested files.</p>
+<p>This should be used as necessary by Omeka_File_Ingest_AbstractIngest implementations in order to determine where to
+transfer any given file.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -334,19 +346,16 @@ implementations in order to determine where to transfer any given file.</p>
 <dt id="Omeka_File_Ingest_AbstractIngest::_validateFile">
 <tt class="descname">_validateFile</tt><big>(</big><em>string $filePath</em>, <em>array $fileInfo</em><big>)</big><a class="headerlink" href="#Omeka_File_Ingest_AbstractIngest::_validateFile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Validate a file that has been transferred to Omeka.</p>
-<p>Implementations of Omeka_File_Ingest_AbstractIngest should use this to
-validate the uploaded file based on user-defined security criteria.</p>
-<p>Important: $fileInfo may need to contain the following keys in order to
-work with particular Zend_Validate_File_* validation classes:
-- &#8216;name&#8217;: string filename (for Zend_Validate_File_Extension) If ZF is
-unable to determine the file extension when validating, it will check the
-&#8216;name&#8217; attribute instead.  Current use cases involve saving the file to a
-temporary location before transferring to Omeka. Most temporary files do
-not maintain the original file extension.
-- &#8216;type&#8217;: string MIME type (for Zend_Validate_File_MimeType) If ZF is
-unable to determine the mime type from the transferred file.  Unless the
-server running Omeka has a mime_magic file or has installed the FileInfo
-extension, this will be necessary.</p>
+<p>Implementations of Omeka_File_Ingest_AbstractIngest should use this to validate the uploaded file based on
+user-defined security criteria.</p>
+<p>Important: $fileInfo may need to contain the following keys in order to work with particular Zend_Validate_File_*
+validation classes:
+- &#8216;name&#8217;: string filename (for Zend_Validate_File_Extension) If ZF is unable to determine the file extension when
+validating, it will check the &#8216;name&#8217; attribute instead.  Current use cases involve saving the file to a temporary
+location before transferring to Omeka. Most temporary files do not maintain the original file extension.
+- &#8216;type&#8217;: string MIME type (for Zend_Validate_File_MimeType) If ZF is unable to determine the mime type from the
+transferred file.  Unless the server running Omeka has a mime_magic file or has installed the FileInfo extension,
+this will be necessary.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -377,6 +386,12 @@ extension, this will be necessary.</p>
             <p class="logo"><a href="../../../../../index.html">
               <img class="logo" src="../../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Libraries/Omeka/File/Ingest</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="AbstractSourceIngest.html"
+                        title="next chapter">Omeka_File_Ingest_AbstractSourceIngest</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -410,7 +425,17 @@ extension, this will be necessary.</p>
         <li class="right" style="margin-right: 10px">
           <a href="../../../../../genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="AbstractSourceIngest.html" title="Omeka_File_Ingest_AbstractSourceIngest"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Libraries/Omeka/File/Ingest"
+             >previous</a> |</li>
+        <li><a href="../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+          <li><a href="../../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka/File</a> &raquo;</li>
+          <li><a href="index.html" >Libraries/Omeka/File/Ingest</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

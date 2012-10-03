@@ -5,6 +5,7 @@ Documentation for Omeka
 #######################
 
 .. toctree::
+   :maxdepth: 1
    
    Reference/index
    Tutorials/index

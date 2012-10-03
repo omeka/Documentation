@@ -23,16 +23,13 @@ Omeka_Acl_Assert_User
         
         Non-authenticated users (null role) have no access.
         
-        There exists a set of privileges (A) that are always allowed, provided
-        that the user role and user resource are the same (editing own info,
-        changing own password, etc.).
+        There exists a set of privileges (A) that are always allowed, provided that the user role and user resource are the
+        same (editing own info, changing own password, etc.).
         
-        There also exists a set of privileges (B) that are always denied when
-        performed on one's own user account (deleting own account, changing own
-        role, etc.)
+        There also exists a set of privileges (B) that are always denied when performed on one's own user account (deleting
+        own account, changing own role, etc.)
         
-        The super user can do anything that isn't on (B), e.g. the super user
-        account cannot modify its own role.
+        The super user can do anything that isn't on (B), e.g. the super user account cannot modify its own role.
         
         All other users are limited to (A).
         

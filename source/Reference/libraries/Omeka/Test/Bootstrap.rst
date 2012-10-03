@@ -12,8 +12,8 @@ Omeka_Test_Bootstrap
     
         Set resource container
         
-        By default, if a resource callback has a non-null return value, this value
-        will be stored in a container using the resource name as the key.
+        By default, if a resource callback has a non-null return value, this value will be stored in a container using the
+        resource name as the key.
         
         Containers must be objects, and must allow setting public properties.
         
@@ -30,8 +30,8 @@ Omeka_Test_Bootstrap
     
         Determine if a resource has been stored in the container
         
-        During bootstrap resource initialization, you may return a value. If you
-        do, it will be stored in the {@link setContainer() container}.
+        During bootstrap resource initialization, you may return a value. If you do, it will be stored in the {@link
+        setContainer() container}.
         You can use this method to determine if a value was stored.
         
         :param unknown $name: 
@@ -41,8 +41,8 @@ Omeka_Test_Bootstrap
     
         Retrieve a resource from the container
         
-        During bootstrap resource initialization, you may return a value. If you
-        do, it will be stored in the {@link setContainer() container}.
+        During bootstrap resource initialization, you may return a value. If you do, it will be stored in the {@link
+        setContainer() container}.
         You can use this method to retrieve that value.
         
         If no value was returned, this will return a null value.

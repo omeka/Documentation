@@ -61,13 +61,12 @@ Omeka_File_Derivative_Image_Creator
     
         Generate a derivative image from an existing file stored in Omeka.
         
-        This image will be generated based on a constraint given in pixels.  For
-        example, if the constraint is 500, the resulting image file will be scaled
-        so that the largest side is 500px. If the image is less than 500px on both
+        This image will be generated based on a constraint given in pixels.  For example, if the constraint is 500, the
+        resulting image file will be scaled so that the largest side is 500px. If the image is less than 500px on both
         sides, the image will not be resized.
         
-        Derivative images will only be generated for files with mime types that
-        can be identified with ImageMagick's 'identify' command
+        Derivative images will only be generated for files with mime types that can be identified with ImageMagick's
+        'identify' command
         
         :param unknown $origPath: 
         :param unknown $newPath: 
@@ -83,18 +82,15 @@ Omeka_File_Derivative_Image_Creator
 
     .. php:method:: _isDerivable(string $filePath)
     
-        Returns true only if ImageMagick is able to make derivative images of that
-        file based
-        upon whether or not it can be identified by ImageMagick's 'identify'
-        binary. Otherwise returns false.
+        Returns true only if ImageMagick is able to make derivative images of that file based
+        upon whether or not it can be identified by ImageMagick's 'identify' binary. Otherwise returns false.
         
         :param string $filePath: 
         :returns: boolean
 
     .. php:method:: _isIdentifiable(string $filePath)
     
-        Returns true only if the file can be identified by ImageMagick's
-        'identify' binary
+        Returns true only if the file can be identified by ImageMagick's 'identify' binary
         
         :param string $filePath: 
         :returns: boolean
@@ -102,21 +98,18 @@ Omeka_File_Derivative_Image_Creator
     .. php:method:: isValidImageMagickPath($dirToIm)
     
         Determine whether or not the path given to ImageMagick is valid.
-        Both the convert and identify binaries must be within the directory and
-        executable.
+        Both the convert and identify binaries must be within the directory and executable.
         
         :param unknown $dirToIm: 
         :returns: boolean
 
     .. php:method:: getDefaultImageMagickDir()
     
-        Retrieve the path to the directory containing ImageMagick's convert
-        utility.
+        Retrieve the path to the directory containing ImageMagick's convert utility.
         Th
         
         Uses the 'which' command-line utility to detect the path to 'convert'. 
-        Note that this will only work if the convert utility is in PHP's PATH and
-        thus can be located by 'which'.
+        Note that this will only work if the convert utility is in PHP's PATH and thus can be located by 'which'.
         
         :returns: string The path to the directory if it can be found.  Otherwise returns an empty string.
 

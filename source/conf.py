@@ -120,7 +120,8 @@ html_theme = u'default'
 # documentation.
 html_theme_options = {"sidebarbgcolor": "#F5F6F1",
                       "sidebarlinkcolor": "#4C3939",
-                      "sidebartextcolor": "#4C3939", 
+                      "sidebartextcolor": "#4C3939",
+# breaks local sphinx "sidebarwidth": "300",
                       "textcolor": "#4C3939",
                       "linkcolor": "#B86644",
                       "visitedlinkcolor": "#B86644", 

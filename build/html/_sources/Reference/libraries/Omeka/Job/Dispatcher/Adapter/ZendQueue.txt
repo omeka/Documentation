@@ -11,12 +11,12 @@ Omeka_Job_Dispatcher_Adapter_ZendQueue
     Required options include 'adapter' and 'options', which correspond to the first and second arguments to Zend_Queue's constructor respectively.
     
     For example, it would be configured like so in config.ini:
-    <code>
-    jobs.dispatcher = "Omeka_Job_Dispatcher_ZendQueue"
-    jobs.adapterOptions.adapter = "PlatformJobQueue"
-    jobs.adapterOptions.options.host = "127.0.0.1"
-    jobs.adapterOptions.options.password = "foobar"
-    </code>
+        .. code-block:: php 
+    
+         jobs.dispatcher = "Omeka_Job_Dispatcher_ZendQueue"
+         jobs.adapterOptions.adapter = "PlatformJobQueue"
+         jobs.adapterOptions.options.host = "127.0.0.1"
+         jobs.adapterOptions.options.password = "foobar"
 
     .. php:attr:: _queue
     

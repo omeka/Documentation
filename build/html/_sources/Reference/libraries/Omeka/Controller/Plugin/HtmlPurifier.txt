@@ -19,8 +19,7 @@ Omeka_Controller_Plugin_HtmlPurifier
 
     .. php:method:: preDispatch(Zend_Controller_Request_Abstract $request)
     
-        Determine whether or not to filter form submissions for various
-        controllers.
+        Determine whether or not to filter form submissions for various controllers.
         
         :param Zend_Controller_Request_Abstract $request: 
         :returns: void

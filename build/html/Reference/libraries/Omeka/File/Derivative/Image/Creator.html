@@ -22,7 +22,10 @@
     <script type="text/javascript" src="../../../../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../../../../_static/doctools.js"></script>
-    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../../../index.html" /> 
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../../../index.html" />
+    <link rel="up" title="Libraries/Omeka/File/Derivative/Image" href="index.html" />
+    <link rel="next" title="Libraries/Omeka/File/Extract" href="../../Extract/index.html" />
+    <link rel="prev" title="Libraries/Omeka/File/Derivative/Image" href="index.html" /> 
   </head>
   <body>
     <div class="related">
@@ -31,7 +34,18 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="../../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="../../Extract/index.html" title="Libraries/Omeka/File/Extract"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Libraries/Omeka/File/Derivative/Image"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+          <li><a href="../../../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../../../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="../../index.html" >Libraries/Omeka/File</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka/File/Derivative</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Libraries/Omeka/File/Derivative/Image</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -167,12 +181,11 @@
 <dt id="Omeka_File_Derivative_Image_Creator::_createImage">
 <tt class="descname">_createImage</tt><big>(</big><em>$origPath</em>, <em>$newPath</em>, <em>$convertArgs</em><big>)</big><a class="headerlink" href="#Omeka_File_Derivative_Image_Creator::_createImage" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate a derivative image from an existing file stored in Omeka.</p>
-<p>This image will be generated based on a constraint given in pixels.  For
-example, if the constraint is 500, the resulting image file will be scaled
-so that the largest side is 500px. If the image is less than 500px on both
+<p>This image will be generated based on a constraint given in pixels.  For example, if the constraint is 500, the
+resulting image file will be scaled so that the largest side is 500px. If the image is less than 500px on both
 sides, the image will not be resized.</p>
-<p>Derivative images will only be generated for files with mime types that
-can be identified with ImageMagick&#8217;s &#8216;identify&#8217; command</p>
+<p>Derivative images will only be generated for files with mime types that can be identified with ImageMagick&#8217;s
+&#8216;identify&#8217; command</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -212,10 +225,8 @@ can be identified with ImageMagick&#8217;s &#8216;identify&#8217; command</p>
 <dl class="method">
 <dt id="Omeka_File_Derivative_Image_Creator::_isDerivable">
 <tt class="descname">_isDerivable</tt><big>(</big><em>string $filePath</em><big>)</big><a class="headerlink" href="#Omeka_File_Derivative_Image_Creator::_isDerivable" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns true only if ImageMagick is able to make derivative images of that
-file based
-upon whether or not it can be identified by ImageMagick&#8217;s &#8216;identify&#8217;
-binary. Otherwise returns false.</p>
+<dd><p>Returns true only if ImageMagick is able to make derivative images of that file based
+upon whether or not it can be identified by ImageMagick&#8217;s &#8216;identify&#8217; binary. Otherwise returns false.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -235,8 +246,7 @@ binary. Otherwise returns false.</p>
 <dl class="method">
 <dt id="Omeka_File_Derivative_Image_Creator::_isIdentifiable">
 <tt class="descname">_isIdentifiable</tt><big>(</big><em>string $filePath</em><big>)</big><a class="headerlink" href="#Omeka_File_Derivative_Image_Creator::_isIdentifiable" title="Permalink to this definition">¶</a></dt>
-<dd><p>Returns true only if the file can be identified by ImageMagick&#8217;s
-&#8216;identify&#8217; binary</p>
+<dd><p>Returns true only if the file can be identified by ImageMagick&#8217;s &#8216;identify&#8217; binary</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -257,8 +267,7 @@ binary. Otherwise returns false.</p>
 <dt id="Omeka_File_Derivative_Image_Creator::isValidImageMagickPath">
 <tt class="descname">isValidImageMagickPath</tt><big>(</big><em>$dirToIm</em><big>)</big><a class="headerlink" href="#Omeka_File_Derivative_Image_Creator::isValidImageMagickPath" title="Permalink to this definition">¶</a></dt>
 <dd><p>Determine whether or not the path given to ImageMagick is valid.
-Both the convert and identify binaries must be within the directory and
-executable.</p>
+Both the convert and identify binaries must be within the directory and executable.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -278,12 +287,10 @@ executable.</p>
 <dl class="method">
 <dt id="Omeka_File_Derivative_Image_Creator::getDefaultImageMagickDir">
 <tt class="descname">getDefaultImageMagickDir</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_File_Derivative_Image_Creator::getDefaultImageMagickDir" title="Permalink to this definition">¶</a></dt>
-<dd><p>Retrieve the path to the directory containing ImageMagick&#8217;s convert
-utility.
+<dd><p>Retrieve the path to the directory containing ImageMagick&#8217;s convert utility.
 Th</p>
 <p>Uses the &#8216;which&#8217; command-line utility to detect the path to &#8216;convert&#8217;.
-Note that this will only work if the convert utility is in PHP&#8217;s PATH and
-thus can be located by &#8216;which&#8217;.</p>
+Note that this will only work if the convert utility is in PHP&#8217;s PATH and thus can be located by &#8216;which&#8217;.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -326,6 +333,12 @@ thus can be located by &#8216;which&#8217;.</p>
             <p class="logo"><a href="../../../../../../index.html">
               <img class="logo" src="../../../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Libraries/Omeka/File/Derivative/Image</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../../Extract/index.html"
+                        title="next chapter">Libraries/Omeka/File/Extract</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -359,7 +372,18 @@ thus can be located by &#8216;which&#8217;.</p>
         <li class="right" style="margin-right: 10px">
           <a href="../../../../../../genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="../../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="../../Extract/index.html" title="Libraries/Omeka/File/Extract"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Libraries/Omeka/File/Derivative/Image"
+             >previous</a> |</li>
+        <li><a href="../../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+          <li><a href="../../../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../../../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="../../index.html" >Libraries/Omeka/File</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka/File/Derivative</a> &raquo;</li>
+          <li><a href="index.html" >Libraries/Omeka/File/Derivative/Image</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

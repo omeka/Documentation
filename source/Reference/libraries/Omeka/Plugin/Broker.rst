@@ -18,8 +18,7 @@ Omeka_Plugin_Broker
     
         Stores all defined filters.
         
-        Storage in array where $_filters['filterName']['priority']['plugin'] =
-        $hook;
+        Storage in array where $_filters['filterName']['priority']['plugin'] = $hook;
 
     .. php:attr:: _current
     
@@ -46,9 +45,8 @@ Omeka_Plugin_Broker
     
         Set the currently-focused plugin by directory name.
         
-        The plugin helper functions do not have any way of determining what plugin
-        to is currently in focus.  These get/setCurrentPluginDirName methods allow
-        the broker to know how to delegate to specific plugins if necessary.
+        The plugin helper functions do not have any way of determining what plugin to is currently in focus.  These
+        get/setCurrentPluginDirName methods allow the broker to know how to delegate to specific plugins if necessary.
         
         :param string $pluginDirName: Plugin to set as current.
         :returns: void

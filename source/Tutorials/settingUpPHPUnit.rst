@@ -1,0 +1,8 @@
+.. settingUpPHPUnit.
+
+
+##################
+Setting up PHPUnit
+##################
+
+

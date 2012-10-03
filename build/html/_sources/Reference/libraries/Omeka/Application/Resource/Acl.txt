@@ -16,3 +16,5 @@ Omeka_Application_Resource_Acl
         
         :returns: Zend_Acl
 
+    .. php:method:: getAcl()
+

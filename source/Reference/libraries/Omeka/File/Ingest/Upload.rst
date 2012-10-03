@@ -41,10 +41,8 @@ Omeka_File_Ingest_Upload
         - validation errors that occur when an uploaded file is missing.  This 
         - may occur when a file input is left empty on a form.
         
-        This option can be overridden by the 'ignore_invalid_files' option.  For
-        instance, if 'ignoreNoFile' is set to false but 'ignore_invalid_files' is
-        set to true, any exceptions due to missing uploads will be suppressed and
-        ignored.
+        This option can be overridden by the 'ignore_invalid_files' option.  For instance, if 'ignoreNoFile' is set to false
+        but 'ignore_invalid_files' is set to true, any exceptions due to missing uploads will be suppressed and ignored.
         
         :param array $options: 
         :returns: void
@@ -100,9 +98,8 @@ Omeka_File_Ingest_Upload
     
         Ingest based on arbitrary file identifier info.
         
-        If this is an array that has a 'metadata' key, that should be an array
-        representing element text metadata to assign to the file.  See
-        ActsAsElementText::addElementTextsByArray() for more details.
+        If this is an array that has a 'metadata' key, that should be an array representing element text metadata to assign
+        to the file.  See ActsAsElementText::addElementTextsByArray() for more details.
         
         :param mixed $fileInfo: An arbitrary input (array, string, object, etc.) that corresponds to one or more files to be ingested into Omeka.
         :returns: array Ingested file records.
@@ -138,11 +135,10 @@ Omeka_File_Ingest_Upload
     
         Retrieve the destination path for the file to be transferred.
         
-        This will generate an archival filename in order to prevent naming
-        conflicts between ingested files.
+        This will generate an archival filename in order to prevent naming conflicts between ingested files.
         
-        This should be used as necessary by Omeka_File_Ingest_AbstractIngest
-        implementations in order to determine where to transfer any given file.
+        This should be used as necessary by Omeka_File_Ingest_AbstractIngest implementations in order to determine where to
+        transfer any given file.
         
         :param string $fromFilename: The filename from which to derive the archival filename.
         :returns: string
@@ -151,20 +147,17 @@ Omeka_File_Ingest_Upload
     
         Validate a file that has been transferred to Omeka.
         
-        Implementations of Omeka_File_Ingest_AbstractIngest should use this to
-        validate the uploaded file based on user-defined security criteria.
+        Implementations of Omeka_File_Ingest_AbstractIngest should use this to validate the uploaded file based on
+        user-defined security criteria.
         
-        Important: $fileInfo may need to contain the following keys in order to
-        work with particular Zend_Validate_File_* validation classes:
-        - 'name': string filename (for Zend_Validate_File_Extension) If ZF is
-        unable to determine the file extension when validating, it will check the
-        'name' attribute instead.  Current use cases involve saving the file to a
-        temporary location before transferring to Omeka. Most temporary files do
-        not maintain the original file extension.
-        - 'type': string MIME type (for Zend_Validate_File_MimeType) If ZF is
-        unable to determine the mime type from the transferred file.  Unless the
-        server running Omeka has a mime_magic file or has installed the FileInfo
-        extension, this will be necessary.
+        Important: $fileInfo may need to contain the following keys in order to work with particular Zend_Validate_File_*
+        validation classes:
+        - 'name': string filename (for Zend_Validate_File_Extension) If ZF is unable to determine the file extension when
+        validating, it will check the 'name' attribute instead.  Current use cases involve saving the file to a temporary
+        location before transferring to Omeka. Most temporary files do not maintain the original file extension.
+        - 'type': string MIME type (for Zend_Validate_File_MimeType) If ZF is unable to determine the mime type from the
+        transferred file.  Unless the server running Omeka has a mime_magic file or has installed the FileInfo extension,
+        this will be necessary.
         
         :param string $filePath: Absolute path to the file.  The file should be local and readable, which is required by most (if not all) of the Zend_Validate_File_* classes.
         :param array $fileInfo: Set of file info that describes a given file being ingested.

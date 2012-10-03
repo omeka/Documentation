@@ -22,7 +22,10 @@
     <script type="text/javascript" src="../../../../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../../../../_static/doctools.js"></script>
-    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../../../index.html" /> 
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../../../index.html" />
+    <link rel="up" title="Libraries/Omeka/Job/Dispatcher/Adapter" href="index.html" />
+    <link rel="next" title="Omeka_Job_Dispatcher_Default" href="../Default.html" />
+    <link rel="prev" title="Omeka_Job_Dispatcher_Adapter_Synchronous" href="Synchronous.html" /> 
   </head>
   <body>
     <div class="related">
@@ -31,7 +34,18 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="../../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="../Default.html" title="Omeka_Job_Dispatcher_Default"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Synchronous.html" title="Omeka_Job_Dispatcher_Adapter_Synchronous"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+          <li><a href="../../../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../../../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="../../index.html" >Libraries/Omeka/Job</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka/Job/Dispatcher</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Libraries/Omeka/Job/Dispatcher/Adapter</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -48,13 +62,16 @@
 <dd><p>Dispatcher for Zend_Queue.</p>
 <p>This would be particularly useful for installations that want to interface with ActiveMQ or Zend Server&#8217;s Job Queue via Zend_Queue.  Note that using the &#8216;Array&#8217; adapter should only be used for testing, as all jobs passed to it will be thrown away.</p>
 <p>Required options include &#8216;adapter&#8217; and &#8216;options&#8217;, which correspond to the first and second arguments to Zend_Queue&#8217;s constructor respectively.</p>
-<p>For example, it would be configured like so in config.ini:
-&lt;code&gt;
-jobs.dispatcher = &#8220;Omeka_Job_Dispatcher_ZendQueue&#8221;
-jobs.adapterOptions.adapter = &#8220;PlatformJobQueue&#8221;
-jobs.adapterOptions.options.host = &#8220;127.0.0.1&#8221;
-jobs.adapterOptions.options.password = &#8220;foobar&#8221;
-&lt;/code&gt;</p>
+<dl class="docutils">
+<dt>For example, it would be configured like so in config.ini:</dt>
+<dd><div class="first last highlight-php"><div class="highlight"><pre><span class="nx">jobs</span><span class="o">.</span><span class="nx">dispatcher</span> <span class="o">=</span> <span class="s2">&quot;Omeka_Job_Dispatcher_ZendQueue&quot;</span>
+<span class="nx">jobs</span><span class="o">.</span><span class="nx">adapterOptions</span><span class="o">.</span><span class="nx">adapter</span> <span class="o">=</span> <span class="s2">&quot;PlatformJobQueue&quot;</span>
+<span class="nx">jobs</span><span class="o">.</span><span class="nx">adapterOptions</span><span class="o">.</span><span class="nx">options</span><span class="o">.</span><span class="nx">host</span> <span class="o">=</span> <span class="s2">&quot;127.0.0.1&quot;</span>
+<span class="nx">jobs</span><span class="o">.</span><span class="nx">adapterOptions</span><span class="o">.</span><span class="nx">options</span><span class="o">.</span><span class="nx">password</span> <span class="o">=</span> <span class="s2">&quot;foobar&quot;</span>
+</pre></div>
+</div>
+</dd>
+</dl>
 <dl class="attr">
 <dt id="Omeka_Job_Dispatcher_Adapter_ZendQueue::$_queue">
 <em class="property">property </em><tt class="descname">_queue</tt><a class="headerlink" href="#Omeka_Job_Dispatcher_Adapter_ZendQueue::$_queue" title="Permalink to this definition">¶</a></dt>
@@ -185,6 +202,12 @@ adapter.</p>
             <p class="logo"><a href="../../../../../../index.html">
               <img class="logo" src="../../../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Synchronous.html"
+                        title="previous chapter">Omeka_Job_Dispatcher_Adapter_Synchronous</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../Default.html"
+                        title="next chapter">Omeka_Job_Dispatcher_Default</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -218,7 +241,18 @@ adapter.</p>
         <li class="right" style="margin-right: 10px">
           <a href="../../../../../../genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="../../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="../Default.html" title="Omeka_Job_Dispatcher_Default"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Synchronous.html" title="Omeka_Job_Dispatcher_Adapter_Synchronous"
+             >previous</a> |</li>
+        <li><a href="../../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+          <li><a href="../../../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../../../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="../../index.html" >Libraries/Omeka/Job</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka/Job/Dispatcher</a> &raquo;</li>
+          <li><a href="index.html" >Libraries/Omeka/Job/Dispatcher/Adapter</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

@@ -49,8 +49,8 @@ Omeka_Db_Migration_Manager
     
         Set up Omeka to use timestamped database migrations.
         
-        This creates the 'schema_migrations' table, drops the 'migration' option
-        and adds the 'omeka_version' option to the database.
+        This creates the 'schema_migrations' table, drops the 'migration' option and adds the 'omeka_version' option to the
+        database.
         
         :returns: void
 
@@ -72,8 +72,7 @@ Omeka_Db_Migration_Manager
     
         Determine whether or not it is possible to migrate the Omeka database up.
         
-        This is based entirely on whether there exist any migrations that have not
-        yet been applied.
+        This is based entirely on whether there exist any migrations that have not yet been applied.
         
         :returns: void
 
@@ -81,8 +80,8 @@ Omeka_Db_Migration_Manager
     
         Determine whether the database must be upgraded.
         
-        In order to return true, this requires that canUprade() == true, and also
-        that Omeka's code has recently been upgraded.
+        In order to return true, this requires that canUprade() == true, and also that Omeka's code has recently been
+        upgraded.
 
     .. php:method:: finalizeDbUpgrade()
     

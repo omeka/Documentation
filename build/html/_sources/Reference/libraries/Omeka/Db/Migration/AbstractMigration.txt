@@ -25,10 +25,9 @@ Omeka_Db_Migration_AbstractMigration
     
         Template method for reversing the migration.
         
-        This is defined as a template method instead of leaving it abstract
-        because pre-existing implementations of Omeka_Db_Migration were not
-        required to implement the down() method.  This ensures backwards
-        compatibility for those migrations.
+        This is defined as a template method instead of leaving it abstract because pre-existing implementations of
+        Omeka_Db_Migration were not required to implement the down() method.  This ensures backwards compatibility for those
+        migrations.
 
     .. php:method:: __call(string $m, array $a)
     
@@ -41,8 +40,7 @@ Omeka_Db_Migration_AbstractMigration
 
     .. php:method:: form()
     
-        If the migration requires a form submission, here's where to handle
-        display of it
+        If the migration requires a form submission, here's where to handle display of it
         
         :returns: void
 

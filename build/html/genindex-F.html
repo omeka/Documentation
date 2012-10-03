@@ -66,6 +66,8 @@
     <dt><a href="Reference/models/Installer/Exception.html#Installer_Exception::$file">file (Installer_Exception property)</a></dt>
     <dd><dl>
       <dt><a href="Reference/libraries/Omeka/Application/Resource/Jobs/InvalidAdapterException.html#Omeka_Application_Resource_Jobs_InvalidAdapterException::$file">(Omeka_Application_Resource_Jobs_InvalidAdapterException property)</a></dt>
+      <dt><a href="Reference/libraries/Omeka/Controller/Exception/403.html#Omeka_Controller_Exception_403::$file">(Omeka_Controller_Exception_403 property)</a></dt>
+      <dt><a href="Reference/libraries/Omeka/Controller/Exception/404.html#Omeka_Controller_Exception_404::$file">(Omeka_Controller_Exception_404 property)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Db/Migration/Exception.html#Omeka_Db_Migration_Exception::$file">(Omeka_Db_Migration_Exception property)</a></dt>
       <dt><a href="Reference/libraries/Omeka/File/Derivative/Exception.html#Omeka_File_Derivative_Exception::$file">(Omeka_File_Derivative_Exception property)</a></dt>
       <dt><a href="Reference/libraries/Omeka/File/Ingest/Exception.html#Omeka_File_Ingest_Exception::$file">(Omeka_File_Ingest_Exception property)</a></dt>
@@ -74,6 +76,7 @@
       <dt><a href="Reference/libraries/Omeka/Job/Factory/MissingClassException.html#Omeka_Job_Factory_MissingClassException::$file">(Omeka_Job_Factory_MissingClassException property)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Job/Worker/InterruptException.html#Omeka_Job_Worker_InterruptException::$file">(Omeka_Job_Worker_InterruptException property)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Plugin/Exception.html#Omeka_Plugin_Exception::$file">(Omeka_Plugin_Exception property)</a></dt>
+      <dt><a href="Reference/libraries/Omeka/Plugin/Installer/Exception.html#Omeka_Plugin_Installer_Exception::$file">(Omeka_Plugin_Installer_Exception property)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Plugin/Loader/Exception.html#Omeka_Plugin_Loader_Exception::$file">(Omeka_Plugin_Loader_Exception property)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Record/Builder/Exception.html#Omeka_Record_Builder_Exception::$file">(Omeka_Record_Builder_Exception property)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Record/Exception.html#Omeka_Record_Exception::$file">(Omeka_Record_Exception property)</a></dt>
@@ -93,10 +96,27 @@
       <dt><a href="Reference/libraries/Omeka/Filter/Time.html#Omeka_Filter_Time::filter">(Omeka_Filter_Time method)</a></dt>
   </dl></dd>
     <dt><a href="Reference/libraries/Omeka/Filter/HtmlPurifier.html#Omeka_Filter_HtmlPurifier::filterAttributesWithMissingElements">filterAttributesWithMissingElements() (Omeka_Filter_HtmlPurifier method)</a></dt>
+    <dt><a href="Reference/models/Table/Item.html#Table_Item::filterByCollection">filterByCollection() (Table_Item method)</a></dt>
+    <dt><a href="Reference/models/Table/Item.html#Table_Item::filterByExcludedTags">filterByExcludedTags() (Table_Item method)</a></dt>
+    <dt><a href="Reference/models/Table/Collection.html#Table_Collection::filterByFeatured">filterByFeatured() (Table_Collection method)</a></dt>
+    <dd><dl>
+      <dt><a href="Reference/models/Table/Item.html#Table_Item::filterByFeatured">(Table_Item method)</a></dt>
+  </dl></dd>
+    <dt><a href="Reference/models/Table/Item.html#Table_Item::filterByHasDerivativeImage">filterByHasDerivativeImage() (Table_Item method)</a></dt>
+    <dt><a href="Reference/models/Table/Item.html#Table_Item::filterByItemType">filterByItemType() (Table_Item method)</a></dt>
+    <dt><a href="Reference/models/Table/Collection.html#Table_Collection::filterByPublic">filterByPublic() (Table_Collection method)</a></dt>
+    <dd><dl>
+      <dt><a href="Reference/models/Table/Item.html#Table_Item::filterByPublic">(Table_Item method)</a></dt>
+  </dl></dd>
+    <dt><a href="Reference/models/Table/Item.html#Table_Item::filterByRange">filterByRange() (Table_Item method)</a></dt>
+    <dt><a href="Reference/models/Table/Tag.html#Table_Tag::filterByRecord">filterByRecord() (Table_Tag method)</a></dt>
+    <dt><a href="Reference/models/Table/Item.html#Table_Item::filterBySearch">filterBySearch() (Table_Item method)</a></dt>
+    <dt><a href="Reference/models/Table/Tag.html#Table_Tag::filterByTagNameLike">filterByTagNameLike() (Table_Tag method)</a></dt>
+    <dt><a href="Reference/models/Table/Item.html#Table_Item::filterByTags">filterByTags() (Table_Item method)</a></dt>
+    <dt><a href="Reference/models/Table/Tag.html#Table_Tag::filterByTagType">filterByTagType() (Table_Tag method)</a></dt>
+    <dt><a href="Reference/models/Table/Item.html#Table_Item::filterByUser">filterByUser() (Table_Item method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Controller/Plugin/HtmlPurifier.html#Omeka_Controller_Plugin_HtmlPurifier::filterCollectionsForm">filterCollectionsForm() (Omeka_Controller_Plugin_HtmlPurifier method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Controller/Plugin/HtmlPurifier.html#Omeka_Controller_Plugin_HtmlPurifier::filterItemsForm">filterItemsForm() (Omeka_Controller_Plugin_HtmlPurifier method)</a></dt>
-</dl></td>
-  <td style="width: 33%" valign="top"><dl>
     <dt><a href="Reference/models/Collection.html#Collection::filterPostData">filterPostData() (Collection method)</a></dt>
     <dd><dl>
       <dt><a href="Reference/models/File.html#File::filterPostData">(File method)</a></dt>
@@ -107,11 +127,49 @@
     <dt><a href="Reference/libraries/Omeka/Controller/Plugin/HtmlPurifier.html#Omeka_Controller_Plugin_HtmlPurifier::filterThemesForm">filterThemesForm() (Omeka_Controller_Plugin_HtmlPurifier method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Db/Migration/Manager.html#Omeka_Db_Migration_Manager::finalizeDbUpgrade">finalizeDbUpgrade() (Omeka_Db_Migration_Manager method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Db/Table.html#Omeka_Db_Table::find">find() (Omeka_Db_Table method)</a></dt>
+    <dt><a href="Reference/models/Table/User.html#Table_User::findActiveById">findActiveById() (Table_User method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Db/Table.html#Omeka_Db_Table::findAll">findAll() (Omeka_Db_Table method)</a></dt>
+</dl></td>
+  <td style="width: 33%" valign="top"><dl>
+    <dt><a href="Reference/models/Table/Plugin.html#Table_Plugin::findAllWithIniFiles">findAllWithIniFiles() (Table_Plugin method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Db/Table.html#Omeka_Db_Table::findBy">findBy() (Omeka_Db_Table method)</a></dt>
-    <dt><a href="Reference/controllers/helpers/Db.html#Omeka_Controller_Action_Helper_Db::findById">findById() (Omeka_Controller_Action_Helper_Db method)</a>, <a href="Reference/controllers/Db.html#Omeka_Controller_Action_Helper_Db::findById">[1]</a></dt>
+    <dt><a href="Reference/models/Table/Process.html#Table_Process::findByClass">findByClass() (Table_Process method)</a></dt>
+    <dt><a href="Reference/models/Table/Plugin.html#Table_Plugin::findByDirectoryName">findByDirectoryName() (Table_Plugin method)</a></dt>
+    <dt><a href="Reference/models/Table/ElementText.html#Table_ElementText::findByElement">findByElement() (Table_ElementText method)</a></dt>
+    <dt><a href="Reference/models/Table/Element.html#Table_Element::findByElementSetNameAndElementName">findByElementSetNameAndElementName() (Table_Element method)</a></dt>
+    <dt><a href="Reference/models/Table/User.html#Table_User::findByEmail">findByEmail() (Table_User method)</a></dt>
+    <dt><a href="Reference/controllers/helpers/Db.html#Omeka_Controller_Action_Helper_Db::findById">findById() (Omeka_Controller_Action_Helper_Db method)</a></dt>
+    <dt><a href="Reference/models/Table/File.html#Table_File::findByItem">findByItem() (Table_File method)</a></dt>
+    <dt><a href="Reference/models/Table/Element.html#Table_Element::findByItemType">findByItemType() (Table_Element method)</a></dt>
+    <dt><a href="Reference/models/Table/ElementSet.html#Table_ElementSet::findByName">findByName() (Table_ElementSet method)</a></dt>
+    <dd><dl>
+      <dt><a href="Reference/models/Table/ItemType.html#Table_ItemType::findByName">(Table_ItemType method)</a></dt>
+  </dl></dd>
+    <dt><a href="Reference/models/Table/ElementText.html#Table_ElementText::findByRecord">findByRecord() (Table_ElementText method)</a></dt>
+    <dd><dl>
+      <dt><a href="Reference/models/Table/SearchText.html#Table_SearchText::findByRecord">(Table_SearchText method)</a></dt>
+  </dl></dd>
+    <dt><a href="Reference/models/Table/Element.html#Table_Element::findByRecordType">findByRecordType() (Table_Element method)</a></dt>
+    <dd><dl>
+      <dt><a href="Reference/models/Table/ElementSet.html#Table_ElementSet::findByRecordType">(Table_ElementSet method)</a></dt>
+  </dl></dd>
+    <dt><a href="Reference/models/Table/Element.html#Table_Element::findBySet">findBySet() (Table_Element method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Db/Table.html#Omeka_Db_Table::findBySql">findBySql() (Omeka_Db_Table method)</a></dt>
+    <dt><a href="Reference/models/Table/Process.html#Table_Process::findByStatus">findByStatus() (Table_Process method)</a></dt>
+    <dt><a href="Reference/models/Table/UsersActivations.html#Table_UsersActivations::findByUrl">findByUrl() (Table_UsersActivations method)</a></dt>
+    <dt><a href="Reference/models/Table/Item.html#Table_Item::findFirst">findFirst() (Table_Item method)</a></dt>
+    <dt><a href="Reference/models/Table/Item.html#Table_Item::findLast">findLast() (Table_Item method)</a></dt>
+    <dt><a href="Reference/models/Table/Item.html#Table_Item::findNearby">findNearby() (Table_Item method)</a></dt>
+    <dt><a href="Reference/models/Table/Item.html#Table_Item::findNext">findNext() (Table_Item method)</a></dt>
+    <dt><a href="Reference/models/Table/Tag.html#Table_Tag::findOrNew">findOrNew() (Table_Tag method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Db/Table.html#Omeka_Db_Table::findPairsForSelectForm">findPairsForSelectForm() (Omeka_Db_Table method)</a></dt>
+    <dd><dl>
+      <dt><a href="Reference/models/Table/Element.html#Table_Element::findPairsForSelectForm">(Table_Element method)</a></dt>
+  </dl></dd>
+    <dt><a href="Reference/models/Table/Item.html#Table_Item::findPrevious">findPrevious() (Table_Item method)</a></dt>
+    <dt><a href="Reference/models/Table/Collection.html#Table_Collection::findRandomFeatured">findRandomFeatured() (Table_Collection method)</a></dt>
+    <dt><a href="Reference/models/Table/Tag.html#Table_Tag::findTagNamesLike">findTagNamesLike() (Table_Tag method)</a></dt>
+    <dt><a href="Reference/models/Table/File.html#Table_File::findWithImages">findWithImages() (Table_File method)</a></dt>
     <dt><a href="Reference/views/helpers/Flash.html#Omeka_View_Helper_Flash::flash">flash() (Omeka_View_Helper_Flash method)</a></dt>
     <dt><a href="Reference/controllers/ErrorController.html#ErrorController::forbiddenAction">forbiddenAction() (ErrorController method)</a></dt>
     <dt><a href="Reference/controllers/UsersController.html#UsersController::forgotPasswordAction">forgotPasswordAction() (UsersController method)</a></dt>
@@ -146,6 +204,7 @@
      | <a href="genindex-N.html"><strong>N</strong></a>
      | <a href="genindex-O.html"><strong>O</strong></a>
      | <a href="genindex-P.html"><strong>P</strong></a>
+     | <a href="genindex-Q.html"><strong>Q</strong></a>
      | <a href="genindex-R.html"><strong>R</strong></a>
      | <a href="genindex-S.html"><strong>S</strong></a>
      | <a href="genindex-T.html"><strong>T</strong></a>

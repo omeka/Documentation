@@ -22,7 +22,10 @@
     <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
-    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../../index.html" /> 
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../../index.html" />
+    <link rel="up" title="Libraries/Omeka/Db/Migration" href="index.html" />
+    <link rel="next" title="Omeka_Db_Migration_MigrationInterface" href="MigrationInterface.html" />
+    <link rel="prev" title="Omeka_Db_Migration_Exception" href="Exception.html" /> 
   </head>
   <body>
     <div class="related">
@@ -31,7 +34,17 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="MigrationInterface.html" title="Omeka_Db_Migration_MigrationInterface"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Exception.html" title="Omeka_Db_Migration_Exception"
+             accesskey="P">previous</a> |</li>
+        <li><a href="../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+          <li><a href="../../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka/Db</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Libraries/Omeka/Db/Migration</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -90,7 +103,7 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$db</strong> (<em>Omeka_Db</em>) &#8211; </li>
+<li><strong>$db</strong> (<a class="reference internal" href="../../Db.html#Omeka_Db" title="Omeka_Db"><em>Omeka_Db</em></a>) &#8211; </li>
 <li><strong>$migrationsDir</strong> (<em>string</em>) &#8211; </li>
 </ul>
 </td>
@@ -103,8 +116,8 @@
 <dt id="Omeka_Db_Migration_Manager::setupTimestampMigrations">
 <tt class="descname">setupTimestampMigrations</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Db_Migration_Manager::setupTimestampMigrations" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set up Omeka to use timestamped database migrations.</p>
-<p>This creates the &#8216;schema_migrations&#8217; table, drops the &#8216;migration&#8217; option
-and adds the &#8216;omeka_version&#8217; option to the database.</p>
+<p>This creates the &#8216;schema_migrations&#8217; table, drops the &#8216;migration&#8217; option and adds the &#8216;omeka_version&#8217; option to the
+database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -154,8 +167,7 @@ a way of indicating that the database is entirely up to date.</p>
 <dt id="Omeka_Db_Migration_Manager::canUpgrade">
 <tt class="descname">canUpgrade</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Db_Migration_Manager::canUpgrade" title="Permalink to this definition">¶</a></dt>
 <dd><p>Determine whether or not it is possible to migrate the Omeka database up.</p>
-<p>This is based entirely on whether there exist any migrations that have not
-yet been applied.</p>
+<p>This is based entirely on whether there exist any migrations that have not yet been applied.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -170,8 +182,8 @@ yet been applied.</p>
 <dt id="Omeka_Db_Migration_Manager::dbNeedsUpgrade">
 <tt class="descname">dbNeedsUpgrade</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Db_Migration_Manager::dbNeedsUpgrade" title="Permalink to this definition">¶</a></dt>
 <dd><p>Determine whether the database must be upgraded.</p>
-<p>In order to return true, this requires that canUprade() == true, and also
-that Omeka&#8217;s code has recently been upgraded.</p>
+<p>In order to return true, this requires that canUprade() == true, and also that Omeka&#8217;s code has recently been
+upgraded.</p>
 </dd></dl>
 
 <dl class="method">
@@ -338,6 +350,12 @@ the latest time given by $until.</p>
             <p class="logo"><a href="../../../../../index.html">
               <img class="logo" src="../../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Exception.html"
+                        title="previous chapter">Omeka_Db_Migration_Exception</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="MigrationInterface.html"
+                        title="next chapter">Omeka_Db_Migration_MigrationInterface</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -371,7 +389,17 @@ the latest time given by $until.</p>
         <li class="right" style="margin-right: 10px">
           <a href="../../../../../genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="MigrationInterface.html" title="Omeka_Db_Migration_MigrationInterface"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Exception.html" title="Omeka_Db_Migration_Exception"
+             >previous</a> |</li>
+        <li><a href="../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+          <li><a href="../../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka/Db</a> &raquo;</li>
+          <li><a href="index.html" >Libraries/Omeka/Db/Migration</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

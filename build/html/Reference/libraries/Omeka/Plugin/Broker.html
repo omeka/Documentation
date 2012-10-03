@@ -59,8 +59,7 @@ would call the &#8216;add_action_contexts&#8217; on all plugins, and it would pr
 <dt id="Omeka_Plugin_Broker::$_filters">
 <em class="property">property </em><tt class="descname">_filters</tt><a class="headerlink" href="#Omeka_Plugin_Broker::$_filters" title="Permalink to this definition">¶</a></dt>
 <dd><p>Stores all defined filters.</p>
-<p>Storage in array where $_filters[&#8216;filterName&#8217;][&#8216;priority&#8217;][&#8216;plugin&#8217;] =
-$hook;</p>
+<p>Storage in array where $_filters[&#8216;filterName&#8217;][&#8216;priority&#8217;][&#8216;plugin&#8217;] = $hook;</p>
 </dd></dl>
 
 <dl class="attr">
@@ -116,9 +115,8 @@ $hook;</p>
 <dt id="Omeka_Plugin_Broker::setCurrentPluginDirName">
 <tt class="descname">setCurrentPluginDirName</tt><big>(</big><em>string $pluginDirName</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Broker::setCurrentPluginDirName" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the currently-focused plugin by directory name.</p>
-<p>The plugin helper functions do not have any way of determining what plugin
-to is currently in focus.  These get/setCurrentPluginDirName methods allow
-the broker to know how to delegate to specific plugins if necessary.</p>
+<p>The plugin helper functions do not have any way of determining what plugin to is currently in focus.  These
+get/setCurrentPluginDirName methods allow the broker to know how to delegate to specific plugins if necessary.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

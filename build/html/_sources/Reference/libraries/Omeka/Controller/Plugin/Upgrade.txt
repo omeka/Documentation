@@ -10,8 +10,7 @@ Omeka_Controller_Plugin_Upgrade
     
         Set up routing for the upgrade controller.
         
-        Only allows authorized users to upgrade, and blocks the public site when
-        an upgrade is needed.
+        Only allows authorized users to upgrade, and blocks the public site when an upgrade is needed.
         
         :param Zend_Controller_Request_Abstract $request: Request object.
         :returns: void

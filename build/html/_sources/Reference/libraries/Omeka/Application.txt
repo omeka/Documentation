@@ -46,3 +46,12 @@ Omeka_Application
         :param unknown $title: 
         :returns: void
 
+    .. php:method:: _stripSlashes(mixed $value)
+    
+        Strip slashes.
+        
+        Filters request superglobals in order to avoid problems with PHP's magic_quotes setting.
+        
+        :param mixed $value: 
+        :returns: mixed
+

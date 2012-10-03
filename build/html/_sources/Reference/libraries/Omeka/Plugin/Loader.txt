@@ -46,14 +46,12 @@ Omeka_Plugin_Loader
 
     .. php:method:: registerPlugin(Plugin $plugin)
     
-        Register a plugin so that it can be accessed by other plugins (if
-        necessary)
+        Register a plugin so that it can be accessed by other plugins (if necessary)
         during the load process.
         
         There should only be a single instance of a plugin per directory name.  
-        Registering a plugin more than once, i.e. loading a plugin again after the
-        first time failed, will not cause a problem as long as the same instance
-        was registered.
+        Registering a plugin more than once, i.e. loading a plugin again after the first time failed, will not cause a
+        problem as long as the same instance was registered.
         
         :param Plugin $plugin: Record of plugin to register.
         :returns: void
@@ -69,10 +67,10 @@ Omeka_Plugin_Loader
     
         Load a plugin (and make sure the plugin API is available).
         
-        To be loaded, the plugin must be installed, active, and not have a newer
-        version. If loaded, the plugin will attempt to first load all plugins, 
-        both required and optional, that the plugin uses.  However, it will not
-        load a plugin that it uses if that plugin is not installed and activated.
+        To be loaded, the plugin must be installed, active, and not have a newer version. If loaded, the plugin will attempt
+        to first load all plugins, 
+        both required and optional, that the plugin uses.  However, it will not load a plugin that it uses if that plugin is
+        not installed and activated.
         
         :param Plugin $plugin: 
         :param boolean $force: If true, throws exceptions if a plugin can't be loaded.
