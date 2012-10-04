@@ -16,4 +16,3 @@ Omeka_Filter_ForeignKey
         
         :param mixed $value: Input value.
         :returns: integer
-

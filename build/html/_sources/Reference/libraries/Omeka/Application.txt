@@ -54,4 +54,3 @@ Omeka_Application
         
         :param mixed $value: 
         :returns: mixed
-

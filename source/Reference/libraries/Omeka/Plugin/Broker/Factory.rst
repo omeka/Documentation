@@ -17,4 +17,3 @@ Omeka_Plugin_Broker_Factory
     .. php:method:: _register($objs)
     
         :param unknown $objs:
-

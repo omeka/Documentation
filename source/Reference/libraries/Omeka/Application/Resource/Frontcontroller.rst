@@ -9,4 +9,3 @@ Omeka_Application_Resource_Frontcontroller
     .. php:method:: init()
     
         :returns: Zend_Controller_Front
-

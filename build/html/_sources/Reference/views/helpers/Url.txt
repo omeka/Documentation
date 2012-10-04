@@ -48,4 +48,3 @@ Omeka_View_Helper_Url
         :param boolean $reset: Optional Whether or not to reset the route parameters implied by the current request, e.g. if the current controller is 'items', then 'controller'=>'items' will be inferred when assembling the route.
         :param boolean $encode: 
         :returns: string
-

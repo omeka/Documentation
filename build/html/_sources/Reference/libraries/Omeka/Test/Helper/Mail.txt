@@ -45,4 +45,3 @@ Omeka_Test_Helper_Mail
     .. php:method:: count()
     
         The number of mails that have been sent.
-

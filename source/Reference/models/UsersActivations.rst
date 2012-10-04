@@ -31,4 +31,3 @@ UsersActivations
         :param unknown $args:
 
     .. php:method:: getUser()
-

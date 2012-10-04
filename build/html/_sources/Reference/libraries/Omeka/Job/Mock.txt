@@ -79,4 +79,3 @@ Omeka_Job_Mock
     
         Resend the job using the same options that were passed to the current 
         job.
-

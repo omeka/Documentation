@@ -39,4 +39,3 @@ ElementText
     .. php:method:: getText()
 
     .. php:method:: isHtml()
-

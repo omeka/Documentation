@@ -20,4 +20,3 @@ Table_ElementText
     .. php:method:: findByElement($elementId)
     
         :param unknown $elementId:
-

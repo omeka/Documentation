@@ -7,4 +7,3 @@ Omeka_View_Helper_Pluralize
     .. php:method:: pluralize($var)
     
         :param unknown $var:
-

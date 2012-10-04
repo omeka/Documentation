@@ -81,4 +81,3 @@ UsersController
         :param User $user:
 
     .. php:method:: _getLog()
-

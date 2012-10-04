@@ -17,4 +17,3 @@ Output_ItemRss2
     .. php:method:: itemToRSS($item)
     
         :param unknown $item:
-

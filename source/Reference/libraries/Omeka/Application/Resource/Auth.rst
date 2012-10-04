@@ -9,4 +9,3 @@ Omeka_Application_Resource_Auth
     .. php:method:: init()
     
         :returns: Zend_Auth
-

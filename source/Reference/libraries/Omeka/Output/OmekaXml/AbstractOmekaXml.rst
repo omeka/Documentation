@@ -148,4 +148,3 @@ Omeka_Output_OmekaXml_AbstractOmekaXml
         Create a absolute URI containing the current query string.
         
         :returns: string
-

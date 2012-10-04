@@ -79,4 +79,3 @@ Omeka_Test_AppTestCase
         for the public or admin themes.
         
         :param unknown $themeType:
-

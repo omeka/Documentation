@@ -25,4 +25,3 @@ Omeka_Controller_Plugin_Upgrade
         
         :param Zend_Controller_Request_Abstract $request: Request object (not used).
         :returns: void
-

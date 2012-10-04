@@ -74,4 +74,3 @@ Omeka_Storage_Adapter_ZendS3
         Converts to integer and returns zero for all non-positive numbers.
         
         :returns: int
-

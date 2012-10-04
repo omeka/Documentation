@@ -40,4 +40,3 @@ Mixin_Timestamp
         Update a timestamp column for the underlying record.
         
         :param string $column: Column to update.
-

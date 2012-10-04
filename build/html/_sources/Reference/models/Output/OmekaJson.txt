@@ -19,4 +19,3 @@ Output_OmekaJson
         
         :param Omeka_Output_OmekaXml_AbstractOmekaXml $omekaXml: 
         :returns: string
-

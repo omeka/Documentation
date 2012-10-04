@@ -17,4 +17,3 @@ Omeka_Job_Worker_Beanstalk
     .. php:method:: _interrupt($job)
     
         :param unknown $job:
-

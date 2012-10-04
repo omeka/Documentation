@@ -20,4 +20,3 @@ Omeka_File_Extract_Video
     .. php:method:: getHeight()
 
     .. php:method:: getSampleRate()
-

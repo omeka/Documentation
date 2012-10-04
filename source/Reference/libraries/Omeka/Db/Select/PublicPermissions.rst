@@ -30,4 +30,3 @@ Omeka_Db_Select_PublicPermissions
         :param Omeka_Db_Select $select: 
         :param string $alias: Table alias to query against
         :param string $ownerColumn: Optional column for checking for ownership. If falsy, the ownership check is skipped.
-

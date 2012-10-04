@@ -28,4 +28,3 @@ Builder_ItemType
     .. php:method:: _beforeBuild()
     
         Add elements to be associated with the Item Type.
-

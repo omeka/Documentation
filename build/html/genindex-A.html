@@ -22,7 +22,10 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Omeka Documentation v2.0 documentation" href="index.html" /> 
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="index.html" />
+    <link rel="stylesheet" href="_static/overrides.css" type="text/css" />
+ 
   </head>
   <body>
     <div class="related">
@@ -31,7 +34,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+    
+        <li><a href="index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
       </ul>
     </div>  
 
@@ -60,6 +68,7 @@
       <dt><a href="Reference/controllers/FilesController.html#FilesController::addAction">(FilesController method)</a></dt>
       <dt><a href="Reference/controllers/ItemTypesController.html#ItemTypesController::addAction">(ItemTypesController method)</a></dt>
       <dt><a href="Reference/controllers/ItemsController.html#ItemsController::addAction">(ItemsController method)</a></dt>
+      <dt><a href="Reference/libraries/Omeka/Controller/AbstractActionController.html#Omeka_Controller_AbstractActionController::addAction">(Omeka_Controller_AbstractActionController method)</a></dt>
       <dt><a href="Reference/controllers/PluginsController.html#PluginsController::addAction">(PluginsController method)</a></dt>
       <dt><a href="Reference/controllers/UsersController.html#UsersController::addAction">(UsersController method)</a></dt>
   </dl></dd>
@@ -80,6 +89,8 @@
       <dt><a href="Reference/models/ItemType.html#ItemType::addElements">(ItemType method)</a></dt>
   </dl></dd>
     <dt><a href="Reference/models/Mixin/ElementText.html#Mixin_ElementText::addElementTextsByArray">addElementTextsByArray() (Mixin_ElementText method)</a></dt>
+    <dt><a href="Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::addError">addError() (Omeka_Record_AbstractRecord method)</a></dt>
+    <dt><a href="Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::addErrorsFrom">addErrorsFrom() (Omeka_Record_AbstractRecord method)</a></dt>
     <dt><a href="Reference/controllers/ItemTypesController.html#ItemTypesController::addExistingElementAction">addExistingElementAction() (ItemTypesController method)</a></dt>
     <dt><a href="Reference/models/Item.html#Item::addFile">addFile() (Item method)</a></dt>
     <dt><a href="Reference/models/Builder/Item.html#Builder_Item::addFiles">addFiles() (Builder_Item method)</a></dt>
@@ -109,6 +120,7 @@
     <dt><a href="Reference/controllers/ItemsController.html#ItemsController::advancedSearchAction">advancedSearchAction() (ItemsController method)</a></dt>
     <dt><a href="Reference/models/Mixin/Search.html#Mixin_Search::afterDelete">afterDelete() (Mixin_Search method)</a></dt>
     <dd><dl>
+      <dt><a href="Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::afterDelete">(Omeka_Record_AbstractRecord method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Record/Mixin/AbstractMixin.html#Omeka_Record_Mixin_AbstractMixin::afterDelete">(Omeka_Record_Mixin_AbstractMixin method)</a></dt>
   </dl></dd>
     <dt><a href="Reference/models/Collection.html#Collection::afterSave">afterSave() (Collection method)</a></dt>
@@ -121,11 +133,13 @@
       <dt><a href="Reference/models/Mixin/PublicFeatured.html#Mixin_PublicFeatured::afterSave">(Mixin_PublicFeatured method)</a></dt>
       <dt><a href="Reference/models/Mixin/Search.html#Mixin_Search::afterSave">(Mixin_Search method)</a></dt>
       <dt><a href="Reference/models/Mixin/Tag.html#Mixin_Tag::afterSave">(Mixin_Tag method)</a></dt>
+      <dt><a href="Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::afterSave">(Omeka_Record_AbstractRecord method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Record/Mixin/AbstractMixin.html#Omeka_Record_Mixin_AbstractMixin::afterSave">(Omeka_Record_Mixin_AbstractMixin method)</a></dt>
   </dl></dd>
     <dt><a href="Reference/views/helpers/AllElementTexts.html#Omeka_View_Helper_AllElementTexts::allElementTexts">allElementTexts() (Omeka_View_Helper_AllElementTexts method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Test/AppTestCase.html#Omeka_Test_AppTestCase::appBootstrap">appBootstrap() (Omeka_Test_AppTestCase method)</a></dt>
     <dt><a href="Reference/controllers/AppearanceController.html#AppearanceController">AppearanceController (class)</a></dt>
+    <dt><a href="Reference/libraries/Omeka/Validator/Errors.html#Omeka_Validator_Errors::append">append() (Omeka_Validator_Errors method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Db/Select/PublicPermissions.html#Omeka_Db_Select_PublicPermissions::apply">apply() (Omeka_Db_Select_PublicPermissions method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Plugin/Broker.html#Omeka_Plugin_Broker::applyFilters">applyFilters() (Omeka_Plugin_Broker method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Form.html#Omeka_Form::applyOmekaStyles">applyOmekaStyles() (Omeka_Form method)</a></dt>
@@ -147,6 +161,7 @@
   </dl></dd>
     <dt><a href="Reference/models/Mixin/Tag.html#Mixin_Tag::applyTagString">applyTagString() (Mixin_Tag method)</a></dt>
     <dt><a href="Reference/models/Process.html#Process::$args">args (Process property)</a></dt>
+    <dt><a href="Reference/libraries/Omeka/Validator/Errors.html#Omeka_Validator_Errors::asort">asort() (Omeka_Validator_Errors method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Acl/Assert/Ownership.html#Omeka_Acl_Assert_Ownership::assert">assert() (Omeka_Acl_Assert_Ownership method)</a></dt>
     <dd><dl>
       <dt><a href="Reference/libraries/Omeka/Acl/Assert/User.html#Omeka_Acl_Assert_User::assert">(Omeka_Acl_Assert_User method)</a></dt>
@@ -180,6 +195,7 @@
      | <a href="genindex-H.html"><strong>H</strong></a>
      | <a href="genindex-I.html"><strong>I</strong></a>
      | <a href="genindex-J.html"><strong>J</strong></a>
+     | <a href="genindex-K.html"><strong>K</strong></a>
      | <a href="genindex-L.html"><strong>L</strong></a>
      | <a href="genindex-M.html"><strong>M</strong></a>
      | <a href="genindex-N.html"><strong>N</strong></a>
@@ -220,7 +236,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+    
+        <li><a href="index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
       </ul>
     </div>
     <div class="footer">

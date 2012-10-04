@@ -47,4 +47,3 @@ Process
     .. php:method:: _isSerialized($s)
     
         :param unknown $s:
-

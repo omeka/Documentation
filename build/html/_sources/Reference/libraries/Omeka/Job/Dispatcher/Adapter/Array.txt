@@ -30,4 +30,3 @@ Omeka_Job_Dispatcher_Adapter_Array
     .. php:method:: getJob($index = 0)
     
         :param unknown $index:
-

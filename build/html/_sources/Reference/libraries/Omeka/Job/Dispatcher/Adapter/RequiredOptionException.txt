@@ -46,4 +46,3 @@ Omeka_Job_Dispatcher_Adapter_RequiredOptionException
     .. php:method:: getTraceAsString()
 
     .. php:method:: __toString()
-

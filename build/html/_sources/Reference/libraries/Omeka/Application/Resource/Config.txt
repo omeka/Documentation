@@ -9,4 +9,3 @@ Omeka_Application_Resource_Config
     .. php:method:: init()
     
         :returns: Zend_Config_Ini
-

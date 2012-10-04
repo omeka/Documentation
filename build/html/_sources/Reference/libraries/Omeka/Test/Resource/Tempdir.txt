@@ -11,4 +11,3 @@ Omeka_Test_Resource_Tempdir
     .. php:method:: cleanDir($dir)
     
         :param unknown $dir:
-

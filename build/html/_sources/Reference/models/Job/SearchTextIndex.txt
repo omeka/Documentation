@@ -7,4 +7,3 @@ Job_SearchTextIndex
     .. php:method:: perform()
     
         Bulk index all valid records.
-

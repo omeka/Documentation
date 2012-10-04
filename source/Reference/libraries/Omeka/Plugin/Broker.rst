@@ -123,4 +123,3 @@ Omeka_Plugin_Broker
         like add_plugin_hook() to interact with the plugin API.
         
         :returns: void
-

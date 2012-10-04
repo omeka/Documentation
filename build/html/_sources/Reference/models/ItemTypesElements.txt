@@ -14,5 +14,3 @@ ItemTypesElements
 
     .. php:attr:: order
     
-
-

@@ -18,4 +18,3 @@ Omeka_Application_Resource_Currentuser
         boolean false (tries to convert it to the empty string).
         
         :returns: User|null
-

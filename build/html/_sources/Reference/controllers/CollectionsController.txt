@@ -33,4 +33,3 @@ CollectionsController
     .. php:method:: _getDeleteConfirmMessage($collection)
     
         :param unknown $collection:
-

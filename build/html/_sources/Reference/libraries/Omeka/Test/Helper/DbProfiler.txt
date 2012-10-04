@@ -30,4 +30,3 @@ Omeka_Test_Helper_DbProfiler
         
         :param integer $queryCount: 
         :param unknown $msg:
-

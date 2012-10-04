@@ -132,4 +132,3 @@ ItemType
         Returns the 'Item Type' element set.
         
         :returns: ElementSet
-

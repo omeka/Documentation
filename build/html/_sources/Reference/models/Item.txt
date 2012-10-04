@@ -172,4 +172,3 @@ Item
         Identifies Item records as relating to the Items ACL resource.
         
         :returns: string
-

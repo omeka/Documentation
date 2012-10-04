@@ -7,4 +7,3 @@ Table_UsersActivations
     .. php:method:: findByUrl($url)
     
         :param unknown $url:
-

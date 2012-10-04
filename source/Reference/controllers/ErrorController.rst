@@ -42,4 +42,3 @@ ErrorController
         :param Exception $e:
 
     .. php:method:: isInDebugMode()
-

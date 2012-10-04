@@ -60,4 +60,3 @@ Omeka_Plugin_Installer
         
         :param Plugin $plugin: Plugin to uninstall.
         :returns: void
-

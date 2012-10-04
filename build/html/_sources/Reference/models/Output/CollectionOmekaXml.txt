@@ -11,4 +11,3 @@ Output_CollectionOmekaXml
         Create a node representing a collection.
         
         :returns: void
-

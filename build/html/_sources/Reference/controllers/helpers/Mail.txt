@@ -53,4 +53,3 @@ Omeka_Controller_Action_Helper_Mail
         Send the email.
         
         :param Zend_Mail_Transport_Abstract $transport: Optional defaults to null.
-

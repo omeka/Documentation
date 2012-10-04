@@ -22,4 +22,3 @@ ElementSetsController
     .. php:method:: _redirectAfterEdit($record)
     
         :param unknown $record:
-

@@ -11,4 +11,3 @@ Output_ItemContainerOmekaXml
         Create a node to contain Item nodes.
         
         :returns: void
-

@@ -65,4 +65,3 @@ Omeka_Job_AbstractJob
         job.
 
     .. php:method:: perform()
-

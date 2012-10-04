@@ -57,4 +57,3 @@ Omeka_View_Exception
     .. php:method:: getTraceAsString()
 
     .. php:method:: __toString()
-

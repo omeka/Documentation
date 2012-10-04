@@ -19,4 +19,3 @@ TagsController
     .. php:method:: autocompleteAction()
 
     .. php:method:: renameAjaxAction()
-

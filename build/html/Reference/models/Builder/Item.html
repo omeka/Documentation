@@ -22,10 +22,13 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
     <link rel="up" title="Models/Builder" href="index.html" />
     <link rel="next" title="Builder_ItemType" href="ItemType.html" />
-    <link rel="prev" title="Builder_ElementSet" href="ElementSet.html" /> 
+    <link rel="prev" title="Builder_ElementSet" href="ElementSet.html" />
+    <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
+ 
   </head>
   <body>
     <div class="related">
@@ -40,7 +43,12 @@
         <li class="right" >
           <a href="ElementSet.html" title="Builder_ElementSet"
              accesskey="P">previous</a> |</li>
+    
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
           <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
           <li><a href="../index.html" >Models</a> &raquo;</li>
           <li><a href="index.html" accesskey="U">Models/Builder</a> &raquo;</li> 
@@ -159,29 +167,13 @@ instead of ID.</p>
 <dt id="Builder_Item::addFiles">
 <tt class="descname">addFiles</tt><big>(</big><em>string|Omeka_File_Ingest_AbstractIngest $transferStrategy</em>, <em>string|array $files</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#Builder_Item::addFiles" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add files to an item.</p>
-<p>&lt;li&gt;&#8217;Url|Filesystem&#8217; =&gt; string|array If a string is given, this represents the source identifier of a single file
-(the URL representing the file, or the absolute file path, respectively).  If an array is given, it assumes that
-each entry in the array must be either an array or a string.  If it an array, there are several default keys that
-may be present:
-&lt;ul&gt;
-&lt;li&gt;&#8217;source&#8217; =&gt; Any identifier that is appropriate to the transfer strategy in use.  For &#8216;Url&#8217;, this should be a
-valid URL.  For &#8216;Filesystem&#8217;,
-it must be an absolute path to the source file to be transferred.&lt;/li&gt;
-&lt;li&gt;&#8217;name&#8217; =&gt; OPTIONAL The filename to give to the transferred file.  This can be any arbitrary filename and will be
-listed as the original filename of the file.  This will also be used to generate the archival filename for the file.</p>
-<blockquote>
-<div>If none is given, this defaults to using the getOriginalFileName() method of the transfer adapter.&lt;/li&gt;</div></blockquote>
-<p>&lt;li&gt;&#8217;metadata&#8217; =&gt; OPTIONAL This could contain any metadata that needs to be associated with the file.  This should
-be indexed in the same fashion as for items.  See ActsAsElementText::addTextsByArray()&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>$transferStrategy</strong> (<em>string|Omeka_File_Ingest_AbstractIngest</em>) &#8211; This can either be one of the following strings denoting built-in transfer methods: &#8216;Upload&#8217;, &#8216;Filesystem&#8217;, &#8216;Url&#8217; Or it could be an implemented Omeka_File_Ingest_AbstractIngest class.</li>
-<li><strong>$files</strong> (<em>string|array</em>) &#8211; This can be a single string, an array of strings, or an array of arrays, depending on the parameters that are needed by the underlying strategy.  Expected parameters for the built in strategies are as follows: &lt;ul&gt; &lt;li&gt;&#8217;Upload&#8217; =&gt; null|string If a string is given, it represents the POST parameter name containing the uploaded file(s).  If null is given, all files in the POST will be ingested.&lt;/li&gt;</li>
+<li><strong>$files</strong> (<em>string|array</em>) &#8211; This can be a single string, an array of strings, or an array of arrays, depending on the parameters that are needed by the underlying strategy.  Expected parameters for the built in strategies are as follows: &lt;ul&gt; &lt;li&gt;&#8217;Upload&#8217; =&gt; null|string If a string is given, it represents the POST parameter name containing the uploaded file(s).  If null is given, all files in the POST will be ingested.&lt;/li&gt; &lt;li&gt;&#8217;Url|Filesystem&#8217; =&gt; string|array If a string is given, this represents the source identifier of a single file (the URL representing the file, or the absolute file path, respectively).  If an array is given, it assumes that each entry in the array must be either an array or a string.  If it an array, there are several default keys that may be present: &lt;ul&gt; &lt;li&gt;&#8217;source&#8217; =&gt; Any identifier that is appropriate to the transfer strategy in use.  For &#8216;Url&#8217;, this should be a valid URL.  For &#8216;Filesystem&#8217;, it must be an absolute path to the source file to be transferred.&lt;/li&gt; &lt;li&gt;&#8217;name&#8217; =&gt; OPTIONAL The filename to give to the transferred file.  This can be any arbitrary filename and will be listed as the original filename of the file.  This will also be used to generate the archival filename for the file.  If none is given, this defaults to using the getOriginalFileName() method of the transfer adapter.&lt;/li&gt; &lt;li&gt;&#8217;metadata&#8217; =&gt; OPTIONAL This could contain any metadata that needs to be associated with the file.  This should be indexed in the same fashion as for items.  See ActsAsElementText::addTextsByArray()&lt;/li&gt; &lt;/ul&gt;&lt;/li&gt; &lt;/ul&gt;</li>
 <li><strong>$options</strong> (<em>array</em>) &#8211; OPTIONAL May contain the following flags where appropriate: &lt;ul&gt; &lt;li&gt;&#8217;ignore_invalid_files&#8217; =&gt; Do not throw exceptions when attempting to ingest invalid files.  Instead, skip to the next file in the list and continue processing.  False by default. (all except Upload).&lt;/li&gt; &lt;li&gt;&#8217;ignoreNoFile&#8217; =&gt; Ignore errors resulting from POSTs that do not contain uploaded files as expected (only for Upload).&lt;/li&gt; &lt;/ul&gt;</li>
 </ul>
 </td>
@@ -227,7 +219,7 @@ filter.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$record</strong> (<em>Omeka_Record_AbstractRecord</em>) &#8211; </li>
+<li><strong>$record</strong> (<a class="reference internal" href="../../libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><em>Omeka_Record_AbstractRecord</em></a>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -244,7 +236,7 @@ filter.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$record</strong> (<em>Omeka_Record_AbstractRecord</em>) &#8211; </li>
+<li><strong>$record</strong> (<a class="reference internal" href="../../libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><em>Omeka_Record_AbstractRecord</em></a>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -310,7 +302,12 @@ filter.</p>
         <li class="right" >
           <a href="ElementSet.html" title="Builder_ElementSet"
              >previous</a> |</li>
+    
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
           <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
           <li><a href="../index.html" >Models</a> &raquo;</li>
           <li><a href="index.html" >Models/Builder</a> &raquo;</li> 

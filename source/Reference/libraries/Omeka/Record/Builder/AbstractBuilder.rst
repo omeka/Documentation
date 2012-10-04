@@ -99,4 +99,3 @@ Omeka_Record_Builder_AbstractBuilder
         
         :param Omeka_Record_AbstractRecord $record: 
         :returns: void
-

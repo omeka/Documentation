@@ -15,4 +15,3 @@ Table_Process
     .. php:method:: findByStatus($status)
     
         :param unknown $status:
-

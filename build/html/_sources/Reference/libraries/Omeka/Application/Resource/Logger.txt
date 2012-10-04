@@ -18,4 +18,3 @@ Omeka_Application_Resource_Logger
         :param Zend_Log $log: 
         :param string $toEmail: Email address of debug message recipient.
         :param unknown $filter:
-

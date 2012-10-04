@@ -34,4 +34,3 @@ Builder_ElementSet
     .. php:method:: _beforeBuild()
     
         Add elements to be associated with the element set.
-

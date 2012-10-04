@@ -58,4 +58,3 @@ Omeka_Job_Worker_InterruptException
     .. php:method:: getTraceAsString()
 
     .. php:method:: __toString()
-

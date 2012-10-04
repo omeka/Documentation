@@ -46,4 +46,3 @@ Omeka_Job_Dispatcher_Adapter_Synchronous
         to specify the correct behavior.
         
         :param unknown $name:
-

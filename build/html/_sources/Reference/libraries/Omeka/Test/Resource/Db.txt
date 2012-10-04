@@ -57,4 +57,3 @@ Omeka_Test_Resource_Db
         
         :param Omeka_Db $db: 
         :returns: void
-

@@ -11,4 +11,3 @@ Omeka_Db_Migration_MigrationInterface
     .. php:method:: setDb(Omeka_Db $db)
     
         :param Omeka_Db $db:
-

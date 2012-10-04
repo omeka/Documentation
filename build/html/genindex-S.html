@@ -22,7 +22,10 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Omeka Documentation v2.0 documentation" href="index.html" /> 
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="index.html" />
+    <link rel="stylesheet" href="_static/overrides.css" type="text/css" />
+ 
   </head>
   <body>
     <div class="related">
@@ -31,7 +34,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+    
+        <li><a href="index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
       </ul>
     </div>  
 
@@ -47,6 +55,7 @@
   <td style="width: 33%" valign="top"><dl>
     <dt><a href="Reference/models/User.html#User::$salt">salt (User property)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Application.html#Omeka_Application::sanitizeMagicQuotes">sanitizeMagicQuotes() (Omeka_Application method)</a></dt>
+    <dt><a href="Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::save">save() (Omeka_Record_AbstractRecord method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Navigation.html#Omeka_Navigation::saveAsOption">saveAsOption() (Omeka_Navigation method)</a></dt>
     <dt><a href="Reference/models/Mixin/ElementText.html#Mixin_ElementText::saveElementTexts">saveElementTexts() (Mixin_ElementText method)</a></dt>
     <dt><a href="Reference/models/Item.html#Item::saveFiles">saveFiles() (Item method)</a></dt>
@@ -69,6 +78,7 @@
   </dl></dd>
     <dt><a href="Reference/controllers/UsersController.html#UsersController::sendActivationEmail">sendActivationEmail() (UsersController method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Job/Dispatcher/Default.html#Omeka_Job_Dispatcher_Default::sendLongRunning">sendLongRunning() (Omeka_Job_Dispatcher_Default method)</a></dt>
+    <dt><a href="Reference/libraries/Omeka/Validator/Errors.html#Omeka_Validator_Errors::serialize">serialize() (Omeka_Validator_Errors method)</a></dt>
     <dt><a href="Reference/libraries/globals.html#set_option">set_option() (global function)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Test/Helper/Plugin.html#Omeka_Test_Helper_Plugin::setAcl">setAcl() (Omeka_Test_Helper_Plugin method)</a></dt>
     <dt><a href="Reference/models/Plugin.html#Plugin::setActive">setActive() (Plugin method)</a></dt>
@@ -77,6 +87,9 @@
     <dt><a href="Reference/controllers/helpers/Acl.html#Omeka_Controller_Action_Helper_Acl::setAllowed">setAllowed() (Omeka_Controller_Action_Helper_Acl method)</a></dt>
     <dt><a href="Reference/models/Process.html#Process::setArguments">setArguments() (Process method)</a></dt>
     <dt><a href="Reference/models/Element.html#Element::setArray">setArray() (Element method)</a></dt>
+    <dd><dl>
+      <dt><a href="Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::setArray">(Omeka_Record_AbstractRecord method)</a></dt>
+  </dl></dd>
     <dt><a href="Reference/libraries/Omeka/View.html#Omeka_View::setAssetPath">setAssetPath() (Omeka_View method)</a></dt>
     <dt><a href="Reference/models/Plugin.html#Plugin::setAuthor">setAuthor() (Plugin method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Form.html#Omeka_Form::setAutoApplyOmekaStyles">setAutoApplyOmekaStyles() (Omeka_Form method)</a></dt>
@@ -124,6 +137,7 @@
     <dt><a href="Reference/models/Mixin/PublicFeatured.html#Mixin_PublicFeatured::setFeatured">setFeatured() (Mixin_PublicFeatured method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Validate/Confirmation.html#Omeka_Validate_Confirmation::setField">setField() (Omeka_Validate_Confirmation method)</a></dt>
     <dt><a href="Reference/models/Builder/Item.html#Builder_Item::setFileMetadata">setFileMetadata() (Builder_Item method)</a></dt>
+    <dt><a href="Reference/libraries/Omeka/Validator/Errors.html#Omeka_Validator_Errors::setFlags">setFlags() (Omeka_Validator_Errors method)</a></dt>
     <dt><a href="Reference/models/Installer/Default.html#Installer_Default::setForm">setForm() (Installer_Default method)</a></dt>
     <dd><dl>
       <dt><a href="Reference/models/Installer/Test.html#Installer_Test::setForm">(Installer_Test method)</a></dt>
@@ -140,6 +154,8 @@
     <dt><a href="Reference/libraries/Omeka/Test/Resource/Db.html#Omeka_Test_Resource_Db::setInstall">setInstall() (Omeka_Test_Resource_Db method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Application/Resource/Options.html#Omeka_Application_Resource_Options::setInstallerRedirect">setInstallerRedirect() (Omeka_Application_Resource_Options method)</a></dt>
     <dt><a href="Reference/models/Installer/Task/User.html#Installer_Task_User::setIsActive">setIsActive() (Installer_Task_User method)</a></dt>
+</dl></td>
+  <td style="width: 33%" valign="top"><dl>
     <dt><a href="Reference/libraries/Omeka/File/Ingest/AbstractIngest.html#Omeka_File_Ingest_AbstractIngest::setItem">setItem() (Omeka_File_Ingest_AbstractIngest method)</a></dt>
     <dd><dl>
       <dt><a href="Reference/libraries/Omeka/File/Ingest/AbstractSourceIngest.html#Omeka_File_Ingest_AbstractSourceIngest::setItem">(Omeka_File_Ingest_AbstractSourceIngest method)</a></dt>
@@ -147,8 +163,7 @@
       <dt><a href="Reference/libraries/Omeka/File/Ingest/Upload.html#Omeka_File_Ingest_Upload::setItem">(Omeka_File_Ingest_Upload method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/File/Ingest/Url.html#Omeka_File_Ingest_Url::setItem">(Omeka_File_Ingest_Url method)</a></dt>
   </dl></dd>
-</dl></td>
-  <td style="width: 33%" valign="top"><dl>
+    <dt><a href="Reference/libraries/Omeka/Validator/Errors.html#Omeka_Validator_Errors::setIteratorClass">setIteratorClass() (Omeka_Validator_Errors method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Job/AbstractJob.html#Omeka_Job_AbstractJob::setJobDispatcher">setJobDispatcher() (Omeka_Job_AbstractJob method)</a></dt>
     <dd><dl>
       <dt><a href="Reference/libraries/Omeka/Job/Mock.html#Omeka_Job_Mock::setJobDispatcher">(Omeka_Job_Mock method)</a></dt>
@@ -187,10 +202,16 @@
     <dd><dl>
       <dt><a href="Reference/models/User.html#User::setPassword">(User method)</a></dt>
   </dl></dd>
-    <dt><a href="Reference/libraries/Omeka/Test/Helper/Plugin.html#Omeka_Test_Helper_Plugin::setPluginBroker">setPluginBroker() (Omeka_Test_Helper_Plugin method)</a></dt>
+    <dt><a href="Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::setPluginBroker">setPluginBroker() (Omeka_Record_AbstractRecord method)</a></dt>
+    <dd><dl>
+      <dt><a href="Reference/libraries/Omeka/Test/Helper/Plugin.html#Omeka_Test_Helper_Plugin::setPluginBroker">(Omeka_Test_Helper_Plugin method)</a></dt>
+  </dl></dd>
     <dt><a href="Reference/libraries/Omeka/Test/Helper/Plugin.html#Omeka_Test_Helper_Plugin::setPluginIniReader">setPluginIniReader() (Omeka_Test_Helper_Plugin method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Test/Helper/Plugin.html#Omeka_Test_Helper_Plugin::setPluginLoader">setPluginLoader() (Omeka_Test_Helper_Plugin method)</a></dt>
-    <dt><a href="Reference/models/User.html#User::setPostData">setPostData() (User method)</a></dt>
+    <dt><a href="Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::setPostData">setPostData() (Omeka_Record_AbstractRecord method)</a></dt>
+    <dd><dl>
+      <dt><a href="Reference/models/User.html#User::setPostData">(User method)</a></dt>
+  </dl></dd>
     <dt><a href="Reference/libraries/Omeka/Job/Dispatcher/Adapter/BackgroundProcess.html#Omeka_Job_Dispatcher_Adapter_BackgroundProcess::setProcessDispatcher">setProcessDispatcher() (Omeka_Job_Dispatcher_Adapter_BackgroundProcess method)</a></dt>
     <dt><a href="Reference/models/Mixin/PublicFeatured.html#Mixin_PublicFeatured::setPublic">setPublic() (Mixin_PublicFeatured method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Job/Dispatcher/Adapter/AbstractAdapter.html#Omeka_Job_Dispatcher_Adapter_AbstractAdapter::setQueueName">setQueueName() (Omeka_Job_Dispatcher_Adapter_AbstractAdapter method)</a></dt>
@@ -231,8 +252,9 @@
     <dt><a href="Reference/models/ElementText.html#ElementText::setText">setText() (ElementText method)</a></dt>
     <dt><a href="Reference/controllers/SearchController.html#SearchController::settingsAction">settingsAction() (SearchController method)</a></dt>
     <dt><a href="Reference/controllers/SettingsController.html#SettingsController">SettingsController (class)</a></dt>
-    <dt><a href="Reference/libraries/Omeka/Storage/Adapter/AdapterInterface.html#Omeka_Storage_Adapter_AdapterInterface::setUp">setUp() (Omeka_Storage_Adapter_AdapterInterface method)</a></dt>
+    <dt><a href="Reference/libraries/Omeka/Plugin/AbstractPlugin.html#Omeka_Plugin_AbstractPlugin::setUp">setUp() (Omeka_Plugin_AbstractPlugin method)</a></dt>
     <dd><dl>
+      <dt><a href="Reference/libraries/Omeka/Storage/Adapter/AdapterInterface.html#Omeka_Storage_Adapter_AdapterInterface::setUp">(Omeka_Storage_Adapter_AdapterInterface method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Storage/Adapter/Filesystem.html#Omeka_Storage_Adapter_Filesystem::setUp">(Omeka_Storage_Adapter_Filesystem method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Storage/Adapter/TempFilesystem.html#Omeka_Storage_Adapter_TempFilesystem::setUp">(Omeka_Storage_Adapter_TempFilesystem method)</a></dt>
       <dt><a href="Reference/libraries/Omeka/Storage/Adapter/ZendS3.html#Omeka_Storage_Adapter_ZendS3::setUp">(Omeka_Storage_Adapter_ZendS3 method)</a></dt>
@@ -249,6 +271,9 @@
     <dt><a href="Reference/models/Installer/Task/User.html#Installer_Task_User::setUsername">setUsername() (Installer_Task_User method)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Application/Resource/Theme.html#Omeka_Application_Resource_Theme::setwebbasepath">setwebbasepath() (Omeka_Application_Resource_Theme method)</a></dt>
     <dt><a href="Reference/controllers/CollectionsController.html#CollectionsController::showAction">showAction() (CollectionsController method)</a></dt>
+    <dd><dl>
+      <dt><a href="Reference/libraries/Omeka/Controller/AbstractActionController.html#Omeka_Controller_AbstractActionController::showAction">(Omeka_Controller_AbstractActionController method)</a></dt>
+  </dl></dd>
     <dt><a href="Reference/views/helpers/Singularize.html#Omeka_View_Helper_Singularize::singularize">singularize() (Omeka_View_Helper_Singularize method)</a></dt>
     <dt><a href="Reference/models/File.html#File::$size">size (File property)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Filter/Date.html#Omeka_Filter_Date::split">split() (Omeka_Filter_Date method)</a></dt>
@@ -311,6 +336,7 @@
      | <a href="genindex-H.html"><strong>H</strong></a>
      | <a href="genindex-I.html"><strong>I</strong></a>
      | <a href="genindex-J.html"><strong>J</strong></a>
+     | <a href="genindex-K.html"><strong>K</strong></a>
      | <a href="genindex-L.html"><strong>L</strong></a>
      | <a href="genindex-M.html"><strong>M</strong></a>
      | <a href="genindex-N.html"><strong>N</strong></a>
@@ -351,7 +377,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+    
+        <li><a href="index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
       </ul>
     </div>
     <div class="footer">

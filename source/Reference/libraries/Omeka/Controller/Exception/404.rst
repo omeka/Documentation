@@ -58,4 +58,3 @@ Omeka_Controller_Exception_404
     .. php:method:: getTraceAsString()
 
     .. php:method:: __toString()
-

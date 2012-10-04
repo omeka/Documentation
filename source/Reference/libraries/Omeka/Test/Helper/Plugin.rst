@@ -75,4 +75,3 @@ Omeka_Test_Helper_Plugin
         
         :param unknown $name: 
         :returns: mixed
-

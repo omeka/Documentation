@@ -12,4 +12,3 @@ Omeka_View_Helper_SearchFilters
         
         :param array $params: Optional array of key-value pairs to use instead of reading the current params from the request.
         :returns: string HTML output
-

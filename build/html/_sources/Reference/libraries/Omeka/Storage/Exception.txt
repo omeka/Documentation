@@ -55,4 +55,3 @@ Omeka_Storage_Exception
     .. php:method:: getTraceAsString()
 
     .. php:method:: __toString()
-

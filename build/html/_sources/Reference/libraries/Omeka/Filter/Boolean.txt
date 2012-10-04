@@ -13,4 +13,3 @@ Omeka_Filter_Boolean
         
         :param unknown $value: 
         :returns: string "1" or "0"
-

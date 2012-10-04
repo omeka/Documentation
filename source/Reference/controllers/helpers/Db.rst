@@ -62,4 +62,3 @@ Omeka_Controller_Action_Helper_Db
         :param unknown $id: 
         :param unknown $table: 
         :returns: Omeka_Record_AbstractRecord
-

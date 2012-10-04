@@ -35,4 +35,3 @@ Omeka_Application_Resource_Theme
         
         :param string $webBasePath: 
         :returns: void
-

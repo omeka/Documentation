@@ -29,4 +29,3 @@ Omeka_Application_Resource_Options
         
         :param unknown $options: 
         :returns: void.
-

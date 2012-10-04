@@ -134,4 +134,3 @@ Omeka_Db
         %PREFIX% will be replaced by the table prefix.
         
         :param string $filePath: Path to the SQL file to load
-

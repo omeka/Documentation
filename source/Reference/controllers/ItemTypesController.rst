@@ -33,4 +33,3 @@ ItemTypesController
     .. php:method:: _getForm($itemType)
     
         :param unknown $itemType:
-

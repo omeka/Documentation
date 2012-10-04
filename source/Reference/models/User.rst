@@ -70,4 +70,3 @@ User
     .. php:method:: hashPassword($password)
     
         :param unknown $password:
-

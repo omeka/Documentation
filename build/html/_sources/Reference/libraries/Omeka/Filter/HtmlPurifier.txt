@@ -56,4 +56,3 @@ Omeka_Filter_HtmlPurifier
     
         :param unknown $htmlAttributes: 
         :param unknown $htmlElements:
-

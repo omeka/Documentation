@@ -30,4 +30,3 @@ Omeka_Validate_UserPassword
         
         :param string $value: Password to check.
         :param null $context: Not used.
-

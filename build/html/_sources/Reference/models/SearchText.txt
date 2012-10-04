@@ -22,5 +22,3 @@ SearchText
 
     .. php:attr:: text
     
-
-

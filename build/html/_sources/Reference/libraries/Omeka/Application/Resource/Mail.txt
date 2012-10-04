@@ -20,4 +20,3 @@ Omeka_Application_Resource_Mail
     .. php:method:: init()
     
         :returns: Zend_Mail
-

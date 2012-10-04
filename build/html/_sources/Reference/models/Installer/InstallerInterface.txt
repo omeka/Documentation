@@ -13,4 +13,3 @@ Installer_InstallerInterface
     .. php:method:: install()
 
     .. php:method:: isInstalled()
-

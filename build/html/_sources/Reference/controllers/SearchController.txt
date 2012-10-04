@@ -11,4 +11,3 @@ SearchController
     .. php:method:: settingsAction()
 
     .. php:method:: _getBrowseRecordsPerPage()
-

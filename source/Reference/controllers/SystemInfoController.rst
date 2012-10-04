@@ -21,4 +21,3 @@ SystemInfoController
     .. php:method:: _addThemeInfo($info)
     
         :param unknown $info:
-

@@ -24,4 +24,3 @@ Omeka_Acl_Assert_Ownership
         
         :param unknown $user: 
         :param unknown $record:
-

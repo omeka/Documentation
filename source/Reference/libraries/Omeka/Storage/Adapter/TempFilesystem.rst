@@ -82,4 +82,3 @@ Omeka_Storage_Adapter_TempFilesystem
         :param unknown $source: 
         :param unknown $dest: 
         :returns: boolean
-

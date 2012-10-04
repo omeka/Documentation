@@ -12,5 +12,3 @@ MimeElementSetLookup
 
     .. php:attr:: mime
     
-
-

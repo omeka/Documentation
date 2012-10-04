@@ -52,4 +52,3 @@ Omeka_Controller_Plugin_Admin
         
         :param unknown $request: 
         :returns: boolean
-

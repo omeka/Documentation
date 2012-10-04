@@ -37,4 +37,3 @@ Omeka_Job_Process_Wrapper
     
         :param unknown $message: 
         :param unknown $priority:
-

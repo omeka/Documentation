@@ -8,4 +8,3 @@ IndexController
     at index.php within any given theme.
 
     .. php:method:: indexAction()
-

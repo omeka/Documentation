@@ -66,4 +66,3 @@ Omeka_View_Helper_ElementForm
     .. php:method:: _displayTooltip()
 
     .. php:method:: _displayFieldLabel()
-

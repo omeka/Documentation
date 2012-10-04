@@ -25,4 +25,3 @@ Omeka_View_Helper_Flash
         :param string $status: 
         :param string $message: 
         :returns: string
-

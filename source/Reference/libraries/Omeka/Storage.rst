@@ -76,4 +76,3 @@ Omeka_Storage
     
         :param unknown $filename: 
         :param unknown $type:
-

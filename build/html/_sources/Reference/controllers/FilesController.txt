@@ -29,4 +29,3 @@ FilesController
     .. php:method:: _redirectAfterDelete($record)
     
         :param unknown $record:
-

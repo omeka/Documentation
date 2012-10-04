@@ -47,4 +47,3 @@ Omeka_Controller_Plugin_Debug
         :param Zend_Controller_Request_Abstract $request: Request object.
         :param Zend_Controller_Router_Interface $router: Router object.
         :returns: string HTML markup.
-

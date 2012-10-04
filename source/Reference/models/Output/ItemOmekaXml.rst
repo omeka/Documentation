@@ -11,4 +11,3 @@ Output_ItemOmekaXml
         Create a node representing an Item record.
         
         :returns: void
-

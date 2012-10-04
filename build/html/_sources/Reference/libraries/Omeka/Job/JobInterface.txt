@@ -11,4 +11,3 @@ Omeka_Job_JobInterface
         :param unknown $options:
 
     .. php:method:: perform()
-

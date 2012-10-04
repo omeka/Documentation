@@ -64,4 +64,3 @@ Table_Element
         
         :param array $options: Set of parameters for searching/filtering results.
         :returns: array
-

@@ -20,4 +20,3 @@ Omeka_Validate_File_MimeType
         
         :param mixed $options: 
         :returns: void
-

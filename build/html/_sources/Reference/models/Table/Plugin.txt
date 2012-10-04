@@ -13,4 +13,3 @@ Table_Plugin
     .. php:method:: findByDirectoryName($pluginDirName)
     
         :param unknown $pluginDirName:
-

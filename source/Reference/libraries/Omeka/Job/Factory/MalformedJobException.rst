@@ -46,4 +46,3 @@ Omeka_Job_Factory_MalformedJobException
     .. php:method:: getTraceAsString()
 
     .. php:method:: __toString()
-

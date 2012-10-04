@@ -19,4 +19,3 @@ Table_ElementSet
     .. php:method:: findByName($name)
     
         :param unknown $name:
-

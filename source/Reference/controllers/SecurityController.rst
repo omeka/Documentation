@@ -17,4 +17,3 @@ SecurityController
     .. php:method:: getHtmlPurifierAllowedHtmlElementsAction()
 
     .. php:method:: getHtmlPurifierAllowedHtmlAttributesAction()
-

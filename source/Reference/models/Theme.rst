@@ -164,4 +164,3 @@ Theme
         
         :param string $website: The website given in the theme's INI file.
         :returns: string The website URL with a prepended scheme.
-

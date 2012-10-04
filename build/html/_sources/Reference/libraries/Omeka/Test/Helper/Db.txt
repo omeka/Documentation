@@ -89,4 +89,3 @@ Omeka_Test_Helper_Db
         :returns: integer
 
     .. php:method:: getAdapter()
-

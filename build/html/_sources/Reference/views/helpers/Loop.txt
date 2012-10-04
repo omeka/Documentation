@@ -11,4 +11,3 @@ Omeka_View_Helper_Loop
         :param string $recordsVar: 
         :param array|null $records: 
         :returns: Omeka_Record_Iterator
-

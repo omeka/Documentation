@@ -48,4 +48,3 @@ Omeka_Plugin_Ini
         
         :param Plugin $plugin: The plugin model to initialize.
         :returns: void
-

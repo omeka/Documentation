@@ -29,4 +29,3 @@ Output_ItemAtom
         Returns the XML feed.
         
         :returns: string
-

@@ -14,4 +14,3 @@ Omeka_Validate_Uri
     .. php:method:: isValid($value)
     
         :param unknown $value:
-

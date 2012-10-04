@@ -44,4 +44,3 @@ Installer_Default
     .. php:method:: _addOptions()
 
     .. php:method:: isInstalled()
-

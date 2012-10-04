@@ -54,4 +54,3 @@ Omeka_Acl_Assert_User
     .. php:method:: _isSuperUser($user)
     
         :param unknown $user:
-

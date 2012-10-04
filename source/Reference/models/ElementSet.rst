@@ -45,4 +45,3 @@ ElementSet
     .. php:method:: _getNextElementOrder()
 
     .. php:method:: _validate()
-

@@ -29,7 +29,7 @@ Theme Helpers
     
      .. note::
      
-        Note that objects and arrays must be serialized before being saved.
+        Objects and arrays must be serialized before being saved.
     
      :param string $name:  The option name
      

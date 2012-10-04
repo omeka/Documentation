@@ -9,4 +9,3 @@ Table_ItemType
     .. php:method:: findByName($itemTypeName)
     
         :param unknown $itemTypeName:
-

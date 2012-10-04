@@ -20,4 +20,3 @@ Omeka_Filter_Filename
         
         :param string $name: 
         :returns: string
-

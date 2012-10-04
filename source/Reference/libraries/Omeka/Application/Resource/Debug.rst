@@ -9,4 +9,3 @@ Omeka_Application_Resource_Debug
     .. php:method:: init()
     
         :returns: void
-

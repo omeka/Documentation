@@ -32,4 +32,3 @@ Omeka_File_Extract_Image
     .. php:method:: getEmbeddedMetadataString($metadata = Array)
     
         :param unknown $metadata:
-

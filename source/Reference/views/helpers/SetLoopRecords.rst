@@ -10,4 +10,3 @@ Omeka_View_Helper_SetLoopRecords
         
         :param string $recordsVar: 
         :param array $records:
-

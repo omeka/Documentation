@@ -14,4 +14,3 @@ Omeka_View_Helper_FileId3Metadata
     .. php:method:: _arrayToList($array)
     
         :param unknown $array:
-

@@ -16,4 +16,3 @@ Omeka_Application_Resource_Autoloader
         - {@link Omeka_Form}: forms/
         
         :returns: void
-

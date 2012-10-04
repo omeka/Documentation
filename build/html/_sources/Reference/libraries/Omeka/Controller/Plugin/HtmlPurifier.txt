@@ -66,4 +66,3 @@ Omeka_Controller_Plugin_HtmlPurifier
         :returns: void
 
     .. php:method:: _setupHtmlPurifierOptions()
-

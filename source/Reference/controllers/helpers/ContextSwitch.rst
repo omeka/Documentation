@@ -12,4 +12,3 @@ Omeka_Controller_Action_Helper_ContextSwitch
         enables cross-site AJAX using JSON.
         
         :returns: void
-

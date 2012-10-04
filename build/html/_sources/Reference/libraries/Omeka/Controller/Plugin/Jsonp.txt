@@ -19,4 +19,3 @@ Omeka_Controller_Plugin_Jsonp
         
         :param Zend_Controller_Request_Abstract $request: Request object.
         :returns: void
-

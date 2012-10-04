@@ -45,4 +45,3 @@ Omeka_Application_Resource_Jobs_InvalidAdapterException
     .. php:method:: getTraceAsString()
 
     .. php:method:: __toString()
-

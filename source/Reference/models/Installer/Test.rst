@@ -53,4 +53,3 @@ Installer_Test
     .. php:method:: _addOptions()
 
     .. php:method:: isInstalled()
-

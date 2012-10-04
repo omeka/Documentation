@@ -58,4 +58,3 @@ Omeka_File_Ingest_Exception
     .. php:method:: getTraceAsString()
 
     .. php:method:: __toString()
-

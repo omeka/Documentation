@@ -140,4 +140,3 @@ Omeka_Plugin_Loader
         
         :param Plugin $plugin: 
         :returns: void
-

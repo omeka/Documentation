@@ -57,4 +57,3 @@ Omeka_Plugin_Exception
     .. php:method:: getTraceAsString()
 
     .. php:method:: __toString()
-

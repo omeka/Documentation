@@ -11,4 +11,3 @@ Omeka_View_Helper_GetCurrentRecord
         :param string $recordVar: 
         :param bool $throwException: 
         :returns: Omeka_Record_AbstractRecord|false
-

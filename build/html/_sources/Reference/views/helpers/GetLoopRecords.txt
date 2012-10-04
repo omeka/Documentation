@@ -11,4 +11,3 @@ Omeka_View_Helper_GetLoopRecords
         :param string $recordsVar: 
         :param unknown $throwException: 
         :returns: array|null
-

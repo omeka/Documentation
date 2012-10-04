@@ -82,4 +82,3 @@ Mixin_Search
         indexed and searchable. These classes must extend Omeka_Record_AbstractRecord and implement this search mixin.
         
         :returns: array
-

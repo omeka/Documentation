@@ -36,4 +36,3 @@ Tag
         
         :param array $new_names: Names of the tags this one should be renamed to.
         :returns: void
-

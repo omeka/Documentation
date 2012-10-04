@@ -119,4 +119,3 @@ Omeka_File_Derivative_Image_Creator
         :param unknown $status: 
         :param unknown $output: 
         :param unknown $errors:
-

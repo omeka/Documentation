@@ -29,4 +29,3 @@ Omeka_Plugin_Factory
         plugin.php file or has a valid plugin class.
         
         :returns: array A list of valid plugin directory names.
-

@@ -123,4 +123,3 @@ Collection
         :returns: string
 
     .. php:method:: afterSave()
-

@@ -15,4 +15,3 @@ Option
     .. php:method:: __toString()
 
     .. php:method:: _validate()
-

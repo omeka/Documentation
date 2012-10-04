@@ -60,4 +60,3 @@ Omeka_Job_Dispatcher_Adapter_ZendQueue
         Whether or not the given option has been set.
         
         :param string $name:
-

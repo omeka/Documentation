@@ -12,4 +12,3 @@ Omeka_View_Helper_RecordUrl
         :param string|null $action: 
         :param bool $getAbsoluteUrl: 
         :returns: string
-

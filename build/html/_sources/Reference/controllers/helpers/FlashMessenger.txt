@@ -59,4 +59,3 @@ Omeka_Controller_Action_Helper_FlashMessenger
         :param unknown $message: 
         :param unknown $status: 
         :returns: void
-

@@ -99,4 +99,3 @@ Omeka_View_Helper_AllElementTexts
         
         :param array $vars: Variables to pass to the partial.
         :returns: string
-

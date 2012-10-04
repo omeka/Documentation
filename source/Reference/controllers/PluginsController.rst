@@ -65,4 +65,3 @@ PluginsController
         Retrieve the Plugin record based on the name passed via the request.
         
         :param boolean $create: Whether or not the plugin object should be created if it has not already been loaded.
-

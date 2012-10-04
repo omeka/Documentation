@@ -50,4 +50,3 @@ Omeka_Validate_Confirmation
         
         :param string $field: 
         :returns: void
-

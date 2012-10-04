@@ -26,4 +26,3 @@ SettingsController
     .. php:method:: _setOptions(Zend_Form $form)
     
         :param Zend_Form $form:
-

@@ -270,4 +270,3 @@ Omeka_Db_Table
         
         :param string $suffix: The hook-specific part of the hook name.
         :returns: string
-

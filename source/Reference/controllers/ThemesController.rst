@@ -14,4 +14,3 @@ ThemesController
         That configuration form will be POSTed back to this URL.
         
         :returns: void
-

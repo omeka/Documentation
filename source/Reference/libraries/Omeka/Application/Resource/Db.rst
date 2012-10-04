@@ -22,4 +22,3 @@ Omeka_Application_Resource_Db
         
         :param string $path: 
         :returns: void
-

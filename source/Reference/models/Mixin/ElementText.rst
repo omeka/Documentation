@@ -227,12 +227,17 @@ Mixin_ElementText
         that is keyed to an element's ID.  That array should contain all the 
         text values for that element. For example:
         
-        * Elements:
-        * 1:
-        * 0: 
-        'text': 'Foobar'
-        'html': '0'
-        * 1: 'Baz'
+        .. code-block:: php 
+        
+                   array('Elements' => 
+                         array(
+                             '50' => array('text' => 'Foobar', //element id 50, e.g. DC:Title                 
+                          'html' => 0                                    ),
+                             '41' => array('text' => '<p>Baz baz baz</p>', //element id 41, e.g. DC:Description
+                                            'html' => 1                                    )
+                              )
+                  )
+             
         
         :param unknown $post:
 
@@ -275,4 +280,3 @@ Mixin_ElementText
         Delete all the element texts assigned to the current record ID.
         
         :returns: boolean
-

@@ -11,4 +11,3 @@ Omeka_Session_SaveHandler_DbTable
     Note that this must be updated meticulously after any changes to the sessions table schema.
 
     .. php:method:: init()
-

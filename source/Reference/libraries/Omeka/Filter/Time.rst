@@ -22,4 +22,3 @@ Omeka_Filter_Time
         
         :param string $time: 
         :returns: array Contains the following keys: 'hour', 'minute', 'second'.
-

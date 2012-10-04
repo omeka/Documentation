@@ -9,4 +9,3 @@ Omeka_Application_Resource_Cachemanager
     .. php:method:: init()
     
         :returns: void
-

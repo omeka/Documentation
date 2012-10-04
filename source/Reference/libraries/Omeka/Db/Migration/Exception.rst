@@ -57,4 +57,3 @@ Omeka_Db_Migration_Exception
     .. php:method:: getTraceAsString()
 
     .. php:method:: __toString()
-

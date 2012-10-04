@@ -7,4 +7,3 @@ Job_FileProcessUpload
     .. php:method:: perform()
 
     .. php:method:: _getFile()
-

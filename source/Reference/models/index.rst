@@ -22,6 +22,7 @@ Models
     Plugin
     Process
     SearchText
+    Table/index
     Tag
     Taggings
     Theme

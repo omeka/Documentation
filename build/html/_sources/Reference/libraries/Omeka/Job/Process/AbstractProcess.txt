@@ -29,4 +29,3 @@ Omeka_Job_Process_AbstractProcess
     .. php:method:: run($args)
     
         :param unknown $args:
-

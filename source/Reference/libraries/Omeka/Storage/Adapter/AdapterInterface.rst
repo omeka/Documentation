@@ -54,4 +54,3 @@ Omeka_Storage_Adapter_AdapterInterface
         
         :param string $path: 
         :returns: string URI
-

@@ -18,4 +18,3 @@ Omeka_Test_Resource_Mail
         the same timestamp unit (common).
         
         :param unknown $transport:
-

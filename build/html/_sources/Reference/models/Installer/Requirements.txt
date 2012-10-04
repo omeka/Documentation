@@ -53,4 +53,3 @@ Installer_Requirements
     .. php:method:: _checkFileStorageSetup()
 
     .. php:method:: _checkFileinfoIsLoaded()
-

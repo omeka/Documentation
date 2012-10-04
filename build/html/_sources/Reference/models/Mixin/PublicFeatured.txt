@@ -44,4 +44,3 @@ Mixin_PublicFeatured
     .. php:method:: afterSave($args)
     
         :param unknown $args:
-

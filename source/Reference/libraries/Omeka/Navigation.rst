@@ -68,4 +68,3 @@ Omeka_Navigation
         
         :param String $optionName: The option name for a stored navigation object.
         :returns: String The option value associated with the default navigation during installation. If no option is found for the option name, then it returns an empty string.
-

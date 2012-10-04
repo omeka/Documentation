@@ -97,4 +97,3 @@ Omeka_Job_Dispatcher_Default
     .. php:method:: _toJson($metadata)
     
         :param unknown $metadata:
-

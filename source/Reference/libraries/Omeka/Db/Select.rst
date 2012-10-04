@@ -16,4 +16,3 @@ Omeka_Db_Select
         
         :param string $name: Table name.
         :returns: boolean
-

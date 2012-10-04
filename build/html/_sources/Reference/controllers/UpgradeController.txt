@@ -19,4 +19,3 @@ UpgradeController
         Run the migration script, obtain any success/error output and display it in a pretty way
         
         :returns: void
-

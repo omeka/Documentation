@@ -77,4 +77,3 @@ Omeka_View_Helper_Metadata
         :param string $text: 
         :param ElementText|bool $elementText: 
         :returns: string
-

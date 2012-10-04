@@ -82,4 +82,3 @@ Omeka_Plugin_Mvc
         
         :param string $path: 
         :returns: boolean
-

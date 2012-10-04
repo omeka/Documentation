@@ -63,4 +63,3 @@ Omeka_View_Helper_ElementInput
         :param int $index: 
         :param bool $isHtml: 
         :returns: string
-

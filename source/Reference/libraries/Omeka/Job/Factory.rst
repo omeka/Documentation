@@ -26,4 +26,3 @@ Omeka_Job_Factory
         Instantiate a new job instance from the arguments given.
         
         :param unknown $data:
-

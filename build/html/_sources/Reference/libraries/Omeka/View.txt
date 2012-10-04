@@ -75,4 +75,3 @@ Omeka_View
         Add a script path to the view.
         
         :param string $path: Local filesystem path.
-

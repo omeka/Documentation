@@ -44,4 +44,3 @@ Omeka_Job_Process_Dispatcher
         Launch a background process, returning control to the foreground.
         
         :param unknown $command:
-

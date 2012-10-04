@@ -117,4 +117,3 @@ Omeka_Controller_Plugin_ViewScripts
         
         :param string $type: Currently either 'admin' or 'public'.
         :returns: string
-

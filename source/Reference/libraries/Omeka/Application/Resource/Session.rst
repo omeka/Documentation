@@ -26,4 +26,3 @@ Omeka_Application_Resource_Session
         :returns: string
 
     .. php:method:: _setOptionsFromConfig()
-

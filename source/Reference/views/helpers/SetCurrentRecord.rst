@@ -11,4 +11,3 @@ Omeka_View_Helper_SetCurrentRecord
         :param string $recordVar: 
         :param Omeka_Record_AbstractRecord $record: 
         :param bool $setPreviousRecord:
-

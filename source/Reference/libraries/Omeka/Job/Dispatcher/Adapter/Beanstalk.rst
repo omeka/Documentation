@@ -56,4 +56,3 @@ Omeka_Job_Dispatcher_Adapter_Beanstalk
         Whether or not the given option has been set.
         
         :param string $name:
-

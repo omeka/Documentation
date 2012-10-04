@@ -22,10 +22,13 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
     <link rel="up" title="Models/Mixin" href="index.html" />
     <link rel="next" title="Mixin_Owner" href="Owner.html" />
-    <link rel="prev" title="Models/Mixin" href="index.html" /> 
+    <link rel="prev" title="Models/Mixin" href="index.html" />
+    <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
+ 
   </head>
   <body>
     <div class="related">
@@ -40,7 +43,12 @@
         <li class="right" >
           <a href="index.html" title="Models/Mixin"
              accesskey="P">previous</a> |</li>
+    
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
           <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
           <li><a href="../index.html" >Models</a> &raquo;</li>
           <li><a href="index.html" accesskey="U">Models/Mixin</a> &raquo;</li> 
@@ -532,14 +540,16 @@ The array must be formatted as follows:</p>
 <dd><p>The POST should have a key called &#8220;Elements&#8221; that contains an array
 that is keyed to an element&#8217;s ID.  That array should contain all the
 text values for that element. For example:</p>
-<ul class="simple">
-<li>Elements:</li>
-<li>1:</li>
-<li>0:</li>
-</ul>
-<p>&#8216;text&#8217;: &#8216;Foobar&#8217;
-&#8216;html&#8217;: &#8216;0&#8217;
-* 1: &#8216;Baz&#8217;</p>
+<div class="highlight-php"><div class="highlight"><pre> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;Elements&#39;</span> <span class="o">=&gt;</span>
+       <span class="k">array</span><span class="p">(</span>
+           <span class="s1">&#39;50&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;text&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Foobar&#39;</span><span class="p">,</span> <span class="c1">//element id 50, e.g. DC:Title</span>
+        <span class="s1">&#39;html&#39;</span> <span class="o">=&gt;</span> <span class="mi">0</span>                                    <span class="p">),</span>
+           <span class="s1">&#39;41&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;text&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&lt;p&gt;Baz baz baz&lt;/p&gt;&#39;</span><span class="p">,</span> <span class="c1">//element id 41, e.g. DC:Description</span>
+                          <span class="s1">&#39;html&#39;</span> <span class="o">=&gt;</span> <span class="mi">1</span>                                    <span class="p">)</span>
+            <span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -701,7 +711,12 @@ able to encapsulate the logic for validation of Elements.</p>
         <li class="right" >
           <a href="index.html" title="Models/Mixin"
              >previous</a> |</li>
+    
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
           <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
           <li><a href="../index.html" >Models</a> &raquo;</li>
           <li><a href="index.html" >Models/Mixin</a> &raquo;</li> 

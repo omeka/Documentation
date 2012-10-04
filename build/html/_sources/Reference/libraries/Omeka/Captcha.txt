@@ -18,4 +18,3 @@ Omeka_Captcha
         If this returns true, getCaptcha will not return null.
         
         :returns: boolean
-

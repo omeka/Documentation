@@ -33,4 +33,3 @@ Omeka_Validate_File_Extension
         :param string $value: Real file to check for extension.
         :param array $file: File data from Zend_File_Transfer.
         :returns: boolean
-

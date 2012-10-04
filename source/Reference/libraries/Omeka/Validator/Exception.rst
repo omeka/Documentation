@@ -66,4 +66,3 @@ Omeka_Validator_Exception
     .. php:method:: getTraceAsString()
 
     .. php:method:: __toString()
-

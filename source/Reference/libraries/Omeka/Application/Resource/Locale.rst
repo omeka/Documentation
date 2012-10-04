@@ -18,4 +18,3 @@ Omeka_Application_Resource_Locale
         :param unknown $locale: 
         :param unknown $cache: 
         :returns: string
-

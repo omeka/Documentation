@@ -22,7 +22,10 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Omeka Documentation v2.0 documentation" href="index.html" /> 
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="index.html" />
+    <link rel="stylesheet" href="_static/overrides.css" type="text/css" />
+ 
   </head>
   <body>
     <div class="related">
@@ -31,7 +34,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+    
+        <li><a href="index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
       </ul>
     </div>  
 
@@ -45,6 +53,22 @@
 
 <table style="width: 100%" class="indextable"><tr>
   <td style="width: 33%" valign="top"><dl>
+    <dt><a href="Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::offsetExists">offsetExists() (Omeka_Record_AbstractRecord method)</a></dt>
+    <dd><dl>
+      <dt><a href="Reference/libraries/Omeka/Validator/Errors.html#Omeka_Validator_Errors::offsetExists">(Omeka_Validator_Errors method)</a></dt>
+  </dl></dd>
+    <dt><a href="Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::offsetGet">offsetGet() (Omeka_Record_AbstractRecord method)</a></dt>
+    <dd><dl>
+      <dt><a href="Reference/libraries/Omeka/Validator/Errors.html#Omeka_Validator_Errors::offsetGet">(Omeka_Validator_Errors method)</a></dt>
+  </dl></dd>
+    <dt><a href="Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::offsetSet">offsetSet() (Omeka_Record_AbstractRecord method)</a></dt>
+    <dd><dl>
+      <dt><a href="Reference/libraries/Omeka/Validator/Errors.html#Omeka_Validator_Errors::offsetSet">(Omeka_Validator_Errors method)</a></dt>
+  </dl></dd>
+    <dt><a href="Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::offsetUnset">offsetUnset() (Omeka_Record_AbstractRecord method)</a></dt>
+    <dd><dl>
+      <dt><a href="Reference/libraries/Omeka/Validator/Errors.html#Omeka_Validator_Errors::offsetUnset">(Omeka_Validator_Errors method)</a></dt>
+  </dl></dd>
     <dt><a href="Reference/libraries/Omeka/Acl/Assert/Ownership.html#Omeka_Acl_Assert_Ownership">Omeka_Acl_Assert_Ownership (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Acl/Assert/User.html#Omeka_Acl_Assert_User">Omeka_Acl_Assert_User (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Application.html#Omeka_Application">Omeka_Application (class)</a></dt>
@@ -73,6 +97,7 @@
     <dt><a href="Reference/libraries/Omeka/Application/Resource/Theme.html#Omeka_Application_Resource_Theme">Omeka_Application_Resource_Theme (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Auth/Adapter/UserTable.html#Omeka_Auth_Adapter_UserTable">Omeka_Auth_Adapter_UserTable (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Captcha.html#Omeka_Captcha">Omeka_Captcha (class)</a></dt>
+    <dt><a href="Reference/libraries/Omeka/Controller/AbstractActionController.html#Omeka_Controller_AbstractActionController">Omeka_Controller_AbstractActionController (class)</a></dt>
     <dt><a href="Reference/controllers/helpers/Acl.html#Omeka_Controller_Action_Helper_Acl">Omeka_Controller_Action_Helper_Acl (class)</a></dt>
     <dt><a href="Reference/controllers/helpers/ContextSwitch.html#Omeka_Controller_Action_Helper_ContextSwitch">Omeka_Controller_Action_Helper_ContextSwitch (class)</a></dt>
     <dt><a href="Reference/controllers/helpers/Db.html#Omeka_Controller_Action_Helper_Db">Omeka_Controller_Action_Helper_Db (class)</a></dt>
@@ -152,6 +177,7 @@
     <dt><a href="Reference/libraries/Omeka/Output/OmekaXml/AbstractOmekaXml.html#Omeka_Output_OmekaXml_AbstractOmekaXml::XMLNS">Omeka_Output_OmekaXml_AbstractOmekaXml::XMLNS (class constant)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Output/OmekaXml/AbstractOmekaXml.html#Omeka_Output_OmekaXml_AbstractOmekaXml::XMLNS_SCHEMALOCATION">Omeka_Output_OmekaXml_AbstractOmekaXml::XMLNS_SCHEMALOCATION (class constant)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Output/OmekaXml/AbstractOmekaXml.html#Omeka_Output_OmekaXml_AbstractOmekaXml::XMLNS_XSI">Omeka_Output_OmekaXml_AbstractOmekaXml::XMLNS_XSI (class constant)</a></dt>
+    <dt><a href="Reference/libraries/Omeka/Plugin/AbstractPlugin.html#Omeka_Plugin_AbstractPlugin">Omeka_Plugin_AbstractPlugin (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Plugin/Broker.html#Omeka_Plugin_Broker">Omeka_Plugin_Broker (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Plugin/Broker/Factory.html#Omeka_Plugin_Broker_Factory">Omeka_Plugin_Broker_Factory (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Plugin/Exception.html#Omeka_Plugin_Exception">Omeka_Plugin_Exception (class)</a></dt>
@@ -162,9 +188,11 @@
     <dt><a href="Reference/libraries/Omeka/Plugin/Loader.html#Omeka_Plugin_Loader">Omeka_Plugin_Loader (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Plugin/Loader/Exception.html#Omeka_Plugin_Loader_Exception">Omeka_Plugin_Loader_Exception (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Plugin/Mvc.html#Omeka_Plugin_Mvc">Omeka_Plugin_Mvc (class)</a></dt>
+    <dt><a href="Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord">Omeka_Record_AbstractRecord (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Record/Builder/AbstractBuilder.html#Omeka_Record_Builder_AbstractBuilder">Omeka_Record_Builder_AbstractBuilder (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Record/Builder/Exception.html#Omeka_Record_Builder_Exception">Omeka_Record_Builder_Exception (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Record/Exception.html#Omeka_Record_Exception">Omeka_Record_Exception (class)</a></dt>
+    <dt><a href="Reference/libraries/Omeka/Record/Iterator.html#Omeka_Record_Iterator">Omeka_Record_Iterator (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Record/Mixin/AbstractMixin.html#Omeka_Record_Mixin_AbstractMixin">Omeka_Record_Mixin_AbstractMixin (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Session/SaveHandler/DbTable.html#Omeka_Session_SaveHandler_DbTable">Omeka_Session_SaveHandler_DbTable (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Storage.html#Omeka_Storage">Omeka_Storage (class)</a></dt>
@@ -193,6 +221,7 @@
     <dt><a href="Reference/libraries/Omeka/Validate/Uri.html#Omeka_Validate_Uri">Omeka_Validate_Uri (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Validate/UserPassword.html#Omeka_Validate_UserPassword">Omeka_Validate_UserPassword (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Validate/UserPassword.html#Omeka_Validate_UserPassword::INVALID">Omeka_Validate_UserPassword::INVALID (class constant)</a></dt>
+    <dt><a href="Reference/libraries/Omeka/Validator/Errors.html#Omeka_Validator_Errors">Omeka_Validator_Errors (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/Validator/Exception.html#Omeka_Validator_Exception">Omeka_Validator_Exception (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/View.html#Omeka_View">Omeka_View (class)</a></dt>
     <dt><a href="Reference/libraries/Omeka/View/Exception.html#Omeka_View_Exception">Omeka_View_Exception (class)</a></dt>
@@ -258,6 +287,7 @@
      | <a href="genindex-H.html"><strong>H</strong></a>
      | <a href="genindex-I.html"><strong>I</strong></a>
      | <a href="genindex-J.html"><strong>J</strong></a>
+     | <a href="genindex-K.html"><strong>K</strong></a>
      | <a href="genindex-L.html"><strong>L</strong></a>
      | <a href="genindex-M.html"><strong>M</strong></a>
      | <a href="genindex-N.html"><strong>N</strong></a>
@@ -298,7 +328,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+    
+        <li><a href="index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
       </ul>
     </div>
     <div class="footer">

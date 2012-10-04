@@ -23,4 +23,3 @@ Omeka_Filter_Date
         
         :param string $date: 
         :returns: array Array of year, month and day values.
-

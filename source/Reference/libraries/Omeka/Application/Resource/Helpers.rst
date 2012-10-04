@@ -40,4 +40,3 @@ Omeka_Application_Resource_Helpers
         :returns: array
 
     .. php:method:: _initAclHelper()
-

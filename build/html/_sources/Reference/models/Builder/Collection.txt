@@ -19,4 +19,3 @@ Builder_Collection
         Add collectors associated with the collection.
         
         :param Omeka_Record_AbstractRecord $record:
-

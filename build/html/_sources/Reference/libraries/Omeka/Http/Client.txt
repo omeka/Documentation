@@ -29,4 +29,3 @@ Omeka_Http_Client
         Set the maximum number of retries to make when a request times out.
         
         :param integer $count:
-

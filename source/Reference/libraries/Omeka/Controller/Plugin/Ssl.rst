@@ -50,4 +50,3 @@ Omeka_Controller_Plugin_Ssl
         :param unknown $request:
 
     .. php:method:: _secureAllRequests()
-

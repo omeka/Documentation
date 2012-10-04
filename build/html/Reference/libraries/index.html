@@ -22,7 +22,10 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
-    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" /> 
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
+    <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
+ 
   </head>
   <body>
     <div class="related">
@@ -31,7 +34,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+    
+        <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
       </ul>
     </div>  
 
@@ -94,6 +102,25 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Omeka/Captcha.html">Omeka_Captcha</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Omeka/Controller/index.html">Libraries/Omeka/Controller</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Controller/AbstractActionController.html">Omeka_Controller_AbstractActionController</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Controller/Exception/index.html">Libraries/Omeka/Controller/Exception</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Omeka/Controller/Exception/403.html">Omeka_Controller_Exception_403</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Omeka/Controller/Exception/404.html">Omeka_Controller_Exception_404</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Controller/Plugin/index.html">Libraries/Omeka/Controller/Plugin</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Omeka/Controller/Plugin/Admin.html">Omeka_Controller_Plugin_Admin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Omeka/Controller/Plugin/Debug.html">Omeka_Controller_Plugin_Debug</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Omeka/Controller/Plugin/HtmlPurifier.html">Omeka_Controller_Plugin_HtmlPurifier</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Omeka/Controller/Plugin/Jsonp.html">Omeka_Controller_Plugin_Jsonp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Omeka/Controller/Plugin/Ssl.html">Omeka_Controller_Plugin_Ssl</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Omeka/Controller/Plugin/Upgrade.html">Omeka_Controller_Plugin_Upgrade</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Omeka/Controller/Plugin/ViewScripts.html">Omeka_Controller_Plugin_ViewScripts</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Omeka/Db/index.html">Libraries/Omeka/Db</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Omeka/Db/Migration/index.html">Libraries/Omeka/Db/Migration</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="Omeka/Db/Migration/AbstractMigration.html">Omeka_Db_Migration_AbstractMigration</a></li>
@@ -209,6 +236,44 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="Omeka/Plugin/index.html">Libraries/Omeka/Plugin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Plugin/AbstractPlugin.html">Omeka_Plugin_AbstractPlugin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Plugin/Broker/index.html">Libraries/Omeka/Plugin/Broker</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Omeka/Plugin/Broker/Factory.html">Omeka_Plugin_Broker_Factory</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Plugin/Broker.html">Omeka_Plugin_Broker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Plugin/Exception.html">Omeka_Plugin_Exception</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Plugin/Factory.html">Omeka_Plugin_Factory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Plugin/Ini.html">Omeka_Plugin_Ini</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Plugin/Installer/index.html">Libraries/Omeka/Plugin/Installer</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Omeka/Plugin/Installer/Exception.html">Omeka_Plugin_Installer_Exception</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Plugin/Installer.html">Omeka_Plugin_Installer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Plugin/Loader/index.html">Libraries/Omeka/Plugin/Loader</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Omeka/Plugin/Loader/Exception.html">Omeka_Plugin_Loader_Exception</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Plugin/Loader.html">Omeka_Plugin_Loader</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Plugin/Mvc.html">Omeka_Plugin_Mvc</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Omeka/Record/index.html">Libraries/Omeka/Record</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Record/AbstractRecord.html">Omeka_Record_AbstractRecord</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Record/Builder/index.html">Libraries/Omeka/Record/Builder</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Omeka/Record/Builder/AbstractBuilder.html">Omeka_Record_Builder_AbstractBuilder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Omeka/Record/Builder/Exception.html">Omeka_Record_Builder_Exception</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Record/Exception.html">Omeka_Record_Exception</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Record/Iterator.html">Omeka_Record_Iterator</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Record/Mixin/index.html">Libraries/Omeka/Record/Mixin</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Omeka/Record/Mixin/AbstractMixin.html">Omeka_Record_Mixin_AbstractMixin</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="Omeka/Session/index.html">Libraries/Omeka/Session</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="Omeka/Session/SaveHandler/index.html">Libraries/Omeka/Session/SaveHandler</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="Omeka/Session/SaveHandler/DbTable.html">Omeka_Session_SaveHandler_DbTable</a></li>
@@ -259,6 +324,11 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="Omeka/Validate/Uri.html">Omeka_Validate_Uri</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Omeka/Validate/UserPassword.html">Omeka_Validate_UserPassword</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Omeka/Validator/index.html">Libraries/Omeka/Validator</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Validator/Errors.html">Omeka_Validator_Errors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Omeka/Validator/Exception.html">Omeka_Validator_Exception</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Omeka/View/index.html">Libraries/Omeka/View</a><ul>
@@ -314,7 +384,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+    
+        <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
       </ul>
     </div>
     <div class="footer">

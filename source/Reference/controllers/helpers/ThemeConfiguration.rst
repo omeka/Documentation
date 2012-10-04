@@ -47,4 +47,3 @@ Omeka_Controller_Action_Helper_ThemeConfiguration
         Delete a previously-stored theme file.
         
         :param Zend_Form_Element_File $element:
-

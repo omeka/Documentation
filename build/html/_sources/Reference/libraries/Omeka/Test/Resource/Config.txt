@@ -20,4 +20,3 @@ Omeka_Test_Resource_Config
         Load both config files.
         
         :returns: Zend_Config
-

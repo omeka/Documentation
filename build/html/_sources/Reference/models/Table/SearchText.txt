@@ -16,4 +16,3 @@ Table_SearchText
     
         :param unknown $select: 
         :param unknown $params:
-

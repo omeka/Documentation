@@ -13,4 +13,3 @@ Omeka_Application_Resource_Router
     .. php:method:: _addHomepageRoute($router)
     
         :param unknown $router:
-

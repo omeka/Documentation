@@ -22,7 +22,13 @@
     <script type="text/javascript" src="../../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
-    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" /> 
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
+    <link rel="up" title="Views/helpers" href="index.html" />
+    <link rel="next" title="Omeka_View_Helper_Pluralize" href="Pluralize.html" />
+    <link rel="prev" title="Omeka_View_Helper_Loop" href="Loop.html" />
+    <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
+ 
   </head>
   <body>
     <div class="related">
@@ -31,7 +37,20 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="Pluralize.html" title="Omeka_View_Helper_Pluralize"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Loop.html" title="Omeka_View_Helper_Loop"
+             accesskey="P">previous</a> |</li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Views/helpers</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -65,7 +84,7 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$record</strong> (<em>Omeka_Record_AbstractRecord</em>) &#8211; Database record representing the item from which to retrieve field data.</li>
+<li><strong>$record</strong> (<a class="reference internal" href="../../libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><em>Omeka_Record_AbstractRecord</em></a>) &#8211; Database record representing the item from which to retrieve field data.</li>
 <li><strong>$metadata</strong> (<em>string|array</em>) &#8211; The metadata field to retrieve. If a string, refers to a property of the record itself. If an array, refers to an Element: the first entry is the set name, the second is the element name.</li>
 <li><strong>$options</strong> (<em>array|string|integer</em>) &#8211; Options for formatting the metadata for display. - Array options: - &#8216;all&#8217;: If true, return an array containing all values for the field. - &#8216;delimiter&#8217;: Return the entire set of metadata as a string, where entries are separated by the given delimiter. - &#8216;index&#8217;: Return the metadata entry at the given zero-based index. - &#8216;no_escape&#8217; =&gt; If true, do not escape the resulting values for HTML entities. - &#8216;no_filter&#8217;: If true, return the set of metadata without running any of the filters. - &#8216;snippet&#8217;: Trim the length of each piece of text to the given length in characters. - Passing simply the string &#8216;all&#8217; is equivalent to array(&#8216;all&#8217; =&gt; true) - Passing simply an integer is equivalent to array(&#8216;index&#8217; =&gt; [the integer])</li>
 </ul>
@@ -109,7 +128,7 @@ the short form of the options into its proper array form.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$record</strong> (<em>Omeka_Record_AbstractRecord</em>) &#8211; </li>
+<li><strong>$record</strong> (<a class="reference internal" href="../../libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><em>Omeka_Record_AbstractRecord</em></a>) &#8211; </li>
 <li><strong>$metadata</strong> (<em>string|array</em>) &#8211; </li>
 </ul>
 </td>
@@ -130,7 +149,7 @@ the short form of the options into its proper array form.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$record</strong> (<em>Omeka_Record_AbstractRecord</em>) &#8211; </li>
+<li><strong>$record</strong> (<a class="reference internal" href="../../libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><em>Omeka_Record_AbstractRecord</em></a>) &#8211; </li>
 <li><strong>$specialValue</strong> (<em>string</em>) &#8211; Field name.</li>
 </ul>
 </td>
@@ -152,7 +171,7 @@ element set and element.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$record</strong> (<em>Omeka_Record_AbstractRecord</em>) &#8211; </li>
+<li><strong>$record</strong> (<a class="reference internal" href="../../libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><em>Omeka_Record_AbstractRecord</em></a>) &#8211; </li>
 <li><strong>$elementSetName</strong> (<em>string</em>) &#8211; </li>
 <li><strong>$elementName</strong> (<em>string</em>) &#8211; </li>
 </ul>
@@ -223,6 +242,12 @@ element set and element.</p>
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Loop.html"
+                        title="previous chapter">Omeka_View_Helper_Loop</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Pluralize.html"
+                        title="next chapter">Omeka_View_Helper_Pluralize</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -256,7 +281,20 @@ element set and element.</p>
         <li class="right" style="margin-right: 10px">
           <a href="../../../genindex.html" title="General Index"
              >index</a></li>
-        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="Pluralize.html" title="Omeka_View_Helper_Pluralize"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Loop.html" title="Omeka_View_Helper_Loop"
+             >previous</a> |</li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="index.html" >Views/helpers</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

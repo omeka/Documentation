@@ -43,4 +43,3 @@ Mixin_Owner
         
         :param User $user: 
         :returns: boolean
-

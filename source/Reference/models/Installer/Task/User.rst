@@ -61,4 +61,3 @@ Installer_Task_User
     .. php:method:: install(Omeka_Db $db)
     
         :param Omeka_Db $db:
-

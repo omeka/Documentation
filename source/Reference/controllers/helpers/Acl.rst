@@ -91,4 +91,3 @@ Omeka_Controller_Action_Helper_Acl
         :returns: Zend_Acl_Resource_Interface|null
 
     .. php:method:: _isLoginRequest()
-

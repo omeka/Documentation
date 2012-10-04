@@ -31,4 +31,3 @@ Omeka_Navigation_Page_Uri
         
         :param String $href: 
         :returns: array|null
-

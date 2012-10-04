@@ -18,5 +18,3 @@ Taggings
 
     .. php:attr:: time
     
-
-

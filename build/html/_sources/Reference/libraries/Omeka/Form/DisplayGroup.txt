@@ -12,4 +12,3 @@ Omeka_Form_DisplayGroup
         Cause display groups to render as HTML fieldset elements.
         
         :returns: void
-

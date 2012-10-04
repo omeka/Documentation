@@ -34,4 +34,3 @@ Table_Collection
         :param unknown $select: 
         :param unknown $isFeatured: 
         :returns: void
-

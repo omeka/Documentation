@@ -41,4 +41,3 @@ Omeka_Record_Mixin_AbstractMixin
     .. php:method:: beforeDelete()
 
     .. php:method:: afterDelete()
-

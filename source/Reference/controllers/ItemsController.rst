@@ -94,4 +94,3 @@ ItemsController
     .. php:method:: paginationAction()
     
         Goes to results page based off value in text input.
-

@@ -11,4 +11,3 @@ Omeka_Application_Resource_Plugins
     .. php:method:: init()
     
         :returns: void
-

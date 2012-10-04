@@ -60,4 +60,3 @@ Omeka_Job_Dispatcher_Adapter_BackgroundProcess
         to specify the correct behavior.
         
         :param unknown $name:
-

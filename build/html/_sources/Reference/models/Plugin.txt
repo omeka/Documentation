@@ -237,4 +237,3 @@ Plugin
     .. php:method:: meetsOmekaTestedUpToVersion()
 
     .. php:method:: getResourceId()
-

@@ -46,4 +46,3 @@ Omeka_Job_Factory_MissingClassException
     .. php:method:: getTraceAsString()
 
     .. php:method:: __toString()
-

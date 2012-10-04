@@ -11,4 +11,3 @@ Output_FileOmekaXml
         Create a node repesenting a File record.
         
         :returns: void
-

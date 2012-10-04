@@ -9,4 +9,3 @@ Job_ItemBatchEdit
     .. php:method:: _getItem($id)
     
         :param unknown $id:
-

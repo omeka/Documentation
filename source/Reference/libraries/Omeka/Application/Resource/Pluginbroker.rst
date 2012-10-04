@@ -9,4 +9,3 @@ Omeka_Application_Resource_Pluginbroker
     .. php:method:: init()
     
         :returns: Omeka_Plugin_Broker
-

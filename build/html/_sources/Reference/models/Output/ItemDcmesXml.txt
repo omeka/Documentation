@@ -11,4 +11,3 @@ Output_ItemDcmesXml
     .. php:method:: recordToDcmesXml($item)
     
         :param unknown $item:
-

@@ -180,4 +180,3 @@ Omeka_File_Ingest_Filesystem
         :param string $filePath: Absolute path to the file.  The file should be local and readable, which is required by most (if not all) of the Zend_Validate_File_* classes.
         :param array $fileInfo: Set of file info that describes a given file being ingested.
         :returns: boolean True if valid, otherwise throws an exception.
-

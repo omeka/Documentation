@@ -23,4 +23,3 @@ Installer_Task_Options
     .. php:method:: install(Omeka_Db $db)
     
         :param Omeka_Db $db:
-

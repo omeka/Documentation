@@ -45,4 +45,3 @@ Omeka_Db_Migration_AbstractMigration
         :returns: void
 
     .. php:method:: up()
-
