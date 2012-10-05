@@ -33,7 +33,7 @@ Collection Functions
 .. toctree::
    :glob:
    
-   
+   *collection*
 
 
 
@@ -53,6 +53,7 @@ Looping Functions
 .. toctree::
    :glob:
    
+   *loop*
    loop
 
 
@@ -66,6 +67,9 @@ Page Building Functions
    *nav*
    queue*
    random*
+   *search*
+   *public*
+   *admin*
 
    
 
@@ -75,8 +79,15 @@ Data Retrieval and Formatting Functions
 
 .. toctree::
    :glob:
+   
    __
    get*
+   metadata
+   option
+   pluck
+   src
+   strip_formatting
+   
 
 ************************
 Data Insertion Functions
@@ -86,7 +97,8 @@ Data Insertion Functions
    :glob:
 
    insert*
-   
+   set*
+   update_item
    
 *************
 Tag Functions
@@ -96,6 +108,7 @@ Tag Functions
 .. toctree::
    :glob:
 
+   *tag*
 
 **********************
 Url and Link Functions
@@ -105,5 +118,16 @@ Url and Link Functions
    :glob:
    
    link*
-   *url
-   url*
+   *to
+   *url*
+   
+****************************
+Javascript and CSS Functions
+****************************
+
+.. toctree::
+   :glob:
+
+   *css*
+   *js*
+
