@@ -9,7 +9,7 @@ Reference Documentation for Omeka
    :maxdepth: 1   
       
    controllers/index
-   libraries/globals
+   libraries/globals/index
    models/index   
    libraries/Omeka/index
    views/helpers/index
