@@ -63,9 +63,33 @@
 <h1>is_allowed<a class="headerlink" href="#is-allowed" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="is_allowed">
-<tt class="descname">is_allowed</tt><big>(</big><big>)</big><a class="headerlink" href="#is_allowed" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">is_allowed</tt><big>(</big><em>$resource</em>, <em>$privilege</em><big>)</big><a class="headerlink" href="#is_allowed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check the ACL to determine whether the current user has proper permissions.</p>
+<p>&lt;code&gt;is_allowed(&#8216;Items&#8217;, &#8216;showNotPublic&#8217;)&lt;/code&gt;
+Will check if the user has permission to view Items that are not public.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$resource</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$privilege</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -77,6 +101,15 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">is_allowed</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="is_admin_theme.html"
                         title="previous chapter">is_admin_theme</a></p>

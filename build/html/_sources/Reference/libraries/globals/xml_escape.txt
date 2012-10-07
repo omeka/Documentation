@@ -1,10 +1,23 @@
-.. xml_escape.
-
-######################################
+##########
 xml_escape
-######################################
+##########
+
+.. php:function:: xml_escape(string $value)
+
+    Escape the value for use in XML.
+    
+    :param string $value: 
+    :returns: string
+
+*****
+Usage
+*****
 
 
- 
 
-.. php:function:: xml_escape()
+********
+Examples
+********
+
+
+

@@ -63,9 +63,40 @@
 <h1>plugin_is_active<a class="headerlink" href="#plugin-is-active" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="plugin_is_active">
-<tt class="descname">plugin_is_active</tt><big>(</big><big>)</big><a class="headerlink" href="#plugin_is_active" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">plugin_is_active</tt><big>(</big><em>string $name</em>, <em>string $version</em>, <em>string $compOperator = &gt;=</em><big>)</big><a class="headerlink" href="#plugin_is_active" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine whether a plugin is installed and active.</p>
+<p>May be used by theme/plugin writers to customize behavior based on the existence of certain plugins. Some examples
+of how to use this function:</p>
+<p>Check if ExhibitBuilder is installed and activated.
+&lt;code&gt;if (plugin_is_active(&#8216;ExhibitBuilder&#8217;)):&lt;/code&gt;</p>
+<p>Check if installed version of ExhibitBuilder is at least version 1.0 or higher.
+&lt;code&gt;if (plugin_is_active(&#8216;ExhibitBuilder&#8217;, &#8216;1.0&#8217;)):&lt;/code&gt;</p>
+<p>Check if installed version of ExhibitBuilder is anything less than 2.0.
+&lt;code&gt;if (plugin_is_active(&#8216;ExhibitBuilder&#8217;, &#8216;2.0&#8217;, &#8216;&lt;&#8217;)):&lt;/code&gt;</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; Directory name of the plugin.</li>
+<li><strong>$version</strong> (<em>string</em>) &#8211; Version of the plugin to check.</li>
+<li><strong>$compOperator</strong> (<em>string</em>) &#8211; Comparison operator to use when checking the installed version of ExhibitBuilder.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -77,6 +108,15 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">plugin_is_active</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="pluck.html"
                         title="previous chapter">pluck</a></p>

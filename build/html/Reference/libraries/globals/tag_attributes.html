@@ -26,7 +26,7 @@
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
     <link rel="up" title="Global/Theming functions" href="index.html" />
     <link rel="next" title="tag_cloud" href="tag_cloud.html" />
-    <link rel="prev" title="strip_formatting" href="strip_formatting.html" />
+    <link rel="prev" title="js_tag" href="js_tag.html" />
     <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="tag_cloud.html" title="tag_cloud"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="strip_formatting.html" title="strip_formatting"
+          <a href="js_tag.html" title="js_tag"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -63,9 +63,31 @@
 <h1>tag_attributes<a class="headerlink" href="#tag-attributes" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="tag_attributes">
-<tt class="descname">tag_attributes</tt><big>(</big><big>)</big><a class="headerlink" href="#tag_attributes" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">tag_attributes</tt><big>(</big><em>array|string $attributes</em>, <em>string $value</em><big>)</big><a class="headerlink" href="#tag_attributes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate attributes for HTML tags.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$attributes</strong> (<em>array|string</em>) &#8211; Attributes for the tag.  If this is a string, it will assign both &#8216;name&#8217; and &#8216;id&#8217; attributes that value for the tag.</li>
+<li><strong>$value</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -77,9 +99,18 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">tag_attributes</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
-  <p class="topless"><a href="strip_formatting.html"
-                        title="previous chapter">strip_formatting</a></p>
+  <p class="topless"><a href="js_tag.html"
+                        title="previous chapter">js_tag</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="tag_cloud.html"
                         title="next chapter">tag_cloud</a></p>
@@ -120,7 +151,7 @@
           <a href="tag_cloud.html" title="tag_cloud"
              >next</a> |</li>
         <li class="right" >
-          <a href="strip_formatting.html" title="strip_formatting"
+          <a href="js_tag.html" title="js_tag"
              >previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>

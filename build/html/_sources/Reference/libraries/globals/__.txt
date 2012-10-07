@@ -1,10 +1,23 @@
-.. __.
-
 ######################
 __ (double underscore)
 ######################
 
+.. php:function:: __(string $string)
 
- 
+    Translate a string.
+    
+    :param string $string: The string to be translated.
+    :returns: string The translated string.
 
-.. php:function:: __()
+*****
+Usage
+*****
+
+
+
+********
+Examples
+********
+
+
+

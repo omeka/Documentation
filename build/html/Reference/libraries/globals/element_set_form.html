@@ -26,7 +26,7 @@
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
     <link rel="up" title="Global/Theming functions" href="index.html" />
     <link rel="next" title="file_display_url" href="file_display_url.html" />
-    <link rel="prev" title="element_exists" href="element_exists.html" />
+    <link rel="prev" title="element_form" href="element_form.html" />
     <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="file_display_url.html" title="file_display_url"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="element_exists.html" title="element_exists"
+          <a href="element_form.html" title="element_form"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -63,9 +63,31 @@
 <h1>element_set_form<a class="headerlink" href="#element-set-form" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="element_set_form">
-<tt class="descname">element_set_form</tt><big>(</big><big>)</big><a class="headerlink" href="#element_set_form" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">element_set_form</tt><big>(</big><em>Omeka_Record_AbstractRecord $record</em>, <em>string $elementSetName</em><big>)</big><a class="headerlink" href="#element_set_form" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a element set form for a record.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$record</strong> (<a class="reference internal" href="../Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><em>Omeka_Record_AbstractRecord</em></a>) &#8211; </li>
+<li><strong>$elementSetName</strong> (<em>string</em>) &#8211; The name of the element set or &#8216;Item Type Metadata&#8217; for an item&#8217;s item type data.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -77,9 +99,18 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">element_set_form</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
-  <p class="topless"><a href="element_exists.html"
-                        title="previous chapter">element_exists</a></p>
+  <p class="topless"><a href="element_form.html"
+                        title="previous chapter">element_form</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="file_display_url.html"
                         title="next chapter">file_display_url</a></p>
@@ -120,7 +151,7 @@
           <a href="file_display_url.html" title="file_display_url"
              >next</a> |</li>
         <li class="right" >
-          <a href="element_exists.html" title="element_exists"
+          <a href="element_form.html" title="element_form"
              >previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>

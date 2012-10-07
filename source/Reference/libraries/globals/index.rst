@@ -10,6 +10,7 @@ All Functions
 
 
 .. toctree::
+   :maxdepth: 1
    :glob:
    
    __
@@ -22,6 +23,7 @@ Item Functions
 **************
 
 .. toctree::
+   :maxdepth: 1
    :glob:
    
    item*
@@ -31,6 +33,7 @@ Collection Functions
 ********************
 
 .. toctree::
+   :maxdepth: 1
    :glob:
    
    *collection*
@@ -42,6 +45,7 @@ Linking Functions
 *****************
 
 .. toctree::
+   :maxdepth: 1
    :glob:
 
    link*
@@ -51,10 +55,10 @@ Looping Functions
 *****************
 
 .. toctree::
+   :maxdepth: 1
    :glob:
    
    *loop*
-   loop
 
 
 ***********************
@@ -62,6 +66,7 @@ Page Building Functions
 ***********************
 
 .. toctree::
+   :maxdepth: 1
    :glob:
    
    *nav*
@@ -78,6 +83,7 @@ Data Retrieval and Formatting Functions
 ***************************************
 
 .. toctree::
+   :maxdepth: 1
    :glob:
    
    __
@@ -94,6 +100,7 @@ Data Insertion Functions
 ************************
 
 .. toctree::
+   :maxdepth: 1
    :glob:
 
    insert*
@@ -106,6 +113,7 @@ Tag Functions
 
 
 .. toctree::
+   :maxdepth: 1
    :glob:
 
    *tag*
@@ -115,6 +123,7 @@ Url and Link Functions
 **********************
 
 .. toctree::
+   :maxdepth: 1
    :glob:
    
    link*
@@ -126,6 +135,7 @@ Javascript and CSS Functions
 ****************************
 
 .. toctree::
+   :maxdepth: 1
    :glob:
 
    *css*

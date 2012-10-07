@@ -63,9 +63,31 @@
 <h1>insert_element_set<a class="headerlink" href="#insert-element-set" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="insert_element_set">
-<tt class="descname">insert_element_set</tt><big>(</big><big>)</big><a class="headerlink" href="#insert_element_set" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">insert_element_set</tt><big>(</big><em>string|array $elementSetMetadata = Array</em>, <em>array $elements = Array</em><big>)</big><a class="headerlink" href="#insert_element_set" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert an element set and its elements into the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementSetMetadata</strong> (<em>string|array</em>) &#8211; Element set information. &lt;code&gt; [(string) element set name] // OR array( &#8216;name&#8217;        =&gt; [(string) element set name, required, unique], &#8216;description&#8217; =&gt; [(string) element set description, optional], &#8216;record_type&#8217; =&gt; [(string) record type name, optional] ); &lt;/code&gt;</li>
+<li><strong>$elements</strong> (<em>array</em>) &#8211; An array containing element data. Follows one of more of the following formats: &lt;ol&gt; &lt;li&gt;An array containing element metadata&lt;/li&gt; &lt;li&gt;A string of the element name&lt;/li&gt; &lt;/ol&gt; &lt;code&gt; array( array( &#8216;name&#8217; =&gt; [(string) name, required], &#8216;description&#8217; =&gt; [(string) description, optional], ), [(string) element name] ); &lt;/code&gt;</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">ElementSet</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -77,6 +99,15 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">insert_element_set</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="insert_collection.html"
                         title="previous chapter">insert_collection</a></p>

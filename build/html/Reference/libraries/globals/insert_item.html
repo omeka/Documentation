@@ -63,9 +63,32 @@
 <h1>insert_item<a class="headerlink" href="#insert-item" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="insert_item">
-<tt class="descname">insert_item</tt><big>(</big><big>)</big><a class="headerlink" href="#insert_item" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">insert_item</tt><big>(</big><em>array $metadata = Array</em>, <em>array $elementTexts = Array</em>, <em>array $fileMetadata = Array</em><big>)</big><a class="headerlink" href="#insert_item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert a new item into the Omeka database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$metadata</strong> (<em>array</em>) &#8211; Set of metadata options for configuring the item. Array which can include the following properties: &lt;ul&gt; &lt;li&gt;&#8217;public&#8217; (boolean)&lt;/li&gt; &lt;li&gt;&#8217;featured&#8217; (boolean)&lt;/li&gt; &lt;li&gt;&#8217;collection_id&#8217; (integer)&lt;/li&gt; &lt;li&gt;&#8217;item_type_id&#8217; (integer)&lt;/li&gt; &lt;li&gt;&#8217;item_type_name&#8217; (string)&lt;/li&gt; &lt;li&gt;&#8217;tags&#8217; (string, comma-delimited)&lt;/li&gt; &lt;li&gt;&#8217;tag_entity&#8217; (Entity, optional and only checked if &#8216;tags&#8217; is given)&lt;/li&gt; &lt;li&gt;&#8217;overwriteElementTexts&#8217; (boolean) &#8211; determines whether or not to overwrite existing element texts.  If true, this will loop through the element texts provided in $elementTexts, and it will update existing records where possible.  All texts that are not yet in the DB will be added in the usual manner.  False by default.&lt;/li&gt; &lt;/ul&gt;</li>
+<li><strong>$elementTexts</strong> (<em>array</em>) &#8211; Array of element texts to assign to the item. This follows the format: &lt;code&gt; array( [element set name] =&gt; array( [element name] =&gt; array( array(&#8216;text&#8217; =&gt; [string], &#8216;html&#8217; =&gt; [false|true]), array(&#8216;text&#8217; =&gt; [string], &#8216;html&#8217; =&gt; [false|true]) ), [element name] =&gt; array( array(&#8216;text&#8217; =&gt; [string], &#8216;html&#8217; =&gt; [false|true]), array(&#8216;text&#8217; =&gt; [string], &#8216;html&#8217; =&gt; [false|true]) ) ), [element set name] =&gt; array( [element name] =&gt; array( array(&#8216;text&#8217; =&gt; [string], &#8216;html&#8217; =&gt; [false|true]), array(&#8216;text&#8217; =&gt; [string], &#8216;html&#8217; =&gt; [false|true]) ), [element name] =&gt; array( array(&#8216;text&#8217; =&gt; [string], &#8216;html&#8217; =&gt; [false|true]), array(&#8216;text&#8217; =&gt; [string], &#8216;html&#8217; =&gt; [false|true]) ) ) ); &lt;/code&gt;</li>
+<li><strong>$fileMetadata</strong> (<em>array</em>) &#8211; Set of metadata options that allow one or more files to be associated with the item.  Includes the following options: &lt;ul&gt; &lt;li&gt;&#8217;file_transfer_type&#8217; (string = &#8216;Url|Filesystem|Upload&#8217; or Omeka_File_Transfer_Adapter_Interface). Corresponds to the $transferStrategy argument for addFiles().&lt;/li&gt; &lt;li&gt;&#8217;file_ingest_options&#8217; OPTIONAL (array of possible options to pass modify the behavior of the ingest script).  Corresponds to the $options argument for addFiles().&lt;/li&gt; &lt;li&gt;&#8217;files&#8217; (array or string) Represents information indicating the file to ingest. Corresponds to the $files argument for addFiles().&lt;/li&gt; &lt;/ul&gt;</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Item</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -77,6 +100,15 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">insert_item</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="insert_files_for_item.html"
                         title="previous chapter">insert_files_for_item</a></p>

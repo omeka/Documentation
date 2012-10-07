@@ -1,3 +1,7 @@
 div.bodywrapper {
     margin-left: 300px;
 }
+
+p.topless {
+    word-wrap: break-word;
+}

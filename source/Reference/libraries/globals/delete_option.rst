@@ -1,10 +1,22 @@
-.. delete_option.
-
-######################################
+#############
 delete_option
-######################################
+#############
+
+.. php:function:: delete_option(string $name)
+
+    Delete an option from the options table.
+    
+    :param string $name: The option name.
+
+*****
+Usage
+*****
 
 
- 
 
-.. php:function:: delete_option()
+********
+Examples
+********
+
+
+

@@ -63,9 +63,35 @@
 <h1>snippet<a class="headerlink" href="#snippet" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt>
-<tt class="descname">snippet</tt><big>(</big><big>)</big></dt>
-<dd></dd></dl>
+<tt class="descname">snippet</tt><big>(</big><em>string $text</em>, <em>int $startPos</em>, <em>int $endPos</em>, <em>string $append = …</em><big>)</big></dt>
+<dd><p>Return a substring of a given piece of text.</p>
+<p>Note: this will only split strings on the space character.
+this will also strip html tags from the text before getting a snippet</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$text</strong> (<em>string</em>) &#8211; Text to take snippet of</li>
+<li><strong>$startPos</strong> (<em>int</em>) &#8211; Starting position of snippet in string</li>
+<li><strong>$endPos</strong> (<em>int</em>) &#8211; Maximum length of snippet</li>
+<li><strong>$append</strong> (<em>string</em>) &#8211; String to append to snippet if truncated</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string Snippet of given text</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -77,6 +103,15 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">snippet</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="simple_search_form.html"
                         title="previous chapter">simple_search_form</a></p>

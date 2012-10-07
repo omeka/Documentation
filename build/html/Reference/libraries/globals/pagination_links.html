@@ -26,7 +26,7 @@
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
     <link rel="up" title="Global/Theming functions" href="index.html" />
     <link rel="next" title="physical_path_to" href="physical_path_to.html" />
-    <link rel="prev" title="option" href="option.html" />
+    <link rel="prev" title="output_format_list" href="output_format_list.html" />
     <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="physical_path_to.html" title="physical_path_to"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="option.html" title="option"
+          <a href="output_format_list.html" title="output_format_list"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -63,9 +63,30 @@
 <h1>pagination_links<a class="headerlink" href="#pagination-links" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="pagination_links">
-<tt class="descname">pagination_links</tt><big>(</big><big>)</big><a class="headerlink" href="#pagination_links" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">pagination_links</tt><big>(</big><em>array $options = Array</em><big>)</big><a class="headerlink" href="#pagination_links" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return HTML for the set of pagination links.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$options</strong> (<em>array</em>) &#8211; Configurable parameters for the pagination links. The following options are available: &lt;ul&gt; &lt;li&gt;&#8217;scrolling_style&#8217; (string) See Zend_View_Helper_PaginationControl for more details.  Default &#8216;Sliding&#8217;.&lt;/li&gt; &lt;li&gt;&#8217;partial_file&#8217; (string) View script to use to render the pagination HTML. Default is &#8216;common/pagination_control.php&#8217;.&lt;/li&gt; &lt;li&gt;&#8217;page_range&#8217; (integer) See Zend_Paginator::setPageRange() for details. Default is 5.&lt;/li&gt; &lt;li&gt;&#8217;total_results&#8217; (integer) Total results to paginate through. Default is provided by the &#8216;total_results&#8217; key of the &#8216;pagination&#8217; array that is typically registered by the controller.&lt;/li&gt; &lt;li&gt;&#8217;page&#8217; (integer) Current page of the result set.  Default is the &#8216;page&#8217; key of the &#8216;pagination&#8217; array.&lt;/li&gt; &lt;li&gt;&#8217;per_page&#8217; (integer) Number of results to display per page. Default is the &#8216;per_page&#8217; key of the &#8216;pagination&#8217; array.&lt;/li&gt; &lt;ul&gt;</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string HTML for the pagination links.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -77,9 +98,18 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">pagination_links</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
-  <p class="topless"><a href="option.html"
-                        title="previous chapter">option</a></p>
+  <p class="topless"><a href="output_format_list.html"
+                        title="previous chapter">output_format_list</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="physical_path_to.html"
                         title="next chapter">physical_path_to</a></p>
@@ -120,7 +150,7 @@
           <a href="physical_path_to.html" title="physical_path_to"
              >next</a> |</li>
         <li class="right" >
-          <a href="option.html" title="option"
+          <a href="output_format_list.html" title="output_format_list"
              >previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>

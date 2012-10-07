@@ -63,9 +63,31 @@
 <h1>format_date<a class="headerlink" href="#format-date" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="format_date">
-<tt class="descname">format_date</tt><big>(</big><big>)</big><a class="headerlink" href="#format_date" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">format_date</tt><big>(</big><em>mixed $date</em>, <em>string $format = FFF</em><big>)</big><a class="headerlink" href="#format_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format a date for output according to the current locale.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$date</strong> (<em>mixed</em>) &#8211; Date to format. If an integer, the date is intepreted as a Unix timestamp. If a string, the date is interpreted as an ISO 8601 date.</li>
+<li><strong>$format</strong> (<em>string</em>) &#8211; Format to apply. See Zend_Date for possible formats. The default format is the current locale&#8217;s &#8220;medium&#8221; format.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -77,6 +99,15 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">format_date</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="foot.html"
                         title="previous chapter">foot</a></p>

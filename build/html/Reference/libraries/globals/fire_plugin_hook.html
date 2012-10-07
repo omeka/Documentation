@@ -63,9 +63,38 @@
 <h1>fire_plugin_hook<a class="headerlink" href="#fire-plugin-hook" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="fire_plugin_hook">
-<tt class="descname">fire_plugin_hook</tt><big>(</big><big>)</big><a class="headerlink" href="#fire_plugin_hook" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">fire_plugin_hook</tt><big>(</big><em>string $name</em>, <em>array $args = Array</em><big>)</big><a class="headerlink" href="#fire_plugin_hook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Declare the point of execution for a specific plugin hook.</p>
+<p>All plugin implementations of a given hook will be executed when this is called. The first argument corresponds to
+the string name of the hook. The second is an associative array containing arguments that will be passed to the
+plugin hook implementations.</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="c1">// Calls the hook &#39;after_save_item&#39; with the arguments &#39;$item&#39; and &#39;$arg2&#39;</span>
+<span class="nx">fire_plugin_hook</span><span class="p">(</span><span class="s1">&#39;after_save_item&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;item&#39;</span> <span class="o">=&gt;</span> <span class="nv">$item</span><span class="p">,</span> <span class="s1">&#39;foo&#39;</span> <span class="o">=&gt;</span> <span class="nv">$arg2</span><span class="p">));</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; The hook name.</li>
+<li><strong>$args</strong> (<em>array</em>) &#8211; Arguments to be passed to the hook implementations.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mixed</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -77,6 +106,15 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">fire_plugin_hook</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="files_for_item.html"
                         title="previous chapter">files_for_item</a></p>

@@ -63,9 +63,33 @@
 <h1>item_thumbnail<a class="headerlink" href="#item-thumbnail" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="item_thumbnail">
-<tt class="descname">item_thumbnail</tt><big>(</big><big>)</big><a class="headerlink" href="#item_thumbnail" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">item_thumbnail</tt><big>(</big><em>array $props = Array</em>, <em>integer $index = 0</em>, <em>Item $item</em><big>)</big><a class="headerlink" href="#item_thumbnail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return HTML for a thumbnail image assigned to an item.</p>
+<p>Default parameters will use the first image, but that can be changed by modifying $index.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$props</strong> (<em>array</em>) &#8211; A set of attributes for the &lt;img /&gt; tag.</li>
+<li><strong>$index</strong> (<em>integer</em>) &#8211; The position of the file to use (starting with 0 for the first file).</li>
+<li><strong>$item</strong> (<a class="reference internal" href="../../models/Item.html#Item" title="Item"><em>Item</em></a>) &#8211; The item to which the image belongs</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string HTML</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -77,6 +101,15 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">item_thumbnail</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="item_square_thumbnail.html"
                         title="previous chapter">item_square_thumbnail</a></p>

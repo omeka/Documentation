@@ -26,7 +26,7 @@
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
     <link rel="up" title="Global/Theming functions" href="index.html" />
     <link rel="next" title="js_tag" href="js_tag.html" />
-    <link rel="prev" title="items_search_form" href="items_search_form.html" />
+    <link rel="prev" title="head_js" href="head_js.html" />
     <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="js_tag.html" title="js_tag"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="items_search_form.html" title="items_search_form"
+          <a href="head_js.html" title="head_js"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -63,9 +63,33 @@
 <h1>js_escape<a class="headerlink" href="#js-escape" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="js_escape">
-<tt class="descname">js_escape</tt><big>(</big><big>)</big><a class="headerlink" href="#js_escape" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">js_escape</tt><big>(</big><em>string $value</em><big>)</big><a class="headerlink" href="#js_escape" title="Permalink to this definition">¶</a></dt>
+<dd><p>Escape the value for use in javascript.</p>
+<p>This is a convenience function for encoding a value using JSON notation.
+Must be used when interpolating PHP output in javascript. Note on usage: do not wrap the resulting output of this
+function in quotes, as proper JSON encoding will take care of that.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$value</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -77,9 +101,18 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">js_escape</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
-  <p class="topless"><a href="items_search_form.html"
-                        title="previous chapter">items_search_form</a></p>
+  <p class="topless"><a href="head_js.html"
+                        title="previous chapter">head_js</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="js_tag.html"
                         title="next chapter">js_tag</a></p>
@@ -120,7 +153,7 @@
           <a href="js_tag.html" title="js_tag"
              >next</a> |</li>
         <li class="right" >
-          <a href="items_search_form.html" title="items_search_form"
+          <a href="head_js.html" title="head_js"
              >previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>

@@ -26,7 +26,7 @@
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
     <link rel="up" title="Global/Theming functions" href="index.html" />
     <link rel="next" title="queue_js_string" href="queue_js_string.html" />
-    <link rel="prev" title="queue_css_string" href="queue_css_string.html" />
+    <link rel="prev" title="js_tag" href="js_tag.html" />
     <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="queue_js_string.html" title="queue_js_string"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="queue_css_string.html" title="queue_css_string"
+          <a href="js_tag.html" title="js_tag"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -63,9 +63,30 @@
 <h1>queue_js_file<a class="headerlink" href="#queue-js-file" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="queue_js_file">
-<tt class="descname">queue_js_file</tt><big>(</big><big>)</big><a class="headerlink" href="#queue_js_file" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">queue_js_file</tt><big>(</big><em>string|array $file</em>, <em>string $dir = javascripts</em><big>)</big><a class="headerlink" href="#queue_js_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Declare that a JavaScript file or files will be used on the page.</p>
+<p>All &#8220;used&#8221; scripts will be included in the page&#8217;s head. This needs to be called either before head(), or in a
+plugin_header hook.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$file</strong> (<em>string|array</em>) &#8211; File to use, if an array is passed, each array member will be treated like a file.</li>
+<li><strong>$dir</strong> (<em>string</em>) &#8211; Directory to search for the file. Keeping the default is recommended.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -77,9 +98,18 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">queue_js_file</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
-  <p class="topless"><a href="queue_css_string.html"
-                        title="previous chapter">queue_css_string</a></p>
+  <p class="topless"><a href="js_tag.html"
+                        title="previous chapter">js_tag</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="queue_js_string.html"
                         title="next chapter">queue_js_string</a></p>
@@ -120,7 +150,7 @@
           <a href="queue_js_string.html" title="queue_js_string"
              >next</a> |</li>
         <li class="right" >
-          <a href="queue_css_string.html" title="queue_css_string"
+          <a href="js_tag.html" title="js_tag"
              >previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>

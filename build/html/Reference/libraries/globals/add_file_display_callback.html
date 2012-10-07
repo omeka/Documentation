@@ -63,9 +63,30 @@
 <h1>add_file_display_callback<a class="headerlink" href="#add-file-display-callback" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="add_file_display_callback">
-<tt class="descname">add_file_display_callback</tt><big>(</big><big>)</big><a class="headerlink" href="#add_file_display_callback" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">add_file_display_callback</tt><big>(</big><em>array|string $fileIdentifiers</em>, <em>callback $callback</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#add_file_display_callback" title="Permalink to this definition">¶</a></dt>
+<dd><p>Declare a callback function that will be used to display files with a given
+MIME type and/or file extension.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$fileIdentifiers</strong> (<em>array|string</em>) &#8211; Set of MIME types and/or file extensions to which the provided callback will respond.</li>
+<li><strong>$callback</strong> (<em>callback</em>) &#8211; Any valid callback.</li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -77,6 +98,15 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">add_file_display_callback</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
   <p class="topless"><a href="absolute_url.html"
                         title="previous chapter">absolute_url</a></p>

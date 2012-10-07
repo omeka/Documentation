@@ -1,10 +1,23 @@
-.. browse_headings.
-
-######################################
+###############
 browse_headings
-######################################
+###############
+
+.. php:function:: browse_headings(array $headings)
+
+    Return the headings for a browse table.
+    
+    :param array $headings: 
+    :returns: string
+
+*****
+Usage
+*****
 
 
- 
 
-.. php:function:: browse_headings()
+********
+Examples
+********
+
+
+

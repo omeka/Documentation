@@ -26,7 +26,7 @@
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
     <link rel="up" title="Global/Theming functions" href="index.html" />
     <link rel="next" title="link_to_admin_home_page" href="link_to_admin_home_page.html" />
-    <link rel="prev" title="label_table_options" href="label_table_options.html" />
+    <link rel="prev" title="tag_string" href="tag_string.html" />
     <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="link_to_admin_home_page.html" title="link_to_admin_home_page"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="label_table_options.html" title="label_table_options"
+          <a href="tag_string.html" title="tag_string"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -63,9 +63,34 @@
 <h1>link_to<a class="headerlink" href="#link-to" title="Permalink to this headline">¶</a></h1>
 <dl class="function">
 <dt id="link_to">
-<tt class="descname">link_to</tt><big>(</big><big>)</big><a class="headerlink" href="#link_to" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<tt class="descname">link_to</tt><big>(</big><em>Omeka_Record_AbstractRecord|string $record</em>, <em>string $action</em>, <em>string $text</em>, <em>array $props = Array</em>, <em>array $queryParams = Array</em><big>)</big><a class="headerlink" href="#link_to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a link tag.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$record</strong> (<em>Omeka_Record_AbstractRecord|string</em>) &#8211; The name of the controller to use for the link.  If a record instance is passed, then it inflects the name of the controller from the record class.</li>
+<li><strong>$action</strong> (<em>string</em>) &#8211; The action to use for the link</li>
+<li><strong>$text</strong> (<em>string</em>) &#8211; The text to put in the link.  Default is &#8216;View&#8217;.</li>
+<li><strong>$props</strong> (<em>array</em>) &#8211; Attributes for the &lt;a&gt; tag</li>
+<li><strong>$queryParams</strong> (<em>array</em>) &#8211; the parameters in the uri query</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string HTML</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
+<div class="section" id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
 </div>
 
 
@@ -77,9 +102,18 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h3><a href="../../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">link_to</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+
   <h4>Previous topic</h4>
-  <p class="topless"><a href="label_table_options.html"
-                        title="previous chapter">label_table_options</a></p>
+  <p class="topless"><a href="tag_string.html"
+                        title="previous chapter">tag_string</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="link_to_admin_home_page.html"
                         title="next chapter">link_to_admin_home_page</a></p>
@@ -120,7 +154,7 @@
           <a href="link_to_admin_home_page.html" title="link_to_admin_home_page"
              >next</a> |</li>
         <li class="right" >
-          <a href="label_table_options.html" title="label_table_options"
+          <a href="tag_string.html" title="tag_string"
              >previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>

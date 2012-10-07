@@ -1,10 +1,28 @@
-.. queue_css_file.
-
-######################################
+##############
 queue_css_file
-######################################
+##############
+
+.. php:function:: queue_css_file(string|array $file, string $media = all, string|bool $conditional = , string $dir = css)
+
+    Declare that a CSS file or files will be used on the page.
+    
+    All "used" stylesheets will be included in the page's head. This needs to be called either before head(), or in a
+    plugin_header hook.
+    
+    :param string|array $file: File to use, if an array is passed, each array member will be treated like a file.
+    :param string $media: CSS media declaration, defaults to 'all'.
+    :param string|bool $conditional: IE-style conditional comment, used generally to include IE-specific styles. Defaults to false.
+    :param string $dir: Directory to search for the file.  Keeping the default is recommended.
+
+*****
+Usage
+*****
 
 
- 
 
-.. php:function:: queue_css_file()
+********
+Examples
+********
+
+
+
