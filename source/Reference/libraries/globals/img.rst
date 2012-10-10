@@ -2,6 +2,12 @@
 img
 ###
 
+*******
+Summary
+*******
+
+.. include:: summary/img.rst
+
 .. php:function:: img(string $file, string $dir = images)
 
     Return the web path to an image file.
@@ -14,11 +20,17 @@ img
 Usage
 *****
 
-
+.. include:: usage/img.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/img.rst
 
+********
+See Also
+********
+
+.. include:: see_also/img.rst
 

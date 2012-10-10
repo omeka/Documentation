@@ -96,13 +96,8 @@
 <dd></dd></dl>
 
 <dl class="attr">
-<dt id="File::$mime_browser">
-<em class="property">property </em><tt class="descname">mime_browser</tt><a class="headerlink" href="#File::$mime_browser" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attr">
-<dt id="File::$mime_os">
-<em class="property">property </em><tt class="descname">mime_os</tt><a class="headerlink" href="#File::$mime_os" title="Permalink to this definition">¶</a></dt>
+<dt id="File::$mime_type">
+<em class="property">property </em><tt class="descname">mime_type</tt><a class="headerlink" href="#File::$mime_type" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attr">
@@ -143,23 +138,7 @@
 <dl class="method">
 <dt id="File::getProperty">
 <tt class="descname">getProperty</tt><big>(</big><em>string $property</em><big>)</big><a class="headerlink" href="#File::getProperty" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get a file&#8217;s property for display.</p>
-<p>Available properties:
-- id
-- filename
-- original filename
-- size
-- mime type
-- date added
-- date modified
-- authentication
-- mime type os
-- file type os
-- uri
-- fullsize uri
-- thumbnail uri
-- square thumbnail uri
-- permalink</p>
+<dd><p>Get a property or special value of this record.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -179,18 +158,23 @@
 <dl class="method">
 <dt id="File::_initializeMixins">
 <tt class="descname">_initializeMixins</tt><big>(</big><big>)</big><a class="headerlink" href="#File::_initializeMixins" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Initialize mixins.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="File::filterPostData">
-<tt class="descname">filterPostData</tt><big>(</big><em>$post</em><big>)</big><a class="headerlink" href="#File::filterPostData" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<tt class="descname">filterPostData</tt><big>(</big><em>array $post</em><big>)</big><a class="headerlink" href="#File::filterPostData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unset immutable properties from $_POST.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$post</strong> (<em>unknown</em>) &#8211; </li>
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$post</strong> (<em>array</em>) &#8211; </li>
 </ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
 </td>
 </tr>
 </tbody>
@@ -199,13 +183,31 @@
 
 <dl class="method">
 <dt id="File::beforeSave">
-<tt class="descname">beforeSave</tt><big>(</big><em>$args</em><big>)</big><a class="headerlink" href="#File::beforeSave" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<tt class="descname">beforeSave</tt><big>(</big><em>array $args</em><big>)</big><a class="headerlink" href="#File::beforeSave" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do something before saving this record.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$args</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$args</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="File::afterSave">
+<tt class="descname">afterSave</tt><big>(</big><em>array $args</em><big>)</big><a class="headerlink" href="#File::afterSave" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do something after saving this record.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$args</strong> (<em>array</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -216,18 +218,27 @@
 <dl class="method">
 <dt id="File::getItem">
 <tt class="descname">getItem</tt><big>(</big><big>)</big><a class="headerlink" href="#File::getItem" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Retrieve the parent item of this record.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Item</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="method">
 <dt id="File::getPath">
-<tt class="descname">getPath</tt><big>(</big><em>$type = original</em><big>)</big><a class="headerlink" href="#File::getPath" title="Permalink to this definition">¶</a></dt>
-<dd><p>Retrieve the path for the file</p>
+<tt class="descname">getPath</tt><big>(</big><em>string $type = original</em><big>)</big><a class="headerlink" href="#File::getPath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve a system path for this file.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$type</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$type</strong> (<em>string</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -240,18 +251,18 @@
 
 <dl class="method">
 <dt id="File::getWebPath">
-<tt class="descname">getWebPath</tt><big>(</big><em>$type = original</em><big>)</big><a class="headerlink" href="#File::getWebPath" title="Permalink to this definition">¶</a></dt>
-<dd><p>Retrieve the web path for the file</p>
+<tt class="descname">getWebPath</tt><big>(</big><em>string $type = original</em><big>)</big><a class="headerlink" href="#File::getWebPath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve a web path for this file.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$type</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$type</strong> (<em>string</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
 </td>
 </tr>
 </tbody>
@@ -261,29 +272,64 @@
 <dl class="method">
 <dt id="File::getDerivativeFilename">
 <tt class="descname">getDerivativeFilename</tt><big>(</big><big>)</big><a class="headerlink" href="#File::getDerivativeFilename" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Retrieve the derivative filename.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="method">
 <dt id="File::hasThumbnail">
 <tt class="descname">hasThumbnail</tt><big>(</big><big>)</big><a class="headerlink" href="#File::hasThumbnail" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="method">
-<dt id="File::getExtension">
-<tt class="descname">getExtension</tt><big>(</big><big>)</big><a class="headerlink" href="#File::getExtension" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Determine whether this record has a thumbnail image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="method">
 <dt id="File::hasFullsize">
 <tt class="descname">hasFullsize</tt><big>(</big><big>)</big><a class="headerlink" href="#File::hasFullsize" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Determine whether this record has a fullsize image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">bool</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="File::getExtension">
+<tt class="descname">getExtension</tt><big>(</big><big>)</big><a class="headerlink" href="#File::getExtension" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the original file&#8217;s extension.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="method">
 <dt id="File::setDefaults">
 <tt class="descname">setDefaults</tt><big>(</big><em>$filepath</em>, <em>$options = Array</em><big>)</big><a class="headerlink" href="#File::setDefaults" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the default values that will be stored for this file in the &#8216;files&#8217; table.</p>
-<p>These values include &#8216;size&#8217;, &#8216;authentication&#8217;, &#8216;mime_browser&#8217;, &#8216;mime_os&#8217;, &#8216;type_os&#8217;
-and &#8216;filename.</p>
+<dd><p>Set the default values that will be stored for this record in the &#8216;files&#8217;
+table.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -302,72 +348,22 @@ and &#8216;filename.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="File::getMimeType">
-<tt class="descname">getMimeType</tt><big>(</big><big>)</big><a class="headerlink" href="#File::getMimeType" title="Permalink to this definition">¶</a></dt>
-<dd><p>Retrieve the definitive MIME type for this file.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body">string</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="File::setMimeType">
-<tt class="descname">setMimeType</tt><big>(</big><em>$mimeType</em><big>)</big><a class="headerlink" href="#File::setMimeType" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$mimeType</strong> (<em>unknown</em>) &#8211; </li>
-</ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="File::_filterMimeType">
-<tt class="descname">_filterMimeType</tt><big>(</big><em>string $mimeType</em><big>)</big><a class="headerlink" href="#File::_filterMimeType" title="Permalink to this definition">¶</a></dt>
-<dd><p>Filters the mime type.  In particular, it removes the charset information.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$mimeType</strong> (<em>string</em>) &#8211; The raw mime type</li>
-</ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string Filtered mime type.</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
 <dt id="File::unlinkFile">
 <tt class="descname">unlinkFile</tt><big>(</big><big>)</big><a class="headerlink" href="#File::unlinkFile" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Unlink the file and file derivatives belonging to this record.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="File::_delete">
 <tt class="descname">_delete</tt><big>(</big><big>)</big><a class="headerlink" href="#File::_delete" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Perform any further deletion when deleting this record.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="File::createDerivatives">
 <tt class="descname">createDerivatives</tt><big>(</big><big>)</big><a class="headerlink" href="#File::createDerivatives" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Create derivatives of the original file.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="File::extractMetadata">
@@ -381,14 +377,6 @@ and &#8216;filename.</p>
 </tr>
 </tbody>
 </table>
-</dd></dl>
-
-<dl class="method">
-<dt id="File::_setMimeTypeIfAmbiguous">
-<tt class="descname">_setMimeTypeIfAmbiguous</tt><big>(</big><big>)</big><a class="headerlink" href="#File::_setMimeTypeIfAmbiguous" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sets the MIME type for the file to the one detected by getID3, but only
-if the existing MIME type is &#8216;ambiguous&#8217; and getID3 can detect a better
-one.</p>
 </dd></dl>
 
 <dl class="method">
@@ -408,18 +396,23 @@ one.</p>
 <dl class="method">
 <dt id="File::storeFiles">
 <tt class="descname">storeFiles</tt><big>(</big><big>)</big><a class="headerlink" href="#File::storeFiles" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Store files belonging to this record.</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="File::getStoragePath">
-<tt class="descname">getStoragePath</tt><big>(</big><em>$type = fullsize</em><big>)</big><a class="headerlink" href="#File::getStoragePath" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<tt class="descname">getStoragePath</tt><big>(</big><em>string $type = fullsize</em><big>)</big><a class="headerlink" href="#File::getStoragePath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the storage path.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$type</strong> (<em>unknown</em>) &#8211; </li>
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$type</strong> (<em>string</em>) &#8211; </li>
 </ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
 </td>
 </tr>
 </tbody>
@@ -428,13 +421,14 @@ one.</p>
 
 <dl class="method">
 <dt id="File::setStorage">
-<tt class="descname">setStorage</tt><big>(</big><em>$storage</em><big>)</big><a class="headerlink" href="#File::setStorage" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<tt class="descname">setStorage</tt><big>(</big><em>Omeka_Storage $storage</em><big>)</big><a class="headerlink" href="#File::setStorage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the storage object.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$storage</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$storage</strong> (<a class="reference internal" href="../libraries/Omeka/Storage.html#Omeka_Storage" title="Omeka_Storage"><em>Omeka_Storage</em></a>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -445,7 +439,16 @@ one.</p>
 <dl class="method">
 <dt id="File::getStorage">
 <tt class="descname">getStorage</tt><big>(</big><big>)</big><a class="headerlink" href="#File::getStorage" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Get the storage object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Omeka_Storage</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="method">
 <dt id="File::getResourceId">
@@ -477,22 +480,6 @@ one.</p>
 </td>
 </tr>
 <tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="File::afterSave">
-<tt class="descname">afterSave</tt><big>(</big><em>$args</em><big>)</big><a class="headerlink" href="#File::afterSave" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$args</strong> (<em>unknown</em>) &#8211; </li>
-</ul>
 </td>
 </tr>
 </tbody>

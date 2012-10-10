@@ -2,6 +2,12 @@
 head_js
 #######
 
+*******
+Summary
+*******
+
+.. include:: summary/head_js.rst
+
 .. php:function:: head_js(bool $includeDefaults = 1)
 
     Return the JavaScript tags that will be used on the page.
@@ -15,11 +21,17 @@ head_js
 Usage
 *****
 
-
+.. include:: usage/head_js.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/head_js.rst
 
+********
+See Also
+********
+
+.. include:: see_also/head_js.rst
 

@@ -18,6 +18,10 @@ Omeka_File_Ingest_Url
     
         Set of validators implementing Zend_Validate_Interface.
 
+    .. php:attr:: mimeType
+    
+        The current validated file MIME type.
+
     .. php:method:: _getOriginalFilename(array $fileInfo)
     
         Return the original filename.

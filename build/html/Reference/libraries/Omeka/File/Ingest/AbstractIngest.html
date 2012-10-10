@@ -67,11 +67,7 @@
 <dt id="Omeka_File_Ingest_AbstractIngest">
 <em class="property">class </em><tt class="descname">Omeka_File_Ingest_AbstractIngest</tt><a class="headerlink" href="#Omeka_File_Ingest_AbstractIngest" title="Permalink to this definition">¶</a></dt>
 <dd><p>An abstract class that handles ingesting files into Omeka and database.</p>
-<p>Specific responsibilities handled by this class:
-- Parsing/validating arbitrary inputs that somehow identify the files to be ingested.
-- Iterating through the parsed file information, validating, and transferring each file to Omeka.
-- Inserting a new record into the files table that corresponds to the transferred file&#8217;s metadata.
-- Returning a collection of the records associated with the ingested files.</p>
+<p>Specific responsibilities handled by this class:- Parsing/validating arbitrary inputs that somehow identify the files tobe ingested.- Iterating through the parsed file information, validating, andtransferring each file to Omeka.- Inserting a new record into the files table that corresponds to thetransferred file&#8217;s metadata.- Returning a collection of the records associated with the ingestedfiles.</p>
 <p>Typical usage is via the factory() method:</p>
 <blockquote>
 <div><div class="highlight-php"><div class="highlight"><pre><span class="nv">$ingest</span> <span class="o">=</span> <span class="nx">Omeka_File_Ingest_AbstractIngest</span><span class="o">::</span><span class="na">factory</span><span class="p">(</span><span class="s1">&#39;Url&#39;</span><span class="p">,</span> <span class="nv">$item</span><span class="p">);</span>
@@ -94,6 +90,12 @@
 <dt id="Omeka_File_Ingest_AbstractIngest::$_validators">
 <em class="property">property </em><tt class="descname">_validators</tt><a class="headerlink" href="#Omeka_File_Ingest_AbstractIngest::$_validators" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set of validators implementing Zend_Validate_Interface.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_File_Ingest_AbstractIngest::$mimeType">
+<em class="property">property </em><tt class="descname">mimeType</tt><a class="headerlink" href="#Omeka_File_Ingest_AbstractIngest::$mimeType" title="Permalink to this definition">¶</a></dt>
+<dd><p>The current validated file MIME type.</p>
 </dd></dl>
 
 <dl class="method">

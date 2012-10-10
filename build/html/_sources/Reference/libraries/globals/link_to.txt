@@ -2,6 +2,12 @@
 link_to
 #######
 
+*******
+Summary
+*******
+
+.. include:: summary/link_to.rst
+
 .. php:function:: link_to(Omeka_Record_AbstractRecord|string $record, string $action, string $text, array $props = Array, array $queryParams = Array)
 
     Return a link tag.
@@ -17,11 +23,17 @@ link_to
 Usage
 *****
 
-
+.. include:: usage/link_to.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/link_to.rst
 
+********
+See Also
+********
+
+.. include:: see_also/link_to.rst
 

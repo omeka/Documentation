@@ -66,9 +66,9 @@
 <dt id="Mixin_Search">
 <em class="property">class </em><tt class="descname">Mixin_Search</tt><a class="headerlink" href="#Mixin_Search" title="Permalink to this definition">¶</a></dt>
 <dd><p>Make an Omeka record fulltext searchable.</p>
-<p>Any class that extends Omeka_Record_AbstractRecord can be made searchable by pushing an instance of this mixin into Omeka_Record::$_mixins during Omeka_Record::_initializeMixins(). It must be pushed after all mixins that can add search text&#8211;for example, after ElementText.</p>
+<p>Any class that extends Omeka_Record_AbstractRecord can be made searchable bypushing an instance of this mixin into Omeka_Record::$_mixins duringOmeka_Record::_initializeMixins(). It must be pushed after all mixins thatcan add search text&#8211;for example, after ElementText.</p>
 <p>The record type must also be registered using the search_record_types filter in order for the records to be searchable. See self::getSearchRecordTypes().</p>
-<p>This mixin leverages the Omeka_Record_AbstractRecord::afterSave() and Omeka_Record_Mixin_AbstractMixin::afterSave() callbacks, so note their order of execution. Records that initialize ActsAsElementText will automatically add their element texts to the search text.</p>
+<p>This mixin leverages the Omeka_Record_AbstractRecord::afterSave() andOmeka_Record_Mixin_AbstractMixin::afterSave() callbacks, so note their orderof execution. Records that initialize ActsAsElementText will automaticallyadd their element texts to the search text.</p>
 <dl class="attr">
 <dt id="Mixin_Search::$_text">
 <em class="property">property </em><tt class="descname">_text</tt><a class="headerlink" href="#Mixin_Search::$_text" title="Permalink to this definition">¶</a></dt>

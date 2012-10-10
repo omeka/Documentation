@@ -108,18 +108,19 @@ extend the behavior of Omeka_Record_AbstractRecord implementations.</p>
 <dd><p>Key/value pairs indicating aliases for methods that retrieve
 related data objects.
 For example, a subclass might define the following:
-.. code-block:: php</p>
-<blockquote>
-<div>protected $_related = array(&#8216;Sections&#8217;=&gt;&#8217;loadSections&#8217;);</div></blockquote>
-<p>This would allow the client to write code like:
-.. code-block:: php</p>
-<blockquote>
-<div>$sections = $subclassInstance-&gt;Sections;</div></blockquote>
-<p>Which would be equivalent to:
-.. code-block:: php</p>
-<blockquote>
-<div>$sections = $subclassInstance-&gt;loadSections();</div></blockquote>
-<p>The difference being, the former is cached so as to avoid multiple trips to the database.</p>
+&lt;code&gt;
+protected $_related = array(&#8216;Sections&#8217;=&gt;&#8217;loadSections&#8217;);
+&lt;/code&gt;
+This would allow the client to write code like:
+&lt;code&gt;
+$sections = $subclassInstance-&gt;Sections;
+&lt;/code&gt;
+Which would be equivalent to:
+&lt;code&gt;
+$sections = $subclassInstance-&gt;loadSections();
+&lt;/code&gt;
+The difference being, the former is cached so as to avoid multiple
+trips to the database.</p>
 </dd></dl>
 
 <dl class="attr">

@@ -27,6 +27,10 @@ Omeka_File_Ingest_Upload
     
         Set of validators implementing Zend_Validate_Interface.
 
+    .. php:attr:: mimeType
+    
+        The current validated file MIME type.
+
     .. php:method:: _buildAdapter()
     
         Create a ZF HTTP file transfer adapter.

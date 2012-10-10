@@ -30,11 +30,7 @@ File
     
 
 
-    .. php:attr:: mime_browser
-    
-
-
-    .. php:attr:: mime_os
+    .. php:attr:: mime_type
     
 
 
@@ -68,108 +64,104 @@ File
 
     .. php:method:: getProperty(string $property)
     
-        Get a file's property for display.
-        
-        Available properties:
-        - id
-        - filename
-        - original filename
-        - size
-        - mime type
-        - date added
-        - date modified
-        - authentication
-        - mime type os
-        - file type os
-        - uri
-        - fullsize uri
-        - thumbnail uri
-        - square thumbnail uri
-        - permalink
+        Get a property or special value of this record.
         
         :param string $property: 
         :returns: mixed
 
     .. php:method:: _initializeMixins()
-
-    .. php:method:: filterPostData($post)
     
-        :param unknown $post:
+        Initialize mixins.
 
-    .. php:method:: beforeSave($args)
+    .. php:method:: filterPostData(array $post)
     
-        :param unknown $args:
+        Unset immutable properties from $_POST.
+        
+        :param array $post: 
+        :returns: array
+
+    .. php:method:: beforeSave(array $args)
+    
+        Do something before saving this record.
+        
+        :param array $args:
+
+    .. php:method:: afterSave(array $args)
+    
+        Do something after saving this record.
+        
+        :param array $args:
 
     .. php:method:: getItem()
-
-    .. php:method:: getPath($type = original)
     
-        Retrieve the path for the file
+        Retrieve the parent item of this record.
         
-        :param unknown $type: 
+        :returns: Item
+
+    .. php:method:: getPath(string $type = original)
+    
+        Retrieve a system path for this file.
+        
+        :param string $type: 
         :returns: string
 
-    .. php:method:: getWebPath($type = original)
+    .. php:method:: getWebPath(string $type = original)
     
-        Retrieve the web path for the file
+        Retrieve a web path for this file.
         
-        :param unknown $type: 
-        :returns: void
+        :param string $type: 
+        :returns: string
 
     .. php:method:: getDerivativeFilename()
+    
+        Retrieve the derivative filename.
+        
+        :returns: string
 
     .. php:method:: hasThumbnail()
-
-    .. php:method:: getExtension()
+    
+        Determine whether this record has a thumbnail image.
+        
+        :returns: bool
 
     .. php:method:: hasFullsize()
+    
+        Determine whether this record has a fullsize image.
+        
+        :returns: bool
+
+    .. php:method:: getExtension()
+    
+        Get the original file's extension.
+        
+        :returns: string
 
     .. php:method:: setDefaults($filepath, $options = Array)
     
-        Set the default values that will be stored for this file in the 'files' table.
-        
-        These values include 'size', 'authentication', 'mime_browser', 'mime_os', 'type_os'
-        and 'filename.
+        Set the default values that will be stored for this record in the 'files' 
+        table.
         
         :param unknown $filepath: 
         :param unknown $options: 
         :returns: void
 
-    .. php:method:: getMimeType()
-    
-        Retrieve the definitive MIME type for this file.
-        
-        :returns: string
-
-    .. php:method:: setMimeType($mimeType)
-    
-        :param unknown $mimeType: 
-        :returns: void
-
-    .. php:method:: _filterMimeType(string $mimeType)
-    
-        Filters the mime type.  In particular, it removes the charset information.
-        
-        :param string $mimeType: The raw mime type
-        :returns: string Filtered mime type.
-
     .. php:method:: unlinkFile()
+    
+        Unlink the file and file derivatives belonging to this record.
 
     .. php:method:: _delete()
+    
+        Perform any further deletion when deleting this record.
 
     .. php:method:: createDerivatives()
+    
+        Create derivatives of the original file.
 
     .. php:method:: extractMetadata()
     
         Extract ID3 metadata associated with the file.
         
         :returns: boolean
-
-    .. php:method:: _setMimeTypeIfAmbiguous()
-    
-        Sets the MIME type for the file to the one detected by getID3, but only
-        if the existing MIME type is 'ambiguous' and getID3 can detect a better
-        one.
 
     .. php:method:: _getId3()
     
@@ -178,16 +170,27 @@ File
         :returns: getID3
 
     .. php:method:: storeFiles()
-
-    .. php:method:: getStoragePath($type = fullsize)
     
-        :param unknown $type:
+        Store files belonging to this record.
 
-    .. php:method:: setStorage($storage)
+    .. php:method:: getStoragePath(string $type = fullsize)
     
-        :param unknown $storage:
+        Get the storage path.
+        
+        :param string $type: 
+        :returns: string
+
+    .. php:method:: setStorage(Omeka_Storage $storage)
+    
+        Set the storage object.
+        
+        :param Omeka_Storage $storage:
 
     .. php:method:: getStorage()
+    
+        Get the storage object.
+        
+        :returns: Omeka_Storage
 
     .. php:method:: getResourceId()
     
@@ -205,7 +208,3 @@ File
         
         :param User $user: 
         :returns: boolean
-
-    .. php:method:: afterSave($args)
-    
-        :param unknown $args:

@@ -24,9 +24,6 @@
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
-    <link rel="up" title="Global/Theming functions" href="index.html" />
-    <link rel="next" title="insert_element_set" href="insert_element_set.html" />
-    <link rel="prev" title="strip_formatting" href="strip_formatting.html" />
     <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -37,20 +34,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="insert_element_set.html" title="insert_element_set"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="strip_formatting.html" title="strip_formatting"
-             accesskey="P">previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
-
-          <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" accesskey="U">Global/Theming functions</a> &raquo;</li> 
+ 
       </ul>
     </div>  
 
@@ -61,6 +50,8 @@
             
   <div class="section" id="insert-collection">
 <h1>insert_collection<a class="headerlink" href="#insert-collection" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="insert_collection">
 <tt class="descname">insert_collection</tt><big>(</big><em>array $metadata = Array</em><big>)</big><a class="headerlink" href="#insert_collection" title="Permalink to this definition">¶</a></dt>
@@ -70,7 +61,17 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$metadata</strong> (<em>array</em>) &#8211; Follows the format: &lt;code&gt; array( &#8216;name&#8217;        =&gt; [string], &#8216;description&#8217; =&gt; [string], &#8216;public&#8217;      =&gt; [true|false], &#8216;featured&#8217;    =&gt; [true|false] &#8216;collectors&#8217;  =&gt; [array of string names] ) &lt;/code&gt;</li>
+<li><strong>$metadata</strong> (<em>array</em>) &#8211; <p>Follows the format:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">array</span><span class="p">(</span>
+  <span class="s1">&#39;name&#39;</span>        <span class="o">=&gt;</span> <span class="p">[</span><span class="nx">string</span><span class="p">],</span>
+  <span class="s1">&#39;description&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="nx">string</span><span class="p">],</span>
+  <span class="s1">&#39;public&#39;</span>      <span class="o">=&gt;</span> <span class="p">[</span><span class="k">true</span><span class="o">|</span><span class="k">false</span><span class="p">],</span>
+  <span class="s1">&#39;featured&#39;</span>    <span class="o">=&gt;</span> <span class="p">[</span><span class="k">true</span><span class="o">|</span><span class="k">false</span><span class="p">]</span>
+  <span class="s1">&#39;collectors&#39;</span>  <span class="o">=&gt;</span> <span class="p">[</span><span class="k">array</span> <span class="nx">of</span> <span class="nx">string</span> <span class="nx">names</span><span class="p">]</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</li>
 </ul>
 </td>
 </tr>
@@ -81,11 +82,15 @@
 </table>
 </dd></dl>
 
+</div>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -101,18 +106,14 @@
   <h3><a href="../../../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">insert_collection</a><ul>
+<li><a class="reference internal" href="#summary">Summary</a></li>
 <li><a class="reference internal" href="#usage">Usage</a></li>
 <li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#see-also">See Also</a></li>
 </ul>
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="strip_formatting.html"
-                        title="previous chapter">strip_formatting</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="insert_element_set.html"
-                        title="next chapter">insert_element_set</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -146,20 +147,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../genindex.html" title="General Index"
              >index</a></li>
-        <li class="right" >
-          <a href="insert_element_set.html" title="insert_element_set"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="strip_formatting.html" title="strip_formatting"
-             >previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
-
-          <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" >Global/Theming functions</a> &raquo;</li> 
+ 
       </ul>
     </div>
     <div class="footer">

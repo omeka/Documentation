@@ -15,23 +15,19 @@ Omeka_Controller_AbstractActionController
         If this is left null, then results will not paginate. This is partially because not every controller will want to
         paginate records and also to avoid BC breaks for plugins.
 
-    .. php:method:: __construct(Zend_Controller_Request_Abstract $request, Zend_Controller_Response_Abstract $response, array $invokeArgs = Array)
+    .. php:method:: __construct(Zend_Controller_Request_Abstract $request, Zend_Controller_Response_Abstract $response, $invokeArgs = Array)
     
         Base controller constructor.
         
         Does the following things:
         
-        <ul>
-        <li>Aliases the redirector helper to clean up the syntax</li>
-        <li>Sets the table object automatically if given the class of the model to use for CRUD.</li>
-        <li>Sets all the built-in action contexts for the CRUD actions.</li>
-        </ul>
         
-        Instead of overriding this constructor, controller subclasses should implement the init() method for initial setup.
         
-        :param Zend_Controller_Request_Abstract $request: Current request object.
-        :param Zend_Controller_Response_Abstract $response: Response object.
-        :param array $invokeArgs: Arguments passed to Zend_Controller_Action.
+        Instead of overriding this constructor, controller subclasses shouldimplement the init() method for initial setup.
+        
+        :param Zend_Controller_Request_Abstract $request: 
+        :param Zend_Controller_Response_Abstract $response: 
+        :param unknown $invokeArgs:
 
     .. php:method:: indexAction()
     

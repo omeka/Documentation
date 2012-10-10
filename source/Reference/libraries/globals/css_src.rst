@@ -2,6 +2,12 @@
 css_src
 #######
 
+*******
+Summary
+*******
+
+.. include:: summary/css_src.rst
+
 .. php:function:: css_src(string $file, string $dir = css)
 
     Return the web path to a css file.
@@ -14,11 +20,17 @@ css_src
 Usage
 *****
 
-
+.. include:: usage/css_src.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/css_src.rst
 
+********
+See Also
+********
+
+.. include:: see_also/css_src.rst
 

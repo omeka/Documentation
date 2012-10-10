@@ -77,23 +77,18 @@ paginate records and also to avoid BC breaks for plugins.</p>
 
 <dl class="method">
 <dt id="Omeka_Controller_AbstractActionController::__construct">
-<tt class="descname">__construct</tt><big>(</big><em>Zend_Controller_Request_Abstract $request</em>, <em>Zend_Controller_Response_Abstract $response</em>, <em>array $invokeArgs = Array</em><big>)</big><a class="headerlink" href="#Omeka_Controller_AbstractActionController::__construct" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__construct</tt><big>(</big><em>Zend_Controller_Request_Abstract $request</em>, <em>Zend_Controller_Response_Abstract $response</em>, <em>$invokeArgs = Array</em><big>)</big><a class="headerlink" href="#Omeka_Controller_AbstractActionController::__construct" title="Permalink to this definition">¶</a></dt>
 <dd><p>Base controller constructor.</p>
 <p>Does the following things:</p>
-<p>&lt;ul&gt;
-&lt;li&gt;Aliases the redirector helper to clean up the syntax&lt;/li&gt;
-&lt;li&gt;Sets the table object automatically if given the class of the model to use for CRUD.&lt;/li&gt;
-&lt;li&gt;Sets all the built-in action contexts for the CRUD actions.&lt;/li&gt;
-&lt;/ul&gt;</p>
-<p>Instead of overriding this constructor, controller subclasses should implement the init() method for initial setup.</p>
+<p>Instead of overriding this constructor, controller subclasses shouldimplement the init() method for initial setup.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$request</strong> (<em>Zend_Controller_Request_Abstract</em>) &#8211; Current request object.</li>
-<li><strong>$response</strong> (<em>Zend_Controller_Response_Abstract</em>) &#8211; Response object.</li>
-<li><strong>$invokeArgs</strong> (<em>array</em>) &#8211; Arguments passed to Zend_Controller_Action.</li>
+<li><strong>$request</strong> (<em>Zend_Controller_Request_Abstract</em>) &#8211; </li>
+<li><strong>$response</strong> (<em>Zend_Controller_Response_Abstract</em>) &#8211; </li>
+<li><strong>$invokeArgs</strong> (<em>unknown</em>) &#8211; </li>
 </ul>
 </td>
 </tr>

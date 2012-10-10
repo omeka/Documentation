@@ -8,15 +8,31 @@ Omeka_Validate_File_MimeType
 
     .. php:attr:: _messageTemplates
     
-        Omeka-specific error messages for validating MIME types.
-        Also fixes some grammatical errors in the original validator error 
-        messages.
 
-    .. php:method:: __construct(mixed $options)
+
+    .. php:attr:: _messageVariables
     
-        Constructor.
+
+
+    .. php:attr:: _customWhitelist
+    
+
+
+    .. php:attr:: _file
+    
+
+
+    .. php:attr:: _mimeType
+    
+
+
+    .. php:method:: __construct()
+    
+        Construct the validator object.
+
+    .. php:method:: isValid(string $file)
+    
+        Vaidate the file MIME type.
         
-        Use the 'file_mime_type_whitelist' option if nothing is passed in as the default.
-        
-        :param mixed $options: 
-        :returns: void
+        :param string $file: 
+        :returns: bool

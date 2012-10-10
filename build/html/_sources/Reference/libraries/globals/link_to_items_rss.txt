@@ -2,6 +2,12 @@
 link_to_items_rss
 #################
 
+*******
+Summary
+*******
+
+.. include:: summary/link_to_items_rss.rst
+
 .. php:function:: link_to_items_rss(string $text, array $params = Array)
 
     Return a link the the items RSS feed.
@@ -13,11 +19,17 @@ link_to_items_rss
 Usage
 *****
 
-
+.. include:: usage/link_to_items_rss.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/link_to_items_rss.rst
 
+********
+See Also
+********
+
+.. include:: see_also/link_to_items_rss.rst
 

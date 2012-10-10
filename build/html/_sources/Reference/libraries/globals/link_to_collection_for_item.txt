@@ -2,6 +2,12 @@
 link_to_collection_for_item
 ###########################
 
+*******
+Summary
+*******
+
+.. include:: summary/link_to_collection_for_item.rst
+
 .. php:function:: link_to_collection_for_item(string|null $text, array $props = Array, string $action = show)
 
     Return a link to the collection to which the item belongs.
@@ -18,11 +24,17 @@ link_to_collection_for_item
 Usage
 *****
 
-
+.. include:: usage/link_to_collection_for_item.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/link_to_collection_for_item.rst
 
+********
+See Also
+********
+
+.. include:: see_also/link_to_collection_for_item.rst
 

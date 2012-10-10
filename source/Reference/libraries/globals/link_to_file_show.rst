@@ -2,7 +2,13 @@
 link_to_file_show
 #################
 
-.. php:function:: link_to_file_show(array $attributes = Array, string $text, $file)
+*******
+Summary
+*******
+
+.. include:: summary/link_to_file_show.rst
+
+.. php:function:: link_to_file_show(array $attributes = Array, string $text, File|null $file)
 
     Return a link to the file metadata page for a particular file.
     
@@ -12,18 +18,24 @@ link_to_file_show
     
     :param array $attributes: 
     :param string $text: 
-    :param unknown $file: 
+    :param File|null $file: 
     :returns: string
 
 *****
 Usage
 *****
 
-
+.. include:: usage/link_to_file_show.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/link_to_file_show.rst
 
+********
+See Also
+********
+
+.. include:: see_also/link_to_file_show.rst
 

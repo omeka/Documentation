@@ -2,6 +2,12 @@
 all_element_texts
 #################
 
+*******
+Summary
+*******
+
+.. include:: summary/all_element_texts.rst
+
 .. php:function:: all_element_texts(Omeka_Record_AbstractRecord|string $record, array $options = Array)
 
     Return the set of all element text metadata for a record.
@@ -14,11 +20,17 @@ all_element_texts
 Usage
 *****
 
-
+.. include:: usage/all_element_texts.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/all_element_texts.rst
 
+********
+See Also
+********
+
+.. include:: see_also/all_element_texts.rst
 

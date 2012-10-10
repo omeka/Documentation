@@ -6,17 +6,19 @@ Omeka_Job_Dispatcher_Adapter_ZendQueue
 
     Dispatcher for Zend_Queue.
     
-    This would be particularly useful for installations that want to interface with ActiveMQ or Zend Server's Job Queue via Zend_Queue.  Note that using the 'Array' adapter should only be used for testing, as all jobs passed to it will be thrown away. 
+    This would be particularly useful for installations that want to interfacewith ActiveMQ or Zend Server's Job Queue via Zend_Queue.  Note that usingthe 'Array' adapter should only be used for testing, as all jobs passed toit will be thrown away.
     
-    Required options include 'adapter' and 'options', which correspond to the first and second arguments to Zend_Queue's constructor respectively.
+    Required options include 'adapter' and 'options', whichcorrespond to the first and second arguments to Zend_Queue's constructorrespectively.
     
-    For example, it would be configured like so in config.ini:
+    For example, it would be configured like so in config.ini:        
+    
         .. code-block:: php 
     
-         jobs.dispatcher = "Omeka_Job_Dispatcher_ZendQueue"
-         jobs.adapterOptions.adapter = "PlatformJobQueue"
-         jobs.adapterOptions.options.host = "127.0.0.1"
-         jobs.adapterOptions.options.password = "foobar"
+    
+            jobs.dispatcher = "Omeka_Job_Dispatcher_ZendQueue"
+            jobs.adapterOptions.adapter = "PlatformJobQueue"
+            jobs.adapterOptions.options.host = "127.0.0.1"
+            jobs.adapterOptions.options.password = "foobar"
 
     .. php:attr:: _queue
     

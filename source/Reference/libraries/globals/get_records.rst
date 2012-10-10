@@ -2,6 +2,12 @@
 get_records
 ###########
 
+*******
+Summary
+*******
+
+.. include:: summary/get_records.rst
+
 .. php:function:: get_records(string $recordType, array $params = Array, integer $limit = 10)
 
     Get a set of records from the database.
@@ -15,11 +21,17 @@ get_records
 Usage
 *****
 
-
+.. include:: usage/get_records.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/get_records.rst
 
+********
+See Also
+********
+
+.. include:: see_also/get_records.rst
 

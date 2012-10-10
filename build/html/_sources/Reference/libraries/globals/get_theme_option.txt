@@ -2,6 +2,12 @@
 get_theme_option
 ################
 
+*******
+Summary
+*******
+
+.. include:: summary/get_theme_option.rst
+
 .. php:function:: get_theme_option(string $optionName, string $themeName)
 
     Get a theme option.
@@ -14,11 +20,17 @@ get_theme_option
 Usage
 *****
 
-
+.. include:: usage/get_theme_option.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/get_theme_option.rst
 
+********
+See Also
+********
+
+.. include:: see_also/get_theme_option.rst
 

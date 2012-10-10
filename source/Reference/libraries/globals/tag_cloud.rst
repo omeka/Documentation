@@ -2,6 +2,12 @@
 tag_cloud
 #########
 
+*******
+Summary
+*******
+
+.. include:: summary/tag_cloud.rst
+
 .. php:function:: tag_cloud(Omeka_Record_AbstractRecord|array $recordOrTags, string|null $link, int $maxClasses = 9, bool $tagNumber = , string $tagNumberOrder)
 
     Create a tag cloud made of divs that follow the hTagcloud microformat
@@ -17,11 +23,17 @@ tag_cloud
 Usage
 *****
 
-
+.. include:: usage/tag_cloud.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/tag_cloud.rst
 
+********
+See Also
+********
+
+.. include:: see_also/tag_cloud.rst
 

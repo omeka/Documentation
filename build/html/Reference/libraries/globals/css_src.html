@@ -24,9 +24,6 @@
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
-    <link rel="up" title="Global/Theming functions" href="index.html" />
-    <link rel="next" title="head_css" href="head_css.html" />
-    <link rel="prev" title="url_to_link" href="url_to_link.html" />
     <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -37,20 +34,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="head_css.html" title="head_css"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="url_to_link.html" title="url_to_link"
-             accesskey="P">previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
-
-          <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" accesskey="U">Global/Theming functions</a> &raquo;</li> 
+ 
       </ul>
     </div>  
 
@@ -61,6 +50,15 @@
             
   <div class="section" id="css-src">
 <h1>css_src<a class="headerlink" href="#css-src" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<p><tt class="docutils literal"><span class="pre">css_src()</span></tt> is a helper function used when referencing a css file within a theme,
+and commonly included within a theme&#8217;s <tt class="docutils literal"><span class="pre">header.php</span></tt> file. It returns the path to a css file
+located in the css folder of that theme, usually located in <tt class="docutils literal"><span class="pre">themes/YourTheme/css</span></tt>.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The <a class="reference internal" href="queue_css_file.html#queue_css_file" title="queue_css_file"><tt class="xref php php-func docutils literal"><span class="pre">queue_css_file</span></tt></a> helper is preferred to this one for most use cases.</p>
+</div>
 <dl class="function">
 <dt id="css_src">
 <tt class="descname">css_src</tt><big>(</big><em>string $file</em>, <em>string $dir = css</em><big>)</big><a class="headerlink" href="#css_src" title="Permalink to this definition">¶</a></dt>
@@ -82,11 +80,15 @@
 </table>
 </dd></dl>
 
+</div>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -102,18 +104,14 @@
   <h3><a href="../../../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">css_src</a><ul>
+<li><a class="reference internal" href="#summary">Summary</a></li>
 <li><a class="reference internal" href="#usage">Usage</a></li>
 <li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#see-also">See Also</a></li>
 </ul>
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="url_to_link.html"
-                        title="previous chapter">url_to_link</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="head_css.html"
-                        title="next chapter">head_css</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -147,20 +145,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../genindex.html" title="General Index"
              >index</a></li>
-        <li class="right" >
-          <a href="head_css.html" title="head_css"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="url_to_link.html" title="url_to_link"
-             >previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
-
-          <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" >Global/Theming functions</a> &raquo;</li> 
+ 
       </ul>
     </div>
     <div class="footer">

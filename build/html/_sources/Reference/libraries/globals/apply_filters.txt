@@ -2,6 +2,12 @@
 apply_filters
 #############
 
+*******
+Summary
+*******
+
+.. include:: summary/apply_filters.rst
+
 .. php:function:: apply_filters(string|array $name, mixed $value, array $args = Array)
 
     Apply a set of plugin filters to a given value.
@@ -15,11 +21,17 @@ apply_filters
 Usage
 *****
 
-
+.. include:: usage/apply_filters.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/apply_filters.rst
 
+********
+See Also
+********
+
+.. include:: see_also/apply_filters.rst
 

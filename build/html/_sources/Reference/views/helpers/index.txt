@@ -12,6 +12,7 @@ Views/helpers
     GetCurrentRecord
     GetLoopRecords
     Loop
+    MaxFileSize
     Metadata
     Pluralize
     RecordUrl

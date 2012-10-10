@@ -2,6 +2,12 @@
 get_plugin_ini
 ##############
 
+*******
+Summary
+*******
+
+.. include:: summary/get_plugin_ini.rst
+
 .. php:function:: get_plugin_ini(string $pluginDirName, string $iniKeyName)
 
     Get specified descriptive info for a plugin from its ini file.
@@ -14,11 +20,17 @@ get_plugin_ini
 Usage
 *****
 
-
+.. include:: usage/get_plugin_ini.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/get_plugin_ini.rst
 
+********
+See Also
+********
+
+.. include:: see_also/get_plugin_ini.rst
 

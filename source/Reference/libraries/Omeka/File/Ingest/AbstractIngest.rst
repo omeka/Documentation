@@ -6,18 +6,17 @@ Omeka_File_Ingest_AbstractIngest
 
     An abstract class that handles ingesting files into Omeka and database.
     
-    Specific responsibilities handled by this class:
-    - Parsing/validating arbitrary inputs that somehow identify the files to be ingested.
-    - Iterating through the parsed file information, validating, and transferring each file to Omeka.
-    - Inserting a new record into the files table that corresponds to the transferred file's metadata.
-    - Returning a collection of the records associated with the ingested files.
+    Specific responsibilities handled by this class:- Parsing/validating arbitrary inputs that somehow identify the files tobe ingested.- Iterating through the parsed file information, validating, andtransferring each file to Omeka.- Inserting a new record into the files table that corresponds to thetransferred file's metadata.- Returning a collection of the records associated with the ingestedfiles.
     
     Typical usage is via the factory() method:
     
+            
+    
         .. code-block:: php 
     
-         $ingest = Omeka_File_Ingest_AbstractIngest::factory('Url', $item);
-         $fileRecords = $ingest->ingest('http://www.example.com');
+    
+            $ingest = Omeka_File_Ingest_AbstractIngest::factory('Url', $item);
+            $fileRecords = $ingest->ingest('http://www.example.com');
 
     .. php:attr:: _item
     
@@ -30,6 +29,10 @@ Omeka_File_Ingest_AbstractIngest
     .. php:attr:: _validators
     
         Set of validators implementing Zend_Validate_Interface.
+
+    .. php:attr:: mimeType
+    
+        The current validated file MIME type.
 
     .. php:method:: setItem(Item $item)
     

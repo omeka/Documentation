@@ -2,6 +2,12 @@
 item_fullsize
 #############
 
+*******
+Summary
+*******
+
+.. include:: summary/item_fullsize.rst
+
 .. php:function:: item_fullsize(array $props = Array, integer $index = 0, $item)
 
     Return HTML for a fullsize image assigned to an item.
@@ -17,11 +23,17 @@ item_fullsize
 Usage
 *****
 
-
+.. include:: usage/item_fullsize.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/item_fullsize.rst
 
+********
+See Also
+********
+
+.. include:: see_also/item_fullsize.rst
 

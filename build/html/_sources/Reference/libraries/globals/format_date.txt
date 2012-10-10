@@ -2,6 +2,12 @@
 format_date
 ###########
 
+*******
+Summary
+*******
+
+.. include:: summary/format_date.rst
+
 .. php:function:: format_date(mixed $date, string $format = FFF)
 
     Format a date for output according to the current locale.
@@ -14,11 +20,17 @@ format_date
 Usage
 *****
 
-
+.. include:: usage/format_date.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/format_date.rst
 
+********
+See Also
+********
+
+.. include:: see_also/format_date.rst
 

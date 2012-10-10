@@ -2,6 +2,12 @@
 simple_search_form
 ##################
 
+*******
+Summary
+*******
+
+.. include:: summary/simple_search_form.rst
+
 .. php:function:: simple_search_form(string $buttonText, array $formProperties = Array, string $uri)
 
     Make a simple search form for the items.
@@ -17,11 +23,17 @@ simple_search_form
 Usage
 *****
 
-
+.. include:: usage/simple_search_form.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/simple_search_form.rst
 
+********
+See Also
+********
+
+.. include:: see_also/simple_search_form.rst
 

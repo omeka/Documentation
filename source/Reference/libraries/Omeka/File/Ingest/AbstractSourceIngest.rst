@@ -25,6 +25,10 @@ Omeka_File_Ingest_AbstractSourceIngest
     
         Set of validators implementing Zend_Validate_Interface.
 
+    .. php:attr:: mimeType
+    
+        The current validated file MIME type.
+
     .. php:method:: _getFileSource($fileInfo)
     
         The 'source' key of the file info is parsed out by default.

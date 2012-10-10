@@ -1,8 +1,8 @@
 .. globals.
 
-########################
-Global/Theming functions
-########################
+#####################################
+Libraries/Globals (Theming Functions)
+#####################################
 
 *************
 All Functions
@@ -59,7 +59,6 @@ Looping Functions
    :glob:
    
    *loop*
-   loop
 
 
 ***********************

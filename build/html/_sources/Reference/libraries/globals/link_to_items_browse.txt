@@ -2,6 +2,12 @@
 link_to_items_browse
 ####################
 
+*******
+Summary
+*******
+
+.. include:: summary/link_to_items_browse.rst
+
 .. php:function:: link_to_items_browse(string $text, array $browseParams = Array, array $linkProperties = Array)
 
     Return HTML for a link to the browse page for items.
@@ -15,11 +21,17 @@ link_to_items_browse
 Usage
 *****
 
-
+.. include:: usage/link_to_items_browse.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/link_to_items_browse.rst
 
+********
+See Also
+********
+
+.. include:: see_also/link_to_items_browse.rst
 

@@ -22,11 +22,11 @@ Omeka_Plugin_AbstractPlugin
         after_save_form_record filter should have a corresponding hookAfterSaveRecord() method.
         
         For example:
-        .. code-block:: php 
-        
-             array('install', 
-                   'uninstall', 
-                   'doSomething' => 'after_save_item')
+        <code>
+        array('install', 
+        'uninstall', 
+        'doSomething' => 'after_save_item')
+        </code>
 
     .. php:attr:: _filters
     
@@ -38,12 +38,12 @@ Omeka_Plugin_AbstractPlugin
         admin_navigation_main filter should have a corresponding filterAdminNavigationMain() method.
         
         For example:
-        .. code-block:: php 
-        
-             array('admin_navigation_main', 
-                   'public_navigation_main', 
-                   'changeSomething' => 'display_option_site_title', 
-                   'displayItemDublinCoreTitle' => array('Display', 'Item', 'Dublin Core', 'Title'))
+        <code>
+        array('admin_navigation_main', 
+        'public_navigation_main', 
+        'changeSomething' => 'display_option_site_title', 
+        'displayItemDublinCoreTitle' => array('Display', 'Item', 'Dublin Core', 'Title'))
+        </code>
 
     .. php:attr:: _options
     
@@ -52,12 +52,12 @@ Omeka_Plugin_AbstractPlugin
         Plugin authors should give an array containing option names as keys and their default values as values, if any.
         
         For example:
-        .. code-block:: php 
-        
-             array('option_name1' => 'option_default_value1',
-                   'option_name2' => 'option_default_value2',
-                   'option_name3',
-                   'option_name4')
+        <code>
+        array('option_name1' => 'option_default_value1',
+        'option_name2' => 'option_default_value2',
+        'option_name3',
+        'option_name4')
+        </code>
 
     .. php:method:: __construct()
     

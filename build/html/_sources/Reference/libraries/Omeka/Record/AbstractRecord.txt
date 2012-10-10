@@ -40,21 +40,19 @@ Omeka_Record_AbstractRecord
         Key/value pairs indicating aliases for methods that retrieve
         related data objects.
         For example, a subclass might define the following:
-        .. code-block:: php
-        
-                 protected $_related = array('Sections'=>'loadSections');
-        
+        <code>
+        protected $_related = array('Sections'=>'loadSections');
+        </code>
         This would allow the client to write code like:
-        .. code-block:: php 
-        
-                 $sections = $subclassInstance->Sections;
-        
+        <code>
+        $sections = $subclassInstance->Sections;
+        </code> 
         Which would be equivalent to:
-        .. code-block:: php 
-        
-                 $sections = $subclassInstance->loadSections();
-        
-        The difference being, the former is cached so as to avoid multiple trips to the database.
+        <code>
+        $sections = $subclassInstance->loadSections();
+        </code>
+        The difference being, the former is cached so as to avoid multiple
+        trips to the database.
 
     .. php:attr:: _postData
     

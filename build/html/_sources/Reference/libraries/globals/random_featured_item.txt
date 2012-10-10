@@ -2,6 +2,12 @@
 random_featured_item
 ####################
 
+*******
+Summary
+*******
+
+.. include:: summary/random_featured_item.rst
+
 .. php:function:: random_featured_item(boolean $withImage)
 
     Return the HTML for displaying a random featured item.
@@ -13,11 +19,17 @@ random_featured_item
 Usage
 *****
 
-
+.. include:: usage/random_featured_item.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/random_featured_item.rst
 
+********
+See Also
+********
+
+.. include:: see_also/random_featured_item.rst
 

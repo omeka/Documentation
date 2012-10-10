@@ -2,6 +2,12 @@
 _log
 ####
 
+*******
+Summary
+*******
+
+.. include:: summary/_log.rst
+
 .. php:function:: _log(mixed $msg, integer $priority = 6)
 
     Log a message.
@@ -15,11 +21,17 @@ _log
 Usage
 *****
 
-
+.. include:: usage/_log.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/_log.rst
 
+********
+See Also
+********
+
+.. include:: see_also/_log.rst
 

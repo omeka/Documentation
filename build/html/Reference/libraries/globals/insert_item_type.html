@@ -24,9 +24,6 @@
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
-    <link rel="up" title="Global/Theming functions" href="index.html" />
-    <link rel="next" title="set_current_record" href="set_current_record.html" />
-    <link rel="prev" title="insert_item" href="insert_item.html" />
     <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -37,20 +34,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="set_current_record.html" title="set_current_record"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="insert_item.html" title="insert_item"
-             accesskey="P">previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
-
-          <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" accesskey="U">Global/Theming functions</a> &raquo;</li> 
+ 
       </ul>
     </div>  
 
@@ -61,6 +50,8 @@
             
   <div class="section" id="insert-item-type">
 <h1>insert_item_type<a class="headerlink" href="#insert-item-type" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="insert_item_type">
 <tt class="descname">insert_item_type</tt><big>(</big><em>array $metadata = Array</em>, <em>array $elementInfos = Array</em><big>)</big><a class="headerlink" href="#insert_item_type" title="Permalink to this definition">¶</a></dt>
@@ -70,8 +61,29 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$metadata</strong> (<em>array</em>) &#8211; Follows the format: &lt;code&gt; array( &#8216;name&#8217;        =&gt; [string], &#8216;description&#8217; =&gt; [string] ); &lt;/code&gt;</li>
-<li><strong>$elementInfos</strong> (<em>array</em>) &#8211; An array containing element data. Each entry follows one or more of the following formats: &lt;ol&gt; &lt;li&gt;An array containing element metadata&lt;/li&gt; &lt;li&gt;An Element object&lt;/li&gt; &lt;/ol&gt; &lt;code&gt; array( array( &#8216;name&#8217; =&gt; [(string) name, required], &#8216;description&#8217; =&gt; [(string) description, optional], &#8216;order&#8217; =&gt; [(int) order, optional], ), [(Element)], ); &lt;/code&gt;</li>
+<li><strong>$metadata</strong> (<em>array</em>) &#8211; <p>Follows the format:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">array</span><span class="p">(</span>
+  <span class="s1">&#39;name&#39;</span>        <span class="o">=&gt;</span> <span class="p">[</span><span class="nx">string</span><span class="p">],</span>
+  <span class="s1">&#39;description&#39;</span> <span class="o">=&gt;</span> <span class="p">[</span><span class="nx">string</span><span class="p">]</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</li>
+<li><strong>$elementInfos</strong> (<em>array</em>) &#8211; <p>An array containing element data. Each entry follows one or more of the following formats:</p>
+<ol>
+    <li>An array containing element metadata</li>
+    <li>An Element object</li>
+  </ol><div class="highlight-php"><div class="highlight"><pre><span class="k">array</span><span class="p">(</span>
+  <span class="k">array</span><span class="p">(</span>
+    <span class="s1">&#39;name&#39;</span> <span class="o">=&gt;</span> <span class="p">[(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">required</span><span class="p">],</span>
+    <span class="s1">&#39;description&#39;</span> <span class="o">=&gt;</span> <span class="p">[(</span><span class="nx">string</span><span class="p">)</span> <span class="nx">description</span><span class="p">,</span> <span class="nx">optional</span><span class="p">],</span>
+    <span class="s1">&#39;order&#39;</span> <span class="o">=&gt;</span> <span class="p">[(</span><span class="nx">int</span><span class="p">)</span> <span class="nx">order</span><span class="p">,</span> <span class="nx">optional</span><span class="p">],</span>
+  <span class="p">),</span>
+  <span class="p">[(</span><span class="nx">Element</span><span class="p">)],</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+</li>
 </ul>
 </td>
 </tr>
@@ -82,11 +94,15 @@
 </table>
 </dd></dl>
 
+</div>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -102,18 +118,14 @@
   <h3><a href="../../../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">insert_item_type</a><ul>
+<li><a class="reference internal" href="#summary">Summary</a></li>
 <li><a class="reference internal" href="#usage">Usage</a></li>
 <li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#see-also">See Also</a></li>
 </ul>
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="insert_item.html"
-                        title="previous chapter">insert_item</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="set_current_record.html"
-                        title="next chapter">set_current_record</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -147,20 +159,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../genindex.html" title="General Index"
              >index</a></li>
-        <li class="right" >
-          <a href="set_current_record.html" title="set_current_record"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="insert_item.html" title="insert_item"
-             >previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
-
-          <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" >Global/Theming functions</a> &raquo;</li> 
+ 
       </ul>
     </div>
     <div class="footer">

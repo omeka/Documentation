@@ -2,6 +2,12 @@
 update_item
 ###########
 
+*******
+Summary
+*******
+
+.. include:: summary/update_item.rst
+
 .. php:function:: update_item(Item|int $item, array $metadata = Array, array $elementTexts = Array, array $fileMetadata = Array)
 
     Update an existing item.
@@ -16,11 +22,17 @@ update_item
 Usage
 *****
 
-
+.. include:: usage/update_item.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/update_item.rst
 
+********
+See Also
+********
+
+.. include:: see_also/update_item.rst
 

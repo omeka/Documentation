@@ -68,18 +68,17 @@
 <dt id="Omeka_Job_Dispatcher_Adapter_ZendQueue">
 <em class="property">class </em><tt class="descname">Omeka_Job_Dispatcher_Adapter_ZendQueue</tt><a class="headerlink" href="#Omeka_Job_Dispatcher_Adapter_ZendQueue" title="Permalink to this definition">¶</a></dt>
 <dd><p>Dispatcher for Zend_Queue.</p>
-<p>This would be particularly useful for installations that want to interface with ActiveMQ or Zend Server&#8217;s Job Queue via Zend_Queue.  Note that using the &#8216;Array&#8217; adapter should only be used for testing, as all jobs passed to it will be thrown away.</p>
-<p>Required options include &#8216;adapter&#8217; and &#8216;options&#8217;, which correspond to the first and second arguments to Zend_Queue&#8217;s constructor respectively.</p>
-<dl class="docutils">
-<dt>For example, it would be configured like so in config.ini:</dt>
-<dd><div class="first last highlight-php"><div class="highlight"><pre><span class="nx">jobs</span><span class="o">.</span><span class="nx">dispatcher</span> <span class="o">=</span> <span class="s2">&quot;Omeka_Job_Dispatcher_ZendQueue&quot;</span>
+<p>This would be particularly useful for installations that want to interfacewith ActiveMQ or Zend Server&#8217;s Job Queue via Zend_Queue.  Note that usingthe &#8216;Array&#8217; adapter should only be used for testing, as all jobs passed toit will be thrown away.</p>
+<p>Required options include &#8216;adapter&#8217; and &#8216;options&#8217;, whichcorrespond to the first and second arguments to Zend_Queue&#8217;s constructorrespectively.</p>
+<p>For example, it would be configured like so in config.ini:</p>
+<blockquote>
+<div><div class="highlight-php"><div class="highlight"><pre><span class="nx">jobs</span><span class="o">.</span><span class="nx">dispatcher</span> <span class="o">=</span> <span class="s2">&quot;Omeka_Job_Dispatcher_ZendQueue&quot;</span>
 <span class="nx">jobs</span><span class="o">.</span><span class="nx">adapterOptions</span><span class="o">.</span><span class="nx">adapter</span> <span class="o">=</span> <span class="s2">&quot;PlatformJobQueue&quot;</span>
 <span class="nx">jobs</span><span class="o">.</span><span class="nx">adapterOptions</span><span class="o">.</span><span class="nx">options</span><span class="o">.</span><span class="nx">host</span> <span class="o">=</span> <span class="s2">&quot;127.0.0.1&quot;</span>
 <span class="nx">jobs</span><span class="o">.</span><span class="nx">adapterOptions</span><span class="o">.</span><span class="nx">options</span><span class="o">.</span><span class="nx">password</span> <span class="o">=</span> <span class="s2">&quot;foobar&quot;</span>
 </pre></div>
 </div>
-</dd>
-</dl>
+</div></blockquote>
 <dl class="attr">
 <dt id="Omeka_Job_Dispatcher_Adapter_ZendQueue::$_queue">
 <em class="property">property </em><tt class="descname">_queue</tt><a class="headerlink" href="#Omeka_Job_Dispatcher_Adapter_ZendQueue::$_queue" title="Permalink to this definition">¶</a></dt>

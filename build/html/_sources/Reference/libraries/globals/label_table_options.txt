@@ -2,6 +2,12 @@
 label_table_options
 ###################
 
+*******
+Summary
+*******
+
+.. include:: summary/label_table_options.rst
+
 .. php:function:: label_table_options(array $options, string|null $labelOption)
 
     Add a "Select Below" or other label option to a set of select options.
@@ -14,11 +20,17 @@ label_table_options
 Usage
 *****
 
-
+.. include:: usage/label_table_options.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/label_table_options.rst
 
+********
+See Also
+********
+
+.. include:: see_also/label_table_options.rst
 

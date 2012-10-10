@@ -2,6 +2,12 @@
 src
 ###
 
+*******
+Summary
+*******
+
+.. include:: summary/src.rst
+
 .. php:function:: src(string $file, string|null $dir, string $ext)
 
     Return a valid src attribute value for a given file.
@@ -15,11 +21,17 @@ src
 Usage
 *****
 
-
+.. include:: usage/src.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/src.rst
 
+********
+See Also
+********
+
+.. include:: see_also/src.rst
 

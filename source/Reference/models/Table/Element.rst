@@ -54,7 +54,17 @@ Table_Element
         Manipulate a Select object based on a set of criteria.
         
         :param Omeka_Db_Select $select: 
-        :param array $params: Possible parameters include: <ul> <li>record_types - array - Usually one or more of the following: All, Item, File</li> <li>sort - string - One of the following values: alpha</li> <li>element_set_name - string - Name of the element set to which results should belong.</li> </ul>
+        :param array $params: Possible parameters include:         
+        
+            .. raw:: html
+        
+               <ul>
+                      <li>record_types - array - Usually one or more of the following:
+                 All, Item, File</li>
+                      <li>sort - string - One of the following values: alpha</li>
+                      <li>element_set_name - string - Name of the element set to which
+                 results should belong.</li>
+                 </ul>
 
     .. php:method:: findPairsForSelectForm(array $options = Array)
     

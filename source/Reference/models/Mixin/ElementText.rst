@@ -178,29 +178,33 @@ Mixin_ElementText
         :param string $elementText: Text to be added
         :param bool $isHtml: Whether the text to add is HTML
 
-    .. php:method:: addElementTextsByArray(array $elementTexts)
+    .. php:method:: addElementTextsByArray($elementTexts)
     
         Add element texts for a record based on a formatted array of values.
         The array must be formatted as follows:
         
         .. code-block:: php 
         
-                          'Element Set Name' => 
-                              array('Element Name' => 
-                                  array(array('text' => 'foo', 'html' => false)))
+        
+        'Element Set Name' => 
+        array('Element Name' => 
+        array(array('text' => 'foo', 'html' => false)))
         
         
         Since 1.4, the array can also be formatted thusly:
         
+        
+        
         .. code-block:: php 
         
-                  array(
-                      array('element_id' => 1,
-                            'text' => 'foo',
-                            'html' => false)
-                  )
         
-        :param array $elementTexts:
+        array(
+        array('element_id' => 1,
+        'text' => 'foo',
+        'html' => false)
+        )
+        
+        :param unknown $elementTexts:
 
     .. php:method:: _addTextsByElementName($elementTexts)
     
@@ -227,17 +231,12 @@ Mixin_ElementText
         that is keyed to an element's ID.  That array should contain all the 
         text values for that element. For example:
         
-        .. code-block:: php 
+        <code>
         
-                   array('Elements' => 
-                         array(
-                             '50' => array('text' => 'Foobar', //element id 50, e.g. DC:Title                 
-                          'html' => 0                                    ),
-                             '41' => array('text' => '<p>Baz baz baz</p>', //element id 41, e.g. DC:Description
-                                            'html' => 1                                    )
-                              )
-                  )
-             
+        array('Elements' =>array('50' => array('text' => 'Foobar', //element id 50, e.g. DC:Title'html' => 0),'41' =>
+        array('text' => '<p>Baz baz baz</p>', //element id 41, e.g. DC:Description'html' => 1)))
+        
+        </code>
         
         :param unknown $post:
 

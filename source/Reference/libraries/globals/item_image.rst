@@ -2,6 +2,12 @@
 item_image
 ##########
 
+*******
+Summary
+*******
+
+.. include:: summary/item_image.rst
+
 .. php:function:: item_image(string $imageType, array $props = Array, integer $index = 0, $item)
 
     Return a customized item image tag.
@@ -15,11 +21,17 @@ item_image
 Usage
 *****
 
-
+.. include:: usage/item_image.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/item_image.rst
 
+********
+See Also
+********
+
+.. include:: see_also/item_image.rst
 

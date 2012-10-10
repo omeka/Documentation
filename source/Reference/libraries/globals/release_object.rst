@@ -2,6 +2,12 @@
 release_object
 ##############
 
+*******
+Summary
+*******
+
+.. include:: summary/release_object.rst
+
 .. php:function:: release_object($var)
 
     Release an object from memory.
@@ -15,11 +21,17 @@ release_object
 Usage
 *****
 
-
+.. include:: usage/release_object.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/release_object.rst
 
+********
+See Also
+********
+
+.. include:: see_also/release_object.rst
 

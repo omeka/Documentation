@@ -2,6 +2,12 @@
 head_css
 ########
 
+*******
+Summary
+*******
+
+.. include:: summary/head_css.rst
+
 .. php:function:: head_css()
 
     Return the CSS link tags that will be used on the page.
@@ -14,11 +20,17 @@ head_css
 Usage
 *****
 
-
+.. include:: usage/head_css.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/head_css.rst
 
+********
+See Also
+********
+
+.. include:: see_also/head_css.rst
 

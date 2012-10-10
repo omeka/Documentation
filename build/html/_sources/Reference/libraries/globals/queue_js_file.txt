@@ -2,6 +2,12 @@
 queue_js_file
 #############
 
+*******
+Summary
+*******
+
+.. include:: summary/queue_js_file.rst
+
 .. php:function:: queue_js_file(string|array $file, string $dir = javascripts)
 
     Declare that a JavaScript file or files will be used on the page.
@@ -16,11 +22,17 @@ queue_js_file
 Usage
 *****
 
-
+.. include:: usage/queue_js_file.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/queue_js_file.rst
 
+********
+See Also
+********
+
+.. include:: see_also/queue_js_file.rst
 

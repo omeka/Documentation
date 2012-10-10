@@ -2,6 +2,12 @@
 js_tag
 ######
 
+*******
+Summary
+*******
+
+.. include:: summary/js_tag.rst
+
 .. php:function:: js_tag(string $file, string $dir = javascripts)
 
     Return a javascript tag.
@@ -14,11 +20,17 @@ js_tag
 Usage
 *****
 
-
+.. include:: usage/js_tag.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/js_tag.rst
 
+********
+See Also
+********
+
+.. include:: see_also/js_tag.rst
 

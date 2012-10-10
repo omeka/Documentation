@@ -2,6 +2,12 @@
 snippet
 #######
 
+*******
+Summary
+*******
+
+.. include:: summary/snippet.rst
+
 .. php:function:: snippet(string $text, int $startPos, int $endPos, string $append = …)
 
     Return a substring of a given piece of text.
@@ -19,11 +25,17 @@ snippet
 Usage
 *****
 
-
+.. include:: usage/snippet.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/snippet.rst
 
+********
+See Also
+********
+
+.. include:: see_also/snippet.rst
 

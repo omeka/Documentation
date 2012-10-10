@@ -1,0 +1,1 @@
+This function outputs a <link> tag for the RSS feed so the browser can auto-discover the feed. 

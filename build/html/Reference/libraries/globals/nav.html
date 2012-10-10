@@ -24,9 +24,6 @@
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
-    <link rel="up" title="Global/Theming functions" href="index.html" />
-    <link rel="next" title="public_nav" href="public_nav.html" />
-    <link rel="prev" title="set_loop_records" href="set_loop_records.html" />
     <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -37,20 +34,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="public_nav.html" title="public_nav"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="set_loop_records.html" title="set_loop_records"
-             accesskey="P">previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
-
-          <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" accesskey="U">Global/Theming functions</a> &raquo;</li> 
+ 
       </ul>
     </div>  
 
@@ -61,37 +50,38 @@
             
   <div class="section" id="nav">
 <h1>nav<a class="headerlink" href="#nav" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt>
-<tt class="descname">nav</tt><big>(</big><em>array $links</em>, <em>integer|null $maxDepth = 0</em><big>)</big></dt>
-<dd><p>Generate an unordered list of navigation links (and subnavigation links),
-with class &#8220;current&#8221; for any links corresponding to the current page</p>
-<p>For example:
-&lt;code&gt;nav(array(&#8216;Themes&#8217; =&gt; url(&#8216;themes/browse&#8217;)));&lt;/code&gt;
-generates
-&lt;code&gt;&lt;li class=&#8221;nav-themes&#8221;&gt;&lt;a href=&#8221;themes/browse&#8221;&gt;Themes&lt;/a&gt;&lt;/li&gt;&lt;/code&gt;</p>
+<tt class="descname">nav</tt><big>(</big><em>array $navLinks</em>, <em>string $name</em><big>)</big></dt>
+<dd><p>Create a navigation menu of links.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$links</strong> (<em>array</em>) &#8211; A keyed array, where key = text of the link, and value = uri of the link, or value = another ordered array $a with the following recursive structure: &lt;ul&gt; &lt;li&gt;$a[&#8216;uri&#8217;] = URI of the link&lt;/li&gt; &lt;li&gt;$a[&#8216;subnav_links&#8217;] = array of $sublinks for the sub navigation (this can be recursively structured like $links)&lt;/li&gt; &lt;li&gt;$a[&#8216;subnav_attributes&#8217;] = associative array of attributes for the sub navigation&lt;/li&gt; &lt;/ul&gt; For example: &lt;code&gt; $links = array( &#8216;Browse&#8217; =&gt; &#8216;<a class="reference external" href="http://yoursite.com/browse">http://yoursite.com/browse</a>&#8216;, &#8216;Categories&#8217; =&gt; array( &#8216;uri&#8217; =&gt; &#8216;<a class="reference external" href="http://yoursite.com/categories">http://yoursite.com/categories</a>&#8216;, &#8216;subnav_links&#8217; =&gt; array( &#8216;Dogs&#8217; =&gt; &#8216;<a class="reference external" href="http://yoursite.com/dogs">http://yoursite.com/dogs</a>&#8216;, &#8216;Cats&#8217; =&gt; &#8216;<a class="reference external" href="http://yoursite.com/cats">http://yoursite.com/cats</a>&#8216; ), &#8216;subnav_attributes&#8217; =&gt; array(&#8216;class&#8217; =&gt; &#8216;subnav&#8217;) ), &#8216;Contact Us&#8217; =&gt; &#8216;<a class="reference external" href="http://yoursite.com/contact-us">http://yoursite.com/contact-us</a>&#8216; ); echo nav($links); &lt;/code&gt; This would produce: &lt;code&gt; &lt;li&gt;&lt;a href=&#8221;<a class="reference external" href="http://yoursite.com/browse">http://yoursite.com/browse</a>&#8220;&gt;Browse&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&#8221;<a class="reference external" href="http://yoursite.com/categories">http://yoursite.com/categories</a>&#8220;&gt;Categories&lt;/a&gt; &lt;ul class=&#8221;subnav&#8221;&gt; &lt;li&gt;&lt;a href=&#8221;<a class="reference external" href="http://yoursite.com/dogs">http://yoursite.com/dogs</a>&#8220;&gt;Dogs&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&#8221;<a class="reference external" href="http://yoursite.com/cats">http://yoursite.com/cats</a>&#8220;&gt;Cats&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;li&gt;&lt;a href=&#8221;<a class="reference external" href="http://yoursite.com/contact-us">http://yoursite.com/contact-us</a>&#8220;&gt;Contact Us&lt;/a&gt;&lt;li&gt; &lt;code&gt;</li>
-<li><strong>$maxDepth</strong> (<em>integer|null</em>) &#8211; The maximum number of sub navigation levels to display. By default it is 0, which means it will only display the top level of links. If null, it will display all the levels.</li>
+<li><strong>$navLinks</strong> (<em>array</em>) &#8211; The array of links for the navigation.</li>
+<li><strong>$name</strong> (<em>string</em>) &#8211; Optionally, the name of a filter to pass the links through before using them.</li>
 </ul>
 </td>
 </tr>
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string HTML for the unordered list</p>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Zend_View_Helper_Navigation_Menu The navigation menu object. Can generally be treated simply as a string.</p>
 </td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
+</div>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
@@ -107,18 +97,14 @@ generates
   <h3><a href="../../../index.html">Table Of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">nav</a><ul>
+<li><a class="reference internal" href="#summary">Summary</a></li>
 <li><a class="reference internal" href="#usage">Usage</a></li>
 <li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#see-also">See Also</a></li>
 </ul>
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="set_loop_records.html"
-                        title="previous chapter">set_loop_records</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="public_nav.html"
-                        title="next chapter">public_nav</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -152,20 +138,12 @@ generates
         <li class="right" style="margin-right: 10px">
           <a href="../../../genindex.html" title="General Index"
              >index</a></li>
-        <li class="right" >
-          <a href="public_nav.html" title="public_nav"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="set_loop_records.html" title="set_loop_records"
-             >previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
-
-          <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" >Global/Theming functions</a> &raquo;</li> 
+ 
       </ul>
     </div>
     <div class="footer">

@@ -2,6 +2,12 @@
 is_admin_theme
 ##############
 
+*******
+Summary
+*******
+
+.. include:: summary/is_admin_theme.rst
+
 .. php:function:: is_admin_theme()
 
     Determine whether or not the script is being executed through the
@@ -16,11 +22,17 @@ is_admin_theme
 Usage
 *****
 
-
+.. include:: usage/is_admin_theme.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/is_admin_theme.rst
 
+********
+See Also
+********
+
+.. include:: see_also/is_admin_theme.rst
 

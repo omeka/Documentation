@@ -2,11 +2,17 @@
 head
 ####
 
-.. php:function:: head($vars = Array, string $file = header)
+*******
+Summary
+*******
+
+.. include:: summary/head.rst
+
+.. php:function:: head(array $vars = Array, string $file = header)
 
     Return the view's header HTML.
     
-    :param unknown $vars: 
+    :param array $vars: Keyed array of variables
     :param string $file: Filename of header script (defaults to 'header')
     :returns: string
 
@@ -14,11 +20,17 @@ head
 Usage
 *****
 
-
+.. include:: usage/head.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/head.rst
 
+********
+See Also
+********
+
+.. include:: see_also/head.rst
 

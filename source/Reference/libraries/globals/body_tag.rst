@@ -2,6 +2,12 @@
 body_tag
 ########
 
+*******
+Summary
+*******
+
+.. include:: summary/body_tag.rst
+
 .. php:function:: body_tag(array $attributes = Array)
 
     Returns a <body> tag with attributes.
@@ -15,11 +21,17 @@ body_tag
 Usage
 *****
 
-
+.. include:: usage/body_tag.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/body_tag.rst
 
+********
+See Also
+********
+
+.. include:: see_also/body_tag.rst
 

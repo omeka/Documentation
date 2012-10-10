@@ -2,6 +2,12 @@
 item_square_thumbnail
 #####################
 
+*******
+Summary
+*******
+
+.. include:: summary/item_square_thumbnail.rst
+
 .. php:function:: item_square_thumbnail(array $props = Array, integer $index = 0, Item $item)
 
     Return HTML for a square thumbnail image assigned to an item.
@@ -17,11 +23,17 @@ item_square_thumbnail
 Usage
 *****
 
-
+.. include:: usage/item_square_thumbnail.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/item_square_thumbnail.rst
 
+********
+See Also
+********
+
+.. include:: see_also/item_square_thumbnail.rst
 

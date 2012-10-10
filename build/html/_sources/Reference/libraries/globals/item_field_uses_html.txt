@@ -2,6 +2,12 @@
 item_field_uses_html
 ####################
 
+*******
+Summary
+*******
+
+.. include:: summary/item_field_uses_html.rst
+
 .. php:function:: item_field_uses_html(string $elementSetName, string $elementName, integer $index = 0, Item|null $item)
 
     Determine whether a specific element uses HTML.
@@ -19,11 +25,17 @@ item_field_uses_html
 Usage
 *****
 
-
+.. include:: usage/item_field_uses_html.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/item_field_uses_html.rst
 
+********
+See Also
+********
+
+.. include:: see_also/item_field_uses_html.rst
 

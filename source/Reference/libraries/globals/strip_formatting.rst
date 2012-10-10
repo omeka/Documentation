@@ -2,6 +2,12 @@
 strip_formatting
 ################
 
+*******
+Summary
+*******
+
+.. include:: summary/strip_formatting.rst
+
 .. php:function:: strip_formatting(string $str, string $allowableTags = , string $fallbackStr = )
 
     Strip HTML formatting (i.e. tags) from the provided string.
@@ -18,11 +24,17 @@ strip_formatting
 Usage
 *****
 
-
+.. include:: usage/strip_formatting.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/strip_formatting.rst
 
+********
+See Also
+********
+
+.. include:: see_also/strip_formatting.rst
 

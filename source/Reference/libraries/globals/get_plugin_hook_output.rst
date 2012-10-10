@@ -2,6 +2,12 @@
 get_plugin_hook_output
 ######################
 
+*******
+Summary
+*******
+
+.. include:: summary/get_plugin_hook_output.rst
+
 .. php:function:: get_plugin_hook_output(string $name, array $args = Array)
 
     Get the output of fire_plugin_hook() as a string.
@@ -14,11 +20,17 @@ get_plugin_hook_output
 Usage
 *****
 
-
+.. include:: usage/get_plugin_hook_output.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/get_plugin_hook_output.rst
 
+********
+See Also
+********
+
+.. include:: see_also/get_plugin_hook_output.rst
 

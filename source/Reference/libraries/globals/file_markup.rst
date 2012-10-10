@@ -2,6 +2,12 @@
 file_markup
 ###########
 
+*******
+Summary
+*******
+
+.. include:: summary/file_markup.rst
+
 .. php:function:: file_markup(File $files, array $props = Array, array $wrapperAttributes = Array)
 
     Return HTML for a set of files.
@@ -15,11 +21,17 @@ file_markup
 Usage
 *****
 
-
+.. include:: usage/file_markup.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/file_markup.rst
 
+********
+See Also
+********
+
+.. include:: see_also/file_markup.rst
 

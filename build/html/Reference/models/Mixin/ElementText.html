@@ -450,28 +450,30 @@ being element name.</p>
 
 <dl class="method">
 <dt id="Mixin_ElementText::addElementTextsByArray">
-<tt class="descname">addElementTextsByArray</tt><big>(</big><em>array $elementTexts</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::addElementTextsByArray" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">addElementTextsByArray</tt><big>(</big><em>$elementTexts</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::addElementTextsByArray" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add element texts for a record based on a formatted array of values.
 The array must be formatted as follows:</p>
-<div class="highlight-php"><div class="highlight"><pre><span class="s1">&#39;Element Set Name&#39;</span> <span class="o">=&gt;</span>
-    <span class="k">array</span><span class="p">(</span><span class="s1">&#39;Element Name&#39;</span> <span class="o">=&gt;</span>
-        <span class="k">array</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;text&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="s1">&#39;html&#39;</span> <span class="o">=&gt;</span> <span class="k">false</span><span class="p">)))</span>
+<div class="highlight-php"><div class="highlight"><pre>
 </pre></div>
 </div>
+<p>&#8216;Element Set Name&#8217; =&gt;
+array(&#8216;Element Name&#8217; =&gt;
+array(array(&#8216;text&#8217; =&gt; &#8216;foo&#8217;, &#8216;html&#8217; =&gt; false)))</p>
 <p>Since 1.4, the array can also be formatted thusly:</p>
-<div class="highlight-php"><div class="highlight"><pre><span class="k">array</span><span class="p">(</span>
-    <span class="k">array</span><span class="p">(</span><span class="s1">&#39;element_id&#39;</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">,</span>
-          <span class="s1">&#39;text&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span>
-          <span class="s1">&#39;html&#39;</span> <span class="o">=&gt;</span> <span class="k">false</span><span class="p">)</span>
-<span class="p">)</span>
+<div class="highlight-php"><div class="highlight"><pre>
 </pre></div>
 </div>
+<p>array(
+array(&#8216;element_id&#8217; =&gt; 1,
+&#8216;text&#8217; =&gt; &#8216;foo&#8217;,
+&#8216;html&#8217; =&gt; false)
+)</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$elementTexts</strong> (<em>array</em>) &#8211; </li>
+<li><strong>$elementTexts</strong> (<em>unknown</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -540,16 +542,10 @@ The array must be formatted as follows:</p>
 <dd><p>The POST should have a key called &#8220;Elements&#8221; that contains an array
 that is keyed to an element&#8217;s ID.  That array should contain all the
 text values for that element. For example:</p>
-<div class="highlight-php"><div class="highlight"><pre> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;Elements&#39;</span> <span class="o">=&gt;</span>
-       <span class="k">array</span><span class="p">(</span>
-           <span class="s1">&#39;50&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;text&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Foobar&#39;</span><span class="p">,</span> <span class="c1">//element id 50, e.g. DC:Title</span>
-        <span class="s1">&#39;html&#39;</span> <span class="o">=&gt;</span> <span class="mi">0</span>                                    <span class="p">),</span>
-           <span class="s1">&#39;41&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;text&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;&lt;p&gt;Baz baz baz&lt;/p&gt;&#39;</span><span class="p">,</span> <span class="c1">//element id 41, e.g. DC:Description</span>
-                          <span class="s1">&#39;html&#39;</span> <span class="o">=&gt;</span> <span class="mi">1</span>                                    <span class="p">)</span>
-            <span class="p">)</span>
-<span class="p">)</span>
-</pre></div>
-</div>
+<p>&lt;code&gt;</p>
+<p>array(&#8216;Elements&#8217; =&gt;array(&#8216;50&#8217; =&gt; array(&#8216;text&#8217; =&gt; &#8216;Foobar&#8217;, //element id 50, e.g. DC:Title&#8217;html&#8217; =&gt; 0),&#8216;41&#8217; =&gt;
+array(&#8216;text&#8217; =&gt; &#8216;&lt;p&gt;Baz baz baz&lt;/p&gt;&#8217;, //element id 41, e.g. DC:Description&#8217;html&#8217; =&gt; 1)))</p>
+<p>&lt;/code&gt;</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

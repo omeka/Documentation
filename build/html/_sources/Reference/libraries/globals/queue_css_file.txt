@@ -2,6 +2,12 @@
 queue_css_file
 ##############
 
+*******
+Summary
+*******
+
+.. include:: summary/queue_css_file.rst
+
 .. php:function:: queue_css_file(string|array $file, string $media = all, string|bool $conditional = , string $dir = css)
 
     Declare that a CSS file or files will be used on the page.
@@ -18,11 +24,17 @@ queue_css_file
 Usage
 *****
 
-
+.. include:: usage/queue_css_file.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/queue_css_file.rst
 
+********
+See Also
+********
+
+.. include:: see_also/queue_css_file.rst
 

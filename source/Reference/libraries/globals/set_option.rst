@@ -2,6 +2,12 @@
 set_option
 ##########
 
+*******
+Summary
+*******
+
+.. include:: summary/set_option.rst
+
 .. php:function:: set_option(string $name, string $value)
 
     Set an option to the options table.
@@ -15,11 +21,17 @@ set_option
 Usage
 *****
 
-
+.. include:: usage/set_option.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/set_option.rst
 
+********
+See Also
+********
+
+.. include:: see_also/set_option.rst
 

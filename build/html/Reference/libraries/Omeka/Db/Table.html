@@ -425,7 +425,9 @@ the database.</p>
 <dt id="Omeka_Db_Table::applySearchFilters">
 <tt class="descname">applySearchFilters</tt><big>(</big><em>Omeka_Db_Select $select</em>, <em>array $params</em><big>)</big><a class="headerlink" href="#Omeka_Db_Table::applySearchFilters" title="Permalink to this definition">¶</a></dt>
 <dd><p>Apply a set of filters to a Select object based on the parameters given.</p>
-<p>This template method must be implemented by subclasses in order to define search behaviors.</p>
+<p>By default, this simply checks the params for keys corresponding to database column names. For more complex
+filtering (e.g., when other tables are involved),
+or to use keys other than column names, override this method and optionally call this parent method.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

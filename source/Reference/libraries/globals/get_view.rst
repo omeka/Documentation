@@ -2,6 +2,12 @@
 get_view
 ########
 
+*******
+Summary
+*******
+
+.. include:: summary/get_view.rst
+
 .. php:function:: get_view()
 
     Get the view object.
@@ -14,11 +20,17 @@ get_view
 Usage
 *****
 
-
+.. include:: usage/get_view.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/get_view.rst
 
+********
+See Also
+********
+
+.. include:: see_also/get_view.rst
 

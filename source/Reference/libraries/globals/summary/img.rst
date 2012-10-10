@@ -1,0 +1,1 @@
+``img()`` is a helper function used to include an image from within a theme. It returns the URL to an image file located in the images directory of that theme, usually located in themes/YourTheme/images. The resulting path can be used in an <img> tag, or anywhere else an image URL is needed.

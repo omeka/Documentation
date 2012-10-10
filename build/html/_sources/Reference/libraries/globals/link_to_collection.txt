@@ -2,6 +2,12 @@
 link_to_collection
 ##################
 
+*******
+Summary
+*******
+
+.. include:: summary/link_to_collection.rst
+
 .. php:function:: link_to_collection(string $text, array $props = Array, array $action = show, array $collectionObj)
 
     Return a link to a collection.
@@ -16,11 +22,17 @@ link_to_collection
 Usage
 *****
 
-
+.. include:: usage/link_to_collection.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/link_to_collection.rst
 
+********
+See Also
+********
+
+.. include:: see_also/link_to_collection.rst
 

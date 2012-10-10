@@ -2,6 +2,12 @@
 public_nav
 ##########
 
+*******
+Summary
+*******
+
+.. include:: summary/public_nav.rst
+
 .. php:function:: public_nav(array $navArray, string|null $navType, integer|null $maxDepth = 0)
 
     Helper function to be used in public themes to allow plugins to modify the 
@@ -23,11 +29,17 @@ public_nav
 Usage
 *****
 
-
+.. include:: usage/public_nav.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/public_nav.rst
 
+********
+See Also
+********
+
+.. include:: see_also/public_nav.rst
 

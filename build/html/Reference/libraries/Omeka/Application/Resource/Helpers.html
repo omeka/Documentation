@@ -89,14 +89,8 @@
 <p>Plugin writers should use the &#8216;define_response_contexts&#8217; filter to modify or expand the list of formats that
 existing controllers may respond to.</p>
 <p>Example of a definition of a response context through the ZF API:</p>
-<p>$contexts-&gt;addContext(&#8216;dc&#8217;, array(
-&#8216;suffix&#8217;    =&gt; &#8216;dc&#8217;,
-&#8216;headers&#8217;   =&gt; array(&#8216;Content-Type&#8217; =&gt; &#8216;text/xml&#8217;),
-&#8216;callbacks&#8217; =&gt; array(
-&#8216;init&#8217; =&gt; &#8216;atBeginningDoThis&#8217;,
-&#8216;post&#8217; =&gt; &#8216;afterwardsDoThis&#8217;
-)
-));</p>
+<p>$contexts-&gt;addContext(&#8216;dc&#8217;, array(&#8216;suffix&#8217;    =&gt; &#8216;dc&#8217;,&#8217;headers&#8217;   =&gt; array(&#8216;Content-Type&#8217; =&gt; &#8216;text/xml&#8217;),&#8217;callbacks&#8217;
+=&gt; array(&#8216;init&#8217; =&gt; &#8216;atBeginningDoThis&#8217;,&#8217;post&#8217; =&gt; &#8216;afterwardsDoThis&#8217;)));</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

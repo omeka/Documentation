@@ -2,6 +2,12 @@
 add_translation_source
 ######################
 
+*******
+Summary
+*******
+
+.. include:: summary/add_translation_source.rst
+
 .. php:function:: add_translation_source(string $dir)
 
     Add an translation source directory.
@@ -15,11 +21,17 @@ add_translation_source
 Usage
 *****
 
-
+.. include:: usage/add_translation_source.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/add_translation_source.rst
 
+********
+See Also
+********
+
+.. include:: see_also/add_translation_source.rst
 

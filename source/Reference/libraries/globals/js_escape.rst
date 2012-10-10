@@ -2,6 +2,12 @@
 js_escape
 #########
 
+*******
+Summary
+*******
+
+.. include:: summary/js_escape.rst
+
 .. php:function:: js_escape(string $value)
 
     Escape the value for use in javascript.
@@ -17,11 +23,17 @@ js_escape
 Usage
 *****
 
-
+.. include:: usage/js_escape.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/js_escape.rst
 
+********
+See Also
+********
+
+.. include:: see_also/js_escape.rst
 

@@ -2,6 +2,12 @@
 item_thumbnail
 ##############
 
+*******
+Summary
+*******
+
+.. include:: summary/item_thumbnail.rst
+
 .. php:function:: item_thumbnail(array $props = Array, integer $index = 0, Item $item)
 
     Return HTML for a thumbnail image assigned to an item.
@@ -17,11 +23,17 @@ item_thumbnail
 Usage
 *****
 
-
+.. include:: usage/item_thumbnail.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/item_thumbnail.rst
 
+********
+See Also
+********
+
+.. include:: see_also/item_thumbnail.rst
 

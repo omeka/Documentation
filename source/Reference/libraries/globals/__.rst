@@ -2,6 +2,12 @@
 __ (double underscore)
 ######################
 
+*******
+Summary
+*******
+
+.. include:: summary/__.rst
+
 .. php:function:: __(string $string)
 
     Translate a string.
@@ -13,11 +19,17 @@ __ (double underscore)
 Usage
 *****
 
-
+.. include:: usage/__.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/__.rst
 
+********
+See Also
+********
+
+.. include:: see_also/__.rst
 

@@ -82,14 +82,11 @@ names as keys. If a callback name is given, the child class should contain an id
 callback key is given, the child class should contain a corresponding hookCamelCased() method. E.g: the
 after_save_form_record filter should have a corresponding hookAfterSaveRecord() method.</p>
 <p>For example:
-.. code-block:: php</p>
-<blockquote>
-<div><dl class="docutils">
-<dt>array(&#8216;install&#8217;,</dt>
-<dd>&#8216;uninstall&#8217;,
-&#8216;doSomething&#8217; =&gt; &#8216;after_save_item&#8217;)</dd>
-</dl>
-</div></blockquote>
+&lt;code&gt;
+array(&#8216;install&#8217;,
+&#8216;uninstall&#8217;,
+&#8216;doSomething&#8217; =&gt; &#8216;after_save_item&#8217;)
+&lt;/code&gt;</p>
 </dd></dl>
 
 <dl class="attr">
@@ -101,15 +98,12 @@ names as keys. If a callback name is given, the child class should contain an id
 callback key is given, the child class should contain a corresponding filterCamelCased() method. E.g: the
 admin_navigation_main filter should have a corresponding filterAdminNavigationMain() method.</p>
 <p>For example:
-.. code-block:: php</p>
-<blockquote>
-<div><dl class="docutils">
-<dt>array(&#8216;admin_navigation_main&#8217;,</dt>
-<dd>&#8216;public_navigation_main&#8217;,
+&lt;code&gt;
+array(&#8216;admin_navigation_main&#8217;,
+&#8216;public_navigation_main&#8217;,
 &#8216;changeSomething&#8217; =&gt; &#8216;display_option_site_title&#8217;,
-&#8216;displayItemDublinCoreTitle&#8217; =&gt; array(&#8216;Display&#8217;, &#8216;Item&#8217;, &#8216;Dublin Core&#8217;, &#8216;Title&#8217;))</dd>
-</dl>
-</div></blockquote>
+&#8216;displayItemDublinCoreTitle&#8217; =&gt; array(&#8216;Display&#8217;, &#8216;Item&#8217;, &#8216;Dublin Core&#8217;, &#8216;Title&#8217;))
+&lt;/code&gt;</p>
 </dd></dl>
 
 <dl class="attr">
@@ -118,15 +112,12 @@ admin_navigation_main filter should have a corresponding filterAdminNavigationMa
 <dd><p>Plugin options.</p>
 <p>Plugin authors should give an array containing option names as keys and their default values as values, if any.</p>
 <p>For example:
-.. code-block:: php</p>
-<blockquote>
-<div><dl class="docutils">
-<dt>array(&#8216;option_name1&#8217; =&gt; &#8216;option_default_value1&#8217;,</dt>
-<dd>&#8216;option_name2&#8217; =&gt; &#8216;option_default_value2&#8217;,
+&lt;code&gt;
+array(&#8216;option_name1&#8217; =&gt; &#8216;option_default_value1&#8217;,
+&#8216;option_name2&#8217; =&gt; &#8216;option_default_value2&#8217;,
 &#8216;option_name3&#8217;,
-&#8216;option_name4&#8217;)</dd>
-</dl>
-</div></blockquote>
+&#8216;option_name4&#8217;)
+&lt;/code&gt;</p>
 </dd></dl>
 
 <dl class="method">

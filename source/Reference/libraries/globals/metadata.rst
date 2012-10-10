@@ -2,6 +2,12 @@
 metadata
 ########
 
+*******
+Summary
+*******
+
+.. include:: summary/metadata.rst
+
 .. php:function:: metadata(Omeka_Record_AbstractRecord|string $record, mixed $metadata, array $options = Array)
 
     Return a piece or pieces of metadata for a record.
@@ -15,11 +21,17 @@ metadata
 Usage
 *****
 
-
+.. include:: usage/metadata.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/metadata.rst
 
+********
+See Also
+********
+
+.. include:: see_also/metadata.rst
 

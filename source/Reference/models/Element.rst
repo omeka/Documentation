@@ -64,7 +64,19 @@ Element
 
     .. php:method:: setArray(array|string $data)
     
-        :param array|string $data: If string, it's the name of the element. Otherwise, array of metadata for the element.  May contain the following keys in the array: <ul> <li>name</li> <li>description</li> <li>comment</li> <li>order</li> <li>element_set_id</li> <li>element_set</li> </ul>
+        :param array|string $data: If string, it's the name of the element. Otherwise, array of metadata for the element.  May contain the following keys in the array:         
+        
+            .. raw:: html
+        
+               <ul>
+                  <li>name</li>
+                  <li>description</li>
+                  <li>comment</li>
+                  <li>order</li>
+                  <li>element_set_id</li>
+                  <li>element_set</li>
+                 </ul>
+        
         :returns: void
 
     .. php:method:: _validate()
@@ -78,8 +90,6 @@ Element
         <li>Has a record type.</li>
         <li>Name does not already exist within the given element set.</li>
         </ul>
-        
-        :returns: void
 
     .. php:method:: _delete()
     

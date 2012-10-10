@@ -22,14 +22,8 @@ Omeka_Application_Resource_Helpers
         
         Example of a definition of a response context through the ZF API:
         
-        $contexts->addContext('dc', array(
-        'suffix'    => 'dc',
-        'headers'   => array('Content-Type' => 'text/xml'),
-        'callbacks' => array(
-        'init' => 'atBeginningDoThis',
-        'post' => 'afterwardsDoThis'
-        )
-        ));
+        $contexts->addContext('dc', array('suffix'    => 'dc','headers'   => array('Content-Type' => 'text/xml'),'callbacks'
+        => array('init' => 'atBeginningDoThis','post' => 'afterwardsDoThis')));
         
         :returns: void
 

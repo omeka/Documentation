@@ -67,10 +67,9 @@
 <dt id="Omeka_Record_Mixin_AbstractMixin">
 <em class="property">class </em><tt class="descname">Omeka_Record_Mixin_AbstractMixin</tt><a class="headerlink" href="#Omeka_Record_Mixin_AbstractMixin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Represents a kind of mixin for Omeka_Record_AbstractRecord implementations.</p>
-<p>Any methods declared for an implementation of this class can be called transparently by an Omeka_Record_AbstractRecord object that uses one of these modules.</p>
-<p>For instance, the Item model does not have an addTags() method, but the Taggable class does.  Since Item declares Taggable as one of its modules,
-an Item instance call all of Taggable&#8217;s methods, so that adding tags would be as simple as calling $item-&gt;addTags(&#8216;foo, bar&#8217;);</p>
-<p>Note that this is not a true mixin because it cannot override any existing methods on a Record object.</p>
+<p>Any methods declared for an implementation of this class can be calledtransparently by an Omeka_Record_AbstractRecord object that uses one of thesemodules.</p>
+<p>For instance, the Item model does not have an addTags() method, but theTaggable class does.  Since Item declares Taggable as one of its modules,an Item instance call all of Taggable&#8217;s methods, so that adding tagswould be as simple as calling $item-&gt;addTags(&#8216;foo, bar&#8217;);</p>
+<p>Note that this is not a true mixin because it cannot override any existingmethods on a Record object.</p>
 <dl class="attr">
 <dt id="Omeka_Record_Mixin_AbstractMixin::$_record">
 <em class="property">property </em><tt class="descname">_record</tt><a class="headerlink" href="#Omeka_Record_Mixin_AbstractMixin::$_record" title="Permalink to this definition">¶</a></dt>

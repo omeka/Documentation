@@ -2,6 +2,12 @@
 set_theme_option
 ################
 
+*******
+Summary
+*******
+
+.. include:: summary/set_theme_option.rst
+
 .. php:function:: set_theme_option(string $optionName, string $optionValue, string $themeName)
 
     Set a theme option.
@@ -14,11 +20,17 @@ set_theme_option
 Usage
 *****
 
-
+.. include:: usage/set_theme_option.rst
 
 ********
 Examples
 ********
 
+.. include:: examples/set_theme_option.rst
 
+********
+See Also
+********
+
+.. include:: see_also/set_theme_option.rst
 
