@@ -60,13 +60,16 @@
             
   <div class="section" id="principles-of-omeka-2-0">
 <h1>Principles of Omeka 2.0<a class="headerlink" href="#principles-of-omeka-2-0" title="Permalink to this headline">¶</a></h1>
+<p>People who are familiar with conventions and patterns from Omeka 1.x will see many changes. Here are some ofbroad principles that went into the changes to Omeka 2.0</p>
 <div class="section" id="record-centric">
 <h2>Record-centric<a class="headerlink" href="#record-centric" title="Permalink to this headline">¶</a></h2>
+<p>The design of Omeka 1.x tended to treat different database records as superficially very different, despite the fact they all inherit from the same class. Thus, we had functions <tt class="docutils literal"><span class="pre">item()</span></tt> alongside <tt class="docutils literal"><span class="pre">collection()</span></tt>, both of which performed very similar jobs of retrieving data from a record. Similarly, we had <tt class="docutils literal"><span class="pre">loop_items()</span></tt> and <tt class="docutils literal"><span class="pre">loop_collections()</span></tt>. That pattern extended into our plugins, e.g. <tt class="docutils literal"><span class="pre">simple_page()</span></tt> and <tt class="docutils literal"><span class="pre">loop_simple_pages()</span></tt>. This created excessive duplication of functionality.</p>
+<p>In Omeka 2.0, we instead concentrated on the similarity across all records, designing single functions for similar tasks that work by either passing in a record or by passing in the name of the record type current in a view. For example, to retrieve the id from the current item in a view, use <tt class="docutils literal"><span class="pre">metadata('item',</span> <span class="pre">'id')</span></tt>. For a collection: <tt class="docutils literal"><span class="pre">metadata('collection',</span> <span class="pre">'id')</span></tt>.</p>
+<p>This requires some attention to the names of your models and how they are assigned to the view. The first parameter to <tt class="docutils literal"><span class="pre">metadata()</span></tt> will be made singular, with the assumption that the view object has a record assigned to that property name. Similarly, looping assumes a plural form, an sets the current record to the singular name.</p>
 </div>
 <div class="section" id="function-naming-conventions">
 <h2>Function Naming Conventions<a class="headerlink" href="#function-naming-conventions" title="Permalink to this headline">¶</a></h2>
-<p>To make our function names more consistent and easier to understand, we have introduced
-the following naming conventions.</p>
+<p>To make our function names more consistent and easier to understand, we have introduced the following naming conventions.</p>
 <ul class="simple">
 <li>Functions that return an array or object begin with <tt class="docutils literal"><span class="pre">get_</span></tt></li>
 <li>Functions that return a boolean being with <tt class="docutils literal"><span class="pre">is_</span></tt> or <tt class="docutils literal"><span class="pre">has_</span></tt></li>
@@ -75,6 +78,7 @@ the following naming conventions.</p>
 </div>
 <div class="section" id="zend-2-0-class-naming-conventions">
 <h2>Zend 2.0 Class Naming Conventions<a class="headerlink" href="#zend-2-0-class-naming-conventions" title="Permalink to this headline">¶</a></h2>
+<p>In anticipation of an eventual move to using Zend 2.0, we have reorganized our directories and class names to conform with Zend 2.0 conventions. Thus, the classes representing records and the table for them are no longer in the same directory. Instead, there is a <tt class="docutils literal"><span class="pre">Table</span></tt> directory inside the directory containing the models. The name of the table class should be the model&#8217;s class name prefixed with <tt class="docutils literal"><span class="pre">Table_</span></tt>, e.g. <tt class="docutils literal"><span class="pre">Table_SimplePagesPage</span></tt>.</p>
 </div>
 </div>
 
