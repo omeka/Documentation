@@ -6,7 +6,7 @@ Omeka_Storage_Adapter_ZendS3
 
     Cloud storage adapter for Amazon S3, using Zend's built-in service.
     
-    Caveat: Zend's storage adapter currently does not function correctly with buckets that are validly-named, but use characters that cannot appear in domain names.
+    Caveat: Zend's storage adapter currently does not function correctlywith buckets that are validly-named, but use characters that cannotappear in domain names.
 
     .. php:attr:: _s3
     

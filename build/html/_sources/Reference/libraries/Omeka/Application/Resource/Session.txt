@@ -21,7 +21,7 @@ Omeka_Application_Resource_Session
     
         Create a unique session name.
         
-        Hashes the base directory, this ensures that session names differ between Omeka instances on the same server.
+        Hashes the base directory, this ensures that session names differ betweenOmeka instances on the same server.
         
         :returns: string
 

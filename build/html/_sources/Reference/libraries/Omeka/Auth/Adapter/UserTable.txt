@@ -14,6 +14,6 @@ Omeka_Auth_Adapter_UserTable
     
         Validate the identity returned from the database.
         
-        Overrides the Zend implementation to provide user IDs, not usernames upon successful validation.
+        Overrides the Zend implementation to provide user IDs, not usernamesupon successful validation.
         
         :param array $resultIdentity:

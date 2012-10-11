@@ -8,8 +8,7 @@ Omeka_Controller_Plugin_Debug
     without inserting debugging code into the Zend Framework
     code files.
     
-    Debugging web requests is enabled by setting 'debug.request = true'
-    in the config.ini file.
+    Debugging web requests is enabled by setting 'debug.request = true'in the config.ini file.
 
     .. php:attr:: _requestMarkup
     

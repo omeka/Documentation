@@ -66,7 +66,7 @@ Collection
     
         Filter the POST data from the form.
         
-        Trims the 'name' and 'description' strings, strips tags from the collection name, and converts public/featured flags
+        Trims the 'name' and 'description' strings, strips tags from thecollection name, and converts public/featured flags
         to booleans.
         
         :param array $post: 
@@ -93,9 +93,8 @@ Collection
     
         Add a collector to the collection.
         
-        Note that prior versions of Omeka allowed for entering collector metadata as Entity records.  This behavior has been
-        deprecated and removed in Omeka >= 1.3.  Please use the new syntax, which is simply the string name for the
-        collector.
+        Note that prior versions of Omeka allowed for entering collector metadataas Entity records.  This behavior has been
+        deprecated and removed inOmeka >= 1.3.  Please use the new syntax, which is simply the string namefor the collector.
         
         :param string $collector: 
         :returns: void
@@ -118,7 +117,7 @@ Collection
     
         Required by Zend_Acl_Resource_Interface.
         
-        Identifies Collection records as relating to the Collections ACL resource.
+        Identifies Collection records as relating to the Collections ACLresource.
         
         :returns: string
 

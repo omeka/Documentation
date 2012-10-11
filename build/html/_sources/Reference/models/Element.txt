@@ -83,13 +83,16 @@ Element
     
         Validate the element prior to being saved.
         
-        Checks the following criteria:
+        Checks the following criteria:	               
+        
+        .. raw:: html
+        
         <ul>
-        <li>Name is not empty.</li>
-        <li>Has a data type.</li>
-        <li>Has a record type.</li>
-        <li>Name does not already exist within the given element set.</li>
-        </ul>
+        	                <li>Name is not empty.</li>
+        	                <li>Has a data type.</li>
+        	                <li>Has a record type.</li>
+        	                <li>Name does not already exist within the given element set.</li>
+        	                </ul>
 
     .. php:method:: _delete()
     

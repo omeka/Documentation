@@ -42,7 +42,7 @@ ItemType
     
         Current validation rules for Type
         
-        1) 'Name' field can't be blank 2) 'Name' field must be unique
+        1) 'Name' field can't be blank2) 'Name' field must be unique
         
         :returns: void
 

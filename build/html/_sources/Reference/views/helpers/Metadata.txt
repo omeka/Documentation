@@ -62,7 +62,7 @@ Omeka_View_Helper_Metadata
     
         Process an individual piece of text.
         
-        If given an ElementText record, the actual text string will be extracted automatically.
+        If given an ElementText record, the actual text string will beextracted automatically.
         
         :param string|ElementText $text: Text to process.
         :param int|bool $snippet: Snippet length, or false if no snippet.

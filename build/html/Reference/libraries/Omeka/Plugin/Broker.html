@@ -66,9 +66,7 @@
 <dt id="Omeka_Plugin_Broker">
 <em class="property">class </em><tt class="descname">Omeka_Plugin_Broker</tt><a class="headerlink" href="#Omeka_Plugin_Broker" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plugin Broker for Omeka.</p>
-<p>For example,
-$broker-&gt;callHook(&#8216;add_action_contexts&#8217;, array(&#8216;controller&#8217; =&gt; $controller))
-would call the &#8216;add_action_contexts&#8217; on all plugins, and it would provide the controller object as the first argument to all implementations of that hook.</p>
+<p>For example,$broker-&gt;callHook(&#8216;add_action_contexts&#8217;, array(&#8216;controller&#8217; =&gt; $controller))would call the &#8216;add_action_contexts&#8217; on all plugins, and it wouldprovide the controller object as the first argument to allimplementations of that hook.</p>
 <dl class="attr">
 <dt id="Omeka_Plugin_Broker::$_callbacks">
 <em class="property">property </em><tt class="descname">_callbacks</tt><a class="headerlink" href="#Omeka_Plugin_Broker::$_callbacks" title="Permalink to this definition">¶</a></dt>
@@ -135,8 +133,8 @@ would call the &#8216;add_action_contexts&#8217; on all plugins, and it would pr
 <dt id="Omeka_Plugin_Broker::setCurrentPluginDirName">
 <tt class="descname">setCurrentPluginDirName</tt><big>(</big><em>string $pluginDirName</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Broker::setCurrentPluginDirName" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the currently-focused plugin by directory name.</p>
-<p>The plugin helper functions do not have any way of determining what plugin to is currently in focus.  These
-get/setCurrentPluginDirName methods allow the broker to know how to delegate to specific plugins if necessary.</p>
+<p>The plugin helper functions do not have any way of determining whatplugin to is currently in focus.  These
+get/setCurrentPluginDirNamemethods allow the broker to know how to delegate to specific plugins ifnecessary.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

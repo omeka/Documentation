@@ -93,8 +93,7 @@ via the magic __get() syntax.</p>
 <em class="property">property </em><tt class="descname">_mixins</tt><a class="headerlink" href="#Omeka_Record_AbstractRecord::$_mixins" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set of Omeka_Record_Mixin_AbstractMixin objects that are designed to
 extend the behavior of Omeka_Record_AbstractRecord implementations.</p>
-<p>Examples include <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> Taggable}, <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> Relatable},
-<a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> ActsAsElementText}, etc.</p>
+<p>Examples include <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> Taggable}, <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> Relatable},{&#64;link ActsAsElementText}, etc.</p>
 </dd></dl>
 
 <dl class="attr">
@@ -167,7 +166,7 @@ Locked records cannot be saved.</p>
 <dt id="Omeka_Record_AbstractRecord::construct">
 <tt class="descname">construct</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::construct" title="Permalink to this definition">¶</a></dt>
 <dd><p>Subclass constructor behavior.</p>
-<p>Subclasses of Omeka_Record_AbstractRecord can override this function to add behavior to the constructor without
+<p>Subclasses of Omeka_Record_AbstractRecord can override this function toadd behavior to the constructor without
 overriding __construct.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -233,8 +232,8 @@ instances.</p>
 <dt id="Omeka_Record_AbstractRecord::_initializeMixins">
 <tt class="descname">_initializeMixins</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::_initializeMixins" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize the mixins for a record.</p>
-<p>Any Omeka_Record_AbstractRecord subclass that uses mixins should initialize them here, since this is called on
-construction and when mixins need to be reinitialized.</p>
+<p>Any Omeka_Record_AbstractRecord subclass that uses mixins shouldinitialize them here, since this is called on
+construction and whenmixins need to be reinitialized.</p>
 </dd></dl>
 
 <dl class="method">
@@ -263,11 +262,9 @@ construction and when mixins need to be reinitialized.</p>
 <dt id="Omeka_Record_AbstractRecord::runCallbacks">
 <tt class="descname">runCallbacks</tt><big>(</big><em>$event</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::runCallbacks" title="Permalink to this definition">¶</a></dt>
 <dd><p>Invoke all callbacks associated with a specific record event.</p>
-<p>Callbacks execute in the following order:
-- Omeka_Record_AbstractRecord hooks like Omeka_Record_AbstractRecord::afterDelete()
-- Record mixin hooks like Taggable::afterSave()
-- Generic record plugin hooks like &#8216;before_delete_record&#8217;
-- Specific record plugin hooks like &#8216;before_delete_item&#8217;</p>
+<p>Callbacks execute in the following order:- Omeka_Record_AbstractRecord hooks like
+Omeka_Record_AbstractRecord::afterDelete()- Record mixin hooks like Taggable::afterSave()- Generic record plugin
+hooks like &#8216;before_delete_record&#8217;- Specific record plugin hooks like &#8216;before_delete_item&#8217;</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -349,7 +346,7 @@ construction and when mixins need to be reinitialized.</p>
 <dt id="Omeka_Record_AbstractRecord::exists">
 <tt class="descname">exists</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::exists" title="Permalink to this definition">¶</a></dt>
 <dd><p>Determine whether or not this record is persistent in the database.</p>
-<p>For simplicity, non-persistent records are indicated by the lack of a value for the &#8216;id&#8217; column.</p>
+<p>For simplicity, non-persistent records are indicated by the lack of avalue for the &#8216;id&#8217; column.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -421,7 +418,7 @@ construction and when mixins need to be reinitialized.</p>
 <dt id="Omeka_Record_AbstractRecord::addError">
 <tt class="descname">addError</tt><big>(</big><em>string|null $field</em>, <em>string $msg</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::addError" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a validation error for a specific field.</p>
-<p>Currently limited to a single error per field, so multiple error messages must be concatenated together.</p>
+<p>Currently limited to a single error per field, so multiple error messagesmust be concatenated together.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -464,8 +461,8 @@ the errors already on this record.</p>
 <dt id="Omeka_Record_AbstractRecord::lock">
 <tt class="descname">lock</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::lock" title="Permalink to this definition">¶</a></dt>
 <dd><p>Prevent a record from being modified.</p>
-<p>Can be used to prevent accidentally saving/deleting a record if its state may change but saving would be
-undesirable, such as modifying a record for display purposes.</p>
+<p>Can be used to prevent accidentally saving/deleting a record if its state maychange but saving would be undesirable,
+such as modifying a record fordisplay purposes.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -571,10 +568,10 @@ values.</p>
 <dt id="Omeka_Record_AbstractRecord::_delete">
 <tt class="descname">_delete</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::_delete" title="Permalink to this definition">¶</a></dt>
 <dd><p>Template method for defining record deletion logic.</p>
-<p>Subclasses can override this method to define additional logic for deleting records.  Note that this is different
-from both the beforeDelete() and afterDelete() hooks in that it executes after beforeDelete(), but before the record
+<p>Subclasses can override this method to define additional logic for deletingrecords.  Note that this is different
+from both the beforeDelete() andafterDelete() hooks in that it executes after beforeDelete(), but beforethe record
 is actually deleted.</p>
-<p>Common use cases include emulating cascading deletes with other database rows.</p>
+<p>Common use cases include emulating cascading deletes with otherdatabase rows.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -761,7 +758,7 @@ is actually deleted.</p>
 <dt id="Omeka_Record_AbstractRecord::filterPostData">
 <tt class="descname">filterPostData</tt><big>(</big><em>array $post</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::filterPostData" title="Permalink to this definition">¶</a></dt>
 <dd><p>Filter the form input according to some criteria.</p>
-<p>Template method should be overridden by subclasses that wish to implement some sort of filtering criteria.</p>
+<p>Template method should be overridden by subclasses that wish to implementsome sort of filtering criteria.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -820,8 +817,8 @@ is actually deleted.</p>
 <dt id="Omeka_Record_AbstractRecord::getRecordUrl">
 <tt class="descname">getRecordUrl</tt><big>(</big><em>string $action = show</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::getRecordUrl" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the routing parameters or the URL string to this record.</p>
-<p>The record_url() global uses this method to get routing parameters for non-standard records, e.g. records defined by
-plugins. Subclasses should override this method if the default route (as defined below) is incorrect.</p>
+<p>The record_url() global uses this method to get routing parameters fornon-standard records, e.g. records defined by
+plugins. Subclasses shouldoverride this method if the default route (as defined below) isincorrect.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

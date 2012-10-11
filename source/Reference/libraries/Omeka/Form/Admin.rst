@@ -1,5 +1,3 @@
-.. omeka_form_admin.
-
 ----------------
 Omeka_Form_Admin
 ----------------

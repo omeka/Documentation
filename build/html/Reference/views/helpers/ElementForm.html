@@ -68,7 +68,14 @@
 <dl class="attr">
 <dt id="Omeka_View_Helper_ElementForm::$_element">
 <em class="property">property </em><tt class="descname">_element</tt><a class="headerlink" href="#Omeka_View_Helper_ElementForm::$_element" title="Permalink to this definition">¶</a></dt>
-<dd><p>Element record to display the form for.</p>
+<dd><p>Displays a form for the record&#8217;s element.</p>
+<p>The function applies filters that allow plugins to customize the display of element form components.
+Here is an example of how a plugin may add and implement an element form filter:</p>
+<p>add_filter(array(&#8216;ElementForm&#8217;, &#8216;Item&#8217;, &#8216;Dublin Core&#8217;, &#8216;Title&#8217;)), &#8216;form_item_title&#8217;);function form_item_title(array
+$components, $args){</p>
+<p>// Where $components would looks like://  array(//      &#8216;label&#8217; =&gt; [...],//      &#8216;inputs&#8217; =&gt; [...],//
+&#8216;description&#8217; =&gt; [...],//      &#8216;comment&#8217; =&gt; [...],//      &#8216;add_input&#8217; =&gt; [...],//  )// and $args looks like://
+array(//      &#8216;record&#8217; =&gt; [...],//      &#8216;element&#8217; =&gt; [...],//      &#8216;options&#8217; =&gt; [...],//  )}</p>
 </dd></dl>
 
 <dl class="attr">
@@ -209,8 +216,8 @@
 </dd></dl>
 
 <dl class="method">
-<dt id="Omeka_View_Helper_ElementForm::_displayFormFields">
-<tt class="descname">_displayFormFields</tt><big>(</big><em>$extraFieldCount</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_ElementForm::_displayFormFields" title="Permalink to this definition">¶</a></dt>
+<dt id="Omeka_View_Helper_ElementForm::_getInputsComponent">
+<tt class="descname">_getInputsComponent</tt><big>(</big><em>$extraFieldCount</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_ElementForm::_getInputsComponent" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -225,13 +232,18 @@
 </dd></dl>
 
 <dl class="method">
-<dt id="Omeka_View_Helper_ElementForm::_displayTooltip">
-<tt class="descname">_displayTooltip</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_View_Helper_ElementForm::_displayTooltip" title="Permalink to this definition">¶</a></dt>
+<dt id="Omeka_View_Helper_ElementForm::_getDescriptionComponent">
+<tt class="descname">_getDescriptionComponent</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_View_Helper_ElementForm::_getDescriptionComponent" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
-<dt id="Omeka_View_Helper_ElementForm::_displayFieldLabel">
-<tt class="descname">_displayFieldLabel</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_View_Helper_ElementForm::_displayFieldLabel" title="Permalink to this definition">¶</a></dt>
+<dt id="Omeka_View_Helper_ElementForm::_getCommentComponent">
+<tt class="descname">_getCommentComponent</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_View_Helper_ElementForm::_getCommentComponent" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_ElementForm::_getLabelComponent">
+<tt class="descname">_getLabelComponent</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_View_Helper_ElementForm::_getLabelComponent" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>

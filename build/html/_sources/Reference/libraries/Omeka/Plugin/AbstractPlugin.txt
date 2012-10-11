@@ -6,7 +6,7 @@ Omeka_Plugin_AbstractPlugin
 
     Abstract plugin class.
     
-    Plugin authors may inherit from this class to aid in building their plugin framework.
+    Plugin authors may inherit from this class to aid in building their pluginframework.
 
     .. php:attr:: _db
     
@@ -16,34 +16,38 @@ Omeka_Plugin_AbstractPlugin
     
         Plugin hooks.
         
-        In the child class plugin authors should set an array containing hook names as values and, optionally, callback
-        names as keys. If a callback name is given, the child class should contain an identically named method. If no
-        callback key is given, the child class should contain a corresponding hookCamelCased() method. E.g: the
-        after_save_form_record filter should have a corresponding hookAfterSaveRecord() method.
+        In the child class plugin authors should set an array containing hooknames as values and, optionally, callback names
+        as keys. If a callbackname is given, the child class should contain an identically namedmethod. If no callback key
+        is given, the child class should contain acorresponding hookCamelCased() method. E.g: the
+        after_save_form_recordfilter should have a corresponding hookAfterSaveRecord() method.
         
-        For example:
-        <code>
-        array('install', 
-        'uninstall', 
-        'doSomething' => 'after_save_item')
-        </code>
+        For example:	               
+        
+        .. code-block:: php 
+        
+        
+        	               array('install', 
+        	                     'uninstall', 
+        	                     'doSomething' => 'after_save_item')
 
     .. php:attr:: _filters
     
         Plugin filters.
         
-        In the child class plugin authors should set an array containing filter names as values and, optionally, callback
-        names as keys. If a callback name is given, the child class should contain an identically named method. If no
-        callback key is given, the child class should contain a corresponding filterCamelCased() method. E.g: the
-        admin_navigation_main filter should have a corresponding filterAdminNavigationMain() method.
+        In the child class plugin authors should set an array containing filternames as values and, optionally, callback
+        names as keys. If a callbackname is given, the child class should contain an identically namedmethod. If no callback
+        key is given, the child class should contain acorresponding filterCamelCased() method. E.g: the
+        admin_navigation_mainfilter should have a corresponding filterAdminNavigationMain() method.
         
-        For example:
-        <code>
-        array('admin_navigation_main', 
-        'public_navigation_main', 
-        'changeSomething' => 'display_option_site_title', 
-        'displayItemDublinCoreTitle' => array('Display', 'Item', 'Dublin Core', 'Title'))
-        </code>
+        For example:	               
+        
+        .. code-block:: php 
+        
+        
+        	               array('admin_navigation_main', 
+        	                     'public_navigation_main', 
+        	                     'changeSomething' => 'display_option_site_title', 
+        	                     'displayItemDublinCoreTitle' => array('Display', 'Item', 'Dublin Core', 'Title'))
 
     .. php:attr:: _options
     
@@ -51,13 +55,15 @@ Omeka_Plugin_AbstractPlugin
         
         Plugin authors should give an array containing option names as keys and their default values as values, if any.
         
-        For example:
-        <code>
-        array('option_name1' => 'option_default_value1',
-        'option_name2' => 'option_default_value2',
-        'option_name3',
-        'option_name4')
-        </code>
+        For example:	               
+        
+        .. code-block:: php 
+        
+        
+        	               array('option_name1' => 'option_default_value1',
+        	                     'option_name2' => 'option_default_value2',
+        	                     'option_name3',
+        	                     'option_name4')
 
     .. php:method:: __construct()
     

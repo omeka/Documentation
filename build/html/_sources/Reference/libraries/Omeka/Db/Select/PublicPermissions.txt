@@ -18,8 +18,7 @@ Omeka_Db_Select_PublicPermissions
     
         Create the permissions object and perform the ACL checks.
         
-        The permissions check relies on 'showNotPublic' and (optionally)
-        'showSelfNotPublic' privileges on the give resource.
+        The permissions check relies on 'showNotPublic' and (optionally)'showSelfNotPublic' privileges on the give resource.
         
         :param string $resource: ACL resource name to check.
 

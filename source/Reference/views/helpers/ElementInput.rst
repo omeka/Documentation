@@ -25,14 +25,7 @@ Omeka_View_Helper_ElementInput
         :param bool $isHtml: Whether this input's value is HTML.
         :returns: string
 
-    .. php:method:: _getFieldNameStem(int $index)
-    
-        Get the leading part of the "name" element for the input.
-        
-        :param int $index: 
-        :returns: string
-
-    .. php:method:: _getFormInput(string $inputNameStem, string $value)
+    .. php:method:: _getInputComponent(string $inputNameStem, string $value)
     
         Get the actual HTML input for this Element.
         
@@ -40,14 +33,7 @@ Omeka_View_Helper_ElementInput
         :param string $value: 
         :returns: string
 
-    .. php:method:: _getPluginFilterForFormInput()
-    
-        Get the "name" of the filter that allows plugins to override this form
-        input.
-        
-        :returns: array
-
-    .. php:method:: _getFormControls()
+    .. php:method:: _getControlsComponent()
     
         Get the button that will allow a user to remove this form input.
         The submit input has a class of 'add-element', which is used by the
@@ -55,11 +41,10 @@ Omeka_View_Helper_ElementInput
         
         :returns: string
 
-    .. php:method:: _getHtmlCheckbox(string $inputNameStem, int $index, bool $isHtml)
+    .. php:method:: _getHtmlCheckboxComponent(string $inputNameStem, bool $isHtml)
     
         Get the HTML checkbox that lets users toggle the editor.
         
         :param string $inputNameStem: 
-        :param int $index: 
         :param bool $isHtml: 
         :returns: string

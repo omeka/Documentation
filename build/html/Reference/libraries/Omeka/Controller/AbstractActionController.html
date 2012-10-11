@@ -71,8 +71,8 @@
 <dt id="Omeka_Controller_AbstractActionController::$_browseRecordsPerPage">
 <em class="property">property </em><tt class="descname">_browseRecordsPerPage</tt><a class="headerlink" href="#Omeka_Controller_AbstractActionController::$_browseRecordsPerPage" title="Permalink to this definition">¶</a></dt>
 <dd><p>The number of records to browse per page.</p>
-<p>If this is left null, then results will not paginate. This is partially because not every controller will want to
-paginate records and also to avoid BC breaks for plugins.</p>
+<p>If this is left null, then results will not paginate. This is partiallybecause not every controller will want to
+paginate records and also toavoid BC breaks for plugins.</p>
 </dd></dl>
 
 <dl class="method">
@@ -80,6 +80,20 @@ paginate records and also to avoid BC breaks for plugins.</p>
 <tt class="descname">__construct</tt><big>(</big><em>Zend_Controller_Request_Abstract $request</em>, <em>Zend_Controller_Response_Abstract $response</em>, <em>$invokeArgs = Array</em><big>)</big><a class="headerlink" href="#Omeka_Controller_AbstractActionController::__construct" title="Permalink to this definition">¶</a></dt>
 <dd><p>Base controller constructor.</p>
 <p>Does the following things:</p>
+<dl class="docutils">
+<dt>&lt;ul&gt;</dt>
+<dd><blockquote class="first">
+<div>&lt;li&gt;Aliases the redirector helper to clean up the syntax&lt;/li&gt;
+&lt;li&gt;Sets the table object automatically if given the class of the model</div></blockquote>
+<dl class="last docutils">
+<dt>to use for CRUD.&lt;/li&gt;</dt>
+<dd><blockquote class="first">
+<div>&lt;li&gt;Sets all the built-in action contexts for the CRUD actions.&lt;/li&gt;</div></blockquote>
+<p class="last">&lt;/ul&gt;</p>
+</dd>
+</dl>
+</dd>
+</dl>
 <p>Instead of overriding this constructor, controller subclasses shouldimplement the init() method for initial setup.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -107,14 +121,22 @@ paginate records and also to avoid BC breaks for plugins.</p>
 <tt class="descname">browseAction</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Controller_AbstractActionController::browseAction" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve and render a set of records for the controller&#8217;s model.</p>
 <p>Using this action requires some setup:</p>
-<p>&lt;ul&gt;
-&lt;li&gt;In your controller&#8217;s &lt;code&gt;init()&lt;/code&gt;, set the default model name:
-&lt;code&gt;$this-&gt;_helper-&gt;db-&gt;setDefaultModelName(&#8216;YourRecord&#8217;);&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;In your controller, set the records per page and return them using:
-&lt;code&gt;protected function _getBrowseRecordsPerPage()&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;In your table record, filter the select object using the provided parameters using:
-&lt;code&gt;public function applySearchFilters($select, $params)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</p>
+<dl class="docutils">
+<dt>&lt;ul&gt;</dt>
+<dd><blockquote class="first">
+<div><dl class="docutils">
+<dt>&lt;li&gt;In your controller&#8217;s &lt;code&gt;init()&lt;/code&gt;, set the default model name:</dt>
+<dd>&lt;code&gt;$this-&gt;_helper-&gt;db-&gt;setDefaultModelName(&#8216;YourRecord&#8217;);&lt;/code&gt;&lt;/li&gt;</dd>
+<dt>&lt;li&gt;In your controller, set the records per page and return them using:</dt>
+<dd>&lt;code&gt;protected function _getBrowseRecordsPerPage()&lt;/code&gt;&lt;/li&gt;</dd>
+<dt>&lt;li&gt;In your table record, filter the select object using the provided</dt>
+<dd>parameters using:
+&lt;code&gt;public function applySearchFilters($select, $params)&lt;/code&gt;&lt;/li&gt;</dd>
+</dl>
+</div></blockquote>
+<p class="last">&lt;/ul&gt;</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="method">
@@ -128,9 +150,9 @@ paginate records and also to avoid BC breaks for plugins.</p>
 <dt id="Omeka_Controller_AbstractActionController::addAction">
 <tt class="descname">addAction</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Controller_AbstractActionController::addAction" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add an instance of a record to the database.</p>
-<p>This behaves differently based on the contents of the $_POST superglobal.
-If the $_POST is empty or invalid, it will render the form used for data entry. Otherwise, if the $_POST exists and
-is valid, it will save the new record and redirect to the &#8216;browse&#8217; action.</p>
+<p>This behaves differently based on the contents of the $_POST superglobal.If the $_POST is empty or invalid, it will
+render the form used for dataentry. Otherwise, if the $_POST exists and is valid, it will save the newrecord and
+redirect to the &#8216;browse&#8217; action.</p>
 </dd></dl>
 
 <dl class="method">
@@ -171,7 +193,7 @@ is valid, it will save the new record and redirect to the &#8216;browse&#8217; a
 <dt id="Omeka_Controller_AbstractActionController::_getBrowseRecordsPerPage">
 <tt class="descname">_getBrowseRecordsPerPage</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Controller_AbstractActionController::_getBrowseRecordsPerPage" title="Permalink to this definition">¶</a></dt>
 <dd><p>Return the number of records to display per page.</p>
-<p>By default this will return null, disabling pagination. This can be overridden in subclasses by redefining this
+<p>By default this will return null, disabling pagination. This can beoverridden in subclasses by redefining this
 method.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />

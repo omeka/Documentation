@@ -10,7 +10,7 @@ Omeka_Job_Dispatcher_DispatcherInterface
     
         Set the name of the queue to which jobs will be sent.
         
-        NOTE: This may be ignored by adapters that do not understand the notion of named queues (or queues in general).
+        NOTE: This may be ignored by adapters that do not understand the notionof named queues (or queues in general).
         
         :param string $name:
 

@@ -10,16 +10,16 @@ Omeka_Job_Dispatcher_Default
     
     Standard usage, where Job_Class_Name corresponds to a valid class name for a class implementing Omeka_JobInterface:
     
-            
+    	               
     
         .. code-block:: php 
     
     
-            $dispatcher = Zend_Registry::get('job_dispatcher');
-            $dispatcher->send('Job_Class_Name', array(
-                 'firstOption' => 'text',
-                 'secondOption' => 2
-            ));
+    	               $dispatcher = Zend_Registry::get('job_dispatcher');
+    	               $dispatcher->send('Job_Class_Name', array(
+    	                    'firstOption' => 'text',
+    	                    'secondOption' => 2
+    	               ));
 
     .. php:attr:: _defaultAdapter
     
@@ -67,7 +67,7 @@ Omeka_Job_Dispatcher_Default
     
         Set the name of the queue to which default jobs will be sent.
         
-        NOTE: This may be ignored by adapters that do not understand the notion of named queues (or queues in general).
+        NOTE: This may be ignored by adapters that do not understand the notionof named queues (or queues in general).
         
         :param string $name:
 
@@ -75,7 +75,7 @@ Omeka_Job_Dispatcher_Default
     
         Set the name of the queue to which long-running jobs will be sent.
         
-        NOTE: This may be ignored by adapters that do not understand the notion of named queues (or queues in general).
+        NOTE: This may be ignored by adapters that do not understand the notionof named queues (or queues in general).
         
         :param string $name:
 

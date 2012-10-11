@@ -65,10 +65,8 @@
 <dt id="Omeka_Application">
 <em class="property">class </em><tt class="descname">Omeka_Application</tt><a class="headerlink" href="#Omeka_Application" title="Permalink to this definition">¶</a></dt>
 <dd><p>Core class used to bootstrap the Omeka environment.</p>
-<p>Various duties include, but are not limited to, sanitizing magic_quotes,
-setting up class autoload, database, configuration files, logging, plugins,
-front controller, etc.</p>
-<p>When any core resource returns from init(), the result is stored in the bootstrap container. Other parts of the application can get the resources from the bootstrap when needed.</p>
+<p>Various duties include, but are not limited to, sanitizing magic_quotes,setting up class autoload, database, configuration files, logging, plugins,front controller, etc.</p>
+<p>When any core resource returns from init(), the result is stored in thebootstrap container. Other parts of the application can get the resourcesfrom the bootstrap when needed.</p>
 <dl class="method">
 <dt id="Omeka_Application::__construct">
 <tt class="descname">__construct</tt><big>(</big><em>string $environment</em>, <em>string|array|Zend_Config $options</em><big>)</big><a class="headerlink" href="#Omeka_Application::__construct" title="Permalink to this definition">¶</a></dt>
@@ -148,7 +146,7 @@ $_POST and $_REQUEST superglobals.</p>
 <dt id="Omeka_Application::_stripSlashes">
 <tt class="descname">_stripSlashes</tt><big>(</big><em>mixed $value</em><big>)</big><a class="headerlink" href="#Omeka_Application::_stripSlashes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Strip slashes.</p>
-<p>Filters request superglobals in order to avoid problems with PHP&#8217;s magic_quotes setting.</p>
+<p>Filters request superglobals in order to avoid problems with PHP&#8217;smagic_quotes setting.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

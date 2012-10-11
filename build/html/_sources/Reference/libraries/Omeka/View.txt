@@ -8,9 +8,7 @@ Omeka_View
     
     This adds the correct script paths for themes and plugins so that controllers can render the appropriate scripts.
     
-    This will also inject directly into the view scripts all variables that have been assigned to the view,
-    so that theme writers can access them as $item instead of
-    $this->item, for example.
+    This will also inject directly into the view scriptsall variables that have been assigned to the view,so that theme writers can access them as $item instead of$this->item, for example.
 
     .. php:attr:: _asset_paths
     

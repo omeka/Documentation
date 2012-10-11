@@ -28,7 +28,7 @@ Omeka_Record_Mixin_AbstractMixin
     
         Callback automatically called by Omeka_Record_AbstractRecord.
         
-        See the corresponding {@link Omeka_Record_AbstractRecord} method for definitions of call times.
+        See the corresponding {@link Omeka_Record_AbstractRecord} method fordefinitions of call times.
         
         :param unknown $args: 
         :returns: void

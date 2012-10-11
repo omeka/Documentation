@@ -8,7 +8,17 @@ Omeka_View_Helper_ElementForm
 
     .. php:attr:: _element
     
-        Element record to display the form for.
+        Displays a form for the record's element.
+        
+        The function applies filters that allow plugins to customize the display of element form components.
+        Here is an example of how a plugin may add and implement an element form filter:
+        
+        add_filter(array('ElementForm', 'Item', 'Dublin Core', 'Title')), 'form_item_title');function form_item_title(array
+        $components, $args){
+        
+        // Where $components would looks like://  array(//      'label' => [...],//      'inputs' => [...],//     
+        'description' => [...],//      'comment' => [...],//      'add_input' => [...],//  )// and $args looks like:// 
+        array(//      'record' => [...],//      'element' => [...],//      'options' => [...],//  )}
 
     .. php:attr:: _record
     
@@ -59,10 +69,12 @@ Omeka_View_Helper_ElementForm
         :param unknown $index: 
         :returns: void
 
-    .. php:method:: _displayFormFields($extraFieldCount)
+    .. php:method:: _getInputsComponent($extraFieldCount)
     
         :param unknown $extraFieldCount:
 
-    .. php:method:: _displayTooltip()
+    .. php:method:: _getDescriptionComponent()
 
-    .. php:method:: _displayFieldLabel()
+    .. php:method:: _getCommentComponent()
+
+    .. php:method:: _getLabelComponent()

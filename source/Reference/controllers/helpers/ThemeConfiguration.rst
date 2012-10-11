@@ -22,7 +22,7 @@ Omeka_Controller_Action_Helper_ThemeConfiguration
     
         Process the theme configuration form.
         
-        For file elements, this will save them using the storage system or remove them as is necessary.
+        For file elements, this will save them using the storage systemor remove them as is necessary.
         
         :param Zend_Form $form: The form to save.
         :param array $data: The data to fill the form with.

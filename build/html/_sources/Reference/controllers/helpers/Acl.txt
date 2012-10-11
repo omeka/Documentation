@@ -35,8 +35,8 @@ Omeka_Controller_Action_Helper_Acl
     
         Determine whether or not access is granted to a specific controller/action.
         
-        If the user has been authenticated, display the Access Forbidden error page.
-        Otherwise, give the user an opportunity to login before trying again.
+        If the user has been authenticated, display the Access Forbidden error page.Otherwise, give the user an opportunity
+        to login before trying again.
         
         :returns: void
 

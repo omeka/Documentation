@@ -6,7 +6,7 @@ Omeka_Job_Dispatcher_Adapter_Array
 
     Store dispatched jobs in an array.
     
-    This is used primarily by unit tests and should not be used in production code.
+    This is used primarily by unit tests and should not be used in productioncode.
 
     .. php:attr:: _queueName
     

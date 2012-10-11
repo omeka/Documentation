@@ -22,7 +22,7 @@ Omeka_Plugin_Mvc
     
         Add a theme directory to the list of plugin-added view directories.
         
-        Used by the add_theme_pages() helper to create a list of directories that can store static pages that integrate into
+        Used by the add_theme_pages() helper to create a list of directories thatcan store static pages that integrate into
         the themes.
         
         :param string $pluginDirName: Plugin name.
@@ -43,9 +43,8 @@ Omeka_Plugin_Mvc
         Make an entire directory of controllers available to the front
         controller.
         
-        This has to use addControllerDirectory() instead of addModuleDirectory()
-        because module names are case-sensitive and module directories need to be lowercased to conform to Zend's weird
-        naming conventions.
+        This has to use addControllerDirectory() instead of addModuleDirectory()because module names are case-sensitive and
+        module directories need to belowercased to conform to Zend's weird naming conventions.
         
         :param string $pluginDirName: Plugin name.
         :param string $moduleName: MVC module name.
@@ -55,13 +54,7 @@ Omeka_Plugin_Mvc
     
         Set up the following directory structure for plugins:
         
-        controllers/
-        models/
-        libraries/
-        views/
-        admin/
-        public/
-        shared/
+        controllers/models/libraries/views/admin/public/shared/
         
         This also adds these folders to the correct include paths.
         

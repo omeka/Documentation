@@ -8,7 +8,7 @@ Omeka_Job_Dispatcher_Adapter_Beanstalk
     
     Requires Pheanstalk library (Beanstalk client) in order to work properly.
     
-    This adapter must be instantiated with the 'host' option (IP address of beanstalk daemon) in order to work properly.
+    This adapter must be instantiated with the 'host' option (IP address ofbeanstalk daemon) in order to work properly.
 
     .. php:const:: DEFAULT_TTR
     

@@ -68,7 +68,7 @@ Mixin_ElementText
         Load all the ElementText records for the given record (Item, File, etc.).
         These will be indexed by [element_id].
         
-        Also load all the Element records and index those by their name and set name.
+        Also load all the Element records and index those by their name and setname.
         
         :param boolean $reload: Whether or not reload all the data that was previously loaded.
         :returns: void
@@ -172,7 +172,7 @@ Mixin_ElementText
         
         Creates a new ElementText record, populates it with the specified text value and assigns it to the element.
         
-        saveElementTexts() must be called after this in order to save the element texts to the database.
+        saveElementTexts() must be called after this in order to save the elementtexts to the database.
         
         :param Element $element: Element which text should be created for
         :param string $elementText: Text to be added
@@ -186,23 +186,23 @@ Mixin_ElementText
         .. code-block:: php 
         
         
-        'Element Set Name' => 
-        array('Element Name' => 
-        array(array('text' => 'foo', 'html' => false)))
+        	                            'Element Set Name' => 
+        	                                array('Element Name' => 
+        	                                    array(array('text' => 'foo', 'html' => false)))
         
         
         Since 1.4, the array can also be formatted thusly:
         
-        
+        	               
         
         .. code-block:: php 
         
         
-        array(
-        array('element_id' => 1,
-        'text' => 'foo',
-        'html' => false)
-        )
+        	                    array(
+        	                        array('element_id' => 1,
+        	                              'text' => 'foo',
+        	                              'html' => false)
+        	                    )
         
         :param unknown $elementTexts:
 
@@ -218,10 +218,9 @@ Mixin_ElementText
     
         The application flow is thus:
         
-        1) Build ElementText objects from the POST.
-        2) Validate the ElementText objects and assign error messages if necessary.
-        3) After the item saves correctly, delete all the ElementText records for the Item.
-        4) Save the new ElementText objects to the database.
+        1) Build ElementText objects from the POST.2) Validate the ElementText objects and assign error messages
+        ifnecessary.3) After the item saves correctly, delete all the ElementText recordsfor the Item.4) Save the new
+        ElementText objects to the database.
         
         :param unknown $post:
 

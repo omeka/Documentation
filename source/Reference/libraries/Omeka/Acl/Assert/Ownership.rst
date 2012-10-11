@@ -7,7 +7,7 @@ Omeka_Acl_Assert_Ownership
     Assertion to take account of "All" and "Self" sub-permissions for
     records.
     
-    A common use is the "edit" and "delete" permissions for Items and other "ownable" records.
+    A common use is the "edit" and "delete" permissions for Items andother "ownable" records.
 
     .. php:method:: assert(Zend_Acl $acl, Zend_Acl_Role_Interface $role, Zend_Acl_Resource_Interface $resource, $privilege)
     

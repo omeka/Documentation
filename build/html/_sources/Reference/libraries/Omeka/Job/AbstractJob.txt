@@ -6,7 +6,7 @@ Omeka_Job_AbstractJob
 
     Abstract implementation of an Omeka job.
     
-    Most plugin implementations of jobs will extend this class to gain convenient access to the database and other potentially important resources.
+    Most plugin implementations of jobs will extend this class to gainconvenient access to the database and other potentially importantresources.
     
     For information on how to dispatch jobs, see Omeka_Job_Dispatcher_DispatcherInterface.
 
@@ -34,8 +34,8 @@ Omeka_Job_AbstractJob
     
         Set all the options associated with this task.
         
-        This is a convenience method that calls setter methods for the options given in the array.  If an element in the
-        array does not have an associated setter method, it will be passed into the options array.
+        This is a convenience method that calls setter methods for the optionsgiven in the array.  If an element in the
+        array does not have anassociated setter method, it will be passed into the options array.
         
         :param unknown $options:
 

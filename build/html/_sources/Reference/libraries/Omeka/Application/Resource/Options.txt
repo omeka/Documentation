@@ -8,7 +8,7 @@ Omeka_Application_Resource_Options
     
     Options are essentially site-wide variables that are stored in the database, for example the title of the site.
     
-    Failure to load this resource currently indicates that Omeka needs to be installed.
+    Failure to load this resource currently indicates that Omeka needs to beinstalled.
 
     .. php:attr:: _installerRedirect
     

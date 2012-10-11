@@ -12,7 +12,8 @@ Omeka_Application_Resource_Autoloader
     
         Register autoloaders.
         
-        Set up autoloading of the following class types from the following directories:
+        Set up autoloading of the following class types from the followingdirectories:
+        
         - {@link Omeka_Form}: forms/
         
         :returns: void

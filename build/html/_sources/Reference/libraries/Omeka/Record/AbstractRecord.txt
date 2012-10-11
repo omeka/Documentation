@@ -28,8 +28,7 @@ Omeka_Record_AbstractRecord
         Set of Omeka_Record_Mixin_AbstractMixin objects that are designed to 
         extend the behavior of Omeka_Record_AbstractRecord implementations.
         
-        Examples include {@link Taggable}, {@link Relatable},
-        {@link ActsAsElementText}, etc.
+        Examples include {@link Taggable}, {@link Relatable},{@link ActsAsElementText}, etc.
 
     .. php:attr:: _db
     
@@ -79,7 +78,7 @@ Omeka_Record_AbstractRecord
     
         Subclass constructor behavior.
         
-        Subclasses of Omeka_Record_AbstractRecord can override this function to add behavior to the constructor without
+        Subclasses of Omeka_Record_AbstractRecord can override this function toadd behavior to the constructor without
         overriding __construct.
         
         :returns: void
@@ -112,8 +111,8 @@ Omeka_Record_AbstractRecord
     
         Initialize the mixins for a record.
         
-        Any Omeka_Record_AbstractRecord subclass that uses mixins should initialize them here, since this is called on
-        construction and when mixins need to be reinitialized.
+        Any Omeka_Record_AbstractRecord subclass that uses mixins shouldinitialize them here, since this is called on
+        construction and whenmixins need to be reinitialized.
 
     .. php:method:: delegateToMixins(string $method, array $args = Array, boolean $all = )
     
@@ -128,11 +127,9 @@ Omeka_Record_AbstractRecord
     
         Invoke all callbacks associated with a specific record event.
         
-        Callbacks execute in the following order:
-        - Omeka_Record_AbstractRecord hooks like Omeka_Record_AbstractRecord::afterDelete()
-        - Record mixin hooks like Taggable::afterSave()
-        - Generic record plugin hooks like 'before_delete_record'
-        - Specific record plugin hooks like 'before_delete_item'
+        Callbacks execute in the following order:- Omeka_Record_AbstractRecord hooks like
+        Omeka_Record_AbstractRecord::afterDelete()- Record mixin hooks like Taggable::afterSave()- Generic record plugin
+        hooks like 'before_delete_record'- Specific record plugin hooks like 'before_delete_item'
         
         :param unknown $event: 
         :returns: void
@@ -163,7 +160,7 @@ Omeka_Record_AbstractRecord
     
         Determine whether or not this record is persistent in the database.
         
-        For simplicity, non-persistent records are indicated by the lack of a value for the 'id' column.
+        For simplicity, non-persistent records are indicated by the lack of avalue for the 'id' column.
         
         :returns: boolean
 
@@ -197,7 +194,7 @@ Omeka_Record_AbstractRecord
     
         Add a validation error for a specific field.
         
-        Currently limited to a single error per field, so multiple error messages must be concatenated together.
+        Currently limited to a single error per field, so multiple error messagesmust be concatenated together.
         
         :param string|null $field: Name of the field.  This can be null to indicate a general error not associated with a specific field.
         :param string $msg: The error message.
@@ -215,8 +212,8 @@ Omeka_Record_AbstractRecord
     
         Prevent a record from being modified.
         
-        Can be used to prevent accidentally saving/deleting a record if its state may change but saving would be
-        undesirable, such as modifying a record for display purposes.
+        Can be used to prevent accidentally saving/deleting a record if its state maychange but saving would be undesirable,
+        such as modifying a record fordisplay purposes.
         
         :returns: void
 
@@ -264,11 +261,11 @@ Omeka_Record_AbstractRecord
     
         Template method for defining record deletion logic.
         
-        Subclasses can override this method to define additional logic for deleting records.  Note that this is different
-        from both the beforeDelete() and afterDelete() hooks in that it executes after beforeDelete(), but before the record
+        Subclasses can override this method to define additional logic for deletingrecords.  Note that this is different
+        from both the beforeDelete() andafterDelete() hooks in that it executes after beforeDelete(), but beforethe record
         is actually deleted.
         
-        Common use cases include emulating cascading deletes with other database rows.
+        Common use cases include emulating cascading deletes with otherdatabase rows.
         
         :returns: void
 
@@ -346,7 +343,7 @@ Omeka_Record_AbstractRecord
     
         Filter the form input according to some criteria.
         
-        Template method should be overridden by subclasses that wish to implement some sort of filtering criteria.
+        Template method should be overridden by subclasses that wish to implementsome sort of filtering criteria.
         
         :param array $post: 
         :returns: array Filtered post data.
@@ -369,8 +366,8 @@ Omeka_Record_AbstractRecord
     
         Get the routing parameters or the URL string to this record.
         
-        The record_url() global uses this method to get routing parameters for non-standard records, e.g. records defined by
-        plugins. Subclasses should override this method if the default route (as defined below) is incorrect.
+        The record_url() global uses this method to get routing parameters fornon-standard records, e.g. records defined by
+        plugins. Subclasses shouldoverride this method if the default route (as defined below) isincorrect.
         
         :param string $action: 
         :returns: string|array A URL string or a routing array.

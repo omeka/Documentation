@@ -66,7 +66,7 @@
 <dt id="Omeka_Plugin_AbstractPlugin">
 <em class="property">class </em><tt class="descname">Omeka_Plugin_AbstractPlugin</tt><a class="headerlink" href="#Omeka_Plugin_AbstractPlugin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Abstract plugin class.</p>
-<p>Plugin authors may inherit from this class to aid in building their plugin framework.</p>
+<p>Plugin authors may inherit from this class to aid in building their pluginframework.</p>
 <dl class="attr">
 <dt id="Omeka_Plugin_AbstractPlugin::$_db">
 <em class="property">property </em><tt class="descname">_db</tt><a class="headerlink" href="#Omeka_Plugin_AbstractPlugin::$_db" title="Permalink to this definition">¶</a></dt>
@@ -77,33 +77,33 @@
 <dt id="Omeka_Plugin_AbstractPlugin::$_hooks">
 <em class="property">property </em><tt class="descname">_hooks</tt><a class="headerlink" href="#Omeka_Plugin_AbstractPlugin::$_hooks" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plugin hooks.</p>
-<p>In the child class plugin authors should set an array containing hook names as values and, optionally, callback
-names as keys. If a callback name is given, the child class should contain an identically named method. If no
-callback key is given, the child class should contain a corresponding hookCamelCased() method. E.g: the
-after_save_form_record filter should have a corresponding hookAfterSaveRecord() method.</p>
-<p>For example:
-&lt;code&gt;
-array(&#8216;install&#8217;,
-&#8216;uninstall&#8217;,
-&#8216;doSomething&#8217; =&gt; &#8216;after_save_item&#8217;)
-&lt;/code&gt;</p>
+<p>In the child class plugin authors should set an array containing hooknames as values and, optionally, callback names
+as keys. If a callbackname is given, the child class should contain an identically namedmethod. If no callback key
+is given, the child class should contain acorresponding hookCamelCased() method. E.g: the
+after_save_form_recordfilter should have a corresponding hookAfterSaveRecord() method.</p>
+<p>For example:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">array</span><span class="p">(</span><span class="s1">&#39;install&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;uninstall&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;doSomething&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;after_save_item&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="attr">
 <dt id="Omeka_Plugin_AbstractPlugin::$_filters">
 <em class="property">property </em><tt class="descname">_filters</tt><a class="headerlink" href="#Omeka_Plugin_AbstractPlugin::$_filters" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plugin filters.</p>
-<p>In the child class plugin authors should set an array containing filter names as values and, optionally, callback
-names as keys. If a callback name is given, the child class should contain an identically named method. If no
-callback key is given, the child class should contain a corresponding filterCamelCased() method. E.g: the
-admin_navigation_main filter should have a corresponding filterAdminNavigationMain() method.</p>
-<p>For example:
-&lt;code&gt;
-array(&#8216;admin_navigation_main&#8217;,
-&#8216;public_navigation_main&#8217;,
-&#8216;changeSomething&#8217; =&gt; &#8216;display_option_site_title&#8217;,
-&#8216;displayItemDublinCoreTitle&#8217; =&gt; array(&#8216;Display&#8217;, &#8216;Item&#8217;, &#8216;Dublin Core&#8217;, &#8216;Title&#8217;))
-&lt;/code&gt;</p>
+<p>In the child class plugin authors should set an array containing filternames as values and, optionally, callback
+names as keys. If a callbackname is given, the child class should contain an identically namedmethod. If no callback
+key is given, the child class should contain acorresponding filterCamelCased() method. E.g: the
+admin_navigation_mainfilter should have a corresponding filterAdminNavigationMain() method.</p>
+<p>For example:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">array</span><span class="p">(</span><span class="s1">&#39;admin_navigation_main&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;public_navigation_main&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;changeSomething&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;display_option_site_title&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;displayItemDublinCoreTitle&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;Display&#39;</span><span class="p">,</span> <span class="s1">&#39;Item&#39;</span><span class="p">,</span> <span class="s1">&#39;Dublin Core&#39;</span><span class="p">,</span> <span class="s1">&#39;Title&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="attr">
@@ -111,13 +111,13 @@ array(&#8216;admin_navigation_main&#8217;,
 <em class="property">property </em><tt class="descname">_options</tt><a class="headerlink" href="#Omeka_Plugin_AbstractPlugin::$_options" title="Permalink to this definition">¶</a></dt>
 <dd><p>Plugin options.</p>
 <p>Plugin authors should give an array containing option names as keys and their default values as values, if any.</p>
-<p>For example:
-&lt;code&gt;
-array(&#8216;option_name1&#8217; =&gt; &#8216;option_default_value1&#8217;,
-&#8216;option_name2&#8217; =&gt; &#8216;option_default_value2&#8217;,
-&#8216;option_name3&#8217;,
-&#8216;option_name4&#8217;)
-&lt;/code&gt;</p>
+<p>For example:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">array</span><span class="p">(</span><span class="s1">&#39;option_name1&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;option_default_value1&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;option_name2&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;option_default_value2&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;option_name3&#39;</span><span class="p">,</span>
+      <span class="s1">&#39;option_name4&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="method">

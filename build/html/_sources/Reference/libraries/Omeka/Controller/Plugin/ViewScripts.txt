@@ -50,7 +50,7 @@ Omeka_Controller_Plugin_ViewScripts
         2. plugin view scripts for other plugins
         3. theme view scripts
         
-        This means that it needs to add the paths in the reverse order of what needs to be checked first, so theme paths
+        This means that it needs to add the paths in the reverse order of what needsto be checked first, so theme paths
         first and then plugin paths.
         
         :param string $pluginModuleName: The module name for the plugin.
@@ -61,8 +61,7 @@ Omeka_Controller_Plugin_ViewScripts
     
         Set up the asset paths for the theme.
         
-        If you're in one of the themes, check in this order:
-        1. theme view scripts 2. all plugin view scripts
+        If you're in one of the themes, check in this order:1. theme view scripts2. all plugin view scripts
         
         :param string $themeType: The type of theme: 'admin' or 'public'.
         :returns: void

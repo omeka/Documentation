@@ -15,13 +15,13 @@ Omeka_View_Helper_Url
         examples assume that Omeka isrunning on the root of a particular domain, though that is of noimportance to how the
         function works.
         
-        
+        	               
         
         .. code-block:: php 
         
         
-        echo $this->url('items/browse');
-        // outputs "/items/browse"
+        	               echo $this->url('items/browse');
+        	               // outputs "/items/browse"
         
         
         echo $this->url('items/browse', array('tags'=>'foo'));

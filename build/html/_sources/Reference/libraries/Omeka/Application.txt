@@ -6,11 +6,9 @@ Omeka_Application
 
     Core class used to bootstrap the Omeka environment.
     
-    Various duties include, but are not limited to, sanitizing magic_quotes,
-    setting up class autoload, database, configuration files, logging, plugins,
-    front controller, etc.
+    Various duties include, but are not limited to, sanitizing magic_quotes,setting up class autoload, database, configuration files, logging, plugins,front controller, etc.
     
-    When any core resource returns from init(), the result is stored in the bootstrap container. Other parts of the application can get the resources from the bootstrap when needed.
+    When any core resource returns from init(), the result is stored in thebootstrap container. Other parts of the application can get the resourcesfrom the bootstrap when needed.
 
     .. php:method:: __construct(string $environment, string|array|Zend_Config $options)
     
@@ -50,7 +48,7 @@ Omeka_Application
     
         Strip slashes.
         
-        Filters request superglobals in order to avoid problems with PHP's magic_quotes setting.
+        Filters request superglobals in order to avoid problems with PHP'smagic_quotes setting.
         
         :param mixed $value: 
         :returns: mixed

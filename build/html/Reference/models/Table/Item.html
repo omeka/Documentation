@@ -111,10 +111,10 @@
 <dt id="Table_Item::_simpleSearch">
 <tt class="descname">_simpleSearch</tt><big>(</big><em>Zend_Db_Select $select</em>, <em>$terms</em><big>)</big><a class="headerlink" href="#Table_Item::_simpleSearch" title="Permalink to this definition">¶</a></dt>
 <dd><p>Build the simple search.</p>
-<p>The search query consists of a derived table that is INNER JOINed to the main SQL query.  That derived table is a
-union of two SELECT queries. The first query searches the FULLTEXT index on the items_elements table, and the second
-query searches the tags table for every word in the search terms and assigns each found result a rank of &#8216;1&#8217;. That
-should make tagged items show up higher on the found results list for a given search.</p>
+<p>The search query consists of a derived table that is INNER JOINed to themain SQL query.  That derived table is a
+union of two SELECT queries. Thefirst query searches the FULLTEXT index on the items_elements table, andthe second
+query searches the tags table for every word in the searchterms and assigns each found result a rank of &#8216;1&#8217;. That
+should maketagged items show up higher on the found results list for a given search.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -233,16 +233,9 @@ should make tagged items show up higher on the found results list for a given se
 <dd><p>Query must look like the following in order to correctly retrieve items
 that have all the tags provided (in this example, all items that are
 tagged both &#8216;foo&#8217; and &#8216;bar&#8217;):</p>
-<p>SELECT i.id FROM omeka_items i WHERE
-(
-i.id IN
-(SELECT tg.relation_id as id FROM omeka_taggings tg INNER JOIN omeka_tags t ON t.id = tg.tag_id WHERE t.name = &#8216;foo&#8217;
-AND tg.type = &#8216;Item&#8217;)
-AND i.id IN
-(SELECT tg.relation_id as id FROM omeka_taggings tg INNER JOIN omeka_tags t ON t.id = tg.tag_id WHERE t.name = &#8216;bar&#8217;
-AND tg.type = &#8216;Item&#8217;)
-)
-...</p>
+<p>SELECT i.idFROM omeka_items iWHERE(i.id IN(SELECT tg.relation_id as idFROM omeka_taggings tgINNER JOIN omeka_tags t
+ON t.id = tg.tag_idWHERE t.name = &#8216;foo&#8217; AND tg.type = &#8216;Item&#8217;)AND i.id IN(SELECT tg.relation_id as idFROM
+omeka_taggings tgINNER JOIN omeka_tags t ON t.id = tg.tag_idWHERE t.name = &#8216;bar&#8217; AND tg.type = &#8216;Item&#8217;))...</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

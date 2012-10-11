@@ -6,9 +6,7 @@ Omeka_Plugin_Broker
 
     Plugin Broker for Omeka.
     
-    For example, 
-    $broker->callHook('add_action_contexts', array('controller' => $controller))
-    would call the 'add_action_contexts' on all plugins, and it would provide the controller object as the first argument to all implementations of that hook.
+    For example,$broker->callHook('add_action_contexts', array('controller' => $controller))would call the 'add_action_contexts' on all plugins, and it wouldprovide the controller object as the first argument to allimplementations of that hook.
 
     .. php:attr:: _callbacks
     
@@ -45,8 +43,8 @@ Omeka_Plugin_Broker
     
         Set the currently-focused plugin by directory name.
         
-        The plugin helper functions do not have any way of determining what plugin to is currently in focus.  These
-        get/setCurrentPluginDirName methods allow the broker to know how to delegate to specific plugins if necessary.
+        The plugin helper functions do not have any way of determining whatplugin to is currently in focus.  These
+        get/setCurrentPluginDirNamemethods allow the broker to know how to delegate to specific plugins ifnecessary.
         
         :param string $pluginDirName: Plugin to set as current.
         :returns: void

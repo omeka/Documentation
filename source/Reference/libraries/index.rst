@@ -1,7 +1,0 @@
-`````````
-Libraries
-`````````
-
-.. toctree::
-
-    Omeka/index

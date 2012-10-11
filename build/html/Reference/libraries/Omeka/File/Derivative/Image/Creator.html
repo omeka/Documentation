@@ -189,10 +189,10 @@
 <dt id="Omeka_File_Derivative_Image_Creator::_createImage">
 <tt class="descname">_createImage</tt><big>(</big><em>$origPath</em>, <em>$newPath</em>, <em>$convertArgs</em><big>)</big><a class="headerlink" href="#Omeka_File_Derivative_Image_Creator::_createImage" title="Permalink to this definition">¶</a></dt>
 <dd><p>Generate a derivative image from an existing file stored in Omeka.</p>
-<p>This image will be generated based on a constraint given in pixels.  For example, if the constraint is 500, the
-resulting image file will be scaled so that the largest side is 500px. If the image is less than 500px on both
-sides, the image will not be resized.</p>
-<p>Derivative images will only be generated for files with mime types that can be identified with ImageMagick&#8217;s
+<p>This image will be generated based on a constraint given in pixels.  Forexample, if the constraint is 500, the
+resulting image file will be scaledso that the largest side is 500px. If the image is less than 500px on bothsides,
+the image will not be resized.</p>
+<p>Derivative images will only be generated for files with mime typesthat can be identified with ImageMagick&#8217;s
 &#8216;identify&#8217; command</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -297,8 +297,8 @@ Both the convert and identify binaries must be within the directory and executab
 <tt class="descname">getDefaultImageMagickDir</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_File_Derivative_Image_Creator::getDefaultImageMagickDir" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve the path to the directory containing ImageMagick&#8217;s convert utility.
 Th</p>
-<p>Uses the &#8216;which&#8217; command-line utility to detect the path to &#8216;convert&#8217;.
-Note that this will only work if the convert utility is in PHP&#8217;s PATH and thus can be located by &#8216;which&#8217;.</p>
+<p>Uses the &#8216;which&#8217; command-line utility to detect the path to &#8216;convert&#8217;.Note that this will only work if the convert
+utility is in PHP&#8217;s PATH andthus can be located by &#8216;which&#8217;.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

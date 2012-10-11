@@ -64,10 +64,14 @@ Omeka_File_Ingest_Url
     
         Normalize a file info array.
         
-        Files can be represented as one of the following: 
+        Files can be represented as one of the following:
+        
         - a string, representing the source identifier for a single file. 
+        
         - an array containing a 'source' key.
+        
         - an array of strings.
+        
         - an array of arrays that each contain a 'source' key.
         
         :param string|array $files: 
@@ -116,8 +120,8 @@ Omeka_File_Ingest_Url
     
         Ingest based on arbitrary file identifier info.
         
-        If this is an array that has a 'metadata' key, that should be an array representing element text metadata to assign
-        to the file.  See ActsAsElementText::addElementTextsByArray() for more details.
+        If this is an array that has a 'metadata' key, that should be an arrayrepresenting element text metadata to assign
+        to the file.  SeeActsAsElementText::addElementTextsByArray() for more details.
         
         :param mixed $fileInfo: An arbitrary input (array, string, object, etc.) that corresponds to one or more files to be ingested into Omeka.
         :returns: array Ingested file records.
@@ -134,8 +138,8 @@ Omeka_File_Ingest_Url
         Log any exceptions that are thrown as a result of attempting to ingest
         invalid files.
         
-        These are logged as warnings because they are being ignored by the script,
-        so they don't actually kill the file ingest process.
+        These are logged as warnings because they are being ignored by the script,so they don't actually kill the file
+        ingest process.
         
         :param Exception $e: 
         :returns: void
@@ -155,7 +159,7 @@ Omeka_File_Ingest_Url
         
         This will generate an archival filename in order to prevent naming conflicts between ingested files.
         
-        This should be used as necessary by Omeka_File_Ingest_AbstractIngest implementations in order to determine where to
+        This should be used as necessary by Omeka_File_Ingest_AbstractIngestimplementations in order to determine where to
         transfer any given file.
         
         :param string $fromFilename: The filename from which to derive the archival filename.
@@ -177,14 +181,16 @@ Omeka_File_Ingest_Url
         Implementations of Omeka_File_Ingest_AbstractIngest should use this to validate the uploaded file based on
         user-defined security criteria.
         
-        Important: $fileInfo may need to contain the following keys in order to work with particular Zend_Validate_File_*
+        Important: $fileInfo may need to contain the following keys in order to workwith particular Zend_Validate_File_*
         validation classes:
+        
         - 'name': string filename (for Zend_Validate_File_Extension) If ZF is unable to determine the file extension when
-        validating, it will check the 'name' attribute instead.  Current use cases involve saving the file to a temporary
-        location before transferring to Omeka. Most temporary files do not maintain the original file extension.
-        - 'type': string MIME type (for Zend_Validate_File_MimeType) If ZF is unable to determine the mime type from the
-        transferred file.  Unless the server running Omeka has a mime_magic file or has installed the FileInfo extension,
-        this will be necessary.
+        validating, it willcheck the 'name' attribute instead.  Current use cases involve saving thefile to a temporary
+        location before transferring to Omeka. Mosttemporary files do not maintain the original file extension.
+        
+        - 'type': string MIME type (for Zend_Validate_File_MimeType) If ZFis unable to determine the mime type from the
+        transferred file.  Unlessthe server running Omeka has a mime_magic file or has installed theFileInfo extension, this
+        will be necessary.
         
         :param string $filePath: Absolute path to the file.  The file should be local and readable, which is required by most (if not all) of the Zend_Validate_File_* classes.
         :param array $fileInfo: Set of file info that describes a given file being ingested.

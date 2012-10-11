@@ -6,7 +6,7 @@ Omeka_Storage_Adapter_Filesystem
 
     Standard local filesystem storage adapter.
     
-    The default adapter; this stores files in the Omeka files directory by default, but can be set to point to a different path.
+    The default adapter; this stores files in the Omeka files directoryby default, but can be set to point to a different path.
 
     .. php:attr:: _localDir
     
@@ -33,7 +33,7 @@ Omeka_Storage_Adapter_Filesystem
         Check whether the adapter is set up correctly to be able to store
         files.
         
-        Specifically, this checks to see if the local storage directory is writable.
+        Specifically, this checks to see if the local storage directoryis writable.
         
         :returns: boolean
 

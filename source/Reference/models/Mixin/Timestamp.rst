@@ -22,7 +22,7 @@ Mixin_Timestamp
     
         Initialize the mixin.
         
-        Setting either of the column parameters to null will skip updating that timestamp. The default column names are
+        Setting either of the column parameters to null will skip updating thattimestamp. The default column names are
         'updated' and 'added'.
         
         :param Omeka_Record_AbstractRecord $record: 

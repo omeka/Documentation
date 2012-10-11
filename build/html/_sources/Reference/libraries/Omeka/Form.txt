@@ -39,7 +39,7 @@ Omeka_Form
     
         Configure element styles / decorators based on the type of element.
         
-        This may be called after elements to the form, as the decorator configuration in init() runs before elements can be
+        This may be called after elements to the form, as the decoratorconfiguration in init() runs before elements can be
         added.
         
         :returns: void
@@ -48,7 +48,7 @@ Omeka_Form
     
         Retrieve all of the form error messages as a nicely formatted string.
         
-        Useful for displaying all form errors at the top of a form, or for flashing form errors after redirects.
+        Useful for displaying all form errors at the top of a form, or for flashingform errors after redirects.
         
         :param string $messageDelimiter: The string to display between different error messages for an element.
         :param string $elementDelimiter: The string to display between different elements.

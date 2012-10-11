@@ -10,7 +10,7 @@ Omeka_Job_Dispatcher_Adapter_AdapterInterface
     
         Set the name of the queue that the adapter will use for incoming jobs.
         
-        Note that this will not be used by some adapters and should be implemented to return false in those cases.
+        Note that this will not be used by some adapters and should beimplemented to return false in those cases.
         
         :param string $name:
 

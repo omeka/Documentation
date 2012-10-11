@@ -25,7 +25,7 @@ Omeka_Storage
         Delegates calls directly to Omeka_Storage to the currently-set
         storage adapter.
         
-        All of the methods of the Adapter interface are accessible in this way, as well as any other methods declared by the
+        All of the methods of the Adapter interface are accessible inthis way, as well as any other methods declared by the
         adapter.
         
         :param string $name: Method name.
@@ -44,8 +44,8 @@ Omeka_Storage
         Set the storage adapter to be used, as well as options for that
         adapter.
         
-        You can either pass an already-constructed adapter object to this method or use this method as a factory by passing
-        the name of an adapter class and options to set on it.
+        You can either pass an already-constructed adapter object to thismethod or use this method as a factory by passing
+        the name of anadapter class and options to set on it.
         
         :param Omeka_Storage_Adapter_AdapterInterface|string $adapter: Storage adapter to set. If an adapter object is passed, it is simply set as the current adapter. If a string is passed, an object of that class is created and set as the current adapter.
         :param array|null $options: If a string is passed to $adapter, this array of options is passed to the class' constructor.
@@ -54,7 +54,7 @@ Omeka_Storage
     
         Get the current storage adapter.
         
-        You generally need to use the adapter object returned by this method to perform any storage actions.
+        You generally need to use the adapter object returned by thismethod to perform any storage actions.
         
         :returns: Omeka_Storage_Adapter_AdapterInterface
 
@@ -68,7 +68,7 @@ Omeka_Storage
     
         Get the temporary file storage directory path.
         
-        If no directory has been explicitly selected, the system's temp directory is set as the temp dir and returned.
+        If no directory has been explicitly selected, the system's tempdirectory is set as the temp dir and returned.
         
         :returns: string Local path to directory.
 

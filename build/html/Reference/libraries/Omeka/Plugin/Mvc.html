@@ -98,7 +98,7 @@
 <dt id="Omeka_Plugin_Mvc::addThemeDir">
 <tt class="descname">addThemeDir</tt><big>(</big><em>string $pluginDirName</em>, <em>string $path</em>, <em>string $themeType</em>, <em>string $moduleName</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Mvc::addThemeDir" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a theme directory to the list of plugin-added view directories.</p>
-<p>Used by the add_theme_pages() helper to create a list of directories that can store static pages that integrate into
+<p>Used by the add_theme_pages() helper to create a list of directories thatcan store static pages that integrate into
 the themes.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -144,9 +144,8 @@ the themes.</p>
 <tt class="descname">addControllerDir</tt><big>(</big><em>string $pluginDirName</em>, <em>string $moduleName</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Mvc::addControllerDir" title="Permalink to this definition">¶</a></dt>
 <dd><p>Make an entire directory of controllers available to the front
 controller.</p>
-<p>This has to use addControllerDirectory() instead of addModuleDirectory()
-because module names are case-sensitive and module directories need to be lowercased to conform to Zend&#8217;s weird
-naming conventions.</p>
+<p>This has to use addControllerDirectory() instead of addModuleDirectory()because module names are case-sensitive and
+module directories need to belowercased to conform to Zend&#8217;s weird naming conventions.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -168,13 +167,7 @@ naming conventions.</p>
 <dt id="Omeka_Plugin_Mvc::addApplicationDirs">
 <tt class="descname">addApplicationDirs</tt><big>(</big><em>string $pluginDirName</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Mvc::addApplicationDirs" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set up the following directory structure for plugins:</p>
-<p>controllers/
-models/
-libraries/
-views/
-admin/
-public/
-shared/</p>
+<p>controllers/models/libraries/views/admin/public/shared/</p>
 <p>This also adds these folders to the correct include paths.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />

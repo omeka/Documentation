@@ -37,7 +37,7 @@ Omeka_Test_Helper_Mail
     
         Return the text of the n'th email that was sent during the test.
         
-        Note that this will not return correct results if reset() was not invoked between test runs.
+        Note that this will not return correct results if reset() was notinvoked between test runs.
         
         :param integer $index: 
         :returns: string
