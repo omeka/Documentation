@@ -6,9 +6,7 @@ Omeka_Http_Client
 
     Wrapper for Zend_Http_Client.
     
-    Adds the following functionality:
-    
-    Retries on timeouts.
+    Adds the following functionality: retries on timeouts.
 
     .. php:attr:: _maxRetries
     

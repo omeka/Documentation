@@ -12,7 +12,7 @@ Summary
 
     Determine whether a specific element uses HTML.
     
-    By default this will test the first element text, though it is possible to test against a different element text by
+    By default this will test the first element text, though it is possible totest against a different element text by
     modifying the $index parameter.
     
     :param string $elementSetName: 

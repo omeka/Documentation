@@ -18,7 +18,7 @@ Omeka_Application_Resource_Db
     .. php:method:: setinipath(string $path)
     
         Set the path to the database configuration file.
+        
         Allows {@link $_iniPath} to be set by the app configuration.
         
-        :param string $path: 
-        :returns: void
+        :param string $path:

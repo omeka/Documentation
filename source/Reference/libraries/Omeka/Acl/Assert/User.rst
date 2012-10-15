@@ -4,8 +4,8 @@ Omeka_Acl_Assert_User
 
 .. php:class:: Omeka_Acl_Assert_User
 
-    Assert whether or not a specific user is allowed access to that person's 
-    user account data.
+    Assert whether or not a specific user is allowed access to that person's user 
+    account data.
 
     .. php:attr:: _allowSelf
     

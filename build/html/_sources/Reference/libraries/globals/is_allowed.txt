@@ -12,9 +12,10 @@ Summary
 
     Check the ACL to determine whether the current user has proper permissions.
     
-    <code>
-    is_allowed('Items', 'showNotPublic');
-    </code>
+    .. code-block:: php 
+    
+    
+    	                   is_allowed('Items', 'showNotPublic');
     Will check if the user has permission to view Items that are not public.
     
     :param unknown $resource: 

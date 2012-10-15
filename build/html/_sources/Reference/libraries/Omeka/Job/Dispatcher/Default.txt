@@ -6,7 +6,7 @@ Omeka_Job_Dispatcher_Default
 
     Dispatches jobs in Omeka.
     
-    This provides a clean interface to adapter classes that deal with thedetails of how to dispatch jobs.  It is initialized in the Jobsbootstrap resource and can be accessed via the registry.
+    This provides a clean interface to adapter classes that deal with the detailsof how to dispatch jobs. It is initialized in the Jobs bootstrap resource andcan be accessed via the registry.
     
     Standard usage, where Job_Class_Name corresponds to a valid class name for a class implementing Omeka_JobInterface:
     

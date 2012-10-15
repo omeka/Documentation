@@ -12,7 +12,7 @@ Summary
 
     Return HTML for a square thumbnail image assigned to an item.
     
-    Default parameters will use the first image, but that can be changed by modifying $index.
+    Default parameters will use the first image, but that can be changed bymodifying $index.
     
     :param array $props: 
     :param integer $index: 

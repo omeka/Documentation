@@ -12,9 +12,8 @@ Summary
 
     Return a link to the file metadata page for a particular file.
     
-    If no File object is specified, this will determine the file to use through context. The text of the link defaults
-    to the DC:Title of the file record, 
-    then to the original filename, unless otherwise specified.
+    If no File object is specified, this will determine the file to use throughcontext. The text of the link defaults to
+    the DC:Title of the file record,then to the original filename, unless otherwise specified.
     
     :param array $attributes: 
     :param string $text: 

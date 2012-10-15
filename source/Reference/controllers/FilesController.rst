@@ -4,8 +4,6 @@ FilesController
 
 .. php:class:: FilesController
 
-    All URLs for files are routed through this controller.
-
     .. php:attr:: contexts
     
 

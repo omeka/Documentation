@@ -26,7 +26,7 @@
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../index.html" />
     <link rel="up" title="Tutorials for Plugin and Theme Developers" href="index.html" />
     <link rel="next" title="Principles of Omeka 2.0" href="principlesOfOmeka2.html" />
-    <link rel="prev" title="Tutorials for Plugin and Theme Developers" href="index.html" />
+    <link rel="prev" title="Best Practices for Plugin Development" href="bestPracticesPlugins.html" />
     <link rel="stylesheet" href="../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="principlesOfOmeka2.html" title="Principles of Omeka 2.0"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="index.html" title="Tutorials for Plugin and Theme Developers"
+          <a href="bestPracticesPlugins.html" title="Best Practices for Plugin Development"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -63,24 +63,25 @@
 <div class="section" id="upgrading-plugins">
 <h2>Upgrading Plugins<a class="headerlink" href="#upgrading-plugins" title="Permalink to this headline">¶</a></h2>
 <p>The basic tasks you will need to do to upgrade your plugins for Omeka 2.0 are:</p>
-<ul class="simple">
-<li>Change the classes your controllers and models extend from</li>
+<ul>
+<li><p class="first">Change the classes your controllers and models extend from</p>
+<blockquote>
+<div><ul class="simple">
+<li>Omeka_Controller_Action becomes <a class="reference internal" href="../Reference/libraries/Omeka/Controller/AbstractActionController.html#Omeka_Controller_AbstractActionController" title="Omeka_Controller_AbstractActionController"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Controller_AbstractActionController</span></tt></a></li>
+<li>Omeka_Record becomes <a class="reference internal" href="../Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Record_AbstractRecord</span></tt></a></li>
 </ul>
-<p>** Omeka_Controller_Action becomes <em class="xref std std-ref">Omeka_Controller_AbstractActionController</em>
-** Omeka_Record becomes Omeka_Record_AbstractRecord <em class="xref std std-ref">Omeka_Controller_AbstractRecord</em></p>
-<ul class="simple">
-<li>Update any helper functions you use in hooks for filters</li>
-<li>Change your hook callbacks to have an array passed in.</li>
-</ul>
-<p>Typically, the expected variable name passed in in version 1.5 (e.g. <tt class="docutils literal"><span class="pre">$user</span></tt>) becomes the key for the corresponding data in the
-array, e.g. <tt class="docutils literal"><span class="pre">$user</span> <span class="pre">=</span> <span class="pre">$args['user'];</span></tt> See <a class="reference external" href="http://omeka.org/codex/Updating_Plugins_For_2.0#Hooks_and_Filters">Updating Plugins for 2.0: Hooks and Filters</a></p>
-<ul class="simple">
-<li>Update any filters you define. The third argument must now be an array to fit with the standard above</li>
-<li>Change the helper functions used in the views</li>
-</ul>
-<p>** All functions of the form <tt class="docutils literal"><span class="pre">loop_{record</span> <span class="pre">type}</span></tt>, like <tt class="docutils literal"><span class="pre">loop_items()</span></tt>, become <tt class="docutils literal"><span class="pre">loop(&quot;{record</span> <span class="pre">type}&quot;)</span></tt></p>
-<ul class="simple">
-<li>Change usage of function that previously echoed content. For example, <tt class="docutils literal"><span class="pre">&lt;?php</span> <span class="pre">head();</span> <span class="pre">?&gt;</span></tt> should now be <tt class="docutils literal"><span class="pre">&lt;?php</span> <span class="pre">echo</span> <span class="pre">head();</span> <span class="pre">?&gt;</span></tt>.</li>
+</div></blockquote>
+</li>
+<li><p class="first">Update any helper functions you use in hooks for filters</p>
+</li>
+<li><p class="first">Change your hook callbacks to have an array passed in. Typically, the expected variable name passed in in version 1.5 (e.g. <tt class="docutils literal"><span class="pre">$user</span></tt>) becomes the key for the corresponding data in the array, e.g. <tt class="docutils literal"><span class="pre">$user</span> <span class="pre">=</span> <span class="pre">$args['user'];</span></tt> See <a class="reference external" href="http://omeka.org/codex/Updating_Plugins_For_2.0#Hooks_and_Filters">Updating Plugins for 2.0: Hooks and Filters</a></p>
+</li>
+<li><p class="first">Update any filters you define. The third argument must now be an array to fit with the standard above</p>
+</li>
+<li><p class="first">Change the helper functions used in the views ** All functions of the form <tt class="docutils literal"><span class="pre">loop_{record</span> <span class="pre">type}</span></tt>, like <tt class="docutils literal"><span class="pre">loop_items()</span></tt>, become <tt class="docutils literal"><span class="pre">loop(&quot;{record</span> <span class="pre">type}&quot;)</span></tt></p>
+</li>
+<li><p class="first">Change usage of function that previously echoed content. For example, <tt class="docutils literal"><span class="pre">&lt;?php</span> <span class="pre">head();</span> <span class="pre">?&gt;</span></tt> should now be <tt class="docutils literal"><span class="pre">&lt;?php</span> <span class="pre">echo</span> <span class="pre">head();</span> <span class="pre">?&gt;</span></tt>.</p>
+</li>
 </ul>
 <div class="section" id="controllers">
 <h3>Controllers<a class="headerlink" href="#controllers" title="Permalink to this headline">¶</a></h3>
@@ -139,8 +140,8 @@ array, e.g. <tt class="docutils literal"><span class="pre">$user</span> <span cl
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="index.html"
-                        title="previous chapter">Tutorials for Plugin and Theme Developers</a></p>
+  <p class="topless"><a href="bestPracticesPlugins.html"
+                        title="previous chapter">Best Practices for Plugin Development</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="principlesOfOmeka2.html"
                         title="next chapter">Principles of Omeka 2.0</a></p>
@@ -181,7 +182,7 @@ array, e.g. <tt class="docutils literal"><span class="pre">$user</span> <span cl
           <a href="principlesOfOmeka2.html" title="Principles of Omeka 2.0"
              >next</a> |</li>
         <li class="right" >
-          <a href="index.html" title="Tutorials for Plugin and Theme Developers"
+          <a href="bestPracticesPlugins.html" title="Best Practices for Plugin Development"
              >previous</a> |</li>
     
         <li><a href="../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>

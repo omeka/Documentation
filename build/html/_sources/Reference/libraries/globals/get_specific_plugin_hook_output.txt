@@ -12,7 +12,7 @@ Summary
 
     Get the output of a specific plugin's hook as a string.
     
-    This is like get_plugin_hook_output() but only calls the hook within the provided plugin.
+    This is like get_plugin_hook_output() but only calls the hook within theprovided plugin.
     
     :returns: string|null
 

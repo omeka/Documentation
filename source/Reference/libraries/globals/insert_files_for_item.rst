@@ -15,7 +15,16 @@ Summary
     :param Item|integer $item: 
     :param string|Omeka_File_Ingest_AbstractIngest $transferStrategy: 
     :param array $files: 
-    :param array $options: 
+    :param array $options: Available Options:         
+    
+        .. raw:: html
+    
+           <ul>
+                 <li>'ignore_invalid_files': boolean false by default.  Determine 
+                       whether or not to throw exceptions when a file is not valid.
+                 </li>
+             </ul>
+    
     :returns: array
 
 *****

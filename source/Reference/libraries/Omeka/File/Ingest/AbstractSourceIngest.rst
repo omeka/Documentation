@@ -5,11 +5,10 @@ Omeka_File_Ingest_AbstractSourceIngest
 .. php:class:: Omeka_File_Ingest_AbstractSourceIngest
 
     This abstract class encapsulates all the behavior that facilitates file 
-    ingest based on the assumption that each file can be retrieved via a
-    string containing both the name and location of that file.
+    ingest based on the assumption that each file can be retrieved via a string 
+    containing both the name and location of that file.
     
-    Applies to: URLs, file paths on a server.
-    Does not apply to: direct HTTP uploads.
+    Applies to: URLs, file paths on a server. Does not apply to: direct HTTP uploads.
     
     Also, if the original filename is not properly represented by the sourceidentifier (incorrect file extension, etc.), a more accurate filename can beprovided via the 'filename' attribute.
 

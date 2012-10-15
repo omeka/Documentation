@@ -4,10 +4,10 @@ Omeka_Controller_Plugin_Admin
 
 .. php:class:: Omeka_Controller_Plugin_Admin
 
-    This controller plugin allows for all functionality that is specific to the Admin theme.
+    This controller plugin allows for all functionality that is specific to the 
+    Admin theme.
     
-    For now, all this includes is preventing unauthenticated access to all admin pages, 
-    with the exception of a few white-listed URLs, which are stored in this plugin.
+    For now, all this includes is preventing unauthenticated access to all adminpages, with the exception of a few white-listed URLs, which are stored inthis plugin.
     
     This controller plugin should be loaded only in the admin bootstrap.
 

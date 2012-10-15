@@ -6,7 +6,7 @@ Omeka_Db
 
     Database manager object for Omeka
     
-    While mostly a wrapper for a Zend_Db_Adapter instance, this also provides shortcuts for retrieving table objects and table names for use in SQL.
+    While mostly a wrapper for a Zend_Db_Adapter instance, this also providesshortcuts for retrieving table objects and table names for use in SQL.
 
     .. php:attr:: prefix
     
@@ -51,8 +51,7 @@ Omeka_Db
     
         Set logger for SQL queries.
         
-        :param Zend_Log $logger: 
-        :returns: void
+        :param Zend_Log $logger:
 
     .. php:method:: getAdapter()
     
@@ -93,8 +92,7 @@ Omeka_Db
         Prevents the creation of unnecessary instances.
         
         :param string $alias: 
-        :param Omeka_Db_Table $table: 
-        :returns: void
+        :param Omeka_Db_Table $table:
 
     .. php:method:: insert(string $table, array $values = Array)
     

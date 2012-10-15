@@ -4,8 +4,6 @@ ErrorController
 
 .. php:class:: ErrorController
 
-    Handles all exceptions that are thrown in controllers.
-
     .. php:method:: errorAction()
 
     .. php:method:: _getException()

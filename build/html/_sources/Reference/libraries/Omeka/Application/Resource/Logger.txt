@@ -4,8 +4,8 @@ Omeka_Application_Resource_Logger
 
 .. php:class:: Omeka_Application_Resource_Logger
 
-    If logging has been enabled in the config file, then set up 
-    Zend's logging mechanism.
+    If logging has been enabled in the config file, then set up Zend's logging 
+    mechanism.
 
     .. php:method:: init()
     

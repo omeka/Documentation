@@ -12,7 +12,7 @@ Summary
 
     Return the CSS link tags that will be used on the page.
     
-    This should generally be used with echo to print the scripts in the page head.
+    This should generally be used with echo to print the scripts in the pagehead.
     
     :returns: string
 

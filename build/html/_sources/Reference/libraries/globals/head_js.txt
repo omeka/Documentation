@@ -12,7 +12,7 @@ Summary
 
     Return the JavaScript tags that will be used on the page.
     
-    This should generally be used with echo to print the scripts in the page head.
+    This should generally be used with echo to print the scripts in the pagehead.
     
     :param bool $includeDefaults: Whether the default javascripts should be included. Defaults to true.
     :returns: string

@@ -4,11 +4,10 @@ Omeka_Controller_Plugin_Debug
 
 .. php:class:: Omeka_Controller_Plugin_Debug
 
-    This controller plugin allows for debugging Request objects
-    without inserting debugging code into the Zend Framework
-    code files.
+    This controller plugin allows for debugging Request objects without inserting 
+    debugging code into the Zend Framework code files.
     
-    Debugging web requests is enabled by setting 'debug.request = true'in the config.ini file.
+    Debugging web requests is enabled by setting 'debug.request = true' in theconfig.ini file.
 
     .. php:attr:: _requestMarkup
     

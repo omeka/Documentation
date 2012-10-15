@@ -5,8 +5,6 @@ Omeka_Db_Migration_Manager
 .. php:class:: Omeka_Db_Migration_Manager
 
     Manages database migrations (both upgrades and downgrades).
-    
-    Partially ported from Ruby on Rails.
 
     .. php:const:: MIGRATION_TABLE_NAME
     

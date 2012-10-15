@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Libraries/Globals (Theming Functions) &mdash; Omeka Documentation v2.0 documentation</title>
+    <title>Global Functions &mdash; Omeka Documentation v2.0 documentation</title>
     <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -58,10 +58,8 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="libraries-globals-theming-functions">
-<h1>Libraries/Globals (Theming Functions)<a class="headerlink" href="#libraries-globals-theming-functions" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="all-functions">
-<h2>All Functions<a class="headerlink" href="#all-functions" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="global-functions">
+<h1>Global Functions<a class="headerlink" href="#global-functions" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="__.html">__ (double underscore)</a></li>
@@ -72,6 +70,9 @@
 <li class="toctree-l1"><a class="reference internal" href="add_filter.html">add_filter</a></li>
 <li class="toctree-l1"><a class="reference internal" href="add_plugin_hook.html">add_plugin_hook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="add_translation_source.html">add_translation_source</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_bar.html">admin_bar</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_bar_class.html">admin_bar_class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_bar_css.html">admin_bar_css</a></li>
 <li class="toctree-l1"><a class="reference internal" href="admin_url.html">admin_url</a></li>
 <li class="toctree-l1"><a class="reference internal" href="all_element_texts.html">all_element_texts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="apply_filters.html">apply_filters</a></li>
@@ -84,6 +85,9 @@
 <li class="toctree-l1"><a class="reference internal" href="css_src.html">css_src</a></li>
 <li class="toctree-l1"><a class="reference internal" href="current_url.html">current_url</a></li>
 <li class="toctree-l1"><a class="reference internal" href="current_user.html">current_user</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_display_logo.html">custom_display_logo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_header_background.html">custom_header_background</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_header_image.html">custom_header_image</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debug.html">debug</a></li>
 <li class="toctree-l1"><a class="reference internal" href="delete_option.html">delete_option</a></li>
 <li class="toctree-l1"><a class="reference internal" href="element_exists.html">element_exists</a></li>
@@ -101,6 +105,7 @@
 <li class="toctree-l1"><a class="reference internal" href="get_collection_for_item.html">get_collection_for_item</a></li>
 <li class="toctree-l1"><a class="reference internal" href="get_current_action_contexts.html">get_current_action_contexts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="get_current_record.html">get_current_record</a></li>
+<li class="toctree-l1"><a class="reference internal" href="get_custom_search_record_types.html">get_custom_search_record_types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="get_db.html">get_db</a></li>
 <li class="toctree-l1"><a class="reference internal" href="get_html_lang.html">get_html_lang</a></li>
 <li class="toctree-l1"><a class="reference internal" href="get_loop_records.html">get_loop_records</a></li>
@@ -119,6 +124,7 @@
 <li class="toctree-l1"><a class="reference internal" href="get_recent_tags.html">get_recent_tags</a></li>
 <li class="toctree-l1"><a class="reference internal" href="get_record_by_id.html">get_record_by_id</a></li>
 <li class="toctree-l1"><a class="reference internal" href="get_records.html">get_records</a></li>
+<li class="toctree-l1"><a class="reference internal" href="get_search_record_types.html">get_search_record_types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="get_specific_plugin_hook_output.html">get_specific_plugin_hook_output</a></li>
 <li class="toctree-l1"><a class="reference internal" href="get_table_options.html">get_table_options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="get_theme_option.html">get_theme_option</a></li>
@@ -190,8 +196,6 @@
 <li class="toctree-l1"><a class="reference internal" href="random_featured_collection.html">random_featured_collection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="random_featured_item.html">random_featured_item</a></li>
 <li class="toctree-l1"><a class="reference internal" href="random_featured_items.html">random_featured_items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="random_features_items.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="random_features_items.html#examples">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_url.html">record_url</a></li>
 <li class="toctree-l1"><a class="reference internal" href="release_object.html">release_object</a></li>
 <li class="toctree-l1"><a class="reference internal" href="revert_theme_base_url.html">revert_theme_base_url</a></li>
@@ -199,15 +203,15 @@
 <li class="toctree-l1"><a class="reference internal" href="set_current_record.html">set_current_record</a></li>
 <li class="toctree-l1"><a class="reference internal" href="set_loop_records.html">set_loop_records</a></li>
 <li class="toctree-l1"><a class="reference internal" href="set_option.html">set_option</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_theme_base.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_theme_base.html#examples">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="set_theme_base_url.html">set_theme_base_url</a></li>
 <li class="toctree-l1"><a class="reference internal" href="set_theme_option.html">set_theme_option</a></li>
+<li class="toctree-l1"><a class="reference internal" href="show_untitled_items.html">show_untitled_items</a></li>
 <li class="toctree-l1"><a class="reference internal" href="simple_search_form.html">simple_search_form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="snippet.html">snippet</a></li>
 <li class="toctree-l1"><a class="reference internal" href="snippet_by_word_count.html">snippet_by_word_count</a></li>
 <li class="toctree-l1"><a class="reference internal" href="src.html">src</a></li>
 <li class="toctree-l1"><a class="reference internal" href="strip_formatting.html">strip_formatting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stripslashes_deep.html">stripslashes_deep</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tag_attributes.html">tag_attributes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tag_cloud.html">tag_cloud</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tag_string.html">tag_string</a></li>
@@ -218,232 +222,10 @@
 <li class="toctree-l1"><a class="reference internal" href="update_item.html">update_item</a></li>
 <li class="toctree-l1"><a class="reference internal" href="url.html">url</a></li>
 <li class="toctree-l1"><a class="reference internal" href="url_to_link.html">url_to_link</a></li>
+<li class="toctree-l1"><a class="reference internal" href="utf8_htmlspecialchars.html">utf8_htmlspecialchars</a></li>
 <li class="toctree-l1"><a class="reference internal" href="web_path_to.html">web_path_to</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xml_escape.html">xml_escape</a></li>
 </ul>
-</div>
-</div>
-<div class="section" id="item-functions">
-<h2>Item Functions<a class="headerlink" href="#item-functions" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="item_citation.html">item_citation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_field_uses_html.html">item_field_uses_html</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_fullsize.html">item_fullsize</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_has_files.html">item_has_files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_has_tags.html">item_has_tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_has_thumbnail.html">item_has_thumbnail</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_image.html">item_image</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_square_thumbnail.html">item_square_thumbnail</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_thumbnail.html">item_thumbnail</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_type_elements.html">item_type_elements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="items_output_url.html">items_output_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="items_search_form.html">items_search_form</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="collection-functions">
-<h2>Collection Functions<a class="headerlink" href="#collection-functions" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="collection_has_collectors.html">collection_has_collectors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_collection_for_item.html">get_collection_for_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_random_featured_collection.html">get_random_featured_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_recent_collections.html">get_recent_collections</a></li>
-<li class="toctree-l1"><a class="reference internal" href="insert_collection.html">insert_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_collection.html">link_to_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_collection_for_item.html">link_to_collection_for_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_items_in_collection.html">link_to_items_in_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="random_featured_collection.html">random_featured_collection</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="linking-functions">
-<h2>Linking Functions<a class="headerlink" href="#linking-functions" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="link_to.html">link_to</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_admin_home_page.html">link_to_admin_home_page</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_collection.html">link_to_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_collection_for_item.html">link_to_collection_for_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_file_show.html">link_to_file_show</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_home_page.html">link_to_home_page</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_item.html">link_to_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_item_search.html">link_to_item_search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_items_browse.html">link_to_items_browse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_items_in_collection.html">link_to_items_in_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_items_rss.html">link_to_items_rss</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_items_with_item_type.html">link_to_items_with_item_type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_next_item_show.html">link_to_next_item_show</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_previous_item_show.html">link_to_previous_item_show</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="looping-functions">
-<h2>Looping Functions<a class="headerlink" href="#looping-functions" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="get_loop_records.html">get_loop_records</a></li>
-<li class="toctree-l1"><a class="reference internal" href="has_loop_records.html">has_loop_records</a></li>
-<li class="toctree-l1"><a class="reference internal" href="loop.html">loop</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_loop_records.html">set_loop_records</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="page-building-functions">
-<h2>Page Building Functions<a class="headerlink" href="#page-building-functions" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="nav.html">nav</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_nav.html">public_nav</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_nav_items.html">public_nav_items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_nav_main.html">public_nav_main</a></li>
-<li class="toctree-l1"><a class="reference internal" href="queue_css_file.html">queue_css_file</a></li>
-<li class="toctree-l1"><a class="reference internal" href="queue_css_string.html">queue_css_string</a></li>
-<li class="toctree-l1"><a class="reference internal" href="queue_js_file.html">queue_js_file</a></li>
-<li class="toctree-l1"><a class="reference internal" href="queue_js_string.html">queue_js_string</a></li>
-<li class="toctree-l1"><a class="reference internal" href="random_featured_collection.html">random_featured_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="random_featured_item.html">random_featured_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="random_featured_items.html">random_featured_items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="random_features_items.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="random_features_items.html#examples">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="items_search_form.html">items_search_form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_item_search.html">link_to_item_search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="search_filters.html">search_filters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="simple_search_form.html">simple_search_form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_url.html">public_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="admin_url.html">admin_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="is_admin_theme.html">is_admin_theme</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_admin_home_page.html">link_to_admin_home_page</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="data-retrieval-and-formatting-functions">
-<h2>Data Retrieval and Formatting Functions<a class="headerlink" href="#data-retrieval-and-formatting-functions" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="__.html">__ (double underscore)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_acl.html">get_acl</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_collection_for_item.html">get_collection_for_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_current_action_contexts.html">get_current_action_contexts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_current_record.html">get_current_record</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_db.html">get_db</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_html_lang.html">get_html_lang</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_loop_records.html">get_loop_records</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_next_item.html">get_next_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_option.html">get_option</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_plugin_broker.html">get_plugin_broker</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_plugin_hook_output.html">get_plugin_hook_output</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_plugin_ini.html">get_plugin_ini</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_previous_item.html">get_previous_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_random_featured_collection.html">get_random_featured_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_random_featured_item.html">get_random_featured_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_random_featured_items.html">get_random_featured_items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_recent_collections.html">get_recent_collections</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_recent_files.html">get_recent_files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_recent_items.html">get_recent_items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_recent_tags.html">get_recent_tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_record_by_id.html">get_record_by_id</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_records.html">get_records</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_specific_plugin_hook_output.html">get_specific_plugin_hook_output</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_table_options.html">get_table_options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_theme_option.html">get_theme_option</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_user_roles.html">get_user_roles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_view.html">get_view</a></li>
-<li class="toctree-l1"><a class="reference internal" href="metadata.html">metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="option.html">option</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pluck.html">pluck</a></li>
-<li class="toctree-l1"><a class="reference internal" href="src.html">src</a></li>
-<li class="toctree-l1"><a class="reference internal" href="strip_formatting.html">strip_formatting</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="data-insertion-functions">
-<h2>Data Insertion Functions<a class="headerlink" href="#data-insertion-functions" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="insert_collection.html">insert_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="insert_element_set.html">insert_element_set</a></li>
-<li class="toctree-l1"><a class="reference internal" href="insert_files_for_item.html">insert_files_for_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="insert_item.html">insert_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="insert_item_type.html">insert_item_type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_current_record.html">set_current_record</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_loop_records.html">set_loop_records</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_option.html">set_option</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_theme_base.html">Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_theme_base.html#examples">Examples</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_theme_base_url.html">set_theme_base_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_theme_option.html">set_theme_option</a></li>
-<li class="toctree-l1"><a class="reference internal" href="update_item.html">update_item</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="tag-functions">
-<h2>Tag Functions<a class="headerlink" href="#tag-functions" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="auto_discovery_link_tags.html">auto_discovery_link_tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="body_tag.html">body_tag</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_recent_tags.html">get_recent_tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="has_tags.html">has_tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_has_tags.html">item_has_tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="js_tag.html">js_tag</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tag_attributes.html">tag_attributes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tag_cloud.html">tag_cloud</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tag_string.html">tag_string</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="url-and-link-functions">
-<h2>Url and Link Functions<a class="headerlink" href="#url-and-link-functions" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="link_to.html">link_to</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_admin_home_page.html">link_to_admin_home_page</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_collection.html">link_to_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_collection_for_item.html">link_to_collection_for_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_file_show.html">link_to_file_show</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_home_page.html">link_to_home_page</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_item.html">link_to_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_item_search.html">link_to_item_search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_items_browse.html">link_to_items_browse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_items_in_collection.html">link_to_items_in_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_items_rss.html">link_to_items_rss</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_items_with_item_type.html">link_to_items_with_item_type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_next_item_show.html">link_to_next_item_show</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_previous_item_show.html">link_to_previous_item_show</a></li>
-<li class="toctree-l1"><a class="reference internal" href="physical_path_to.html">physical_path_to</a></li>
-<li class="toctree-l1"><a class="reference internal" href="web_path_to.html">web_path_to</a></li>
-<li class="toctree-l1"><a class="reference internal" href="absolute_url.html">absolute_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="admin_url.html">admin_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="current_url.html">current_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="file_display_url.html">file_display_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="is_current_url.html">is_current_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="items_output_url.html">items_output_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_url.html">public_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_url.html">record_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="revert_theme_base_url.html">revert_theme_base_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_theme_base_url.html">set_theme_base_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="url.html">url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="url_to_link.html">url_to_link</a></li>
-</ul>
-</div>
-</div>
-<div class="section" id="javascript-and-css-functions">
-<h2>Javascript and CSS Functions<a class="headerlink" href="#javascript-and-css-functions" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="css_src.html">css_src</a></li>
-<li class="toctree-l1"><a class="reference internal" href="head_css.html">head_css</a></li>
-<li class="toctree-l1"><a class="reference internal" href="queue_css_file.html">queue_css_file</a></li>
-<li class="toctree-l1"><a class="reference internal" href="queue_css_string.html">queue_css_string</a></li>
-<li class="toctree-l1"><a class="reference internal" href="head_js.html">head_js</a></li>
-<li class="toctree-l1"><a class="reference internal" href="js_escape.html">js_escape</a></li>
-<li class="toctree-l1"><a class="reference internal" href="js_tag.html">js_tag</a></li>
-<li class="toctree-l1"><a class="reference internal" href="queue_js_file.html">queue_js_file</a></li>
-<li class="toctree-l1"><a class="reference internal" href="queue_js_string.html">queue_js_string</a></li>
-</ul>
-</div>
 </div>
 </div>
 
@@ -456,46 +238,6 @@
             <p class="logo"><a href="../../../index.html">
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
-  <h3><a href="../../../index.html">Table Of Contents</a></h3>
-  <ul>
-<li><a class="reference internal" href="#">Libraries/Globals (Theming Functions)</a><ul>
-<li><a class="reference internal" href="#all-functions">All Functions</a><ul>
-</ul>
-</li>
-<li><a class="reference internal" href="#item-functions">Item Functions</a><ul>
-</ul>
-</li>
-<li><a class="reference internal" href="#collection-functions">Collection Functions</a><ul>
-</ul>
-</li>
-<li><a class="reference internal" href="#linking-functions">Linking Functions</a><ul>
-</ul>
-</li>
-<li><a class="reference internal" href="#looping-functions">Looping Functions</a><ul>
-</ul>
-</li>
-<li><a class="reference internal" href="#page-building-functions">Page Building Functions</a><ul>
-</ul>
-</li>
-<li><a class="reference internal" href="#data-retrieval-and-formatting-functions">Data Retrieval and Formatting Functions</a><ul>
-</ul>
-</li>
-<li><a class="reference internal" href="#data-insertion-functions">Data Insertion Functions</a><ul>
-</ul>
-</li>
-<li><a class="reference internal" href="#tag-functions">Tag Functions</a><ul>
-</ul>
-</li>
-<li><a class="reference internal" href="#url-and-link-functions">Url and Link Functions</a><ul>
-</ul>
-</li>
-<li><a class="reference internal" href="#javascript-and-css-functions">Javascript and CSS Functions</a><ul>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
   <h4>Previous topic</h4>
   <p class="topless"><a href="../../controllers/helpers/ThemeConfiguration.html"
                         title="previous chapter">Omeka_Controller_Action_Helper_ThemeConfiguration</a></p>

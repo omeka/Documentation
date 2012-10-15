@@ -65,7 +65,8 @@
 <dt id="Omeka_Application">
 <em class="property">class </em><tt class="descname">Omeka_Application</tt><a class="headerlink" href="#Omeka_Application" title="Permalink to this definition">¶</a></dt>
 <dd><p>Core class used to bootstrap the Omeka environment.</p>
-<p>Various duties include, but are not limited to, sanitizing magic_quotes,setting up class autoload, database, configuration files, logging, plugins,front controller, etc.</p>
+<p>Various duties include, but are not limited to setting up class autoload,
+database, configuration files, logging, plugins, front controller, etc.</p>
 <p>When any core resource returns from init(), the result is stored in thebootstrap container. Other parts of the application can get the resourcesfrom the bootstrap when needed.</p>
 <dl class="method">
 <dt id="Omeka_Application::__construct">
@@ -76,7 +77,7 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$environment</strong> (<em>string</em>) &#8211; Environment name.</li>
+<li><strong>$environment</strong> (<em>string</em>) &#8211; The environment name.</li>
 <li><strong>$options</strong> (<em>string|array|Zend_Config</em>) &#8211; Application configuration.</li>
 </ul>
 </td>
@@ -89,30 +90,6 @@
 <dt id="Omeka_Application::initialize">
 <tt class="descname">initialize</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Application::initialize" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bootstrap the entire application.</p>
-<p>This will initialize all the elements of the application.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="Omeka_Application::sanitizeMagicQuotes">
-<tt class="descname">sanitizeMagicQuotes</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Application::sanitizeMagicQuotes" title="Permalink to this definition">¶</a></dt>
-<dd><p>If magic_quotes has been enabled, then strip all slashes from the $_GET,
-$_POST and $_REQUEST superglobals.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
-</tr>
-</tbody>
-</table>
 </dd></dl>
 
 <dl class="method">
@@ -123,40 +100,16 @@ $_POST and $_REQUEST superglobals.</p>
 
 <dl class="method">
 <dt id="Omeka_Application::_displayErrorPage">
-<tt class="descname">_displayErrorPage</tt><big>(</big><em>Exception $e</em>, <em>$title</em><big>)</big><a class="headerlink" href="#Omeka_Application::_displayErrorPage" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">_displayErrorPage</tt><big>(</big><em>Exception $e</em>, <em>string $title</em><big>)</big><a class="headerlink" href="#Omeka_Application::_displayErrorPage" title="Permalink to this definition">¶</a></dt>
 <dd><p>Print an HTML page to display errors when starting the application.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>$e</strong> (<em>Exception</em>) &#8211; </li>
-<li><strong>$title</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$title</strong> (<em>string</em>) &#8211; The title of the error page.</li>
 </ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="Omeka_Application::_stripSlashes">
-<tt class="descname">_stripSlashes</tt><big>(</big><em>mixed $value</em><big>)</big><a class="headerlink" href="#Omeka_Application::_stripSlashes" title="Permalink to this definition">¶</a></dt>
-<dd><p>Strip slashes.</p>
-<p>Filters request superglobals in order to avoid problems with PHP&#8217;smagic_quotes setting.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$value</strong> (<em>mixed</em>) &#8211; </li>
-</ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mixed</p>
 </td>
 </tr>
 </tbody>

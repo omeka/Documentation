@@ -12,7 +12,7 @@ Summary
 
     Get the view object.
     
-    Should be used only to avoid function scope issues within other theme helper functions.
+    Should be used only to avoid function scope issues within other theme helperfunctions.
     
     :returns: Omeka_View
 

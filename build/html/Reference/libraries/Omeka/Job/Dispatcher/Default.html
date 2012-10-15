@@ -67,7 +67,7 @@
 <dt id="Omeka_Job_Dispatcher_Default">
 <em class="property">class </em><tt class="descname">Omeka_Job_Dispatcher_Default</tt><a class="headerlink" href="#Omeka_Job_Dispatcher_Default" title="Permalink to this definition">¶</a></dt>
 <dd><p>Dispatches jobs in Omeka.</p>
-<p>This provides a clean interface to adapter classes that deal with thedetails of how to dispatch jobs.  It is initialized in the Jobsbootstrap resource and can be accessed via the registry.</p>
+<p>This provides a clean interface to adapter classes that deal with the detailsof how to dispatch jobs. It is initialized in the Jobs bootstrap resource andcan be accessed via the registry.</p>
 <p>Standard usage, where Job_Class_Name corresponds to a valid class name for a class implementing Omeka_JobInterface:</p>
 <blockquote>
 <div><div class="highlight-php"><div class="highlight"><pre><span class="nv">$dispatcher</span> <span class="o">=</span> <span class="nx">Zend_Registry</span><span class="o">::</span><span class="na">get</span><span class="p">(</span><span class="s1">&#39;job_dispatcher&#39;</span><span class="p">);</span>

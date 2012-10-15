@@ -6,9 +6,7 @@ Omeka_Application_Resource_Options
 
     Retrieve all the options from the database.
     
-    Options are essentially site-wide variables that are stored in the database, for example the title of the site.
-    
-    Failure to load this resource currently indicates that Omeka needs to beinstalled.
+    Options are essentially site-wide variables that are stored in the database,for example the title of the site. Failure to load this resource currentlyindicates that Omeka needs to be installed.
 
     .. php:attr:: _installerRedirect
     

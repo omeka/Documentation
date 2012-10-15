@@ -6,9 +6,7 @@ Omeka_Job_AbstractJob
 
     Abstract implementation of an Omeka job.
     
-    Most plugin implementations of jobs will extend this class to gainconvenient access to the database and other potentially importantresources.
-    
-    For information on how to dispatch jobs, see Omeka_Job_Dispatcher_DispatcherInterface.
+    Most plugin implementations of jobs will extend this class to gain convenientaccess to the database and other potentially important resources.
 
     .. php:attr:: _db
     

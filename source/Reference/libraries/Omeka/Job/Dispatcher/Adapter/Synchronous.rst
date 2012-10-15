@@ -4,10 +4,10 @@ Omeka_Job_Dispatcher_Adapter_Synchronous
 
 .. php:class:: Omeka_Job_Dispatcher_Adapter_Synchronous
 
-    Dispatcher for executing jobs in real-time, i.e. executing within the 
-    browser request.
+    Dispatcher for executing jobs in real-time, i.e. executing within the browser 
+    request.
     
-    WARNING: While especially useful for simple jobs or instances where it isnot possible to use one of the other adapters, keep in mind that long jobsmay lead to request timeouts or open the possibility of DoS attacks bymalicious users.
+    WARNING: While especially useful for simple jobs or instances where it is notpossible to use one of the other adapters, keep in mind that long jobs maylead to request timeouts or open the possibility of DoS attacks by malicioususers.
 
     .. php:attr:: _options
     

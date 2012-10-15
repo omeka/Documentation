@@ -24,6 +24,9 @@
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
+    <link rel="up" title="Global Functions" href="index.html" />
+    <link rel="next" title="get_plugin_broker" href="get_plugin_broker.html" />
+    <link rel="prev" title="get_next_item" href="get_next_item.html" />
     <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -34,12 +37,20 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="get_plugin_broker.html" title="get_plugin_broker"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="get_next_item.html" title="get_next_item"
+             accesskey="P">previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
- 
+
+          <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Global Functions</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -56,10 +67,10 @@
 <dt id="get_option">
 <tt class="descname">get_option</tt><big>(</big><em>$name</em><big>)</big><a class="headerlink" href="#get_option" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get an option from the options table.</p>
-<p>If the returned value represents an object or array, it must be unserialized by the caller before use. For example:
-&lt;code&gt;
-$object = unserialize(get_option(&#8216;plugin_object&#8217;));
-&lt;/code&gt;</p>
+<p>If the returned value represents an object or array, it must be unserializedby the caller before use. For example:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$object</span> <span class="o">=</span> <span class="nb">unserialize</span><span class="p">(</span><span class="nx">get_option</span><span class="p">(</span><span class="s1">&#39;plugin_object&#39;</span><span class="p">));</span>
+</pre></div>
+</div>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -105,6 +116,12 @@ $object = unserialize(get_option(&#8216;plugin_object&#8217;));
 </li>
 </ul>
 
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="get_next_item.html"
+                        title="previous chapter">get_next_item</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="get_plugin_broker.html"
+                        title="next chapter">get_plugin_broker</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -138,12 +155,20 @@ $object = unserialize(get_option(&#8216;plugin_object&#8217;));
         <li class="right" style="margin-right: 10px">
           <a href="../../../genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="get_plugin_broker.html" title="get_plugin_broker"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="get_next_item.html" title="get_next_item"
+             >previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
- 
+
+          <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="index.html" >Global Functions</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

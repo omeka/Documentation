@@ -12,10 +12,13 @@ Summary
 
     Get an option from the options table.
     
-    If the returned value represents an object or array, it must be unserialized by the caller before use. For example:
-    <code>
-    $object = unserialize(get_option('plugin_object'));
-    </code>
+    If the returned value represents an object or array, it must be unserializedby the caller before use. For example:	 
+                 
+    
+    .. code-block:: php 
+    
+    
+    	                   $object = unserialize(get_option('plugin_object'));
     
     :param unknown $name:
 

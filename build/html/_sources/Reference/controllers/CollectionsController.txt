@@ -4,8 +4,6 @@ CollectionsController
 
 .. php:class:: CollectionsController
 
-    CRUD controller for Collections
-
     .. php:attr:: contexts
     
 

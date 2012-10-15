@@ -12,8 +12,8 @@ Summary
 
     Return a substring of a given piece of text.
     
-    Note: this will only split strings on the space character.
-    this will also strip html tags from the text before getting a snippet
+    Note: this will only split strings on the space character.this will also strip html tags from the text before
+    getting a snippet
     
     :param string $text: Text to take snippet of
     :param int $startPos: Starting position of snippet in string

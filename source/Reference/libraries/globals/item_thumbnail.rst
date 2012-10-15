@@ -12,7 +12,7 @@ Summary
 
     Return HTML for a thumbnail image assigned to an item.
     
-    Default parameters will use the first image, but that can be changed by modifying $index.
+    Default parameters will use the first image, but that can be changed bymodifying $index.
     
     :param array $props: A set of attributes for the <img /> tag.
     :param integer $index: The position of the file to use (starting with 0 for the first file).

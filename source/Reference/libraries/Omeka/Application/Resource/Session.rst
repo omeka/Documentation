@@ -4,12 +4,11 @@ Omeka_Application_Resource_Session
 
 .. php:class:: Omeka_Application_Resource_Session
 
-    Initialize the session and customize the session name to prevent session
-    overlap between different applications that operate on the same server.
+    Initialize the session.
+    
+    Customizes the session name to prevent session overlap between differentapplications that operate on the same server.
 
     .. php:method:: init()
-    
-        :returns: void
 
     .. php:method:: _getSessionConfig()
     

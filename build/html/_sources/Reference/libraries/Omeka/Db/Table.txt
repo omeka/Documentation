@@ -6,8 +6,7 @@ Omeka_Db_Table
 
     Database table classes.
     
-    Subclasses attached to models must follow the naming convention: 
-    Table_TableName, e.g. Table_ElementSet in models/Table/ElementSet.php.
+    Subclasses attached to models must follow the naming convention:Table_TableName, e.g. Table_ElementSet in models/Table/ElementSet.php.
 
     .. php:attr:: _target
     

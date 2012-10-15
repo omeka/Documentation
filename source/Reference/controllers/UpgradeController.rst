@@ -4,8 +4,6 @@ UpgradeController
 
 .. php:class:: UpgradeController
 
-    Database upgrade controller.
-
     .. php:method:: __construct(Zend_Controller_Request_Abstract $request, Zend_Controller_Response_Abstract $response, $invokeArgs = Array)
     
         :param Zend_Controller_Request_Abstract $request: 
