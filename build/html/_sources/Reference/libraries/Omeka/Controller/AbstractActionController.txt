@@ -4,6 +4,8 @@ Omeka_Controller_AbstractActionController
 
 .. php:class:: Omeka_Controller_AbstractActionController
 
+    Package: Controller
+
     Base class for Omeka controllers.
     
     Provides basic create, read, update, and delete (CRUD) operations.

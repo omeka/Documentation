@@ -4,6 +4,8 @@ ItemsController
 
 .. php:class:: ItemsController
 
+    Package: Controller
+
     .. php:attr:: contexts
     
 

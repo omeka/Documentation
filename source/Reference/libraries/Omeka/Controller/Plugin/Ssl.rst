@@ -4,6 +4,8 @@ Omeka_Controller_Plugin_Ssl
 
 .. php:class:: Omeka_Controller_Plugin_Ssl
 
+    Package: Controller\Plugin
+
     Handle SSL configuration for Omeka sites.
 
     .. php:attr:: _sslConfig

@@ -4,6 +4,8 @@ Omeka_Form
 
 .. php:class:: Omeka_Form
 
+    Package: Form
+
     A Zend_Form subclass that sets up forms to be properly displayed in Omeka.
 
     .. php:attr:: _defaultDisplayGroupClass

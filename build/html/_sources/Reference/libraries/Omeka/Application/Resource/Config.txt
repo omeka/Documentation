@@ -4,6 +4,8 @@ Omeka_Application_Resource_Config
 
 .. php:class:: Omeka_Application_Resource_Config
 
+    Package: Application\Resource
+
     Load the default configuration file for Omeka.
 
     .. php:method:: init()

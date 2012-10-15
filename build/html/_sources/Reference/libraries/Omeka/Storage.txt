@@ -4,6 +4,8 @@ Omeka_Storage
 
 .. php:class:: Omeka_Storage
 
+    Package: Storage
+
     Top-level helper class for handling file storage.
 
     .. php:attr:: _adapter

@@ -4,6 +4,8 @@ Omeka_Job_Factory
 
 .. php:class:: Omeka_Job_Factory
 
+    Package: Job\Factory
+
     Factory for instantiating Omeka_Job instances.
 
     .. php:attr:: _options

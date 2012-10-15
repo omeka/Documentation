@@ -4,6 +4,8 @@ Table_Process
 
 .. php:class:: Table_Process
 
+    Package: Db\Table
+
     .. php:attr:: _target
     
 

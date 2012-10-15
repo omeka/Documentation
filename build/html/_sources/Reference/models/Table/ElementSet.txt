@@ -4,6 +4,8 @@ Table_ElementSet
 
 .. php:class:: Table_ElementSet
 
+    Package: Db\Table
+
     .. php:method:: getSelect()
 
     .. php:method:: findByRecordType($recordTypeName, $includeAll = 1)

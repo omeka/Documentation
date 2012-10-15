@@ -4,6 +4,8 @@ Omeka_File_Ingest_Filesystem
 
 .. php:class:: Omeka_File_Ingest_Filesystem
 
+    Package: File\Ingest
+
     Implements ingesting files from the local filesystem.
 
     .. php:attr:: _item

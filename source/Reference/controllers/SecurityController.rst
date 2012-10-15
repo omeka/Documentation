@@ -4,6 +4,8 @@ SecurityController
 
 .. php:class:: SecurityController
 
+    Package: Controller
+
     .. php:method:: indexAction()
 
     .. php:method:: browseAction()

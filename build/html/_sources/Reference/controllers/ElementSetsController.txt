@@ -4,6 +4,8 @@ ElementSetsController
 
 .. php:class:: ElementSetsController
 
+    Package: Controller
+
     .. php:method:: init()
 
     .. php:method:: _getDeleteConfirmMessage($record)

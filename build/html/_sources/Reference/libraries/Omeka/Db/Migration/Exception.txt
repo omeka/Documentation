@@ -4,6 +4,8 @@ Omeka_Db_Migration_Exception
 
 .. php:class:: Omeka_Db_Migration_Exception
 
+    Package: Db\Migration
+
     Indicates an error during the database migration process.
 
     .. php:attr:: message

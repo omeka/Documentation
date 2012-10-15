@@ -4,6 +4,8 @@ Omeka_Filter_ForeignKey
 
 .. php:class:: Omeka_Filter_ForeignKey
 
+    Package: Filter
+
     Converts input into values suitable for use as Omeka 'id' key values.
 
     .. php:method:: filter(mixed $value)

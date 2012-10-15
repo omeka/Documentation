@@ -4,6 +4,8 @@ Omeka_Application_Resource_Theme
 
 .. php:class:: Omeka_Application_Resource_Theme
 
+    Package: Application\Resource
+
     Set up the controller plugin that determines theme view script paths.
 
     .. php:attr:: _basePath

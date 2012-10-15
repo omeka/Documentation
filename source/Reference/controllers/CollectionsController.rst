@@ -4,6 +4,8 @@ CollectionsController
 
 .. php:class:: CollectionsController
 
+    Package: Controller
+
     .. php:attr:: contexts
     
 

@@ -4,6 +4,8 @@ Table_File
 
 .. php:class:: Table_File
 
+    Package: Db\Table
+
     .. php:attr:: _target
     
 

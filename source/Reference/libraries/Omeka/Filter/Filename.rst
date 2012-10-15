@@ -4,6 +4,8 @@ Omeka_Filter_Filename
 
 .. php:class:: Omeka_Filter_Filename
 
+    Package: Filter
+
     Rename a file to make it suitable for inclusion in the Omeka repository.
 
     .. php:method:: filter(string $value)

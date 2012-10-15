@@ -4,6 +4,8 @@ Omeka_Controller_Action_Helper_Mail
 
 .. php:class:: Omeka_Controller_Action_Helper_Mail
 
+    Package: Controller\ActionHelper
+
     Action helper for sending email.
 
     .. php:attr:: _view

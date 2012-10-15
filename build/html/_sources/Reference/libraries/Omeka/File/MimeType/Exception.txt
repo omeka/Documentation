@@ -4,6 +4,8 @@ Omeka_File_MimeType_Exception
 
 .. php:class:: Omeka_File_MimeType_Exception
 
+    Package: File\MimeType
+
     .. php:attr:: message
     
 

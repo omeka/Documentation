@@ -4,6 +4,8 @@ ThemesController
 
 .. php:class:: ThemesController
 
+    Package: Controller
+
     .. php:method:: browseAction()
 
     .. php:method:: switchAction()

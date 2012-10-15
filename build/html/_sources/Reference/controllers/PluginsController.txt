@@ -4,6 +4,8 @@ PluginsController
 
 .. php:class:: PluginsController
 
+    Package: Controller
+
     .. php:method:: init()
 
     .. php:method:: configAction()

@@ -4,6 +4,8 @@ Omeka_Application_Resource_Jobs_InvalidAdapterException
 
 .. php:class:: Omeka_Application_Resource_Jobs_InvalidAdapterException
 
+    Package: Application\Resource
+
     Exception thrown when an invalid job dispatcher has been configured.
 
     .. php:attr:: message

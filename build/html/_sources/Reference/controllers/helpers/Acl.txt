@@ -4,6 +4,8 @@ Omeka_Controller_Action_Helper_Acl
 
 .. php:class:: Omeka_Controller_Action_Helper_Acl
 
+    Package: Controller\ActionHelper
+
     Leverages the ACL to automatically check permissions for the current
     controller/action combo.
 

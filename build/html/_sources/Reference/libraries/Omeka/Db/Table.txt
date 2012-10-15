@@ -4,6 +4,8 @@ Omeka_Db_Table
 
 .. php:class:: Omeka_Db_Table
 
+    Package: Db\Table
+
     Database table classes.
     
     Subclasses attached to models must follow the naming convention:Table_TableName, e.g. Table_ElementSet in models/Table/ElementSet.php.

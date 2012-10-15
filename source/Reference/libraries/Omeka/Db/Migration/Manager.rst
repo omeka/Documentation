@@ -4,6 +4,8 @@ Omeka_Db_Migration_Manager
 
 .. php:class:: Omeka_Db_Migration_Manager
 
+    Package: Db\Migration
+
     Manages database migrations (both upgrades and downgrades).
 
     .. php:const:: MIGRATION_TABLE_NAME

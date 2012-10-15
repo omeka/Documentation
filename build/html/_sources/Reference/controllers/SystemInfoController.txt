@@ -4,6 +4,8 @@ SystemInfoController
 
 .. php:class:: SystemInfoController
 
+    Package: Controller
+
     .. php:method:: preDispatch()
 
     .. php:method:: indexAction()

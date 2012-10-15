@@ -13,4 +13,5 @@ Reference Documentation for Omeka
    models/index   
    libraries/Omeka/index
    views/helpers/index
+   packages/index
    

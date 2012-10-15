@@ -4,6 +4,8 @@ Table_ElementText
 
 .. php:class:: Table_ElementText
 
+    Package: Db\Table
+
     .. php:method:: getSelectForRecord($recordId, $recordType)
     
         :param unknown $recordId: 

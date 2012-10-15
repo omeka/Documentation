@@ -4,6 +4,8 @@ Omeka_Application_Resource_Locale
 
 .. php:class:: Omeka_Application_Resource_Locale
 
+    Package: Application\Resource
+
     Core resource for configuring and loading the translation and locale 
     components.
 

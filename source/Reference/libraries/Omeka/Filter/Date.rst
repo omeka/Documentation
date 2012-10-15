@@ -4,6 +4,8 @@ Omeka_Filter_Date
 
 .. php:class:: Omeka_Filter_Date
 
+    Package: Filter
+
     Converts to and from MySQL date representations.
 
     .. php:method:: filter(string $year, string $month, string $day)

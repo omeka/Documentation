@@ -4,6 +4,8 @@ Omeka_Job_Dispatcher_Adapter_Array
 
 .. php:class:: Omeka_Job_Dispatcher_Adapter_Array
 
+    Package: Job\Dispatcher\Adapter
+
     Store dispatched jobs in an array.
     
     This is used primarily by unit tests and should not be used in productioncode.

@@ -4,6 +4,8 @@ Omeka_View
 
 .. php:class:: Omeka_View
 
+    Package: View
+
     Customized subclass of Zend Framework's View class.
     
     This adds the correct script paths for themes and plugins so that controllers can render the appropriate scripts.

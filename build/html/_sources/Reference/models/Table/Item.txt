@@ -4,6 +4,8 @@ Table_Item
 
 .. php:class:: Table_Item
 
+    Package: Db\Table
+
     .. php:method:: filterByRange(Omeka_Db_Select $select, string $range)
     
         Can specify a range of valid Item IDs or an individual ID

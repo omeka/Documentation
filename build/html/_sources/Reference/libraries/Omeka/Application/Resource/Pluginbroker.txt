@@ -4,6 +4,8 @@ Omeka_Application_Resource_Pluginbroker
 
 .. php:class:: Omeka_Application_Resource_Pluginbroker
 
+    Package: Application\Resource
+
     Set up the plugin broker.
 
     .. php:method:: init()

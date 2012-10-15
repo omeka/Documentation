@@ -4,6 +4,8 @@ Omeka_Application_Resource_Currentuser
 
 .. php:class:: Omeka_Application_Resource_Currentuser
 
+    Package: Application\Resource
+
     Retrive the User record corresponding to the authenticated user.
     
     If the user record is not retrievable (invalid ID), then the authenticationID will be cleared.

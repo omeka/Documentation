@@ -4,6 +4,8 @@ Omeka_File_Ingest_AbstractSourceIngest
 
 .. php:class:: Omeka_File_Ingest_AbstractSourceIngest
 
+    Package: File\Ingest
+
     This abstract class encapsulates all the behavior that facilitates file 
     ingest based on the assumption that each file can be retrieved via a string 
     containing both the name and location of that file.

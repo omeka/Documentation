@@ -4,6 +4,8 @@ Omeka_Job_Dispatcher_DispatcherInterface
 
 .. php:class:: Omeka_Job_Dispatcher_DispatcherInterface
 
+    Package: Job\Dispatcher
+
     Interface for job dispatchers in Omeka.
 
     .. php:method:: setQueueName(string $name)

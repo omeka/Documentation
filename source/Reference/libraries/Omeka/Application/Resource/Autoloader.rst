@@ -4,6 +4,8 @@ Omeka_Application_Resource_Autoloader
 
 .. php:class:: Omeka_Application_Resource_Autoloader
 
+    Package: Application\Resource
+
     An application resource for class autoloaders.
 
     .. php:method:: init()

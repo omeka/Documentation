@@ -4,6 +4,8 @@ Omeka_Db_Select_PublicPermissions
 
 .. php:class:: Omeka_Db_Select_PublicPermissions
 
+    Package: Db
+
     Encapsulates the permissions check for a record that can be public or private.
 
     .. php:attr:: _allPermission

@@ -4,6 +4,8 @@ Omeka_Controller_Plugin_HtmlPurifier
 
 .. php:class:: Omeka_Controller_Plugin_HtmlPurifier
 
+    Package: Controller\Plugin
+
     This ZF controller plugin allows the HtmlPurifier to filter the existing 
     forms (items, collections, users, etc.) so that fields that are allowed to 
     contain HTML are properly filtered.

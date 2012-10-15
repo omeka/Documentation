@@ -4,6 +4,8 @@ Omeka_Controller_Action_Helper_Db
 
 .. php:class:: Omeka_Controller_Action_Helper_Db
 
+    Package: Controller\ActionHelper
+
     An action helper replacement for the database-oriented methods that were 
     baked into Omeka_Controller_AbstractActionController in v1.x.
 

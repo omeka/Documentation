@@ -4,6 +4,8 @@ Omeka_Job_Dispatcher_Adapter_ZendQueue
 
 .. php:class:: Omeka_Job_Dispatcher_Adapter_ZendQueue
 
+    Package: Job\Dispatcher\Adapter
+
     Dispatcher for Zend_Queue.
     
     This would be particularly useful for installations that want to interfacewith ActiveMQ or Zend Server's Job Queue via Zend_Queue.  Note that usingthe 'Array' adapter should only be used for testing, as all jobs passed toit will be thrown away.

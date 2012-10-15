@@ -4,6 +4,8 @@ ItemTypesController
 
 .. php:class:: ItemTypesController
 
+    Package: Controller
+
     .. php:method:: init()
 
     .. php:method:: addAction()

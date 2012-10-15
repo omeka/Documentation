@@ -4,6 +4,8 @@ Omeka_Job_Dispatcher_Adapter_AbstractAdapter
 
 .. php:class:: Omeka_Job_Dispatcher_Adapter_AbstractAdapter
 
+    Package: Job\Dispatcher\Adapter
+
     Abstract class for job dispatcher adapters.
 
     .. php:attr:: _options

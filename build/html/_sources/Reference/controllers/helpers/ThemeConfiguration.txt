@@ -4,6 +4,8 @@ Omeka_Controller_Action_Helper_ThemeConfiguration
 
 .. php:class:: Omeka_Controller_Action_Helper_ThemeConfiguration
 
+    Package: Controller\ActionHelper
+
     Action helper for handling theme configuration.
 
     .. php:attr:: _themeOptions

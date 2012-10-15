@@ -4,6 +4,8 @@ ErrorController
 
 .. php:class:: ErrorController
 
+    Package: Controller
+
     .. php:method:: errorAction()
 
     .. php:method:: _getException()

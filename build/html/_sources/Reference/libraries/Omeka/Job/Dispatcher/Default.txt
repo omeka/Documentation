@@ -4,6 +4,8 @@ Omeka_Job_Dispatcher_Default
 
 .. php:class:: Omeka_Job_Dispatcher_Default
 
+    Package: Job\Dispatcher
+
     Dispatches jobs in Omeka.
     
     This provides a clean interface to adapter classes that deal with the detailsof how to dispatch jobs. It is initialized in the Jobs bootstrap resource andcan be accessed via the registry.

@@ -4,6 +4,8 @@ Omeka_Db_Migration_MigrationInterface
 
 .. php:class:: Omeka_Db_Migration_MigrationInterface
 
+    Package: Db\Migration
+
     Migration interface.
 
     .. php:method:: up()

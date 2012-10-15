@@ -4,6 +4,8 @@ Omeka_Auth_Adapter_UserTable
 
 .. php:class:: Omeka_Auth_Adapter_UserTable
 
+    Package: Auth
+
     Auth adapter that uses Omeka's users table for authentication.
 
     .. php:method:: __construct(Omeka_Db $db)

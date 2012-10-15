@@ -4,6 +4,8 @@ Table_User
 
 .. php:class:: Table_User
 
+    Package: Db\Table
+
     .. php:method:: findActiveById($id)
     
         Find an active User given that user's ID.

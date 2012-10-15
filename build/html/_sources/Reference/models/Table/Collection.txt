@@ -4,6 +4,8 @@ Table_Collection
 
 .. php:class:: Table_Collection
 
+    Package: Db\Table
+
     .. php:method:: applySearchFilters($select, $params)
     
         :param unknown $select: 

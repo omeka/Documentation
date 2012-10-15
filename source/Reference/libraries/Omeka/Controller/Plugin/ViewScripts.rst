@@ -4,6 +4,8 @@ Omeka_Controller_Plugin_ViewScripts
 
 .. php:class:: Omeka_Controller_Plugin_ViewScripts
 
+    Package: Controller\Plugin
+
     Sets up view script search paths on a per-request basis.
 
     .. php:attr:: _view

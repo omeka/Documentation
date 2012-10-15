@@ -4,6 +4,8 @@ Omeka_Job_Worker_Beanstalk
 
 .. php:class:: Omeka_Job_Worker_Beanstalk
 
+    Package: Job\Worker
+
     .. php:method:: __construct(Pheanstalk $pheanstalk, Omeka_Job_Factory $jobFactory, Omeka_Db $db)
     
         :param Pheanstalk $pheanstalk: 

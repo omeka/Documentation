@@ -4,6 +4,8 @@ UpgradeController
 
 .. php:class:: UpgradeController
 
+    Package: Controller
+
     .. php:method:: __construct(Zend_Controller_Request_Abstract $request, Zend_Controller_Response_Abstract $response, $invokeArgs = Array)
     
         :param Zend_Controller_Request_Abstract $request: 

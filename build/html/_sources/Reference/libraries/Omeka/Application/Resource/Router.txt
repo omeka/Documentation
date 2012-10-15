@@ -4,6 +4,8 @@ Omeka_Application_Resource_Router
 
 .. php:class:: Omeka_Application_Resource_Router
 
+    Package: Application\Resource
+
     Set up the router and the built-in routes.
 
     .. php:method:: init()

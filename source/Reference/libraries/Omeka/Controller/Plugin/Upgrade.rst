@@ -4,6 +4,8 @@ Omeka_Controller_Plugin_Upgrade
 
 .. php:class:: Omeka_Controller_Plugin_Upgrade
 
+    Package: Controller\Plugin
+
     Overrides Omeka's normal routing when the database needs to be upgraded.
 
     .. php:method:: dispatchLoopStartup(Zend_Controller_Request_Abstract $request)

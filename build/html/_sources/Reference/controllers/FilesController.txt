@@ -4,6 +4,8 @@ FilesController
 
 .. php:class:: FilesController
 
+    Package: Controller
+
     .. php:attr:: contexts
     
 

@@ -4,6 +4,8 @@ Omeka_Application_Resource_Acl
 
 .. php:class:: Omeka_Application_Resource_Acl
 
+    Package: Application\Resource
+
     Initializes Omeka's ACL.
 
     .. php:attr:: _acl

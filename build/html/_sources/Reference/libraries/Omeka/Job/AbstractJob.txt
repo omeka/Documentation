@@ -4,6 +4,8 @@ Omeka_Job_AbstractJob
 
 .. php:class:: Omeka_Job_AbstractJob
 
+    Package: Job
+
     Abstract implementation of an Omeka job.
     
     Most plugin implementations of jobs will extend this class to gain convenientaccess to the database and other potentially important resources.

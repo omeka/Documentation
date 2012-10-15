@@ -4,6 +4,8 @@ UsersController
 
 .. php:class:: UsersController
 
+    Package: Controller
+
     .. php:attr:: _publicActions
     
         Actions that are accessible by anonymous users.

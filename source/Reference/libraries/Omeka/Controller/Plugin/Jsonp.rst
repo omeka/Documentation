@@ -4,6 +4,8 @@ Omeka_Controller_Plugin_Jsonp
 
 .. php:class:: Omeka_Controller_Plugin_Jsonp
 
+    Package: Controller\Plugin
+
     Sets the Content-Type header for all JSON-P requests.
 
     .. php:const:: CALLBACK_KEY

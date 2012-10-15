@@ -4,6 +4,8 @@ Omeka_Http_Client
 
 .. php:class:: Omeka_Http_Client
 
+    Package: Http
+
     Wrapper for Zend_Http_Client.
     
     Adds the following functionality: retries on timeouts.

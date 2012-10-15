@@ -4,6 +4,8 @@ Omeka_File_Derivative_Image_Creator
 
 .. php:class:: Omeka_File_Derivative_Image_Creator
 
+    Package: File\Derivative
+
     Create derivative images for a file in Omeka.
 
     .. php:attr:: _convertPath

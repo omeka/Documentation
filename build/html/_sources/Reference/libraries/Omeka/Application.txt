@@ -4,6 +4,8 @@ Omeka_Application
 
 .. php:class:: Omeka_Application
 
+    Package: Application
+
     Core class used to bootstrap the Omeka environment.
     
     Various duties include, but are not limited to setting up class autoload, 

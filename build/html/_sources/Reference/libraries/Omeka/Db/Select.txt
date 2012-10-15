@@ -4,6 +4,8 @@ Omeka_Db_Select
 
 .. php:class:: Omeka_Db_Select
 
+    Package: Db
+
     Class for SQL SELECT generation and results.
 
     .. php:method:: __construct(Zend_Db_Adapter $adapter)

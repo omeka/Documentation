@@ -4,6 +4,8 @@ Omeka_Db_Migration_AbstractMigration
 
 .. php:class:: Omeka_Db_Migration_AbstractMigration
 
+    Package: Db\Migration
+
     Database migration classes may inherit from this one.
 
     .. php:attr:: db

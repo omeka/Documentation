@@ -4,6 +4,8 @@ Omeka_Application_Resource_Session
 
 .. php:class:: Omeka_Application_Resource_Session
 
+    Package: Application\Resource
+
     Initialize the session.
     
     Customizes the session name to prevent session overlap between differentapplications that operate on the same server.

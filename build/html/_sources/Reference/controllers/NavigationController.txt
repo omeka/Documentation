@@ -4,6 +4,8 @@ NavigationController
 
 .. php:class:: NavigationController
 
+    Package: Controller
+
     .. php:method:: indexAction()
 
     .. php:method:: browseAction()

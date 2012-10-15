@@ -4,6 +4,8 @@ AppearanceController
 
 .. php:class:: AppearanceController
 
+    Package: Controller
+
     .. php:method:: indexAction()
 
     .. php:method:: browseAction()

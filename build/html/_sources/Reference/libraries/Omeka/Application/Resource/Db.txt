@@ -4,6 +4,8 @@ Omeka_Application_Resource_Db
 
 .. php:class:: Omeka_Application_Resource_Db
 
+    Package: Application\Resource
+
     Set up the default database connection for Omeka.
 
     .. php:attr:: _iniPath

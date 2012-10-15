@@ -4,6 +4,8 @@ Table_Plugin
 
 .. php:class:: Table_Plugin
 
+    Package: Db\Table
+
     .. php:attr:: _target
     
 

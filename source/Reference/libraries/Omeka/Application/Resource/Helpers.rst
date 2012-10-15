@@ -4,6 +4,8 @@ Omeka_Application_Resource_Helpers
 
 .. php:class:: Omeka_Application_Resource_Helpers
 
+    Package: Application\Resource
+
     Initializes controller action helpers.
 
     .. php:method:: init()

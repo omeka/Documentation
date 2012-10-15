@@ -4,6 +4,8 @@ Omeka_Captcha
 
 .. php:class:: Omeka_Captcha
 
+    Package: Captcha
+
     Factory for creating a captcha for use when soliciting public input.
 
     .. php:method:: getCaptcha()

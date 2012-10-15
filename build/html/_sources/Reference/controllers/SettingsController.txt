@@ -4,6 +4,8 @@ SettingsController
 
 .. php:class:: SettingsController
 
+    Package: Controller
+
     .. php:method:: indexAction()
 
     .. php:method:: browseAction()

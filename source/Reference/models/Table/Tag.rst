@@ -4,6 +4,8 @@ Table_Tag
 
 .. php:class:: Table_Tag
 
+    Package: Db\Table
+
     .. php:method:: findOrNew($name)
     
         :param unknown $name:

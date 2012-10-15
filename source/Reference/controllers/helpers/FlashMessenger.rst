@@ -4,6 +4,8 @@ Omeka_Controller_Action_Helper_FlashMessenger
 
 .. php:class:: Omeka_Controller_Action_Helper_FlashMessenger
 
+    Package: Controller\ActionHelper
+
     FlashMessenger action helper.
 
     .. php:attr:: _messenger

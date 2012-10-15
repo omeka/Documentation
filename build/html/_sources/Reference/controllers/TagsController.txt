@@ -4,6 +4,8 @@ TagsController
 
 .. php:class:: TagsController
 
+    Package: Controller
+
     .. php:method:: init()
 
     .. php:method:: editAction()

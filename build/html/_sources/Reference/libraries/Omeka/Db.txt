@@ -4,6 +4,8 @@ Omeka_Db
 
 .. php:class:: Omeka_Db
 
+    Package: Db
+
     Database manager object for Omeka
     
     While mostly a wrapper for a Zend_Db_Adapter instance, this also providesshortcuts for retrieving table objects and table names for use in SQL.

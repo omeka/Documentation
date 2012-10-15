@@ -4,6 +4,8 @@ Omeka_File_Ingest_Url
 
 .. php:class:: Omeka_File_Ingest_Url
 
+    Package: File\Ingest
+
     Ingest URLs into Omeka.
 
     .. php:attr:: _item

@@ -4,6 +4,8 @@ Omeka_File_Derivative_Exception
 
 .. php:class:: Omeka_File_Derivative_Exception
 
+    Package: File\Derivative
+
     Exception to throw when something goes wrong in the process of creating
     derivative images.
 

@@ -4,6 +4,8 @@ Omeka_File_Ingest_Exception
 
 .. php:class:: Omeka_File_Ingest_Exception
 
+    Package: File\Ingest
+
     An exception to be thrown when something goes wrong during the file ingest
     process.
 

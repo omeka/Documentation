@@ -4,6 +4,8 @@ Omeka_Form_Admin
 
 .. php:class:: Omeka_Form_Admin
 
+    Package: Form
+
     A Zend_Form subclass to set up a record editing form for the Omeka 2.0 admin 
     user interface
 

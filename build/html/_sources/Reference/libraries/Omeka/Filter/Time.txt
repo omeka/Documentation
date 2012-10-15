@@ -4,6 +4,8 @@ Omeka_Filter_Time
 
 .. php:class:: Omeka_Filter_Time
 
+    Package: Filter
+
     Converts to and from MySQL time representations.
 
     .. php:method:: filter(string $hour, string $minute, string $second)

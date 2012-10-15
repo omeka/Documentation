@@ -4,6 +4,8 @@ Omeka_Job_Mock
 
 .. php:class:: Omeka_Job_Mock
 
+    Package: Job
+
     Mock job class for unit tests.
 
     .. php:attr:: options

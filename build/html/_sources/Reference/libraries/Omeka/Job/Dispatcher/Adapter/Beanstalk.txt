@@ -4,6 +4,8 @@ Omeka_Job_Dispatcher_Adapter_Beanstalk
 
 .. php:class:: Omeka_Job_Dispatcher_Adapter_Beanstalk
 
+    Package: Job\Dispatcher\Adapter
+
     Job dispatcher for Beanstalk.
     
     Requires Pheanstalk library (Beanstalk client) in order to work properly.

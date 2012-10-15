@@ -4,6 +4,8 @@ Table_Element
 
 .. php:class:: Table_Element
 
+    Package: Db\Table
+
     .. php:method:: findByRecordType($recordTypeName)
     
         Find all the Element records that have a specific record type or the

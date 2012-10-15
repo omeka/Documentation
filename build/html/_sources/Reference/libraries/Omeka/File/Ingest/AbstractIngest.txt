@@ -4,6 +4,8 @@ Omeka_File_Ingest_AbstractIngest
 
 .. php:class:: Omeka_File_Ingest_AbstractIngest
 
+    Package: File\Ingest
+
     An abstract class that handles ingesting files into Omeka and database.
     
     Specific responsibilities handled by this class:

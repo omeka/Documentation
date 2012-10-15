@@ -4,6 +4,8 @@ Omeka_Navigation
 
 .. php:class:: Omeka_Navigation
 
+    Package: Navigation
+
     Customized subclass of Zend Framework's Zend_Navigation class.
 
     .. php:method:: __construct(array|Zend_Config $pages)

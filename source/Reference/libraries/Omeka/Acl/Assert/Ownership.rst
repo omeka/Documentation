@@ -4,6 +4,8 @@ Omeka_Acl_Assert_Ownership
 
 .. php:class:: Omeka_Acl_Assert_Ownership
 
+    Package: Acl
+
     Assertion to take account of "All" and "Self" sub-permissions for records.
     
     A common use is the "edit" and "delete" permissions for Items and other"ownable" records.
