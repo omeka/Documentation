@@ -4,7 +4,7 @@ Omeka_Db_Migration_AbstractMigration
 
 .. php:class:: Omeka_Db_Migration_AbstractMigration
 
-    Package: Db\Migration
+    Package: :doc:`/Reference/packages/Db\Migration/index`
 
     Database migration classes may inherit from this one.
 

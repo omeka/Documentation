@@ -4,7 +4,7 @@ Table_ElementSet
 
 .. php:class:: Table_ElementSet
 
-    Package: Db\Table
+    Package: :doc:`/Reference/packages/Db\Table/index`
 
     .. php:method:: getSelect()
 

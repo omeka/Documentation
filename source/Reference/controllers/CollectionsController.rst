@@ -4,7 +4,7 @@ CollectionsController
 
 .. php:class:: CollectionsController
 
-    Package: Controller
+    Package: :doc:`/Reference/packages/Controller/index`
 
     .. php:attr:: contexts
     

@@ -4,7 +4,7 @@ Omeka_Application_Resource_Exception
 
 .. php:class:: Omeka_Application_Resource_Exception
 
-    Package: Application\Resource
+    Package: :doc:`/Reference/packages/Application\Resource/index`
 
     Marker interface.
     

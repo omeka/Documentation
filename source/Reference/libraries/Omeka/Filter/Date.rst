@@ -4,7 +4,7 @@ Omeka_Filter_Date
 
 .. php:class:: Omeka_Filter_Date
 
-    Package: Filter
+    Package: :doc:`/Reference/packages/Filter/index`
 
     Converts to and from MySQL date representations.
 

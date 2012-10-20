@@ -4,7 +4,7 @@ SecurityController
 
 .. php:class:: SecurityController
 
-    Package: Controller
+    Package: :doc:`/Reference/packages/Controller/index`
 
     .. php:method:: indexAction()
 

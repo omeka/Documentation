@@ -4,7 +4,7 @@ Omeka_Application_Resource_Db
 
 .. php:class:: Omeka_Application_Resource_Db
 
-    Package: Application\Resource
+    Package: :doc:`/Reference/packages/Application\Resource/index`
 
     Set up the default database connection for Omeka.
 

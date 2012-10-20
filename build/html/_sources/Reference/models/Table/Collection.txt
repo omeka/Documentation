@@ -4,7 +4,7 @@ Table_Collection
 
 .. php:class:: Table_Collection
 
-    Package: Db\Table
+    Package: :doc:`/Reference/packages/Db\Table/index`
 
     .. php:method:: applySearchFilters($select, $params)
     

@@ -4,7 +4,7 @@ Omeka_Application_Resource_Mail
 
 .. php:class:: Omeka_Application_Resource_Mail
 
-    Package: Application\Resource
+    Package: :doc:`/Reference/packages/Application\Resource/index`
 
     Set up the mail transport that Omeka uses to send mail.
     

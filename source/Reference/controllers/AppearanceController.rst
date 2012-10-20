@@ -4,7 +4,7 @@ AppearanceController
 
 .. php:class:: AppearanceController
 
-    Package: Controller
+    Package: :doc:`/Reference/packages/Controller/index`
 
     .. php:method:: indexAction()
 

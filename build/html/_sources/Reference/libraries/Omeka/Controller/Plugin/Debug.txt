@@ -4,7 +4,7 @@ Omeka_Controller_Plugin_Debug
 
 .. php:class:: Omeka_Controller_Plugin_Debug
 
-    Package: Controller\Plugin
+    Package: :doc:`/Reference/packages/Controller\Plugin/index`
 
     This controller plugin allows for debugging Request objects without inserting 
     debugging code into the Zend Framework code files.

@@ -4,7 +4,7 @@ ThemesController
 
 .. php:class:: ThemesController
 
-    Package: Controller
+    Package: :doc:`/Reference/packages/Controller/index`
 
     .. php:method:: browseAction()
 

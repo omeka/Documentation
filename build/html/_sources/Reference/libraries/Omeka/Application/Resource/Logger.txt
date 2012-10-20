@@ -4,7 +4,7 @@ Omeka_Application_Resource_Logger
 
 .. php:class:: Omeka_Application_Resource_Logger
 
-    Package: Application\Resource
+    Package: :doc:`/Reference/packages/Application\Resource/index`
 
     If logging has been enabled in the config file, then set up Zend's logging 
     mechanism.

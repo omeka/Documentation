@@ -4,7 +4,7 @@ Omeka_Job_Dispatcher_Adapter_Array
 
 .. php:class:: Omeka_Job_Dispatcher_Adapter_Array
 
-    Package: Job\Dispatcher\Adapter
+    Package: :doc:`/Reference/packages/Job\Dispatcher\Adapter/index`
 
     Store dispatched jobs in an array.
     

@@ -4,7 +4,7 @@ Omeka_View
 
 .. php:class:: Omeka_View
 
-    Package: View
+    Package: :doc:`/Reference/packages/View/index`
 
     Customized subclass of Zend Framework's View class.
     

@@ -4,7 +4,7 @@ Omeka_Db
 
 .. php:class:: Omeka_Db
 
-    Package: Db
+    Package: :doc:`/Reference/packages/Db/index`
 
     Database manager object for Omeka
     

@@ -4,7 +4,7 @@ Omeka_Job_Dispatcher_Adapter_AdapterInterface
 
 .. php:class:: Omeka_Job_Dispatcher_Adapter_AdapterInterface
 
-    Package: Job\Dispatcher\Adapter
+    Package: :doc:`/Reference/packages/Job\Dispatcher\Adapter/index`
 
     Interface for job dispatcher adapters.
 

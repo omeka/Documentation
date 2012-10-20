@@ -4,7 +4,7 @@ Omeka_Controller_Plugin_Upgrade
 
 .. php:class:: Omeka_Controller_Plugin_Upgrade
 
-    Package: Controller\Plugin
+    Package: :doc:`/Reference/packages/Controller\Plugin/index`
 
     Overrides Omeka's normal routing when the database needs to be upgraded.
 

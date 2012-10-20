@@ -4,7 +4,7 @@ Omeka_Navigation
 
 .. php:class:: Omeka_Navigation
 
-    Package: Navigation
+    Package: :doc:`/Reference/packages/Navigation/index`
 
     Customized subclass of Zend Framework's Zend_Navigation class.
 

@@ -4,7 +4,7 @@ Omeka_Filter_Filename
 
 .. php:class:: Omeka_Filter_Filename
 
-    Package: Filter
+    Package: :doc:`/Reference/packages/Filter/index`
 
     Rename a file to make it suitable for inclusion in the Omeka repository.
 

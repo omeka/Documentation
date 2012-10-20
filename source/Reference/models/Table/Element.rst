@@ -4,7 +4,7 @@ Table_Element
 
 .. php:class:: Table_Element
 
-    Package: Db\Table
+    Package: :doc:`/Reference/packages/Db\Table/index`
 
     .. php:method:: findByRecordType($recordTypeName)
     

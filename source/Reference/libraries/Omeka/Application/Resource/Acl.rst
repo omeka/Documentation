@@ -4,7 +4,7 @@ Omeka_Application_Resource_Acl
 
 .. php:class:: Omeka_Application_Resource_Acl
 
-    Package: Application\Resource
+    Package: :doc:`/Reference/packages/Application\Resource/index`
 
     Initializes Omeka's ACL.
 

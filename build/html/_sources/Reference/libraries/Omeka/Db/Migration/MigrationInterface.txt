@@ -4,7 +4,7 @@ Omeka_Db_Migration_MigrationInterface
 
 .. php:class:: Omeka_Db_Migration_MigrationInterface
 
-    Package: Db\Migration
+    Package: :doc:`/Reference/packages/Db\Migration/index`
 
     Migration interface.
 

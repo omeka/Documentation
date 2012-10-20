@@ -4,7 +4,7 @@ UsersController
 
 .. php:class:: UsersController
 
-    Package: Controller
+    Package: :doc:`/Reference/packages/Controller/index`
 
     .. php:attr:: _publicActions
     

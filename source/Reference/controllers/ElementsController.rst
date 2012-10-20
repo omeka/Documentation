@@ -4,6 +4,6 @@ ElementsController
 
 .. php:class:: ElementsController
 
-    Package: Controller
+    Package: :doc:`/Reference/packages/Controller/index`
 
     .. php:method:: elementFormAction()

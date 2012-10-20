@@ -4,7 +4,7 @@ Table_Plugin
 
 .. php:class:: Table_Plugin
 
-    Package: Db\Table
+    Package: :doc:`/Reference/packages/Db\Table/index`
 
     .. php:attr:: _target
     

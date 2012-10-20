@@ -4,7 +4,7 @@ TagsController
 
 .. php:class:: TagsController
 
-    Package: Controller
+    Package: :doc:`/Reference/packages/Controller/index`
 
     .. php:method:: init()
 

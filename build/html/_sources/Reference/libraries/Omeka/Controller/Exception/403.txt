@@ -4,7 +4,7 @@ Omeka_Controller_Exception_403
 
 .. php:class:: Omeka_Controller_Exception_403
 
-    Package: Controller
+    Package: :doc:`/Reference/packages/Controller/index`
 
     If thrown by a controller, this exception will be caught within the
     ErrorController, which will then render a 403 Forbidden page.

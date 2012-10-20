@@ -4,7 +4,7 @@ SystemInfoController
 
 .. php:class:: SystemInfoController
 
-    Package: Controller
+    Package: :doc:`/Reference/packages/Controller/index`
 
     .. php:method:: preDispatch()
 

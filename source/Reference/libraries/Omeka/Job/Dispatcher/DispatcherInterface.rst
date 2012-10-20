@@ -4,7 +4,7 @@ Omeka_Job_Dispatcher_DispatcherInterface
 
 .. php:class:: Omeka_Job_Dispatcher_DispatcherInterface
 
-    Package: Job\Dispatcher
+    Package: :doc:`/Reference/packages/Job\Dispatcher/index`
 
     Interface for job dispatchers in Omeka.
 

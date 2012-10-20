@@ -4,7 +4,7 @@ Table_ElementText
 
 .. php:class:: Table_ElementText
 
-    Package: Db\Table
+    Package: :doc:`/Reference/packages/Db\Table/index`
 
     .. php:method:: getSelectForRecord($recordId, $recordType)
     

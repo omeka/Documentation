@@ -4,7 +4,7 @@ Job_ItemBatchEdit
 
 .. php:class:: Job_ItemBatchEdit
 
-    Package: Job
+    Package: :doc:`/Reference/packages/Job/index`
 
     .. php:method:: perform()
 

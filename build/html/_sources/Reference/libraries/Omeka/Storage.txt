@@ -4,7 +4,7 @@ Omeka_Storage
 
 .. php:class:: Omeka_Storage
 
-    Package: Storage
+    Package: :doc:`/Reference/packages/Storage/index`
 
     Top-level helper class for handling file storage.
 

@@ -4,7 +4,7 @@ Table_ItemType
 
 .. php:class:: Table_ItemType
 
-    Package: Db\Table
+    Package: :doc:`/Reference/packages/Db\Table/index`
 
     .. php:method:: _getColumnPairs()
 

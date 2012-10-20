@@ -4,7 +4,7 @@ Omeka_Job_AbstractJob
 
 .. php:class:: Omeka_Job_AbstractJob
 
-    Package: Job
+    Package: :doc:`/Reference/packages/Job/index`
 
     Abstract implementation of an Omeka job.
     

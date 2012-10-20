@@ -4,7 +4,7 @@ Omeka_Controller_Plugin_Admin
 
 .. php:class:: Omeka_Controller_Plugin_Admin
 
-    Package: Controller\Plugin
+    Package: :doc:`/Reference/packages/Controller\Plugin/index`
 
     This controller plugin allows for all functionality that is specific to the 
     Admin theme.

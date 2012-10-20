@@ -4,7 +4,7 @@ ElementSetsController
 
 .. php:class:: ElementSetsController
 
-    Package: Controller
+    Package: :doc:`/Reference/packages/Controller/index`
 
     .. php:method:: init()
 

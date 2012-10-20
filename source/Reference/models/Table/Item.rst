@@ -4,7 +4,7 @@ Table_Item
 
 .. php:class:: Table_Item
 
-    Package: Db\Table
+    Package: :doc:`/Reference/packages/Db\Table/index`
 
     .. php:method:: filterByRange(Omeka_Db_Select $select, string $range)
     

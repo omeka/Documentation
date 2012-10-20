@@ -4,7 +4,7 @@ Omeka_Captcha
 
 .. php:class:: Omeka_Captcha
 
-    Package: Captcha
+    Package: :doc:`/Reference/packages/Captcha/index`
 
     Factory for creating a captcha for use when soliciting public input.
 

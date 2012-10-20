@@ -4,7 +4,7 @@ Omeka_File_Derivative_Image_Creator
 
 .. php:class:: Omeka_File_Derivative_Image_Creator
 
-    Package: File\Derivative
+    Package: :doc:`/Reference/packages/File\Derivative/index`
 
     Create derivative images for a file in Omeka.
 

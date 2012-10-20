@@ -4,7 +4,7 @@ Omeka_Application_Resource_Helpers
 
 .. php:class:: Omeka_Application_Resource_Helpers
 
-    Package: Application\Resource
+    Package: :doc:`/Reference/packages/Application\Resource/index`
 
     Initializes controller action helpers.
 

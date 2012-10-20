@@ -4,7 +4,7 @@ Omeka_File_Ingest_Filesystem
 
 .. php:class:: Omeka_File_Ingest_Filesystem
 
-    Package: File\Ingest
+    Package: :doc:`/Reference/packages/File\Ingest/index`
 
     Implements ingesting files from the local filesystem.
 

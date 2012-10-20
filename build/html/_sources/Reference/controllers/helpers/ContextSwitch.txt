@@ -4,7 +4,7 @@ Omeka_Controller_Action_Helper_ContextSwitch
 
 .. php:class:: Omeka_Controller_Action_Helper_ContextSwitch
 
-    Package: Controller\ActionHelper
+    Package: :doc:`/Reference/packages/Controller\ActionHelper/index`
 
     Extends the default ContextSwitch action helper to enable JSONP.
 

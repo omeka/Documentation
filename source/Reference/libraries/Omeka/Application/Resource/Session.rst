@@ -4,7 +4,7 @@ Omeka_Application_Resource_Session
 
 .. php:class:: Omeka_Application_Resource_Session
 
-    Package: Application\Resource
+    Package: :doc:`/Reference/packages/Application\Resource/index`
 
     Initialize the session.
     

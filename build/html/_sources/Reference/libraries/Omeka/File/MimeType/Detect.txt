@@ -4,7 +4,7 @@ Omeka_File_MimeType_Detect
 
 .. php:class:: Omeka_File_MimeType_Detect
 
-    Package: File\MimeType\Detect
+    Package: :doc:`/Reference/packages/File\MimeType\Detect/index`
 
     Represents the detected MIME types of a file.
 

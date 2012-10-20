@@ -4,7 +4,7 @@ Omeka_Application_Resource_Jobs
 
 .. php:class:: Omeka_Application_Resource_Jobs
 
-    Package: Application\Resource
+    Package: :doc:`/Reference/packages/Application\Resource/index`
 
     Bootstrap resource for configuring the job dispatcher.
 

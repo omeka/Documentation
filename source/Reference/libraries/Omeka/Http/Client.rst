@@ -4,7 +4,7 @@ Omeka_Http_Client
 
 .. php:class:: Omeka_Http_Client
 
-    Package: Http
+    Package: :doc:`/Reference/packages/Http/index`
 
     Wrapper for Zend_Http_Client.
     

@@ -4,7 +4,7 @@ Omeka_Filter_Time
 
 .. php:class:: Omeka_Filter_Time
 
-    Package: Filter
+    Package: :doc:`/Reference/packages/Filter/index`
 
     Converts to and from MySQL time representations.
 

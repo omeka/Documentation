@@ -4,7 +4,7 @@ Table_SearchText
 
 .. php:class:: Table_SearchText
 
-    Package: Db\Table
+    Package: :doc:`/Reference/packages/Db\Table/index`
 
     .. php:method:: findByRecord(string $recordType, int $recordId)
     

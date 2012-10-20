@@ -4,7 +4,7 @@ FilesController
 
 .. php:class:: FilesController
 
-    Package: Controller
+    Package: :doc:`/Reference/packages/Controller/index`
 
     .. php:attr:: contexts
     

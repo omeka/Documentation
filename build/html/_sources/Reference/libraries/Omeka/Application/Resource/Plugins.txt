@@ -4,7 +4,7 @@ Omeka_Application_Resource_Plugins
 
 .. php:class:: Omeka_Application_Resource_Plugins
 
-    Package: Application\Resource
+    Package: :doc:`/Reference/packages/Application\Resource/index`
 
     Fire the 'initialize' hook for all installed plugins.
     

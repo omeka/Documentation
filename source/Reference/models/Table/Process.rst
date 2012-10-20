@@ -4,7 +4,7 @@ Table_Process
 
 .. php:class:: Table_Process
 
-    Package: Db\Table
+    Package: :doc:`/Reference/packages/Db\Table/index`
 
     .. php:attr:: _target
     

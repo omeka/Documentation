@@ -4,7 +4,7 @@ Table_File
 
 .. php:class:: Table_File
 
-    Package: Db\Table
+    Package: :doc:`/Reference/packages/Db\Table/index`
 
     .. php:attr:: _target
     

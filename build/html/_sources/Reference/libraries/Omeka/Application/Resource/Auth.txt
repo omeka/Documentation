@@ -4,7 +4,7 @@ Omeka_Application_Resource_Auth
 
 .. php:class:: Omeka_Application_Resource_Auth
 
-    Package: Application\Resource
+    Package: :doc:`/Reference/packages/Application\Resource/index`
 
     Authentication resource.
 
