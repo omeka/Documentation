@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Global Functions &mdash; Omeka Documentation v2.0 documentation</title>
+    <title>Global (Theming) Functions &mdash; Omeka Documentation v2.0 documentation</title>
     <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -58,173 +58,1103 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="global-functions">
-<h1>Global Functions<a class="headerlink" href="#global-functions" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="global-theming-functions">
+<span id="globals"></span><h1>Global (Theming) Functions<a class="headerlink" href="#global-theming-functions" title="Permalink to this headline">¶</a></h1>
+<p>All Functions</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="__.html">__ (double underscore)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="_define_web_root.html">_define_web_root</a></li>
-<li class="toctree-l1"><a class="reference internal" href="_log.html">_log</a></li>
-<li class="toctree-l1"><a class="reference internal" href="absolute_url.html">absolute_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_file_display_callback.html">add_file_display_callback</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_filter.html">add_filter</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_plugin_hook.html">add_plugin_hook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_translation_source.html">add_translation_source</a></li>
-<li class="toctree-l1"><a class="reference internal" href="admin_bar.html">admin_bar</a></li>
-<li class="toctree-l1"><a class="reference internal" href="admin_bar_class.html">admin_bar_class</a></li>
-<li class="toctree-l1"><a class="reference internal" href="admin_bar_css.html">admin_bar_css</a></li>
-<li class="toctree-l1"><a class="reference internal" href="admin_url.html">admin_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="all_element_texts.html">all_element_texts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="apply_filters.html">apply_filters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="auto_discovery_link_tags.html">auto_discovery_link_tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="body_tag.html">body_tag</a></li>
-<li class="toctree-l1"><a class="reference internal" href="browse_headings.html">browse_headings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="clear_filters.html">clear_filters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collection_has_collectors.html">collection_has_collectors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="common.html">common</a></li>
-<li class="toctree-l1"><a class="reference internal" href="css_src.html">css_src</a></li>
-<li class="toctree-l1"><a class="reference internal" href="current_url.html">current_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="current_user.html">current_user</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_display_logo.html">custom_display_logo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_header_background.html">custom_header_background</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_header_image.html">custom_header_image</a></li>
-<li class="toctree-l1"><a class="reference internal" href="debug.html">debug</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_option.html">delete_option</a></li>
-<li class="toctree-l1"><a class="reference internal" href="element_exists.html">element_exists</a></li>
-<li class="toctree-l1"><a class="reference internal" href="element_form.html">element_form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="element_set_form.html">element_set_form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="file_display_url.html">file_display_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="file_id3_metadata.html">file_id3_metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="file_markup.html">file_markup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="files_for_item.html">files_for_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="fire_plugin_hook.html">fire_plugin_hook</a></li>
-<li class="toctree-l1"><a class="reference internal" href="flash.html">flash</a></li>
-<li class="toctree-l1"><a class="reference internal" href="foot.html">foot</a></li>
-<li class="toctree-l1"><a class="reference internal" href="format_date.html">format_date</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_acl.html">get_acl</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_collection_for_item.html">get_collection_for_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_current_action_contexts.html">get_current_action_contexts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_current_record.html">get_current_record</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_custom_search_record_types.html">get_custom_search_record_types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_db.html">get_db</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_html_lang.html">get_html_lang</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_loop_records.html">get_loop_records</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_next_item.html">get_next_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_option.html">get_option</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_plugin_broker.html">get_plugin_broker</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_plugin_hook_output.html">get_plugin_hook_output</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_plugin_ini.html">get_plugin_ini</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_previous_item.html">get_previous_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_random_featured_collection.html">get_random_featured_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_random_featured_item.html">get_random_featured_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_random_featured_items.html">get_random_featured_items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_recent_collections.html">get_recent_collections</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_recent_files.html">get_recent_files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_recent_items.html">get_recent_items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_recent_tags.html">get_recent_tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_record_by_id.html">get_record_by_id</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_records.html">get_records</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_search_record_types.html">get_search_record_types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_specific_plugin_hook_output.html">get_specific_plugin_hook_output</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_table_options.html">get_table_options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_theme_option.html">get_theme_option</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_user_roles.html">get_user_roles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_view.html">get_view</a></li>
-<li class="toctree-l1"><a class="reference internal" href="has_loop_records.html">has_loop_records</a></li>
-<li class="toctree-l1"><a class="reference internal" href="has_tags.html">has_tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="head.html">head</a></li>
-<li class="toctree-l1"><a class="reference internal" href="head_css.html">head_css</a></li>
-<li class="toctree-l1"><a class="reference internal" href="head_js.html">head_js</a></li>
-<li class="toctree-l1"><a class="reference internal" href="html_escape.html">html_escape</a></li>
-<li class="toctree-l1"><a class="reference internal" href="img.html">img</a></li>
-<li class="toctree-l1"><a class="reference internal" href="insert_collection.html">insert_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="insert_element_set.html">insert_element_set</a></li>
-<li class="toctree-l1"><a class="reference internal" href="insert_files_for_item.html">insert_files_for_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="insert_item.html">insert_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="insert_item_type.html">insert_item_type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="is_admin_theme.html">is_admin_theme</a></li>
-<li class="toctree-l1"><a class="reference internal" href="is_allowed.html">is_allowed</a></li>
-<li class="toctree-l1"><a class="reference internal" href="is_current_url.html">is_current_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_citation.html">item_citation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_field_uses_html.html">item_field_uses_html</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_fullsize.html">item_fullsize</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_has_files.html">item_has_files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_has_tags.html">item_has_tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_has_thumbnail.html">item_has_thumbnail</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_image.html">item_image</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_square_thumbnail.html">item_square_thumbnail</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_thumbnail.html">item_thumbnail</a></li>
-<li class="toctree-l1"><a class="reference internal" href="item_type_elements.html">item_type_elements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="items_output_url.html">items_output_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="items_search_form.html">items_search_form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="js_escape.html">js_escape</a></li>
-<li class="toctree-l1"><a class="reference internal" href="js_tag.html">js_tag</a></li>
-<li class="toctree-l1"><a class="reference internal" href="label_table_options.html">label_table_options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="latest_omeka_version.html">latest_omeka_version</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to.html">link_to</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_admin_home_page.html">link_to_admin_home_page</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_collection.html">link_to_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_collection_for_item.html">link_to_collection_for_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_file_show.html">link_to_file_show</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_home_page.html">link_to_home_page</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_item.html">link_to_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_item_search.html">link_to_item_search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_items_browse.html">link_to_items_browse</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_items_in_collection.html">link_to_items_in_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_items_rss.html">link_to_items_rss</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_items_with_item_type.html">link_to_items_with_item_type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_next_item_show.html">link_to_next_item_show</a></li>
-<li class="toctree-l1"><a class="reference internal" href="link_to_previous_item_show.html">link_to_previous_item_show</a></li>
-<li class="toctree-l1"><a class="reference internal" href="loop.html">loop</a></li>
-<li class="toctree-l1"><a class="reference internal" href="max_file_size.html">max_file_size</a></li>
-<li class="toctree-l1"><a class="reference internal" href="metadata.html">metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="nav.html">nav</a></li>
-<li class="toctree-l1"><a class="reference internal" href="option.html">option</a></li>
-<li class="toctree-l1"><a class="reference internal" href="output_format_list.html">output_format_list</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pagination_links.html">pagination_links</a></li>
-<li class="toctree-l1"><a class="reference internal" href="physical_path_to.html">physical_path_to</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pluck.html">pluck</a></li>
-<li class="toctree-l1"><a class="reference internal" href="plugin_is_active.html">plugin_is_active</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_nav.html">public_nav</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_nav_items.html">public_nav_items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_nav_main.html">public_nav_main</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_url.html">public_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="queue_css_file.html">queue_css_file</a></li>
-<li class="toctree-l1"><a class="reference internal" href="queue_css_string.html">queue_css_string</a></li>
-<li class="toctree-l1"><a class="reference internal" href="queue_js_file.html">queue_js_file</a></li>
-<li class="toctree-l1"><a class="reference internal" href="queue_js_string.html">queue_js_string</a></li>
-<li class="toctree-l1"><a class="reference internal" href="random_featured_collection.html">random_featured_collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="random_featured_item.html">random_featured_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="random_featured_items.html">random_featured_items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_url.html">record_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="release_object.html">release_object</a></li>
-<li class="toctree-l1"><a class="reference internal" href="revert_theme_base_url.html">revert_theme_base_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="search_filters.html">search_filters</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_current_record.html">set_current_record</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_loop_records.html">set_loop_records</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_option.html">set_option</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_theme_base_url.html">set_theme_base_url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="set_theme_option.html">set_theme_option</a></li>
-<li class="toctree-l1"><a class="reference internal" href="show_untitled_items.html">show_untitled_items</a></li>
-<li class="toctree-l1"><a class="reference internal" href="simple_search_form.html">simple_search_form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="snippet.html">snippet</a></li>
-<li class="toctree-l1"><a class="reference internal" href="snippet_by_word_count.html">snippet_by_word_count</a></li>
-<li class="toctree-l1"><a class="reference internal" href="src.html">src</a></li>
-<li class="toctree-l1"><a class="reference internal" href="strip_formatting.html">strip_formatting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stripslashes_deep.html">stripslashes_deep</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tag_attributes.html">tag_attributes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tag_cloud.html">tag_cloud</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tag_string.html">tag_string</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_to_id.html">text_to_id</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_to_paragraphs.html">text_to_paragraphs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="total_records.html">total_records</a></li>
-<li class="toctree-l1"><a class="reference internal" href="total_results.html">total_results</a></li>
-<li class="toctree-l1"><a class="reference internal" href="update_item.html">update_item</a></li>
-<li class="toctree-l1"><a class="reference internal" href="url.html">url</a></li>
-<li class="toctree-l1"><a class="reference internal" href="url_to_link.html">url_to_link</a></li>
-<li class="toctree-l1"><a class="reference internal" href="utf8_htmlspecialchars.html">utf8_htmlspecialchars</a></li>
-<li class="toctree-l1"><a class="reference internal" href="web_path_to.html">web_path_to</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xml_escape.html">xml_escape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="__.html">__ (double underscore)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="__.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="__.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="_log.html">_log</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="_log.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_log.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_log.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_log.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="absolute_url.html">absolute_url</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="absolute_url.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="absolute_url.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="absolute_url.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="absolute_url.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="add_file_display_callback.html">add_file_display_callback</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="add_file_display_callback.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="add_file_display_callback.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="add_file_display_callback.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="add_file_display_callback.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="add_filter.html">add_filter</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="add_filter.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="add_filter.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="add_filter.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="add_filter.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="add_plugin_hook.html">add_plugin_hook</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="add_plugin_hook.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="add_plugin_hook.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="add_plugin_hook.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="add_plugin_hook.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="add_translation_source.html">add_translation_source</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="add_translation_source.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="add_translation_source.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="add_translation_source.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="add_translation_source.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="admin_url.html">admin_url</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="admin_url.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admin_url.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admin_url.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="admin_url.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="all_element_texts.html">all_element_texts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="all_element_texts.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="all_element_texts.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="all_element_texts.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="all_element_texts.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="apply_filters.html">apply_filters</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="apply_filters.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apply_filters.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apply_filters.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apply_filters.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="auto_discovery_link_tags.html">auto_discovery_link_tags</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="auto_discovery_link_tags.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_discovery_link_tags.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_discovery_link_tags.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="auto_discovery_link_tags.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="body_tag.html">body_tag</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="body_tag.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="body_tag.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="body_tag.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="body_tag.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="browse_headings.html">browse_headings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="browse_headings.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="browse_headings.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="browse_headings.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="browse_headings.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="clear_filters.html">clear_filters</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="clear_filters.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clear_filters.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clear_filters.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="clear_filters.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="collection_has_collectors.html">collection_has_collectors</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="collection_has_collectors.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection_has_collectors.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection_has_collectors.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collection_has_collectors.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="common.html">common</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="common.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="common.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="common.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="common.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="css_src.html">css_src</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="css_src.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="css_src.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="css_src.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="css_src.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="current_url.html">current_url</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="current_url.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="current_url.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="current_url.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="current_url.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="current_user.html">current_user</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="current_user.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="current_user.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="current_user.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="current_user.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="debug.html">debug</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="debug.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debug.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debug.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="debug.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="delete_option.html">delete_option</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="delete_option.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="delete_option.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="delete_option.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="delete_option.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="element_exists.html">element_exists</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="element_exists.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="element_exists.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="element_exists.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="element_exists.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="element_form.html">element_form</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="element_form.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="element_form.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="element_form.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="element_form.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="element_set_form.html">element_set_form</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="element_set_form.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="element_set_form.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="element_set_form.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="element_set_form.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file_display_url.html">file_display_url</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file_display_url.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_display_url.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_display_url.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_display_url.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file_id3_metadata.html">file_id3_metadata</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file_id3_metadata.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_id3_metadata.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_id3_metadata.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_id3_metadata.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="file_markup.html">file_markup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="file_markup.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_markup.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_markup.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="file_markup.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="files_for_item.html">files_for_item</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="files_for_item.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="files_for_item.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="files_for_item.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="files_for_item.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="fire_plugin_hook.html">fire_plugin_hook</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="fire_plugin_hook.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fire_plugin_hook.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fire_plugin_hook.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fire_plugin_hook.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="flash.html">flash</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="flash.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flash.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flash.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="flash.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="foot.html">foot</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="foot.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foot.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foot.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="foot.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="format_date.html">format_date</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="format_date.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="format_date.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="format_date.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="format_date.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_acl.html">get_acl</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_acl.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_acl.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_acl.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_acl.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_collection_for_item.html">get_collection_for_item</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_collection_for_item.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_collection_for_item.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_collection_for_item.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_collection_for_item.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_current_action_contexts.html">get_current_action_contexts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_current_action_contexts.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_current_action_contexts.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_current_action_contexts.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_current_action_contexts.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_current_record.html">get_current_record</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_current_record.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_current_record.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_current_record.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_current_record.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_custom_search_record_types.html">get_custom_search_record_types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_custom_search_record_types.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_custom_search_record_types.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_custom_search_record_types.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_custom_search_record_types.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_db.html">get_db</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_db.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_db.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_db.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_db.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_html_lang.html">get_html_lang</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_html_lang.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_html_lang.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_html_lang.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_html_lang.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_loop_records.html">get_loop_records</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_loop_records.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_loop_records.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_loop_records.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_loop_records.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_next_item.html">get_next_item</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_next_item.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_next_item.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_next_item.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_next_item.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_option.html">get_option</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_option.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_option.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_option.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_option.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_plugin_broker.html">get_plugin_broker</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_plugin_broker.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_plugin_broker.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_plugin_broker.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_plugin_broker.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_plugin_hook_output.html">get_plugin_hook_output</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_plugin_hook_output.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_plugin_hook_output.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_plugin_hook_output.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_plugin_hook_output.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_plugin_ini.html">get_plugin_ini</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_plugin_ini.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_plugin_ini.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_plugin_ini.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_plugin_ini.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_previous_item.html">get_previous_item</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_previous_item.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_previous_item.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_previous_item.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_previous_item.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_random_featured_collection.html">get_random_featured_collection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_random_featured_collection.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_random_featured_collection.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_random_featured_collection.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_random_featured_collection.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_random_featured_item.html">get_random_featured_item</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_random_featured_item.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_random_featured_item.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_random_featured_item.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_random_featured_item.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_random_featured_items.html">get_random_featured_items</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_random_featured_items.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_random_featured_items.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_random_featured_items.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_random_featured_items.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_recent_collections.html">get_recent_collections</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_collections.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_collections.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_collections.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_collections.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_recent_files.html">get_recent_files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_files.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_files.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_files.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_files.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_recent_items.html">get_recent_items</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_items.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_items.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_items.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_items.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_recent_tags.html">get_recent_tags</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_tags.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_tags.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_tags.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_recent_tags.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_record_by_id.html">get_record_by_id</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_record_by_id.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_record_by_id.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_record_by_id.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_record_by_id.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_records.html">get_records</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_records.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_records.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_records.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_records.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_search_query_types.html">get_search_query_types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_search_query_types.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_search_query_types.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_search_query_types.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_search_query_types.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_search_record_types.html">get_search_record_types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_search_record_types.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_search_record_types.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_search_record_types.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_search_record_types.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_specific_plugin_hook_output.html">get_specific_plugin_hook_output</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_specific_plugin_hook_output.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_specific_plugin_hook_output.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_specific_plugin_hook_output.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_specific_plugin_hook_output.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_table_options.html">get_table_options</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_table_options.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_table_options.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_table_options.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_table_options.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_theme_option.html">get_theme_option</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_theme_option.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_theme_option.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_theme_option.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_theme_option.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_user_roles.html">get_user_roles</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_user_roles.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_user_roles.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_user_roles.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_user_roles.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="get_view.html">get_view</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="get_view.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_view.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_view.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_view.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="has_loop_records.html">has_loop_records</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="has_loop_records.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="has_loop_records.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="has_loop_records.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="has_loop_records.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="has_tags.html">has_tags</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="has_tags.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="has_tags.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="has_tags.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="has_tags.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="head.html">head</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="head.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="head.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="head.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="head.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="head_css.html">head_css</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="head_css.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="head_css.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="head_css.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="head_css.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="head_js.html">head_js</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="head_js.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="head_js.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="head_js.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="head_js.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="html_escape.html">html_escape</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="html_escape.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="html_escape.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="html_escape.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="html_escape.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="img.html">img</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="img.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="img.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="img.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="img.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="insert_collection.html">insert_collection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="insert_collection.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insert_collection.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insert_collection.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insert_collection.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="insert_element_set.html">insert_element_set</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="insert_element_set.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insert_element_set.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insert_element_set.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insert_element_set.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="insert_files_for_item.html">insert_files_for_item</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="insert_files_for_item.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insert_files_for_item.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insert_files_for_item.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insert_files_for_item.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="insert_item.html">insert_item</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="insert_item.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insert_item.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insert_item.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insert_item.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="insert_item_type.html">insert_item_type</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="insert_item_type.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insert_item_type.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insert_item_type.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="insert_item_type.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="is_admin_theme.html">is_admin_theme</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="is_admin_theme.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="is_admin_theme.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="is_admin_theme.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="is_admin_theme.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="is_allowed.html">is_allowed</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="is_allowed.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="is_allowed.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="is_allowed.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="is_allowed.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="is_current_url.html">is_current_url</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="is_current_url.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="is_current_url.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="is_current_url.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="is_current_url.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="item_citation.html">item_citation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="item_citation.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_citation.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_citation.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_citation.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="item_field_uses_html.html">item_field_uses_html</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="item_field_uses_html.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_field_uses_html.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_field_uses_html.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_field_uses_html.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="item_fullsize.html">item_fullsize</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="item_fullsize.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_fullsize.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_fullsize.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_fullsize.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="item_has_files.html">item_has_files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="item_has_files.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_has_files.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_has_files.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_has_files.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="item_has_tags.html">item_has_tags</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="item_has_tags.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_has_tags.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_has_tags.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_has_tags.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="item_has_thumbnail.html">item_has_thumbnail</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="item_has_thumbnail.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_has_thumbnail.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_has_thumbnail.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_has_thumbnail.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="item_image.html">item_image</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="item_image.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_image.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_image.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_image.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="item_search_filters.html">item_search_filters</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="item_search_filters.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_search_filters.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_search_filters.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_search_filters.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="item_square_thumbnail.html">item_square_thumbnail</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="item_square_thumbnail.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_square_thumbnail.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_square_thumbnail.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_square_thumbnail.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="item_thumbnail.html">item_thumbnail</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="item_thumbnail.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_thumbnail.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_thumbnail.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_thumbnail.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="item_type_elements.html">item_type_elements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="item_type_elements.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_type_elements.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_type_elements.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="item_type_elements.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="items_output_url.html">items_output_url</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="items_output_url.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="items_output_url.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="items_output_url.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="items_output_url.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="items_search_form.html">items_search_form</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="items_search_form.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="items_search_form.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="items_search_form.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="items_search_form.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="js_escape.html">js_escape</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="js_escape.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="js_escape.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="js_escape.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="js_escape.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="js_tag.html">js_tag</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="js_tag.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="js_tag.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="js_tag.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="js_tag.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="label_table_options.html">label_table_options</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="label_table_options.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="label_table_options.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="label_table_options.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="label_table_options.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="latest_omeka_version.html">latest_omeka_version</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="latest_omeka_version.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="latest_omeka_version.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="latest_omeka_version.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="latest_omeka_version.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="link_to.html">link_to</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="link_to.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="link_to_admin_home_page.html">link_to_admin_home_page</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="link_to_admin_home_page.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_admin_home_page.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_admin_home_page.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_admin_home_page.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="link_to_collection.html">link_to_collection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="link_to_collection.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_collection.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_collection.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_collection.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="link_to_collection_for_item.html">link_to_collection_for_item</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="link_to_collection_for_item.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_collection_for_item.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_collection_for_item.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_collection_for_item.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="link_to_file_show.html">link_to_file_show</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="link_to_file_show.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_file_show.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_file_show.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_file_show.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="link_to_home_page.html">link_to_home_page</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="link_to_home_page.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_home_page.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_home_page.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_home_page.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="link_to_item.html">link_to_item</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="link_to_item.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_item.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_item.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_item.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="link_to_item_search.html">link_to_item_search</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="link_to_item_search.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_item_search.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_item_search.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_item_search.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="link_to_items_browse.html">link_to_items_browse</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_browse.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_browse.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_browse.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_browse.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="link_to_items_in_collection.html">link_to_items_in_collection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_in_collection.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_in_collection.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_in_collection.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_in_collection.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="link_to_items_rss.html">link_to_items_rss</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_rss.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_rss.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_rss.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_rss.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="link_to_items_with_item_type.html">link_to_items_with_item_type</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_with_item_type.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_with_item_type.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_with_item_type.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_items_with_item_type.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="link_to_next_item_show.html">link_to_next_item_show</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="link_to_next_item_show.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_next_item_show.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_next_item_show.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_next_item_show.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="link_to_previous_item_show.html">link_to_previous_item_show</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="link_to_previous_item_show.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_previous_item_show.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_previous_item_show.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="link_to_previous_item_show.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="loop.html">loop</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="loop.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loop.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loop.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="loop.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="max_file_size.html">max_file_size</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="max_file_size.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="max_file_size.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="max_file_size.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="max_file_size.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="metadata.html">metadata</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="metadata.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metadata.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metadata.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metadata.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="nav.html">nav</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="nav.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nav.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nav.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="nav.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="option.html">option</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="option.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="option.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="option.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="option.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="output_format_list.html">output_format_list</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="output_format_list.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="output_format_list.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="output_format_list.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="output_format_list.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pagination_links.html">pagination_links</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pagination_links.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pagination_links.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pagination_links.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pagination_links.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="physical_path_to.html">physical_path_to</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="physical_path_to.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_path_to.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_path_to.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="physical_path_to.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pluck.html">pluck</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pluck.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pluck.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pluck.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pluck.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="plugin_is_active.html">plugin_is_active</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="plugin_is_active.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plugin_is_active.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plugin_is_active.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="plugin_is_active.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="public_nav_items.html">public_nav_items</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="public_nav_items.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="public_nav_items.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="public_nav_items.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="public_nav_items.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="public_nav_main.html">public_nav_main</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="public_nav_main.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="public_nav_main.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="public_nav_main.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="public_nav_main.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="public_url.html">public_url</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="public_url.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="public_url.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="public_url.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="public_url.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="queue_css_file.html">queue_css_file</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="queue_css_file.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue_css_file.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue_css_file.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue_css_file.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="queue_css_string.html">queue_css_string</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="queue_css_string.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue_css_string.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue_css_string.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue_css_string.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="queue_js_file.html">queue_js_file</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="queue_js_file.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue_js_file.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue_js_file.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue_js_file.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="queue_js_string.html">queue_js_string</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="queue_js_string.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue_js_string.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue_js_string.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="queue_js_string.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="random_featured_collection.html">random_featured_collection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="random_featured_collection.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random_featured_collection.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random_featured_collection.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random_featured_collection.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="random_featured_item.html">random_featured_item</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="random_featured_item.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random_featured_item.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random_featured_item.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random_featured_item.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="random_featured_items.html">random_featured_items</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="random_featured_items.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random_featured_items.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random_featured_items.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="random_featured_items.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="record_url.html">record_url</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="record_url.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="record_url.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="record_url.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="record_url.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="release_object.html">release_object</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="release_object.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release_object.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release_object.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release_object.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="revert_theme_base_url.html">revert_theme_base_url</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="revert_theme_base_url.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="revert_theme_base_url.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="revert_theme_base_url.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="revert_theme_base_url.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="search_form.html">search_form</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="search_form.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search_form.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search_form.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="search_form.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="set_current_record.html">set_current_record</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="set_current_record.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_current_record.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_current_record.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_current_record.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="set_loop_records.html">set_loop_records</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="set_loop_records.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_loop_records.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_loop_records.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_loop_records.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="set_option.html">set_option</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="set_option.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_option.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_option.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_option.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="set_theme_base_url.html">set_theme_base_url</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="set_theme_base_url.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_theme_base_url.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_theme_base_url.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_theme_base_url.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="set_theme_option.html">set_theme_option</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="set_theme_option.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_theme_option.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_theme_option.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="set_theme_option.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="snippet.html">snippet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="snippet.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="snippet.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="snippet.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="snippet.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="snippet_by_word_count.html">snippet_by_word_count</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="snippet_by_word_count.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="snippet_by_word_count.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="snippet_by_word_count.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="snippet_by_word_count.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="src.html">src</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="src.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="src.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="strip_formatting.html">strip_formatting</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="strip_formatting.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="strip_formatting.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="strip_formatting.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="strip_formatting.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="stripslashes_deep.html">stripslashes_deep</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="stripslashes_deep.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stripslashes_deep.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stripslashes_deep.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="stripslashes_deep.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tag_attributes.html">tag_attributes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tag_attributes.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tag_attributes.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tag_attributes.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tag_attributes.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tag_cloud.html">tag_cloud</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tag_cloud.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tag_cloud.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tag_cloud.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tag_cloud.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tag_string.html">tag_string</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tag_string.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tag_string.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tag_string.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="tag_string.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="text_to_id.html">text_to_id</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="text_to_id.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_to_id.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_to_id.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_to_id.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="text_to_paragraphs.html">text_to_paragraphs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="text_to_paragraphs.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_to_paragraphs.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_to_paragraphs.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_to_paragraphs.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="theme_header_background.html">theme_header_background</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="theme_header_background.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme_header_background.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme_header_background.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme_header_background.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="theme_header_image.html">theme_header_image</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="theme_header_image.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme_header_image.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme_header_image.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme_header_image.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="theme_logo.html">theme_logo</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="theme_logo.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme_logo.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme_logo.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="theme_logo.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="total_records.html">total_records</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="total_records.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="total_records.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="total_records.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="total_records.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="update_item.html">update_item</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="update_item.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update_item.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update_item.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="update_item.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="url.html">url</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="url.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="url.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="url.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="url.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="url_to_link.html">url_to_link</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="url_to_link.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="url_to_link.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="url_to_link.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="url_to_link.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="web_path_to.html">web_path_to</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="web_path_to.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="web_path_to.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="web_path_to.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="web_path_to.html#see-also">See Also</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="xml_escape.html">xml_escape</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xml_escape.html#summary">Summary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml_escape.html#usage">Usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml_escape.html#examples">Examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xml_escape.html#see-also">See Also</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>

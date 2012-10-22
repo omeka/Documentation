@@ -170,10 +170,10 @@
 <li class="toctree-l3"><a class="reference internal" href="Db/Table/ItemType.html">Table_ItemType</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Db/Table/Plugin.html">Table_Plugin</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Db/Table/Process.html">Table_Process</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Db/Table/RecordsTags.html">Table_RecordsTags</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Db/Table/SearchText.html">Table_SearchText</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Db/Table/Table.html">Omeka_Db_Table</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Db/Table/Tag.html">Table_Tag</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Db/Table/Taggings.html">Table_Taggings</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Db/Table/User.html">Table_User</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Db/Table/UsersActivations.html">Table_UsersActivations</a></li>
 </ul>
@@ -208,11 +208,9 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Filter/index.html">Filter</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Filter/Boolean.html">Omeka_Filter_Boolean</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Filter/Date.html">Omeka_Filter_Date</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Filter/Filename.html">Omeka_Filter_Filename</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Filter/ForeignKey.html">Omeka_Filter_ForeignKey</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Filter/HtmlPurifier.html">Omeka_Filter_HtmlPurifier</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Filter/Time.html">Omeka_Filter_Time</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Form/index.html">Form</a><ul>
@@ -223,6 +221,22 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Http/index.html">Http</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Http/Client.html">Omeka_Http_Client</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Install/index.html">Install</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Install/Default.html">Installer_Default</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Install/Exception.html">Installer_Exception</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Install/InstallerInterface.html">Installer_InstallerInterface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Install/Migrations.html">Installer_Task_Migrations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Install/Options.html">Installer_Task_Options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Install/Requirements.html">Installer_Requirements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Install/Schema.html">Installer_Task_Schema</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Install/TaskInterface.html">Installer_TaskInterface</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Install/Test.html">Installer_Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Install/Task/index.html">InstallTask</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Install/Task/User.html">Installer_Task_User</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Job/index.html">Job</a><ul>
@@ -263,14 +277,157 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Navigation/index.html">Navigation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Navigation/Navigation.html">Omeka_Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Navigation/Uri.html">Omeka_Navigation_Page_Uri</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Output/index.html">Output</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Output/AbstractOmekaXml.html">Omeka_Output_OmekaXml_AbstractOmekaXml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output/CollectionOmekaXml.html">Output_CollectionOmekaXml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output/FileOmekaXml.html">Output_FileOmekaXml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output/ItemAtom.html">Output_ItemAtom</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output/ItemContainerOmekaXml.html">Output_ItemContainerOmekaXml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output/ItemDcmesXml.html">Output_ItemDcmesXml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output/ItemOmekaXml.html">Output_ItemOmekaXml</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output/ItemRss2.html">Output_ItemRss2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Output/OmekaJson.html">Output_OmekaJson</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Plugin/index.html">Plugin</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Plugin/AbstractPlugin.html">Omeka_Plugin_AbstractPlugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Plugin/Exception.html">Omeka_Plugin_Exception</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Plugin/Factory.html">Omeka_Plugin_Factory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Plugin/Ini.html">Omeka_Plugin_Ini</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Plugin/Mvc.html">Omeka_Plugin_Mvc</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Plugin/Broker/index.html">PluginBroker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Plugin/Broker/Broker.html">Omeka_Plugin_Broker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Plugin/Broker/Factory.html">Omeka_Plugin_Broker_Factory</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Plugin/Installer/index.html">PluginInstaller</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Plugin/Installer/Exception.html">Omeka_Plugin_Installer_Exception</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Plugin/Installer/Installer.html">Omeka_Plugin_Installer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Plugin/Loader/index.html">PluginLoader</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Plugin/Loader/Exception.html">Omeka_Plugin_Loader_Exception</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Plugin/Loader/Loader.html">Omeka_Plugin_Loader</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Record/index.html">Record</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Record/AbstractRecord.html">Omeka_Record_AbstractRecord</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/Collection.html">Collection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/Element.html">Element</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/ElementSet.html">ElementSet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/ElementText.html">ElementText</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/Exception.html">Omeka_Record_Exception</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/File.html">File</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/Item.html">Item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/ItemType.html">ItemType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/ItemTypesElements.html">ItemTypesElements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/Iterator.html">Omeka_Record_Iterator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/Option.html">Option</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/Plugin.html">Plugin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/Process.html">Process</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/RecordsTags.html">RecordsTags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/SearchText.html">SearchText</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/Tag.html">Tag</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/Theme.html">Theme</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/User.html">User</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/UsersActivations.html">UsersActivations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Record/Builder/index.html">RecordBuilder</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Record/Builder/AbstractBuilder.html">Omeka_Record_Builder_AbstractBuilder</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Record/Builder/Collection.html">Builder_Collection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Record/Builder/ElementSet.html">Builder_ElementSet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Record/Builder/Exception.html">Omeka_Record_Builder_Exception</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Record/Builder/Item.html">Builder_Item</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Record/Builder/ItemType.html">Builder_ItemType</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Record/Mixin/index.html">RecordMixin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Record/Mixin/AbstractMixin.html">Omeka_Record_Mixin_AbstractMixin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Record/Mixin/ElementText.html">Mixin_ElementText</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Record/Mixin/Owner.html">Mixin_Owner</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Record/Mixin/PublicFeatured.html">Mixin_PublicFeatured</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Record/Mixin/Search.html">Mixin_Search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Record/Mixin/Tag.html">Mixin_Tag</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Record/Mixin/Timestamp.html">Mixin_Timestamp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Session/index.html">Session</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Session/DbTable.html">Omeka_Session_SaveHandler_DbTable</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Storage/index.html">Storage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Storage/Exception.html">Omeka_Storage_Exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Storage/Storage.html">Omeka_Storage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Storage/Adapter/index.html">StorageAdapter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Storage/Adapter/AdapterInterface.html">Omeka_Storage_Adapter_AdapterInterface</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Storage/Adapter/Filesystem.html">Omeka_Storage_Adapter_Filesystem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Storage/Adapter/TempFilesystem.html">Omeka_Storage_Adapter_TempFilesystem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Storage/Adapter/ZendS3.html">Omeka_Storage_Adapter_ZendS3</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Test/index.html">Test</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Test/AppTestCase.html">Omeka_Test_AppTestCase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Test/Bootstrap.html">Omeka_Test_Bootstrap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Test/Helper/index.html">TestHelper</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Test/Helper/Db.html">Omeka_Test_Helper_Db</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Test/Helper/DbProfiler.html">Omeka_Test_Helper_DbProfiler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Test/Helper/Mail.html">Omeka_Test_Helper_Mail</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Test/Helper/Plugin.html">Omeka_Test_Helper_Plugin</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Test/Resource/index.html">TestResource</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Test/Resource/Config.html">Omeka_Test_Resource_Config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Test/Resource/Db.html">Omeka_Test_Resource_Db</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Test/Resource/Debug.html">Omeka_Test_Resource_Debug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Test/Resource/Mail.html">Omeka_Test_Resource_Mail</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Test/Resource/Storage.html">Omeka_Test_Resource_Storage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Test/Resource/Tempdir.html">Omeka_Test_Resource_Tempdir</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Validate/index.html">Validate</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Validate/Confirmation.html">Omeka_Validate_Confirmation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Validate/Errors.html">Omeka_Validate_Errors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Validate/Exception.html">Omeka_Validate_Exception</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Validate/Extension.html">Omeka_Validate_File_Extension</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Validate/MimeType.html">Omeka_Validate_File_MimeType</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Validate/Uri.html">Omeka_Validate_Uri</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Validate/UserPassword.html">Omeka_Validate_UserPassword</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="View/index.html">View</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="View/Exception.html">Omeka_View_Exception</a></li>
 <li class="toctree-l2"><a class="reference internal" href="View/View.html">Omeka_View</a></li>
+<li class="toctree-l2"><a class="reference internal" href="View/Helper/index.html">ViewHelper</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/AllElementTexts.html">Omeka_View_Helper_AllElementTexts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/ElementForm.html">Omeka_View_Helper_ElementForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/ElementInput.html">Omeka_View_Helper_ElementInput</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/FileId3Metadata.html">Omeka_View_Helper_FileId3Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/Flash.html">Omeka_View_Helper_Flash</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/GetCurrentRecord.html">Omeka_View_Helper_GetCurrentRecord</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/GetLoopRecords.html">Omeka_View_Helper_GetLoopRecords</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/ItemSearchFilters.html">Omeka_View_Helper_ItemSearchFilters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/Loop.html">Omeka_View_Helper_Loop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/MaxFileSize.html">Omeka_View_Helper_MaxFileSize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/Metadata.html">Omeka_View_Helper_Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/Pluralize.html">Omeka_View_Helper_Pluralize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/RecordUrl.html">Omeka_View_Helper_RecordUrl</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/SearchForm.html">Omeka_View_Helper_SearchForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/SetCurrentRecord.html">Omeka_View_Helper_SetCurrentRecord</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/SetLoopRecords.html">Omeka_View_Helper_SetLoopRecords</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/Singularize.html">Omeka_View_Helper_Singularize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="View/Helper/Url.html">Omeka_View_Helper_Url</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
