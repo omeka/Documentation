@@ -4,9 +4,11 @@ Omeka_Storage_Adapter_Filesystem
 
 .. php:class:: Omeka_Storage_Adapter_Filesystem
 
+    Package: :doc:`/Reference/packages/Storage\Adapter/index`
+
     Standard local filesystem storage adapter.
     
-    The default adapter; this stores files in the Omeka files directoryby default, but can be set to point to a different path.
+    The default adapter; this stores files in the Omeka files directory bydefault, but can be set to point to a different path.
 
     .. php:attr:: _localDir
     

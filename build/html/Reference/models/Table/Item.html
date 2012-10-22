@@ -234,9 +234,10 @@ should maketagged items show up higher on the found results list for a given sea
 <dd><p>Query must look like the following in order to correctly retrieve items
 that have all the tags provided (in this example, all items that are
 tagged both &#8216;foo&#8217; and &#8216;bar&#8217;):</p>
-<p>SELECT i.idFROM omeka_items iWHERE(i.id IN(SELECT tg.relation_id as idFROM omeka_taggings tgINNER JOIN omeka_tags t
-ON t.id = tg.tag_idWHERE t.name = &#8216;foo&#8217; AND tg.type = &#8216;Item&#8217;)AND i.id IN(SELECT tg.relation_id as idFROM
-omeka_taggings tgINNER JOIN omeka_tags t ON t.id = tg.tag_idWHERE t.name = &#8216;bar&#8217; AND tg.type = &#8216;Item&#8217;))...</p>
+<p>SELECT i.idFROM omeka_items iWHERE(i.id IN(SELECT tg.record_id as idFROM omeka_records_tags tgINNER JOIN omeka_tags
+t ON t.id = tg.tag_idWHERE t.name = &#8216;foo&#8217; AND tg.record_type = &#8216;Item&#8217;)AND i.id IN(SELECT tg.record_id as idFROM
+omeka_records_tags tgINNER JOIN omeka_tags t ON t.id = tg.tag_idWHERE t.name = &#8216;bar&#8217; AND tg.record_type =
+&#8216;Item&#8217;))...</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

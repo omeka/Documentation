@@ -108,7 +108,7 @@ table.</p>
 
 <dl class="method">
 <dt id="Table_File::findByItem">
-<tt class="descname">findByItem</tt><big>(</big><em>integer $itemId</em>, <em>array $fileIds = Array</em>, <em>string $sort = id</em><big>)</big><a class="headerlink" href="#Table_File::findByItem" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">findByItem</tt><big>(</big><em>integer $itemId</em>, <em>array $fileIds = Array</em>, <em>string $sort = order</em><big>)</big><a class="headerlink" href="#Table_File::findByItem" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve files associated with an item.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -117,7 +117,7 @@ table.</p>
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>$itemId</strong> (<em>integer</em>) &#8211; </li>
 <li><strong>$fileIds</strong> (<em>array</em>) &#8211; Optional If given, this will only retrieve files with these specific IDs.</li>
-<li><strong>$sort</strong> (<em>string</em>) &#8211; The manner in which to order the files by. For example: &#8216;id&#8217; = file id, &#8216;filename&#8217; = alphabetical by filename</li>
+<li><strong>$sort</strong> (<em>string</em>) &#8211; The manner by which to order the files. For example: &#8216;id&#8217;: file id, &#8216;filename&#8217; = alphabetical by filename. The default is &#8216;order&#8217;, following the user&#8217;s specified order.</li>
 </ul>
 </td>
 </tr>
@@ -130,16 +130,16 @@ table.</p>
 
 <dl class="method">
 <dt id="Table_File::findWithImages">
-<tt class="descname">findWithImages</tt><big>(</big><em>integer $itemId</em>, <em>integer|null $index</em>, <em>string $sort = id</em><big>)</big><a class="headerlink" href="#Table_File::findWithImages" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">findWithImages</tt><big>(</big><em>integer $itemId</em>, <em>integer|null $index</em>, <em>string $sort = order</em><big>)</big><a class="headerlink" href="#Table_File::findWithImages" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve files for an item that has derivative images.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$itemId</strong> (<em>integer</em>) &#8211; </li>
-<li><strong>$index</strong> (<em>integer|null</em>) &#8211; Optional If given, this specifies the file to retrieve for an item, based upon the ordering of its derivative files.</li>
-<li><strong>$sort</strong> (<em>string</em>) &#8211; The manner in which to order the files by. For example: &#8216;id&#8217; = file id, &#8216;filename&#8217; = alphabetical by filename</li>
+<li><strong>$itemId</strong> (<em>integer</em>) &#8211; The ID of the item to get images for.</li>
+<li><strong>$index</strong> (<em>integer|null</em>) &#8211; Optional If given, this specifies the file to retrieve for an item, based upon the ordering of its files.</li>
+<li><strong>$sort</strong> (<em>string</em>) &#8211; The manner by which to order the files. For example: &#8216;id&#8217;: file id, &#8216;filename&#8217;: alphabetical by filename. The default is &#8216;order&#8217;, following the user&#8217;s specified order.</li>
 </ul>
 </td>
 </tr>

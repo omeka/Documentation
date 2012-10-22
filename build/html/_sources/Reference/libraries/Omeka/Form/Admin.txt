@@ -25,6 +25,10 @@ Omeka_Form_Admin
     
 
 
+    .. php:attr:: _record_type
+    
+
+
     .. php:attr:: _hasPublicPage
     
 
@@ -71,6 +75,10 @@ Omeka_Form_Admin
     .. php:method:: setSaveGroupCssClass($cssClass)
     
         :param unknown $cssClass:
+
+    .. php:method:: setRecordType($type)
+    
+        :param unknown $type:
 
     .. php:method:: setRecord($record)
     

@@ -4,6 +4,8 @@ Omeka_View_Helper_MaxFileSize
 
 .. php:class:: Omeka_View_Helper_MaxFileSize
 
+    Package: :doc:`/Reference/packages/View\Helper/index`
+
     .. php:attr:: _maxFileSize
     
 

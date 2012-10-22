@@ -1,0 +1,9 @@
+####
+File
+####
+
+.. toctree::
+    :glob:
+
+    *
+    */index

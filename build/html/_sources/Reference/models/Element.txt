@@ -4,6 +4,10 @@ Element
 
 .. php:class:: Element
 
+    Package: :doc:`/Reference/packages/Record/index`
+
+    An element and its metadata.
+
     .. php:attr:: element_set_id
     
 

@@ -1,0 +1,358 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Hooks &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
+    <link rel="up" title="Reference Documentation for Omeka" href="../index.html" />
+    <link rel="next" title="&lt;model&gt;_browse_sql" href="&lt;model&gt;_browse_sql.html" />
+    <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="<model>_browse_sql.html" title="&lt;model&gt;_browse_sql"
+             accesskey="N">next</a> |</li>
+    
+        <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../index.html" accesskey="U">Reference Documentation for Omeka</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="hooks">
+<h1>Hooks<a class="headerlink" href="#hooks" title="Permalink to this headline">¶</a></h1>
+<p><a class="reference internal" href="overview/usingHooks.html#usinghooks"><em>Using Hooks</em></a></p>
+<div class="section" id="all-hooks">
+<h2>All Hooks<a class="headerlink" href="#all-hooks" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="&lt;model&gt;_browse_sql.html">&lt;model&gt;_browse_sql</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_record_tag.html">add_record_tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_advanced_search.html">admin_append_to_advanced_search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_collections_browse_primary.html">admin_append_to_collections_browse_primary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_collections_form.html">admin_append_to_collections_form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_collections_show_primary.html">admin_append_to_collections_show_primary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_dashboard_primary.html">admin_append_to_dashboard_primary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_dashboard_secondary.html">admin_append_to_dashboard_secondary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_item_form.html">admin_append_to_item_form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_item_types_browse_primary.html">admin_append_to_item_types_browse_primary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_item_types_form.html">admin_append_to_item_types_form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_item_types_show_primary.html">admin_append_to_item_types_show_primary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_items_browse_detailed_each.html">admin_append_to_items_browse_detailed_each</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_items_browse_primary.html">admin_append_to_items_browse_primary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_items_form_collection.html">admin_append_to_items_form_collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_items_form_files.html">admin_append_to_items_form_files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_items_form_tags.html">admin_append_to_items_form_tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_items_show_primary.html">admin_append_to_items_show_primary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_items_show_secondary.html">admin_append_to_items_show_secondary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_plugin_uninstall_message.html">admin_append_to_plugin_uninstall_message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_users_form.html">admin_append_to_users_form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_theme_footer.html">admin_theme_footer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_theme_header.html">admin_theme_header</a></li>
+<li class="toctree-l1"><a class="reference internal" href="after_delete_&lt;model&gt;.html">after_delete_&lt;model&gt;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="after_delete_record.html">after_delete_record</a></li>
+<li class="toctree-l1"><a class="reference internal" href="after_save_&lt;model&gt;.html">after_save_&lt;model&gt;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="after_save_record.html">after_save_record</a></li>
+<li class="toctree-l1"><a class="reference internal" href="after_upload_file.html">after_upload_file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="before_delete_&lt;model&gt;.html">before_delete_&lt;model&gt;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="before_delete_record.html">before_delete_record</a></li>
+<li class="toctree-l1"><a class="reference internal" href="before_save_&lt;model&gt;.html">before_save_&lt;model&gt;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="before_save_record.html">before_save_record</a></li>
+<li class="toctree-l1"><a class="reference internal" href="browse_&lt;model&gt;.html">browse_&lt;model&gt;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config_form.html">config_form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="define_acl.html">define_acl</a></li>
+<li class="toctree-l1"><a class="reference internal" href="define_routes.html">define_routes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="initialize.html">initialize</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_collection_featured.html">make_collection_featured</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_collection_not_featured.html">make_collection_not_featured</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_collection_not_public.html">make_collection_not_public</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_collection_public.html">make_collection_public</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_item_featured.html">make_item_featured</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_item_not_featured.html">make_item_not_featured</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_item_not_public.html">make_item_not_public</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_item_public.html">make_item_public</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_append_to_advanced_search.html">public_append_to_advanced_search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_append_to_collections_browse.html">public_append_to_collections_browse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_append_to_collections_browse_each.html">public_append_to_collections_browse_each</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_append_to_collections_show.html">public_append_to_collections_show</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_append_to_items_browse.html">public_append_to_items_browse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_append_to_items_browse_each.html">public_append_to_items_browse_each</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_append_to_items_show.html">public_append_to_items_show</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_theme_body.html">public_theme_body</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_theme_footer.html">public_theme_footer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_theme_header.html">public_theme_header</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_theme_page_content.html">public_theme_page_content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_theme_page_header.html">public_theme_page_header</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remove_record_tag.html">remove_record_tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="show_&lt;model&gt;.html">show_&lt;model&gt;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uninstall.html">uninstall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upgrade.html">upgrade</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="application">
+<h2>Application<a class="headerlink" href="#application" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="config.html">config</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config_form.html">config_form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="install.html">install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="initialize.html">initialize</a></li>
+<li class="toctree-l1"><a class="reference internal" href="define_acl.html">define_acl</a></li>
+<li class="toctree-l1"><a class="reference internal" href="define_routes.html">define_routes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="uninstall.html">uninstall</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upgrade.html">upgrade</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="database">
+<h2>Database<a class="headerlink" href="#database" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="&lt;model&gt;_browse_sql.html">&lt;model&gt;_browse_sql</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_record_tag.html">add_record_tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="after_upload_file.html">after_upload_file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_collection_featured.html">make_collection_featured</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_collection_not_featured.html">make_collection_not_featured</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_collection_not_public.html">make_collection_not_public</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_collection_public.html">make_collection_public</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_item_featured.html">make_item_featured</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_item_not_featured.html">make_item_not_featured</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_item_not_public.html">make_item_not_public</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_item_public.html">make_item_public</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remove_record_tag.html">remove_record_tag</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="records">
+<h2>Records<a class="headerlink" href="#records" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="&lt;model&gt;_browse_sql.html">&lt;model&gt;_browse_sql</a></li>
+<li class="toctree-l1"><a class="reference internal" href="after_delete_&lt;model&gt;.html">after_delete_&lt;model&gt;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="after_save_&lt;model&gt;.html">after_save_&lt;model&gt;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="before_delete_&lt;model&gt;.html">before_delete_&lt;model&gt;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="before_save_&lt;model&gt;.html">before_save_&lt;model&gt;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="browse_&lt;model&gt;.html">browse_&lt;model&gt;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="show_&lt;model&gt;.html">show_&lt;model&gt;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_record_tag.html">add_record_tag</a></li>
+<li class="toctree-l1"><a class="reference internal" href="after_delete_record.html">after_delete_record</a></li>
+<li class="toctree-l1"><a class="reference internal" href="after_save_record.html">after_save_record</a></li>
+<li class="toctree-l1"><a class="reference internal" href="before_delete_record.html">before_delete_record</a></li>
+<li class="toctree-l1"><a class="reference internal" href="before_save_record.html">before_save_record</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remove_record_tag.html">remove_record_tag</a></li>
+</ul>
+</div>
+<div class="section" id="item-records">
+<h3>Item Records<a class="headerlink" href="#item-records" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="make_item_featured.html">make_item_featured</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_item_not_featured.html">make_item_not_featured</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_item_not_public.html">make_item_not_public</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_item_public.html">make_item_public</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="collection-records">
+<h3>Collection Records<a class="headerlink" href="#collection-records" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="make_collection_featured.html">make_collection_featured</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_collection_not_featured.html">make_collection_not_featured</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_collection_not_public.html">make_collection_not_public</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_collection_public.html">make_collection_public</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="users">
+<h2>Users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul class="simple">
+</ul>
+</div>
+</div>
+<div class="section" id="admin-theme">
+<h2>Admin Theme<a class="headerlink" href="#admin-theme" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_advanced_search.html">admin_append_to_advanced_search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_collections_browse_primary.html">admin_append_to_collections_browse_primary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_collections_form.html">admin_append_to_collections_form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_collections_show_primary.html">admin_append_to_collections_show_primary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_dashboard_primary.html">admin_append_to_dashboard_primary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_dashboard_secondary.html">admin_append_to_dashboard_secondary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_item_form.html">admin_append_to_item_form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_item_types_browse_primary.html">admin_append_to_item_types_browse_primary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_item_types_form.html">admin_append_to_item_types_form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_item_types_show_primary.html">admin_append_to_item_types_show_primary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_items_browse_detailed_each.html">admin_append_to_items_browse_detailed_each</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_items_browse_primary.html">admin_append_to_items_browse_primary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_items_form_collection.html">admin_append_to_items_form_collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_items_form_files.html">admin_append_to_items_form_files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_items_form_tags.html">admin_append_to_items_form_tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_items_show_primary.html">admin_append_to_items_show_primary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_items_show_secondary.html">admin_append_to_items_show_secondary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_plugin_uninstall_message.html">admin_append_to_plugin_uninstall_message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_append_to_users_form.html">admin_append_to_users_form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_theme_footer.html">admin_theme_footer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="admin_theme_header.html">admin_theme_header</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="public-theme">
+<h2>Public Theme<a class="headerlink" href="#public-theme" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="public_append_to_advanced_search.html">public_append_to_advanced_search</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_append_to_collections_browse.html">public_append_to_collections_browse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_append_to_collections_browse_each.html">public_append_to_collections_browse_each</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_append_to_collections_show.html">public_append_to_collections_show</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_append_to_items_browse.html">public_append_to_items_browse</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_append_to_items_browse_each.html">public_append_to_items_browse_each</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_append_to_items_show.html">public_append_to_items_show</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_theme_body.html">public_theme_body</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_theme_footer.html">public_theme_footer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_theme_header.html">public_theme_header</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_theme_page_content.html">public_theme_page_content</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_theme_page_header.html">public_theme_page_header</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h3><a href="../../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Hooks</a><ul>
+<li><a class="reference internal" href="#all-hooks">All Hooks</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#application">Application</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#database">Database</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#records">Records</a><ul>
+<li><a class="reference internal" href="#item-records">Item Records</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#collection-records">Collection Records</a><ul>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#users">Users</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#admin-theme">Admin Theme</a><ul>
+</ul>
+</li>
+<li><a class="reference internal" href="#public-theme">Public Theme</a><ul>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="&lt;model&gt;_browse_sql.html"
+                        title="next chapter">&lt;model&gt;_browse_sql</a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/hooks/index.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="<model>_browse_sql.html" title="&lt;model&gt;_browse_sql"
+             >next</a> |</li>
+    
+        <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

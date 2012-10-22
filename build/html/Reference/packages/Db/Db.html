@@ -1,0 +1,391 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_Db &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
+    <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-db">
+<h1>Omeka_Db<a class="headerlink" href="#omeka-db" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_Db">
+<em class="property">class </em><tt class="descname">Omeka_Db</tt><a class="headerlink" href="#Omeka_Db" title="Permalink to this definition">¶</a></dt>
+<dd><p>Package: <a class="reference internal" href="index.html"><em>Db</em></a></p>
+<p>Database manager object for Omeka</p>
+<p>While mostly a wrapper for a Zend_Db_Adapter instance, this also providesshortcuts for retrieving table objects and table names for use in SQL.</p>
+<dl class="attr">
+<dt id="Omeka_Db::$prefix">
+<em class="property">property </em><tt class="descname">prefix</tt><a class="headerlink" href="#Omeka_Db::$prefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>The prefix that every table in the omeka database will use.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Db::$_adapter">
+<em class="property">property </em><tt class="descname">_adapter</tt><a class="headerlink" href="#Omeka_Db::$_adapter" title="Permalink to this definition">¶</a></dt>
+<dd><p>The database adapter.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Db::$_tables">
+<em class="property">property </em><tt class="descname">_tables</tt><a class="headerlink" href="#Omeka_Db::$_tables" title="Permalink to this definition">¶</a></dt>
+<dd><p>All the tables that are currently managed by this database object.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Db::$_logger">
+<em class="property">property </em><tt class="descname">_logger</tt><a class="headerlink" href="#Omeka_Db::$_logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>The logger to use for logging SQL queries. If not set, no logging will
+be done.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Db::__construct">
+<tt class="descname">__construct</tt><big>(</big><em>Zend_Db_Adapter_Abstract $adapter</em>, <em>string $prefix</em><big>)</big><a class="headerlink" href="#Omeka_Db::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$adapter</strong> (<em>Zend_Db_Adapter_Abstract</em>) &#8211; A Zend Framework connection object.</li>
+<li><strong>$prefix</strong> (<em>string</em>) &#8211; The prefix for the database tables, if applicable.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Db::__call">
+<tt class="descname">__call</tt><big>(</big><em>string $m</em>, <em>array $a</em><big>)</big><a class="headerlink" href="#Omeka_Db::__call" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delegate to the database adapter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$m</strong> (<em>string</em>) &#8211; Method name.</li>
+<li><strong>$a</strong> (<em>array</em>) &#8211; Method arguments.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mixed</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Db::__get">
+<tt class="descname">__get</tt><big>(</big><em>string $name</em><big>)</big><a class="headerlink" href="#Omeka_Db::__get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Magic getter is a synonym for Omeka_Db::getTableName().</p>
+<p>Example: $db-&gt;Item is equivalent to $db-&gt;getTableName(&#8216;Item&#8217;).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; Property name; table model class name in this case.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string|null</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Db::setLogger">
+<tt class="descname">setLogger</tt><big>(</big><em>Zend_Log $logger</em><big>)</big><a class="headerlink" href="#Omeka_Db::setLogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set logger for SQL queries.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$logger</strong> (<em>Zend_Log</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Db::getAdapter">
+<tt class="descname">getAdapter</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Db::getAdapter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the database adapter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Zend_Db_Adapter_Abstract</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Db::getTableName">
+<tt class="descname">getTableName</tt><big>(</big><em>$class</em><big>)</big><a class="headerlink" href="#Omeka_Db::getTableName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the name of the table (including the prefix).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$class</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Db::hasPrefix">
+<tt class="descname">hasPrefix</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Db::hasPrefix" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check whether the database tables have a prefix.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Db::getTable">
+<tt class="descname">getTable</tt><big>(</big><em>string $class</em><big>)</big><a class="headerlink" href="#Omeka_Db::getTable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve a table object corresponding to the model class.</p>
+<p>Table classes can be extended by inheriting off of Omeka_Db_Table andthen calling your table Table_ModelName, e.g.
+Table_Item orTable_Collection. For backwards compatibility you may call your tableModelNameTable, i.e. ItemTable or
+CollectionTable. The latter namingpattern is deprecated.</p>
+<p>This will cache every table object so that tables are not instantiatedmultiple times for complicated web requests.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$class</strong> (<em>string</em>) &#8211; Model class name.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Omeka_Db_Table</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Db::setTable">
+<tt class="descname">setTable</tt><big>(</big><em>string $alias</em>, <em>Omeka_Db_Table $table</em><big>)</big><a class="headerlink" href="#Omeka_Db::setTable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cache a table object.</p>
+<p>Prevents the creation of unnecessary instances.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$alias</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$table</strong> (<a class="reference internal" href="Table/Table.html#Omeka_Db_Table" title="Omeka_Db_Table"><em>Omeka_Db_Table</em></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Db::insert">
+<tt class="descname">insert</tt><big>(</big><em>string $table</em>, <em>array $values = Array</em><big>)</big><a class="headerlink" href="#Omeka_Db::insert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Every query ends up looking like:
+INSERT INTO table (field, field2, field3, ...) VALUES (?, ?, ?, ...)
+ON DUPLICATE KEY UPDATE field = ?, field2 = ?, ...</p>
+<p>Note on portability: ON DUPLICATE KEY UPDATE is a MySQL extension.The advantage to using this is that it doesn&#8217;t
+care whether a row exists already.Basically it combines what would be insert() and update() methods in otherORMs
+into a single method</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$table</strong> (<em>string</em>) &#8211; Table model class name.</li>
+<li><strong>$values</strong> (<em>array</em>) &#8211; Rows to insert (or update).</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">integer The ID for the row that got inserted (or updated).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Db::log">
+<tt class="descname">log</tt><big>(</big><em>string|Zend_Db_Select $sql</em><big>)</big><a class="headerlink" href="#Omeka_Db::log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Log SQL query if logging is configured.</p>
+<p>This logs the query before variable substitution from bind params.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$sql</strong> (<em>string|Zend_Db_Select</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Db::queryBlock">
+<tt class="descname">queryBlock</tt><big>(</big><em>string $sql</em>, <em>string $delimiter = ;</em><big>)</big><a class="headerlink" href="#Omeka_Db::queryBlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute more than one SQL query at once.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$sql</strong> (<em>string</em>) &#8211; String containing SQL queries.</li>
+<li><strong>$delimiter</strong> (<em>string</em>) &#8211; Character that delimits each SQL query.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Db::loadSqlFile">
+<tt class="descname">loadSqlFile</tt><big>(</big><em>string $filePath</em><big>)</big><a class="headerlink" href="#Omeka_Db::loadSqlFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the contents of an SQL file and execute all the queries therein.</p>
+<p>In addition to reading the file, this will make substitutions based onspecific naming conventions. Currently makes
+the following substitutions:%PREFIX% will be replaced by the table prefix.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$filePath</strong> (<em>string</em>) &#8211; Path to the SQL file to load</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/packages/Db/Db.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

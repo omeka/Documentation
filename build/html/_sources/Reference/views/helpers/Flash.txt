@@ -4,6 +4,8 @@ Omeka_View_Helper_Flash
 
 .. php:class:: Omeka_View_Helper_Flash
 
+    Package: :doc:`/Reference/packages/View\Helper/index`
+
     View helper to display messages from FlashMessenger.
 
     .. php:attr:: _flashMessenger

@@ -4,17 +4,14 @@ Omeka_Test_AppTestCase
 
 .. php:class:: Omeka_Test_AppTestCase
 
+    Package: :doc:`/Reference/packages/Test/index`
+
     Abstract test case class that bootstraps the entire application.
 
     .. php:attr:: _isAdminTest
     
         Flag that determines whether the test should run against admin or public.  
         Defaults to true (for admin).
-
-    .. php:attr:: _dbChanged
-    
-        Optimize tests by indicating whether the database was modified during 
-        the test run.  If not, the next test run can skip the Installer.
 
     .. php:method:: setUp()
     
@@ -55,10 +52,6 @@ Omeka_Test_AppTestCase
         :param string $url: 
         :param boolean $throwExceptions: 
         :returns: void
-
-    .. php:method:: dbChanged($flag)
-    
-        :param unknown $flag:
 
     .. php:method:: _authenticateUser(User $user)
     

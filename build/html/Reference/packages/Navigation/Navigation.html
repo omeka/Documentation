@@ -1,0 +1,360 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_Navigation &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
+    <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-navigation">
+<h1>Omeka_Navigation<a class="headerlink" href="#omeka-navigation" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_Navigation">
+<em class="property">class </em><tt class="descname">Omeka_Navigation</tt><a class="headerlink" href="#Omeka_Navigation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Package: <a class="reference internal" href="index.html"><em>Navigation</em></a></p>
+<p>Customized subclass of Zend Framework&#8217;s Zend_Navigation class.</p>
+<dl class="method">
+<dt id="Omeka_Navigation::__construct">
+<tt class="descname">__construct</tt><big>(</big><em>array|Zend_Config $pages</em><big>)</big><a class="headerlink" href="#Omeka_Navigation::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a new navigation container</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$pages</strong> (<em>array|Zend_Config</em>) &#8211; [optional] pages to add</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Navigation::saveAsOption">
+<tt class="descname">saveAsOption</tt><big>(</big><em>String $optionName</em><big>)</big><a class="headerlink" href="#Omeka_Navigation::saveAsOption" title="Permalink to this definition">¶</a></dt>
+<dd><p>Saves the navigation in the global options table.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$optionName</strong> (<em>String</em>) &#8211; The name of the option</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Navigation::loadAsOption">
+<tt class="descname">loadAsOption</tt><big>(</big><em>String $optionName</em><big>)</big><a class="headerlink" href="#Omeka_Navigation::loadAsOption" title="Permalink to this definition">¶</a></dt>
+<dd><p>Loads the navigation from the global options table</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$optionName</strong> (<em>String</em>) &#8211; The name of the option</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Navigation::addPage">
+<tt class="descname">addPage</tt><big>(</big><em>$page</em><big>)</big><a class="headerlink" href="#Omeka_Navigation::addPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a page to the container.  If a page does not have a valid id, it will give it one.
+and is an instance of Zend_Navigation_Page_Mvc or Omeka_Navigation_Page_Uri.
+If a page already has another page with the same uid then it will not add the page.</p>
+<p>This method will inject the container as the given page&#8217;s parent bycalling <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a>
+Zend_Navigation_Page::setParent()}.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$page</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Zend_Navigation_Container                     fluent interface, returns self</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Navigation::addPagesFromFilter">
+<tt class="descname">addPagesFromFilter</tt><big>(</big><em>String $filterName = public_navigation_main</em><big>)</big><a class="headerlink" href="#Omeka_Navigation::addPagesFromFilter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds pages generated by Omeka plugins and other contributors via a filter (e.x. &#8216;public_navigation_main&#8217;).
+The filter should provide an array pages like they are added to Zend_Navigation_Container::addPages
+However, the page types should only be one of the following types:
+Omeka_Navigation_Page_Uri or Zend_Navigation_Page_Mvc.
+If the associated uri of any page is invalid, it will not add that page to the navigation.
+Also, it removes expired pages from formerly active plugins and other former handlers of the filter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$filterName</strong> (<em>String</em>) &#8211; The name of the filter</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Navigation::getPageByUid">
+<tt class="descname">getPageByUid</tt><big>(</big><em>String $pageUid</em><big>)</big><a class="headerlink" href="#Omeka_Navigation::getPageByUid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the navigation page associated with uid.  If not page is associated, then it returns null.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$pageUid</strong> (<em>String</em>) &#8211; The uid of the page</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Omeka_Zend_Navigation_Page_Uri|Zend_Navigation_Page_Mvc|null</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Navigation::createPageUid">
+<tt class="descname">createPageUid</tt><big>(</big><em>String $href</em><big>)</big><a class="headerlink" href="#Omeka_Navigation::createPageUid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the unique id for the page, which can be used to determine whether it can be added to the navigation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$href</strong> (<em>String</em>) &#8211; The href of the page.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">String</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Navigation::removePageRecursive">
+<tt class="descname">removePageRecursive</tt><big>(</big><em>Zend_Navigation_Page $page</em><big>)</big><a class="headerlink" href="#Omeka_Navigation::removePageRecursive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Recursively removes the given page from the navigation, including all subpages</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$page</strong> (<em>Zend_Navigation_Page</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean Whether the page was removed</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Navigation::getNavigationOptionValueForInstall">
+<tt class="descname">getNavigationOptionValueForInstall</tt><big>(</big><em>String $optionName</em><big>)</big><a class="headerlink" href="#Omeka_Navigation::getNavigationOptionValueForInstall" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the option value associated with the default navigation during installation</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$optionName</strong> (<em>String</em>) &#8211; The option name for a stored navigation object.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">String The option value associated with the default navigation during installation. If no option is found for the option name, then it returns an empty string.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Navigation::_normalizePageRecursive">
+<tt class="descname">_normalizePageRecursive</tt><big>(</big><em>$page</em>, <em>$pageOptions = Array</em><big>)</big><a class="headerlink" href="#Omeka_Navigation::_normalizePageRecursive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalizes a page and its subpages so it can be added</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$page</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$pageOptions</strong> (<em>unknown</em>) &#8211; The options to set during normalization for every page and subpage</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Omeka_Navigation_Page_Uri|Zend_Navigation_Page_Mvc|null The normalized page</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Navigation::_convertZendToOmekaNavigationPageUri">
+<tt class="descname">_convertZendToOmekaNavigationPageUri</tt><big>(</big><em>Zend_Navigation_Page_Uri $page</em><big>)</big><a class="headerlink" href="#Omeka_Navigation::_convertZendToOmekaNavigationPageUri" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts a Zend_Navigation_Page_Uri to an Omeka_Navigation_Page_Uri</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$page</strong> (<em>Zend_Navigation_Page_Uri</em>) &#8211; The page to convert</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Omeka_Navigation_Page_Uri The converted page</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Navigation::_conditionalReplaceValueInArray">
+<tt class="descname">_conditionalReplaceValueInArray</tt><big>(</big><em>array $array</em>, <em>string $childKey</em>, <em>string $targetKey</em>, <em>mixed $oldValue</em>, <em>mixed $newValue</em><big>)</big><a class="headerlink" href="#Omeka_Navigation::_conditionalReplaceValueInArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an nested associative array such that all array elements have replaced an key value to
+a new key value only if it is equal to a specific old key value.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$array</strong> (<em>array</em>) &#8211; The associative array</li>
+<li><strong>$childKey</strong> (<em>string</em>) &#8211; The associative array</li>
+<li><strong>$targetKey</strong> (<em>string</em>) &#8211; The target key whose value can be replaced</li>
+<li><strong>$oldValue</strong> (<em>mixed</em>) &#8211; The old value of the element associated with the target key used to determine if the value should be changed</li>
+<li><strong>$newValue</strong> (<em>mixed</em>) &#8211; The new value of the element associated with the target key</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array The replaced associative array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/packages/Navigation/Navigation.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

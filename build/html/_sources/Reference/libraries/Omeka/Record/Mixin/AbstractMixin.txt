@@ -4,11 +4,13 @@ Omeka_Record_Mixin_AbstractMixin
 
 .. php:class:: Omeka_Record_Mixin_AbstractMixin
 
+    Package: :doc:`/Reference/packages/Record\Mixin/index`
+
     Represents a kind of mixin for Omeka_Record_AbstractRecord implementations.
     
     Any methods declared for an implementation of this class can be calledtransparently by an Omeka_Record_AbstractRecord object that uses one of thesemodules.
     
-    For instance, the Item model does not have an addTags() method, but theTaggable class does.  Since Item declares Taggable as one of its modules,an Item instance call all of Taggable's methods, so that adding tagswould be as simple as calling $item->addTags('foo, bar');
+    For instance, the Item model does not have an addTags() method, but theTaggable class does.  Since Item declares Taggable as one of its modules,an Item instance call all of Taggable's methods, so that adding tags would beas simple as calling $item->addTags('foo, bar');
     
     Note that this is not a true mixin because it cannot override any existingmethods on a Record object.
 

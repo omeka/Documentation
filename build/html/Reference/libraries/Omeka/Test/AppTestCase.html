@@ -65,19 +65,13 @@
 <dl class="class">
 <dt id="Omeka_Test_AppTestCase">
 <em class="property">class </em><tt class="descname">Omeka_Test_AppTestCase</tt><a class="headerlink" href="#Omeka_Test_AppTestCase" title="Permalink to this definition">¶</a></dt>
-<dd><p>Abstract test case class that bootstraps the entire application.</p>
+<dd><p>Package: <a class="reference internal" href="../../../packages/Test/index.html"><em>Test</em></a></p>
+<p>Abstract test case class that bootstraps the entire application.</p>
 <dl class="attr">
 <dt id="Omeka_Test_AppTestCase::$_isAdminTest">
 <em class="property">property </em><tt class="descname">_isAdminTest</tt><a class="headerlink" href="#Omeka_Test_AppTestCase::$_isAdminTest" title="Permalink to this definition">¶</a></dt>
 <dd><p>Flag that determines whether the test should run against admin or public.
 Defaults to true (for admin).</p>
-</dd></dl>
-
-<dl class="attr">
-<dt id="Omeka_Test_AppTestCase::$_dbChanged">
-<em class="property">property </em><tt class="descname">_dbChanged</tt><a class="headerlink" href="#Omeka_Test_AppTestCase::$_dbChanged" title="Permalink to this definition">¶</a></dt>
-<dd><p>Optimize tests by indicating whether the database was modified during
-the test run.  If not, the next test run can skip the Installer.</p>
 </dd></dl>
 
 <dl class="method">
@@ -185,22 +179,6 @@ application.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="Omeka_Test_AppTestCase::dbChanged">
-<tt class="descname">dbChanged</tt><big>(</big><em>$flag</em><big>)</big><a class="headerlink" href="#Omeka_Test_AppTestCase::dbChanged" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$flag</strong> (<em>unknown</em>) &#8211; </li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
 <dt id="Omeka_Test_AppTestCase::_authenticateUser">
 <tt class="descname">_authenticateUser</tt><big>(</big><em>User $user</em><big>)</big><a class="headerlink" href="#Omeka_Test_AppTestCase::_authenticateUser" title="Permalink to this definition">¶</a></dt>
 <dd><p>Trick the environment into thinking that a user has been authenticated.</p>
@@ -209,7 +187,7 @@ application.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$user</strong> (<a class="reference internal" href="../../../models/User.html#User" title="User"><em>User</em></a>) &#8211; </li>
+<li><strong>$user</strong> (<a class="reference internal" href="../../../packages/Record/User.html#User" title="User"><em>User</em></a>) &#8211; </li>
 </ul>
 </td>
 </tr>

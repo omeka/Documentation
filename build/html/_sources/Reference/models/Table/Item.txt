@@ -76,9 +76,10 @@ Table_Item
         that have all the tags provided (in this example, all items that are
         tagged both 'foo' and 'bar'):
         
-        SELECT i.idFROM omeka_items iWHERE(i.id IN(SELECT tg.relation_id as idFROM omeka_taggings tgINNER JOIN omeka_tags t
-        ON t.id = tg.tag_idWHERE t.name = 'foo' AND tg.type = 'Item')AND i.id IN(SELECT tg.relation_id as idFROM
-        omeka_taggings tgINNER JOIN omeka_tags t ON t.id = tg.tag_idWHERE t.name = 'bar' AND tg.type = 'Item'))...
+        SELECT i.idFROM omeka_items iWHERE(i.id IN(SELECT tg.record_id as idFROM omeka_records_tags tgINNER JOIN omeka_tags
+        t ON t.id = tg.tag_idWHERE t.name = 'foo' AND tg.record_type = 'Item')AND i.id IN(SELECT tg.record_id as idFROM
+        omeka_records_tags tgINNER JOIN omeka_tags t ON t.id = tg.tag_idWHERE t.name = 'bar' AND tg.record_type =
+        'Item'))...
         
         :param unknown $select: 
         :param unknown $tags: 

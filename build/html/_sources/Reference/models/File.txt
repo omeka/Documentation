@@ -4,7 +4,9 @@ File
 
 .. php:class:: File
 
-    Represents a file and its metadata.
+    Package: :doc:`/Reference/packages/Record/index`
+
+    A file and its metadata.
 
     .. php:attr:: item_id
     

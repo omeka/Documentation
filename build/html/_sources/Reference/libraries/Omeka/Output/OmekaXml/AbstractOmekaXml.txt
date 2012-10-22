@@ -4,6 +4,8 @@ Omeka_Output_OmekaXml_AbstractOmekaXml
 
 .. php:class:: Omeka_Output_OmekaXml_AbstractOmekaXml
 
+    Package: :doc:`/Reference/packages/Output/index`
+
     Abstract base class for creating omeka-xml output formats.
 
     .. php:const:: XMLNS_XSI

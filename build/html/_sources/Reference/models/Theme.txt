@@ -4,7 +4,11 @@ Theme
 
 .. php:class:: Theme
 
-    Dummy model to simulate the other ActiveRecord models
+    Package: :doc:`/Reference/packages/Record/index`
+
+    A theme and its metadata.
+    
+    Dummy model to simulate the other ActiveRecord models.
 
     .. php:attr:: path
     

@@ -4,6 +4,8 @@ Omeka_Storage_Adapter_TempFilesystem
 
 .. php:class:: Omeka_Storage_Adapter_TempFilesystem
 
+    Package: :doc:`/Reference/packages/Storage\Adapter/index`
+
     Storage adapter that uses the system temp directory for its filesystem.
     
     After the adapter is no longer needed (__destruct()), all the files that were created during its lifetime are removed.

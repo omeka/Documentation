@@ -65,7 +65,8 @@
 <dl class="class">
 <dt id="Omeka_Plugin_Loader">
 <em class="property">class </em><tt class="descname">Omeka_Plugin_Loader</tt><a class="headerlink" href="#Omeka_Plugin_Loader" title="Permalink to this definition">¶</a></dt>
-<dd><p>Loads plugins for any given request.</p>
+<dd><p>Package: <tt class="xref doc docutils literal"><span class="pre">/Reference/packages/PluginLoader/index</span></tt></p>
+<p>Loads plugins for any given request.</p>
 <p>This will iterate through the plugins root directory and load all plugin.phpfiles by require()&#8217;ing them.</p>
 <dl class="attr">
 <dt id="Omeka_Plugin_Loader::$_broker">
@@ -106,9 +107,9 @@ in the plugins/ directory.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$broker</strong> (<a class="reference internal" href="Broker.html#Omeka_Plugin_Broker" title="Omeka_Plugin_Broker"><em>Omeka_Plugin_Broker</em></a>) &#8211; Plugin broker.</li>
-<li><strong>$iniReader</strong> (<a class="reference internal" href="Ini.html#Omeka_Plugin_Ini" title="Omeka_Plugin_Ini"><em>Omeka_Plugin_Ini</em></a>) &#8211; plugin.ini reader.</li>
-<li><strong>$mvc</strong> (<a class="reference internal" href="Mvc.html#Omeka_Plugin_Mvc" title="Omeka_Plugin_Mvc"><em>Omeka_Plugin_Mvc</em></a>) &#8211; Plugin MVC object.</li>
+<li><strong>$broker</strong> (<a class="reference internal" href="../../../packages/Plugin/Broker/Broker.html#Omeka_Plugin_Broker" title="Omeka_Plugin_Broker"><em>Omeka_Plugin_Broker</em></a>) &#8211; Plugin broker.</li>
+<li><strong>$iniReader</strong> (<a class="reference internal" href="../../../packages/Plugin/Ini.html#Omeka_Plugin_Ini" title="Omeka_Plugin_Ini"><em>Omeka_Plugin_Ini</em></a>) &#8211; plugin.ini reader.</li>
+<li><strong>$mvc</strong> (<a class="reference internal" href="../../../packages/Plugin/Mvc.html#Omeka_Plugin_Mvc" title="Omeka_Plugin_Mvc"><em>Omeka_Plugin_Mvc</em></a>) &#8211; Plugin MVC object.</li>
 <li><strong>$pluginsBaseDir</strong> (<em>string</em>) &#8211; Plugins directory.</li>
 </ul>
 </td>
@@ -151,7 +152,7 @@ registered.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$plugin</strong> (<a class="reference internal" href="../../../models/Plugin.html#Plugin" title="Plugin"><em>Plugin</em></a>) &#8211; Record of plugin to register.</li>
+<li><strong>$plugin</strong> (<a class="reference internal" href="../../../packages/Record/Plugin.html#Plugin" title="Plugin"><em>Plugin</em></a>) &#8211; Record of plugin to register.</li>
 </ul>
 </td>
 </tr>
@@ -171,7 +172,7 @@ registered.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$plugin</strong> (<a class="reference internal" href="../../../models/Plugin.html#Plugin" title="Plugin"><em>Plugin</em></a>) &#8211; </li>
+<li><strong>$plugin</strong> (<a class="reference internal" href="../../../packages/Record/Plugin.html#Plugin" title="Plugin"><em>Plugin</em></a>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -194,7 +195,7 @@ it uses if that plugin is not installed and activated.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$plugin</strong> (<a class="reference internal" href="../../../models/Plugin.html#Plugin" title="Plugin"><em>Plugin</em></a>) &#8211; </li>
+<li><strong>$plugin</strong> (<a class="reference internal" href="../../../packages/Record/Plugin.html#Plugin" title="Plugin"><em>Plugin</em></a>) &#8211; </li>
 <li><strong>$force</strong> (<em>boolean</em>) &#8211; If true, throws exceptions if a plugin can&#8217;t be loaded.</li>
 <li><strong>$pluginsWaitingToLoad</strong> (<em>array</em>) &#8211; Plugins waiting to be loaded</li>
 </ul>
@@ -223,7 +224,7 @@ meet the following criteria:
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$plugin</strong> (<a class="reference internal" href="../../../models/Plugin.html#Plugin" title="Plugin"><em>Plugin</em></a>) &#8211; Plugin to test.</li>
+<li><strong>$plugin</strong> (<a class="reference internal" href="../../../packages/Record/Plugin.html#Plugin" title="Plugin"><em>Plugin</em></a>) &#8211; Plugin to test.</li>
 <li><strong>$force</strong> (<em>boolean</em>) &#8211; If true, throw an exception if the plugin can&#8217;t be loaded.</li>
 </ul>
 </td>
@@ -359,7 +360,7 @@ be loaded) thus far.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$plugin</strong> (<a class="reference internal" href="../../../models/Plugin.html#Plugin" title="Plugin"><em>Plugin</em></a>) &#8211; </li>
+<li><strong>$plugin</strong> (<a class="reference internal" href="../../../packages/Record/Plugin.html#Plugin" title="Plugin"><em>Plugin</em></a>) &#8211; </li>
 </ul>
 </td>
 </tr>

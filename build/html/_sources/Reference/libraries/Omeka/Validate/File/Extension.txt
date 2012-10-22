@@ -4,6 +4,8 @@ Omeka_Validate_File_Extension
 
 .. php:class:: Omeka_Validate_File_Extension
 
+    Package: :doc:`/Reference/packages/Validate/index`
+
     Define custom behavior for the default whitelist file extension validator.
     
     Baseline behavior of this class is to tweak the default error messages.Messages are intentionally as detailed as possible.  Note that it is theresponsibility of plugin writers to suppress or replace these messages ifnecessary for security reasons, e.g. if displaying it to the end user mightexpose the site to vulnerability probes.

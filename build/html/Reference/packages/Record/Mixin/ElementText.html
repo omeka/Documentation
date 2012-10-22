@@ -1,0 +1,695 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Mixin_ElementText &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" />
+    <link rel="stylesheet" href="../../../../_static/overrides.css" type="text/css" />
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="mixin-elementtext">
+<h1>Mixin_ElementText<a class="headerlink" href="#mixin-elementtext" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Mixin_ElementText">
+<em class="property">class </em><tt class="descname">Mixin_ElementText</tt><a class="headerlink" href="#Mixin_ElementText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Package: <tt class="xref doc docutils literal"><span class="pre">/Reference/packages/RecordMixin/index</span></tt></p>
+<p>Record mixin class for associating elements, element texts and their
+corresponding behaviors to a record.</p>
+<dl class="attr">
+<dt id="Mixin_ElementText::$_textsByNaturalOrder">
+<em class="property">property </em><tt class="descname">_textsByNaturalOrder</tt><a class="headerlink" href="#Mixin_ElementText::$_textsByNaturalOrder" title="Permalink to this definition">¶</a></dt>
+<dd><p>ElementText records stored in the order they were retrieved from the database.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Mixin_ElementText::$_textsByElementId">
+<em class="property">property </em><tt class="descname">_textsByElementId</tt><a class="headerlink" href="#Mixin_ElementText::$_textsByElementId" title="Permalink to this definition">¶</a></dt>
+<dd><p>ElementText records indexed by the element_id.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Mixin_ElementText::$_elementsBySet">
+<em class="property">property </em><tt class="descname">_elementsBySet</tt><a class="headerlink" href="#Mixin_ElementText::$_elementsBySet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Element records indexed by set name and element name, so it looks like:</p>
+<p>$elements[&#8216;Dublin Core&#8217;][&#8216;Title&#8217;] = Element instance;</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Mixin_ElementText::$_elementsById">
+<em class="property">property </em><tt class="descname">_elementsById</tt><a class="headerlink" href="#Mixin_ElementText::$_elementsById" title="Permalink to this definition">¶</a></dt>
+<dd><p>Element records indexed by ID.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Mixin_ElementText::$_elementsOnForm">
+<em class="property">property </em><tt class="descname">_elementsOnForm</tt><a class="headerlink" href="#Mixin_ElementText::$_elementsOnForm" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of elements that were output on the form.  This can be used to
+determine the DELETE SQL to use to reset the elements when saving the form.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Mixin_ElementText::$_textsToSave">
+<em class="property">property </em><tt class="descname">_textsToSave</tt><a class="headerlink" href="#Mixin_ElementText::$_textsToSave" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set of ElementText records to save when submitting the form.  These will
+only be saved to the database if they successfully validate.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Mixin_ElementText::$_recordsAreLoaded">
+<em class="property">property </em><tt class="descname">_recordsAreLoaded</tt><a class="headerlink" href="#Mixin_ElementText::$_recordsAreLoaded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether the elements and texts have been loaded yet.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Mixin_ElementText::$_elementsByRecordType">
+<em class="property">property </em><tt class="descname">_elementsByRecordType</tt><a class="headerlink" href="#Mixin_ElementText::$_elementsByRecordType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets of Element records indexed by record type.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::afterSave">
+<tt class="descname">afterSave</tt><big>(</big><em>$args</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::afterSave" title="Permalink to this definition">¶</a></dt>
+<dd><p>Omeka_Record_AbstractRecord callback for afterSave. Saves the ElementText
+records once the associated record is saved. Adds the record&#8217;s element
+texts to the search text.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$args</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::_getDb">
+<tt class="descname">_getDb</tt><big>(</big><big>)</big><a class="headerlink" href="#Mixin_ElementText::_getDb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the database object from the associated record.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Omeka_Db</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::_getRecordType">
+<tt class="descname">_getRecordType</tt><big>(</big><big>)</big><a class="headerlink" href="#Mixin_ElementText::_getRecordType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the class name of the associated record (Item, File, etc.).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">string Type of record</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::loadElementsAndTexts">
+<tt class="descname">loadElementsAndTexts</tt><big>(</big><em>boolean $reload =</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::loadElementsAndTexts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load all the ElementText records for the given record (Item, File, etc.).
+These will be indexed by [element_id].</p>
+<p>Also load all the Element records and index those by their name and setname.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$reload</strong> (<em>boolean</em>) &#8211; Whether or not reload all the data that was previously loaded.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::_loadElements">
+<tt class="descname">_loadElements</tt><big>(</big><em>$reload =</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::_loadElements" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$reload</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::_getElementTextRecords">
+<tt class="descname">_getElementTextRecords</tt><big>(</big><big>)</big><a class="headerlink" href="#Mixin_ElementText::_getElementTextRecords" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve all of the ElementText records for the given record.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array Set of ElementText records for the record.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::_getElementRecords">
+<tt class="descname">_getElementRecords</tt><big>(</big><big>)</big><a class="headerlink" href="#Mixin_ElementText::_getElementRecords" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve all of the Element records for the given record.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array All Elements that apply to the record&#8217;s type.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::getElementTextsByRecord">
+<tt class="descname">getElementTextsByRecord</tt><big>(</big><em>Element $element</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::getElementTextsByRecord" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve all of the record&#8217;s ElementTexts for the given Element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$element</strong> (<a class="reference internal" href="../Element.html#Element" title="Element"><em>Element</em></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array Set of ElementText records.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::getElementTexts">
+<tt class="descname">getElementTexts</tt><big>(</big><em>string $elementSetName</em>, <em>string $elementName</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::getElementTexts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve all of the record&#8217;s ElementTexts for the given element name and
+element set name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementSetName</strong> (<em>string</em>) &#8211; Element set name</li>
+<li><strong>$elementName</strong> (<em>string</em>) &#8211; Element name</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array Set of ElementText records.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::getAllElementTexts">
+<tt class="descname">getAllElementTexts</tt><big>(</big><big>)</big><a class="headerlink" href="#Mixin_ElementText::getAllElementTexts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve all of the record&#8217;s ElementTexts, in order.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array Set of ElementText records.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::getElementsBySetName">
+<tt class="descname">getElementsBySetName</tt><big>(</big><em>$elementSetName</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::getElementsBySetName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the Element records for the given ElementSet.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementSetName</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array Set of Element records</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::getAllElements">
+<tt class="descname">getAllElements</tt><big>(</big><big>)</big><a class="headerlink" href="#Mixin_ElementText::getAllElements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve ALL the Element records for the object, organized by ElementSet.
+For example, $elements[&#8216;Dublin Core&#8217;] = array(Element instance, Element instance, ...)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array Set of Element records</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::getElement">
+<tt class="descname">getElement</tt><big>(</big><em>string $elementSetName</em>, <em>string $elementName</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::getElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the Element record corresponding to the given element name and
+element set name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementSetName</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$elementName</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Element</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::getElementById">
+<tt class="descname">getElementById</tt><big>(</big><em>int $elementId</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::getElementById" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the Element with the given ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementId</strong> (<em>int</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Element</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::_indexTextsByElementId">
+<tt class="descname">_indexTextsByElementId</tt><big>(</big><em>array $textRecords</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::_indexTextsByElementId" title="Permalink to this definition">¶</a></dt>
+<dd><p>Index a set of ElementTexts based on element ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$textRecords</strong> (<em>array</em>) &#8211; Set of ElementText records</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array The provided ElementTexts, indexed by element ID.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::_indexElementsBySet">
+<tt class="descname">_indexElementsBySet</tt><big>(</big><em>array $elementRecords</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::_indexElementsBySet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Index a set of Elements based on their name. The result is a doubly
+associative array, with the first key being element set name and the second
+being element name.</p>
+<p>i.e., $indexed[&#8216;Dublin Core&#8217;][&#8216;Creator&#8217;] = Element instance</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementRecords</strong> (<em>array</em>) &#8211; Set of Element records</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array The provided Elements, indexed as described</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::_indexElementsById">
+<tt class="descname">_indexElementsById</tt><big>(</big><em>$elementRecords</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::_indexElementsById" title="Permalink to this definition">¶</a></dt>
+<dd><p>Indexes the elements returned by element ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementRecords</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::addTextForElement">
+<tt class="descname">addTextForElement</tt><big>(</big><em>Element $element</em>, <em>string $elementText</em>, <em>bool $isHtml =</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::addTextForElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a string of text for an element.</p>
+<p>Creates a new ElementText record, populates it with the specified text value and assigns it to the element.</p>
+<p>saveElementTexts() must be called after this in order to save the elementtexts to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$element</strong> (<a class="reference internal" href="../Element.html#Element" title="Element"><em>Element</em></a>) &#8211; Element which text should be created for</li>
+<li><strong>$elementText</strong> (<em>string</em>) &#8211; Text to be added</li>
+<li><strong>$isHtml</strong> (<em>bool</em>) &#8211; Whether the text to add is HTML</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::addElementTextsByArray">
+<tt class="descname">addElementTextsByArray</tt><big>(</big><em>$elementTexts</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::addElementTextsByArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add element texts for a record based on a formatted array of values.
+The array must be formatted as follows:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="s1">&#39;Element Set Name&#39;</span> <span class="o">=&gt;</span>
+    <span class="k">array</span><span class="p">(</span><span class="s1">&#39;Element Name&#39;</span> <span class="o">=&gt;</span>
+        <span class="k">array</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;text&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span> <span class="s1">&#39;html&#39;</span> <span class="o">=&gt;</span> <span class="k">false</span><span class="p">)))</span>
+</pre></div>
+</div>
+<p>Since 1.4, the array can also be formatted thusly:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">array</span><span class="p">(</span>
+    <span class="k">array</span><span class="p">(</span><span class="s1">&#39;element_id&#39;</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">,</span>
+          <span class="s1">&#39;text&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;foo&#39;</span><span class="p">,</span>
+          <span class="s1">&#39;html&#39;</span> <span class="o">=&gt;</span> <span class="k">false</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$elementTexts</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::_addTextsByElementName">
+<tt class="descname">_addTextsByElementName</tt><big>(</big><em>$elementTexts</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::_addTextsByElementName" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$elementTexts</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::_addTextsByElementId">
+<tt class="descname">_addTextsByElementId</tt><big>(</big><em>$texts</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::_addTextsByElementId" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$texts</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::beforeSaveElements">
+<tt class="descname">beforeSaveElements</tt><big>(</big><em>$post</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::beforeSaveElements" title="Permalink to this definition">¶</a></dt>
+<dd><p>The application flow is thus:</p>
+<p>1) Build ElementText objects from the POST.2) Validate the ElementText objects and assign error messages
+ifnecessary.3) After the item saves correctly, delete all the ElementText recordsfor the Item.4) Save the new
+ElementText objects to the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$post</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::_getElementTextsToSaveFromPost">
+<tt class="descname">_getElementTextsToSaveFromPost</tt><big>(</big><em>$post</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::_getElementTextsToSaveFromPost" title="Permalink to this definition">¶</a></dt>
+<dd><p>The POST should have a key called &#8220;Elements&#8221; that contains an array
+that is keyed to an element&#8217;s ID.  That array should contain all the
+text values for that element. For example:</p>
+<p>&lt;code&gt;</p>
+<p>array(&#8216;Elements&#8217; =&gt;array(&#8216;50&#8217; =&gt; array(&#8216;text&#8217; =&gt; &#8216;Foobar&#8217;, //element id 50, e.g. DC:Title&#8217;html&#8217; =&gt; 0),&#8216;41&#8217; =&gt;
+array(&#8216;text&#8217; =&gt; &#8216;&lt;p&gt;Baz baz baz&lt;/p&gt;&#8217;, //element id 41, e.g. DC:Description&#8217;html&#8217; =&gt; 1)))</p>
+<p>&lt;/code&gt;</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$post</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::getTextStringFromFormPost">
+<tt class="descname">getTextStringFromFormPost</tt><big>(</big><em>$postArray</em>, <em>$element</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::getTextStringFromFormPost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve a text string for an element from POSTed form data.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$postArray</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$element</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::_validateElementTexts">
+<tt class="descname">_validateElementTexts</tt><big>(</big><big>)</big><a class="headerlink" href="#Mixin_ElementText::_validateElementTexts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate all the elements one by one.  This is potentially a lot slower
+than batch processing the form, but it gives the added bonus of being
+able to encapsulate the logic for validation of Elements.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::_elementTextIsValid">
+<tt class="descname">_elementTextIsValid</tt><big>(</big><em>ElementText $elementTextRecord</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::_elementTextIsValid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return whether the given ElementText record is valid.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementTextRecord</strong> (<a class="reference internal" href="../ElementText.html#ElementText" title="ElementText"><em>ElementText</em></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::saveElementTexts">
+<tt class="descname">saveElementTexts</tt><big>(</big><big>)</big><a class="headerlink" href="#Mixin_ElementText::saveElementTexts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save all ElementText records that were associated with a record.</p>
+<p>Typically called in the afterSave() hook for a record.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::deleteElementTextsByElementId">
+<tt class="descname">deleteElementTextsByElementId</tt><big>(</big><em>$elementIdArray = Array</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::deleteElementTextsByElementId" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete all the element texts for element_id&#8217;s that have been provided.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementIdArray</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::deleteElementTexts">
+<tt class="descname">deleteElementTexts</tt><big>(</big><big>)</big><a class="headerlink" href="#Mixin_ElementText::deleteElementTexts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete all the element texts assigned to the current record ID.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../../index.html">
+              <img class="logo" src="../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/packages/Record/Mixin/ElementText.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+    
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

@@ -66,12 +66,22 @@
 <dl class="class">
 <dt id="Omeka_Test_Resource_Db">
 <em class="property">class </em><tt class="descname">Omeka_Test_Resource_Db</tt><a class="headerlink" href="#Omeka_Test_Resource_Db" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set up the database test environment by wiping and resetting the database to
+<dd><p>Package: <tt class="xref doc docutils literal"><span class="pre">/Reference/packages/TestResource/index</span></tt></p>
+<p>Set up the database test environment by wiping and resetting the database to
 a recently-installed state.</p>
 <dl class="attr">
-<dt id="Omeka_Test_Resource_Db::$_runInstaller">
-<em class="property">property </em><tt class="descname">_runInstaller</tt><a class="headerlink" href="#Omeka_Test_Resource_Db::$_runInstaller" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt id="Omeka_Test_Resource_Db::$dropTables">
+<em class="property">property </em><tt class="descname">dropTables</tt><a class="headerlink" href="#Omeka_Test_Resource_Db::$dropTables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to determine whether the tables need to be dropped. This is a slow
+process, and really should only be happening once, when the tests are
+first run.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Test_Resource_Db::$runInstaller">
+<em class="property">property </em><tt class="descname">runInstaller</tt><a class="headerlink" href="#Omeka_Test_Resource_Db::$runInstaller" title="Permalink to this definition">¶</a></dt>
+<dd><p>Flag to determine whether the installer needs to be run.</p>
+</dd></dl>
 
 <dl class="attr">
 <dt id="Omeka_Test_Resource_Db::$_cachedAdapter">
@@ -175,26 +185,6 @@ init().</p>
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>$db</strong> (<a class="reference internal" href="../../../../packages/Db/Db.html#Omeka_Db" title="Omeka_Db"><em>Omeka_Db</em></a>) &#8211; </li>
 </ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="Omeka_Test_Resource_Db::_truncateTables">
-<tt class="descname">_truncateTables</tt><big>(</big><em>Omeka_Db $db</em><big>)</big><a class="headerlink" href="#Omeka_Test_Resource_Db::_truncateTables" title="Permalink to this definition">¶</a></dt>
-<dd><p>Truncate all the tables in the test database.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$db</strong> (<a class="reference internal" href="../../../../packages/Db/Db.html#Omeka_Db" title="Omeka_Db"><em>Omeka_Db</em></a>) &#8211; </li>
-</ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
 </td>
 </tr>
 </tbody>

@@ -1,0 +1,886 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_Record_AbstractRecord &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
+    <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-record-abstractrecord">
+<h1>Omeka_Record_AbstractRecord<a class="headerlink" href="#omeka-record-abstractrecord" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_Record_AbstractRecord">
+<em class="property">class </em><tt class="descname">Omeka_Record_AbstractRecord</tt><a class="headerlink" href="#Omeka_Record_AbstractRecord" title="Permalink to this definition">¶</a></dt>
+<dd><p>Package: <a class="reference internal" href="index.html"><em>Record</em></a></p>
+<p>A base class for domain objects, inspired by, though not strictly adherent
+to, the ActiveRecord pattern.</p>
+<dl class="attr">
+<dt id="Omeka_Record_AbstractRecord::$id">
+<em class="property">property </em><tt class="descname">id</tt><a class="headerlink" href="#Omeka_Record_AbstractRecord::$id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unique ID for the record.</p>
+<p>All implementations of Omeka_Record_AbstractRecord must have a table containing an &#8216;id&#8217; column, preferably as the
+primary key.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Record_AbstractRecord::$_errors">
+<em class="property">property </em><tt class="descname">_errors</tt><a class="headerlink" href="#Omeka_Record_AbstractRecord::$_errors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Any errors raised during the validation process.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Record_AbstractRecord::$_cache">
+<em class="property">property </em><tt class="descname">_cache</tt><a class="headerlink" href="#Omeka_Record_AbstractRecord::$_cache" title="Permalink to this definition">¶</a></dt>
+<dd><p>An in-memory cache for related objects that have been retrieved
+via the magic __get() syntax.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Record_AbstractRecord::$_mixins">
+<em class="property">property </em><tt class="descname">_mixins</tt><a class="headerlink" href="#Omeka_Record_AbstractRecord::$_mixins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set of Omeka_Record_Mixin_AbstractMixin objects that are designed to
+extend the behavior of Omeka_Record_AbstractRecord implementations.</p>
+<p>Examples include <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> Taggable}, <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> Relatable},{&#64;link ActsAsElementText}, etc.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Record_AbstractRecord::$_db">
+<em class="property">property </em><tt class="descname">_db</tt><a class="headerlink" href="#Omeka_Record_AbstractRecord::$_db" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Record_AbstractRecord::$_related">
+<em class="property">property </em><tt class="descname">_related</tt><a class="headerlink" href="#Omeka_Record_AbstractRecord::$_related" title="Permalink to this definition">¶</a></dt>
+<dd><p>Key/value pairs indicating aliases for methods that retrieve
+related data objects.
+For example, a subclass might define the following:
+&lt;code&gt;
+protected $_related = array(&#8216;Sections&#8217;=&gt;&#8217;loadSections&#8217;);
+&lt;/code&gt;
+This would allow the client to write code like:
+&lt;code&gt;
+$sections = $subclassInstance-&gt;Sections;
+&lt;/code&gt;
+Which would be equivalent to:
+&lt;code&gt;
+$sections = $subclassInstance-&gt;loadSections();
+&lt;/code&gt;
+The difference being, the former is cached so as to avoid multiple
+trips to the database.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Record_AbstractRecord::$_postData">
+<em class="property">property </em><tt class="descname">_postData</tt><a class="headerlink" href="#Omeka_Record_AbstractRecord::$_postData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Storage for the POST data when handling a form.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Record_AbstractRecord::$_locked">
+<em class="property">property </em><tt class="descname">_locked</tt><a class="headerlink" href="#Omeka_Record_AbstractRecord::$_locked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether or not the record is locked.
+Locked records cannot be saved.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Record_AbstractRecord::$_eventCallbacks">
+<em class="property">property </em><tt class="descname">_eventCallbacks</tt><a class="headerlink" href="#Omeka_Record_AbstractRecord::$_eventCallbacks" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of built in callback methods.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Record_AbstractRecord::$_pluginBroker">
+<em class="property">property </em><tt class="descname">_pluginBroker</tt><a class="headerlink" href="#Omeka_Record_AbstractRecord::$_pluginBroker" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::__construct">
+<tt class="descname">__construct</tt><big>(</big><em>Omeka_Db|null $db</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$db</strong> (<em>Omeka_Db|null</em>) &#8211; (optional) Defaults to the Omeka_Db instance from the bootstrap.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::construct">
+<tt class="descname">construct</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::construct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subclass constructor behavior.</p>
+<p>Subclasses of Omeka_Record_AbstractRecord can override this function toadd behavior to the constructor without
+overriding __construct.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::__destruct">
+<tt class="descname">__destruct</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::__destruct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unsets mixins, which contain circular references, upon record destruction</p>
+<p>IMPORTANT: Solves a memory leak when retrieving/saving records.</p>
+<p>Required because PHP 5.2 does not do garbage collection on circular references.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::__get">
+<tt class="descname">__get</tt><big>(</big><em>string $prop</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::__get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve database records that are associated with the current one.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$prop</strong> (<em>string</em>) &#8211; Related data to retrieve.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mixed</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::__call">
+<tt class="descname">__call</tt><big>(</big><em>string $m</em>, <em>array $a</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::__call" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delegate unknown method calls to Omeka_Record_Mixin_AbstractMixin
+instances.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$m</strong> (<em>string</em>) &#8211; Method name.</li>
+<li><strong>$a</strong> (<em>array</em>) &#8211; Method arguments.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mixed</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::_initializeMixins">
+<tt class="descname">_initializeMixins</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::_initializeMixins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the mixins for a record.</p>
+<p>Any Omeka_Record_AbstractRecord subclass that uses mixins shouldinitialize them here, since this is called on
+construction and whenmixins need to be reinitialized.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::delegateToMixins">
+<tt class="descname">delegateToMixins</tt><big>(</big><em>string $method</em>, <em>array $args = Array</em>, <em>boolean $all =</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::delegateToMixins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delegate to the given method in one or more mixin instances.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$method</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$args</strong> (<em>array</em>) &#8211; </li>
+<li><strong>$all</strong> (<em>boolean</em>) &#8211; (optional) Whether or not to call the same method on every mixin instance that has that method.  Defaults to false.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mixed If $all is false, the return value from the invoked method. Otherwise there is no return value.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::runCallbacks">
+<tt class="descname">runCallbacks</tt><big>(</big><em>$event</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::runCallbacks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Invoke all callbacks associated with a specific record event.</p>
+<p>Callbacks execute in the following order:- Omeka_Record_AbstractRecord hooks like
+Omeka_Record_AbstractRecord::afterDelete()- Record mixin hooks like Taggable::afterSave()- Generic record plugin
+hooks like &#8216;before_delete_record&#8217;- Specific record plugin hooks like &#8216;before_delete_item&#8217;</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$event</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::_addToCache">
+<tt class="descname">_addToCache</tt><big>(</big><em>mixed $value</em>, <em>string $key</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::_addToCache" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a value to the record-specific cache.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$value</strong> (<em>mixed</em>) &#8211; </li>
+<li><strong>$key</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::_getCached">
+<tt class="descname">_getCached</tt><big>(</big><em>string $name</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::_getCached" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a value from the record-specific cache.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mixed</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::getProperty">
+<tt class="descname">getProperty</tt><big>(</big><em>string $property</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::getProperty" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a property about the record for display purposes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$property</strong> (<em>string</em>) &#8211; Property to get. Always lowercase.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mixed</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::exists">
+<tt class="descname">exists</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::exists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine whether or not this record is persistent in the database.</p>
+<p>For simplicity, non-persistent records are indicated by the lack of avalue for the &#8216;id&#8217; column.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::_validate">
+<tt class="descname">_validate</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::_validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for defining record validation rules.</p>
+<p>Should be overridden by subclasses.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::isValid">
+<tt class="descname">isValid</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::isValid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine whether or not the record is valid.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::getErrors">
+<tt class="descname">getErrors</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::getErrors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve validation errors associated with this record.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Omeka_Validate_Errors</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::hasErrors">
+<tt class="descname">hasErrors</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::hasErrors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine whether or not this record has any validation errors.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::addError">
+<tt class="descname">addError</tt><big>(</big><em>string|null $field</em>, <em>string $msg</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::addError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a validation error for a specific field.</p>
+<p>Currently limited to a single error per field, so multiple error messagesmust be concatenated together.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$field</strong> (<em>string|null</em>) &#8211; Name of the field.  This can be null to indicate a general error not associated with a specific field.</li>
+<li><strong>$msg</strong> (<em>string</em>) &#8211; The error message.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::addErrorsFrom">
+<tt class="descname">addErrorsFrom</tt><big>(</big><em>Omeka_Record_AbstractRecord $record</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::addErrorsFrom" title="Permalink to this definition">¶</a></dt>
+<dd><p>Combine errors from a different Omeka_Record_AbstractRecord instance with
+the errors already on this record.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$record</strong> (<a class="reference internal" href="#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><em>Omeka_Record_AbstractRecord</em></a>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::lock">
+<tt class="descname">lock</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::lock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prevent a record from being modified.</p>
+<p>Can be used to prevent accidentally saving/deleting a record if its state maychange but saving would be undesirable,
+such as modifying a record fordisplay purposes.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::getTable">
+<tt class="descname">getTable</tt><big>(</big><em>$class</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::getTable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the Omeka_Db_Table instance associated with this record, or
+with that of any given record class.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$class</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Omeka_Db_Table</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::getDb">
+<tt class="descname">getDb</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::getDb" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the Omeka_Db instance associated with this record.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Omeka_Db</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::toArray">
+<tt class="descname">toArray</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::toArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve an associative array of all the record&#8217;s columns and their
+values.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::save">
+<tt class="descname">save</tt><big>(</big><em>boolean $throwIfInvalid = 1</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::save" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save the record.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$throwIfInvalid</strong> (<em>boolean</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean Whether the save was successful.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::__clone">
+<tt class="descname">__clone</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::__clone" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clone the record.</p>
+<p>Unsets the ID so the cloned record can be saved on its own.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::delete">
+<tt class="descname">delete</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the record.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::_delete">
+<tt class="descname">_delete</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Template method for defining record deletion logic.</p>
+<p>Subclasses can override this method to define additional logic for deletingrecords.  Note that this is different
+from both the beforeDelete() andafterDelete() hooks in that it executes after beforeDelete(), but beforethe record
+is actually deleted.</p>
+<p>Common use cases include emulating cascading deletes with otherdatabase rows.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::beforeSave">
+<tt class="descname">beforeSave</tt><big>(</big><em>$args</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::beforeSave" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes before the record is saved.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$args</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::afterSave">
+<tt class="descname">afterSave</tt><big>(</big><em>$args</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::afterSave" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes after the record is inserted.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$args</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::beforeDelete">
+<tt class="descname">beforeDelete</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::beforeDelete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes before the record is deleted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::afterDelete">
+<tt class="descname">afterDelete</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::afterDelete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Executes after the record is deleted.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::setArray">
+<tt class="descname">setArray</tt><big>(</big><em>array|Traversable $data</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::setArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set values for the record using an associative array or iterator.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$data</strong> (<em>array|Traversable</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::getPluginBroker">
+<tt class="descname">getPluginBroker</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::getPluginBroker" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::setPluginBroker">
+<tt class="descname">setPluginBroker</tt><big>(</big><em>$broker</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::setPluginBroker" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$broker</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::offsetExists">
+<tt class="descname">offsetExists</tt><big>(</big><em>string $name</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::offsetExists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine whether or not the given field has a value associated with it.</p>
+<p>Required by ArrayAccess.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::offsetUnset">
+<tt class="descname">offsetUnset</tt><big>(</big><em>string $name</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::offsetUnset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unset the given field.</p>
+<p>Required by ArrayAccess.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::offsetGet">
+<tt class="descname">offsetGet</tt><big>(</big><em>string $name</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::offsetGet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the value of a given field.</p>
+<p>Required by ArrayAccess.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mixed</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::offsetSet">
+<tt class="descname">offsetSet</tt><big>(</big><em>string $name</em>, <em>mixed $value</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::offsetSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the value of a given field.</p>
+<p>Required by ArrayAccess.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$value</strong> (<em>mixed</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::filterPostData">
+<tt class="descname">filterPostData</tt><big>(</big><em>array $post</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::filterPostData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter the form input according to some criteria.</p>
+<p>Template method should be overridden by subclasses that wish to implementsome sort of filtering criteria.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$post</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array Filtered post data.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::setPostData">
+<tt class="descname">setPostData</tt><big>(</big><em>array $post</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::setPostData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the POST data to the record.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$post</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::fieldIsUnique">
+<tt class="descname">fieldIsUnique</tt><big>(</big><em>string $field</em>, <em>mixed $value</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::fieldIsUnique" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check uniqueness of one of the record&#8217;s fields.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$field</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$value</strong> (<em>mixed</em>) &#8211; Optional If null, this will check the value of the record&#8217;s $field.  Otherwise check the uniqueness of this value for the given field.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Record_AbstractRecord::getRecordUrl">
+<tt class="descname">getRecordUrl</tt><big>(</big><em>string $action = show</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::getRecordUrl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the routing parameters or the URL string to this record.</p>
+<p>The record_url() global uses this method to get routing parameters fornon-standard records, e.g. records defined by
+plugins. Subclasses shouldoverride this method if the default route (as defined below) isincorrect.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$action</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string|array A URL string or a routing array.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/packages/Record/AbstractRecord.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

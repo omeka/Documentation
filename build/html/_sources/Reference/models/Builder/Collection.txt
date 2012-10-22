@@ -4,6 +4,8 @@ Builder_Collection
 
 .. php:class:: Builder_Collection
 
+    Package: :doc:`/Reference/packages/Record\Builder/index`
+
     Build a collection.
 
     .. php:attr:: _settableProperties

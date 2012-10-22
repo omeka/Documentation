@@ -11,12 +11,13 @@ Views/helpers
     Flash
     GetCurrentRecord
     GetLoopRecords
+    ItemSearchFilters
     Loop
     MaxFileSize
     Metadata
     Pluralize
     RecordUrl
-    SearchFilters
+    SearchForm
     SetCurrentRecord
     SetLoopRecords
     Singularize

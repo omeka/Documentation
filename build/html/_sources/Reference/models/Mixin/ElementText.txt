@@ -4,6 +4,8 @@ Mixin_ElementText
 
 .. php:class:: Mixin_ElementText
 
+    Package: :doc:`/Reference/packages/Record\Mixin/index`
+
     Record mixin class for associating elements, element texts and their
     corresponding behaviors to a record.
 

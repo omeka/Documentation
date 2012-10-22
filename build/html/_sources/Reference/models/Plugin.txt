@@ -4,6 +4,10 @@ Plugin
 
 .. php:class:: Plugin
 
+    Package: :doc:`/Reference/packages/Record/index`
+
+    A plugin and its metadata.
+
     .. php:attr:: name
     
 

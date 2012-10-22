@@ -4,8 +4,10 @@ Omeka_Record_AbstractRecord
 
 .. php:class:: Omeka_Record_AbstractRecord
 
-    A base class for domain objects, inspired by, though not strictly adherent to,
-    the ActiveRecord pattern.
+    Package: :doc:`/Reference/packages/Record/index`
+
+    A base class for domain objects, inspired by, though not strictly adherent 
+    to, the ActiveRecord pattern.
 
     .. php:attr:: id
     
@@ -182,7 +184,7 @@ Omeka_Record_AbstractRecord
     
         Retrieve validation errors associated with this record.
         
-        :returns: Omeka_Validator_Errors
+        :returns: Omeka_Validate_Errors
 
     .. php:method:: hasErrors()
     

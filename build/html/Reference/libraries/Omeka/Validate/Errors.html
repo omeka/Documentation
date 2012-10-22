@@ -1,0 +1,436 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_Validate_Errors &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" />
+    <link rel="up" title="Libraries/Omeka/Validate" href="index.html" />
+    <link rel="next" title="Omeka_Validate_Exception" href="Exception.html" />
+    <link rel="prev" title="Omeka_Validate_Confirmation" href="Confirmation.html" />
+    <link rel="stylesheet" href="../../../../_static/overrides.css" type="text/css" />
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Exception.html" title="Omeka_Validate_Exception"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Confirmation.html" title="Omeka_Validate_Confirmation"
+             accesskey="P">previous</a> |</li>
+    
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Libraries/Omeka/Validate</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-validate-errors">
+<h1>Omeka_Validate_Errors<a class="headerlink" href="#omeka-validate-errors" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_Validate_Errors">
+<em class="property">class </em><tt class="descname">Omeka_Validate_Errors</tt><a class="headerlink" href="#Omeka_Validate_Errors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Package: <a class="reference internal" href="../../../packages/Validate/index.html"><em>Validate</em></a></p>
+<p>This is an object wrapper for validation errors.  The primary advantage
+to having this class is that casting it to a string will convert the errors
+into a nicely formatted, human-readable string.</p>
+<dl class="attr">
+<dt id="Omeka_Validate_Errors::$_errors">
+<em class="property">property </em><tt class="descname">_errors</tt><a class="headerlink" href="#Omeka_Validate_Errors::$_errors" title="Permalink to this definition">¶</a></dt>
+<dd><p>List of validation errors.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::__construct">
+<tt class="descname">__construct</tt><big>(</big><em>array|null $errors</em><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$errors</strong> (<em>array|null</em>) &#8211; Initial errors to set.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::offsetGet">
+<tt class="descname">offsetGet</tt><big>(</big><em>mixed $key</em><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::offsetGet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an error from the list.
+Required by ArrayObject.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$key</strong> (<em>mixed</em>) &#8211; Key into array.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::offsetSet">
+<tt class="descname">offsetSet</tt><big>(</big><em>mixed $key</em>, <em>mixed $val</em><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::offsetSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set an error into the list.
+Required by ArrayObject.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$key</strong> (<em>mixed</em>) &#8211; Key into array.</li>
+<li><strong>$val</strong> (<em>mixed</em>) &#8211; Value to store.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::get">
+<tt class="descname">get</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the array of errors.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::count">
+<tt class="descname">count</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the number of errors.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">integer</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::__toString">
+<tt class="descname">__toString</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::__toString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a string representation of all the stored errors.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::offsetExists">
+<tt class="descname">offsetExists</tt><big>(</big><em>$index</em><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::offsetExists" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$index</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::offsetUnset">
+<tt class="descname">offsetUnset</tt><big>(</big><em>$index</em><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::offsetUnset" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$index</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::append">
+<tt class="descname">append</tt><big>(</big><em>$value</em><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::append" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$value</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::getArrayCopy">
+<tt class="descname">getArrayCopy</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::getArrayCopy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::getFlags">
+<tt class="descname">getFlags</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::getFlags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::setFlags">
+<tt class="descname">setFlags</tt><big>(</big><em>$flags</em><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::setFlags" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$flags</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::asort">
+<tt class="descname">asort</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::asort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::ksort">
+<tt class="descname">ksort</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::ksort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::uasort">
+<tt class="descname">uasort</tt><big>(</big><em>$cmp_function</em><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::uasort" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$cmp_function</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::uksort">
+<tt class="descname">uksort</tt><big>(</big><em>$cmp_function</em><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::uksort" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$cmp_function</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::natsort">
+<tt class="descname">natsort</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::natsort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::natcasesort">
+<tt class="descname">natcasesort</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::natcasesort" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::unserialize">
+<tt class="descname">unserialize</tt><big>(</big><em>$serialized</em><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::unserialize" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$serialized</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::serialize">
+<tt class="descname">serialize</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::serialize" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::getIterator">
+<tt class="descname">getIterator</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::getIterator" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::exchangeArray">
+<tt class="descname">exchangeArray</tt><big>(</big><em>$array</em><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::exchangeArray" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$array</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::setIteratorClass">
+<tt class="descname">setIteratorClass</tt><big>(</big><em>$iteratorClass</em><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::setIteratorClass" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$iteratorClass</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Validate_Errors::getIteratorClass">
+<tt class="descname">getIteratorClass</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Validate_Errors::getIteratorClass" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../../index.html">
+              <img class="logo" src="../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Confirmation.html"
+                        title="previous chapter">Omeka_Validate_Confirmation</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Exception.html"
+                        title="next chapter">Omeka_Validate_Exception</a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/libraries/Omeka/Validate/Errors.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Exception.html" title="Omeka_Validate_Exception"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Confirmation.html" title="Omeka_Validate_Confirmation"
+             >previous</a> |</li>
+    
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" >Libraries/Omeka/Validate</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

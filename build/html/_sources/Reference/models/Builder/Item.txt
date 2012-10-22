@@ -4,6 +4,10 @@ Builder_Item
 
 .. php:class:: Builder_Item
 
+    Package: :doc:`/Reference/packages/Record\Builder/index`
+
+    Build an item.
+
     .. php:const:: IS_PUBLIC
     
 

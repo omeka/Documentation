@@ -4,6 +4,10 @@ Collection
 
 .. php:class:: Collection
 
+    Package: :doc:`/Reference/packages/Record/index`
+
+    A collection and its metadata.
+
     .. php:attr:: name
     
 

@@ -66,22 +66,29 @@
 <dl class="class">
 <dt id="Omeka_Test_Helper_Db">
 <em class="property">class </em><tt class="descname">Omeka_Test_Helper_Db</tt><a class="headerlink" href="#Omeka_Test_Helper_Db" title="Permalink to this definition">¶</a></dt>
-<dd><p>Catch-all class for database helper methods that are shared across test cases.</p>
+<dd><p>Package: <tt class="xref doc docutils literal"><span class="pre">/Reference/packages/TestHelper/index</span></tt></p>
+<p>Catch-all class for database helper methods that are shared across test cases.</p>
 <dl class="attr">
 <dt id="Omeka_Test_Helper_Db::$_dbAdapter">
 <em class="property">property </em><tt class="descname">_dbAdapter</tt><a class="headerlink" href="#Omeka_Test_Helper_Db::$_dbAdapter" title="Permalink to this definition">¶</a></dt>
 <dd><p>Database adapter object.</p>
 </dd></dl>
 
+<dl class="attr">
+<dt id="Omeka_Test_Helper_Db::$_prefix">
+<em class="property">property </em><tt class="descname">_prefix</tt><a class="headerlink" href="#Omeka_Test_Helper_Db::$_prefix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="method">
 <dt id="Omeka_Test_Helper_Db::__construct">
-<tt class="descname">__construct</tt><big>(</big><em>Zend_Db_Adapter_Abstract $dbAdapter</em><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Db::__construct" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">__construct</tt><big>(</big><em>Zend_Db_Adapter_Abstract $dbAdapter</em>, <em>$prefix</em><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Db::__construct" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>$dbAdapter</strong> (<em>Zend_Db_Adapter_Abstract</em>) &#8211; </li>
+<li><strong>$prefix</strong> (<em>unknown</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -169,76 +176,15 @@ database.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="Omeka_Test_Helper_Db::truncateTables">
-<tt class="descname">truncateTables</tt><big>(</big><em>$prefix</em><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Db::truncateTables" title="Permalink to this definition">¶</a></dt>
-<dd><p>Truncate all of the tables in the test database.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$prefix</strong> (<em>unknown</em>) &#8211; </li>
-</ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="Omeka_Test_Helper_Db::loadDbSchema">
-<tt class="descname">loadDbSchema</tt><big>(</big><em>string $pathToSchemaFile</em>, <em>string $tablePrefix = omeka_</em><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Db::loadDbSchema" title="Permalink to this definition">¶</a></dt>
-<dd><p>Initialize the database schema.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$pathToSchemaFile</strong> (<em>string</em>) &#8211; </li>
-<li><strong>$tablePrefix</strong> (<em>string</em>) &#8211; </li>
-</ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="Omeka_Test_Helper_Db::loadXmlSchema">
-<tt class="descname">loadXmlSchema</tt><big>(</big><em>string $xmlFile</em>, <em>string $schemaName</em>, <em>boolean $flat =</em><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Db::loadXmlSchema" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set up one or more database tables according to the given XML file,
-which follows the structure of PHPUnit&#8217;s XmlDataSet (or FlatXmlDataSet).</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$xmlFile</strong> (<em>string</em>) &#8211; Path to XML file.</li>
-<li><strong>$schemaName</strong> (<em>string</em>) &#8211; Name of database schema for which to load the XML file.</li>
-<li><strong>$flat</strong> (<em>boolean</em>) &#8211; Whether or not the file is in PHPUnit&#8217;s Flat XML format.</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
 <dt id="Omeka_Test_Helper_Db::dropTables">
-<tt class="descname">dropTables</tt><big>(</big><em>string $prefix</em><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Db::dropTables" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">dropTables</tt><big>(</big><em>$tables</em><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Db::dropTables" title="Permalink to this definition">¶</a></dt>
 <dd><p>Drop the tables from the database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$prefix</strong> (<em>string</em>) &#8211; Optionally, delete only tables with this prefix.</li>
+<li><strong>$tables</strong> (<em>unknown</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -250,20 +196,39 @@ which follows the structure of PHPUnit&#8217;s XmlDataSet (or FlatXmlDataSet).</
 </dd></dl>
 
 <dl class="method">
-<dt id="Omeka_Test_Helper_Db::getTableNames">
-<tt class="descname">getTableNames</tt><big>(</big><em>string $prefix</em><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Db::getTableNames" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the tables in the database.</p>
+<dt id="Omeka_Test_Helper_Db::truncateTables">
+<tt class="descname">truncateTables</tt><big>(</big><em>$tables</em><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Db::truncateTables" title="Permalink to this definition">¶</a></dt>
+<dd><p>Truncate the tables from the database.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$prefix</strong> (<em>string</em>) &#8211; Optionally, show only tables with this prefix.</li>
+<li><strong>$tables</strong> (<em>unknown</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
 </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Test_Helper_Db::install">
+<tt class="descname">install</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Db::install" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Test_Helper_Db::getTableNames">
+<tt class="descname">getTableNames</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Db::getTableNames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the tables in the database.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array</td>
 </tr>
 </tbody>
 </table>
@@ -292,6 +257,11 @@ which follows the structure of PHPUnit&#8217;s XmlDataSet (or FlatXmlDataSet).</
 <dl class="method">
 <dt id="Omeka_Test_Helper_Db::getAdapter">
 <tt class="descname">getAdapter</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Db::getAdapter" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Test_Helper_Db::getPrefix">
+<tt class="descname">getPrefix</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Db::getPrefix" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>

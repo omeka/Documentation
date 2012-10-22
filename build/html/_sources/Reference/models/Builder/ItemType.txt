@@ -4,7 +4,9 @@ Builder_ItemType
 
 .. php:class:: Builder_ItemType
 
-    Build an Item Type.
+    Package: :doc:`/Reference/packages/Record\Builder/index`
+
+    Build an item type.
 
     .. php:attr:: _recordClass
     

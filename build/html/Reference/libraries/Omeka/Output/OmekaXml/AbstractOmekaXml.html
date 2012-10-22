@@ -66,7 +66,8 @@
 <dl class="class">
 <dt id="Omeka_Output_OmekaXml_AbstractOmekaXml">
 <em class="property">class </em><tt class="descname">Omeka_Output_OmekaXml_AbstractOmekaXml</tt><a class="headerlink" href="#Omeka_Output_OmekaXml_AbstractOmekaXml" title="Permalink to this definition">¶</a></dt>
-<dd><p>Abstract base class for creating omeka-xml output formats.</p>
+<dd><p>Package: <a class="reference internal" href="../../../../packages/Output/index.html"><em>Output</em></a></p>
+<p>Abstract base class for creating omeka-xml output formats.</p>
 <dl class="const">
 <dt id="Omeka_Output_OmekaXml_AbstractOmekaXml::XMLNS_XSI">
 <em class="property">constant </em><tt class="descname">XMLNS_XSI</tt><a class="headerlink" href="#Omeka_Output_OmekaXml_AbstractOmekaXml::XMLNS_XSI" title="Permalink to this definition">¶</a></dt>
@@ -220,7 +221,7 @@ provided record.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$record</strong> (<a class="reference internal" href="../../Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><em>Omeka_Record_AbstractRecord</em></a>) &#8211; The record from which to extract metadata.</li>
+<li><strong>$record</strong> (<a class="reference internal" href="../../../../packages/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><em>Omeka_Record_AbstractRecord</em></a>) &#8211; The record from which to extract metadata.</li>
 <li><strong>$getItemType</strong> (<em>bool</em>) &#8211; Whether to get the item type metadata.</li>
 </ul>
 </td>
@@ -241,7 +242,7 @@ provided record.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$record</strong> (<a class="reference internal" href="../../Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><em>Omeka_Record_AbstractRecord</em></a>) &#8211; The record from which to build element sets.</li>
+<li><strong>$record</strong> (<a class="reference internal" href="../../../../packages/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><em>Omeka_Record_AbstractRecord</em></a>) &#8211; The record from which to build element sets.</li>
 <li><strong>$parentElement</strong> (<em>DOMElement</em>) &#8211; The element set container will append to this element.</li>
 </ul>
 </td>
@@ -262,7 +263,7 @@ provided record.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$item</strong> (<a class="reference internal" href="../../../../models/Item.html#Item" title="Item"><em>Item</em></a>) &#8211; The item from which to build the item type.</li>
+<li><strong>$item</strong> (<a class="reference internal" href="../../../../packages/Record/Item.html#Item" title="Item"><em>Item</em></a>) &#8211; The item from which to build the item type.</li>
 <li><strong>$parentElement</strong> (<em>DOMElement</em>) &#8211; The item type will append to this element.</li>
 </ul>
 </td>
@@ -283,7 +284,7 @@ provided record.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$item</strong> (<a class="reference internal" href="../../../../models/Item.html#Item" title="Item"><em>Item</em></a>) &#8211; The item from which to build the file container.</li>
+<li><strong>$item</strong> (<a class="reference internal" href="../../../../packages/Record/Item.html#Item" title="Item"><em>Item</em></a>) &#8211; The item from which to build the file container.</li>
 <li><strong>$parentElement</strong> (<em>DOMElement</em>) &#8211; The file container will append to this element.</li>
 </ul>
 </td>
@@ -304,7 +305,7 @@ provided record.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$item</strong> (<a class="reference internal" href="../../../../models/Item.html#Item" title="Item"><em>Item</em></a>) &#8211; The item from which to build the collection.</li>
+<li><strong>$item</strong> (<a class="reference internal" href="../../../../packages/Record/Item.html#Item" title="Item"><em>Item</em></a>) &#8211; The item from which to build the collection.</li>
 <li><strong>$parentElement</strong> (<em>DOMElement</em>) &#8211; The collection will append to this element.</li>
 </ul>
 </td>
@@ -325,7 +326,7 @@ provided record.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$item</strong> (<a class="reference internal" href="../../../../models/Item.html#Item" title="Item"><em>Item</em></a>) &#8211; The item from which to build the tag container.</li>
+<li><strong>$item</strong> (<a class="reference internal" href="../../../../packages/Record/Item.html#Item" title="Item"><em>Item</em></a>) &#8211; The item from which to build the tag container.</li>
 <li><strong>$parentElement</strong> (<em>DOMElement</em>) &#8211; The tag container will append to this element.</li>
 </ul>
 </td>
@@ -346,7 +347,7 @@ provided record.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$collection</strong> (<a class="reference internal" href="../../../../models/Collection.html#Collection" title="Collection"><em>Collection</em></a>) &#8211; The collection from which to build the item container.</li>
+<li><strong>$collection</strong> (<a class="reference internal" href="../../../../packages/Record/Collection.html#Collection" title="Collection"><em>Collection</em></a>) &#8211; The collection from which to build the item container.</li>
 <li><strong>$parentElement</strong> (<em>DOMElement</em>) &#8211; The item container will append to this element.</li>
 </ul>
 </td>

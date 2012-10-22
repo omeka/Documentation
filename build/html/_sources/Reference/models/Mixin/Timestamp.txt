@@ -4,6 +4,8 @@ Mixin_Timestamp
 
 .. php:class:: Mixin_Timestamp
 
+    Package: :doc:`/Reference/packages/Record\Mixin/index`
+
     Mixin for models that keep added and/or modified timestamps.
 
     .. php:attr:: _record

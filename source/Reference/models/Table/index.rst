@@ -13,8 +13,8 @@ Models/Table
     ItemType
     Plugin
     Process
+    RecordsTags
     SearchText
     Tag
-    Taggings
     User
     UsersActivations

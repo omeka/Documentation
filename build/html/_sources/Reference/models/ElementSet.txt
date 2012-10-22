@@ -4,6 +4,18 @@ ElementSet
 
 .. php:class:: ElementSet
 
+    Package: :doc:`/Reference/packages/Record/index`
+
+    An element set and its metadata.
+
+    .. php:const:: ITEM_TYPE_NAME
+    
+    
+    
+        The name of the item type element set.
+        
+        This is used wherever it is important to distinguish this special case element set from others.
+
     .. php:attr:: record_type
     
 

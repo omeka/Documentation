@@ -1,0 +1,504 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Table_Item &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" />
+    <link rel="stylesheet" href="../../../../_static/overrides.css" type="text/css" />
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="table-item">
+<h1>Table_Item<a class="headerlink" href="#table-item" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Table_Item">
+<em class="property">class </em><tt class="descname">Table_Item</tt><a class="headerlink" href="#Table_Item" title="Permalink to this definition">¶</a></dt>
+<dd><p>Package: <tt class="xref doc docutils literal"><span class="pre">/Reference/packages/DbTable/index</span></tt></p>
+<dl class="method">
+<dt id="Table_Item::filterByRange">
+<tt class="descname">filterByRange</tt><big>(</big><em>Omeka_Db_Select $select</em>, <em>string $range</em><big>)</big><a class="headerlink" href="#Table_Item::filterByRange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Can specify a range of valid Item IDs or an individual ID</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$select</strong> (<a class="reference internal" href="../Select.html#Omeka_Db_Select" title="Omeka_Db_Select"><em>Omeka_Db_Select</em></a>) &#8211; </li>
+<li><strong>$range</strong> (<em>string</em>) &#8211; Example: 1-4, 75, 89</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::filterBySearch">
+<tt class="descname">filterBySearch</tt><big>(</big><em>$select</em>, <em>$params</em><big>)</big><a class="headerlink" href="#Table_Item::filterBySearch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run the search filter on the SELECT statement</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$select</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$params</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::_simpleSearch">
+<tt class="descname">_simpleSearch</tt><big>(</big><em>Zend_Db_Select $select</em>, <em>$terms</em><big>)</big><a class="headerlink" href="#Table_Item::_simpleSearch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build the simple search.</p>
+<p>The search query consists of a derived table that is INNER JOINed to themain SQL query.  That derived table is a
+union of two SELECT queries. Thefirst query searches the FULLTEXT index on the items_elements table, andthe second
+query searches the tags table for every word in the searchterms and assigns each found result a rank of &#8216;1&#8217;. That
+should maketagged items show up higher on the found results list for a given search.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$select</strong> (<em>Zend_Db_Select</em>) &#8211; </li>
+<li><strong>$terms</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::_advancedSearch">
+<tt class="descname">_advancedSearch</tt><big>(</big><em>Zend_Db_Select $select</em>, <em>$terms</em><big>)</big><a class="headerlink" href="#Table_Item::_advancedSearch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build the advanced search.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$select</strong> (<em>Zend_Db_Select</em>) &#8211; </li>
+<li><strong>$terms</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::filterByPublic">
+<tt class="descname">filterByPublic</tt><big>(</big><em>$select</em>, <em>$isPublic</em><big>)</big><a class="headerlink" href="#Table_Item::filterByPublic" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply a filter to the items based on whether or not they should be public</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$select</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$isPublic</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::filterByFeatured">
+<tt class="descname">filterByFeatured</tt><big>(</big><em>$select</em>, <em>$isFeatured</em><big>)</big><a class="headerlink" href="#Table_Item::filterByFeatured" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$select</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$isFeatured</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::filterByCollection">
+<tt class="descname">filterByCollection</tt><big>(</big><em>$select</em>, <em>$collection</em><big>)</big><a class="headerlink" href="#Table_Item::filterByCollection" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter the SELECT statement based on an item&#8217;s collection</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$select</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$collection</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::filterByItemType">
+<tt class="descname">filterByItemType</tt><big>(</big><em>$select</em>, <em>$type</em><big>)</big><a class="headerlink" href="#Table_Item::filterByItemType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter the SELECT statement based on the item Type</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$select</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$type</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::filterByTags">
+<tt class="descname">filterByTags</tt><big>(</big><em>$select</em>, <em>$tags</em><big>)</big><a class="headerlink" href="#Table_Item::filterByTags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Query must look like the following in order to correctly retrieve items
+that have all the tags provided (in this example, all items that are
+tagged both &#8216;foo&#8217; and &#8216;bar&#8217;):</p>
+<p>SELECT i.idFROM omeka_items iWHERE(i.id IN(SELECT tg.record_id as idFROM omeka_records_tags tgINNER JOIN omeka_tags
+t ON t.id = tg.tag_idWHERE t.name = &#8216;foo&#8217; AND tg.record_type = &#8216;Item&#8217;)AND i.id IN(SELECT tg.record_id as idFROM
+omeka_records_tags tgINNER JOIN omeka_tags t ON t.id = tg.tag_idWHERE t.name = &#8216;bar&#8217; AND tg.record_type =
+&#8216;Item&#8217;))...</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$select</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$tags</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::filterByUser">
+<tt class="descname">filterByUser</tt><big>(</big><em>$select</em>, <em>integer $userId</em>, <em>$isUser = 1</em><big>)</big><a class="headerlink" href="#Table_Item::filterByUser" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter the SELECT based on the user who owns the item</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$select</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$userId</strong> (<em>integer</em>) &#8211; ID of the User to filter by</li>
+<li><strong>$isUser</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::filterByExcludedTags">
+<tt class="descname">filterByExcludedTags</tt><big>(</big><em>$select</em>, <em>$tags</em><big>)</big><a class="headerlink" href="#Table_Item::filterByExcludedTags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter SELECT statement based on items that are not tagged with a specific
+set of tags</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$select</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$tags</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::filterByHasDerivativeImage">
+<tt class="descname">filterByHasDerivativeImage</tt><big>(</big><em>$select</em>, <em>boolean $hasDerivativeImage = 1</em><big>)</big><a class="headerlink" href="#Table_Item::filterByHasDerivativeImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter SELECT statement based on whether items have a derivative image
+file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$select</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$hasDerivativeImage</strong> (<em>boolean</em>) &#8211; Whether items should have a derivative image file.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::applySearchFilters">
+<tt class="descname">applySearchFilters</tt><big>(</big><em>$select</em>, <em>$params</em><big>)</big><a class="headerlink" href="#Table_Item::applySearchFilters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Possible options: &#8216;public&#8217;,&#8217;user&#8217;,&#8217;featured&#8217;,&#8217;collection&#8217;,&#8217;type&#8217;,&#8217;tag&#8217;,
+&#8216;excludeTags&#8217;, &#8216;search&#8217;, &#8216;range&#8217;, &#8216;advanced&#8217;, &#8216;hasImage&#8217;,</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$select</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$params</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::applySorting">
+<tt class="descname">applySorting</tt><big>(</big><em>Omeka_Db_Select $select</em>, <em>string $sortField</em>, <em>string $sortDir</em><big>)</big><a class="headerlink" href="#Table_Item::applySorting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enables sorting based on ElementSet,Element field strings.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$select</strong> (<a class="reference internal" href="../Select.html#Omeka_Db_Select" title="Omeka_Db_Select"><em>Omeka_Db_Select</em></a>) &#8211; </li>
+<li><strong>$sortField</strong> (<em>string</em>) &#8211; Field to sort on</li>
+<li><strong>$sortDir</strong> (<em>string</em>) &#8211; Sorting direction (ASC or DESC)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::getSelect">
+<tt class="descname">getSelect</tt><big>(</big><big>)</big><a class="headerlink" href="#Table_Item::getSelect" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a kind of simple factory that spits out proper beginnings
+of SQL statements when retrieving items</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Omeka_Db_Select</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::findFirst">
+<tt class="descname">findFirst</tt><big>(</big><big>)</big><a class="headerlink" href="#Table_Item::findFirst" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the first item accessible to the current user.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Item|null</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::findLast">
+<tt class="descname">findLast</tt><big>(</big><big>)</big><a class="headerlink" href="#Table_Item::findLast" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the last item accessible to the current user.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Item|null</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::findPrevious">
+<tt class="descname">findPrevious</tt><big>(</big><em>$item</em><big>)</big><a class="headerlink" href="#Table_Item::findPrevious" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$item</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::findNext">
+<tt class="descname">findNext</tt><big>(</big><em>$item</em><big>)</big><a class="headerlink" href="#Table_Item::findNext" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$item</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Table_Item::findNearby">
+<tt class="descname">findNearby</tt><big>(</big><em>$item</em>, <em>$position = next</em><big>)</big><a class="headerlink" href="#Table_Item::findNearby" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$item</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$position</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../../index.html">
+              <img class="logo" src="../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/packages/Db/Table/Item.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+    
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

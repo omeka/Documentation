@@ -4,7 +4,9 @@ UsersActivations
 
 .. php:class:: UsersActivations
 
-    Create temporary hashed Urls for purposes of password activation
+    Package: :doc:`/Reference/packages/Record/index`
+
+    A user activation and its metadata.
 
     .. php:attr:: user_id
     

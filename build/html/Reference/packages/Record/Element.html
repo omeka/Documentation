@@ -1,0 +1,350 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Element &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
+    <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="element">
+<h1>Element<a class="headerlink" href="#element" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Element">
+<em class="property">class </em><tt class="descname">Element</tt><a class="headerlink" href="#Element" title="Permalink to this definition">¶</a></dt>
+<dd><p>Package: <a class="reference internal" href="index.html"><em>Record</em></a></p>
+<p>An element and its metadata.</p>
+<dl class="attr">
+<dt id="Element::$element_set_id">
+<em class="property">property </em><tt class="descname">element_set_id</tt><a class="headerlink" href="#Element::$element_set_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="Element::$order">
+<em class="property">property </em><tt class="descname">order</tt><a class="headerlink" href="#Element::$order" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="Element::$name">
+<em class="property">property </em><tt class="descname">name</tt><a class="headerlink" href="#Element::$name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="Element::$description">
+<em class="property">property </em><tt class="descname">description</tt><a class="headerlink" href="#Element::$description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="Element::$comment">
+<em class="property">property </em><tt class="descname">comment</tt><a class="headerlink" href="#Element::$comment" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Element::setElementSet">
+<tt class="descname">setElementSet</tt><big>(</big><em>string $elementSetName</em><big>)</big><a class="headerlink" href="#Element::setElementSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the element set for the element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementSetName</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Element::getElementSet">
+<tt class="descname">getElementSet</tt><big>(</big><big>)</big><a class="headerlink" href="#Element::getElementSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the ElementSet objection for this element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">ElementSet</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Element::setOrder">
+<tt class="descname">setOrder</tt><big>(</big><em>integer $order</em><big>)</big><a class="headerlink" href="#Element::setOrder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the order of the element within its element set.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$order</strong> (<em>integer</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Element::setName">
+<tt class="descname">setName</tt><big>(</big><em>string $name</em><big>)</big><a class="headerlink" href="#Element::setName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the name of the element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Element::setDescription">
+<tt class="descname">setDescription</tt><big>(</big><em>string $description</em><big>)</big><a class="headerlink" href="#Element::setDescription" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the description for the element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$description</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Element::setComment">
+<tt class="descname">setComment</tt><big>(</big><em>$comment</em><big>)</big><a class="headerlink" href="#Element::setComment" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$comment</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Element::setArray">
+<tt class="descname">setArray</tt><big>(</big><em>array|string $data</em><big>)</big><a class="headerlink" href="#Element::setArray" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$data</strong> (<em>array|string</em>) &#8211; <p>If string, it&#8217;s the name of the element. Otherwise, array of metadata for the element.  May contain the following keys in the array:</p>
+<ul>
+   <li>name</li>
+   <li>description</li>
+   <li>comment</li>
+   <li>order</li>
+   <li>element_set_id</li>
+   <li>element_set</li>
+  </ul></li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Element::_validate">
+<tt class="descname">_validate</tt><big>(</big><big>)</big><a class="headerlink" href="#Element::_validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Validate the element prior to being saved.</p>
+<p>Checks the following criteria:</p>
+<dl class="docutils">
+<dt>&lt;ul&gt;</dt>
+<dd>&lt;li&gt;Name is not empty.&lt;/li&gt;
+&lt;li&gt;Has a data type.&lt;/li&gt;
+&lt;li&gt;Has a record type.&lt;/li&gt;
+&lt;li&gt;Name does not already exist within the given element set.&lt;/li&gt;
+&lt;/ul&gt;</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="Element::_delete">
+<tt class="descname">_delete</tt><big>(</big><big>)</big><a class="headerlink" href="#Element::_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>When deleting this element, delete all ElementText records associated
+with this element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Element::_getElementSetId">
+<tt class="descname">_getElementSetId</tt><big>(</big><em>$elementSetName</em><big>)</big><a class="headerlink" href="#Element::_getElementSetId" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the element set ID from the name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementSetName</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">int</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Element::_nameIsInSet">
+<tt class="descname">_nameIsInSet</tt><big>(</big><em>$elementName</em>, <em>$elementSetId</em><big>)</big><a class="headerlink" href="#Element::_nameIsInSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate whether the element&#8217;s name already belongs to the current set.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementName</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$elementSetId</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/packages/Record/Element.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

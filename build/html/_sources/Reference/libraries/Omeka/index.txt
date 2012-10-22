@@ -28,6 +28,5 @@ Libraries/Omeka
     Storage
     Test/index
     Validate/index
-    Validator/index
     View/index
     View

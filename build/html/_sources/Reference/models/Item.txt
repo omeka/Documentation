@@ -4,7 +4,9 @@ Item
 
 .. php:class:: Item
 
-    Represents an item and its metadata.
+    Package: :doc:`/Reference/packages/Record/index`
+
+    An item and its metadata.
 
     .. php:attr:: item_type_id
     

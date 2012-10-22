@@ -4,7 +4,9 @@ Process
 
 .. php:class:: Process
 
-    The model class that holds generic process data
+    Package: :doc:`/Reference/packages/Record/index`
+
+    A process and its metadata.
 
     .. php:attr:: pid
     

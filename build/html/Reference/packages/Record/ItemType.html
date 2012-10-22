@@ -1,0 +1,422 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ItemType &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
+    <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="itemtype">
+<h1>ItemType<a class="headerlink" href="#itemtype" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="ItemType">
+<em class="property">class </em><tt class="descname">ItemType</tt><a class="headerlink" href="#ItemType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Package: <a class="reference internal" href="index.html"><em>Record</em></a></p>
+<p>An item type and its metadata.</p>
+<dl class="attr">
+<dt id="ItemType::$name">
+<em class="property">property </em><tt class="descname">name</tt><a class="headerlink" href="#ItemType::$name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="ItemType::$description">
+<em class="property">property </em><tt class="descname">description</tt><a class="headerlink" href="#ItemType::$description" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="ItemType::$_related">
+<em class="property">property </em><tt class="descname">_related</tt><a class="headerlink" href="#ItemType::$_related" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="ItemType::$_elementsToSave">
+<em class="property">property </em><tt class="descname">_elementsToSave</tt><a class="headerlink" href="#ItemType::$_elementsToSave" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="ItemType::$_elementsToRemove">
+<em class="property">property </em><tt class="descname">_elementsToRemove</tt><a class="headerlink" href="#ItemType::$_elementsToRemove" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="ItemType::getElements">
+<tt class="descname">getElements</tt><big>(</big><big>)</big><a class="headerlink" href="#ItemType::getElements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an array of element objects associated with this item type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array The array of element objects associated with this item type.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ItemType::getItems">
+<tt class="descname">getItems</tt><big>(</big><em>int $count = 10</em>, <em>boolean $recent = 1</em><big>)</big><a class="headerlink" href="#ItemType::getItems" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an array of item objects that have this item type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$count</strong> (<em>int</em>) &#8211; The maximum number of items to return.</li>
+<li><strong>$recent</strong> (<em>boolean</em>) &#8211; Whether or not the items are recent.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array The items associated with the item type.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ItemType::_validate">
+<tt class="descname">_validate</tt><big>(</big><big>)</big><a class="headerlink" href="#ItemType::_validate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Current validation rules for Type</p>
+<ol class="arabic simple">
+<li>&#8216;Name&#8217; field can&#8217;t be blank2) &#8216;Name&#8217; field must be unique</li>
+</ol>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ItemType::filterPostData">
+<tt class="descname">filterPostData</tt><big>(</big><em>$post</em><big>)</big><a class="headerlink" href="#ItemType::filterPostData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter incoming POST data from ItemType form.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$post</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ItemType::_delete">
+<tt class="descname">_delete</tt><big>(</big><big>)</big><a class="headerlink" href="#ItemType::_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete all the ItemTypesElements joins</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ItemType::afterSave">
+<tt class="descname">afterSave</tt><big>(</big><em>$args</em><big>)</big><a class="headerlink" href="#ItemType::afterSave" title="Permalink to this definition">¶</a></dt>
+<dd><p>Save Element records that are associated with this Item Type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$args</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ItemType::reorderElements">
+<tt class="descname">reorderElements</tt><big>(</big><em>Array $elementOrderingArray</em><big>)</big><a class="headerlink" href="#ItemType::reorderElements" title="Permalink to this definition">¶</a></dt>
+<dd><p>This extracts the ordering for the elements from the form&#8217;s POST, then uses
+the given ordering to resort the join records from item_types_elements into
+a new ordering, which is then saved.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementOrderingArray</strong> (<em>Array</em>) &#8211; An array of numbers representing</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ItemType::addElements">
+<tt class="descname">addElements</tt><big>(</big><em>array $elements = Array</em><big>)</big><a class="headerlink" href="#ItemType::addElements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a set of elements to the Item Type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elements</strong> (<em>array</em>) &#8211; Either an array of elements or an array of metadata, where each entry corresponds to a new element to add to the item type.  If an element exists with the same id, it will replace the old element with the new element.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ItemType::addElementById">
+<tt class="descname">addElementById</tt><big>(</big><em>$elementId</em><big>)</big><a class="headerlink" href="#ItemType::addElementById" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a new element to the item type by the id of the element</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementId</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ItemType::removeElements">
+<tt class="descname">removeElements</tt><big>(</big><em>Array $elements</em><big>)</big><a class="headerlink" href="#ItemType::removeElements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes an array of Elements from this item type
+The element will not be removed until the object is saved.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elements</strong> (<em>Array</em>) &#8211; An array of Element objects or element id strings</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ItemType::removeElement">
+<tt class="descname">removeElement</tt><big>(</big><em>Element|string $element</em><big>)</big><a class="headerlink" href="#ItemType::removeElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a single Element from this item type.
+The element will not be removed until the object is saved.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$element</strong> (<em>Element|string</em>) &#8211; The element object or the element id.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ItemType::_removeElement">
+<tt class="descname">_removeElement</tt><big>(</big><em>Element|string $element</em><big>)</big><a class="headerlink" href="#ItemType::_removeElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes a single Element from this item type.  It removes it immediately.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$element</strong> (<em>Element|string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ItemType::hasElement">
+<tt class="descname">hasElement</tt><big>(</big><em>Element|string $element</em><big>)</big><a class="headerlink" href="#ItemType::hasElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines whether a saved version of the item type has an element.
+It does not correctly determine the presence of elements that were added or
+removed without saving the item type object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$element</strong> (<em>Element|string</em>) &#8211; The element object or the element id.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ItemType::totalItems">
+<tt class="descname">totalItems</tt><big>(</big><big>)</big><a class="headerlink" href="#ItemType::totalItems" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines the total number of items that have this item type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">int The total number of items that have this item type.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ItemType::getItemTypeElementSet">
+<tt class="descname">getItemTypeElementSet</tt><big>(</big><big>)</big><a class="headerlink" href="#ItemType::getItemTypeElementSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the &#8216;Item Type&#8217; element set.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">ElementSet</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/packages/Record/ItemType.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

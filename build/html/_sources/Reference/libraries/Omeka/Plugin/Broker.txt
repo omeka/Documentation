@@ -4,9 +4,11 @@ Omeka_Plugin_Broker
 
 .. php:class:: Omeka_Plugin_Broker
 
+    Package: :doc:`/Reference/packages/Plugin\Broker/index`
+
     Plugin Broker for Omeka.
     
-    For example,$broker->callHook('add_action_contexts', array('controller' => $controller))would call the 'add_action_contexts' on all plugins, and it wouldprovide the controller object as the first argument to allimplementations of that hook.
+    For example,$broker->callHook('add_action_contexts', array('controller' => $controller))would call the 'add_action_contexts' on all plugins, and it would provide thecontroller object as the first argument to all implementations of that hook.
 
     .. php:attr:: _callbacks
     

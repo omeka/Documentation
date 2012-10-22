@@ -1,0 +1,273 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_Form &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
+    <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-form">
+<h1>Omeka_Form<a class="headerlink" href="#omeka-form" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_Form">
+<em class="property">class </em><tt class="descname">Omeka_Form</tt><a class="headerlink" href="#Omeka_Form" title="Permalink to this definition">¶</a></dt>
+<dd><p>Package: <a class="reference internal" href="index.html"><em>Form</em></a></p>
+<p>A Zend_Form subclass that sets up forms to be properly displayed in Omeka.</p>
+<dl class="attr">
+<dt id="Omeka_Form::$_defaultDisplayGroupClass">
+<em class="property">property </em><tt class="descname">_defaultDisplayGroupClass</tt><a class="headerlink" href="#Omeka_Form::$_defaultDisplayGroupClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class name of Omeka DisplayGroup subclass.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Form::$_autoApplyOmekaStyles">
+<em class="property">property </em><tt class="descname">_autoApplyOmekaStyles</tt><a class="headerlink" href="#Omeka_Form::$_autoApplyOmekaStyles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Whether or not to automatically apply Omeka-specific decorators
+and styling information to form elements prior to rendering.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Form::init">
+<tt class="descname">init</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Form::init" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set up Omeka-specific form elements and decorators.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Form::loadDefaultDecorators">
+<tt class="descname">loadDefaultDecorators</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Form::loadDefaultDecorators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set up base form decorators.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Form::getDefaultElementDecorators">
+<tt class="descname">getDefaultElementDecorators</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Form::getDefaultElementDecorators" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return default decorators for form elements.</p>
+<p>Makes form output conform to Omeka conventions.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Form::applyOmekaStyles">
+<tt class="descname">applyOmekaStyles</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Form::applyOmekaStyles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configure element styles / decorators based on the type of element.</p>
+<p>This may be called after elements to the form, as the decoratorconfiguration in init() runs before elements can be
+added.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Form::getMessagesAsString">
+<tt class="descname">getMessagesAsString</tt><big>(</big><em>string $messageDelimiter =</em>, <em>string $elementDelimiter =</em><big>)</big><a class="headerlink" href="#Omeka_Form::getMessagesAsString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve all of the form error messages as a nicely formatted string.</p>
+<p>Useful for displaying all form errors at the top of a form, or for flashingform errors after redirects.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$messageDelimiter</strong> (<em>string</em>) &#8211; The string to display between different error messages for an element.</li>
+<li><strong>$elementDelimiter</strong> (<em>string</em>) &#8211; The string to display between different elements.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Form::setAutoApplyOmekaStyles">
+<tt class="descname">setAutoApplyOmekaStyles</tt><big>(</big><em>mixed $flag</em><big>)</big><a class="headerlink" href="#Omeka_Form::setAutoApplyOmekaStyles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Specify whether or not to automatically apply Omeka-specific decorators
+and styles prior to rendering the form.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$flag</strong> (<em>mixed</em>) &#8211; A boolean or boolean-equivalent.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Form::render">
+<tt class="descname">render</tt><big>(</big><em>Zend_View_Interface $view</em><big>)</big><a class="headerlink" href="#Omeka_Form::render" title="Permalink to this definition">¶</a></dt>
+<dd><p>Apply Omeka default styles (if requested) just before rendering.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$view</strong> (<em>Zend_View_Interface</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Form::_addClassNameToElement">
+<tt class="descname">_addClassNameToElement</tt><big>(</big><em>Zend_Form_Element $element</em>, <em>string $className</em><big>)</big><a class="headerlink" href="#Omeka_Form::_addClassNameToElement" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a specific class name to an element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$element</strong> (<em>Zend_Form_Element</em>) &#8211; </li>
+<li><strong>$className</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/packages/Form/Form.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

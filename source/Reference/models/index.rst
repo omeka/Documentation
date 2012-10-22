@@ -15,16 +15,15 @@ Models
     ItemType
     ItemTypesElements
     Job/index
-    MimeElementSetLookup
     Mixin/index
     Option
     Output/index
     Plugin
     Process
+    RecordsTags
     SearchText
     Table/index
     Tag
-    Taggings
     Theme
     User
     UsersActivations

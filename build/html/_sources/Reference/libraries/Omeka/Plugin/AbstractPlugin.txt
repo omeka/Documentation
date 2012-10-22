@@ -4,6 +4,8 @@ Omeka_Plugin_AbstractPlugin
 
 .. php:class:: Omeka_Plugin_AbstractPlugin
 
+    Package: :doc:`/Reference/packages/Plugin/index`
+
     Abstract plugin class.
     
     Plugin authors may inherit from this class to aid in building their pluginframework.

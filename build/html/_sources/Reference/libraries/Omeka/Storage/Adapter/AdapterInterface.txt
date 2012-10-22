@@ -4,9 +4,11 @@ Omeka_Storage_Adapter_AdapterInterface
 
 .. php:class:: Omeka_Storage_Adapter_AdapterInterface
 
+    Package: :doc:`/Reference/packages/Storage\Adapter/index`
+
     Interface for file storage adapters.
     
-    Classes that implement this interface handle the actual work ofstoring and retrieving files.
+    Classes that implement this interface handle the actual work ofstoring andretrieving files.
 
     .. php:method:: __construct(array $options)
     

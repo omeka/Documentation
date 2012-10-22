@@ -4,6 +4,10 @@ Option
 
 .. php:class:: Option
 
+    Package: :doc:`/Reference/packages/Record/index`
+
+    An option and its metadata.
+
     .. php:attr:: name
     
 
