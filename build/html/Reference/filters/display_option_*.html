@@ -63,12 +63,30 @@
 <h1>display_option_*<a class="headerlink" href="#display-option" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>This family of filters is used whenever the <tt class="xref php php-func docutils literal"><span class="pre">option</span></tt> theme function is called,
+to filter the value returned from the database before it is displayed.</p>
+<p>The name of the particular filter that should be used is made by appending the name of the
+option to &#8220;<a href="#id1"><span class="problematic" id="id2">display_option_</span></a>&#8221;.</p>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<p><tt class="docutils literal"><span class="pre">string</span></tt> $option</p>
+<blockquote>
+<div>The original value of the option.</div></blockquote>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>To print the site title, a theme writer would do the following:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="o">&lt;?</span><span class="nx">php</span> <span class="k">echo</span> <span class="nx">option</span><span class="p">(</span><span class="s1">&#39;site_title&#39;</span><span class="p">);</span> <span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
+</div>
+<p>If you want to prepend &#8220;Omeka: &#8221; to the title of every printed page:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">public</span> <span class="k">function</span> <span class="nf">filterDisplayOptionSiteTitle</span><span class="p">(</span><span class="nv">$option</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="s2">&quot;Omeka: </span><span class="si">$option</span><span class="s2">&quot;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 

@@ -63,12 +63,32 @@
 <h1>file_ingest_validators<a class="headerlink" href="#file-ingest-validators" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Allows you to add or remove validators to be used when a file is uploaded.</p>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<p><tt class="docutils literal"><span class="pre">array</span></tt> $validators</p>
+<blockquote>
+<div>A keyed array of validators to use. Validators are subclasses of Zend_Validate_Abstract.</div></blockquote>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>The default validators are:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">array</span><span class="p">(</span>
+      <span class="s1">&#39;extension whitelist&#39;</span><span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">Omeka_Validate_File_Extension</span><span class="p">,</span>
+      <span class="s1">&#39;MIME type whitelist&#39;</span><span class="o">=&gt;</span> <span class="k">new</span> <span class="nx">Omeka_Validate_File_MimeType</span>
+    <span class="p">)</span>
+</pre></div>
+</div>
+<p>To swap out Omeka&#8217;s Mime Type validator for your own:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">public</span> <span class="k">function</span> <span class="nf">filterFileIngestValidators</span><span class="p">(</span><span class="nv">$validators</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="nb">unset</span><span class="p">(</span><span class="nv">$validators</span><span class="p">,</span> <span class="s1">&#39;MIME type whitelist&#39;</span><span class="p">);</span>
+    <span class="nv">$validators</span><span class="p">[</span><span class="s1">&#39;my mime validator&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MyPlugin_Validate_File_MimeType</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nv">$validators</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 

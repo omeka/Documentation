@@ -6,6 +6,7 @@ admin_items_form_tabs
 Usage
 *****
 
+The admin_items_form_tabs filter allows you to add, remove, or modify the tabs on the edit item form. 
 
 *********
 Arguments

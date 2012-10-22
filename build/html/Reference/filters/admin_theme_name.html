@@ -26,7 +26,7 @@
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Filters" href="index.html" />
     <link rel="next" title="admin_whitelist" href="admin_whitelist.html" />
-    <link rel="prev" title="admin_navigation_tags" href="admin_navigation_tags.html" />
+    <link rel="prev" title="admin_navigation_settings" href="admin_navigation_settings.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="admin_whitelist.html" title="admin_whitelist"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="admin_navigation_tags.html" title="admin_navigation_tags"
+          <a href="admin_navigation_settings.html" title="admin_navigation_settings"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -63,12 +63,23 @@
 <h1>admin_theme_name<a class="headerlink" href="#admin-theme-name" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Filters the currently-selected admin theme. Changing the theme name through this filter will cause Omeka to use a different theme to display the admin interface.</p>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<p><tt class="docutils literal"><span class="pre">string</span></tt> $theme_name</p>
+<blockquote>
+<div>The name of the theme being used</div></blockquote>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Force Omeka to use a different admin theme</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">public</span> <span class="k">function</span> <span class="nf">filterAdminThemeName</span><span class="p">(</span><span class="nv">$theme_name</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">return</span> <span class="s1">&#39;my-custom-admin-theme&#39;</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -92,8 +103,8 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="admin_navigation_tags.html"
-                        title="previous chapter">admin_navigation_tags</a></p>
+  <p class="topless"><a href="admin_navigation_settings.html"
+                        title="previous chapter">admin_navigation_settings</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="admin_whitelist.html"
                         title="next chapter">admin_whitelist</a></p>
@@ -134,7 +145,7 @@
           <a href="admin_whitelist.html" title="admin_whitelist"
              >next</a> |</li>
         <li class="right" >
-          <a href="admin_navigation_tags.html" title="admin_navigation_tags"
+          <a href="admin_navigation_settings.html" title="admin_navigation_settings"
              >previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>

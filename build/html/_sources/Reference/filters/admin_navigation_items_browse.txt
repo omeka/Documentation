@@ -6,6 +6,7 @@ admin_navigation_items_browse
 Usage
 *****
 
+Filters secondary navigation on the admin items browse page.
 
 
 *********

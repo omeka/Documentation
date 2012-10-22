@@ -7,7 +7,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>admin_navigation_main &mdash; Omeka Documentation v2.0 documentation</title>
+    <title>admin_navigation_global &mdash; Omeka Documentation v2.0 documentation</title>
     <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <script type="text/javascript">
@@ -25,8 +25,8 @@
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Filters" href="index.html" />
-    <link rel="next" title="admin_navigation_settings" href="admin_navigation_settings.html" />
-    <link rel="prev" title="Usage" href="admin_navigation_global.html" />
+    <link rel="next" title="admin_navigation_main" href="admin_navigation_main.html" />
+    <link rel="prev" title="admin_items_form_tabs" href="admin_items_form_tabs.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -38,10 +38,10 @@
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="admin_navigation_settings.html" title="admin_navigation_settings"
+          <a href="admin_navigation_main.html" title="admin_navigation_main"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="admin_navigation_global.html" title="Usage"
+          <a href="admin_items_form_tabs.html" title="admin_items_form_tabs"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -59,11 +59,11 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="admin-navigation-main">
-<h1>admin_navigation_main<a class="headerlink" href="#admin-navigation-main" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="admin-navigation-global">
+<h1>admin_navigation_global<a class="headerlink" href="#admin-navigation-global" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<p>Modifies the top-level navigation for the admin theme.</p>
+<p>Filters the global navigation of the admin theme.</p>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
@@ -73,33 +73,37 @@
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
-<p>The array that forms the basis for admin navigation is:</p>
-<div class="highlight-php"><div class="highlight"><pre><span class="nv">$mainNav</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+<p>The array that forms the basis for settings navigation is:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$globalNav</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
     <span class="k">array</span><span class="p">(</span>
-        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Dashboard&#39;</span><span class="p">),</span>
-        <span class="s1">&#39;uri&#39;</span> <span class="o">=&gt;</span> <span class="nx">url</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-    <span class="p">),</span>
+        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Plugins&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;uri&#39;</span> <span class="o">=&gt;</span> <span class="nx">url</span><span class="p">(</span><span class="s1">&#39;plugins&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;resource&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Plugins&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;privilege&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;edit&#39;</span>
+        <span class="p">),</span>
     <span class="k">array</span><span class="p">(</span>
-        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Items&#39;</span><span class="p">),</span>
-        <span class="s1">&#39;uri&#39;</span> <span class="o">=&gt;</span> <span class="nx">url</span><span class="p">(</span><span class="s1">&#39;items&#39;</span><span class="p">)</span>
-    <span class="p">),</span>
+        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Appearance&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;uri&#39;</span> <span class="o">=&gt;</span> <span class="nx">url</span><span class="p">(</span><span class="s1">&#39;appearance&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;resource&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Appearance&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;privilege&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;edit&#39;</span>
+        <span class="p">),</span>
     <span class="k">array</span><span class="p">(</span>
-        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Collections&#39;</span><span class="p">),</span>
-        <span class="s1">&#39;uri&#39;</span> <span class="o">=&gt;</span> <span class="nx">url</span><span class="p">(</span><span class="s1">&#39;collections&#39;</span><span class="p">)</span>
-    <span class="p">),</span>
+        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Users&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;uri&#39;</span> <span class="o">=&gt;</span> <span class="nx">url</span><span class="p">(</span><span class="s1">&#39;users&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;resource&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Users&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;privilege&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;edit&#39;</span>
+        <span class="p">),</span>
     <span class="k">array</span><span class="p">(</span>
-        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Item Types&#39;</span><span class="p">),</span>
-        <span class="s1">&#39;uri&#39;</span> <span class="o">=&gt;</span> <span class="nx">url</span><span class="p">(</span><span class="s1">&#39;item-types&#39;</span><span class="p">)</span>
-    <span class="p">),</span>
-    <span class="k">array</span><span class="p">(</span>
-        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Tags&#39;</span><span class="p">),</span>
-        <span class="s1">&#39;uri&#39;</span> <span class="o">=&gt;</span> <span class="nx">url</span><span class="p">(</span><span class="s1">&#39;tags&#39;</span><span class="p">)</span>
-    <span class="p">)</span>
-<span class="p">);</span>
+        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Settings&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;uri&#39;</span> <span class="o">=&gt;</span> <span class="nx">url</span><span class="p">(</span><span class="s1">&#39;settings&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;resource&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;Settings&#39;</span><span class="p">,</span>
+        <span class="s1">&#39;privilege&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;edit&#39;</span>
+        <span class="p">)</span>
+    <span class="p">);</span>
 </pre></div>
 </div>
 <p>To add a new link to a plugin&#8217;s admin interface, you would use this filter like this:</p>
-<div class="highlight-php"><div class="highlight"><pre><span class="k">public</span> <span class="k">function</span> <span class="nf">filterAdminNavigationMain</span><span class="p">(</span><span class="nv">$nav</span><span class="p">)</span>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">public</span> <span class="k">function</span> <span class="nf">filterAdminNavigationGlobal</span><span class="p">(</span><span class="nv">$nav</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="nv">$nav</span><span class="p">[]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
                     <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;My Plugin&#39;</span><span class="p">),</span>
@@ -123,7 +127,7 @@
             </a></p>
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">admin_navigation_main</a><ul>
+<li><a class="reference internal" href="#">admin_navigation_global</a><ul>
 <li><a class="reference internal" href="#usage">Usage</a></li>
 <li><a class="reference internal" href="#arguments">Arguments</a></li>
 <li><a class="reference internal" href="#examples">Examples</a></li>
@@ -132,18 +136,18 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="admin_navigation_global.html"
-                        title="previous chapter">Usage</a></p>
+  <p class="topless"><a href="admin_items_form_tabs.html"
+                        title="previous chapter">admin_items_form_tabs</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="admin_navigation_settings.html"
-                        title="next chapter">admin_navigation_settings</a></p>
+  <p class="topless"><a href="admin_navigation_main.html"
+                        title="next chapter">admin_navigation_main</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
     </p>
   <ul class="this-page-menu">
     
-    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/filters/admin_navigation_main.rst"
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/filters/admin_navigation_global.rst"
            rel="nofollow">View Source</a>
     </li>
   </ul>
@@ -171,10 +175,10 @@
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="admin_navigation_settings.html" title="admin_navigation_settings"
+          <a href="admin_navigation_main.html" title="admin_navigation_main"
              >next</a> |</li>
         <li class="right" >
-          <a href="admin_navigation_global.html" title="Usage"
+          <a href="admin_items_form_tabs.html" title="admin_items_form_tabs"
              >previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>

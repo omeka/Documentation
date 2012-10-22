@@ -1,3 +1,5 @@
+.. _modelbrowsesql:
+
 ##################
 <model>_browse_sql
 ##################
