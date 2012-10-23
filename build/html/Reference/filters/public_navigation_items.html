@@ -63,12 +63,44 @@
 <h1>public_navigation_items<a class="headerlink" href="#public-navigation-items" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Modifies the navigation option on public items browse page</p>
+</div>
+<div class="section" id="value">
+<h2>Value<a class="headerlink" href="#value" title="Permalink to this headline">¶</a></h2>
+<p><tt class="docutils literal"><span class="pre">array</span></tt> $navArray</p>
+<blockquote>
+<div>An array of arrays as used by Zend_Navigation.</div></blockquote>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>The base navigation looks like:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="nv">$navArray</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span>
+    <span class="k">array</span><span class="p">(</span>
+        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span><span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Browse All&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;uri&#39;</span> <span class="o">=&gt;</span> <span class="nx">url</span><span class="p">(</span><span class="s1">&#39;items/browse&#39;</span><span class="p">),</span>
+    <span class="p">),</span>
+    <span class="k">array</span><span class="p">(</span>
+        <span class="s1">&#39;label&#39;</span> <span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;Browse by Tag&#39;</span><span class="p">),</span>
+        <span class="s1">&#39;uri&#39;</span> <span class="o">=&gt;</span> <span class="nx">url</span><span class="p">(</span><span class="s1">&#39;items/tags&#39;</span><span class="p">)</span>
+    <span class="p">)</span>
+<span class="p">);</span>
+</pre></div>
+</div>
+<p>So you could add to it with:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">function</span> <span class="nf">filterPublicNavigationItems</span><span class="p">(</span><span class="nv">$navArray</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="nv">$navArray</span><span class="p">[]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;label&#39;</span><span class="o">=&gt;</span> <span class="nx">__</span><span class="p">(</span><span class="s1">&#39;My Plugin Items&#39;</span><span class="p">),</span>
+                        <span class="s1">&#39;uri&#39;</span> <span class="o">=&gt;</span> <span class="nx">url</span><span class="p">(</span><span class="s1">&#39;myplugin/items&#39;</span><span class="p">)</span>
+                        <span class="p">);</span>
+    <span class="k">return</span> <span class="nv">$navArray</span><span class="p">;</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -85,6 +117,7 @@
   <ul>
 <li><a class="reference internal" href="#">public_navigation_items</a><ul>
 <li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#value">Value</a></li>
 <li><a class="reference internal" href="#arguments">Arguments</a></li>
 <li><a class="reference internal" href="#examples">Examples</a></li>
 </ul>

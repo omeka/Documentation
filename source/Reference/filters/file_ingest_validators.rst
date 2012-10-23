@@ -8,13 +8,19 @@ Usage
 
 Allows you to add or remove validators to be used when a file is uploaded.
 
-*********
-Arguments
-*********
+*****
+Value
+*****
 
 ``array`` $validators
 
     A keyed array of validators to use. Validators are subclasses of Zend_Validate_Abstract.
+
+*********
+Arguments
+*********
+
+None
 
 ********
 Examples

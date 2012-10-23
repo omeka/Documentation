@@ -65,11 +65,16 @@
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 <p>The admin_items_form_tabs filter allows you to add, remove, or modify the tabs on the edit item form.</p>
 </div>
+<div class="section" id="value">
+<h2>Value<a class="headerlink" href="#value" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">array</span></tt> $tabs</dt>
+<dd>An array of the item form tabs. The keys are the tab names, and the values are the HTML content of each tab. A filter function should modify this array and return it.</dd>
+</dl>
+</div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
 <dl class="docutils">
-<dt><tt class="docutils literal"><span class="pre">array</span></tt> tabs</dt>
-<dd>An array of the item form tabs. The keys are the tab names, and the values are the HTML content of each tab. A filter function should modify this array and return it.</dd>
 <dt><a class="reference internal" href="../packages/Record/Item.html#Item" title="Item"><tt class="xref php php-class docutils literal"><span class="pre">Item</span></tt></a> item</dt>
 <dd>The Item being edited. Filter functions can use this parameter to change the tabs or content on an item-by-item basis.</dd>
 </dl>
@@ -92,6 +97,7 @@
   <ul>
 <li><a class="reference internal" href="#">admin_items_form_tabs</a><ul>
 <li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#value">Value</a></li>
 <li><a class="reference internal" href="#arguments">Arguments</a></li>
 <li><a class="reference internal" href="#examples">Examples</a></li>
 </ul>

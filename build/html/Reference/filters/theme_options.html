@@ -63,9 +63,21 @@
 <h1>theme_options<a class="headerlink" href="#theme-options" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Filters the theme configuration options before they are returned by a call to <a class="reference internal" href="../libraries/globals/get_theme_option.html#get_theme_option" title="get_theme_option"><tt class="xref php php-func docutils literal"><span class="pre">get_theme_option</span></tt></a>.</p>
+<p>Plugins can use this filter to modify settings for particular themes, or store and use alternative settings.</p>
+<p>The options will be provided as a serialized string, so in order to modify the options, a plugin must unserialize() the array, make whatever changes are desired, then serialize() again before returning.</p>
+</div>
+<div class="section" id="value">
+<h2>Value<a class="headerlink" href="#value" title="Permalink to this headline">¶</a></h2>
+<p><tt class="docutils literal"><span class="pre">string</span></tt> $themeOptions</p>
+<blockquote>
+<div>The set of all theme configuration options for a theme. This is a serialized array.</div></blockquote>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<p><tt class="docutils literal"><span class="pre">string</span></tt> theme_name</p>
+<blockquote>
+<div>The name of the theme</div></blockquote>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -85,6 +97,7 @@
   <ul>
 <li><a class="reference internal" href="#">theme_options</a><ul>
 <li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#value">Value</a></li>
 <li><a class="reference internal" href="#arguments">Arguments</a></li>
 <li><a class="reference internal" href="#examples">Examples</a></li>
 </ul>

@@ -9,13 +9,19 @@ Usage
 Filters the parameters used when generating the browse page for records
 
 
+*****
+Value
+*****
+
+``array`` $params
+
+    Params passed to the browse query. May include both filtering and sorting parameters
+
 *********
 Arguments
 *********
 
-``array`` params
-
-    Params passed to the browse query. May include both filtering and sorting parameters
+None
 
 ********
 Examples

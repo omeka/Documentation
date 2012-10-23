@@ -25,7 +25,7 @@
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Filters" href="index.html" />
-    <link rel="next" title="&lt;no title&gt;" href="record_metadata_elements.html" />
+    <link rel="next" title="record_metadata_elements" href="record_metadata_elements.html" />
     <link rel="prev" title="Element Save Filter" href="Element_Save_Filter.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
  
@@ -38,7 +38,7 @@
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="record_metadata_elements.html" title="&lt;no title&gt;"
+          <a href="record_metadata_elements.html" title="record_metadata_elements"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="Element_Save_Filter.html" title="Element Save Filter"
@@ -63,12 +63,56 @@
 <h1>Element Validation Filter<a class="headerlink" href="#element-validation-filter" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Perform a custom validation on the texts for any particular element.</p>
+<p>This filter&#8217;s name is actually an array of strings. The first string must always be &#8216;Validate&#8217;, but the last three can change depending on exactly what values you want to validate.</p>
+<p><tt class="docutils literal"><span class="pre">array('Validate',</span> <span class="pre">$recordType,</span> <span class="pre">$elementSetName,</span> <span class="pre">$elementName)</span></tt></p>
+<ul class="simple">
+<li>$recordType: The type of Omeka object to filter the metadata for.</li>
+<li>$elementSetName: The name of the element set containing the metadata field to be filtered. Possible values will include &#8216;Dublin Core&#8217; and &#8216;Item Type Metadata&#8217;.</li>
+<li>$elementName: The name of the specific element within the set to be filtered.</li>
+</ul>
+</div>
+<div class="section" id="value">
+<h2>Value<a class="headerlink" href="#value" title="Permalink to this headline">¶</a></h2>
+<p><tt class="docutils literal"><span class="pre">bool</span></tt> $isValid</p>
+<blockquote>
+<div>Whether the element text is valid.</div></blockquote>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<p><tt class="docutils literal"><span class="pre">string</span></tt>  text</p>
+<blockquote>
+<div>The text for the element</div></blockquote>
+<p><a class="reference internal" href="../packages/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Record_AbstractRecord</span></tt></a> record</p>
+<blockquote>
+<div>The record (subclass of Omeka_Record_AbstractRecord) being validated.</div></blockquote>
+<p><a class="reference internal" href="../packages/Record/Element.html#Element" title="Element"><tt class="xref php php-class docutils literal"><span class="pre">Element</span></tt></a> element</p>
+<blockquote>
+<div>The element (e.g., Dublin Core Title) for the element text.</div></blockquote>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MyPlugin</span> <span class="k">extends</span> <span class="nx">Omeka_Plugin_AbstractPlugin</span>
+<span class="p">{</span>
+
+    <span class="nv">$_filters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;itemTitleLengthValidator&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;Validate&#39;</span><span class="p">,</span> <span class="s1">&#39;Item&#39;</span><span class="p">,</span> <span class="s1">&#39;Dublin Core&#39;</span><span class="p">,</span> <span class="s1">&#39;Title&#39;</span><span class="p">));</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">itemTitleValidator</span><span class="p">(</span><span class="nv">$isValid</span><span class="p">,</span> <span class="nv">$args</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$text</span> <span class="o">=</span> <span class="nv">$args</span><span class="p">[</span><span class="s1">&#39;text&#39;</span><span class="p">];</span>
+        <span class="k">if</span><span class="p">(</span><span class="nb">strlen</span><span class="p">(</span><span class="nv">$text</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+<p><tt class="xref php php-meth docutils literal"><span class="pre">ElementText::_elementTextIsValid</span></tt></p>
 </div>
 </div>
 
@@ -85,8 +129,10 @@
   <ul>
 <li><a class="reference internal" href="#">Element Validation Filter</a><ul>
 <li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#value">Value</a></li>
 <li><a class="reference internal" href="#arguments">Arguments</a></li>
 <li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#see-also">See Also</a></li>
 </ul>
 </li>
 </ul>
@@ -96,7 +142,7 @@
                         title="previous chapter">Element Save Filter</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="record_metadata_elements.html"
-                        title="next chapter">&lt;no title&gt;</a></p>
+                        title="next chapter">record_metadata_elements</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -131,7 +177,7 @@
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="record_metadata_elements.html" title="&lt;no title&gt;"
+          <a href="record_metadata_elements.html" title="record_metadata_elements"
              >next</a> |</li>
         <li class="right" >
           <a href="Element_Save_Filter.html" title="Element Save Filter"

@@ -12,9 +12,9 @@ to filter the value returned from the database before it is displayed.
 The name of the particular filter that should be used is made by appending the name of the 
 option to "display_option_". 
 
-*********
-Arguments
-*********
+*****
+Value
+*****
 
 ``string`` $option
 

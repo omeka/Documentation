@@ -8,13 +8,21 @@ Usage
 
 Filters the currently-selected admin theme. Changing the theme name through this filter will cause Omeka to use a different theme to display the admin interface. 
 
-*********
-Arguments
-*********
+*****
+Value
+*****
 
 ``string`` $theme_name
 
     The name of the theme being used
+
+
+*********
+Arguments
+*********
+
+None
+
 
 ********
 Examples

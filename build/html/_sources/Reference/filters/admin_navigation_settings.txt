@@ -8,14 +8,22 @@ Usage
 
 Filters the navigation for the settings page of the admin theme. 
 
-*********
-Arguments
-*********
+*****
+Value
+*****
 
 
 ``array`` $nav
 
     An array of arrays as used by Zend_Navigation.
+    
+
+*********
+Arguments
+*********
+
+None
+    
 
 ********
 Examples

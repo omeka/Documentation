@@ -8,13 +8,21 @@ Usage
 
 Allows admin controller views to be accessible without logging in
 
-*********
-Arguments
-*********
+*****
+Value
+*****
 
 ``array`` $whitelist
     
     An array containing arrays of controller-view pairs that do not require logging in to access
+
+
+*********
+Arguments
+*********
+
+None
+
 
 
 ********

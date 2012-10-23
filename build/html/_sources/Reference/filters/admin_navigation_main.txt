@@ -8,13 +8,21 @@ Usage
 
 Modifies the top-level navigation for the admin theme. 
 
-*********
-Arguments
-*********
+*****
+Value
+*****
 
 ``array`` $nav
 
     An array of arrays as used by Zend_Navigation.
+    
+
+*********
+Arguments
+*********
+
+None
+    
 
 ********
 Examples
