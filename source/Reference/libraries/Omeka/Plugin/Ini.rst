@@ -4,7 +4,7 @@ Omeka_Plugin_Ini
 
 .. php:class:: Omeka_Plugin_Ini
 
-    Package: :doc:`/Reference/packages/Plugin/index`
+    Package: :doc:`Plugin </Reference/packages/Plugin/index>`
 
     Responsible for parsing the plugin.ini file for any given plugin.
 

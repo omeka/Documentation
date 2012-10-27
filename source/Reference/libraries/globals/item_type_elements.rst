@@ -2,11 +2,13 @@
 item_type_elements
 ##################
 
+:doc:`ItemType-related functions </Reference/packages/Function/View/Body/ItemType/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/item_type_elements.rst
+.. include:: /Reference/libraries/globals/summary/item_type_elements.rst
 
 .. php:function:: item_type_elements(Item|null $item)
 
@@ -19,17 +21,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/item_type_elements.rst
+.. include:: /Reference/libraries/globals/usage/item_type_elements.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/item_type_elements.rst
+.. include:: /Reference/libraries/globals/examples/item_type_elements.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/item_type_elements.rst
+.. include:: /Reference/libraries/globals/see_also/item_type_elements.rst
 

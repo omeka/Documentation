@@ -4,7 +4,7 @@ Omeka_View_Helper_Url
 
 .. php:class:: Omeka_View_Helper_Url
 
-    Package: :doc:`/Reference/packages/View\Helper/index`
+    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
     .. php:method:: url($options = Array, $name, $queryParams = Array, $reset = , $encode = 1)
     

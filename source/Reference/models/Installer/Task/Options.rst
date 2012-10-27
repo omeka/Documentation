@@ -4,7 +4,7 @@ Installer_Task_Options
 
 .. php:class:: Installer_Task_Options
 
-    Package: :doc:`/Reference/packages/Install/index`
+    Package: :doc:`Install </Reference/packages/Install/index>`
 
     Installer task for inserting options into the options table.
 

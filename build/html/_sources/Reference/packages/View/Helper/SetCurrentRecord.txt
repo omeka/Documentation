@@ -4,7 +4,7 @@ Omeka_View_Helper_SetCurrentRecord
 
 .. php:class:: Omeka_View_Helper_SetCurrentRecord
 
-    Package: :doc:`/Reference/packages/View\Helper/index`
+    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
     .. php:method:: setCurrentRecord(string $recordVar, Omeka_Record_AbstractRecord $record, bool $setPreviousRecord = )
     

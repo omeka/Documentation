@@ -4,7 +4,7 @@ Omeka_Validate_File_Extension
 
 .. php:class:: Omeka_Validate_File_Extension
 
-    Package: :doc:`/Reference/packages/Validate/index`
+    Package: :doc:`Validate </Reference/packages/Validate/index>`
 
     Define custom behavior for the default whitelist file extension validator.
     

@@ -4,7 +4,7 @@ Omeka_View_Helper_AllElementTexts
 
 .. php:class:: Omeka_View_Helper_AllElementTexts
 
-    Package: :doc:`/Reference/packages/View\Helper/index`
+    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
     View helper for retrieving lists of metadata for any record that uses 
     Mixin_ElementText.

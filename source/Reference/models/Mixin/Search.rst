@@ -4,7 +4,7 @@ Mixin_Search
 
 .. php:class:: Mixin_Search
 
-    Package: :doc:`/Reference/packages/Record\Mixin/index`
+    Package: :doc:`Record\\Mixin </Reference/packages/Record/Mixin/index>`
 
     Make an Omeka record fulltext searchable.
     

@@ -1,9 +1,13 @@
-#######################################
-File\MimeType
-#######################################
+##############
+File\\MimeType
+##############
+
+Up to :doc:`../index`
 
 .. toctree::
-    :glob:
 
-    *
-    */index
+   /Reference/libraries/Omeka/File/MimeType/Exception.rst
+.. toctree::
+   :glob:
+
+   */index

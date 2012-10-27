@@ -4,7 +4,7 @@ Job_SearchTextIndex
 
 .. php:class:: Job_SearchTextIndex
 
-    Package: :doc:`/Reference/packages/Job/index`
+    Package: :doc:`Job </Reference/packages/Job/index>`
 
     .. php:method:: perform()
     

@@ -4,7 +4,7 @@ Omeka_Application_Resource_Currentuser
 
 .. php:class:: Omeka_Application_Resource_Currentuser
 
-    Package: :doc:`/Reference/packages/Application\Resource/index`
+    Package: :doc:`Application\\Resource </Reference/packages/Application/Resource/index>`
 
     Retrive the User record corresponding to the authenticated user.
     

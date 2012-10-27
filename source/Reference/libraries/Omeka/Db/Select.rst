@@ -4,7 +4,7 @@ Omeka_Db_Select
 
 .. php:class:: Omeka_Db_Select
 
-    Package: :doc:`/Reference/packages/Db/index`
+    Package: :doc:`Db </Reference/packages/Db/index>`
 
     Class for SQL SELECT generation and results.
 

@@ -2,11 +2,13 @@
 text_to_paragraphs
 ##################
 
+:doc:`Text-related functions </Reference/packages/Function/Text/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/text_to_paragraphs.rst
+.. include:: /Reference/libraries/globals/summary/text_to_paragraphs.rst
 
 .. php:function:: text_to_paragraphs(string $str)
 
@@ -22,17 +24,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/text_to_paragraphs.rst
+.. include:: /Reference/libraries/globals/usage/text_to_paragraphs.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/text_to_paragraphs.rst
+.. include:: /Reference/libraries/globals/examples/text_to_paragraphs.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/text_to_paragraphs.rst
+.. include:: /Reference/libraries/globals/see_also/text_to_paragraphs.rst
 

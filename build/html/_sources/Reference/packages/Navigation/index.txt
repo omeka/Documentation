@@ -1,9 +1,14 @@
-#######################################
+##########
 Navigation
-#######################################
+##########
+
+Up to :doc:`../index`
 
 .. toctree::
-    :glob:
 
-    *
-    */index
+   /Reference/libraries/Omeka/Navigation.rst
+   /Reference/libraries/Omeka/Navigation/Page/Uri.rst
+.. toctree::
+   :glob:
+
+   */index

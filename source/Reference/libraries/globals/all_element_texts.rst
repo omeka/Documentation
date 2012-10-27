@@ -2,11 +2,13 @@
 all_element_texts
 #################
 
+:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/all_element_texts.rst
+.. include:: /Reference/libraries/globals/summary/all_element_texts.rst
 
 .. php:function:: all_element_texts(Omeka_Record_AbstractRecord|string $record, array $options = Array)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/all_element_texts.rst
+.. include:: /Reference/libraries/globals/usage/all_element_texts.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/all_element_texts.rst
+.. include:: /Reference/libraries/globals/examples/all_element_texts.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/all_element_texts.rst
+.. include:: /Reference/libraries/globals/see_also/all_element_texts.rst
 

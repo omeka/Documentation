@@ -2,11 +2,13 @@
 record_url
 ##########
 
+:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/record_url.rst
+.. include:: /Reference/libraries/globals/summary/record_url.rst
 
 .. php:function:: record_url(Omeka_Record_AbstractRecord|string $record, string|null $action, bool $getAbsoluteUrl = )
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/record_url.rst
+.. include:: /Reference/libraries/globals/usage/record_url.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/record_url.rst
+.. include:: /Reference/libraries/globals/examples/record_url.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/record_url.rst
+.. include:: /Reference/libraries/globals/see_also/record_url.rst
 

@@ -15,7 +15,6 @@ Libraries/Omeka/Application/Resource
     Exception
     Frontcontroller
     Helpers
-    Jobs/index
     Jobs
     Locale
     Logger

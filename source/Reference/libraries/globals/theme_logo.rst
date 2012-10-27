@@ -2,11 +2,13 @@
 theme_logo
 ##########
 
+:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/theme_logo.rst
+.. include:: /Reference/libraries/globals/summary/theme_logo.rst
 
 .. php:function:: theme_logo()
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/theme_logo.rst
+.. include:: /Reference/libraries/globals/usage/theme_logo.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/theme_logo.rst
+.. include:: /Reference/libraries/globals/examples/theme_logo.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/theme_logo.rst
+.. include:: /Reference/libraries/globals/see_also/theme_logo.rst
 

@@ -4,7 +4,7 @@ ItemTypesController
 
 .. php:class:: ItemTypesController
 
-    Package: :doc:`/Reference/packages/Controller/index`
+    Package: :doc:`Controller </Reference/packages/Controller/index>`
 
     .. php:method:: init()
 

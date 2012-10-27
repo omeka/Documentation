@@ -2,11 +2,13 @@
 update_item
 ###########
 
+:doc:`Item-related functions </Reference/packages/Function/Db/Item/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/update_item.rst
+.. include:: /Reference/libraries/globals/summary/update_item.rst
 
 .. php:function:: update_item(Item|int $item, array $metadata = Array, array $elementTexts = Array, array $fileMetadata = Array)
 
@@ -22,17 +24,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/update_item.rst
+.. include:: /Reference/libraries/globals/usage/update_item.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/update_item.rst
+.. include:: /Reference/libraries/globals/examples/update_item.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/update_item.rst
+.. include:: /Reference/libraries/globals/see_also/update_item.rst
 

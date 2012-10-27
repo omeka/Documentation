@@ -2,11 +2,13 @@
 css_src
 #######
 
+:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/css_src.rst
+.. include:: /Reference/libraries/globals/summary/css_src.rst
 
 .. php:function:: css_src(string $file, string $dir = css)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/css_src.rst
+.. include:: /Reference/libraries/globals/usage/css_src.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/css_src.rst
+.. include:: /Reference/libraries/globals/examples/css_src.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/css_src.rst
+.. include:: /Reference/libraries/globals/see_also/css_src.rst
 

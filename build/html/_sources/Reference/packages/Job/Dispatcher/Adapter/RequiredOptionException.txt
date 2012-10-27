@@ -4,7 +4,7 @@ Omeka_Job_Dispatcher_Adapter_RequiredOptionException
 
 .. php:class:: Omeka_Job_Dispatcher_Adapter_RequiredOptionException
 
-    Package: :doc:`/Reference/packages/Job\Dispatcher\Adapter/index`
+    Package: :doc:`Job\\Dispatcher\\Adapter </Reference/packages/Job/Dispatcher/Adapter/index>`
 
     Exception thrown when required options have not been passed to the 
     Omeka_Job_Dispatcher_Adapter_AdapterInterface's constructor.

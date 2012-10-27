@@ -2,11 +2,13 @@
 snippet_by_word_count
 #####################
 
+:doc:`Text-related functions </Reference/packages/Function/Text/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/snippet_by_word_count.rst
+.. include:: /Reference/libraries/globals/summary/snippet_by_word_count.rst
 
 .. php:function:: snippet_by_word_count(string $text, integer $maxWords = 20, string $ellipsis = ...)
 
@@ -23,17 +25,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/snippet_by_word_count.rst
+.. include:: /Reference/libraries/globals/usage/snippet_by_word_count.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/snippet_by_word_count.rst
+.. include:: /Reference/libraries/globals/examples/snippet_by_word_count.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/snippet_by_word_count.rst
+.. include:: /Reference/libraries/globals/see_also/snippet_by_word_count.rst
 

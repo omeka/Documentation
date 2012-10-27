@@ -4,7 +4,7 @@ Output_ItemDcmesXml
 
 .. php:class:: Output_ItemDcmesXml
 
-    Package: :doc:`/Reference/packages/Output/index`
+    Package: :doc:`Output </Reference/packages/Output/index>`
 
     .. php:attr:: _dcElements
     

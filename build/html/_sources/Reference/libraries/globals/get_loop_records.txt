@@ -2,11 +2,13 @@
 get_loop_records
 ################
 
+:doc:`Loop-related functions </Reference/packages/Function/View/Body/Loop/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_loop_records.rst
+.. include:: /Reference/libraries/globals/summary/get_loop_records.rst
 
 .. php:function:: get_loop_records(string $recordsVar, $throwException = 1)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_loop_records.rst
+.. include:: /Reference/libraries/globals/usage/get_loop_records.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_loop_records.rst
+.. include:: /Reference/libraries/globals/examples/get_loop_records.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_loop_records.rst
+.. include:: /Reference/libraries/globals/see_also/get_loop_records.rst
 

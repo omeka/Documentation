@@ -2,11 +2,13 @@
 tag_attributes
 ##############
 
+:doc:`View-related functions </Reference/packages/Function/View/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/tag_attributes.rst
+.. include:: /Reference/libraries/globals/summary/tag_attributes.rst
 
 .. php:function:: tag_attributes(array|string $attributes, string $value)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/tag_attributes.rst
+.. include:: /Reference/libraries/globals/usage/tag_attributes.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/tag_attributes.rst
+.. include:: /Reference/libraries/globals/examples/tag_attributes.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/tag_attributes.rst
+.. include:: /Reference/libraries/globals/see_also/tag_attributes.rst
 

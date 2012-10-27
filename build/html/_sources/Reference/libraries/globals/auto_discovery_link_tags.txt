@@ -2,11 +2,13 @@
 auto_discovery_link_tags
 ########################
 
+:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/auto_discovery_link_tags.rst
+.. include:: /Reference/libraries/globals/summary/auto_discovery_link_tags.rst
 
 .. php:function:: auto_discovery_link_tags()
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/auto_discovery_link_tags.rst
+.. include:: /Reference/libraries/globals/usage/auto_discovery_link_tags.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/auto_discovery_link_tags.rst
+.. include:: /Reference/libraries/globals/examples/auto_discovery_link_tags.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/auto_discovery_link_tags.rst
+.. include:: /Reference/libraries/globals/see_also/auto_discovery_link_tags.rst
 

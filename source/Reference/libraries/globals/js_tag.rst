@@ -2,11 +2,13 @@
 js_tag
 ######
 
+:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/js_tag.rst
+.. include:: /Reference/libraries/globals/summary/js_tag.rst
 
 .. php:function:: js_tag(string $file, string $dir = javascripts)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/js_tag.rst
+.. include:: /Reference/libraries/globals/usage/js_tag.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/js_tag.rst
+.. include:: /Reference/libraries/globals/examples/js_tag.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/js_tag.rst
+.. include:: /Reference/libraries/globals/see_also/js_tag.rst
 

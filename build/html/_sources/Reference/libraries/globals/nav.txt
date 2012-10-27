@@ -2,11 +2,13 @@
 nav
 ###
 
+:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/nav.rst
+.. include:: /Reference/libraries/globals/summary/nav.rst
 
 .. php:function:: nav(array $navLinks, string $name)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/nav.rst
+.. include:: /Reference/libraries/globals/usage/nav.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/nav.rst
+.. include:: /Reference/libraries/globals/examples/nav.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/nav.rst
+.. include:: /Reference/libraries/globals/see_also/nav.rst
 

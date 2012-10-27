@@ -4,7 +4,7 @@ Omeka_Test_Resource_Db
 
 .. php:class:: Omeka_Test_Resource_Db
 
-    Package: :doc:`/Reference/packages/Test\Resource/index`
+    Package: :doc:`Test\\Resource </Reference/packages/Test/Resource/index>`
 
     Set up the database test environment by wiping and resetting the database to
     a recently-installed state.

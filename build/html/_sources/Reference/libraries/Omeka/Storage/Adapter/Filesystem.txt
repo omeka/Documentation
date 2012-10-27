@@ -4,7 +4,7 @@ Omeka_Storage_Adapter_Filesystem
 
 .. php:class:: Omeka_Storage_Adapter_Filesystem
 
-    Package: :doc:`/Reference/packages/Storage\Adapter/index`
+    Package: :doc:`Storage\\Adapter </Reference/packages/Storage/Adapter/index>`
 
     Standard local filesystem storage adapter.
     

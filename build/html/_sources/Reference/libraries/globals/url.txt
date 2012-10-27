@@ -2,11 +2,13 @@
 url
 ###
 
+:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/url.rst
+.. include:: /Reference/libraries/globals/summary/url.rst
 
 .. php:function:: url(mixed $options = Array, string $route, mixed $queryParams = Array, bool $reset = , bool $encode = 1)
 
@@ -33,17 +35,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/url.rst
+.. include:: /Reference/libraries/globals/usage/url.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/url.rst
+.. include:: /Reference/libraries/globals/examples/url.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/url.rst
+.. include:: /Reference/libraries/globals/see_also/url.rst
 

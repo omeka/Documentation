@@ -4,6 +4,8 @@ Omeka_Job_Process_Wrapper
 
 .. php:class:: Omeka_Job_Process_Wrapper
 
+    Package: :doc:`Job\\Process </Reference/packages/Job/Process/index>`
+
     Wrapper that allows Omeka_Job to work with the existing Process/
     Omeka_Job_Process_Dispatcher API. Jobs are passed in as the 'job' argument, 
     and this wrapper handles decoding and executing the job.

@@ -2,11 +2,13 @@
 add_translation_source
 ######################
 
+:doc:`Translation-related functions </Reference/packages/Function/Text/Translation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/add_translation_source.rst
+.. include:: /Reference/libraries/globals/summary/add_translation_source.rst
 
 .. php:function:: add_translation_source(string $dir)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/add_translation_source.rst
+.. include:: /Reference/libraries/globals/usage/add_translation_source.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/add_translation_source.rst
+.. include:: /Reference/libraries/globals/examples/add_translation_source.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/add_translation_source.rst
+.. include:: /Reference/libraries/globals/see_also/add_translation_source.rst
 

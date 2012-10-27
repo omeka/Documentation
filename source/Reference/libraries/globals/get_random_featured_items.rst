@@ -2,11 +2,13 @@
 get_random_featured_items
 #########################
 
+:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_random_featured_items.rst
+.. include:: /Reference/libraries/globals/summary/get_random_featured_items.rst
 
 .. php:function:: get_random_featured_items(integer $num = 5, boolean|null $hasImage)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_random_featured_items.rst
+.. include:: /Reference/libraries/globals/usage/get_random_featured_items.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_random_featured_items.rst
+.. include:: /Reference/libraries/globals/examples/get_random_featured_items.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_random_featured_items.rst
+.. include:: /Reference/libraries/globals/see_also/get_random_featured_items.rst
 

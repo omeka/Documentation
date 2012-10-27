@@ -1,9 +1,13 @@
-#######################################
+####
 Auth
-#######################################
+####
+
+Up to :doc:`../index`
 
 .. toctree::
-    :glob:
 
-    *
-    */index
+   /Reference/libraries/Omeka/Auth/Adapter/UserTable.rst
+.. toctree::
+   :glob:
+
+   */index

@@ -2,11 +2,13 @@
 get_theme_option
 ################
 
+:doc:`Option-related functions </Reference/packages/Function/Db/Option/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_theme_option.rst
+.. include:: /Reference/libraries/globals/summary/get_theme_option.rst
 
 .. php:function:: get_theme_option(string $optionName, string $themeName)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_theme_option.rst
+.. include:: /Reference/libraries/globals/usage/get_theme_option.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_theme_option.rst
+.. include:: /Reference/libraries/globals/examples/get_theme_option.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_theme_option.rst
+.. include:: /Reference/libraries/globals/see_also/get_theme_option.rst
 

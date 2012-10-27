@@ -4,7 +4,7 @@ SearchText
 
 .. php:class:: SearchText
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     A search text and its metadata.
 

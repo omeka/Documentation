@@ -4,6 +4,8 @@ Omeka_Controller_Action_Helper_ContextSwitch
 
 .. php:class:: Omeka_Controller_Action_Helper_ContextSwitch
 
+    Package: :doc:`Controller\\ActionHelper </Reference/packages/Controller/ActionHelper/index>`
+
     Extends the default ContextSwitch action helper to enable JSONP.
 
     .. php:method:: postJsonContext()
@@ -12,4 +14,3 @@ Omeka_Controller_Action_Helper_ContextSwitch
         enables cross-site AJAX using JSON.
         
         :returns: void
-

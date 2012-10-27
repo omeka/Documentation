@@ -4,7 +4,7 @@ Omeka_Validate_UserPassword
 
 .. php:class:: Omeka_Validate_UserPassword
 
-    Package: :doc:`/Reference/packages/Validate/index`
+    Package: :doc:`Validate </Reference/packages/Validate/index>`
 
     Validate a password to see if it matches that of an existing user.
 

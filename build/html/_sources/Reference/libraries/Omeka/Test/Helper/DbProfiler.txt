@@ -4,7 +4,7 @@ Omeka_Test_Helper_DbProfiler
 
 .. php:class:: Omeka_Test_Helper_DbProfiler
 
-    Package: :doc:`/Reference/packages/Test\Helper/index`
+    Package: :doc:`Test\\Helper </Reference/packages/Test/Helper/index>`
 
     Catch-all class for database helper methods that are shared across test cases.
 

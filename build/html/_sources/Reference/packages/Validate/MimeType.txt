@@ -4,7 +4,7 @@ Omeka_Validate_File_MimeType
 
 .. php:class:: Omeka_Validate_File_MimeType
 
-    Package: :doc:`/Reference/packages/Validate/index`
+    Package: :doc:`Validate </Reference/packages/Validate/index>`
 
     Validates files against a MIME type whitelist.
 

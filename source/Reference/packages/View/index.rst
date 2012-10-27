@@ -1,9 +1,14 @@
-#######################################
+####
 View
-#######################################
+####
+
+Up to :doc:`../index`
 
 .. toctree::
-    :glob:
 
-    *
-    */index
+   /Reference/libraries/Omeka/View.rst
+   /Reference/libraries/Omeka/View/Exception.rst
+.. toctree::
+   :glob:
+
+   */index

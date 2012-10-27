@@ -2,11 +2,13 @@
 item_image
 ##########
 
+:doc:`File-related functions </Reference/packages/Function/View/Body/Item/File/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/item_image.rst
+.. include:: /Reference/libraries/globals/summary/item_image.rst
 
 .. php:function:: item_image(string $imageType, array $props = Array, integer $index = 0, $item)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/item_image.rst
+.. include:: /Reference/libraries/globals/usage/item_image.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/item_image.rst
+.. include:: /Reference/libraries/globals/examples/item_image.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/item_image.rst
+.. include:: /Reference/libraries/globals/see_also/item_image.rst
 

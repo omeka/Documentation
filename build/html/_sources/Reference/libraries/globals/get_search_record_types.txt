@@ -2,11 +2,13 @@
 get_search_record_types
 #######################
 
+:doc:`Search-related functions </Reference/packages/Function/Search/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_search_record_types.rst
+.. include:: /Reference/libraries/globals/summary/get_search_record_types.rst
 
 .. php:function:: get_search_record_types()
 
@@ -23,17 +25,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_search_record_types.rst
+.. include:: /Reference/libraries/globals/usage/get_search_record_types.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_search_record_types.rst
+.. include:: /Reference/libraries/globals/examples/get_search_record_types.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_search_record_types.rst
+.. include:: /Reference/libraries/globals/see_also/get_search_record_types.rst
 

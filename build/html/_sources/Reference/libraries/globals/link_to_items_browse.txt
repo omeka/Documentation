@@ -2,11 +2,13 @@
 link_to_items_browse
 ####################
 
+:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/link_to_items_browse.rst
+.. include:: /Reference/libraries/globals/summary/link_to_items_browse.rst
 
 .. php:function:: link_to_items_browse(string $text, array $browseParams = Array, array $linkProperties = Array)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/link_to_items_browse.rst
+.. include:: /Reference/libraries/globals/usage/link_to_items_browse.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/link_to_items_browse.rst
+.. include:: /Reference/libraries/globals/examples/link_to_items_browse.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/link_to_items_browse.rst
+.. include:: /Reference/libraries/globals/see_also/link_to_items_browse.rst
 

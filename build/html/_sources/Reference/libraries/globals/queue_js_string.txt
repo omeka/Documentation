@@ -2,11 +2,13 @@
 queue_js_string
 ###############
 
+:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/queue_js_string.rst
+.. include:: /Reference/libraries/globals/summary/queue_js_string.rst
 
 .. php:function:: queue_js_string(string $string)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/queue_js_string.rst
+.. include:: /Reference/libraries/globals/usage/queue_js_string.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/queue_js_string.rst
+.. include:: /Reference/libraries/globals/examples/queue_js_string.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/queue_js_string.rst
+.. include:: /Reference/libraries/globals/see_also/queue_js_string.rst
 

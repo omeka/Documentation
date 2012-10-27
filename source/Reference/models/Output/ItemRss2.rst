@@ -4,7 +4,7 @@ Output_ItemRss2
 
 .. php:class:: Output_ItemRss2
 
-    Package: :doc:`/Reference/packages/Output/index`
+    Package: :doc:`Output </Reference/packages/Output/index>`
 
     .. php:method:: render($records)
     

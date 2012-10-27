@@ -24,8 +24,8 @@
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
-    <link rel="up" title="Global Functions" href="index.html" />
-    <link rel="next" title="set_current_record" href="set_current_record.html" />
+    <link rel="up" title="Global (Theming) Functions" href="index.html" />
+    <link rel="next" title="search_form" href="search_form.html" />
     <link rel="prev" title="revert_theme_base_url" href="revert_theme_base_url.html" />
     <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
  
@@ -38,7 +38,7 @@
           <a href="../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="set_current_record.html" title="set_current_record"
+          <a href="search_form.html" title="search_form"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="revert_theme_base_url.html" title="revert_theme_base_url"
@@ -50,7 +50,7 @@
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" accesskey="U">Global Functions</a> &raquo;</li> 
+          <li><a href="index.html" accesskey="U">Global (Theming) Functions</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -61,18 +61,19 @@
             
   <div class="section" id="search-filters">
 <h1>search_filters<a class="headerlink" href="#search-filters" title="Permalink to this headline">¶</a></h1>
+<p><tt class="xref doc docutils literal"><span class="pre">Search-related</span> <span class="pre">functions</span></tt></p>
 <div class="section" id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="search_filters">
-<tt class="descname">search_filters</tt><big>(</big><em>$params</em><big>)</big><a class="headerlink" href="#search_filters" title="Permalink to this definition">¶</a></dt>
-<dd><p>Return a list of the current search filters in use.</p>
+<tt class="descname">search_filters</tt><big>(</big><em>array $options = Array</em><big>)</big><a class="headerlink" href="#search_filters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a list of current site-wide search filters in use.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$params</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; Valid options are as follows: - id (string): the value of the div wrapping the filters.</li>
 </ul>
 </td>
 </tr>
@@ -119,8 +120,8 @@
   <p class="topless"><a href="revert_theme_base_url.html"
                         title="previous chapter">revert_theme_base_url</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="set_current_record.html"
-                        title="next chapter">set_current_record</a></p>
+  <p class="topless"><a href="search_form.html"
+                        title="next chapter">search_form</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -155,7 +156,7 @@
           <a href="../../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="set_current_record.html" title="set_current_record"
+          <a href="search_form.html" title="search_form"
              >next</a> |</li>
         <li class="right" >
           <a href="revert_theme_base_url.html" title="revert_theme_base_url"
@@ -167,7 +168,7 @@
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" >Global Functions</a> &raquo;</li> 
+          <li><a href="index.html" >Global (Theming) Functions</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

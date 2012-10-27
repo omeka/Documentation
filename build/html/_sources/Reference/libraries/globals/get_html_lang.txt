@@ -2,11 +2,13 @@
 get_html_lang
 #############
 
+:doc:`Translation-related functions </Reference/packages/Function/Text/Translation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_html_lang.rst
+.. include:: /Reference/libraries/globals/summary/get_html_lang.rst
 
 .. php:function:: get_html_lang()
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_html_lang.rst
+.. include:: /Reference/libraries/globals/usage/get_html_lang.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_html_lang.rst
+.. include:: /Reference/libraries/globals/examples/get_html_lang.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_html_lang.rst
+.. include:: /Reference/libraries/globals/see_also/get_html_lang.rst
 

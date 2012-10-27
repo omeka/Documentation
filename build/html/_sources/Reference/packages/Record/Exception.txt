@@ -4,7 +4,7 @@ Omeka_Record_Exception
 
 .. php:class:: Omeka_Record_Exception
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     .. php:attr:: message
     

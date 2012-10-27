@@ -2,11 +2,13 @@
 get_option
 ##########
 
+:doc:`Option-related functions </Reference/packages/Function/Db/Option/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_option.rst
+.. include:: /Reference/libraries/globals/summary/get_option.rst
 
 .. php:function:: get_option($name)
 
@@ -26,17 +28,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_option.rst
+.. include:: /Reference/libraries/globals/usage/get_option.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_option.rst
+.. include:: /Reference/libraries/globals/examples/get_option.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_option.rst
+.. include:: /Reference/libraries/globals/see_also/get_option.rst
 

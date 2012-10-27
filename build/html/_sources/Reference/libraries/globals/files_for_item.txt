@@ -2,11 +2,13 @@
 files_for_item
 ##############
 
+:doc:`File-related functions </Reference/packages/Function/View/Body/Item/File/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/files_for_item.rst
+.. include:: /Reference/libraries/globals/summary/files_for_item.rst
 
 .. php:function:: files_for_item(array $options = Array, array $wrapperAttributes = Array, Item|null $item)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/files_for_item.rst
+.. include:: /Reference/libraries/globals/usage/files_for_item.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/files_for_item.rst
+.. include:: /Reference/libraries/globals/examples/files_for_item.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/files_for_item.rst
+.. include:: /Reference/libraries/globals/see_also/files_for_item.rst
 

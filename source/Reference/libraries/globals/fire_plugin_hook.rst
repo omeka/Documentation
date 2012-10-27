@@ -2,11 +2,13 @@
 fire_plugin_hook
 ################
 
+:doc:`Plugin-related functions </Reference/packages/Function/Plugin/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/fire_plugin_hook.rst
+.. include:: /Reference/libraries/globals/summary/fire_plugin_hook.rst
 
 .. php:function:: fire_plugin_hook($name, $args = Array)
 
@@ -31,17 +33,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/fire_plugin_hook.rst
+.. include:: /Reference/libraries/globals/usage/fire_plugin_hook.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/fire_plugin_hook.rst
+.. include:: /Reference/libraries/globals/examples/fire_plugin_hook.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/fire_plugin_hook.rst
+.. include:: /Reference/libraries/globals/see_also/fire_plugin_hook.rst
 

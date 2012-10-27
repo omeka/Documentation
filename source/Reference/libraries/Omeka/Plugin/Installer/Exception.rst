@@ -4,7 +4,7 @@ Omeka_Plugin_Installer_Exception
 
 .. php:class:: Omeka_Plugin_Installer_Exception
 
-    Package: :doc:`/Reference/packages/Plugin\Installer/index`
+    Package: :doc:`Plugin\\Installer </Reference/packages/Plugin/Installer/index>`
 
     An exception thrown when the plugin installer is unable to install, 
     uninstall, activate, deactivate, or upgrade a plugin.

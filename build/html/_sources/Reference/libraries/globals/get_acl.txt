@@ -2,11 +2,13 @@
 get_acl
 #######
 
+:doc:`User-related functions </Reference/packages/Function/User/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_acl.rst
+.. include:: /Reference/libraries/globals/summary/get_acl.rst
 
 .. php:function:: get_acl()
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_acl.rst
+.. include:: /Reference/libraries/globals/usage/get_acl.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_acl.rst
+.. include:: /Reference/libraries/globals/examples/get_acl.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_acl.rst
+.. include:: /Reference/libraries/globals/see_also/get_acl.rst
 

@@ -4,7 +4,7 @@ Omeka_View_Helper_Loop
 
 .. php:class:: Omeka_View_Helper_Loop
 
-    Package: :doc:`/Reference/packages/View\Helper/index`
+    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
     .. php:method:: loop(string $recordsVar, array|null $records)
     

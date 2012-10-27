@@ -4,7 +4,7 @@ Table_User
 
 .. php:class:: Table_User
 
-    Package: :doc:`/Reference/packages/Db\Table/index`
+    Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
 
     .. php:method:: findActiveById($id)
     

@@ -4,7 +4,7 @@ Omeka_Job_Dispatcher_Adapter_AbstractAdapter
 
 .. php:class:: Omeka_Job_Dispatcher_Adapter_AbstractAdapter
 
-    Package: :doc:`/Reference/packages/Job\Dispatcher\Adapter/index`
+    Package: :doc:`Job\\Dispatcher\\Adapter </Reference/packages/Job/Dispatcher/Adapter/index>`
 
     Abstract class for job dispatcher adapters.
 

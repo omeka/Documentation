@@ -2,11 +2,13 @@
 pagination_links
 ################
 
+:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/pagination_links.rst
+.. include:: /Reference/libraries/globals/summary/pagination_links.rst
 
 .. php:function:: pagination_links(array $options = Array)
 
@@ -40,17 +42,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/pagination_links.rst
+.. include:: /Reference/libraries/globals/usage/pagination_links.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/pagination_links.rst
+.. include:: /Reference/libraries/globals/examples/pagination_links.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/pagination_links.rst
+.. include:: /Reference/libraries/globals/see_also/pagination_links.rst
 

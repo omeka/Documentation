@@ -2,11 +2,13 @@
 link_to
 #######
 
+:doc:`Link-related functions </Reference/packages/Function/View/Body/Navigation/Link/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/link_to.rst
+.. include:: /Reference/libraries/globals/summary/link_to.rst
 
 .. php:function:: link_to(Omeka_Record_AbstractRecord|string $record, string $action, string $text, array $props = Array, array $queryParams = Array)
 
@@ -23,17 +25,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/link_to.rst
+.. include:: /Reference/libraries/globals/usage/link_to.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/link_to.rst
+.. include:: /Reference/libraries/globals/examples/link_to.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/link_to.rst
+.. include:: /Reference/libraries/globals/see_also/link_to.rst
 

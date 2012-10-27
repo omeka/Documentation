@@ -4,7 +4,7 @@ Omeka_Validate_Confirmation
 
 .. php:class:: Omeka_Validate_Confirmation
 
-    Package: :doc:`/Reference/packages/Validate/index`
+    Package: :doc:`Validate </Reference/packages/Validate/index>`
 
     Adapted from Zend Framework documentation on custom validators.
 

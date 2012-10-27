@@ -2,11 +2,13 @@
 element_set_form
 ################
 
+:doc:`Form-related functions </Reference/packages/Function/View/Body/Form/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/element_set_form.rst
+.. include:: /Reference/libraries/globals/summary/element_set_form.rst
 
 .. php:function:: element_set_form(Omeka_Record_AbstractRecord $record, string $elementSetName)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/element_set_form.rst
+.. include:: /Reference/libraries/globals/usage/element_set_form.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/element_set_form.rst
+.. include:: /Reference/libraries/globals/examples/element_set_form.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/element_set_form.rst
+.. include:: /Reference/libraries/globals/see_also/element_set_form.rst
 

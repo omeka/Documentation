@@ -4,7 +4,7 @@ Omeka_View_Helper_Pluralize
 
 .. php:class:: Omeka_View_Helper_Pluralize
 
-    Package: :doc:`/Reference/packages/View\Helper/index`
+    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
     .. php:method:: pluralize($var)
     

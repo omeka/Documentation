@@ -4,7 +4,7 @@ Plugin
 
 .. php:class:: Plugin
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     A plugin and its metadata.
 

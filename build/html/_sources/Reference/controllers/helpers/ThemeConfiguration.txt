@@ -4,7 +4,7 @@ Omeka_Controller_Action_Helper_ThemeConfiguration
 
 .. php:class:: Omeka_Controller_Action_Helper_ThemeConfiguration
 
-    Package: :doc:`/Reference/packages/Controller\ActionHelper/index`
+    Package: :doc:`Controller\\ActionHelper </Reference/packages/Controller/ActionHelper/index>`
 
     Action helper for handling theme configuration.
 

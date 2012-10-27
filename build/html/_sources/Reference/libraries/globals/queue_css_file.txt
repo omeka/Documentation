@@ -2,11 +2,13 @@
 queue_css_file
 ##############
 
+:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/queue_css_file.rst
+.. include:: /Reference/libraries/globals/summary/queue_css_file.rst
 
 .. php:function:: queue_css_file(string|array $file, string $media = all, string|bool $conditional = , string $dir = css)
 
@@ -24,17 +26,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/queue_css_file.rst
+.. include:: /Reference/libraries/globals/usage/queue_css_file.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/queue_css_file.rst
+.. include:: /Reference/libraries/globals/examples/queue_css_file.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/queue_css_file.rst
+.. include:: /Reference/libraries/globals/see_also/queue_css_file.rst
 

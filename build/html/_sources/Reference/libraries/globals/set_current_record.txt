@@ -2,11 +2,13 @@
 set_current_record
 ##################
 
+:doc:`Loop-related functions </Reference/packages/Function/View/Body/Loop/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/set_current_record.rst
+.. include:: /Reference/libraries/globals/summary/set_current_record.rst
 
 .. php:function:: set_current_record(string $recordVar, Omeka_Record_AbstractRecord $record, bool $setPreviousRecord = )
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/set_current_record.rst
+.. include:: /Reference/libraries/globals/usage/set_current_record.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/set_current_record.rst
+.. include:: /Reference/libraries/globals/examples/set_current_record.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/set_current_record.rst
+.. include:: /Reference/libraries/globals/see_also/set_current_record.rst
 

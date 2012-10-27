@@ -2,11 +2,13 @@
 get_current_action_contexts
 ###########################
 
+:doc:`OutputFormat-related functions </Reference/packages/Function/View/OutputFormat/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_current_action_contexts.rst
+.. include:: /Reference/libraries/globals/summary/get_current_action_contexts.rst
 
 .. php:function:: get_current_action_contexts()
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_current_action_contexts.rst
+.. include:: /Reference/libraries/globals/usage/get_current_action_contexts.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_current_action_contexts.rst
+.. include:: /Reference/libraries/globals/examples/get_current_action_contexts.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_current_action_contexts.rst
+.. include:: /Reference/libraries/globals/see_also/get_current_action_contexts.rst
 

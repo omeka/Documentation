@@ -4,7 +4,7 @@ Omeka_Job_Dispatcher_Adapter_ZendQueue
 
 .. php:class:: Omeka_Job_Dispatcher_Adapter_ZendQueue
 
-    Package: :doc:`/Reference/packages/Job\Dispatcher\Adapter/index`
+    Package: :doc:`Job\\Dispatcher\\Adapter </Reference/packages/Job/Dispatcher/Adapter/index>`
 
     Dispatcher for Zend_Queue.
     

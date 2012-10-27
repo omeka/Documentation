@@ -8,6 +8,7 @@ Views/helpers
     ElementForm
     ElementInput
     FileId3Metadata
+    FileMarkup
     Flash
     GetCurrentRecord
     GetLoopRecords
@@ -17,6 +18,7 @@ Views/helpers
     Metadata
     Pluralize
     RecordUrl
+    SearchFilters
     SearchForm
     SetCurrentRecord
     SetLoopRecords

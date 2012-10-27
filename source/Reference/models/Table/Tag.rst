@@ -4,7 +4,7 @@ Table_Tag
 
 .. php:class:: Table_Tag
 
-    Package: :doc:`/Reference/packages/Db\Table/index`
+    Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
 
     .. php:method:: findOrNew($name)
     

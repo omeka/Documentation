@@ -1,9 +1,14 @@
-#######################################
+#######
 Storage
-#######################################
+#######
+
+Up to :doc:`../index`
 
 .. toctree::
-    :glob:
 
-    *
-    */index
+   /Reference/libraries/Omeka/Storage.rst
+   /Reference/libraries/Omeka/Storage/Exception.rst
+.. toctree::
+   :glob:
+
+   */index

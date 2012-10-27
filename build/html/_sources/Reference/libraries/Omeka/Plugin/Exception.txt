@@ -4,7 +4,7 @@ Omeka_Plugin_Exception
 
 .. php:class:: Omeka_Plugin_Exception
 
-    Package: :doc:`/Reference/packages/Plugin/index`
+    Package: :doc:`Plugin </Reference/packages/Plugin/index>`
 
     Exception type thrown by the Omeka_Plugin class.
 

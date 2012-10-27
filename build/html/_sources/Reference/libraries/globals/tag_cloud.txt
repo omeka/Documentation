@@ -2,11 +2,13 @@
 tag_cloud
 #########
 
+:doc:`Tag-related functions </Reference/packages/Function/View/Body/Tag/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/tag_cloud.rst
+.. include:: /Reference/libraries/globals/summary/tag_cloud.rst
 
 .. php:function:: tag_cloud(Omeka_Record_AbstractRecord|array $recordOrTags, string|null $link, int $maxClasses = 9, bool $tagNumber = , string $tagNumberOrder)
 
@@ -23,17 +25,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/tag_cloud.rst
+.. include:: /Reference/libraries/globals/usage/tag_cloud.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/tag_cloud.rst
+.. include:: /Reference/libraries/globals/examples/tag_cloud.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/tag_cloud.rst
+.. include:: /Reference/libraries/globals/see_also/tag_cloud.rst
 

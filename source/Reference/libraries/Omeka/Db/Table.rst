@@ -4,7 +4,7 @@ Omeka_Db_Table
 
 .. php:class:: Omeka_Db_Table
 
-    Package: :doc:`/Reference/packages/Db\Table/index`
+    Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
 
     Database table classes.
     

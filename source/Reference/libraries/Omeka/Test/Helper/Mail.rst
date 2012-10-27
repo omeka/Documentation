@@ -4,7 +4,7 @@ Omeka_Test_Helper_Mail
 
 .. php:class:: Omeka_Test_Helper_Mail
 
-    Package: :doc:`/Reference/packages/Test\Helper/index`
+    Package: :doc:`Test\\Helper </Reference/packages/Test/Helper/index>`
 
     Encapsulates testing functionality for email.
 

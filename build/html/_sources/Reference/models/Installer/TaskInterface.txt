@@ -4,7 +4,7 @@ Installer_TaskInterface
 
 .. php:class:: Installer_TaskInterface
 
-    Package: :doc:`/Reference/packages/Install/index`
+    Package: :doc:`Install </Reference/packages/Install/index>`
 
     Interface for Installer tasks.
 

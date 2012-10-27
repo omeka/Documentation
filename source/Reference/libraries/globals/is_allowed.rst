@@ -2,11 +2,13 @@
 is_allowed
 ##########
 
+:doc:`User-related functions </Reference/packages/Function/User/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/is_allowed.rst
+.. include:: /Reference/libraries/globals/summary/is_allowed.rst
 
 .. php:function:: is_allowed($resource, $privilege)
 
@@ -25,17 +27,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/is_allowed.rst
+.. include:: /Reference/libraries/globals/usage/is_allowed.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/is_allowed.rst
+.. include:: /Reference/libraries/globals/examples/is_allowed.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/is_allowed.rst
+.. include:: /Reference/libraries/globals/see_also/is_allowed.rst
 

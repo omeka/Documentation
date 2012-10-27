@@ -4,7 +4,7 @@ Output_OmekaJson
 
 .. php:class:: Output_OmekaJson
 
-    Package: :doc:`/Reference/packages/Output/index`
+    Package: :doc:`Output </Reference/packages/Output/index>`
 
     Generates JSON version of the omeka-xml output, as dictated by the JsonML
     XSLT.

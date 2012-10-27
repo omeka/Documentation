@@ -2,11 +2,13 @@
 get_records
 ###########
 
+:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_records.rst
+.. include:: /Reference/libraries/globals/summary/get_records.rst
 
 .. php:function:: get_records(string $recordType, array $params = Array, integer $limit = 10)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_records.rst
+.. include:: /Reference/libraries/globals/usage/get_records.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_records.rst
+.. include:: /Reference/libraries/globals/examples/get_records.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_records.rst
+.. include:: /Reference/libraries/globals/see_also/get_records.rst
 

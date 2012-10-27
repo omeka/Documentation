@@ -4,7 +4,7 @@ Mixin_PublicFeatured
 
 .. php:class:: Mixin_PublicFeatured
 
-    Package: :doc:`/Reference/packages/Record\Mixin/index`
+    Package: :doc:`Record\\Mixin </Reference/packages/Record/Mixin/index>`
 
     Adds default behavior associated with the 'public' and 'featured' flags.
 

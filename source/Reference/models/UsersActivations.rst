@@ -4,7 +4,7 @@ UsersActivations
 
 .. php:class:: UsersActivations
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     A user activation and its metadata.
 

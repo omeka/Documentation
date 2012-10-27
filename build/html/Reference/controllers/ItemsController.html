@@ -24,7 +24,7 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
-    <link rel="up" title="Controllers" href="index.html" />
+    <link rel="up" title="Controller" href="../packages/Controller/index.html" />
     <link rel="next" title="NavigationController" href="NavigationController.html" />
     <link rel="prev" title="ItemTypesController" href="ItemTypesController.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
@@ -50,7 +50,8 @@
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" accesskey="U">Controllers</a> &raquo;</li> 
+          <li><a href="../packages/index.html" >&lt;no title&gt;</a> &raquo;</li>
+          <li><a href="../packages/Controller/index.html" accesskey="U">Controller</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -108,7 +109,16 @@
 <dl class="method">
 <dt id="ItemsController::_getItemElementSets">
 <tt class="descname">_getItemElementSets</tt><big>(</big><big>)</big><a class="headerlink" href="#ItemsController::_getItemElementSets" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Gets the element sets for the &#8216;Item&#8217; record type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array The element sets for the &#8216;Item&#8217; record type</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="method">
 <dt id="ItemsController::editAction">
@@ -118,13 +128,13 @@
 
 <dl class="method">
 <dt id="ItemsController::_getAddSuccessMessage">
-<tt class="descname">_getAddSuccessMessage</tt><big>(</big><em>$record</em><big>)</big><a class="headerlink" href="#ItemsController::_getAddSuccessMessage" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">_getAddSuccessMessage</tt><big>(</big><em>$item</em><big>)</big><a class="headerlink" href="#ItemsController::_getAddSuccessMessage" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$record</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$item</strong> (<em>unknown</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -134,13 +144,13 @@
 
 <dl class="method">
 <dt id="ItemsController::_getEditSuccessMessage">
-<tt class="descname">_getEditSuccessMessage</tt><big>(</big><em>$record</em><big>)</big><a class="headerlink" href="#ItemsController::_getEditSuccessMessage" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">_getEditSuccessMessage</tt><big>(</big><em>$item</em><big>)</big><a class="headerlink" href="#ItemsController::_getEditSuccessMessage" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$record</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$item</strong> (<em>unknown</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -150,13 +160,13 @@
 
 <dl class="method">
 <dt id="ItemsController::_getDeleteSuccessMessage">
-<tt class="descname">_getDeleteSuccessMessage</tt><big>(</big><em>$record</em><big>)</big><a class="headerlink" href="#ItemsController::_getDeleteSuccessMessage" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">_getDeleteSuccessMessage</tt><big>(</big><em>$item</em><big>)</big><a class="headerlink" href="#ItemsController::_getDeleteSuccessMessage" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$record</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$item</strong> (<em>unknown</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -166,13 +176,31 @@
 
 <dl class="method">
 <dt id="ItemsController::_getDeleteConfirmMessage">
-<tt class="descname">_getDeleteConfirmMessage</tt><big>(</big><em>$record</em><big>)</big><a class="headerlink" href="#ItemsController::_getDeleteConfirmMessage" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">_getDeleteConfirmMessage</tt><big>(</big><em>$item</em><big>)</big><a class="headerlink" href="#ItemsController::_getDeleteConfirmMessage" title="Permalink to this definition">¶</a></dt>
 <dd><table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$record</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$item</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="ItemsController::_getElementMetadata">
+<tt class="descname">_getElementMetadata</tt><big>(</big><em>$item</em>, <em>$elementSetName</em>, <em>$elementName</em><big>)</big><a class="headerlink" href="#ItemsController::_getElementMetadata" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$item</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$elementSetName</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$elementName</strong> (<em>unknown</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -337,7 +365,8 @@ render the &#8216;batch-edit&#8217; as a partial.</p>
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" >Controllers</a> &raquo;</li> 
+          <li><a href="../packages/index.html" >&lt;no title&gt;</a> &raquo;</li>
+          <li><a href="../packages/Controller/index.html" >Controller</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

@@ -2,11 +2,13 @@
 insert_item_type
 ################
 
+:doc:`ItemType-related functions </Reference/packages/Function/Db/ItemType/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/insert_item_type.rst
+.. include:: /Reference/libraries/globals/summary/insert_item_type.rst
 
 .. php:function:: insert_item_type(array $metadata = Array, array $elementInfos = Array)
 
@@ -50,17 +52,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/insert_item_type.rst
+.. include:: /Reference/libraries/globals/usage/insert_item_type.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/insert_item_type.rst
+.. include:: /Reference/libraries/globals/examples/insert_item_type.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/insert_item_type.rst
+.. include:: /Reference/libraries/globals/see_also/insert_item_type.rst
 

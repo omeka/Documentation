@@ -2,11 +2,13 @@
 body_tag
 ########
 
+:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/body_tag.rst
+.. include:: /Reference/libraries/globals/summary/body_tag.rst
 
 .. php:function:: body_tag(array $attributes = Array)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/body_tag.rst
+.. include:: /Reference/libraries/globals/usage/body_tag.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/body_tag.rst
+.. include:: /Reference/libraries/globals/examples/body_tag.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/body_tag.rst
+.. include:: /Reference/libraries/globals/see_also/body_tag.rst
 

@@ -2,11 +2,13 @@
 get_user_roles
 ##############
 
+:doc:`User-related functions </Reference/packages/Function/User/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_user_roles.rst
+.. include:: /Reference/libraries/globals/summary/get_user_roles.rst
 
 .. php:function:: get_user_roles()
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_user_roles.rst
+.. include:: /Reference/libraries/globals/usage/get_user_roles.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_user_roles.rst
+.. include:: /Reference/libraries/globals/examples/get_user_roles.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_user_roles.rst
+.. include:: /Reference/libraries/globals/see_also/get_user_roles.rst
 

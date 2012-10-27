@@ -2,11 +2,13 @@
 get_next_item
 #############
 
+:doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_next_item.rst
+.. include:: /Reference/libraries/globals/summary/get_next_item.rst
 
 .. php:function:: get_next_item(Item|null $item)
 
@@ -19,17 +21,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_next_item.rst
+.. include:: /Reference/libraries/globals/usage/get_next_item.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_next_item.rst
+.. include:: /Reference/libraries/globals/examples/get_next_item.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_next_item.rst
+.. include:: /Reference/libraries/globals/see_also/get_next_item.rst
 

@@ -24,9 +24,6 @@
     <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../../index.html" />
-    <link rel="up" title="Libraries/Omeka/Job/Dispatcher" href="index.html" />
-    <link rel="next" title="Omeka_Job_Dispatcher_DispatcherInterface" href="DispatcherInterface.html" />
-    <link rel="prev" title="Omeka_Job_Dispatcher_Adapter_ZendQueue" href="Adapter/ZendQueue.html" />
     <link rel="stylesheet" href="../../../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -37,22 +34,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="DispatcherInterface.html" title="Omeka_Job_Dispatcher_DispatcherInterface"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="Adapter/ZendQueue.html" title="Omeka_Job_Dispatcher_Adapter_ZendQueue"
-             accesskey="P">previous</a> |</li>
     
         <li><a href="../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
-
-          <li><a href="../../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="../../index.html" >Libraries/Omeka</a> &raquo;</li>
-          <li><a href="../index.html" >Libraries/Omeka/Job</a> &raquo;</li>
-          <li><a href="index.html" accesskey="U">Libraries/Omeka/Job/Dispatcher</a> &raquo;</li> 
+ 
       </ul>
     </div>  
 
@@ -66,7 +53,7 @@
 <dl class="class">
 <dt id="Omeka_Job_Dispatcher_Default">
 <em class="property">class </em><tt class="descname">Omeka_Job_Dispatcher_Default</tt><a class="headerlink" href="#Omeka_Job_Dispatcher_Default" title="Permalink to this definition">¶</a></dt>
-<dd><p>Package: <tt class="xref doc docutils literal"><span class="pre">/Reference/packages/JobDispatcher/index</span></tt></p>
+<dd><p>Package: <a class="reference internal" href="../../../../packages/Job/Dispatcher/index.html"><em>Job\Dispatcher</em></a></p>
 <p>Dispatches jobs in Omeka.</p>
 <p>This provides a clean interface to adapter classes that deal with the detailsof how to dispatch jobs. It is initialized in the Jobs bootstrap resource andcan be accessed via the registry.</p>
 <p>Standard usage, where Job_Class_Name corresponds to a valid class name for a class implementing Omeka_JobInterface:</p>
@@ -102,8 +89,8 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$defaultAdapter</strong> (<a class="reference internal" href="../../../../packages/Job/Dispatcher/Adapter/AdapterInterface.html#Omeka_Job_Dispatcher_Adapter_AdapterInterface" title="Omeka_Job_Dispatcher_Adapter_AdapterInterface"><em>Omeka_Job_Dispatcher_Adapter_AdapterInterface</em></a>) &#8211; </li>
-<li><strong>$longRunningAdapter</strong> (<a class="reference internal" href="../../../../packages/Job/Dispatcher/Adapter/AdapterInterface.html#Omeka_Job_Dispatcher_Adapter_AdapterInterface" title="Omeka_Job_Dispatcher_Adapter_AdapterInterface"><em>Omeka_Job_Dispatcher_Adapter_AdapterInterface</em></a>) &#8211; </li>
+<li><strong>$defaultAdapter</strong> (<a class="reference internal" href="Adapter/AdapterInterface.html#Omeka_Job_Dispatcher_Adapter_AdapterInterface" title="Omeka_Job_Dispatcher_Adapter_AdapterInterface"><em>Omeka_Job_Dispatcher_Adapter_AdapterInterface</em></a>) &#8211; </li>
+<li><strong>$longRunningAdapter</strong> (<a class="reference internal" href="Adapter/AdapterInterface.html#Omeka_Job_Dispatcher_Adapter_AdapterInterface" title="Omeka_Job_Dispatcher_Adapter_AdapterInterface"><em>Omeka_Job_Dispatcher_Adapter_AdapterInterface</em></a>) &#8211; </li>
 <li><strong>$user</strong> (<em>User|null</em>) &#8211; The user account associated with the request, i.e. the user account associated with jobs sent by the dispatcher.</li>
 </ul>
 </td>
@@ -152,7 +139,7 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$defaultAdapter</strong> (<a class="reference internal" href="../../../../packages/Job/Dispatcher/Adapter/AdapterInterface.html#Omeka_Job_Dispatcher_Adapter_AdapterInterface" title="Omeka_Job_Dispatcher_Adapter_AdapterInterface"><em>Omeka_Job_Dispatcher_Adapter_AdapterInterface</em></a>) &#8211; </li>
+<li><strong>$defaultAdapter</strong> (<a class="reference internal" href="Adapter/AdapterInterface.html#Omeka_Job_Dispatcher_Adapter_AdapterInterface" title="Omeka_Job_Dispatcher_Adapter_AdapterInterface"><em>Omeka_Job_Dispatcher_Adapter_AdapterInterface</em></a>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -169,7 +156,7 @@
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$longRunningAdapter</strong> (<a class="reference internal" href="../../../../packages/Job/Dispatcher/Adapter/AdapterInterface.html#Omeka_Job_Dispatcher_Adapter_AdapterInterface" title="Omeka_Job_Dispatcher_Adapter_AdapterInterface"><em>Omeka_Job_Dispatcher_Adapter_AdapterInterface</em></a>) &#8211; </li>
+<li><strong>$longRunningAdapter</strong> (<a class="reference internal" href="Adapter/AdapterInterface.html#Omeka_Job_Dispatcher_Adapter_AdapterInterface" title="Omeka_Job_Dispatcher_Adapter_AdapterInterface"><em>Omeka_Job_Dispatcher_Adapter_AdapterInterface</em></a>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -295,12 +282,6 @@
             <p class="logo"><a href="../../../../../index.html">
               <img class="logo" src="../../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="Adapter/ZendQueue.html"
-                        title="previous chapter">Omeka_Job_Dispatcher_Adapter_ZendQueue</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="DispatcherInterface.html"
-                        title="next chapter">Omeka_Job_Dispatcher_DispatcherInterface</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -334,22 +315,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../../../genindex.html" title="General Index"
              >index</a></li>
-        <li class="right" >
-          <a href="DispatcherInterface.html" title="Omeka_Job_Dispatcher_DispatcherInterface"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="Adapter/ZendQueue.html" title="Omeka_Job_Dispatcher_Adapter_ZendQueue"
-             >previous</a> |</li>
     
         <li><a href="../../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
-
-          <li><a href="../../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="../../index.html" >Libraries/Omeka</a> &raquo;</li>
-          <li><a href="../index.html" >Libraries/Omeka/Job</a> &raquo;</li>
-          <li><a href="index.html" >Libraries/Omeka/Job/Dispatcher</a> &raquo;</li> 
+ 
       </ul>
     </div>
     <div class="footer">

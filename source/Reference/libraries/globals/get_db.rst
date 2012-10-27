@@ -2,11 +2,13 @@
 get_db
 ######
 
+:doc:`Db-related functions </Reference/packages/Function/Db/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_db.rst
+.. include:: /Reference/libraries/globals/summary/get_db.rst
 
 .. php:function:: get_db()
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_db.rst
+.. include:: /Reference/libraries/globals/usage/get_db.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_db.rst
+.. include:: /Reference/libraries/globals/examples/get_db.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_db.rst
+.. include:: /Reference/libraries/globals/see_also/get_db.rst
 

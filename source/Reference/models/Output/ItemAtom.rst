@@ -4,7 +4,7 @@ Output_ItemAtom
 
 .. php:class:: Output_ItemAtom
 
-    Package: :doc:`/Reference/packages/Output/index`
+    Package: :doc:`Output </Reference/packages/Output/index>`
 
     Model class for an Atom feed for a list of items.
 

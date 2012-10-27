@@ -4,6 +4,8 @@ Installer_Default
 
 .. php:class:: Installer_Default
 
+    Package: :doc:`Install </Reference/packages/Install/index>`
+
     The default installer, which extracts values from the installer form to 
     create the default Omeka installation.
 
@@ -44,4 +46,3 @@ Installer_Default
     .. php:method:: _addOptions()
 
     .. php:method:: isInstalled()
-

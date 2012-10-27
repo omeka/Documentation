@@ -1,9 +1,13 @@
-#######################################
-Controller\ActionHelper
-#######################################
+########################
+Controller\\ActionHelper
+########################
 
 .. toctree::
-    :glob:
+    :maxdepth: 1
 
-    *
-    */index
+   /Reference/controllers/Acl.rst
+   /Reference/controllers/ContextSwitch.rst
+   /Reference/controllers/Db.rst
+   /Reference/controllers/FlashMessenger.rst
+   /Reference/controllers/Mail.rst
+   /Reference/controllers/ThemeConfiguration.rst

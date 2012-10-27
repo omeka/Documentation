@@ -4,7 +4,7 @@ Mixin_ElementText
 
 .. php:class:: Mixin_ElementText
 
-    Package: :doc:`/Reference/packages/Record\Mixin/index`
+    Package: :doc:`Record\\Mixin </Reference/packages/Record/Mixin/index>`
 
     Record mixin class for associating elements, element texts and their
     corresponding behaviors to a record.
@@ -234,8 +234,8 @@ Mixin_ElementText
         
         <code>
         
-        array('Elements' =>array('50' => array('text' => 'Foobar', //element id 50, e.g. DC:Title'html' => 0),'41' =>
-        array('text' => '<p>Baz baz baz</p>', //element id 41, e.g. DC:Description'html' => 1)))
+        array('Elements' =>array('50' => array(array('text' => 'Foobar', //element id 50, e.g. DC:Title'html' => 0)),'41' =>
+        array(array('text' => '<p>Baz baz baz</p>', //element id 41, e.g. DC:Description'html' => 1))))
         
         </code>
         
@@ -279,4 +279,20 @@ Mixin_ElementText
     
         Delete all the element texts assigned to the current record ID.
         
+        :returns: boolean
+
+    .. php:method:: hasElementText(string $elementSetName, string $elementName)
+    
+        Returns whether or not the record has at least 1 element text
+        
+        :param string $elementSetName: Element set name
+        :param string $elementName: Element name
+        :returns: boolean
+
+    .. php:method:: getElementTextCount(string $elementSetName, string $elementName)
+    
+        Returns the number of element texts for the record
+        
+        :param string $elementSetName: Element set name
+        :param string $elementName: Element name
         :returns: boolean

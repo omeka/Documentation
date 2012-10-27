@@ -4,6 +4,8 @@ Installer_Test
 
 .. php:class:: Installer_Test
 
+    Package: :doc:`Install </Reference/packages/Install/index>`
+
     Installer for test cases that require database access.
 
     .. php:attr:: _testDefaults
@@ -53,4 +55,3 @@ Installer_Test
     .. php:method:: _addOptions()
 
     .. php:method:: isInstalled()
-

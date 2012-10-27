@@ -4,7 +4,7 @@ Omeka_Record_Builder_AbstractBuilder
 
 .. php:class:: Omeka_Record_Builder_AbstractBuilder
 
-    Package: :doc:`/Reference/packages/Record\Builder/index`
+    Package: :doc:`Record\\Builder </Reference/packages/Record/Builder/index>`
 
     Build or update an {@link Omeka_Record_AbstractRecord} as needed.
 

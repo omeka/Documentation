@@ -4,7 +4,7 @@ Output_FileOmekaXml
 
 .. php:class:: Output_FileOmekaXml
 
-    Package: :doc:`/Reference/packages/Output/index`
+    Package: :doc:`Output </Reference/packages/Output/index>`
 
     Generates the omeka-xml output for File records.
 

@@ -4,7 +4,7 @@ Omeka_Job_Mock
 
 .. php:class:: Omeka_Job_Mock
 
-    Package: :doc:`/Reference/packages/Job/index`
+    Package: :doc:`Job </Reference/packages/Job/index>`
 
     Mock job class for unit tests.
 

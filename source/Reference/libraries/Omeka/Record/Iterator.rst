@@ -4,7 +4,7 @@ Omeka_Record_Iterator
 
 .. php:class:: Omeka_Record_Iterator
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     .. php:attr:: _records
     

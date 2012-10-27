@@ -4,7 +4,7 @@ Omeka_Plugin_Factory
 
 .. php:class:: Omeka_Plugin_Factory
 
-    Package: :doc:`/Reference/packages/Plugin/index`
+    Package: :doc:`Plugin </Reference/packages/Plugin/index>`
 
     Responsible for creating a set of Plugin records corresponding to plugins 
     that have not been installed yet.

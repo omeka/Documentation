@@ -4,7 +4,7 @@ Omeka_View_Helper_ElementInput
 
 .. php:class:: Omeka_View_Helper_ElementInput
 
-    Package: :doc:`/Reference/packages/View\Helper/index`
+    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
     Generate the form markup for entering one HTML input for an Element.
 

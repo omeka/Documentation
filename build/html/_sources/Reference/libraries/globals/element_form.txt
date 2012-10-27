@@ -2,11 +2,13 @@
 element_form
 ############
 
+:doc:`Form-related functions </Reference/packages/Function/View/Body/Form/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/element_form.rst
+.. include:: /Reference/libraries/globals/summary/element_form.rst
 
 .. php:function:: element_form(Element|array $element, Omeka_Record_AbstractRecord $record, array $options = Array)
 
@@ -30,17 +32,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/element_form.rst
+.. include:: /Reference/libraries/globals/usage/element_form.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/element_form.rst
+.. include:: /Reference/libraries/globals/examples/element_form.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/element_form.rst
+.. include:: /Reference/libraries/globals/see_also/element_form.rst
 

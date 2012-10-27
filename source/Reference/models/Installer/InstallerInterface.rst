@@ -4,7 +4,7 @@ Installer_InstallerInterface
 
 .. php:class:: Installer_InstallerInterface
 
-    Package: :doc:`/Reference/packages/Install/index`
+    Package: :doc:`Install </Reference/packages/Install/index>`
 
     Interface for creating different installers for Omeka.
 

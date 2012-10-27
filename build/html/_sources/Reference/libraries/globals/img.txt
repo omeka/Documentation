@@ -2,11 +2,13 @@
 img
 ###
 
+:doc:`File-related functions </Reference/packages/Function/View/Body/Item/File/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/img.rst
+.. include:: /Reference/libraries/globals/summary/img.rst
 
 .. php:function:: img(string $file, string $dir = images)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/img.rst
+.. include:: /Reference/libraries/globals/usage/img.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/img.rst
+.. include:: /Reference/libraries/globals/examples/img.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/img.rst
+.. include:: /Reference/libraries/globals/see_also/img.rst
 

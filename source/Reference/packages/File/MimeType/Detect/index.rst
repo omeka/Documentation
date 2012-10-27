@@ -1,9 +1,13 @@
-#######################################
-File\MimeType\Detect
-#######################################
+######################
+File\\MimeType\\Detect
+######################
+
+Up to :doc:`../index`
 
 .. toctree::
-    :glob:
 
-    *
-    */index
+   /Reference/libraries/Omeka/File/MimeType/Detect.rst
+.. toctree::
+   :glob:
+
+   */index

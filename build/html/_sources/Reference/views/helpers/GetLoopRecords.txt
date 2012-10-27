@@ -4,7 +4,7 @@ Omeka_View_Helper_GetLoopRecords
 
 .. php:class:: Omeka_View_Helper_GetLoopRecords
 
-    Package: :doc:`/Reference/packages/View\Helper/index`
+    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
     .. php:method:: getLoopRecords(string $recordsVar, $throwException = 1)
     

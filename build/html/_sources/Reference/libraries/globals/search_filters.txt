@@ -2,34 +2,36 @@
 search_filters
 ##############
 
+:doc:`Search-related functions </Reference/packages/Function/Search/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/search_filters.rst
+.. include:: /Reference/libraries/globals/summary/search_filters.rst
 
-.. php:function:: search_filters($params)
+.. php:function:: search_filters(array $options = Array)
 
-    Return a list of the current search filters in use.
+    Return a list of current site-wide search filters in use.
     
-    :param unknown $params: 
+    :param array $options: Valid options are as follows: - id (string): the value of the div wrapping the filters.
     :returns: string
 
 *****
 Usage
 *****
 
-.. include:: usage/search_filters.rst
+.. include:: /Reference/libraries/globals/usage/search_filters.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/search_filters.rst
+.. include:: /Reference/libraries/globals/examples/search_filters.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/search_filters.rst
+.. include:: /Reference/libraries/globals/see_also/search_filters.rst
 

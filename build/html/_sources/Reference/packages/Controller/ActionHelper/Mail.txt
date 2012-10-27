@@ -4,7 +4,7 @@ Omeka_Controller_Action_Helper_Mail
 
 .. php:class:: Omeka_Controller_Action_Helper_Mail
 
-    Package: :doc:`/Reference/packages/Controller\ActionHelper/index`
+    Package: :doc:`Controller\\ActionHelper </Reference/packages/Controller/ActionHelper/index>`
 
     Action helper for sending email.
 

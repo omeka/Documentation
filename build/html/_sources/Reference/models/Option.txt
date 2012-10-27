@@ -4,7 +4,7 @@ Option
 
 .. php:class:: Option
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     An option and its metadata.
 

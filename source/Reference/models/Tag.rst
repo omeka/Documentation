@@ -4,7 +4,7 @@ Tag
 
 .. php:class:: Tag
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     A tag and its metadata.
 

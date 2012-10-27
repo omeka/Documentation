@@ -4,7 +4,7 @@ Omeka_File_Ingest_AbstractIngest
 
 .. php:class:: Omeka_File_Ingest_AbstractIngest
 
-    Package: :doc:`/Reference/packages/File\Ingest/index`
+    Package: :doc:`File\\Ingest </Reference/packages/File/Ingest/index>`
 
     An abstract class that handles ingesting files into Omeka and database.
     

@@ -4,7 +4,7 @@ Theme
 
 .. php:class:: Theme
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     A theme and its metadata.
     

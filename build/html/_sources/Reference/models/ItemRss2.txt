@@ -4,6 +4,8 @@ Output_ItemRss2
 
 .. php:class:: Output_ItemRss2
 
+    Package: :doc:`Output </Reference/packages/Output/index>`
+
     .. php:method:: render($records)
     
         :param unknown $records:
@@ -17,4 +19,3 @@ Output_ItemRss2
     .. php:method:: itemToRSS($item)
     
         :param unknown $item:
-

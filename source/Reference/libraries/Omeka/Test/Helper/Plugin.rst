@@ -4,7 +4,7 @@ Omeka_Test_Helper_Plugin
 
 .. php:class:: Omeka_Test_Helper_Plugin
 
-    Package: :doc:`/Reference/packages/Test\Helper/index`
+    Package: :doc:`Test\\Helper </Reference/packages/Test/Helper/index>`
 
     Encapsulates testing functionality for Omeka plugins.
 

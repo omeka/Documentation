@@ -4,7 +4,7 @@ Omeka_Application_Resource_Locale
 
 .. php:class:: Omeka_Application_Resource_Locale
 
-    Package: :doc:`/Reference/packages/Application\Resource/index`
+    Package: :doc:`Application\\Resource </Reference/packages/Application/Resource/index>`
 
     Core resource for configuring and loading the translation and locale 
     components.

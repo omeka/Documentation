@@ -4,7 +4,7 @@ Omeka_Plugin_Loader
 
 .. php:class:: Omeka_Plugin_Loader
 
-    Package: :doc:`/Reference/packages/Plugin\Loader/index`
+    Package: :doc:`Plugin\\Loader </Reference/packages/Plugin/Loader/index>`
 
     Loads plugins for any given request.
     

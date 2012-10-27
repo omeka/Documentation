@@ -4,7 +4,7 @@ Omeka_File_Ingest_Exception
 
 .. php:class:: Omeka_File_Ingest_Exception
 
-    Package: :doc:`/Reference/packages/File\Ingest/index`
+    Package: :doc:`File\\Ingest </Reference/packages/File/Ingest/index>`
 
     An exception to be thrown when something goes wrong during the file ingest
     process.

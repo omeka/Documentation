@@ -2,11 +2,13 @@
 head_css
 ########
 
+:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/head_css.rst
+.. include:: /Reference/libraries/globals/summary/head_css.rst
 
 .. php:function:: head_css()
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/head_css.rst
+.. include:: /Reference/libraries/globals/usage/head_css.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/head_css.rst
+.. include:: /Reference/libraries/globals/examples/head_css.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/head_css.rst
+.. include:: /Reference/libraries/globals/see_also/head_css.rst
 

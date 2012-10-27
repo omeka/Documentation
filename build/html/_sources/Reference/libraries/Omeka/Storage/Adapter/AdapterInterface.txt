@@ -4,7 +4,7 @@ Omeka_Storage_Adapter_AdapterInterface
 
 .. php:class:: Omeka_Storage_Adapter_AdapterInterface
 
-    Package: :doc:`/Reference/packages/Storage\Adapter/index`
+    Package: :doc:`Storage\\Adapter </Reference/packages/Storage/Adapter/index>`
 
     Interface for file storage adapters.
     

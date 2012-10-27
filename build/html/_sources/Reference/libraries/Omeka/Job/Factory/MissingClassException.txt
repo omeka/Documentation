@@ -4,7 +4,7 @@ Omeka_Job_Factory_MissingClassException
 
 .. php:class:: Omeka_Job_Factory_MissingClassException
 
-    Package: :doc:`/Reference/packages/Job\Factory/index`
+    Package: :doc:`Job\\Factory </Reference/packages/Job/Factory/index>`
 
     Exception thrown when the type of job could not be inferred from the message 
     passed to the factory.

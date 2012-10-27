@@ -2,11 +2,13 @@
 total_records
 #############
 
+:doc:`Db-related functions </Reference/packages/Function/Db/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/total_records.rst
+.. include:: /Reference/libraries/globals/summary/total_records.rst
 
 .. php:function:: total_records(string $recordType)
 
@@ -19,17 +21,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/total_records.rst
+.. include:: /Reference/libraries/globals/usage/total_records.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/total_records.rst
+.. include:: /Reference/libraries/globals/examples/total_records.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/total_records.rst
+.. include:: /Reference/libraries/globals/see_also/total_records.rst
 

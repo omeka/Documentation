@@ -4,7 +4,7 @@ Mixin_Owner
 
 .. php:class:: Mixin_Owner
 
-    Package: :doc:`/Reference/packages/Record\Mixin/index`
+    Package: :doc:`Record\\Mixin </Reference/packages/Record/Mixin/index>`
 
     Mixin for models that have a user that is their "owner."
 

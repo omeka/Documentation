@@ -2,11 +2,13 @@
 get_collection_for_item
 #######################
 
+:doc:`Item-related functions </Reference/packages/Function/Db/Item/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_collection_for_item.rst
+.. include:: /Reference/libraries/globals/summary/get_collection_for_item.rst
 
 .. php:function:: get_collection_for_item(Item|null $item)
 
@@ -19,17 +21,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_collection_for_item.rst
+.. include:: /Reference/libraries/globals/usage/get_collection_for_item.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_collection_for_item.rst
+.. include:: /Reference/libraries/globals/examples/get_collection_for_item.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_collection_for_item.rst
+.. include:: /Reference/libraries/globals/see_also/get_collection_for_item.rst
 

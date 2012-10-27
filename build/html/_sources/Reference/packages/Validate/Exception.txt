@@ -4,7 +4,7 @@ Omeka_Validate_Exception
 
 .. php:class:: Omeka_Validate_Exception
 
-    Package: :doc:`/Reference/packages/Validate/index`
+    Package: :doc:`Validate </Reference/packages/Validate/index>`
 
     Exception that is thrown when a form could not be validated correctly.
 

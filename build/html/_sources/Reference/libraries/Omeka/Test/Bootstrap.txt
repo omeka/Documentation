@@ -4,7 +4,7 @@ Omeka_Test_Bootstrap
 
 .. php:class:: Omeka_Test_Bootstrap
 
-    Package: :doc:`/Reference/packages/Test/index`
+    Package: :doc:`Test </Reference/packages/Test/index>`
 
     Abstract test case class that bootstraps the entire application.
 

@@ -1,9 +1,13 @@
-#######################################
+#######
 Session
-#######################################
+#######
+
+Up to :doc:`../index`
 
 .. toctree::
-    :glob:
 
-    *
-    */index
+   /Reference/libraries/Omeka/Session/SaveHandler/DbTable.rst
+.. toctree::
+   :glob:
+
+   */index

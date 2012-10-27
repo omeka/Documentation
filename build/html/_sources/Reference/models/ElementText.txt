@@ -4,7 +4,7 @@ ElementText
 
 .. php:class:: ElementText
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     An element text and its metadata.
 

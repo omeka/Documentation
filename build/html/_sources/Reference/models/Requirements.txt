@@ -4,6 +4,8 @@ Installer_Requirements
 
 .. php:class:: Installer_Requirements
 
+    Package: :doc:`Install </Reference/packages/Install/index>`
+
     .. php:attr:: _dbAdapter
     
 
@@ -53,4 +55,3 @@ Installer_Requirements
     .. php:method:: _checkFileStorageSetup()
 
     .. php:method:: _checkFileinfoIsLoaded()
-

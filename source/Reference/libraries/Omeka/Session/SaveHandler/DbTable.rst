@@ -4,7 +4,7 @@ Omeka_Session_SaveHandler_DbTable
 
 .. php:class:: Omeka_Session_SaveHandler_DbTable
 
-    Package: :doc:`/Reference/packages/Session/index`
+    Package: :doc:`Session </Reference/packages/Session/index>`
 
     Wrapper for Zend_Session_SaveHandler_DbTable to hard code the table 
     definition. This boosts performance by skipping the DESCRIBE query that 

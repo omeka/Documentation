@@ -4,7 +4,7 @@ Omeka_Plugin_Loader_Exception
 
 .. php:class:: Omeka_Plugin_Loader_Exception
 
-    Package: :doc:`/Reference/packages/Plugin\Loader/index`
+    Package: :doc:`Plugin\\Loader </Reference/packages/Plugin/Loader/index>`
 
     An exception thrown when the plugin loader is unable to load a plugin.
 

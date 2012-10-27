@@ -2,11 +2,13 @@
 apply_filters
 #############
 
+:doc:`Plugin-related functions </Reference/packages/Function/Plugin/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/apply_filters.rst
+.. include:: /Reference/libraries/globals/summary/apply_filters.rst
 
 .. php:function:: apply_filters(string|array $name, mixed $value, array $args = Array)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/apply_filters.rst
+.. include:: /Reference/libraries/globals/usage/apply_filters.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/apply_filters.rst
+.. include:: /Reference/libraries/globals/examples/apply_filters.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/apply_filters.rst
+.. include:: /Reference/libraries/globals/see_also/apply_filters.rst
 

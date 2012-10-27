@@ -1,9 +1,13 @@
-#######################################
+#######
 Captcha
-#######################################
+#######
+
+Up to :doc:`../index`
 
 .. toctree::
-    :glob:
 
-    *
-    */index
+   /Reference/libraries/Omeka/Captcha.rst
+.. toctree::
+   :glob:
+
+   */index

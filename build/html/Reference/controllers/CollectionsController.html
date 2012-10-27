@@ -24,7 +24,7 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
-    <link rel="up" title="Controllers" href="index.html" />
+    <link rel="up" title="Controller" href="../packages/Controller/index.html" />
     <link rel="next" title="ElementSetsController" href="ElementSetsController.html" />
     <link rel="prev" title="AppearanceController" href="AppearanceController.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
@@ -50,7 +50,8 @@
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" accesskey="U">Controllers</a> &raquo;</li> 
+          <li><a href="../packages/index.html" >&lt;no title&gt;</a> &raquo;</li>
+          <li><a href="../packages/Controller/index.html" accesskey="U">Controller</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -81,9 +82,28 @@
 <dd></dd></dl>
 
 <dl class="method">
+<dt id="CollectionsController::browseAction">
+<tt class="descname">browseAction</tt><big>(</big><big>)</big><a class="headerlink" href="#CollectionsController::browseAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>The browse collections action.</p>
+</dd></dl>
+
+<dl class="method">
 <dt id="CollectionsController::showAction">
 <tt class="descname">showAction</tt><big>(</big><big>)</big><a class="headerlink" href="#CollectionsController::showAction" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>The show collection action</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="CollectionsController::addAction">
+<tt class="descname">addAction</tt><big>(</big><big>)</big><a class="headerlink" href="#CollectionsController::addAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>The add collection action</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="CollectionsController::editAction">
+<tt class="descname">editAction</tt><big>(</big><big>)</big><a class="headerlink" href="#CollectionsController::editAction" title="Permalink to this definition">¶</a></dt>
+<dd><p>The edit collection action</p>
+</dd></dl>
 
 <dl class="method">
 <dt id="CollectionsController::_getAddSuccessMessage">
@@ -144,6 +164,38 @@
 <li><strong>$collection</strong> (<em>unknown</em>) &#8211; </li>
 </ul>
 </td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="CollectionsController::_getElementMetadata">
+<tt class="descname">_getElementMetadata</tt><big>(</big><em>$collection</em>, <em>$elementSetName</em>, <em>$elementName</em><big>)</big><a class="headerlink" href="#CollectionsController::_getElementMetadata" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$collection</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$elementSetName</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$elementName</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="CollectionsController::_getCollectionElementSets">
+<tt class="descname">_getCollectionElementSets</tt><big>(</big><big>)</big><a class="headerlink" href="#CollectionsController::_getCollectionElementSets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Gets the element sets for the &#8216;Collection&#8217; record type.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array The element sets for the &#8216;Collection&#8217; record type</td>
 </tr>
 </tbody>
 </table>
@@ -214,7 +266,8 @@
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" >Controllers</a> &raquo;</li> 
+          <li><a href="../packages/index.html" >&lt;no title&gt;</a> &raquo;</li>
+          <li><a href="../packages/Controller/index.html" >Controller</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

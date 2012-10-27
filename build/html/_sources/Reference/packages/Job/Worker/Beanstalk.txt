@@ -4,7 +4,7 @@ Omeka_Job_Worker_Beanstalk
 
 .. php:class:: Omeka_Job_Worker_Beanstalk
 
-    Package: :doc:`/Reference/packages/Job\Worker/index`
+    Package: :doc:`Job\\Worker </Reference/packages/Job/Worker/index>`
 
     .. php:method:: __construct(Pheanstalk $pheanstalk, Omeka_Job_Factory $jobFactory, Omeka_Db $db)
     

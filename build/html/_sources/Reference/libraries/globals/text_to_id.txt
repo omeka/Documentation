@@ -2,11 +2,13 @@
 text_to_id
 ##########
 
+:doc:`Text-related functions </Reference/packages/Function/Text/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/text_to_id.rst
+.. include:: /Reference/libraries/globals/summary/text_to_id.rst
 
 .. php:function:: text_to_id($text, $prepend, $delimiter = -)
 
@@ -34,17 +36,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/text_to_id.rst
+.. include:: /Reference/libraries/globals/usage/text_to_id.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/text_to_id.rst
+.. include:: /Reference/libraries/globals/examples/text_to_id.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/text_to_id.rst
+.. include:: /Reference/libraries/globals/see_also/text_to_id.rst
 

@@ -2,11 +2,13 @@
 item_has_thumbnail
 ##################
 
+:doc:`Item-related functions </Reference/packages/Function/View/Body/Item/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/item_has_thumbnail.rst
+.. include:: /Reference/libraries/globals/summary/item_has_thumbnail.rst
 
 .. php:function:: item_has_thumbnail(Item|null $item)
 
@@ -19,17 +21,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/item_has_thumbnail.rst
+.. include:: /Reference/libraries/globals/usage/item_has_thumbnail.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/item_has_thumbnail.rst
+.. include:: /Reference/libraries/globals/examples/item_has_thumbnail.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/item_has_thumbnail.rst
+.. include:: /Reference/libraries/globals/see_also/item_has_thumbnail.rst
 

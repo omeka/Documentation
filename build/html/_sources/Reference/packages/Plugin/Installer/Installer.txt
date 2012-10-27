@@ -4,7 +4,7 @@ Omeka_Plugin_Installer
 
 .. php:class:: Omeka_Plugin_Installer
 
-    Package: :doc:`/Reference/packages/Plugin\Installer/index`
+    Package: :doc:`Plugin\\Installer </Reference/packages/Plugin/Installer/index>`
 
     Changes the state of any given plugin (installed/uninstalled/activated/deactivated)
 

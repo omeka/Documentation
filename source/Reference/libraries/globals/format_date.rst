@@ -2,11 +2,13 @@
 format_date
 ###########
 
+:doc:`Text-related functions </Reference/packages/Function/Text/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/format_date.rst
+.. include:: /Reference/libraries/globals/summary/format_date.rst
 
 .. php:function:: format_date(mixed $date, string $format = FFF)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/format_date.rst
+.. include:: /Reference/libraries/globals/usage/format_date.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/format_date.rst
+.. include:: /Reference/libraries/globals/examples/format_date.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/format_date.rst
+.. include:: /Reference/libraries/globals/see_also/format_date.rst
 

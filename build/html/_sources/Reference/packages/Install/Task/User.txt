@@ -4,7 +4,7 @@ Installer_Task_User
 
 .. php:class:: Installer_Task_User
 
-    Package: :doc:`/Reference/packages/Install\Task/index`
+    Package: :doc:`Install\\Task </Reference/packages/Install/Task/index>`
 
     Create a default user for an Omeka installation.
 

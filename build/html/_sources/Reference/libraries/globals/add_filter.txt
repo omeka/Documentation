@@ -2,11 +2,13 @@
 add_filter
 ##########
 
+:doc:`Plugin-related functions </Reference/packages/Function/Plugin/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/add_filter.rst
+.. include:: /Reference/libraries/globals/summary/add_filter.rst
 
 .. php:function:: add_filter(string|array $name, callback $callback, integer $priority = 10)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/add_filter.rst
+.. include:: /Reference/libraries/globals/usage/add_filter.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/add_filter.rst
+.. include:: /Reference/libraries/globals/examples/add_filter.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/add_filter.rst
+.. include:: /Reference/libraries/globals/see_also/add_filter.rst
 

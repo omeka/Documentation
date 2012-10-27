@@ -2,11 +2,13 @@
 label_table_options
 ###################
 
+:doc:`Form-related functions </Reference/packages/Function/View/Body/Form/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/label_table_options.rst
+.. include:: /Reference/libraries/globals/summary/label_table_options.rst
 
 .. php:function:: label_table_options(array $options, string|null $labelOption)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/label_table_options.rst
+.. include:: /Reference/libraries/globals/usage/label_table_options.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/label_table_options.rst
+.. include:: /Reference/libraries/globals/examples/label_table_options.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/label_table_options.rst
+.. include:: /Reference/libraries/globals/see_also/label_table_options.rst
 

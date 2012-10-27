@@ -2,11 +2,13 @@
 src
 ###
 
+:doc:`FilePath-related functions </Reference/packages/Function/Application/FilePath/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/src.rst
+.. include:: /Reference/libraries/globals/summary/src.rst
 
 .. php:function:: src(string $file, string|null $dir, string $ext)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/src.rst
+.. include:: /Reference/libraries/globals/usage/src.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/src.rst
+.. include:: /Reference/libraries/globals/examples/src.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/src.rst
+.. include:: /Reference/libraries/globals/see_also/src.rst
 

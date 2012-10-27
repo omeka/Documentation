@@ -2,11 +2,13 @@
 _log
 ####
 
+:doc:`Development-related functions </Reference/packages/Function/Development/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/_log.rst
+.. include:: /Reference/libraries/globals/summary/_log.rst
 
 .. php:function:: _log(mixed $msg, integer $priority = 6)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/_log.rst
+.. include:: /Reference/libraries/globals/usage/_log.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/_log.rst
+.. include:: /Reference/libraries/globals/examples/_log.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/_log.rst
+.. include:: /Reference/libraries/globals/see_also/_log.rst
 

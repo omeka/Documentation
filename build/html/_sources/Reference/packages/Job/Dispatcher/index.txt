@@ -1,9 +1,14 @@
-#######################################
-Job\Dispatcher
-#######################################
+###############
+Job\\Dispatcher
+###############
+
+Up to :doc:`../index`
 
 .. toctree::
-    :glob:
 
-    *
-    */index
+   /Reference/libraries/Omeka/Job/Dispatcher/Default.rst
+   /Reference/libraries/Omeka/Job/Dispatcher/DispatcherInterface.rst
+.. toctree::
+   :glob:
+
+   */index

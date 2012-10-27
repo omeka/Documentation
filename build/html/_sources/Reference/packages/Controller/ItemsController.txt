@@ -4,7 +4,7 @@ ItemsController
 
 .. php:class:: ItemsController
 
-    Package: :doc:`/Reference/packages/Controller/index`
+    Package: :doc:`Controller </Reference/packages/Controller/index>`
 
     .. php:attr:: contexts
     
@@ -31,26 +31,36 @@ ItemsController
         :returns: void
 
     .. php:method:: _getItemElementSets()
+    
+        Gets the element sets for the 'Item' record type.
+        
+        :returns: array The element sets for the 'Item' record type
 
     .. php:method:: editAction()
     
         Adds an additional permissions check to the built-in edit action.
 
-    .. php:method:: _getAddSuccessMessage($record)
+    .. php:method:: _getAddSuccessMessage($item)
     
-        :param unknown $record:
+        :param unknown $item:
 
-    .. php:method:: _getEditSuccessMessage($record)
+    .. php:method:: _getEditSuccessMessage($item)
     
-        :param unknown $record:
+        :param unknown $item:
 
-    .. php:method:: _getDeleteSuccessMessage($record)
+    .. php:method:: _getDeleteSuccessMessage($item)
     
-        :param unknown $record:
+        :param unknown $item:
 
-    .. php:method:: _getDeleteConfirmMessage($record)
+    .. php:method:: _getDeleteConfirmMessage($item)
     
-        :param unknown $record:
+        :param unknown $item:
+
+    .. php:method:: _getElementMetadata($item, $elementSetName, $elementName)
+    
+        :param unknown $item: 
+        :param unknown $elementSetName: 
+        :param unknown $elementName:
 
     .. php:method:: addAction()
 

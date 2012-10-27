@@ -2,11 +2,13 @@
 file_markup
 ###########
 
+:doc:`File-related functions </Reference/packages/Function/View/Body/Item/File/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/file_markup.rst
+.. include:: /Reference/libraries/globals/summary/file_markup.rst
 
 .. php:function:: file_markup(File $files, array $props = Array, array $wrapperAttributes = Array)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/file_markup.rst
+.. include:: /Reference/libraries/globals/usage/file_markup.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/file_markup.rst
+.. include:: /Reference/libraries/globals/examples/file_markup.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/file_markup.rst
+.. include:: /Reference/libraries/globals/see_also/file_markup.rst
 

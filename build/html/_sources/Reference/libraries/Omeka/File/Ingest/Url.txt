@@ -4,7 +4,7 @@ Omeka_File_Ingest_Url
 
 .. php:class:: Omeka_File_Ingest_Url
 
-    Package: :doc:`/Reference/packages/File\Ingest/index`
+    Package: :doc:`File\\Ingest </Reference/packages/File/Ingest/index>`
 
     Ingest URLs into Omeka.
 

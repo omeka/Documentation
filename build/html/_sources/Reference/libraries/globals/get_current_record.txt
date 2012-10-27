@@ -2,11 +2,13 @@
 get_current_record
 ##################
 
+:doc:`Loop-related functions </Reference/packages/Function/View/Body/Loop/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_current_record.rst
+.. include:: /Reference/libraries/globals/summary/get_current_record.rst
 
 .. php:function:: get_current_record(string $recordVar, bool $throwException = 1)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_current_record.rst
+.. include:: /Reference/libraries/globals/usage/get_current_record.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_current_record.rst
+.. include:: /Reference/libraries/globals/examples/get_current_record.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_current_record.rst
+.. include:: /Reference/libraries/globals/see_also/get_current_record.rst
 

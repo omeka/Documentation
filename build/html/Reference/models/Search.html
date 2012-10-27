@@ -22,10 +22,13 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Models" href="index.html" />
     <link rel="next" title="SearchText" href="SearchText.html" />
-    <link rel="prev" title="Installer_Task_Schema" href="Schema.html" /> 
+    <link rel="prev" title="Installer_Task_Schema" href="Schema.html" />
+    <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
+ 
   </head>
   <body>
     <div class="related">
@@ -40,7 +43,12 @@
         <li class="right" >
           <a href="Schema.html" title="Installer_Task_Schema"
              accesskey="P">previous</a> |</li>
+    
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
           <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
           <li><a href="index.html" accesskey="U">Models</a> &raquo;</li> 
       </ul>
@@ -56,10 +64,11 @@
 <dl class="class">
 <dt id="Mixin_Search">
 <em class="property">class </em><tt class="descname">Mixin_Search</tt><a class="headerlink" href="#Mixin_Search" title="Permalink to this definition">¶</a></dt>
-<dd><p>Make an Omeka record fulltext searchable.</p>
-<p>Any class that extends Omeka_Record_AbstractRecord can be made searchable by pushing an instance of this mixin into Omeka_Record::$_mixins during Omeka_Record::_initializeMixins(). It must be pushed after all mixins that can add search text&#8211;for example, after ElementText.</p>
-<p>The record type must also be registered using the search_record_types filter in order for the records to be searchable. See self::getSearchRecordTypes().</p>
-<p>This mixin leverages the Omeka_Record_AbstractRecord::afterSave() and Omeka_Record_Mixin_AbstractMixin::afterSave() callbacks, so note their order of execution. Records that initialize ActsAsElementText will automatically add their element texts to the search text.</p>
+<dd><p>Package: <a class="reference internal" href="../packages/Record/Mixin/index.html"><em>Record\Mixin</em></a></p>
+<p>Make an Omeka record fulltext searchable.</p>
+<p>Any class that extends Omeka_Record_AbstractRecord can be made searchable bypushing an instance of this mixin into Omeka_Record::$_mixins duringOmeka_Record::_initializeMixins(). It must be pushed after all mixins thatcan add search text&#8211;for example, after ElementText.</p>
+<p>The record type must also be registered using the search_record_types filter in order for the records to be searchable.</p>
+<p>This mixin leverages the Omeka_Record_AbstractRecord::afterSave() andOmeka_Record_Mixin_AbstractMixin::afterSave() callbacks, so note their orderof execution. Records that initialize ActsAsElementText will automaticallyadd their element texts to the search text.</p>
 <dl class="attr">
 <dt id="Mixin_Search::$_text">
 <em class="property">property </em><tt class="descname">_text</tt><a class="headerlink" href="#Mixin_Search::$_text" title="Permalink to this definition">¶</a></dt>
@@ -161,8 +170,8 @@
 <dt id="Mixin_Search::saveSearchText">
 <tt class="descname">saveSearchText</tt><big>(</big><em>string $recordType</em>, <em>int $recordId</em>, <em>string $text</em>, <em>string $title</em>, <em>int $public = 1</em><big>)</big><a class="headerlink" href="#Mixin_Search::saveSearchText" title="Permalink to this definition">¶</a></dt>
 <dd><p>Save a search text row.</p>
-<p>Call this statically only when necessary. Used primarily when in a record that does not implement Mixin_Search but
-contains text that is needed for another record&#8217;s search text. For example, when saving a child record that contains
+<p>Call this statically only when necessary. Used primarily when in a recordthat does not implement Mixin_Search but
+contains text that is needed foranother record&#8217;s search text. For example, when saving a child recordthat contains
 search text that should be saved to its parent record.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -176,22 +185,6 @@ search text that should be saved to its parent record.</p>
 <li><strong>$public</strong> (<em>int</em>) &#8211; </li>
 </ul>
 </td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="Mixin_Search::getSearchRecordTypes">
-<tt class="descname">getSearchRecordTypes</tt><big>(</big><big>)</big><a class="headerlink" href="#Mixin_Search::getSearchRecordTypes" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get the search record types.</p>
-<p>Returns an array containing all record types (i.e. class names) in the application/models directory that should be
-indexed and searchable. These classes must extend Omeka_Record_AbstractRecord and implement this search mixin.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array</td>
 </tr>
 </tbody>
 </table>
@@ -255,7 +248,12 @@ indexed and searchable. These classes must extend Omeka_Record_AbstractRecord an
         <li class="right" >
           <a href="Schema.html" title="Installer_Task_Schema"
              >previous</a> |</li>
+    
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
           <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
           <li><a href="index.html" >Models</a> &raquo;</li> 
       </ul>

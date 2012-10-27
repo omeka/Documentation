@@ -2,11 +2,13 @@
 physical_path_to
 ################
 
+:doc:`FilePath-related functions </Reference/packages/Function/Application/FilePath/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/physical_path_to.rst
+.. include:: /Reference/libraries/globals/summary/physical_path_to.rst
 
 .. php:function:: physical_path_to(string $file)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/physical_path_to.rst
+.. include:: /Reference/libraries/globals/usage/physical_path_to.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/physical_path_to.rst
+.. include:: /Reference/libraries/globals/examples/physical_path_to.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/physical_path_to.rst
+.. include:: /Reference/libraries/globals/see_also/physical_path_to.rst
 

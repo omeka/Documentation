@@ -4,7 +4,7 @@ Omeka_Job_Factory_MalformedJobException
 
 .. php:class:: Omeka_Job_Factory_MalformedJobException
 
-    Package: :doc:`/Reference/packages/Job\Factory/index`
+    Package: :doc:`Job\\Factory </Reference/packages/Job/Factory/index>`
 
     Exception thrown when the message could not be decoded into valid job 
     metadata.

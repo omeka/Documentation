@@ -65,7 +65,7 @@
 <dl class="class">
 <dt id="Mixin_ElementText">
 <em class="property">class </em><tt class="descname">Mixin_ElementText</tt><a class="headerlink" href="#Mixin_ElementText" title="Permalink to this definition">¶</a></dt>
-<dd><p>Package: <tt class="xref doc docutils literal"><span class="pre">/Reference/packages/RecordMixin/index</span></tt></p>
+<dd><p>Package: <a class="reference internal" href="../../packages/Record/Mixin/index.html"><em>Record\Mixin</em></a></p>
 <p>Record mixin class for associating elements, element texts and their
 corresponding behaviors to a record.</p>
 <dl class="attr">
@@ -241,7 +241,7 @@ These will be indexed by [element_id].</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$element</strong> (<a class="reference internal" href="../../packages/Record/Element.html#Element" title="Element"><em>Element</em></a>) &#8211; </li>
+<li><strong>$element</strong> (<a class="reference internal" href="../Element.html#Element" title="Element"><em>Element</em></a>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -439,7 +439,7 @@ being element name.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$element</strong> (<a class="reference internal" href="../../packages/Record/Element.html#Element" title="Element"><em>Element</em></a>) &#8211; Element which text should be created for</li>
+<li><strong>$element</strong> (<a class="reference internal" href="../Element.html#Element" title="Element"><em>Element</em></a>) &#8211; Element which text should be created for</li>
 <li><strong>$elementText</strong> (<em>string</em>) &#8211; Text to be added</li>
 <li><strong>$isHtml</strong> (<em>bool</em>) &#8211; Whether the text to add is HTML</li>
 </ul>
@@ -539,8 +539,8 @@ ElementText objects to the database.</p>
 that is keyed to an element&#8217;s ID.  That array should contain all the
 text values for that element. For example:</p>
 <p>&lt;code&gt;</p>
-<p>array(&#8216;Elements&#8217; =&gt;array(&#8216;50&#8217; =&gt; array(&#8216;text&#8217; =&gt; &#8216;Foobar&#8217;, //element id 50, e.g. DC:Title&#8217;html&#8217; =&gt; 0),&#8216;41&#8217; =&gt;
-array(&#8216;text&#8217; =&gt; &#8216;&lt;p&gt;Baz baz baz&lt;/p&gt;&#8217;, //element id 41, e.g. DC:Description&#8217;html&#8217; =&gt; 1)))</p>
+<p>array(&#8216;Elements&#8217; =&gt;array(&#8216;50&#8217; =&gt; array(array(&#8216;text&#8217; =&gt; &#8216;Foobar&#8217;, //element id 50, e.g. DC:Title&#8217;html&#8217; =&gt; 0)),&#8216;41&#8217; =&gt;
+array(array(&#8216;text&#8217; =&gt; &#8216;&lt;p&gt;Baz baz baz&lt;/p&gt;&#8217;, //element id 41, e.g. DC:Description&#8217;html&#8217; =&gt; 1))))</p>
 <p>&lt;/code&gt;</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -593,7 +593,7 @@ able to encapsulate the logic for validation of Elements.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$elementTextRecord</strong> (<a class="reference internal" href="../../packages/Record/ElementText.html#ElementText" title="ElementText"><em>ElementText</em></a>) &#8211; </li>
+<li><strong>$elementTextRecord</strong> (<a class="reference internal" href="../ElementText.html#ElementText" title="ElementText"><em>ElementText</em></a>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -640,6 +640,48 @@ able to encapsulate the logic for validation of Elements.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Returns:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::hasElementText">
+<tt class="descname">hasElementText</tt><big>(</big><em>string $elementSetName</em>, <em>string $elementName</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::hasElementText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns whether or not the record has at least 1 element text</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementSetName</strong> (<em>string</em>) &#8211; Element set name</li>
+<li><strong>$elementName</strong> (<em>string</em>) &#8211; Element name</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::getElementTextCount">
+<tt class="descname">getElementTextCount</tt><big>(</big><em>string $elementSetName</em>, <em>string $elementName</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::getElementTextCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of element texts for the record</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementSetName</strong> (<em>string</em>) &#8211; Element set name</li>
+<li><strong>$elementName</strong> (<em>string</em>) &#8211; Element name</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
 </tr>
 </tbody>
 </table>

@@ -2,11 +2,13 @@
 queue_css_string
 ################
 
+:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/queue_css_string.rst
+.. include:: /Reference/libraries/globals/summary/queue_css_string.rst
 
 .. php:function:: queue_css_string(string $string, string $media = all, string|bool $conditional = )
 
@@ -22,17 +24,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/queue_css_string.rst
+.. include:: /Reference/libraries/globals/usage/queue_css_string.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/queue_css_string.rst
+.. include:: /Reference/libraries/globals/examples/queue_css_string.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/queue_css_string.rst
+.. include:: /Reference/libraries/globals/see_also/queue_css_string.rst
 

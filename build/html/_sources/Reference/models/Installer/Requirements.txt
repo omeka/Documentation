@@ -4,7 +4,7 @@ Installer_Requirements
 
 .. php:class:: Installer_Requirements
 
-    Package: :doc:`/Reference/packages/Install/index`
+    Package: :doc:`Install </Reference/packages/Install/index>`
 
     .. php:attr:: _dbAdapter
     

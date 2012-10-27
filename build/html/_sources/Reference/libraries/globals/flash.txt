@@ -2,11 +2,13 @@
 flash
 #####
 
+:doc:`View-related functions </Reference/packages/Function/View/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/flash.rst
+.. include:: /Reference/libraries/globals/summary/flash.rst
 
 .. php:function:: flash()
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/flash.rst
+.. include:: /Reference/libraries/globals/usage/flash.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/flash.rst
+.. include:: /Reference/libraries/globals/examples/flash.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/flash.rst
+.. include:: /Reference/libraries/globals/see_also/flash.rst
 

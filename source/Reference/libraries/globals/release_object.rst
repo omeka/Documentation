@@ -2,11 +2,13 @@
 release_object
 ##############
 
+:doc:`Application-related functions </Reference/packages/Function/Application/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/release_object.rst
+.. include:: /Reference/libraries/globals/summary/release_object.rst
 
 .. php:function:: release_object($var)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/release_object.rst
+.. include:: /Reference/libraries/globals/usage/release_object.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/release_object.rst
+.. include:: /Reference/libraries/globals/examples/release_object.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/release_object.rst
+.. include:: /Reference/libraries/globals/see_also/release_object.rst
 

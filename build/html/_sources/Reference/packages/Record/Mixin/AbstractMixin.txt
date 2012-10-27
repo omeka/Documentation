@@ -4,7 +4,7 @@ Omeka_Record_Mixin_AbstractMixin
 
 .. php:class:: Omeka_Record_Mixin_AbstractMixin
 
-    Package: :doc:`/Reference/packages/Record\Mixin/index`
+    Package: :doc:`Record\\Mixin </Reference/packages/Record/Mixin/index>`
 
     Represents a kind of mixin for Omeka_Record_AbstractRecord implementations.
     

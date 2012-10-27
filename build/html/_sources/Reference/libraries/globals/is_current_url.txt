@@ -2,11 +2,13 @@
 is_current_url
 ##############
 
+:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/is_current_url.rst
+.. include:: /Reference/libraries/globals/summary/is_current_url.rst
 
 .. php:function:: is_current_url(string $url)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/is_current_url.rst
+.. include:: /Reference/libraries/globals/usage/is_current_url.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/is_current_url.rst
+.. include:: /Reference/libraries/globals/examples/is_current_url.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/is_current_url.rst
+.. include:: /Reference/libraries/globals/see_also/is_current_url.rst
 

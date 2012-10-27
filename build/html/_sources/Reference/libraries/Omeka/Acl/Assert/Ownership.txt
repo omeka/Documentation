@@ -4,7 +4,7 @@ Omeka_Acl_Assert_Ownership
 
 .. php:class:: Omeka_Acl_Assert_Ownership
 
-    Package: :doc:`/Reference/packages/Acl/index`
+    Package: :doc:`Acl </Reference/packages/Acl/index>`
 
     Assertion to take account of "All" and "Self" sub-permissions for records.
     

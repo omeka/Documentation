@@ -4,7 +4,7 @@ Omeka_Plugin_Mvc
 
 .. php:class:: Omeka_Plugin_Mvc
 
-    Package: :doc:`/Reference/packages/Plugin/index`
+    Package: :doc:`Plugin </Reference/packages/Plugin/index>`
 
     Connects plugins with Omeka's model-view-controller system.
 

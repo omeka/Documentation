@@ -1,9 +1,13 @@
-#######################################
+###########
 Application
-#######################################
+###########
+
+Up to :doc:`../index`
 
 .. toctree::
-    :glob:
 
-    *
-    */index
+   /Reference/libraries/Omeka/Application.rst
+.. toctree::
+   :glob:
+
+   */index

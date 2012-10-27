@@ -2,11 +2,13 @@
 get_view
 ########
 
+:doc:`View-related functions </Reference/packages/Function/View/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_view.rst
+.. include:: /Reference/libraries/globals/summary/get_view.rst
 
 .. php:function:: get_view()
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_view.rst
+.. include:: /Reference/libraries/globals/usage/get_view.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_view.rst
+.. include:: /Reference/libraries/globals/examples/get_view.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_view.rst
+.. include:: /Reference/libraries/globals/see_also/get_view.rst
 

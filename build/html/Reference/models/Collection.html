@@ -24,9 +24,9 @@
     <script type="text/javascript" src="../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
-    <link rel="up" title="Models" href="index.html" />
+    <link rel="up" title="Record" href="../packages/Record/index.html" />
     <link rel="next" title="Element" href="Element.html" />
-    <link rel="prev" title="Builder_ItemType" href="Builder/ItemType.html" />
+    <link rel="prev" title="Record" href="../packages/Record/index.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="Element.html" title="Element"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="Builder/ItemType.html" title="Builder_ItemType"
+          <a href="../packages/Record/index.html" title="Record"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -50,7 +50,8 @@
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" accesskey="U">Models</a> &raquo;</li> 
+          <li><a href="../packages/index.html" >&lt;no title&gt;</a> &raquo;</li>
+          <li><a href="../packages/Record/index.html" accesskey="U">Record</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -66,21 +67,6 @@
 <em class="property">class </em><tt class="descname">Collection</tt><a class="headerlink" href="#Collection" title="Permalink to this definition">¶</a></dt>
 <dd><p>Package: <a class="reference internal" href="../packages/Record/index.html"><em>Record</em></a></p>
 <p>A collection and its metadata.</p>
-<dl class="attr">
-<dt id="Collection::$name">
-<em class="property">property </em><tt class="descname">name</tt><a class="headerlink" href="#Collection::$name" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attr">
-<dt id="Collection::$description">
-<em class="property">property </em><tt class="descname">description</tt><a class="headerlink" href="#Collection::$description" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attr">
-<dt id="Collection::$collectors">
-<em class="property">property </em><tt class="descname">collectors</tt><a class="headerlink" href="#Collection::$collectors" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
 <dl class="attr">
 <dt id="Collection::$public">
 <em class="property">property </em><tt class="descname">public</tt><a class="headerlink" href="#Collection::$public" title="Permalink to this definition">¶</a></dt>
@@ -106,9 +92,9 @@
 <em class="property">property </em><tt class="descname">owner_id</tt><a class="headerlink" href="#Collection::$owner_id" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
-<dl class="method">
-<dt id="Collection::_initializeMixins">
-<tt class="descname">_initializeMixins</tt><big>(</big><big>)</big><a class="headerlink" href="#Collection::_initializeMixins" title="Permalink to this definition">¶</a></dt>
+<dl class="attr">
+<dt id="Collection::$_related">
+<em class="property">property </em><tt class="descname">_related</tt><a class="headerlink" href="#Collection::$_related" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
@@ -119,24 +105,13 @@
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>$property</strong> (<em>string</em>) &#8211; The property to get, always lowercase.</li>
 </ul>
 </td>
 </tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="Collection::hasCollectors">
-<tt class="descname">hasCollectors</tt><big>(</big><big>)</big><a class="headerlink" href="#Collection::hasCollectors" title="Permalink to this definition">¶</a></dt>
-<dd><p>Determine whether or not the collection has collectors associated with it.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body">boolean</td>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mixed The value of the property</p>
+</td>
 </tr>
 </tbody>
 </table>
@@ -157,134 +132,16 @@
 </dd></dl>
 
 <dl class="method">
-<dt id="Collection::getCollectors">
-<tt class="descname">getCollectors</tt><big>(</big><big>)</big><a class="headerlink" href="#Collection::getCollectors" title="Permalink to this definition">¶</a></dt>
-<dd><p>Retrieve a list of all the collectors associated with this collection.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array List of strings.</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="Collection::filterPostData">
-<tt class="descname">filterPostData</tt><big>(</big><em>array $post</em><big>)</big><a class="headerlink" href="#Collection::filterPostData" title="Permalink to this definition">¶</a></dt>
-<dd><p>Filter the POST data from the form.</p>
-<p>Trims the &#8216;name&#8217; and &#8216;description&#8217; strings, strips tags from thecollection name, and converts public/featured flags
-to booleans.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$post</strong> (<em>array</em>) &#8211; </li>
-</ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="Collection::_validate">
-<tt class="descname">_validate</tt><big>(</big><big>)</big><a class="headerlink" href="#Collection::_validate" title="Permalink to this definition">¶</a></dt>
-<dd><p>Validate the record.</p>
-<p>Checks the collection name to ensure that it is below 255 characters.</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="Collection::removeCollector">
-<tt class="descname">removeCollector</tt><big>(</big><em>$collector</em><big>)</big><a class="headerlink" href="#Collection::removeCollector" title="Permalink to this definition">¶</a></dt>
-<dd><p>Disassociate a collector with this collection.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$collector</strong> (<em>unknown</em>) &#8211; </li>
-</ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean Was successful or not.</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="Collection::beforeSave">
-<tt class="descname">beforeSave</tt><big>(</big><em>$args</em><big>)</big><a class="headerlink" href="#Collection::beforeSave" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$args</strong> (<em>unknown</em>) &#8211; </li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="Collection::addCollector">
-<tt class="descname">addCollector</tt><big>(</big><em>string $collector</em><big>)</big><a class="headerlink" href="#Collection::addCollector" title="Permalink to this definition">¶</a></dt>
-<dd><p>Add a collector to the collection.</p>
-<p>Note that prior versions of Omeka allowed for entering collector metadataas Entity records.  This behavior has been
-deprecated and removed inOmeka &gt;= 1.3.  Please use the new syntax, which is simply the string namefor the collector.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>$collector</strong> (<em>string</em>) &#8211; </li>
-</ul>
-</td>
-</tr>
-<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="Collection::setCollectors">
-<tt class="descname">setCollectors</tt><big>(</big><em>$collectorList</em><big>)</big><a class="headerlink" href="#Collection::setCollectors" title="Permalink to this definition">¶</a></dt>
-<dd><p>Set the list of collectors for this collection.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$collectorList</strong> (<em>unknown</em>) &#8211; </li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
 <dt id="Collection::setAddedBy">
 <tt class="descname">setAddedBy</tt><big>(</big><em>User $user</em><big>)</big><a class="headerlink" href="#Collection::setAddedBy" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set the user who added the collection.</p>
-<p>Note that this is not to be confused with the collection&#8217;s &#8220;collectors&#8221;.</p>
+<p>Note that this is not to be confused with the collection&#8217;s &#8220;contributors&#8221;.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$user</strong> (<a class="reference internal" href="../packages/Record/User.html#User" title="User"><em>User</em></a>) &#8211; </li>
+<li><strong>$user</strong> (<a class="reference internal" href="User.html#User" title="User"><em>User</em></a>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -302,6 +159,77 @@ deprecated and removed inOmeka &gt;= 1.3.  Please use the new syntax, which is s
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Returns:</th><td class="field-body">string</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Collection::hasContributor">
+<tt class="descname">hasContributor</tt><big>(</big><big>)</big><a class="headerlink" href="#Collection::hasContributor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns whether or not the collection has at least 1 contributor element text</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">boolean</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Collection::_initializeMixins">
+<tt class="descname">_initializeMixins</tt><big>(</big><big>)</big><a class="headerlink" href="#Collection::_initializeMixins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize the mixins</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Collection::filterPostData">
+<tt class="descname">filterPostData</tt><big>(</big><em>array $post</em><big>)</big><a class="headerlink" href="#Collection::filterPostData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filter the POST data from the form.</p>
+<p>Converts public/featured flags to booleans.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$post</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Collection::_delete">
+<tt class="descname">_delete</tt><big>(</big><big>)</big><a class="headerlink" href="#Collection::_delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>All of the custom code for deleting an collection.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">void</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Collection::beforeSave">
+<tt class="descname">beforeSave</tt><big>(</big><em>$args</em><big>)</big><a class="headerlink" href="#Collection::beforeSave" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$args</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -326,8 +254,8 @@ deprecated and removed inOmeka &gt;= 1.3.  Please use the new syntax, which is s
               <img class="logo" src="../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
   <h4>Previous topic</h4>
-  <p class="topless"><a href="Builder/ItemType.html"
-                        title="previous chapter">Builder_ItemType</a></p>
+  <p class="topless"><a href="../packages/Record/index.html"
+                        title="previous chapter">Record</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="Element.html"
                         title="next chapter">Element</a></p>
@@ -368,7 +296,7 @@ deprecated and removed inOmeka &gt;= 1.3.  Please use the new syntax, which is s
           <a href="Element.html" title="Element"
              >next</a> |</li>
         <li class="right" >
-          <a href="Builder/ItemType.html" title="Builder_ItemType"
+          <a href="../packages/Record/index.html" title="Record"
              >previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -377,7 +305,8 @@ deprecated and removed inOmeka &gt;= 1.3.  Please use the new syntax, which is s
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="index.html" >Models</a> &raquo;</li> 
+          <li><a href="../packages/index.html" >&lt;no title&gt;</a> &raquo;</li>
+          <li><a href="../packages/Record/index.html" >Record</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

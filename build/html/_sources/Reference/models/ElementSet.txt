@@ -4,7 +4,7 @@ ElementSet
 
 .. php:class:: ElementSet
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     An element set and its metadata.
 

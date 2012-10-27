@@ -4,7 +4,7 @@ Omeka_Filter_HtmlPurifier
 
 .. php:class:: Omeka_Filter_HtmlPurifier
 
-    Package: :doc:`/Reference/packages/Filter/index`
+    Package: :doc:`Filter </Reference/packages/Filter/index>`
 
     A Zend_Filter implementation that uses HtmlPurifier to purify a string.
 

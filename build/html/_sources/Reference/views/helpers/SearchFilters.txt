@@ -4,11 +4,13 @@ Omeka_View_Helper_SearchFilters
 
 .. php:class:: Omeka_View_Helper_SearchFilters
 
-    Show the currently-active filters for a search/browse.
+    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
-    .. php:method:: searchFilters(array $params)
+    Return a list of search filters in the current request.
+
+    .. php:method:: searchFilters(array $options = Array)
     
-        Get a list of the currently-active filters.
+        Return a list of current search filters in use.
         
-        :param array $params: Optional array of key-value pairs to use instead of reading the current params from the request.
-        :returns: string HTML output
+        :param array $options: Valid options are as follows: - id (string): the ID of the filter wrapping div.
+        :returns: string

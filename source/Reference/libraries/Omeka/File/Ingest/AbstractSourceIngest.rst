@@ -4,7 +4,7 @@ Omeka_File_Ingest_AbstractSourceIngest
 
 .. php:class:: Omeka_File_Ingest_AbstractSourceIngest
 
-    Package: :doc:`/Reference/packages/File\Ingest/index`
+    Package: :doc:`File\\Ingest </Reference/packages/File/Ingest/index>`
 
     This abstract class encapsulates all the behavior that facilitates file 
     ingest based on the assumption that each file can be retrieved via a string 

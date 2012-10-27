@@ -4,7 +4,7 @@ Omeka_View_Helper_ElementForm
 
 .. php:class:: Omeka_View_Helper_ElementForm
 
-    Package: :doc:`/Reference/packages/View\Helper/index`
+    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
     Generate the form markup for entering element text metadata.
 

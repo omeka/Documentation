@@ -2,11 +2,13 @@
 loop
 ####
 
+:doc:`Loop-related functions </Reference/packages/Function/View/Body/Loop/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/loop.rst
+.. include:: /Reference/libraries/globals/summary/loop.rst
 
 .. php:function:: loop(string $recordsVar, array|null $records)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/loop.rst
+.. include:: /Reference/libraries/globals/usage/loop.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/loop.rst
+.. include:: /Reference/libraries/globals/examples/loop.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/loop.rst
+.. include:: /Reference/libraries/globals/see_also/loop.rst
 

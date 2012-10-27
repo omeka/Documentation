@@ -4,7 +4,7 @@ Table_Collection
 
 .. php:class:: Table_Collection
 
-    Package: :doc:`/Reference/packages/Db\Table/index`
+    Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
 
     .. php:method:: applySearchFilters($select, $params)
     
@@ -12,6 +12,10 @@ Table_Collection
         :param unknown $params:
 
     .. php:method:: _getColumnPairs()
+
+    .. php:method:: findPairsForSelectForm($options = Array)
+    
+        :param unknown $options:
 
     .. php:method:: getSelect()
     
@@ -36,3 +40,11 @@ Table_Collection
         :param unknown $select: 
         :param unknown $isFeatured: 
         :returns: void
+
+    .. php:method:: applySorting(Omeka_Db_Select $select, string $sortField, string $sortDir)
+    
+        Enables sorting based on ElementSet,Element field strings.
+        
+        :param Omeka_Db_Select $select: 
+        :param string $sortField: Field to sort on
+        :param string $sortDir: Sorting direction (ASC or DESC)

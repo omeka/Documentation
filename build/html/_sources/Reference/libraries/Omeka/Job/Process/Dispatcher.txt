@@ -4,6 +4,8 @@ Omeka_Job_Process_Dispatcher
 
 .. php:class:: Omeka_Job_Process_Dispatcher
 
+    Package: :doc:`Job\\Process </Reference/packages/Job/Process/index>`
+
     Spawns and manages background processes.
 
     .. php:method:: startProcess(string $className, User $user, Array|null $args)

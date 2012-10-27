@@ -2,11 +2,13 @@
 clear_filters
 #############
 
+:doc:`Plugin-related functions </Reference/packages/Function/Plugin/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/clear_filters.rst
+.. include:: /Reference/libraries/globals/summary/clear_filters.rst
 
 .. php:function:: clear_filters($filterName)
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/clear_filters.rst
+.. include:: /Reference/libraries/globals/usage/clear_filters.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/clear_filters.rst
+.. include:: /Reference/libraries/globals/examples/clear_filters.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/clear_filters.rst
+.. include:: /Reference/libraries/globals/see_also/clear_filters.rst
 

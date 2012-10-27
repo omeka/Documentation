@@ -4,7 +4,7 @@ Omeka_View_Helper_Singularize
 
 .. php:class:: Omeka_View_Helper_Singularize
 
-    Package: :doc:`/Reference/packages/View\Helper/index`
+    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
     .. php:method:: singularize($var)
     

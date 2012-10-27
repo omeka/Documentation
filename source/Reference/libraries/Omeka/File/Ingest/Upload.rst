@@ -4,7 +4,7 @@ Omeka_File_Ingest_Upload
 
 .. php:class:: Omeka_File_Ingest_Upload
 
-    Package: :doc:`/Reference/packages/File\Ingest/index`
+    Package: :doc:`File\\Ingest </Reference/packages/File/Ingest/index>`
 
     This class creates a bridge between the ZF File Transfer HTTP adapter and
     Omeka's file ingest classes.

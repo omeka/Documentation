@@ -4,7 +4,7 @@ Omeka_Application
 
 .. php:class:: Omeka_Application
 
-    Package: :doc:`/Reference/packages/Application/index`
+    Package: :doc:`Application </Reference/packages/Application/index>`
 
     Core class used to bootstrap the Omeka environment.
     

@@ -2,11 +2,13 @@
 js_escape
 #########
 
+:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/js_escape.rst
+.. include:: /Reference/libraries/globals/summary/js_escape.rst
 
 .. php:function:: js_escape(string $value)
 
@@ -23,17 +25,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/js_escape.rst
+.. include:: /Reference/libraries/globals/usage/js_escape.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/js_escape.rst
+.. include:: /Reference/libraries/globals/examples/js_escape.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/js_escape.rst
+.. include:: /Reference/libraries/globals/see_also/js_escape.rst
 

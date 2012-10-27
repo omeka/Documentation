@@ -4,7 +4,7 @@ User
 
 .. php:class:: User
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     A user and its metadata.
 

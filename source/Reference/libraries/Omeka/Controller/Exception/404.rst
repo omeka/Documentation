@@ -4,7 +4,7 @@ Omeka_Controller_Exception_404
 
 .. php:class:: Omeka_Controller_Exception_404
 
-    Package: :doc:`/Reference/packages/Controller/index`
+    Package: :doc:`Controller </Reference/packages/Controller/index>`
 
     If thrown within a controller, this will be caught in the ErrorController,
     which will render a 404 Not Found page.

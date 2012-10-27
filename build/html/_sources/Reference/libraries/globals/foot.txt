@@ -2,11 +2,13 @@
 foot
 ####
 
+:doc:`Foot-related functions </Reference/packages/Function/View/Foot/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/foot.rst
+.. include:: /Reference/libraries/globals/summary/foot.rst
 
 .. php:function:: foot(array $vars = Array, string $file = footer)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/foot.rst
+.. include:: /Reference/libraries/globals/usage/foot.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/foot.rst
+.. include:: /Reference/libraries/globals/examples/foot.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/foot.rst
+.. include:: /Reference/libraries/globals/see_also/foot.rst
 

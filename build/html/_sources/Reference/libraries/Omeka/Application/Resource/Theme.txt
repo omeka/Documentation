@@ -4,7 +4,7 @@ Omeka_Application_Resource_Theme
 
 .. php:class:: Omeka_Application_Resource_Theme
 
-    Package: :doc:`/Reference/packages/Application\Resource/index`
+    Package: :doc:`Application\\Resource </Reference/packages/Application/Resource/index>`
 
     Set up the controller plugin that determines theme view script paths.
 

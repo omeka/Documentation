@@ -2,11 +2,13 @@
 pluck
 #####
 
+:doc:`Application-related functions </Reference/packages/Function/Application/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/pluck.rst
+.. include:: /Reference/libraries/globals/summary/pluck.rst
 
 .. php:function:: pluck(string|integer $col, array $array)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/pluck.rst
+.. include:: /Reference/libraries/globals/usage/pluck.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/pluck.rst
+.. include:: /Reference/libraries/globals/examples/pluck.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/pluck.rst
+.. include:: /Reference/libraries/globals/see_also/pluck.rst
 

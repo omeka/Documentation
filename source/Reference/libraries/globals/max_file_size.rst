@@ -2,11 +2,13 @@
 max_file_size
 #############
 
+:doc:`Application-related functions </Reference/packages/Function/Application/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/max_file_size.rst
+.. include:: /Reference/libraries/globals/summary/max_file_size.rst
 
 .. php:function:: max_file_size()
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/max_file_size.rst
+.. include:: /Reference/libraries/globals/usage/max_file_size.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/max_file_size.rst
+.. include:: /Reference/libraries/globals/examples/max_file_size.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/max_file_size.rst
+.. include:: /Reference/libraries/globals/see_also/max_file_size.rst
 

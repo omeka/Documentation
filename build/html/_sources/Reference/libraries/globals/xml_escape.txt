@@ -2,11 +2,13 @@
 xml_escape
 ##########
 
+:doc:`OutputFormat-related functions </Reference/packages/Function/View/OutputFormat/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/xml_escape.rst
+.. include:: /Reference/libraries/globals/summary/xml_escape.rst
 
 .. php:function:: xml_escape(string $value)
 
@@ -19,17 +21,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/xml_escape.rst
+.. include:: /Reference/libraries/globals/usage/xml_escape.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/xml_escape.rst
+.. include:: /Reference/libraries/globals/examples/xml_escape.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/xml_escape.rst
+.. include:: /Reference/libraries/globals/see_also/xml_escape.rst
 

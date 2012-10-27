@@ -4,7 +4,7 @@ Omeka_Plugin_Broker_Factory
 
 .. php:class:: Omeka_Plugin_Broker_Factory
 
-    Package: :doc:`/Reference/packages/Plugin\Broker/index`
+    Package: :doc:`Plugin\\Broker </Reference/packages/Plugin/Broker/index>`
 
     .. php:attr:: _basePluginDir
     

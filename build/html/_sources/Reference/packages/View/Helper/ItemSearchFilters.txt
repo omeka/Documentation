@@ -4,7 +4,7 @@ Omeka_View_Helper_ItemSearchFilters
 
 .. php:class:: Omeka_View_Helper_ItemSearchFilters
 
-    Package: :doc:`/Reference/packages/View\Helper/index`
+    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
     Show the currently-active filters for a search/browse.
 

@@ -2,11 +2,13 @@
 head
 ####
 
+:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/head.rst
+.. include:: /Reference/libraries/globals/summary/head.rst
 
 .. php:function:: head(array $vars = Array, string $file = header)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/head.rst
+.. include:: /Reference/libraries/globals/usage/head.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/head.rst
+.. include:: /Reference/libraries/globals/examples/head.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/head.rst
+.. include:: /Reference/libraries/globals/see_also/head.rst
 

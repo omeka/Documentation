@@ -4,7 +4,7 @@ Omeka_Job_Dispatcher_Default
 
 .. php:class:: Omeka_Job_Dispatcher_Default
 
-    Package: :doc:`/Reference/packages/Job\Dispatcher/index`
+    Package: :doc:`Job\\Dispatcher </Reference/packages/Job/Dispatcher/index>`
 
     Dispatches jobs in Omeka.
     

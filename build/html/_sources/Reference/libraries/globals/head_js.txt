@@ -2,11 +2,13 @@
 head_js
 #######
 
+:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/head_js.rst
+.. include:: /Reference/libraries/globals/summary/head_js.rst
 
 .. php:function:: head_js(bool $includeDefaults = 1)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/head_js.rst
+.. include:: /Reference/libraries/globals/usage/head_js.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/head_js.rst
+.. include:: /Reference/libraries/globals/examples/head_js.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/head_js.rst
+.. include:: /Reference/libraries/globals/see_also/head_js.rst
 

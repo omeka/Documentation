@@ -2,11 +2,13 @@
 insert_element_set
 ##################
 
+:doc:`ElementSet-related functions </Reference/packages/Function/Db/ElementSet/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/insert_element_set.rst
+.. include:: /Reference/libraries/globals/summary/insert_element_set.rst
 
 .. php:function:: insert_element_set(string|array $elementSetMetadata = Array, array $elements = Array)
 
@@ -52,17 +54,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/insert_element_set.rst
+.. include:: /Reference/libraries/globals/usage/insert_element_set.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/insert_element_set.rst
+.. include:: /Reference/libraries/globals/examples/insert_element_set.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/insert_element_set.rst
+.. include:: /Reference/libraries/globals/see_also/insert_element_set.rst
 

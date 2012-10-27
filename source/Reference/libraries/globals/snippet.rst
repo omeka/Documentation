@@ -2,11 +2,13 @@
 snippet
 #######
 
+:doc:`Text-related functions </Reference/packages/Function/Text/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/snippet.rst
+.. include:: /Reference/libraries/globals/summary/snippet.rst
 
 .. php:function:: snippet(string $text, int $startPos, int $endPos, string $append = …)
 
@@ -25,17 +27,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/snippet.rst
+.. include:: /Reference/libraries/globals/usage/snippet.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/snippet.rst
+.. include:: /Reference/libraries/globals/examples/snippet.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/snippet.rst
+.. include:: /Reference/libraries/globals/see_also/snippet.rst
 

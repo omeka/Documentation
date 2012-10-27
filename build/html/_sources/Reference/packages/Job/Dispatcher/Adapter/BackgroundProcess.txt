@@ -4,7 +4,7 @@ Omeka_Job_Dispatcher_Adapter_BackgroundProcess
 
 .. php:class:: Omeka_Job_Dispatcher_Adapter_BackgroundProcess
 
-    Package: :doc:`/Reference/packages/Job\Dispatcher\Adapter/index`
+    Package: :doc:`Job\\Dispatcher\\Adapter </Reference/packages/Job/Dispatcher/Adapter/index>`
 
     Job dispatcher that uses Omeka's existing background process API.
 

@@ -2,11 +2,13 @@
 tag_string
 ##########
 
+:doc:`Tag-related functions </Reference/packages/Function/View/Body/Tag/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/tag_string.rst
+.. include:: /Reference/libraries/globals/summary/tag_string.rst
 
 .. php:function:: tag_string(Omeka_Record_AbstractRecord|array $recordOrTags, string|null $link = items/browse, string $delimiter)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/tag_string.rst
+.. include:: /Reference/libraries/globals/usage/tag_string.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/tag_string.rst
+.. include:: /Reference/libraries/globals/examples/tag_string.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/tag_string.rst
+.. include:: /Reference/libraries/globals/see_also/tag_string.rst
 

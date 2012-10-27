@@ -4,7 +4,7 @@ Omeka_Output_OmekaXml_AbstractOmekaXml
 
 .. php:class:: Omeka_Output_OmekaXml_AbstractOmekaXml
 
-    Package: :doc:`/Reference/packages/Output/index`
+    Package: :doc:`Output </Reference/packages/Output/index>`
 
     Abstract base class for creating omeka-xml output formats.
 

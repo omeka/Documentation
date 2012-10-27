@@ -4,7 +4,7 @@ Omeka_Application_Resource_Autoloader
 
 .. php:class:: Omeka_Application_Resource_Autoloader
 
-    Package: :doc:`/Reference/packages/Application\Resource/index`
+    Package: :doc:`Application\\Resource </Reference/packages/Application/Resource/index>`
 
     An application resource for class autoloaders.
 

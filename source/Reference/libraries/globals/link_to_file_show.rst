@@ -2,11 +2,13 @@
 link_to_file_show
 #################
 
+:doc:`Link-related functions </Reference/packages/Function/View/Body/Navigation/Link/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/link_to_file_show.rst
+.. include:: /Reference/libraries/globals/summary/link_to_file_show.rst
 
 .. php:function:: link_to_file_show(array $attributes = Array, string $text, File|null $file)
 
@@ -24,17 +26,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/link_to_file_show.rst
+.. include:: /Reference/libraries/globals/usage/link_to_file_show.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/link_to_file_show.rst
+.. include:: /Reference/libraries/globals/examples/link_to_file_show.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/link_to_file_show.rst
+.. include:: /Reference/libraries/globals/see_also/link_to_file_show.rst
 

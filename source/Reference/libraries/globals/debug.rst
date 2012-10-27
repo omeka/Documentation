@@ -2,11 +2,13 @@
 debug
 #####
 
+:doc:`Development-related functions </Reference/packages/Function/Development/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/debug.rst
+.. include:: /Reference/libraries/globals/summary/debug.rst
 
 .. php:function:: debug(string $msg)
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/debug.rst
+.. include:: /Reference/libraries/globals/usage/debug.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/debug.rst
+.. include:: /Reference/libraries/globals/examples/debug.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/debug.rst
+.. include:: /Reference/libraries/globals/see_also/debug.rst
 

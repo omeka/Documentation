@@ -2,11 +2,13 @@
 set_theme_option
 ################
 
+:doc:`Option-related functions </Reference/packages/Function/Db/Option/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/set_theme_option.rst
+.. include:: /Reference/libraries/globals/summary/set_theme_option.rst
 
 .. php:function:: set_theme_option(string $optionName, string $optionValue, string $themeName)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/set_theme_option.rst
+.. include:: /Reference/libraries/globals/usage/set_theme_option.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/set_theme_option.rst
+.. include:: /Reference/libraries/globals/examples/set_theme_option.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/set_theme_option.rst
+.. include:: /Reference/libraries/globals/see_also/set_theme_option.rst
 

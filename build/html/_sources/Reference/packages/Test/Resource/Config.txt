@@ -4,7 +4,7 @@ Omeka_Test_Resource_Config
 
 .. php:class:: Omeka_Test_Resource_Config
 
-    Package: :doc:`/Reference/packages/Test\Resource/index`
+    Package: :doc:`Test\\Resource </Reference/packages/Test/Resource/index>`
 
     Load the default config for the application, but *also* load the test config
     into Zend_Registry.

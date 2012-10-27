@@ -2,11 +2,13 @@
 __ (double underscore)
 ######################
 
+:doc:`Translation-related functions </Reference/packages/Function/Text/Translation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/__.rst
+.. include:: /Reference/libraries/globals/summary/__.rst
 
 .. php:function:: __(string $string)
 
@@ -19,17 +21,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/__.rst
+.. include:: /Reference/libraries/globals/usage/__.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/__.rst
+.. include:: /Reference/libraries/globals/examples/__.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/__.rst
+.. include:: /Reference/libraries/globals/see_also/__.rst
 

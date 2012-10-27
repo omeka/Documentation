@@ -4,7 +4,7 @@ Installer_Task_Schema
 
 .. php:class:: Installer_Task_Schema
 
-    Package: :doc:`/Reference/packages/Install/index`
+    Package: :doc:`Install </Reference/packages/Install/index>`
 
     Load the database schema for an Omeka installation.
     

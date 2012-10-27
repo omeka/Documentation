@@ -2,11 +2,13 @@
 search_form
 ###########
 
+:doc:`Search-related functions </Reference/packages/Function/Search/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/search_form.rst
+.. include:: /Reference/libraries/globals/summary/search_form.rst
 
 .. php:function:: search_form(array $options = Array)
 
@@ -19,17 +21,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/search_form.rst
+.. include:: /Reference/libraries/globals/usage/search_form.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/search_form.rst
+.. include:: /Reference/libraries/globals/examples/search_form.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/search_form.rst
+.. include:: /Reference/libraries/globals/see_also/search_form.rst
 

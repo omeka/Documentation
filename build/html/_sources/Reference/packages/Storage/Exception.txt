@@ -4,7 +4,7 @@ Omeka_Storage_Exception
 
 .. php:class:: Omeka_Storage_Exception
 
-    Package: :doc:`/Reference/packages/Storage/index`
+    Package: :doc:`Storage </Reference/packages/Storage/index>`
 
     .. php:attr:: message
     

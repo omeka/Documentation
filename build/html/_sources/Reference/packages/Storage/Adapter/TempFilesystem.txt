@@ -4,7 +4,7 @@ Omeka_Storage_Adapter_TempFilesystem
 
 .. php:class:: Omeka_Storage_Adapter_TempFilesystem
 
-    Package: :doc:`/Reference/packages/Storage\Adapter/index`
+    Package: :doc:`Storage\\Adapter </Reference/packages/Storage/Adapter/index>`
 
     Storage adapter that uses the system temp directory for its filesystem.
     

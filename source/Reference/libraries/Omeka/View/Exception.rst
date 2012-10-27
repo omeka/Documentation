@@ -4,7 +4,7 @@ Omeka_View_Exception
 
 .. php:class:: Omeka_View_Exception
 
-    Package: :doc:`/Reference/packages/View/index`
+    Package: :doc:`View </Reference/packages/View/index>`
 
     Exceptions thrown by Omeka view code and helpers.
 

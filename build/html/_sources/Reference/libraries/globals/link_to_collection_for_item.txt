@@ -2,11 +2,13 @@
 link_to_collection_for_item
 ###########################
 
+:doc:`Link-related functions </Reference/packages/Function/View/Body/Navigation/Link/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/link_to_collection_for_item.rst
+.. include:: /Reference/libraries/globals/summary/link_to_collection_for_item.rst
 
 .. php:function:: link_to_collection_for_item(string|null $text, array $props = Array, string $action = show)
 
@@ -24,17 +26,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/link_to_collection_for_item.rst
+.. include:: /Reference/libraries/globals/usage/link_to_collection_for_item.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/link_to_collection_for_item.rst
+.. include:: /Reference/libraries/globals/examples/link_to_collection_for_item.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/link_to_collection_for_item.rst
+.. include:: /Reference/libraries/globals/see_also/link_to_collection_for_item.rst
 

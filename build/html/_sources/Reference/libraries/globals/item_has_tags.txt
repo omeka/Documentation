@@ -2,11 +2,13 @@
 item_has_tags
 #############
 
+:doc:`Item-related functions </Reference/packages/Function/View/Body/Item/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/item_has_tags.rst
+.. include:: /Reference/libraries/globals/summary/item_has_tags.rst
 
 .. php:function:: item_has_tags(Item|null $item)
 
@@ -19,17 +21,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/item_has_tags.rst
+.. include:: /Reference/libraries/globals/usage/item_has_tags.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/item_has_tags.rst
+.. include:: /Reference/libraries/globals/examples/item_has_tags.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/item_has_tags.rst
+.. include:: /Reference/libraries/globals/see_also/item_has_tags.rst
 

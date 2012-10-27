@@ -2,11 +2,13 @@
 get_specific_plugin_hook_output
 ###############################
 
+:doc:`Plugin-related functions </Reference/packages/Function/Plugin/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_specific_plugin_hook_output.rst
+.. include:: /Reference/libraries/globals/summary/get_specific_plugin_hook_output.rst
 
 .. php:function:: get_specific_plugin_hook_output()
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_specific_plugin_hook_output.rst
+.. include:: /Reference/libraries/globals/usage/get_specific_plugin_hook_output.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_specific_plugin_hook_output.rst
+.. include:: /Reference/libraries/globals/examples/get_specific_plugin_hook_output.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_specific_plugin_hook_output.rst
+.. include:: /Reference/libraries/globals/see_also/get_specific_plugin_hook_output.rst
 

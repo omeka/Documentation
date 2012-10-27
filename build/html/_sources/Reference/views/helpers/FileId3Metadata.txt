@@ -4,7 +4,7 @@ Omeka_View_Helper_FileId3Metadata
 
 .. php:class:: Omeka_View_Helper_FileId3Metadata
 
-    Package: :doc:`/Reference/packages/View\Helper/index`
+    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
     Helper used to retrieve file metadata for display.
 

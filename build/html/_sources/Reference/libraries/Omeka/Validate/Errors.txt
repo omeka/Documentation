@@ -4,7 +4,7 @@ Omeka_Validate_Errors
 
 .. php:class:: Omeka_Validate_Errors
 
-    Package: :doc:`/Reference/packages/Validate/index`
+    Package: :doc:`Validate </Reference/packages/Validate/index>`
 
     This is an object wrapper for validation errors.  The primary advantage
     to having this class is that casting it to a string will convert the errors

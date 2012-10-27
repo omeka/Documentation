@@ -2,11 +2,13 @@
 has_loop_records
 ################
 
+:doc:`Loop-related functions </Reference/packages/Function/View/Body/Loop/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/has_loop_records.rst
+.. include:: /Reference/libraries/globals/summary/has_loop_records.rst
 
 .. php:function:: has_loop_records(string $recordsVar)
 
@@ -19,17 +21,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/has_loop_records.rst
+.. include:: /Reference/libraries/globals/usage/has_loop_records.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/has_loop_records.rst
+.. include:: /Reference/libraries/globals/examples/has_loop_records.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/has_loop_records.rst
+.. include:: /Reference/libraries/globals/see_also/has_loop_records.rst
 

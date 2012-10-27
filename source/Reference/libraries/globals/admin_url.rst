@@ -2,11 +2,13 @@
 admin_url
 #########
 
+:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/admin_url.rst
+.. include:: /Reference/libraries/globals/summary/admin_url.rst
 
 .. php:function:: admin_url()
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/admin_url.rst
+.. include:: /Reference/libraries/globals/usage/admin_url.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/admin_url.rst
+.. include:: /Reference/libraries/globals/examples/admin_url.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/admin_url.rst
+.. include:: /Reference/libraries/globals/see_also/admin_url.rst
 

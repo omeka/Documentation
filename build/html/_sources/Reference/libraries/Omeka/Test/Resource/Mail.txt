@@ -4,7 +4,7 @@ Omeka_Test_Resource_Mail
 
 .. php:class:: Omeka_Test_Resource_Mail
 
-    Package: :doc:`/Reference/packages/Test\Resource/index`
+    Package: :doc:`Test\\Resource </Reference/packages/Test/Resource/index>`
 
     Testing resource for saving mail to the filesystem.
 

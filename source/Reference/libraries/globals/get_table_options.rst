@@ -2,11 +2,13 @@
 get_table_options
 #################
 
+:doc:`Form-related functions </Reference/packages/Function/View/Body/Form/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_table_options.rst
+.. include:: /Reference/libraries/globals/summary/get_table_options.rst
 
 .. php:function:: get_table_options(string $tableClass, string $labelOption, array $searchParams = Array)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_table_options.rst
+.. include:: /Reference/libraries/globals/usage/get_table_options.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_table_options.rst
+.. include:: /Reference/libraries/globals/examples/get_table_options.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_table_options.rst
+.. include:: /Reference/libraries/globals/see_also/get_table_options.rst
 

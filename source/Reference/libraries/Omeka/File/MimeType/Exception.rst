@@ -4,7 +4,7 @@ Omeka_File_MimeType_Exception
 
 .. php:class:: Omeka_File_MimeType_Exception
 
-    Package: :doc:`/Reference/packages/File\MimeType/index`
+    Package: :doc:`File\\MimeType </Reference/packages/File/MimeType/index>`
 
     .. php:attr:: message
     

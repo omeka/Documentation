@@ -4,6 +4,8 @@ Mixin_Owner
 
 .. php:class:: Mixin_Owner
 
+    Package: :doc:`Record\\Mixin </Reference/packages/Record/Mixin/index>`
+
     Mixin for models that have a user that is their "owner."
 
     .. php:attr:: _record
@@ -43,4 +45,3 @@ Mixin_Owner
         
         :param User $user: 
         :returns: boolean
-

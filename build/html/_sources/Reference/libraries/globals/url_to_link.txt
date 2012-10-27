@@ -2,11 +2,13 @@
 url_to_link
 ###########
 
+:doc:`Text-related functions </Reference/packages/Function/Text/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/url_to_link.rst
+.. include:: /Reference/libraries/globals/summary/url_to_link.rst
 
 .. php:function:: url_to_link(string $str)
 
@@ -19,17 +21,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/url_to_link.rst
+.. include:: /Reference/libraries/globals/usage/url_to_link.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/url_to_link.rst
+.. include:: /Reference/libraries/globals/examples/url_to_link.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/url_to_link.rst
+.. include:: /Reference/libraries/globals/see_also/url_to_link.rst
 

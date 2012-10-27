@@ -2,11 +2,13 @@
 output_format_list
 ##################
 
+:doc:`OutputFormat-related functions </Reference/packages/Function/View/OutputFormat/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/output_format_list.rst
+.. include:: /Reference/libraries/globals/summary/output_format_list.rst
 
 .. php:function:: output_format_list(bool $list = 1, string $delimiter =  | )
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/output_format_list.rst
+.. include:: /Reference/libraries/globals/usage/output_format_list.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/output_format_list.rst
+.. include:: /Reference/libraries/globals/examples/output_format_list.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/output_format_list.rst
+.. include:: /Reference/libraries/globals/see_also/output_format_list.rst
 

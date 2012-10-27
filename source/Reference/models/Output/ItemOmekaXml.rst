@@ -4,7 +4,7 @@ Output_ItemOmekaXml
 
 .. php:class:: Output_ItemOmekaXml
 
-    Package: :doc:`/Reference/packages/Output/index`
+    Package: :doc:`Output </Reference/packages/Output/index>`
 
     Generates the omeka-xml output for Item records.
 

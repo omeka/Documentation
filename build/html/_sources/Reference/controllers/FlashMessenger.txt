@@ -4,6 +4,8 @@ Omeka_Controller_Action_Helper_FlashMessenger
 
 .. php:class:: Omeka_Controller_Action_Helper_FlashMessenger
 
+    Package: :doc:`Controller\\ActionHelper </Reference/packages/Controller/ActionHelper/index>`
+
     FlashMessenger action helper.
 
     .. php:attr:: _messenger
@@ -59,4 +61,3 @@ Omeka_Controller_Action_Helper_FlashMessenger
         :param unknown $message: 
         :param unknown $status: 
         :returns: void
-

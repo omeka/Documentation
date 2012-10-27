@@ -2,11 +2,13 @@
 common
 ######
 
+:doc:`View-related functions </Reference/packages/Function/View/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/common.rst
+.. include:: /Reference/libraries/globals/summary/common.rst
 
 .. php:function:: common(string $file, array $vars = Array, string $dir = common)
 
@@ -22,17 +24,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/common.rst
+.. include:: /Reference/libraries/globals/usage/common.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/common.rst
+.. include:: /Reference/libraries/globals/examples/common.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/common.rst
+.. include:: /Reference/libraries/globals/see_also/common.rst
 

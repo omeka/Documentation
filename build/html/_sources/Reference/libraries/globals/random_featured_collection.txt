@@ -2,11 +2,13 @@
 random_featured_collection
 ##########################
 
+:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/random_featured_collection.rst
+.. include:: /Reference/libraries/globals/summary/random_featured_collection.rst
 
 .. php:function:: random_featured_collection()
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/random_featured_collection.rst
+.. include:: /Reference/libraries/globals/usage/random_featured_collection.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/random_featured_collection.rst
+.. include:: /Reference/libraries/globals/examples/random_featured_collection.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/random_featured_collection.rst
+.. include:: /Reference/libraries/globals/see_also/random_featured_collection.rst
 

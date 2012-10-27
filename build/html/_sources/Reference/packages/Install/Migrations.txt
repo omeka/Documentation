@@ -4,7 +4,7 @@ Installer_Task_Migrations
 
 .. php:class:: Installer_Task_Migrations
 
-    Package: :doc:`/Reference/packages/Install/index`
+    Package: :doc:`Install </Reference/packages/Install/index>`
 
     .. php:method:: install(Omeka_Db $db)
     

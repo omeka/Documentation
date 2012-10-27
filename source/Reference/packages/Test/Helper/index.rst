@@ -1,9 +1,16 @@
-#######################################
-Test\Helper
-#######################################
+############
+Test\\Helper
+############
+
+Up to :doc:`../index`
 
 .. toctree::
-    :glob:
 
-    *
-    */index
+   /Reference/libraries/Omeka/Test/Helper/Db.rst
+   /Reference/libraries/Omeka/Test/Helper/DbProfiler.rst
+   /Reference/libraries/Omeka/Test/Helper/Mail.rst
+   /Reference/libraries/Omeka/Test/Helper/Plugin.rst
+.. toctree::
+   :glob:
+
+   */index

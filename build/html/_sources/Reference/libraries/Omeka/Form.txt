@@ -4,7 +4,7 @@ Omeka_Form
 
 .. php:class:: Omeka_Form
 
-    Package: :doc:`/Reference/packages/Form/index`
+    Package: :doc:`Form </Reference/packages/Form/index>`
 
     A Zend_Form subclass that sets up forms to be properly displayed in Omeka.
 

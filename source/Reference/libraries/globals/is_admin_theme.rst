@@ -2,11 +2,13 @@
 is_admin_theme
 ##############
 
+:doc:`View-related functions </Reference/packages/Function/View/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/is_admin_theme.rst
+.. include:: /Reference/libraries/globals/summary/is_admin_theme.rst
 
 .. php:function:: is_admin_theme()
 
@@ -22,17 +24,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/is_admin_theme.rst
+.. include:: /Reference/libraries/globals/usage/is_admin_theme.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/is_admin_theme.rst
+.. include:: /Reference/libraries/globals/examples/is_admin_theme.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/is_admin_theme.rst
+.. include:: /Reference/libraries/globals/see_also/is_admin_theme.rst
 

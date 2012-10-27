@@ -2,11 +2,13 @@
 html_escape
 ###########
 
+:doc:`Text-related functions </Reference/packages/Function/Text/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/html_escape.rst
+.. include:: /Reference/libraries/globals/summary/html_escape.rst
 
 .. php:function:: html_escape(string $value)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/html_escape.rst
+.. include:: /Reference/libraries/globals/usage/html_escape.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/html_escape.rst
+.. include:: /Reference/libraries/globals/examples/html_escape.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/html_escape.rst
+.. include:: /Reference/libraries/globals/see_also/html_escape.rst
 

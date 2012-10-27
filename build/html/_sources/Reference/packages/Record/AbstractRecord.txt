@@ -4,7 +4,7 @@ Omeka_Record_AbstractRecord
 
 .. php:class:: Omeka_Record_AbstractRecord
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     A base class for domain objects, inspired by, though not strictly adherent 
     to, the ActiveRecord pattern.

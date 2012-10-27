@@ -4,7 +4,7 @@ Omeka_Job_Dispatcher_Adapter_Synchronous
 
 .. php:class:: Omeka_Job_Dispatcher_Adapter_Synchronous
 
-    Package: :doc:`/Reference/packages/Job\Dispatcher\Adapter/index`
+    Package: :doc:`Job\\Dispatcher\\Adapter </Reference/packages/Job/Dispatcher/Adapter/index>`
 
     Dispatcher for executing jobs in real-time, i.e. executing within the browser 
     request.

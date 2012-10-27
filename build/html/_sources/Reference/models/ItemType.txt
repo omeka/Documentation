@@ -4,7 +4,7 @@ ItemType
 
 .. php:class:: ItemType
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     An item type and its metadata.
 

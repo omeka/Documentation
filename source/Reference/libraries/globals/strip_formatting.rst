@@ -2,11 +2,13 @@
 strip_formatting
 ################
 
+:doc:`Text-related functions </Reference/packages/Function/Text/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/strip_formatting.rst
+.. include:: /Reference/libraries/globals/summary/strip_formatting.rst
 
 .. php:function:: strip_formatting(string $str, string $allowableTags = , string $fallbackStr = )
 
@@ -24,17 +26,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/strip_formatting.rst
+.. include:: /Reference/libraries/globals/usage/strip_formatting.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/strip_formatting.rst
+.. include:: /Reference/libraries/globals/examples/strip_formatting.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/strip_formatting.rst
+.. include:: /Reference/libraries/globals/see_also/strip_formatting.rst
 

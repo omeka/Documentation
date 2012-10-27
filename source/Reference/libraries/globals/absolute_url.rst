@@ -2,11 +2,13 @@
 absolute_url
 ############
 
+:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/absolute_url.rst
+.. include:: /Reference/libraries/globals/summary/absolute_url.rst
 
 .. php:function:: absolute_url(mixed $options = Array, string $route, mixed $queryParams = Array, bool $reset = , bool $encode = 1)
 
@@ -34,17 +36,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/absolute_url.rst
+.. include:: /Reference/libraries/globals/usage/absolute_url.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/absolute_url.rst
+.. include:: /Reference/libraries/globals/examples/absolute_url.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/absolute_url.rst
+.. include:: /Reference/libraries/globals/see_also/absolute_url.rst
 

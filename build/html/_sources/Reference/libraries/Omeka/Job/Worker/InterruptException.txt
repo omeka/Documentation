@@ -4,7 +4,7 @@ Omeka_Job_Worker_InterruptException
 
 .. php:class:: Omeka_Job_Worker_InterruptException
 
-    Package: :doc:`/Reference/packages/Job\Worker/index`
+    Package: :doc:`Job\\Worker </Reference/packages/Job/Worker/index>`
 
     Exception thrown when the type of job could not be inferred from the message 
     passed to the factory.

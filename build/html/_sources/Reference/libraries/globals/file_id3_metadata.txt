@@ -2,11 +2,13 @@
 file_id3_metadata
 #################
 
+:doc:`File-related functions </Reference/packages/Function/View/Body/Item/File/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/file_id3_metadata.rst
+.. include:: /Reference/libraries/globals/summary/file_id3_metadata.rst
 
 .. php:function:: file_id3_metadata(array $options = Array, File|null $file)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/file_id3_metadata.rst
+.. include:: /Reference/libraries/globals/usage/file_id3_metadata.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/file_id3_metadata.rst
+.. include:: /Reference/libraries/globals/examples/file_id3_metadata.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/file_id3_metadata.rst
+.. include:: /Reference/libraries/globals/see_also/file_id3_metadata.rst
 

@@ -1,11 +1,49 @@
-
-
-#################
+########
 Packages
-#################
+########
 
 .. toctree::
-    :glob:
-    
-    *
-    */index
+    :maxdepth: 1
+
+    Acl
+    Application
+    Application\\Resource
+    Auth
+    Captcha
+    Controller
+    Controller\\Plugin
+    Db
+    Db\\Migration
+    Db\\Table
+    File\\Derivative
+    File\\Ingest
+    File\\MimeType
+    File\\MimeType\\Detect
+    Filter
+    Form
+    Http
+    Install
+    Install\\Task
+    Job
+    Job\\Dispatcher
+    Job\\Dispatcher\\Adapter
+    Job\\Factory
+    Job\\Process
+    Job\\Worker
+    Navigation
+    Output
+    Plugin
+    Plugin\\Broker
+    Plugin\\Installer
+    Plugin\\Loader
+    Record
+    Record\\Builder
+    Record\\Mixin
+    Session
+    Storage
+    Storage\\Adapter
+    Test
+    Test\\Helper
+    Test\\Resource
+    Validate
+    View

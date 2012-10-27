@@ -4,7 +4,7 @@ Process
 
 .. php:class:: Process
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     A process and its metadata.
 

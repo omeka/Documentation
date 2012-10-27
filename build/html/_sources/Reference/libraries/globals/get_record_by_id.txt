@@ -2,11 +2,13 @@
 get_record_by_id
 ################
 
+:doc:`Db-related functions </Reference/packages/Function/Db/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_record_by_id.rst
+.. include:: /Reference/libraries/globals/summary/get_record_by_id.rst
 
 .. php:function:: get_record_by_id(string $recordVar, int $recordId)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_record_by_id.rst
+.. include:: /Reference/libraries/globals/usage/get_record_by_id.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_record_by_id.rst
+.. include:: /Reference/libraries/globals/examples/get_record_by_id.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_record_by_id.rst
+.. include:: /Reference/libraries/globals/see_also/get_record_by_id.rst
 

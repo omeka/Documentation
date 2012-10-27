@@ -4,6 +4,8 @@ Installer_Task_User
 
 .. php:class:: Installer_Task_User
 
+    Package: :doc:`Install\\Task </Reference/packages/Install/Task/index>`
+
     Create a default user for an Omeka installation.
 
     .. php:attr:: _username
@@ -61,4 +63,3 @@ Installer_Task_User
     .. php:method:: install(Omeka_Db $db)
     
         :param Omeka_Db $db:
-

@@ -2,11 +2,13 @@
 insert_item
 ###########
 
+:doc:`Item-related functions </Reference/packages/Function/Db/Item/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/insert_item.rst
+.. include:: /Reference/libraries/globals/summary/insert_item.rst
 
 .. php:function:: insert_item(array $metadata = Array, array $elementTexts = Array, array $fileMetadata = Array)
 
@@ -80,17 +82,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/insert_item.rst
+.. include:: /Reference/libraries/globals/usage/insert_item.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/insert_item.rst
+.. include:: /Reference/libraries/globals/examples/insert_item.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/insert_item.rst
+.. include:: /Reference/libraries/globals/see_also/insert_item.rst
 

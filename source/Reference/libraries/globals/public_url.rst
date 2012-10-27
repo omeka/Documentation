@@ -2,11 +2,13 @@
 public_url
 ##########
 
+:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/public_url.rst
+.. include:: /Reference/libraries/globals/summary/public_url.rst
 
 .. php:function:: public_url()
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/public_url.rst
+.. include:: /Reference/libraries/globals/usage/public_url.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/public_url.rst
+.. include:: /Reference/libraries/globals/examples/public_url.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/public_url.rst
+.. include:: /Reference/libraries/globals/see_also/public_url.rst
 

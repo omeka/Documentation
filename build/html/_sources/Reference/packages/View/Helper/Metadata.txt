@@ -4,7 +4,7 @@ Omeka_View_Helper_Metadata
 
 .. php:class:: Omeka_View_Helper_Metadata
 
-    Package: :doc:`/Reference/packages/View\Helper/index`
+    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
     Helper used to retrieve record metadata for for display.
 

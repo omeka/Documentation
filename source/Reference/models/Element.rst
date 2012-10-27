@@ -4,7 +4,7 @@ Element
 
 .. php:class:: Element
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     An element and its metadata.
 

@@ -4,7 +4,7 @@ Omeka_Controller_Plugin_Ssl
 
 .. php:class:: Omeka_Controller_Plugin_Ssl
 
-    Package: :doc:`/Reference/packages/Controller\Plugin/index`
+    Package: :doc:`Controller\\Plugin </Reference/packages/Controller/Plugin/index>`
 
     Handle SSL configuration for Omeka sites.
 

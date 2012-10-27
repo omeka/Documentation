@@ -24,6 +24,9 @@
     <script type="text/javascript" src="../../../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" />
+    <link rel="up" title="Record\Mixin" href="index.html" />
+    <link rel="next" title="Mixin_Owner" href="Owner.html" />
+    <link rel="prev" title="Omeka_Record_Mixin_AbstractMixin" href="AbstractMixin.html" />
     <link rel="stylesheet" href="../../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -34,12 +37,22 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Owner.html" title="Mixin_Owner"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="AbstractMixin.html" title="Omeka_Record_Mixin_AbstractMixin"
+             accesskey="P">previous</a> |</li>
     
         <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
- 
+
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../../index.html" >Packages</a> &raquo;</li>
+          <li><a href="../index.html" >Record</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Record\Mixin</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -53,7 +66,7 @@
 <dl class="class">
 <dt id="Mixin_ElementText">
 <em class="property">class </em><tt class="descname">Mixin_ElementText</tt><a class="headerlink" href="#Mixin_ElementText" title="Permalink to this definition">¶</a></dt>
-<dd><p>Package: <tt class="xref doc docutils literal"><span class="pre">/Reference/packages/RecordMixin/index</span></tt></p>
+<dd><p>Package: <a class="reference internal" href="index.html"><em>Record\Mixin</em></a></p>
 <p>Record mixin class for associating elements, element texts and their
 corresponding behaviors to a record.</p>
 <dl class="attr">
@@ -527,8 +540,8 @@ ElementText objects to the database.</p>
 that is keyed to an element&#8217;s ID.  That array should contain all the
 text values for that element. For example:</p>
 <p>&lt;code&gt;</p>
-<p>array(&#8216;Elements&#8217; =&gt;array(&#8216;50&#8217; =&gt; array(&#8216;text&#8217; =&gt; &#8216;Foobar&#8217;, //element id 50, e.g. DC:Title&#8217;html&#8217; =&gt; 0),&#8216;41&#8217; =&gt;
-array(&#8216;text&#8217; =&gt; &#8216;&lt;p&gt;Baz baz baz&lt;/p&gt;&#8217;, //element id 41, e.g. DC:Description&#8217;html&#8217; =&gt; 1)))</p>
+<p>array(&#8216;Elements&#8217; =&gt;array(&#8216;50&#8217; =&gt; array(array(&#8216;text&#8217; =&gt; &#8216;Foobar&#8217;, //element id 50, e.g. DC:Title&#8217;html&#8217; =&gt; 0)),&#8216;41&#8217; =&gt;
+array(array(&#8216;text&#8217; =&gt; &#8216;&lt;p&gt;Baz baz baz&lt;/p&gt;&#8217;, //element id 41, e.g. DC:Description&#8217;html&#8217; =&gt; 1))))</p>
 <p>&lt;/code&gt;</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -633,6 +646,48 @@ able to encapsulate the logic for validation of Elements.</p>
 </table>
 </dd></dl>
 
+<dl class="method">
+<dt id="Mixin_ElementText::hasElementText">
+<tt class="descname">hasElementText</tt><big>(</big><em>string $elementSetName</em>, <em>string $elementName</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::hasElementText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns whether or not the record has at least 1 element text</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementSetName</strong> (<em>string</em>) &#8211; Element set name</li>
+<li><strong>$elementName</strong> (<em>string</em>) &#8211; Element name</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Mixin_ElementText::getElementTextCount">
+<tt class="descname">getElementTextCount</tt><big>(</big><em>string $elementSetName</em>, <em>string $elementName</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::getElementTextCount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of element texts for the record</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$elementSetName</strong> (<em>string</em>) &#8211; Element set name</li>
+<li><strong>$elementName</strong> (<em>string</em>) &#8211; Element name</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
 </dd></dl>
 
 </div>
@@ -646,6 +701,12 @@ able to encapsulate the logic for validation of Elements.</p>
             <p class="logo"><a href="../../../../index.html">
               <img class="logo" src="../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="AbstractMixin.html"
+                        title="previous chapter">Omeka_Record_Mixin_AbstractMixin</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Owner.html"
+                        title="next chapter">Mixin_Owner</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -679,12 +740,22 @@ able to encapsulate the logic for validation of Elements.</p>
         <li class="right" style="margin-right: 10px">
           <a href="../../../../genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="Owner.html" title="Mixin_Owner"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="AbstractMixin.html" title="Omeka_Record_Mixin_AbstractMixin"
+             >previous</a> |</li>
     
         <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
- 
+
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../../index.html" >Packages</a> &raquo;</li>
+          <li><a href="../index.html" >Record</a> &raquo;</li>
+          <li><a href="index.html" >Record\Mixin</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

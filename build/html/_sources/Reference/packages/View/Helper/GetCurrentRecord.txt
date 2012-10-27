@@ -4,7 +4,7 @@ Omeka_View_Helper_GetCurrentRecord
 
 .. php:class:: Omeka_View_Helper_GetCurrentRecord
 
-    Package: :doc:`/Reference/packages/View\Helper/index`
+    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
     .. php:method:: getCurrentRecord(string $recordVar, bool $throwException = 1)
     

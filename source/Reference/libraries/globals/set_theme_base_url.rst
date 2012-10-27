@@ -2,11 +2,13 @@
 set_theme_base_url
 ##################
 
+:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/set_theme_base_url.rst
+.. include:: /Reference/libraries/globals/summary/set_theme_base_url.rst
 
 .. php:function:: set_theme_base_url(string $theme)
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/set_theme_base_url.rst
+.. include:: /Reference/libraries/globals/usage/set_theme_base_url.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/set_theme_base_url.rst
+.. include:: /Reference/libraries/globals/examples/set_theme_base_url.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/set_theme_base_url.rst
+.. include:: /Reference/libraries/globals/see_also/set_theme_base_url.rst
 

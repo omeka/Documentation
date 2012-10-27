@@ -4,7 +4,7 @@ RecordsTags
 
 .. php:class:: RecordsTags
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     A records tags and its metadata.
 

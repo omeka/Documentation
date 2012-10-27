@@ -4,7 +4,7 @@ Omeka_Controller_AbstractActionController
 
 .. php:class:: Omeka_Controller_AbstractActionController
 
-    Package: :doc:`/Reference/packages/Controller/index`
+    Package: :doc:`Controller </Reference/packages/Controller/index>`
 
     Base class for Omeka controllers.
     

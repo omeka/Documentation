@@ -2,11 +2,13 @@
 current_url
 ###########
 
+:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/current_url.rst
+.. include:: /Reference/libraries/globals/summary/current_url.rst
 
 .. php:function:: current_url(array $params = Array)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/current_url.rst
+.. include:: /Reference/libraries/globals/usage/current_url.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/current_url.rst
+.. include:: /Reference/libraries/globals/examples/current_url.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/current_url.rst
+.. include:: /Reference/libraries/globals/see_also/current_url.rst
 

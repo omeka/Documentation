@@ -2,11 +2,13 @@
 latest_omeka_version
 ####################
 
+:doc:`Application-related functions </Reference/packages/Function/Application/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/latest_omeka_version.rst
+.. include:: /Reference/libraries/globals/summary/latest_omeka_version.rst
 
 .. php:function:: latest_omeka_version()
 
@@ -19,17 +21,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/latest_omeka_version.rst
+.. include:: /Reference/libraries/globals/usage/latest_omeka_version.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/latest_omeka_version.rst
+.. include:: /Reference/libraries/globals/examples/latest_omeka_version.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/latest_omeka_version.rst
+.. include:: /Reference/libraries/globals/see_also/latest_omeka_version.rst
 

@@ -4,6 +4,8 @@ Mixin_Timestamp
 
 .. php:class:: Mixin_Timestamp
 
+    Package: :doc:`Record\\Mixin </Reference/packages/Record/Mixin/index>`
+
     Mixin for models that keep added and/or modified timestamps.
 
     .. php:attr:: _record
@@ -22,7 +24,7 @@ Mixin_Timestamp
     
         Initialize the mixin.
         
-        Setting either of the column parameters to null will skip updating that timestamp. The default column names are
+        Setting either of the column parameters to null will skip updating thattimestamp. The default column names are
         'updated' and 'added'.
         
         :param Omeka_Record_AbstractRecord $record: 
@@ -40,4 +42,3 @@ Mixin_Timestamp
         Update a timestamp column for the underlying record.
         
         :param string $column: Column to update.
-

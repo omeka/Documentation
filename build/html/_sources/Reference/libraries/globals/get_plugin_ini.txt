@@ -2,11 +2,13 @@
 get_plugin_ini
 ##############
 
+:doc:`Plugin-related functions </Reference/packages/Function/Plugin/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_plugin_ini.rst
+.. include:: /Reference/libraries/globals/summary/get_plugin_ini.rst
 
 .. php:function:: get_plugin_ini(string $pluginDirName, string $iniKeyName)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_plugin_ini.rst
+.. include:: /Reference/libraries/globals/usage/get_plugin_ini.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_plugin_ini.rst
+.. include:: /Reference/libraries/globals/examples/get_plugin_ini.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_plugin_ini.rst
+.. include:: /Reference/libraries/globals/see_also/get_plugin_ini.rst
 

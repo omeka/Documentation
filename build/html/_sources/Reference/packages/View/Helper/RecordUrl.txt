@@ -4,7 +4,7 @@ Omeka_View_Helper_RecordUrl
 
 .. php:class:: Omeka_View_Helper_RecordUrl
 
-    Package: :doc:`/Reference/packages/View\Helper/index`
+    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
     .. php:method:: recordUrl(Omeka_Record_AbstractRecord|string $record, string|null $action, bool $getAbsoluteUrl = )
     

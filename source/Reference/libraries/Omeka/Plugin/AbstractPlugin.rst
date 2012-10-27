@@ -4,7 +4,7 @@ Omeka_Plugin_AbstractPlugin
 
 .. php:class:: Omeka_Plugin_AbstractPlugin
 
-    Package: :doc:`/Reference/packages/Plugin/index`
+    Package: :doc:`Plugin </Reference/packages/Plugin/index>`
 
     Abstract plugin class.
     

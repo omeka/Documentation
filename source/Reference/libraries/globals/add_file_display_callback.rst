@@ -2,11 +2,13 @@
 add_file_display_callback
 #########################
 
+:doc:`File-related functions </Reference/packages/Function/View/Body/Item/File/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/add_file_display_callback.rst
+.. include:: /Reference/libraries/globals/summary/add_file_display_callback.rst
 
 .. php:function:: add_file_display_callback(array|string $fileIdentifiers, callback $callback, array $options = Array)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/add_file_display_callback.rst
+.. include:: /Reference/libraries/globals/usage/add_file_display_callback.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/add_file_display_callback.rst
+.. include:: /Reference/libraries/globals/examples/add_file_display_callback.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/add_file_display_callback.rst
+.. include:: /Reference/libraries/globals/see_also/add_file_display_callback.rst
 

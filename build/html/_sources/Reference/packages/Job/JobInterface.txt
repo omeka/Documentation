@@ -4,7 +4,7 @@ Omeka_Job_JobInterface
 
 .. php:class:: Omeka_Job_JobInterface
 
-    Package: :doc:`/Reference/packages/Job/index`
+    Package: :doc:`Job </Reference/packages/Job/index>`
 
     Interface for jobs.
 

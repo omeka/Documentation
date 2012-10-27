@@ -2,11 +2,13 @@
 current_user
 ############
 
+:doc:`User-related functions </Reference/packages/Function/User/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/current_user.rst
+.. include:: /Reference/libraries/globals/summary/current_user.rst
 
 .. php:function:: current_user()
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/current_user.rst
+.. include:: /Reference/libraries/globals/usage/current_user.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/current_user.rst
+.. include:: /Reference/libraries/globals/examples/current_user.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/current_user.rst
+.. include:: /Reference/libraries/globals/see_also/current_user.rst
 

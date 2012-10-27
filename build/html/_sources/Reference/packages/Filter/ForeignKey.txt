@@ -4,7 +4,7 @@ Omeka_Filter_ForeignKey
 
 .. php:class:: Omeka_Filter_ForeignKey
 
-    Package: :doc:`/Reference/packages/Filter/index`
+    Package: :doc:`Filter </Reference/packages/Filter/index>`
 
     Converts input into values suitable for use as Omeka 'id' key values.
 

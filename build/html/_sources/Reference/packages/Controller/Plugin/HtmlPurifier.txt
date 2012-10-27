@@ -4,7 +4,7 @@ Omeka_Controller_Plugin_HtmlPurifier
 
 .. php:class:: Omeka_Controller_Plugin_HtmlPurifier
 
-    Package: :doc:`/Reference/packages/Controller\Plugin/index`
+    Package: :doc:`Controller\\Plugin </Reference/packages/Controller/Plugin/index>`
 
     This ZF controller plugin allows the HtmlPurifier to filter the existing 
     forms (items, collections, users, etc.) so that fields that are allowed to 
@@ -36,8 +36,7 @@ Omeka_Controller_Plugin_HtmlPurifier
 
     .. php:method:: filterCollectionsForm(Zend_Controller_Request_Abstract $request, Omeka_Filter_HtmlPurifier $htmlPurifierFilter)
     
-        Title = Plain text.
-        Description = HTML.
+        Filter the Collections form post, including the 'Elements' array of the POST.
         
         :param Zend_Controller_Request_Abstract $request: 
         :param Omeka_Filter_HtmlPurifier $htmlPurifierFilter: 
@@ -61,9 +60,17 @@ Omeka_Controller_Plugin_HtmlPurifier
 
     .. php:method:: filterItemsForm(Zend_Controller_Request_Abstract $request, Omeka_Filter_HtmlPurifier $htmlPurifierFilter)
     
-        Filter the 'Elements' array of the POST.
+        Filter the Items form post, including the 'Elements' array of the POST.
         
         :param Zend_Controller_Request_Abstract $request: 
+        :param Omeka_Filter_HtmlPurifier $htmlPurifierFilter: 
+        :returns: void
+
+    .. php:method:: _filterElementsFromPost(Zend_Controller_Request_Abstract $post, Omeka_Filter_HtmlPurifier $htmlPurifierFilter)
+    
+        Filter the 'Elements' array of the POST.
+        
+        :param Zend_Controller_Request_Abstract $post: 
         :param Omeka_Filter_HtmlPurifier $htmlPurifierFilter: 
         :returns: void
 

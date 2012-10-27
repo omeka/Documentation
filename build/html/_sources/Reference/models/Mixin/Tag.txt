@@ -4,7 +4,7 @@ Mixin_Tag
 
 .. php:class:: Mixin_Tag
 
-    Package: :doc:`/Reference/packages/Record\Mixin/index`
+    Package: :doc:`Record\\Mixin </Reference/packages/Record/Mixin/index>`
 
     .. php:attr:: _tagTable
     

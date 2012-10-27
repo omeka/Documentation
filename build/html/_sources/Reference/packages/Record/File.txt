@@ -4,7 +4,7 @@ File
 
 .. php:class:: File
 
-    Package: :doc:`/Reference/packages/Record/index`
+    Package: :doc:`Record </Reference/packages/Record/index>`
 
     A file and its metadata.
 

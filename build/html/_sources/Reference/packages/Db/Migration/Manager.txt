@@ -4,7 +4,7 @@ Omeka_Db_Migration_Manager
 
 .. php:class:: Omeka_Db_Migration_Manager
 
-    Package: :doc:`/Reference/packages/Db\Migration/index`
+    Package: :doc:`Db\\Migration </Reference/packages/Db/Migration/index>`
 
     Manages database migrations (both upgrades and downgrades).
 

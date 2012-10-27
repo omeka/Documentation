@@ -4,7 +4,7 @@ Omeka_Navigation_Page_Uri
 
 .. php:class:: Omeka_Navigation_Page_Uri
 
-    Package: :doc:`/Reference/packages/Navigation/index`
+    Package: :doc:`Navigation </Reference/packages/Navigation/index>`
 
     Customized subclass of Zend Framework's Zend_Navigation_Page_Uri class.
 

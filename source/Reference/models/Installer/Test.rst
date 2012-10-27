@@ -4,7 +4,7 @@ Installer_Test
 
 .. php:class:: Installer_Test
 
-    Package: :doc:`/Reference/packages/Install/index`
+    Package: :doc:`Install </Reference/packages/Install/index>`
 
     Installer for test cases that require database access.
 

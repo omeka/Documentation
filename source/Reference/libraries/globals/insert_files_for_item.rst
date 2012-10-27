@@ -2,11 +2,13 @@
 insert_files_for_item
 #####################
 
+:doc:`Item-related functions </Reference/packages/Function/Db/Item/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/insert_files_for_item.rst
+.. include:: /Reference/libraries/globals/summary/insert_files_for_item.rst
 
 .. php:function:: insert_files_for_item(Item|integer $item, string|Omeka_File_Ingest_AbstractIngest $transferStrategy, array $files, array $options = Array)
 
@@ -31,17 +33,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/insert_files_for_item.rst
+.. include:: /Reference/libraries/globals/usage/insert_files_for_item.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/insert_files_for_item.rst
+.. include:: /Reference/libraries/globals/examples/insert_files_for_item.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/insert_files_for_item.rst
+.. include:: /Reference/libraries/globals/see_also/insert_files_for_item.rst
 

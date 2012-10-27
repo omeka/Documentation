@@ -4,7 +4,7 @@ Omeka_Record_Builder_Exception
 
 .. php:class:: Omeka_Record_Builder_Exception
 
-    Package: :doc:`/Reference/packages/Record\Builder/index`
+    Package: :doc:`Record\\Builder </Reference/packages/Record/Builder/index>`
 
     Exception thrown when there is an error creating a Record using
     {@link Omeka_Record_Builder_AbstractBuilder}.

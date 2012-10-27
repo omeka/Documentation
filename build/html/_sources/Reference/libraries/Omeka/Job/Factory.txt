@@ -4,7 +4,7 @@ Omeka_Job_Factory
 
 .. php:class:: Omeka_Job_Factory
 
-    Package: :doc:`/Reference/packages/Job\Factory/index`
+    Package: :doc:`Job\\Factory </Reference/packages/Job/Factory/index>`
 
     Factory for instantiating Omeka_Job instances.
 

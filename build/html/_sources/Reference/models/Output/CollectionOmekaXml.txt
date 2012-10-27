@@ -4,7 +4,7 @@ Output_CollectionOmekaXml
 
 .. php:class:: Output_CollectionOmekaXml
 
-    Package: :doc:`/Reference/packages/Output/index`
+    Package: :doc:`Output </Reference/packages/Output/index>`
 
     Generates the omeka-xml output for a collection.
 

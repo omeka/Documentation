@@ -2,11 +2,13 @@
 file_display_url
 ################
 
+:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/file_display_url.rst
+.. include:: /Reference/libraries/globals/summary/file_display_url.rst
 
 .. php:function:: file_display_url(File $file, string $format = fullsize)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/file_display_url.rst
+.. include:: /Reference/libraries/globals/usage/file_display_url.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/file_display_url.rst
+.. include:: /Reference/libraries/globals/examples/file_display_url.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/file_display_url.rst
+.. include:: /Reference/libraries/globals/see_also/file_display_url.rst
 

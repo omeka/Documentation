@@ -4,7 +4,7 @@ Omeka_Auth_Adapter_UserTable
 
 .. php:class:: Omeka_Auth_Adapter_UserTable
 
-    Package: :doc:`/Reference/packages/Auth/index`
+    Package: :doc:`Auth </Reference/packages/Auth/index>`
 
     Auth adapter that uses Omeka's users table for authentication.
 

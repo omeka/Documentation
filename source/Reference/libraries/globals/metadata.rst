@@ -2,11 +2,13 @@
 metadata
 ########
 
+:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/metadata.rst
+.. include:: /Reference/libraries/globals/summary/metadata.rst
 
 .. php:function:: metadata(Omeka_Record_AbstractRecord|string $record, mixed $metadata, array $options = Array)
 
@@ -21,17 +23,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/metadata.rst
+.. include:: /Reference/libraries/globals/usage/metadata.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/metadata.rst
+.. include:: /Reference/libraries/globals/examples/metadata.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/metadata.rst
+.. include:: /Reference/libraries/globals/see_also/metadata.rst
 

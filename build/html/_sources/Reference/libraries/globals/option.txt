@@ -2,11 +2,13 @@
 option
 ######
 
+:doc:`Option-related functions </Reference/packages/Function/View/Option/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/option.rst
+.. include:: /Reference/libraries/globals/summary/option.rst
 
 .. php:function:: option(string $name)
 
@@ -23,17 +25,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/option.rst
+.. include:: /Reference/libraries/globals/usage/option.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/option.rst
+.. include:: /Reference/libraries/globals/examples/option.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/option.rst
+.. include:: /Reference/libraries/globals/see_also/option.rst
 

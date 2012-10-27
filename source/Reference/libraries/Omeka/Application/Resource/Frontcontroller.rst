@@ -4,7 +4,7 @@ Omeka_Application_Resource_Frontcontroller
 
 .. php:class:: Omeka_Application_Resource_Frontcontroller
 
-    Package: :doc:`/Reference/packages/Application\Resource/index`
+    Package: :doc:`Application\\Resource </Reference/packages/Application/Resource/index>`
 
     Front controller resource.
 

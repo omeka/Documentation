@@ -4,7 +4,7 @@ Omeka_Application_Resource_Options
 
 .. php:class:: Omeka_Application_Resource_Options
 
-    Package: :doc:`/Reference/packages/Application\Resource/index`
+    Package: :doc:`Application\\Resource </Reference/packages/Application/Resource/index>`
 
     Retrieve all the options from the database.
     

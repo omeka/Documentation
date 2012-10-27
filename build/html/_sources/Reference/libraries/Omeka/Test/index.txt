@@ -6,5 +6,3 @@ Libraries/Omeka/Test
 
     AppTestCase
     Bootstrap
-    Helper/index
-    Resource/index

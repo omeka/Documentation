@@ -2,11 +2,13 @@
 has_tags
 ########
 
+:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/has_tags.rst
+.. include:: /Reference/libraries/globals/summary/has_tags.rst
 
 .. php:function:: has_tags(Omeka_Record_AbstractRecord $record)
 
@@ -19,17 +21,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/has_tags.rst
+.. include:: /Reference/libraries/globals/usage/has_tags.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/has_tags.rst
+.. include:: /Reference/libraries/globals/examples/has_tags.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/has_tags.rst
+.. include:: /Reference/libraries/globals/see_also/has_tags.rst
 

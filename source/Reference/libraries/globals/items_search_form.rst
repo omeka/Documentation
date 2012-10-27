@@ -2,11 +2,13 @@
 items_search_form
 #################
 
+:doc:`Search-related functions </Reference/packages/Function/View/Body/Search/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/items_search_form.rst
+.. include:: /Reference/libraries/globals/summary/items_search_form.rst
 
 .. php:function:: items_search_form(array $props = Array, string $formActionUri)
 
@@ -20,17 +22,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/items_search_form.rst
+.. include:: /Reference/libraries/globals/usage/items_search_form.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/items_search_form.rst
+.. include:: /Reference/libraries/globals/examples/items_search_form.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/items_search_form.rst
+.. include:: /Reference/libraries/globals/see_also/items_search_form.rst
 

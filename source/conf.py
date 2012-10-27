@@ -85,7 +85,7 @@ language = u'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = []
+exclude_patterns = ['Reference/libraries/globals/examples', 'Reference/libraries/globals/see_also', 'Reference/libraries/globals/summary', 'Reference/libraries/globals/usage', ]
 
 # The reST default role (used for this markup: `text`) to use for all documents.
 #default_role = None

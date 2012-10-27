@@ -4,7 +4,7 @@ Output_ItemContainerOmekaXml
 
 .. php:class:: Output_ItemContainerOmekaXml
 
-    Package: :doc:`/Reference/packages/Output/index`
+    Package: :doc:`Output </Reference/packages/Output/index>`
 
     Generates the container element for items in the omeka-xml output format.
 

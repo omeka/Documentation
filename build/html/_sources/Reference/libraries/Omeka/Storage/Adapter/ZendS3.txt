@@ -4,7 +4,7 @@ Omeka_Storage_Adapter_ZendS3
 
 .. php:class:: Omeka_Storage_Adapter_ZendS3
 
-    Package: :doc:`/Reference/packages/Storage\Adapter/index`
+    Package: :doc:`Storage\\Adapter </Reference/packages/Storage/Adapter/index>`
 
     Cloud storage adapter for Amazon S3, using Zend's built-in service.
     

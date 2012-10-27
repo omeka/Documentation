@@ -4,7 +4,7 @@ Installer_Exception
 
 .. php:class:: Installer_Exception
 
-    Package: :doc:`/Reference/packages/Install/index`
+    Package: :doc:`Install </Reference/packages/Install/index>`
 
     .. php:attr:: message
     

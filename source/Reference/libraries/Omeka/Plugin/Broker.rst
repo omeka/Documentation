@@ -4,7 +4,7 @@ Omeka_Plugin_Broker
 
 .. php:class:: Omeka_Plugin_Broker
 
-    Package: :doc:`/Reference/packages/Plugin\Broker/index`
+    Package: :doc:`Plugin\\Broker </Reference/packages/Plugin/Broker/index>`
 
     Plugin Broker for Omeka.
     

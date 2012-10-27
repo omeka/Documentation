@@ -2,11 +2,13 @@
 revert_theme_base_url
 #####################
 
+:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/revert_theme_base_url.rst
+.. include:: /Reference/libraries/globals/summary/revert_theme_base_url.rst
 
 .. php:function:: revert_theme_base_url()
 
@@ -16,17 +18,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/revert_theme_base_url.rst
+.. include:: /Reference/libraries/globals/usage/revert_theme_base_url.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/revert_theme_base_url.rst
+.. include:: /Reference/libraries/globals/examples/revert_theme_base_url.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/revert_theme_base_url.rst
+.. include:: /Reference/libraries/globals/see_also/revert_theme_base_url.rst
 

@@ -4,7 +4,7 @@ Omeka_Controller_Plugin_Jsonp
 
 .. php:class:: Omeka_Controller_Plugin_Jsonp
 
-    Package: :doc:`/Reference/packages/Controller\Plugin/index`
+    Package: :doc:`Controller\\Plugin </Reference/packages/Controller/Plugin/index>`
 
     Sets the Content-Type header for all JSON-P requests.
 

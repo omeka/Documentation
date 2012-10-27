@@ -4,7 +4,7 @@ Builder_Item
 
 .. php:class:: Builder_Item
 
-    Package: :doc:`/Reference/packages/Record\Builder/index`
+    Package: :doc:`Record\\Builder </Reference/packages/Record/Builder/index>`
 
     Build an item.
 

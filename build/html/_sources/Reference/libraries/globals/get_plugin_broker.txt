@@ -2,11 +2,13 @@
 get_plugin_broker
 #################
 
+:doc:`Plugin-related functions </Reference/packages/Function/Plugin/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/get_plugin_broker.rst
+.. include:: /Reference/libraries/globals/summary/get_plugin_broker.rst
 
 .. php:function:: get_plugin_broker()
 
@@ -18,17 +20,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/get_plugin_broker.rst
+.. include:: /Reference/libraries/globals/usage/get_plugin_broker.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/get_plugin_broker.rst
+.. include:: /Reference/libraries/globals/examples/get_plugin_broker.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/get_plugin_broker.rst
+.. include:: /Reference/libraries/globals/see_also/get_plugin_broker.rst
 

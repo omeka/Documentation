@@ -22,10 +22,13 @@
     <script type="text/javascript" src="../../_static/jquery.js"></script>
     <script type="text/javascript" src="../../_static/underscore.js"></script>
     <script type="text/javascript" src="../../_static/doctools.js"></script>
+    
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Controllers" href="index.html" />
     <link rel="next" title="AppearanceController" href="AppearanceController.html" />
-    <link rel="prev" title="Controllers" href="index.html" /> 
+    <link rel="prev" title="Controllers" href="index.html" />
+    <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
+ 
   </head>
   <body>
     <div class="related">
@@ -40,7 +43,12 @@
         <li class="right" >
           <a href="index.html" title="Controllers"
              accesskey="P">previous</a> |</li>
+    
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
           <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
           <li><a href="index.html" accesskey="U">Controllers</a> &raquo;</li> 
       </ul>
@@ -56,7 +64,8 @@
 <dl class="class">
 <dt id="Omeka_Controller_Action_Helper_Acl">
 <em class="property">class </em><tt class="descname">Omeka_Controller_Action_Helper_Acl</tt><a class="headerlink" href="#Omeka_Controller_Action_Helper_Acl" title="Permalink to this definition">¶</a></dt>
-<dd><p>Leverages the ACL to automatically check permissions for the current
+<dd><p>Package: <a class="reference internal" href="../packages/Controller/ActionHelper/index.html"><em>Controller\ActionHelper</em></a></p>
+<p>Leverages the ACL to automatically check permissions for the current
 controller/action combo.</p>
 <dl class="attr">
 <dt id="Omeka_Controller_Action_Helper_Acl::$_acl">
@@ -105,8 +114,8 @@ permission levels.</p>
 <dt id="Omeka_Controller_Action_Helper_Acl::preDispatch">
 <tt class="descname">preDispatch</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Controller_Action_Helper_Acl::preDispatch" title="Permalink to this definition">¶</a></dt>
 <dd><p>Determine whether or not access is granted to a specific controller/action.</p>
-<p>If the user has been authenticated, display the Access Forbidden error page.
-Otherwise, give the user an opportunity to login before trying again.</p>
+<p>If the user has been authenticated, display the Access Forbidden error page.Otherwise, give the user an opportunity
+to login before trying again.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -122,13 +131,12 @@ Otherwise, give the user an opportunity to login before trying again.</p>
 <tt class="descname">isAllowed</tt><big>(</big><em>string $privilege</em>, <em>$resource</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Action_Helper_Acl::isAllowed" title="Permalink to this definition">¶</a></dt>
 <dd><p>Notifies whether the logged-in user has permission for a given resource/
 privilege combination.</p>
-<p>If an ACL resource being checked has not been defined, access to that resource should not be controlled.  This
-allows plugin writers to implement controllers without also requiring them to be aware of the ACL.</p>
+<p>If an ACL resource being checked has not been defined, access to thatresource should not be controlled.  This allows
+plugin writers toimplement controllers without also requiring them to be aware of the ACL.</p>
 <p>Conversely, in the event that an ACL resource has been defined, all access permissions for that controller must be
 properly defined.</p>
-<p>The names of resources should correspond to the name of the controller class minus &#8216;Controller&#8217;, e.g.
-Geolocation_IndexController -&gt; &#8216;Geolocation_Index&#8217;
-CollectionsController -&gt; &#8216;Collections&#8217;</p>
+<p>The names of resources should correspond to the name of the controllerclass minus &#8216;Controller&#8217;,
+e.g.Geolocation_IndexController -&gt; &#8216;Geolocation_Index&#8217;CollectionsController -&gt; &#8216;Collections&#8217;</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -290,7 +298,12 @@ a resource object from the request.</p>
         <li class="right" >
           <a href="index.html" title="Controllers"
              >previous</a> |</li>
+    
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
           <li><a href="../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
           <li><a href="index.html" >Controllers</a> &raquo;</li> 
       </ul>

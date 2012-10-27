@@ -2,11 +2,13 @@
 insert_collection
 #################
 
+:doc:`Collection-related functions </Reference/packages/Function/Db/Collection/index>`
+
 *******
 Summary
 *******
 
-.. include:: summary/insert_collection.rst
+.. include:: /Reference/libraries/globals/summary/insert_collection.rst
 
 .. php:function:: insert_collection(array $metadata = Array)
 
@@ -18,11 +20,8 @@ Summary
     
     
              array(
-               'name'        => [string],
-               'description' => [string],
                'public'      => [true|false],
                'featured'    => [true|false]
-               'collectors'  => [array of string names]
              )
      
     :returns: Collection
@@ -31,17 +30,17 @@ Summary
 Usage
 *****
 
-.. include:: usage/insert_collection.rst
+.. include:: /Reference/libraries/globals/usage/insert_collection.rst
 
 ********
 Examples
 ********
 
-.. include:: examples/insert_collection.rst
+.. include:: /Reference/libraries/globals/examples/insert_collection.rst
 
 ********
 See Also
 ********
 
-.. include:: see_also/insert_collection.rst
+.. include:: /Reference/libraries/globals/see_also/insert_collection.rst
 
