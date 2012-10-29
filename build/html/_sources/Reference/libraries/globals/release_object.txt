@@ -14,8 +14,7 @@ Summary
 
     Release an object from memory.
     
-    Use this fuction after you are done using an Omeka model object to preventmemory leaks.  Required because PHP 5.2
-    does not do garbage collection oncircular references.
+    Use this fuction after you are done using an Omeka model object to preventmemory leaks.  Required because PHP 5.2 does not do garbage collection oncircular references.
     
     :param unknown $var:
 

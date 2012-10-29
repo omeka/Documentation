@@ -6,6 +6,7 @@ Up to :doc:`../index`
 
 .. toctree::
 
+
    /Reference/libraries/Omeka/Output/OmekaXml/AbstractOmekaXml.rst
    /Reference/models/Output/CollectionOmekaXml.rst
    /Reference/models/Output/FileOmekaXml.rst
@@ -18,5 +19,6 @@ Up to :doc:`../index`
 
 .. toctree::
    :glob:
+
 
    */index

@@ -6,6 +6,7 @@ Up to :doc:`../index`
 
 .. toctree::
 
+
    /Reference/libraries/Omeka/Validate/Confirmation.rst
    /Reference/libraries/Omeka/Validate/Errors.rst
    /Reference/libraries/Omeka/Validate/Exception.rst
@@ -16,5 +17,6 @@ Up to :doc:`../index`
 
 .. toctree::
    :glob:
+
 
    */index

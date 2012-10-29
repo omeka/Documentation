@@ -14,8 +14,7 @@ Summary
 
     Return an absolute URL.
     
-    This is necessary because Zend_View_Helper_Url returns relative URLs, thoughabsolute URLs are required in some
-    contexts. Instantiates view helpersdirectly because a view may not be registered.
+    This is necessary because Zend_View_Helper_Url returns relative URLs, thoughabsolute URLs are required in some contexts. Instantiates view helpersdirectly because a view may not be registered.
     
     :param mixed $options:         
     

@@ -24,9 +24,6 @@
     <script type="text/javascript" src="../../../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" />
-    <link rel="up" title="Plugin-related functions" href="index.html" />
-    <link rel="next" title="get_plugin_broker" href="get_plugin_broker.html" />
-    <link rel="prev" title="clear_filters" href="clear_filters.html" />
     <link rel="stylesheet" href="../../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -37,22 +34,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="get_plugin_broker.html" title="get_plugin_broker"
-             accesskey="N">next</a> |</li>
-        <li class="right" >
-          <a href="clear_filters.html" title="clear_filters"
-             accesskey="P">previous</a> |</li>
     
         <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
-
-          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="../../index.html" >Packages</a> &raquo;</li>
-          <li><a href="../index.html" >Functions By Typical Usage</a> &raquo;</li>
-          <li><a href="index.html" accesskey="U">Plugin-related functions</a> &raquo;</li> 
+ 
       </ul>
     </div>  
 
@@ -70,9 +57,7 @@
 <dt id="fire_plugin_hook">
 <tt class="descname">fire_plugin_hook</tt><big>(</big><em>$name</em>, <em>$args = Array</em><big>)</big><a class="headerlink" href="#fire_plugin_hook" title="Permalink to this definition">¶</a></dt>
 <dd><p>Declare the point of execution for a specific plugin hook.</p>
-<p>All plugin implementations of a given hook will be executed when this iscalled. The first argument corresponds to
-the string name of the hook. Thesecond is an associative array containing arguments that will be passed tothe plugin
-hook implementations.</p>
+<p>All plugin implementations of a given hook will be executed when this iscalled. The first argument corresponds to the string name of the hook. Thesecond is an associative array containing arguments that will be passed tothe plugin hook implementations.</p>
 <div class="highlight-php"><div class="highlight"><pre><span class="c1">// Calls the hook &#39;after_save_item&#39; with the arguments &#39;$item&#39; and &#39;$arg2&#39;</span>
 <span class="nx">fire_plugin_hook</span><span class="p">(</span><span class="s1">&#39;after_save_item&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;item&#39;</span> <span class="o">=&gt;</span> <span class="nv">$item</span><span class="p">,</span> <span class="s1">&#39;foo&#39;</span> <span class="o">=&gt;</span> <span class="nv">$arg2</span><span class="p">));</span>
 </pre></div>
@@ -123,12 +108,6 @@ hook implementations.</p>
 </li>
 </ul>
 
-  <h4>Previous topic</h4>
-  <p class="topless"><a href="clear_filters.html"
-                        title="previous chapter">clear_filters</a></p>
-  <h4>Next topic</h4>
-  <p class="topless"><a href="get_plugin_broker.html"
-                        title="next chapter">get_plugin_broker</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -162,22 +141,12 @@ hook implementations.</p>
         <li class="right" style="margin-right: 10px">
           <a href="../../../../genindex.html" title="General Index"
              >index</a></li>
-        <li class="right" >
-          <a href="get_plugin_broker.html" title="get_plugin_broker"
-             >next</a> |</li>
-        <li class="right" >
-          <a href="clear_filters.html" title="clear_filters"
-             >previous</a> |</li>
     
         <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
-
-          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="../../index.html" >Packages</a> &raquo;</li>
-          <li><a href="../index.html" >Functions By Typical Usage</a> &raquo;</li>
-          <li><a href="index.html" >Plugin-related functions</a> &raquo;</li> 
+ 
       </ul>
     </div>
     <div class="footer">

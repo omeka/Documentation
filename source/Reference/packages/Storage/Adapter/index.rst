@@ -6,6 +6,7 @@ Up to :doc:`../index`
 
 .. toctree::
 
+
    /Reference/libraries/Omeka/Storage/Adapter/AdapterInterface.rst
    /Reference/libraries/Omeka/Storage/Adapter/Filesystem.rst
    /Reference/libraries/Omeka/Storage/Adapter/TempFilesystem.rst
@@ -13,5 +14,6 @@ Up to :doc:`../index`
 
 .. toctree::
    :glob:
+
 
    */index

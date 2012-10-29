@@ -6,6 +6,7 @@ Up to :doc:`../index`
 
 .. toctree::
 
+
    /Reference/models/Collection.rst
    /Reference/models/Element.rst
    /Reference/models/ElementSet.rst
@@ -29,5 +30,6 @@ Up to :doc:`../index`
 
 .. toctree::
    :glob:
+
 
    */index

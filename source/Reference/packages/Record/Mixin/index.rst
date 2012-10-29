@@ -6,6 +6,7 @@ Up to :doc:`../index`
 
 .. toctree::
 
+
    /Reference/models/Mixin/ElementText.rst
    /Reference/models/Mixin/Owner.rst
    /Reference/models/Mixin/PublicFeatured.rst
@@ -16,5 +17,6 @@ Up to :doc:`../index`
 
 .. toctree::
    :glob:
+
 
    */index

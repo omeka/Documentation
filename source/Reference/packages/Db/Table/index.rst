@@ -6,6 +6,7 @@ Up to :doc:`../index`
 
 .. toctree::
 
+
    /Reference/libraries/Omeka/Db/Table.rst
    /Reference/models/Table/Collection.rst
    /Reference/models/Table/Element.rst
@@ -24,5 +25,6 @@ Up to :doc:`../index`
 
 .. toctree::
    :glob:
+
 
    */index

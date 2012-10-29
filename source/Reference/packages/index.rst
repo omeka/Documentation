@@ -23,6 +23,38 @@ Packages
     File/MimeType/Detect/index
     Filter/index
     Form/index
+    Function/index
+    Function/Application/index
+    Function/Application/FilePath/index
+    Function/Db/index
+    Function/Db/Collection/index
+    Function/Db/ElementSet/index
+    Function/Db/Item/index
+    Function/Db/ItemType/index
+    Function/Db/Option/index
+    Function/Development/index
+    Function/Plugin/index
+    Function/Search/index
+    Function/Text/index
+    Function/Text/Translation/index
+    Function/User/index
+    Function/View/index
+    Function/View/Body/index
+    Function/View/Body/Form/index
+    Function/View/Body/Item/index
+    Function/View/Body/Item/File/index
+    Function/View/Body/ItemType/index
+    Function/View/Body/Loop/index
+    Function/View/Body/Navigation/index
+    Function/View/Body/Navigation/Link/index
+    Function/View/Body/Search/index
+    Function/View/Body/Tag/index
+    Function/View/Foot/index
+    Function/View/Head/index
+    Function/View/Navigation/index
+    Function/View/Navigation/Link/index
+    Function/View/Option/index
+    Function/View/OutputFormat/index
     Http/index
     Install/index
     Install/Task/index

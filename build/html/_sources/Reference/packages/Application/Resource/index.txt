@@ -6,6 +6,7 @@ Up to :doc:`../index`
 
 .. toctree::
 
+
    /Reference/libraries/Omeka/Application/Resource/Acl.rst
    /Reference/libraries/Omeka/Application/Resource/Auth.rst
    /Reference/libraries/Omeka/Application/Resource/Autoloader.rst
@@ -32,5 +33,6 @@ Up to :doc:`../index`
 
 .. toctree::
    :glob:
+
 
    */index

@@ -6,6 +6,7 @@ Up to :doc:`../index`
 
 .. toctree::
 
+
    /Reference/libraries/Omeka/Test/Resource/Config.rst
    /Reference/libraries/Omeka/Test/Resource/Currentuser.rst
    /Reference/libraries/Omeka/Test/Resource/Db.rst
@@ -16,5 +17,6 @@ Up to :doc:`../index`
 
 .. toctree::
    :glob:
+
 
    */index

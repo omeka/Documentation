@@ -6,6 +6,7 @@ Up to :doc:`../index`
 
 .. toctree::
 
+
    /Reference/libraries/Omeka/File/Ingest/AbstractIngest.rst
    /Reference/libraries/Omeka/File/Ingest/AbstractSourceIngest.rst
    /Reference/libraries/Omeka/File/Ingest/Exception.rst
@@ -16,5 +17,6 @@ Up to :doc:`../index`
 
 .. toctree::
    :glob:
+
 
    */index

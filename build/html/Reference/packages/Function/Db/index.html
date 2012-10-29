@@ -24,9 +24,9 @@
     <script type="text/javascript" src="../../../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" />
-    <link rel="up" title="Functions By Typical Usage" href="../index.html" />
-    <link rel="next" title="Collection-related functions" href="Collection/index.html" />
-    <link rel="prev" title="release_object" href="../Application/release_object.html" />
+    <link rel="up" title="Packages" href="../../index.html" />
+    <link rel="next" title="get_db" href="../../../libraries/globals/get_db.html" />
+    <link rel="prev" title="web_path_to" href="../../../libraries/globals/web_path_to.html" />
     <link rel="stylesheet" href="../../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -38,10 +38,10 @@
           <a href="../../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="Collection/index.html" title="Collection-related functions"
+          <a href="../../../libraries/globals/get_db.html" title="get_db"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../Application/release_object.html" title="release_object"
+          <a href="../../../libraries/globals/web_path_to.html" title="web_path_to"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -50,8 +50,7 @@
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="../../index.html" >Packages</a> &raquo;</li>
-          <li><a href="../index.html" accesskey="U">Functions By Typical Usage</a> &raquo;</li> 
+          <li><a href="../../index.html" accesskey="U">Packages</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -62,17 +61,44 @@
             
   <div class="section" id="db-related-functions">
 <h1>Db-related functions<a class="headerlink" href="#db-related-functions" title="Permalink to this headline">¶</a></h1>
-<p>Up to <a class="reference internal" href="../index.html"><em>Functions By Typical Usage</em></a></p>
+<p>Up to <a class="reference internal" href="../index.html"><em>Global Functions</em></a></p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Collection/index.html">Collection-related functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ElementSet/index.html">ElementSet-related functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Item/index.html">Item-related functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ItemType/index.html">ItemType-related functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Option/index.html">Option-related functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_db.html">get_db</a></li>
-<li class="toctree-l1"><a class="reference internal" href="get_record_by_id.html">get_record_by_id</a></li>
-<li class="toctree-l1"><a class="reference internal" href="total_records.html">total_records</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../libraries/globals/get_db.html">get_db</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../libraries/globals/get_record_by_id.html">get_record_by_id</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../libraries/globals/total_records.html">total_records</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Collection/index.html">Collection-related functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../libraries/globals/insert_collection.html">insert_collection</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ElementSet/index.html">ElementSet-related functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../libraries/globals/element_exists.html">element_exists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../libraries/globals/insert_element_set.html">insert_element_set</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Item/index.html">Item-related functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../libraries/globals/get_collection_for_item.html">get_collection_for_item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../libraries/globals/insert_files_for_item.html">insert_files_for_item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../libraries/globals/insert_item.html">insert_item</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../libraries/globals/update_item.html">update_item</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="ItemType/index.html">ItemType-related functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../libraries/globals/insert_item_type.html">insert_item_type</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Option/index.html">Option-related functions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../libraries/globals/delete_option.html">delete_option</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../libraries/globals/get_option.html">get_option</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../libraries/globals/get_theme_option.html">get_theme_option</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../libraries/globals/set_option.html">set_option</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../libraries/globals/set_theme_option.html">set_theme_option</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -87,11 +113,11 @@
               <img class="logo" src="../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../Application/release_object.html"
-                        title="previous chapter">release_object</a></p>
+  <p class="topless"><a href="../../../libraries/globals/web_path_to.html"
+                        title="previous chapter">web_path_to</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="Collection/index.html"
-                        title="next chapter">Collection-related functions</a></p>
+  <p class="topless"><a href="../../../libraries/globals/get_db.html"
+                        title="next chapter">get_db</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -126,10 +152,10 @@
           <a href="../../../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="Collection/index.html" title="Collection-related functions"
+          <a href="../../../libraries/globals/get_db.html" title="get_db"
              >next</a> |</li>
         <li class="right" >
-          <a href="../Application/release_object.html" title="release_object"
+          <a href="../../../libraries/globals/web_path_to.html" title="web_path_to"
              >previous</a> |</li>
     
         <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -138,8 +164,7 @@
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="../../index.html" >Packages</a> &raquo;</li>
-          <li><a href="../index.html" >Functions By Typical Usage</a> &raquo;</li> 
+          <li><a href="../../index.html" >Packages</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

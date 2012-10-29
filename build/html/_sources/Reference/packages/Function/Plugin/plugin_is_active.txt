@@ -14,8 +14,7 @@ Summary
 
     Determine whether a plugin is installed and active.
     
-    May be used by theme/plugin writers to customize behavior based on the existence of certain plugins. Some examples
-    of how to use this function:
+    May be used by theme/plugin writers to customize behavior based on the existence of certain plugins. Some examples of how to use this function:
     
     Check if ExhibitBuilder is installed and activated.	               
     

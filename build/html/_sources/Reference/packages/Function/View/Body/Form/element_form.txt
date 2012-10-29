@@ -17,9 +17,7 @@ Summary
     Assume that the given element has access to all of its values (for example,
     all values of a Title element for a given Item).
     
-    This will output as many form inputs as there are values for a given element.In addition to that, it will give each
-    set of inputs a label and a span withclass="tooltip" containing the description for the element. This span caneither
-    be displayed, hidden with CSS or converted into a tooltip withjavascript.
+    This will output as many form inputs as there are values for a given element.In addition to that, it will give each set of inputs a label and a span withclass="tooltip" containing the description for the element. This span caneither be displayed, hidden with CSS or converted into a tooltip withjavascript.
     
     All sets of form inputs for elements will be wrapped in a div withclass="field".
     

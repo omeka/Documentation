@@ -6,6 +6,7 @@ Up to :doc:`../index`
 
 .. toctree::
 
+
    /Reference/libraries/Omeka/Job/Dispatcher/Adapter/AbstractAdapter.rst
    /Reference/libraries/Omeka/Job/Dispatcher/Adapter/AdapterInterface.rst
    /Reference/libraries/Omeka/Job/Dispatcher/Adapter/Array.rst
@@ -17,5 +18,6 @@ Up to :doc:`../index`
 
 .. toctree::
    :glob:
+
 
    */index

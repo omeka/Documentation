@@ -14,8 +14,7 @@ Summary
 
     Get an option from the options table.
     
-    If the returned value represents an object or array, it must be unserializedby the caller before use. For example:	 
-                 
+    If the returned value represents an object or array, it must be unserializedby the caller before use. For example:	               
     
     .. code-block:: php 
     

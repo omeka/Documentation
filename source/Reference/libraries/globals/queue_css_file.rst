@@ -14,8 +14,7 @@ Summary
 
     Declare that a CSS file or files will be used on the page.
     
-    All "used" stylesheets will be included in the page's head. This needs to becalled either before head(), or in a
-    plugin_header hook.
+    All "used" stylesheets will be included in the page's head. This needs to becalled either before head(), or in a plugin_header hook.
     
     :param string|array $file: File to use, if an array is passed, each array member will be treated like a file.
     :param string $media: CSS media declaration, defaults to 'all'.

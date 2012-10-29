@@ -6,6 +6,7 @@ Up to :doc:`../index`
 
 .. toctree::
 
+
    /Reference/libraries/Omeka/Db/Migration/AbstractMigration.rst
    /Reference/libraries/Omeka/Db/Migration/Exception.rst
    /Reference/libraries/Omeka/Db/Migration/Manager.rst
@@ -13,5 +14,6 @@ Up to :doc:`../index`
 
 .. toctree::
    :glob:
+
 
    */index

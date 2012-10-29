@@ -6,6 +6,7 @@ Up to :doc:`../index`
 
 .. toctree::
 
+
    /Reference/libraries/Omeka/Test/Helper/Db.rst
    /Reference/libraries/Omeka/Test/Helper/DbProfiler.rst
    /Reference/libraries/Omeka/Test/Helper/Mail.rst
@@ -13,5 +14,6 @@ Up to :doc:`../index`
 
 .. toctree::
    :glob:
+
 
    */index

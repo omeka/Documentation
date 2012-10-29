@@ -6,6 +6,7 @@ Up to :doc:`../index`
 
 .. toctree::
 
+
    /Reference/libraries/Omeka/Controller/Plugin/Admin.rst
    /Reference/libraries/Omeka/Controller/Plugin/Debug.rst
    /Reference/libraries/Omeka/Controller/Plugin/HtmlPurifier.rst
@@ -16,5 +17,6 @@ Up to :doc:`../index`
 
 .. toctree::
    :glob:
+
 
    */index

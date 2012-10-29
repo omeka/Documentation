@@ -14,9 +14,7 @@ Summary
 
     Declare the point of execution for a specific plugin hook.
     
-    All plugin implementations of a given hook will be executed when this iscalled. The first argument corresponds to
-    the string name of the hook. Thesecond is an associative array containing arguments that will be passed tothe plugin
-    hook implementations.
+    All plugin implementations of a given hook will be executed when this iscalled. The first argument corresponds to the string name of the hook. Thesecond is an associative array containing arguments that will be passed tothe plugin hook implementations.
     
     	               
     

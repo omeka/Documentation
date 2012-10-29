@@ -6,6 +6,7 @@ Up to :doc:`../index`
 
 .. toctree::
 
+
    /Reference/libraries/Omeka/Plugin/AbstractPlugin.rst
    /Reference/libraries/Omeka/Plugin/Exception.rst
    /Reference/libraries/Omeka/Plugin/Factory.rst
@@ -14,5 +15,6 @@ Up to :doc:`../index`
 
 .. toctree::
    :glob:
+
 
    */index
