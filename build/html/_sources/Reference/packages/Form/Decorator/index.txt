@@ -1,0 +1,9 @@
+###############
+Form\\Decorator
+###############
+
+.. toctree::
+    :maxdepth: 1
+
+   /Reference/libraries/Omeka/Form/SavePanelAction.rst
+   /Reference/libraries/Omeka/Form/SavePanelHook.rst

@@ -27,8 +27,7 @@ Omeka_Storage
         Delegates calls directly to Omeka_Storage to the currently-set
         storage adapter.
         
-        All of the methods of the Adapter interface are accessible inthis way, as well as any other methods declared by the
-        adapter.
+        All of the methods of the Adapter interface are accessible inthis way, as well as any other methods declared by the adapter.
         
         :param string $name: Method name.
         :param string $arguments: Method arguments.
@@ -46,8 +45,7 @@ Omeka_Storage
         Set the storage adapter to be used, as well as options for that
         adapter.
         
-        You can either pass an already-constructed adapter object to thismethod or use this method as a factory by passing
-        the name of anadapter class and options to set on it.
+        You can either pass an already-constructed adapter object to thismethod or use this method as a factory by passing the name of anadapter class and options to set on it.
         
         :param Omeka_Storage_Adapter_AdapterInterface|string $adapter: Storage adapter to set. If an adapter object is passed, it is simply set as the current adapter. If a string is passed, an object of that class is created and set as the current adapter.
         :param array|null $options: If a string is passed to $adapter, this array of options is passed to the class' constructor.

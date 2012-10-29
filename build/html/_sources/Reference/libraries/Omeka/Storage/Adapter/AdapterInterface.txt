@@ -20,8 +20,7 @@ Omeka_Storage_Adapter_AdapterInterface
     
         Follow any necessary steps to set up storage prior to use.
         
-        E.g. for the filesystem adapter, this would include creating anydirectories that did not already exist.  For S3, it
-        might involvecreating a new bucket if it did not exist.
+        E.g. for the filesystem adapter, this would include creating anydirectories that did not already exist.  For S3, it might involvecreating a new bucket if it did not exist.
 
     .. php:method:: canStore()
     

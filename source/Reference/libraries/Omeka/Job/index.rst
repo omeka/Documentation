@@ -8,3 +8,11 @@ Libraries/Omeka/Job
     Factory
     JobInterface
     Mock
+
+
+.. toctree::
+
+    Dispatcher/index
+    Factory/index
+    Process/index
+    Worker/index

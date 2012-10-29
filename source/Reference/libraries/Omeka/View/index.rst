@@ -6,3 +6,7 @@ Libraries/Omeka/View
 
     AbstractSearch
     Exception
+
+
+.. toctree::
+

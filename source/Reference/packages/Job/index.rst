@@ -12,6 +12,7 @@ Up to :doc:`../index`
    /Reference/libraries/Omeka/Job/AbstractJob.rst
    /Reference/libraries/Omeka/Job/JobInterface.rst
    /Reference/libraries/Omeka/Job/Mock.rst
+
 .. toctree::
    :glob:
 

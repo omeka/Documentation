@@ -14,32 +14,27 @@ Omeka_Controller_AbstractActionController
     
         The number of records to browse per page.
         
-        If this is left null, then results will not paginate. This is partiallybecause not every controller will want to
-        paginate records and also toavoid BC breaks for plugins.
+        If this is left null, then results will not paginate. This is partiallybecause not every controller will want to paginate records and also toavoid BC breaks for plugins.
 
-    .. php:method:: __construct(Zend_Controller_Request_Abstract $request, Zend_Controller_Response_Abstract $response, $invokeArgs = Array)
+    .. php:method:: __construct(Zend_Controller_Request_Abstract $request, Zend_Controller_Response_Abstract $response, array $invokeArgs = Array)
     
         Base controller constructor.
         
         Does the following things:
         
-        	               
         
-        .. raw:: html
         
-        <ul>
-        	                 <li>Aliases the redirector helper to clean up the syntax</li>
-        	                 <li>Sets the table object automatically if given the class of the model 
-        	               to use for CRUD.</li>
-        	                 <li>Sets all the built-in action contexts for the CRUD actions.</li>
-        	                </ul>
+        - Aliases the redirector helper to clean up the syntax
         
+        - Sets the table object automatically if given the class of the model to use for CRUD.
+        
+        - Sets all the built-in action contexts for the CRUD actions.
         
         Instead of overriding this constructor, controller subclasses shouldimplement the init() method for initial setup.
         
-        :param Zend_Controller_Request_Abstract $request: 
-        :param Zend_Controller_Response_Abstract $response: 
-        :param unknown $invokeArgs:
+        :param Zend_Controller_Request_Abstract $request: Current request object.
+        :param Zend_Controller_Response_Abstract $response: Response object.
+        :param array $invokeArgs: Arguments passed to Zend_Controller_Action.
 
     .. php:method:: indexAction()
     
@@ -51,19 +46,13 @@ Omeka_Controller_AbstractActionController
         
         Using this action requires some setup:
         
-        	               
         
-        .. raw:: html
         
-        <ul>
-        	                 <li>In your controller's <code>init()</code>, set the default model name: 
-        	                   <code>$this->_helper->db->setDefaultModelName('YourRecord');</code></li>
-        	                 <li>In your controller, set the records per page and return them using: 
-        	                   <code>protected function _getBrowseRecordsPerPage()</code></li>
-        	                 <li>In your table record, filter the select object using the provided 
-        	                   parameters using: 
-        	                   <code>public function applySearchFilters($select, $params)</code></li>
-        	                </ul>
+        - In your controller's ``init()``, set the default model name: ``$this->_helper->db->setDefaultModelName('YourRecord');``
+        
+        - In your controller, set the records per page and return them using: ``protected function _getBrowseRecordsPerPage();``
+        
+        - In your table record, filter the select object using the provided parameters using: ``public function applySearchFilters($select, $params);``
 
     .. php:method:: showAction()
     
@@ -75,9 +64,7 @@ Omeka_Controller_AbstractActionController
     
         Add an instance of a record to the database.
         
-        This behaves differently based on the contents of the $_POST superglobal.If the $_POST is empty or invalid, it will
-        render the form used for dataentry. Otherwise, if the $_POST exists and is valid, it will save the newrecord and
-        redirect to the 'browse' action.
+        This behaves differently based on the contents of the $_POST superglobal.If the $_POST is empty or invalid, it will render the form used for dataentry. Otherwise, if the $_POST exists and is valid, it will save the newrecord and redirect to the 'browse' action.
 
     .. php:method:: editAction()
     
@@ -105,8 +92,7 @@ Omeka_Controller_AbstractActionController
     
         Return the number of records to display per page.
         
-        By default this will return null, disabling pagination. This can beoverridden in subclasses by redefining this
-        method.
+        By default this will return null, disabling pagination. This can beoverridden in subclasses by redefining this method.
         
         :returns: integer|null
 

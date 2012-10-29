@@ -66,9 +66,7 @@ Mixin_Search
     
         Save a search text row.
         
-        Call this statically only when necessary. Used primarily when in a recordthat does not implement Mixin_Search but
-        contains text that is needed foranother record's search text. For example, when saving a child recordthat contains
-        search text that should be saved to its parent record.
+        Call this statically only when necessary. Used primarily when in a recordthat does not implement Mixin_Search but contains text that is needed foranother record's search text. For example, when saving a child recordthat contains search text that should be saved to its parent record.
         
         :param string $recordType: 
         :param int $recordId: 

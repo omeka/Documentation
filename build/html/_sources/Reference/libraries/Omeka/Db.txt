@@ -78,9 +78,7 @@ Omeka_Db
     
         Retrieve a table object corresponding to the model class.
         
-        Table classes can be extended by inheriting off of Omeka_Db_Table andthen calling your table Table_ModelName, e.g.
-        Table_Item orTable_Collection. For backwards compatibility you may call your tableModelNameTable, i.e. ItemTable or
-        CollectionTable. The latter namingpattern is deprecated.
+        Table classes can be extended by inheriting off of Omeka_Db_Table andthen calling your table Table_ModelName, e.g. Table_Item orTable_Collection. For backwards compatibility you may call your tableModelNameTable, i.e. ItemTable or CollectionTable. The latter namingpattern is deprecated.
         
         This will cache every table object so that tables are not instantiatedmultiple times for complicated web requests.
         
@@ -102,9 +100,7 @@ Omeka_Db
         INSERT INTO table (field, field2, field3, ...) VALUES (?, ?, ?, ...) 
         ON DUPLICATE KEY UPDATE field = ?, field2 = ?, ...
         
-        Note on portability: ON DUPLICATE KEY UPDATE is a MySQL extension.The advantage to using this is that it doesn't
-        care whether a row exists already.Basically it combines what would be insert() and update() methods in otherORMs
-        into a single method
+        Note on portability: ON DUPLICATE KEY UPDATE is a MySQL extension.The advantage to using this is that it doesn't care whether a row exists already.Basically it combines what would be insert() and update() methods in otherORMs into a single method
         
         :param string $table: Table model class name.
         :param array $values: Rows to insert (or update).
@@ -129,7 +125,6 @@ Omeka_Db
     
         Read the contents of an SQL file and execute all the queries therein.
         
-        In addition to reading the file, this will make substitutions based onspecific naming conventions. Currently makes
-        the following substitutions:%PREFIX% will be replaced by the table prefix.
+        In addition to reading the file, this will make substitutions based onspecific naming conventions. Currently makes the following substitutions:%PREFIX% will be replaced by the table prefix.
         
         :param string $filePath: Path to the SQL file to load

@@ -11,6 +11,7 @@ Up to :doc:`../index`
    /Reference/libraries/Omeka/Plugin/Factory.rst
    /Reference/libraries/Omeka/Plugin/Ini.rst
    /Reference/libraries/Omeka/Plugin/Mvc.rst
+
 .. toctree::
    :glob:
 

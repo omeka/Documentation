@@ -12,3 +12,7 @@ Libraries/Omeka/Job/Dispatcher/Adapter
     RequiredOptionException
     Synchronous
     ZendQueue
+
+
+.. toctree::
+

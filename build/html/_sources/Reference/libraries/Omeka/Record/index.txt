@@ -7,3 +7,9 @@ Libraries/Omeka/Record
     AbstractRecord
     Exception
     Iterator
+
+
+.. toctree::
+
+    Builder/index
+    Mixin/index

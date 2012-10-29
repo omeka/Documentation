@@ -1,0 +1,15 @@
+----------------------------------
+Omeka_Form_Decorator_SavePanelHook
+----------------------------------
+
+.. php:class:: Omeka_Form_Decorator_SavePanelHook
+
+    Package: :doc:`Form\\Decorator </Reference/packages/Form/Decorator/index>`
+
+    .. php:method:: render($content)
+    
+        :param unknown $content:
+
+    .. php:method:: getRecordType()
+
+    .. php:method:: getRecord()

@@ -6,3 +6,7 @@ Libraries/Omeka/File/MimeType
 
     Detect
     Exception
+
+
+.. toctree::
+

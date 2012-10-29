@@ -1,0 +1,154 @@
+----------------
+Omeka_Form_Admin
+----------------
+
+.. php:class:: Omeka_Form_Admin
+
+    Package: :doc:`Form </Reference/packages/Form/index>`
+
+    A Zend_Form subclass to set up a record editing form for the Omeka 2.0 admin 
+    user interface
+
+    .. php:attr:: _editDisplayGroup
+    
+
+
+    .. php:attr:: _saveDisplayGroup
+    
+
+
+    .. php:attr:: _saveDisplayGroupActionDecorator
+    
+
+
+    .. php:attr:: _record
+    
+
+
+    .. php:attr:: _record_type
+    
+
+
+    .. php:attr:: _hasPublicPage
+    
+
+
+    .. php:attr:: _editGroupCssClass
+    
+
+
+    .. php:attr:: _saveGroupCssClass
+    
+
+
+    .. php:attr:: _defaultDisplayGroupClass
+    
+        Class name of Omeka DisplayGroup subclass.
+
+    .. php:attr:: _autoApplyOmekaStyles
+    
+        Whether or not to automatically apply Omeka-specific decorators
+        and styling information to form elements prior to rendering.
+
+    .. php:method:: init()
+
+    .. php:method:: addElementToEditGroup(Zend_Form_Element|string $element, string|null $name, array|null $options)
+    
+        Add an element to the edit area
+        
+        :param Zend_Form_Element|string $element: 
+        :param string|null $name: 
+        :param array|null $options:
+
+    .. php:method:: addElementToSaveGroup(Zend_Form_Element|string $element, string|null $name, array|null $options)
+    
+        Add an element to the save panel
+        
+        :param Zend_Form_Element|string $element: 
+        :param string|null $name: 
+        :param array|null $options:
+
+    .. php:method:: addElementToDisplayGroup($group, $element, $name, $options)
+    
+        :param unknown $group: 
+        :param unknown $element: 
+        :param unknown $name: 
+        :param unknown $options:
+
+    .. php:method:: getSaveGroupDefaultElementDecorators()
+
+    .. php:method:: setEditGroupCssClass($cssClass)
+    
+        :param unknown $cssClass:
+
+    .. php:method:: setSaveGroupCssClass($cssClass)
+    
+        :param unknown $cssClass:
+
+    .. php:method:: setRecordType($type)
+    
+        :param unknown $type:
+
+    .. php:method:: setRecord($record)
+    
+        :param unknown $record:
+
+    .. php:method:: setHasPublicPage($value = 1)
+    
+        :param unknown $value:
+
+    .. php:method:: loadDefaultDecorators()
+    
+        Set up base form decorators.
+        
+        :returns: void
+
+    .. php:method:: getDefaultElementDecorators()
+    
+        Return default decorators for form elements.
+        
+        Makes form output conform to Omeka conventions.
+        
+        :returns: array
+
+    .. php:method:: applyOmekaStyles()
+    
+        Configure element styles / decorators based on the type of element.
+        
+        This may be called after elements to the form, as the decoratorconfiguration in init() runs before elements can be
+        added.
+        
+        :returns: void
+
+    .. php:method:: getMessagesAsString(string $messageDelimiter =   , string $elementDelimiter = , )
+    
+        Retrieve all of the form error messages as a nicely formatted string.
+        
+        Useful for displaying all form errors at the top of a form, or for flashingform errors after redirects.
+        
+        :param string $messageDelimiter: The string to display between different error messages for an element.
+        :param string $elementDelimiter: The string to display between different elements.
+        :returns: string
+
+    .. php:method:: setAutoApplyOmekaStyles(mixed $flag)
+    
+        Specify whether or not to automatically apply Omeka-specific decorators
+        and styles prior to rendering the form.
+        
+        :param mixed $flag: A boolean or boolean-equivalent.
+        :returns: void
+
+    .. php:method:: render(Zend_View_Interface $view)
+    
+        Apply Omeka default styles (if requested) just before rendering.
+        
+        :param Zend_View_Interface $view: 
+        :returns: string
+
+    .. php:method:: _addClassNameToElement(Zend_Form_Element $element, string $className)
+    
+        Add a specific class name to an element.
+        
+        :param Zend_Form_Element $element: 
+        :param string $className: 
+        :returns: void

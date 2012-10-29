@@ -13,8 +13,7 @@ Omeka_Record_AbstractRecord
     
         Unique ID for the record.
         
-        All implementations of Omeka_Record_AbstractRecord must have a table containing an 'id' column, preferably as the
-        primary key.
+        All implementations of Omeka_Record_AbstractRecord must have a table containing an 'id' column, preferably as the primary key.
 
     .. php:attr:: _errors
     
@@ -80,8 +79,7 @@ Omeka_Record_AbstractRecord
     
         Subclass constructor behavior.
         
-        Subclasses of Omeka_Record_AbstractRecord can override this function toadd behavior to the constructor without
-        overriding __construct.
+        Subclasses of Omeka_Record_AbstractRecord can override this function toadd behavior to the constructor without overriding __construct.
         
         :returns: void
 
@@ -113,8 +111,7 @@ Omeka_Record_AbstractRecord
     
         Initialize the mixins for a record.
         
-        Any Omeka_Record_AbstractRecord subclass that uses mixins shouldinitialize them here, since this is called on
-        construction and whenmixins need to be reinitialized.
+        Any Omeka_Record_AbstractRecord subclass that uses mixins shouldinitialize them here, since this is called on construction and whenmixins need to be reinitialized.
 
     .. php:method:: delegateToMixins(string $method, array $args = Array, boolean $all = )
     
@@ -129,9 +126,7 @@ Omeka_Record_AbstractRecord
     
         Invoke all callbacks associated with a specific record event.
         
-        Callbacks execute in the following order:- Omeka_Record_AbstractRecord hooks like
-        Omeka_Record_AbstractRecord::afterDelete()- Record mixin hooks like Taggable::afterSave()- Generic record plugin
-        hooks like 'before_delete_record'- Specific record plugin hooks like 'before_delete_item'
+        Callbacks execute in the following order:- Omeka_Record_AbstractRecord hooks like Omeka_Record_AbstractRecord::afterDelete()- Record mixin hooks like Taggable::afterSave()- Generic record plugin hooks like 'before_delete_record'- Specific record plugin hooks like 'before_delete_item'
         
         :param unknown $event: 
         :returns: void
@@ -214,8 +209,7 @@ Omeka_Record_AbstractRecord
     
         Prevent a record from being modified.
         
-        Can be used to prevent accidentally saving/deleting a record if its state maychange but saving would be undesirable,
-        such as modifying a record fordisplay purposes.
+        Can be used to prevent accidentally saving/deleting a record if its state maychange but saving would be undesirable, such as modifying a record fordisplay purposes.
         
         :returns: void
 
@@ -263,9 +257,7 @@ Omeka_Record_AbstractRecord
     
         Template method for defining record deletion logic.
         
-        Subclasses can override this method to define additional logic for deletingrecords.  Note that this is different
-        from both the beforeDelete() andafterDelete() hooks in that it executes after beforeDelete(), but beforethe record
-        is actually deleted.
+        Subclasses can override this method to define additional logic for deletingrecords.  Note that this is different from both the beforeDelete() andafterDelete() hooks in that it executes after beforeDelete(), but beforethe record is actually deleted.
         
         Common use cases include emulating cascading deletes with otherdatabase rows.
         
@@ -368,8 +360,7 @@ Omeka_Record_AbstractRecord
     
         Get the routing parameters or the URL string to this record.
         
-        The record_url() global uses this method to get routing parameters fornon-standard records, e.g. records defined by
-        plugins. Subclasses shouldoverride this method if the default route (as defined below) isincorrect.
+        The record_url() global uses this method to get routing parameters fornon-standard records, e.g. records defined by plugins. Subclasses shouldoverride this method if the default route (as defined below) isincorrect.
         
         :param string $action: 
         :returns: string|array A URL string or a routing array.

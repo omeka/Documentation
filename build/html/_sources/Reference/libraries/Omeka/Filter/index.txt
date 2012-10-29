@@ -8,3 +8,7 @@ Libraries/Omeka/Filter
     Filename
     ForeignKey
     HtmlPurifier
+
+
+.. toctree::
+

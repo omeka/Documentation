@@ -26,10 +26,7 @@ Table_Item
     
         Build the simple search.
         
-        The search query consists of a derived table that is INNER JOINed to themain SQL query.  That derived table is a
-        union of two SELECT queries. Thefirst query searches the FULLTEXT index on the items_elements table, andthe second
-        query searches the tags table for every word in the searchterms and assigns each found result a rank of '1'. That
-        should maketagged items show up higher on the found results list for a given search.
+        The search query consists of a derived table that is INNER JOINed to themain SQL query.  That derived table is a union of two SELECT queries. Thefirst query searches the FULLTEXT index on the items_elements table, andthe second query searches the tags table for every word in the searchterms and assigns each found result a rank of '1'. That should maketagged items show up higher on the found results list for a given search.
         
         :param Zend_Db_Select $select: 
         :param unknown $terms:
@@ -76,10 +73,7 @@ Table_Item
         that have all the tags provided (in this example, all items that are
         tagged both 'foo' and 'bar'):
         
-        SELECT i.idFROM omeka_items iWHERE(i.id IN(SELECT tg.record_id as idFROM omeka_records_tags tgINNER JOIN omeka_tags
-        t ON t.id = tg.tag_idWHERE t.name = 'foo' AND tg.record_type = 'Item')AND i.id IN(SELECT tg.record_id as idFROM
-        omeka_records_tags tgINNER JOIN omeka_tags t ON t.id = tg.tag_idWHERE t.name = 'bar' AND tg.record_type =
-        'Item'))...
+        SELECT i.idFROM omeka_items iWHERE(i.id IN(SELECT tg.record_id as idFROM omeka_records_tags tgINNER JOIN omeka_tags t ON t.id = tg.tag_idWHERE t.name = 'foo' AND tg.record_type = 'Item')AND i.id IN(SELECT tg.record_id as idFROM omeka_records_tags tgINNER JOIN omeka_tags t ON t.id = tg.tag_idWHERE t.name = 'bar' AND tg.record_type = 'Item'))...
         
         :param unknown $select: 
         :param unknown $tags: 

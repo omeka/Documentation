@@ -1,0 +1,13 @@
+################################
+File\\MimeType\\Detect\\Strategy
+################################
+
+.. toctree::
+    :maxdepth: 1
+
+   /Reference/libraries/Omeka/File/MimeType/StrategyInterface.rst
+   /Reference/libraries/Omeka/File/MimeType/Browser.rst
+   /Reference/libraries/Omeka/File/MimeType/FileCommand.rst
+   /Reference/libraries/Omeka/File/MimeType/Fileinfo.rst
+   /Reference/libraries/Omeka/File/MimeType/GetId3.rst
+   /Reference/libraries/Omeka/File/MimeType/MimeContentType.rst

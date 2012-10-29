@@ -13,6 +13,7 @@ Up to :doc:`../index`
    /Reference/libraries/Omeka/File/Ingest/InvalidException.rst
    /Reference/libraries/Omeka/File/Ingest/Upload.rst
    /Reference/libraries/Omeka/File/Ingest/Url.rst
+
 .. toctree::
    :glob:
 

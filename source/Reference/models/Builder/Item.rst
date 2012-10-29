@@ -64,17 +64,7 @@ Builder_Item
     
         Add files to an item.
         
-        <li>'Url|Filesystem' => string|array If a string is given, this representsthe source identifier of a single file
-        (the URL representing the file, orthe absolute file path, respectively).  If an array is given, it assumesthat each
-        entry in the array must be either an array or a string.  If itan array, there are several default keys that may be
-        present:<ul><li>'source' => Any identifier that is appropriate to the transferstrategy in use.  For 'Url', this
-        should be a valid URL.  For 'Filesystem',it must be an absolute path to the source file to be
-        transferred.</li><li>'name' => OPTIONAL The filename to give to the transferredfile.  This can be any arbitrary
-        filename and will be listed as theoriginal filename of the file.  This will also be used to generate thearchival
-        filename for the file.  If none is given, this defaults to usingthe getOriginalFileName() method of the transfer
-        adapter.</li><li>'metadata' => OPTIONAL This could contain any metadata that needs to beassociated with the file. 
-        This should be indexed in the same fashionas for items.  See
-        ActsAsElementText::addTextsByArray()</li></ul></li></ul>
+        <li>'Url|Filesystem' => string|array If a string is given, this representsthe source identifier of a single file (the URL representing the file, orthe absolute file path, respectively).  If an array is given, it assumesthat each entry in the array must be either an array or a string.  If itan array, there are several default keys that may be present:<ul><li>'source' => Any identifier that is appropriate to the transferstrategy in use.  For 'Url', this should be a valid URL.  For 'Filesystem',it must be an absolute path to the source file to be transferred.</li><li>'name' => OPTIONAL The filename to give to the transferredfile.  This can be any arbitrary filename and will be listed as theoriginal filename of the file.  This will also be used to generate thearchival filename for the file.  If none is given, this defaults to usingthe getOriginalFileName() method of the transfer adapter.</li><li>'metadata' => OPTIONAL This could contain any metadata that needs to beassociated with the file.  This should be indexed in the same fashionas for items.  See ActsAsElementText::addTextsByArray()</li></ul></li></ul>
         
         :param string|Omeka_File_Ingest_AbstractIngest $transferStrategy: This can either be one of the following strings denoting built-in transfer methods: 'Upload', 'Filesystem', 'Url' Or it could be an implemented Omeka_File_Ingest_AbstractIngest class.
         :param string|array $files: This can be a single string, an array of strings, or an array of arrays, depending on the parameters that are needed by the underlying strategy.  Expected parameters for the built in strategies are as follows:         

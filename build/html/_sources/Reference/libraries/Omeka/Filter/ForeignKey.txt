@@ -13,8 +13,7 @@ Omeka_Filter_ForeignKey
         Convert any value into an unsigned integer that would be valid
         if stored as a foreign key in a database table.
         
-        This will return null for any value that falls outside the rangeof an unsigned integer (string, negative numbers,
-        etc.)
+        This will return null for any value that falls outside the rangeof an unsigned integer (string, negative numbers, etc.)
         
         :param mixed $value: Input value.
         :returns: integer

@@ -13,6 +13,7 @@ Up to :doc:`../index`
    /Reference/models/Mixin/Tag.rst
    /Reference/models/Mixin/Timestamp.rst
    /Reference/libraries/Omeka/Record/Mixin/AbstractMixin.rst
+
 .. toctree::
    :glob:
 

@@ -10,6 +10,7 @@ Up to :doc:`../index`
    /Reference/libraries/Omeka/Db/Migration/Exception.rst
    /Reference/libraries/Omeka/Db/Migration/Manager.rst
    /Reference/libraries/Omeka/Db/Migration/MigrationInterface.rst
+
 .. toctree::
    :glob:
 

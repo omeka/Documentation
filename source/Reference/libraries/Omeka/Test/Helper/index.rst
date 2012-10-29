@@ -8,3 +8,7 @@ Libraries/Omeka/Test/Helper
     DbProfiler
     Mail
     Plugin
+
+
+.. toctree::
+

@@ -29,6 +29,7 @@ Up to :doc:`../index`
    /Reference/libraries/Omeka/Application/Resource/Session.rst
    /Reference/libraries/Omeka/Application/Resource/Storage.rst
    /Reference/libraries/Omeka/Application/Resource/Theme.rst
+
 .. toctree::
    :glob:
 

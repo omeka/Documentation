@@ -26,6 +26,7 @@ Up to :doc:`../index`
    /Reference/models/Theme.rst
    /Reference/models/User.rst
    /Reference/models/UsersActivations.rst
+
 .. toctree::
    :glob:
 

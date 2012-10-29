@@ -1,0 +1,241 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_Test_Helper_Mail &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" />
+    <link rel="up" title="Libraries/Omeka/Test" href="index.html" />
+    <link rel="next" title="Omeka_Test_Helper_Plugin" href="Plugin.html" />
+    <link rel="prev" title="Omeka_Test_Helper_Plugin" href="Helper/Plugin.html" />
+    <link rel="stylesheet" href="../../../../_static/overrides.css" type="text/css" />
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Plugin.html" title="Omeka_Test_Helper_Plugin"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Helper/Plugin.html" title="Omeka_Test_Helper_Plugin"
+             accesskey="P">previous</a> |</li>
+    
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Libraries/Omeka/Test</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-test-helper-mail">
+<h1>Omeka_Test_Helper_Mail<a class="headerlink" href="#omeka-test-helper-mail" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_Test_Helper_Mail">
+<em class="property">class </em><tt class="descname">Omeka_Test_Helper_Mail</tt><a class="headerlink" href="#Omeka_Test_Helper_Mail" title="Permalink to this definition">¶</a></dt>
+<dd><p>Package: <a class="reference internal" href="../../../packages/Test/Helper/index.html"><em>Test\Helper</em></a></p>
+<p>Encapsulates testing functionality for email.</p>
+<dl class="attr">
+<dt id="Omeka_Test_Helper_Mail::$_path">
+<em class="property">property </em><tt class="descname">_path</tt><a class="headerlink" href="#Omeka_Test_Helper_Mail::$_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Path to the mail storage directory.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Test_Helper_Mail::__construct">
+<tt class="descname">__construct</tt><big>(</big><em>string $path</em><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Mail::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$path</strong> (<em>string</em>) &#8211; Real path to the mail storage directory.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Test_Helper_Mail::factory">
+<tt class="descname">factory</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Mail::factory" title="Permalink to this definition">¶</a></dt>
+<dd><p>Configure an instance of the Mail helper using the registered test_config.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">Omeka_Test_Helper_Mail</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Test_Helper_Mail::_getIterator">
+<tt class="descname">_getIterator</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Mail::_getIterator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get an iterator over the fakemail directory.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">DirectoryIterator</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Test_Helper_Mail::_isMailFile">
+<tt class="descname">_isMailFile</tt><big>(</big><em>SplFileInfo $file</em><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Mail::_isMailFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a directory entry is a mail message file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<em>SplFileInfo</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Test_Helper_Mail::getMailText">
+<tt class="descname">getMailText</tt><big>(</big><em>integer $index = 0</em><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Mail::getMailText" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the text of the n&#8217;th email that was sent during the test.</p>
+<p>Note that this will not return correct results if reset() was notinvoked between test runs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$index</strong> (<em>integer</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Test_Helper_Mail::count">
+<tt class="descname">count</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Test_Helper_Mail::count" title="Permalink to this definition">¶</a></dt>
+<dd><p>The number of mails that have been sent.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../../index.html">
+              <img class="logo" src="../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Helper/Plugin.html"
+                        title="previous chapter">Omeka_Test_Helper_Plugin</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Plugin.html"
+                        title="next chapter">Omeka_Test_Helper_Plugin</a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/libraries/Omeka/Test/Mail.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Plugin.html" title="Omeka_Test_Helper_Plugin"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Helper/Plugin.html" title="Omeka_Test_Helper_Plugin"
+             >previous</a> |</li>
+    
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" >Libraries/Omeka/Test</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

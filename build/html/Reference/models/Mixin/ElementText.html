@@ -24,9 +24,9 @@
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
-    <link rel="up" title="Models/Mixin" href="index.html" />
+    <link rel="up" title="Record\Mixin" href="../../packages/Record/Mixin/index.html" />
     <link rel="next" title="Mixin_Owner" href="Owner.html" />
-    <link rel="prev" title="Models/Mixin" href="index.html" />
+    <link rel="prev" title="Record\Mixin" href="../../packages/Record/Mixin/index.html" />
     <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="Owner.html" title="Mixin_Owner"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="index.html" title="Models/Mixin"
+          <a href="../../packages/Record/Mixin/index.html" title="Record\Mixin"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -50,8 +50,8 @@
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="../index.html" >Models</a> &raquo;</li>
-          <li><a href="index.html" accesskey="U">Models/Mixin</a> &raquo;</li> 
+          <li><a href="../../packages/index.html" >Packages</a> &raquo;</li>
+          <li><a href="../../packages/Record/Mixin/index.html" accesskey="U">Record\Mixin</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -516,9 +516,9 @@ The array must be formatted as follows:</p>
 <dt id="Mixin_ElementText::beforeSaveElements">
 <tt class="descname">beforeSaveElements</tt><big>(</big><em>$post</em><big>)</big><a class="headerlink" href="#Mixin_ElementText::beforeSaveElements" title="Permalink to this definition">¶</a></dt>
 <dd><p>The application flow is thus:</p>
-<p>1) Build ElementText objects from the POST.2) Validate the ElementText objects and assign error messages
-ifnecessary.3) After the item saves correctly, delete all the ElementText recordsfor the Item.4) Save the new
-ElementText objects to the database.</p>
+<ol class="arabic simple">
+<li>Build ElementText objects from the POST.2) Validate the ElementText objects and assign error messages ifnecessary.3) After the item saves correctly, delete all the ElementText recordsfor the Item.4) Save the new ElementText objects to the database.</li>
+</ol>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -539,8 +539,7 @@ ElementText objects to the database.</p>
 that is keyed to an element&#8217;s ID.  That array should contain all the
 text values for that element. For example:</p>
 <p>&lt;code&gt;</p>
-<p>array(&#8216;Elements&#8217; =&gt;array(&#8216;50&#8217; =&gt; array(array(&#8216;text&#8217; =&gt; &#8216;Foobar&#8217;, //element id 50, e.g. DC:Title&#8217;html&#8217; =&gt; 0)),&#8216;41&#8217; =&gt;
-array(array(&#8216;text&#8217; =&gt; &#8216;&lt;p&gt;Baz baz baz&lt;/p&gt;&#8217;, //element id 41, e.g. DC:Description&#8217;html&#8217; =&gt; 1))))</p>
+<p>array(&#8216;Elements&#8217; =&gt;array(&#8216;50&#8217; =&gt; array(array(&#8216;text&#8217; =&gt; &#8216;Foobar&#8217;, //element id 50, e.g. DC:Title&#8217;html&#8217; =&gt; 0)),&#8216;41&#8217; =&gt; array(array(&#8216;text&#8217; =&gt; &#8216;&lt;p&gt;Baz baz baz&lt;/p&gt;&#8217;, //element id 41, e.g. DC:Description&#8217;html&#8217; =&gt; 1))))</p>
 <p>&lt;/code&gt;</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -701,8 +700,8 @@ able to encapsulate the logic for validation of Elements.</p>
               <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
   <h4>Previous topic</h4>
-  <p class="topless"><a href="index.html"
-                        title="previous chapter">Models/Mixin</a></p>
+  <p class="topless"><a href="../../packages/Record/Mixin/index.html"
+                        title="previous chapter">Record\Mixin</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="Owner.html"
                         title="next chapter">Mixin_Owner</a></p>
@@ -743,7 +742,7 @@ able to encapsulate the logic for validation of Elements.</p>
           <a href="Owner.html" title="Mixin_Owner"
              >next</a> |</li>
         <li class="right" >
-          <a href="index.html" title="Models/Mixin"
+          <a href="../../packages/Record/Mixin/index.html" title="Record\Mixin"
              >previous</a> |</li>
     
         <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -752,8 +751,8 @@ able to encapsulate the logic for validation of Elements.</p>
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="../index.html" >Models</a> &raquo;</li>
-          <li><a href="index.html" >Models/Mixin</a> &raquo;</li> 
+          <li><a href="../../packages/index.html" >Packages</a> &raquo;</li>
+          <li><a href="../../packages/Record/Mixin/index.html" >Record\Mixin</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

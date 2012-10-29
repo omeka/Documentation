@@ -11,3 +11,7 @@ Libraries/Omeka/File/Ingest
     InvalidException
     Upload
     Url
+
+
+.. toctree::
+

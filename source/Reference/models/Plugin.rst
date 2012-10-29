@@ -235,8 +235,7 @@ Plugin
     
         Determine whether the plugin meets the minimum version requirements for Omeka.
         
-        If the field is not set, assume that it meets the requirements.  If the field is set, it must be greater than the
-        current version of Omeka.
+        If the field is not set, assume that it meets the requirements.  If the field is set, it must be greater than the current version of Omeka.
 
     .. php:method:: meetsOmekaTestedUpToVersion()
 

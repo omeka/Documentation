@@ -15,6 +15,7 @@ Up to :doc:`../index`
    /Reference/models/Output/ItemOmekaXml.rst
    /Reference/models/Output/ItemRss2.rst
    /Reference/models/Output/OmekaJson.rst
+
 .. toctree::
    :glob:
 

@@ -10,6 +10,7 @@ Up to :doc:`../index`
    /Reference/libraries/Omeka/Test/Helper/DbProfiler.rst
    /Reference/libraries/Omeka/Test/Helper/Mail.rst
    /Reference/libraries/Omeka/Test/Helper/Plugin.rst
+
 .. toctree::
    :glob:
 

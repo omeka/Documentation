@@ -7,6 +7,10 @@ Libraries/Omeka/Validate
     Confirmation
     Errors
     Exception
-    File/index
     Uri
     UserPassword
+
+
+.. toctree::
+
+    File/index

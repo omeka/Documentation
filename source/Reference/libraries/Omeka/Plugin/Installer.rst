@@ -57,8 +57,7 @@ Omeka_Plugin_Installer
     
         Uninstall a plugin.
         
-        This will run the 'uninstall' hook for the given plugin, and then itwill remove the entry in the DB corresponding to
-        the plugin.
+        This will run the 'uninstall' hook for the given plugin, and then itwill remove the entry in the DB corresponding to the plugin.
         
         :param Plugin $plugin: Plugin to uninstall.
         :returns: void

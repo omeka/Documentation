@@ -8,6 +8,7 @@ Up to :doc:`../index`
 
    /Reference/libraries/Omeka/Navigation.rst
    /Reference/libraries/Omeka/Navigation/Page/Uri.rst
+
 .. toctree::
    :glob:
 

@@ -8,3 +8,7 @@ Libraries/Omeka/Db/Migration
     Exception
     Manager
     MigrationInterface
+
+
+.. toctree::
+

@@ -18,10 +18,7 @@ Omeka_Plugin_AbstractPlugin
     
         Plugin hooks.
         
-        In the child class plugin authors should set an array containing hooknames as values and, optionally, callback names
-        as keys. If a callbackname is given, the child class should contain an identically namedmethod. If no callback key
-        is given, the child class should contain acorresponding hookCamelCased() method. E.g: the
-        after_save_form_recordfilter should have a corresponding hookAfterSaveRecord() method.
+        In the child class plugin authors should set an array containing hooknames as values and, optionally, callback names as keys. If a callbackname is given, the child class should contain an identically namedmethod. If no callback key is given, the child class should contain acorresponding hookCamelCased() method. E.g: the after_save_form_recordfilter should have a corresponding hookAfterSaveRecord() method.
         
         For example:	               
         
@@ -36,10 +33,7 @@ Omeka_Plugin_AbstractPlugin
     
         Plugin filters.
         
-        In the child class plugin authors should set an array containing filternames as values and, optionally, callback
-        names as keys. If a callbackname is given, the child class should contain an identically namedmethod. If no callback
-        key is given, the child class should contain acorresponding filterCamelCased() method. E.g: the
-        admin_navigation_mainfilter should have a corresponding filterAdminNavigationMain() method.
+        In the child class plugin authors should set an array containing filternames as values and, optionally, callback names as keys. If a callbackname is given, the child class should contain an identically namedmethod. If no callback key is given, the child class should contain acorresponding filterCamelCased() method. E.g: the admin_navigation_mainfilter should have a corresponding filterAdminNavigationMain() method.
         
         For example:	               
         

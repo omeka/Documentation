@@ -23,4 +23,8 @@ Controllers
     ThemesController
     UpgradeController
     UsersController
+
+
+.. toctree::
+
     helpers/index

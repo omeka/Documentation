@@ -13,6 +13,7 @@ Up to :doc:`../index`
    /Reference/libraries/Omeka/Controller/Plugin/Ssl.rst
    /Reference/libraries/Omeka/Controller/Plugin/Upgrade.rst
    /Reference/libraries/Omeka/Controller/Plugin/ViewScripts.rst
+
 .. toctree::
    :glob:
 

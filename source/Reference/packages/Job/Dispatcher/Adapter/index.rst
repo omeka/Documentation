@@ -14,6 +14,7 @@ Up to :doc:`../index`
    /Reference/libraries/Omeka/Job/Dispatcher/Adapter/RequiredOptionException.rst
    /Reference/libraries/Omeka/Job/Dispatcher/Adapter/Synchronous.rst
    /Reference/libraries/Omeka/Job/Dispatcher/Adapter/ZendQueue.rst
+
 .. toctree::
    :glob:
 

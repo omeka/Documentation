@@ -11,3 +11,7 @@ Libraries/Omeka/Controller/Plugin
     Ssl
     Upgrade
     ViewScripts
+
+
+.. toctree::
+

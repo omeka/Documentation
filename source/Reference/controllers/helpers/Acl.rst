@@ -37,8 +37,7 @@ Omeka_Controller_Action_Helper_Acl
     
         Determine whether or not access is granted to a specific controller/action.
         
-        If the user has been authenticated, display the Access Forbidden error page.Otherwise, give the user an opportunity
-        to login before trying again.
+        If the user has been authenticated, display the Access Forbidden error page.Otherwise, give the user an opportunity to login before trying again.
         
         :returns: void
 
@@ -47,14 +46,11 @@ Omeka_Controller_Action_Helper_Acl
         Notifies whether the logged-in user has permission for a given resource/
         privilege combination.
         
-        If an ACL resource being checked has not been defined, access to thatresource should not be controlled.  This allows
-        plugin writers toimplement controllers without also requiring them to be aware of the ACL.
+        If an ACL resource being checked has not been defined, access to thatresource should not be controlled.  This allows plugin writers toimplement controllers without also requiring them to be aware of the ACL.
         
-        Conversely, in the event that an ACL resource has been defined, all access permissions for that controller must be
-        properly defined.
+        Conversely, in the event that an ACL resource has been defined, all access permissions for that controller must be properly defined.
         
-        The names of resources should correspond to the name of the controllerclass minus 'Controller',
-        e.g.Geolocation_IndexController -> 'Geolocation_Index'CollectionsController -> 'Collections'
+        The names of resources should correspond to the name of the controllerclass minus 'Controller', e.g.Geolocation_IndexController -> 'Geolocation_Index'CollectionsController -> 'Collections'
         
         :param string $privilege: 
         :param unknown $resource: 

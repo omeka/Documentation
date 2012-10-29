@@ -220,9 +220,7 @@ be done.</p>
 <dt id="Omeka_Db::getTable">
 <tt class="descname">getTable</tt><big>(</big><em>string $class</em><big>)</big><a class="headerlink" href="#Omeka_Db::getTable" title="Permalink to this definition">¶</a></dt>
 <dd><p>Retrieve a table object corresponding to the model class.</p>
-<p>Table classes can be extended by inheriting off of Omeka_Db_Table andthen calling your table Table_ModelName, e.g.
-Table_Item orTable_Collection. For backwards compatibility you may call your tableModelNameTable, i.e. ItemTable or
-CollectionTable. The latter namingpattern is deprecated.</p>
+<p>Table classes can be extended by inheriting off of Omeka_Db_Table andthen calling your table Table_ModelName, e.g. Table_Item orTable_Collection. For backwards compatibility you may call your tableModelNameTable, i.e. ItemTable or CollectionTable. The latter namingpattern is deprecated.</p>
 <p>This will cache every table object so that tables are not instantiatedmultiple times for complicated web requests.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -265,9 +263,7 @@ CollectionTable. The latter namingpattern is deprecated.</p>
 <dd><p>Every query ends up looking like:
 INSERT INTO table (field, field2, field3, ...) VALUES (?, ?, ?, ...)
 ON DUPLICATE KEY UPDATE field = ?, field2 = ?, ...</p>
-<p>Note on portability: ON DUPLICATE KEY UPDATE is a MySQL extension.The advantage to using this is that it doesn&#8217;t
-care whether a row exists already.Basically it combines what would be insert() and update() methods in otherORMs
-into a single method</p>
+<p>Note on portability: ON DUPLICATE KEY UPDATE is a MySQL extension.The advantage to using this is that it doesn&#8217;t care whether a row exists already.Basically it combines what would be insert() and update() methods in otherORMs into a single method</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -325,8 +321,7 @@ into a single method</p>
 <dt id="Omeka_Db::loadSqlFile">
 <tt class="descname">loadSqlFile</tt><big>(</big><em>string $filePath</em><big>)</big><a class="headerlink" href="#Omeka_Db::loadSqlFile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read the contents of an SQL file and execute all the queries therein.</p>
-<p>In addition to reading the file, this will make substitutions based onspecific naming conventions. Currently makes
-the following substitutions:%PREFIX% will be replaced by the table prefix.</p>
+<p>In addition to reading the file, this will make substitutions based onspecific naming conventions. Currently makes the following substitutions:%PREFIX% will be replaced by the table prefix.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />

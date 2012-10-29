@@ -8,6 +8,7 @@ Up to :doc:`../index`
 
    /Reference/libraries/Omeka/Test/AppTestCase.rst
    /Reference/libraries/Omeka/Test/Bootstrap.rst
+
 .. toctree::
    :glob:
 

@@ -11,3 +11,7 @@ Libraries/Omeka/Test/Resource
     Mail
     Storage
     Tempdir
+
+
+.. toctree::
+

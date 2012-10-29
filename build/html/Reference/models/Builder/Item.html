@@ -24,7 +24,7 @@
     <script type="text/javascript" src="../../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
-    <link rel="up" title="Models/Builder" href="index.html" />
+    <link rel="up" title="Record\Builder" href="../../packages/Record/Builder/index.html" />
     <link rel="next" title="Builder_ItemType" href="ItemType.html" />
     <link rel="prev" title="Builder_ElementSet" href="ElementSet.html" />
     <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
@@ -50,8 +50,8 @@
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="../index.html" >Models</a> &raquo;</li>
-          <li><a href="index.html" accesskey="U">Models/Builder</a> &raquo;</li> 
+          <li><a href="../../packages/index.html" >Packages</a> &raquo;</li>
+          <li><a href="../../packages/Record/Builder/index.html" accesskey="U">Record\Builder</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -169,17 +169,7 @@ instead of ID.</p>
 <dt id="Builder_Item::addFiles">
 <tt class="descname">addFiles</tt><big>(</big><em>string|Omeka_File_Ingest_AbstractIngest $transferStrategy</em>, <em>string|array $files</em>, <em>$options = Array</em><big>)</big><a class="headerlink" href="#Builder_Item::addFiles" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add files to an item.</p>
-<p>&lt;li&gt;&#8217;Url|Filesystem&#8217; =&gt; string|array If a string is given, this representsthe source identifier of a single file
-(the URL representing the file, orthe absolute file path, respectively).  If an array is given, it assumesthat each
-entry in the array must be either an array or a string.  If itan array, there are several default keys that may be
-present:&lt;ul&gt;&lt;li&gt;&#8217;source&#8217; =&gt; Any identifier that is appropriate to the transferstrategy in use.  For &#8216;Url&#8217;, this
-should be a valid URL.  For &#8216;Filesystem&#8217;,it must be an absolute path to the source file to be
-transferred.&lt;/li&gt;&lt;li&gt;&#8217;name&#8217; =&gt; OPTIONAL The filename to give to the transferredfile.  This can be any arbitrary
-filename and will be listed as theoriginal filename of the file.  This will also be used to generate thearchival
-filename for the file.  If none is given, this defaults to usingthe getOriginalFileName() method of the transfer
-adapter.&lt;/li&gt;&lt;li&gt;&#8217;metadata&#8217; =&gt; OPTIONAL This could contain any metadata that needs to beassociated with the file.
-This should be indexed in the same fashionas for items.  See
-ActsAsElementText::addTextsByArray()&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</p>
+<p>&lt;li&gt;&#8217;Url|Filesystem&#8217; =&gt; string|array If a string is given, this representsthe source identifier of a single file (the URL representing the file, orthe absolute file path, respectively).  If an array is given, it assumesthat each entry in the array must be either an array or a string.  If itan array, there are several default keys that may be present:&lt;ul&gt;&lt;li&gt;&#8217;source&#8217; =&gt; Any identifier that is appropriate to the transferstrategy in use.  For &#8216;Url&#8217;, this should be a valid URL.  For &#8216;Filesystem&#8217;,it must be an absolute path to the source file to be transferred.&lt;/li&gt;&lt;li&gt;&#8217;name&#8217; =&gt; OPTIONAL The filename to give to the transferredfile.  This can be any arbitrary filename and will be listed as theoriginal filename of the file.  This will also be used to generate thearchival filename for the file.  If none is given, this defaults to usingthe getOriginalFileName() method of the transfer adapter.&lt;/li&gt;&lt;li&gt;&#8217;metadata&#8217; =&gt; OPTIONAL This could contain any metadata that needs to beassociated with the file.  This should be indexed in the same fashionas for items.  See ActsAsElementText::addTextsByArray()&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -325,8 +315,8 @@ flag in the settings panel.</p>
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="../index.html" >Models</a> &raquo;</li>
-          <li><a href="index.html" >Models/Builder</a> &raquo;</li> 
+          <li><a href="../../packages/index.html" >Packages</a> &raquo;</li>
+          <li><a href="../../packages/Record/Builder/index.html" >Record\Builder</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

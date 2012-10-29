@@ -115,8 +115,7 @@ Item
     
         Delete files associated with the item.
         
-        If the IDs of specific files are passed in, this will delete only thosefiles (e.g. form submission).  Otherwise, it
-        will delete all filesassociated with the item.
+        If the IDs of specific files are passed in, this will delete only thosefiles (e.g. form submission).  Otherwise, it will delete all filesassociated with the item.
         
         :param array $fileIds: Optional
         :returns: void

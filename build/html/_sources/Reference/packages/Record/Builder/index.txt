@@ -12,6 +12,7 @@ Up to :doc:`../index`
    /Reference/models/Builder/ItemType.rst
    /Reference/libraries/Omeka/Record/Builder/AbstractBuilder.rst
    /Reference/libraries/Omeka/Record/Builder/Exception.rst
+
 .. toctree::
    :glob:
 

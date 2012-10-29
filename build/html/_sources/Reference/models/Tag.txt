@@ -35,8 +35,7 @@ Tag
     
         Rename a tag.
         
-        Any records tagged with the "old" tag will be tagged with eachof the tags given in $new_names. The original tag will
-        bedeleted (unless it is given as one of the $new_names).
+        Any records tagged with the "old" tag will be tagged with eachof the tags given in $new_names. The original tag will bedeleted (unless it is given as one of the $new_names).
         
         :param array $new_names: Names of the tags this one should be renamed to.
         :returns: void

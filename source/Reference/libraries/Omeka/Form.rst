@@ -41,8 +41,7 @@ Omeka_Form
     
         Configure element styles / decorators based on the type of element.
         
-        This may be called after elements to the form, as the decoratorconfiguration in init() runs before elements can be
-        added.
+        This may be called after elements to the form, as the decoratorconfiguration in init() runs before elements can be added.
         
         :returns: void
 

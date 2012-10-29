@@ -22,8 +22,7 @@ UsersController
         
         Set a view script variable for header and footer view scripts and don't allow logged-in users access.
         
-        The script variables are set for actions in $_publicActions, so the scripts for those actions should use these
-        variables.
+        The script variables are set for actions in $_publicActions, so the scripts for those actions should use these variables.
 
     .. php:method:: forgotPasswordAction()
     

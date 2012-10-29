@@ -6,3 +6,7 @@ Libraries/Omeka/Job/Factory
 
     MalformedJobException
     MissingClassException
+
+
+.. toctree::
+

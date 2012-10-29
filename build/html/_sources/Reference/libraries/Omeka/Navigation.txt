@@ -32,8 +32,7 @@ Omeka_Navigation
         and is an instance of Zend_Navigation_Page_Mvc or Omeka_Navigation_Page_Uri.
         If a page already has another page with the same uid then it will not add the page.
         
-        This method will inject the container as the given page's parent bycalling {@link
-        Zend_Navigation_Page::setParent()}.
+        This method will inject the container as the given page's parent bycalling {@link Zend_Navigation_Page::setParent()}.
         
         :param unknown $page: 
         :returns: Zend_Navigation_Container                     fluent interface, returns self

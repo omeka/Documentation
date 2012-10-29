@@ -24,9 +24,9 @@
     <script type="text/javascript" src="../../../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" />
-    <link rel="up" title="Record" href="../../../packages/Record/index.html" />
+    <link rel="up" title="Libraries/Omeka/Record" href="index.html" />
     <link rel="next" title="Omeka_Record_Exception" href="Exception.html" />
-    <link rel="prev" title="ItemTypesElements" href="../../../models/ItemTypesElements.html" />
+    <link rel="prev" title="Libraries/Omeka/Record" href="index.html" />
     <link rel="stylesheet" href="../../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="Exception.html" title="Omeka_Record_Exception"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="../../../models/ItemTypesElements.html" title="ItemTypesElements"
+          <a href="index.html" title="Libraries/Omeka/Record"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -50,8 +50,8 @@
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="../../../packages/index.html" >&lt;no title&gt;</a> &raquo;</li>
-          <li><a href="../../../packages/Record/index.html" accesskey="U">Record</a> &raquo;</li> 
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Libraries/Omeka/Record</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -72,8 +72,7 @@ to, the ActiveRecord pattern.</p>
 <dt id="Omeka_Record_AbstractRecord::$id">
 <em class="property">property </em><tt class="descname">id</tt><a class="headerlink" href="#Omeka_Record_AbstractRecord::$id" title="Permalink to this definition">¶</a></dt>
 <dd><p>Unique ID for the record.</p>
-<p>All implementations of Omeka_Record_AbstractRecord must have a table containing an &#8216;id&#8217; column, preferably as the
-primary key.</p>
+<p>All implementations of Omeka_Record_AbstractRecord must have a table containing an &#8216;id&#8217; column, preferably as the primary key.</p>
 </dd></dl>
 
 <dl class="attr">
@@ -167,8 +166,7 @@ Locked records cannot be saved.</p>
 <dt id="Omeka_Record_AbstractRecord::construct">
 <tt class="descname">construct</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::construct" title="Permalink to this definition">¶</a></dt>
 <dd><p>Subclass constructor behavior.</p>
-<p>Subclasses of Omeka_Record_AbstractRecord can override this function toadd behavior to the constructor without
-overriding __construct.</p>
+<p>Subclasses of Omeka_Record_AbstractRecord can override this function toadd behavior to the constructor without overriding __construct.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -233,8 +231,7 @@ instances.</p>
 <dt id="Omeka_Record_AbstractRecord::_initializeMixins">
 <tt class="descname">_initializeMixins</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::_initializeMixins" title="Permalink to this definition">¶</a></dt>
 <dd><p>Initialize the mixins for a record.</p>
-<p>Any Omeka_Record_AbstractRecord subclass that uses mixins shouldinitialize them here, since this is called on
-construction and whenmixins need to be reinitialized.</p>
+<p>Any Omeka_Record_AbstractRecord subclass that uses mixins shouldinitialize them here, since this is called on construction and whenmixins need to be reinitialized.</p>
 </dd></dl>
 
 <dl class="method">
@@ -263,9 +260,7 @@ construction and whenmixins need to be reinitialized.</p>
 <dt id="Omeka_Record_AbstractRecord::runCallbacks">
 <tt class="descname">runCallbacks</tt><big>(</big><em>$event</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::runCallbacks" title="Permalink to this definition">¶</a></dt>
 <dd><p>Invoke all callbacks associated with a specific record event.</p>
-<p>Callbacks execute in the following order:- Omeka_Record_AbstractRecord hooks like
-Omeka_Record_AbstractRecord::afterDelete()- Record mixin hooks like Taggable::afterSave()- Generic record plugin
-hooks like &#8216;before_delete_record&#8217;- Specific record plugin hooks like &#8216;before_delete_item&#8217;</p>
+<p>Callbacks execute in the following order:- Omeka_Record_AbstractRecord hooks like Omeka_Record_AbstractRecord::afterDelete()- Record mixin hooks like Taggable::afterSave()- Generic record plugin hooks like &#8216;before_delete_record&#8217;- Specific record plugin hooks like &#8216;before_delete_item&#8217;</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -462,8 +457,7 @@ the errors already on this record.</p>
 <dt id="Omeka_Record_AbstractRecord::lock">
 <tt class="descname">lock</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::lock" title="Permalink to this definition">¶</a></dt>
 <dd><p>Prevent a record from being modified.</p>
-<p>Can be used to prevent accidentally saving/deleting a record if its state maychange but saving would be undesirable,
-such as modifying a record fordisplay purposes.</p>
+<p>Can be used to prevent accidentally saving/deleting a record if its state maychange but saving would be undesirable, such as modifying a record fordisplay purposes.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -569,9 +563,7 @@ values.</p>
 <dt id="Omeka_Record_AbstractRecord::_delete">
 <tt class="descname">_delete</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::_delete" title="Permalink to this definition">¶</a></dt>
 <dd><p>Template method for defining record deletion logic.</p>
-<p>Subclasses can override this method to define additional logic for deletingrecords.  Note that this is different
-from both the beforeDelete() andafterDelete() hooks in that it executes after beforeDelete(), but beforethe record
-is actually deleted.</p>
+<p>Subclasses can override this method to define additional logic for deletingrecords.  Note that this is different from both the beforeDelete() andafterDelete() hooks in that it executes after beforeDelete(), but beforethe record is actually deleted.</p>
 <p>Common use cases include emulating cascading deletes with otherdatabase rows.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -818,8 +810,7 @@ is actually deleted.</p>
 <dt id="Omeka_Record_AbstractRecord::getRecordUrl">
 <tt class="descname">getRecordUrl</tt><big>(</big><em>string $action = show</em><big>)</big><a class="headerlink" href="#Omeka_Record_AbstractRecord::getRecordUrl" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get the routing parameters or the URL string to this record.</p>
-<p>The record_url() global uses this method to get routing parameters fornon-standard records, e.g. records defined by
-plugins. Subclasses shouldoverride this method if the default route (as defined below) isincorrect.</p>
+<p>The record_url() global uses this method to get routing parameters fornon-standard records, e.g. records defined by plugins. Subclasses shouldoverride this method if the default route (as defined below) isincorrect.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -850,8 +841,8 @@ plugins. Subclasses shouldoverride this method if the default route (as defined 
               <img class="logo" src="../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
   <h4>Previous topic</h4>
-  <p class="topless"><a href="../../../models/ItemTypesElements.html"
-                        title="previous chapter">ItemTypesElements</a></p>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Libraries/Omeka/Record</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="Exception.html"
                         title="next chapter">Omeka_Record_Exception</a></p>
@@ -892,7 +883,7 @@ plugins. Subclasses shouldoverride this method if the default route (as defined 
           <a href="Exception.html" title="Omeka_Record_Exception"
              >next</a> |</li>
         <li class="right" >
-          <a href="../../../models/ItemTypesElements.html" title="ItemTypesElements"
+          <a href="index.html" title="Libraries/Omeka/Record"
              >previous</a> |</li>
     
         <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -901,8 +892,8 @@ plugins. Subclasses shouldoverride this method if the default route (as defined 
      The final release of Omeka 2.0 may have changes.</p>    
 
           <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
-          <li><a href="../../../packages/index.html" >&lt;no title&gt;</a> &raquo;</li>
-          <li><a href="../../../packages/Record/index.html" >Record</a> &raquo;</li> 
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" >Libraries/Omeka/Record</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

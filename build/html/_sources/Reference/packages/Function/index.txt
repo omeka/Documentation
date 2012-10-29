@@ -1,0 +1,12 @@
+
+##########################
+Functions By Typical Usage
+##########################
+
+
+.. toctree::
+    :maxdepth: 1
+    :glob:
+    
+    
+    */index

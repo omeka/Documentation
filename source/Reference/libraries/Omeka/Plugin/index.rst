@@ -12,3 +12,10 @@ Libraries/Omeka/Plugin
     Installer
     Loader
     Mvc
+
+
+.. toctree::
+
+    Broker/index
+    Installer/index
+    Loader/index

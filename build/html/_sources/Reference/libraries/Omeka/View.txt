@@ -54,8 +54,7 @@ Omeka_View
         
         Also allows access to theme helpers.
         
-        For example, in a controller you might do something like:$view->assign('themes', $themes);Normally in the view you
-        would then reference $themes through:$this->themes;
+        For example, in a controller you might do something like:$view->assign('themes', $themes);Normally in the view you would then reference $themes through:$this->themes;
         
         Now you can reference it simply by using:$themes;
         

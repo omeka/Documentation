@@ -220,9 +220,7 @@ Mixin_ElementText
     
         The application flow is thus:
         
-        1) Build ElementText objects from the POST.2) Validate the ElementText objects and assign error messages
-        ifnecessary.3) After the item saves correctly, delete all the ElementText recordsfor the Item.4) Save the new
-        ElementText objects to the database.
+        1) Build ElementText objects from the POST.2) Validate the ElementText objects and assign error messages ifnecessary.3) After the item saves correctly, delete all the ElementText recordsfor the Item.4) Save the new ElementText objects to the database.
         
         :param unknown $post:
 
@@ -234,8 +232,7 @@ Mixin_ElementText
         
         <code>
         
-        array('Elements' =>array('50' => array(array('text' => 'Foobar', //element id 50, e.g. DC:Title'html' => 0)),'41' =>
-        array(array('text' => '<p>Baz baz baz</p>', //element id 41, e.g. DC:Description'html' => 1))))
+        array('Elements' =>array('50' => array(array('text' => 'Foobar', //element id 50, e.g. DC:Title'html' => 0)),'41' => array(array('text' => '<p>Baz baz baz</p>', //element id 41, e.g. DC:Description'html' => 1))))
         
         </code>
         

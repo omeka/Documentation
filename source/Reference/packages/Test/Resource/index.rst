@@ -13,6 +13,7 @@ Up to :doc:`../index`
    /Reference/libraries/Omeka/Test/Resource/Mail.rst
    /Reference/libraries/Omeka/Test/Resource/Storage.rst
    /Reference/libraries/Omeka/Test/Resource/Tempdir.rst
+
 .. toctree::
    :glob:
 

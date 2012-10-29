@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_Storage_Adapter_TempFilesystem &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" />
+    <link rel="up" title="Libraries/Omeka/Storage" href="index.html" />
+    <link rel="next" title="Omeka_Storage_Adapter_ZendS3" href="ZendS3.html" />
+    <link rel="prev" title="Omeka_Storage_Adapter_Filesystem" href="Filesystem.html" />
+    <link rel="stylesheet" href="../../../../_static/overrides.css" type="text/css" />
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="ZendS3.html" title="Omeka_Storage_Adapter_ZendS3"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Filesystem.html" title="Omeka_Storage_Adapter_Filesystem"
+             accesskey="P">previous</a> |</li>
+    
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Libraries/Omeka/Storage</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-storage-adapter-tempfilesystem">
+<h1>Omeka_Storage_Adapter_TempFilesystem<a class="headerlink" href="#omeka-storage-adapter-tempfilesystem" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_Storage_Adapter_TempFilesystem">
+<em class="property">class </em><tt class="descname">Omeka_Storage_Adapter_TempFilesystem</tt><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem" title="Permalink to this definition">¶</a></dt>
+<dd><p>Package: <a class="reference internal" href="../../../packages/Storage/Adapter/index.html"><em>Storage\Adapter</em></a></p>
+<p>Storage adapter that uses the system temp directory for its filesystem.</p>
+<p>After the adapter is no longer needed (__destruct()), all the files that were created during its lifetime are removed.</p>
+<p>Used primarily by the test framework.</p>
+<dl class="attr">
+<dt id="Omeka_Storage_Adapter_TempFilesystem::$_localDir">
+<em class="property">property </em><tt class="descname">_localDir</tt><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem::$_localDir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Local directory where files are stored.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Storage_Adapter_TempFilesystem::$_subDirs">
+<em class="property">property </em><tt class="descname">_subDirs</tt><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem::$_subDirs" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Storage_Adapter_TempFilesystem::$_webDir">
+<em class="property">property </em><tt class="descname">_webDir</tt><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem::$_webDir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Web-accesible path that corresponds to $_localDir.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Storage_Adapter_TempFilesystem::canStore">
+<tt class="descname">canStore</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem::canStore" title="Permalink to this definition">¶</a></dt>
+<dd><p>No need to perform this check.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Storage_Adapter_TempFilesystem::store">
+<tt class="descname">store</tt><big>(</big><em>string $source</em>, <em>string $dest</em><big>)</big><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem::store" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move a local file to &#8220;storage.&#8221;</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$source</strong> (<em>string</em>) &#8211; Local filesystem path to file.</li>
+<li><strong>$dest</strong> (<em>string</em>) &#8211; Destination path.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Storage_Adapter_TempFilesystem::move">
+<tt class="descname">move</tt><big>(</big><em>string $source</em>, <em>string $dest</em><big>)</big><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem::move" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move a file between two &#8220;storage&#8221; locations.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$source</strong> (<em>string</em>) &#8211; Original stored path.</li>
+<li><strong>$dest</strong> (<em>string</em>) &#8211; Destination stored path.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Storage_Adapter_TempFilesystem::getUri">
+<tt class="descname">getUri</tt><big>(</big><em>$path</em><big>)</big><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem::getUri" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$path</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Storage_Adapter_TempFilesystem::_mkdir">
+<tt class="descname">_mkdir</tt><big>(</big><em>$filepath</em><big>)</big><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem::_mkdir" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$filepath</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Storage_Adapter_TempFilesystem::__construct">
+<tt class="descname">__construct</tt><big>(</big><em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set options for the storage adapter.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$options</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Storage_Adapter_TempFilesystem::setUp">
+<tt class="descname">setUp</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem::setUp" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Storage_Adapter_TempFilesystem::delete">
+<tt class="descname">delete</tt><big>(</big><em>string $path</em><big>)</big><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem::delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a &#8220;stored&#8221; file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$path</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Storage_Adapter_TempFilesystem::getOptions">
+<tt class="descname">getOptions</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem::getOptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the options set by the adapter.  Used primarily for testing.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Storage_Adapter_TempFilesystem::setLocalDir">
+<tt class="descname">setLocalDir</tt><big>(</big><em>$dir</em><big>)</big><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem::setLocalDir" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$dir</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Storage_Adapter_TempFilesystem::_getAbsPath">
+<tt class="descname">_getAbsPath</tt><big>(</big><em>string $path</em><big>)</big><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem::_getAbsPath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert a &#8220;storage&#8221; path to an absolute filesystem path.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$path</strong> (<em>string</em>) &#8211; Storage path.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string Absolute local filesystem path.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Storage_Adapter_TempFilesystem::_rename">
+<tt class="descname">_rename</tt><big>(</big><em>$source</em>, <em>$dest</em><big>)</big><a class="headerlink" href="#Omeka_Storage_Adapter_TempFilesystem::_rename" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$source</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$dest</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../../index.html">
+              <img class="logo" src="../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Filesystem.html"
+                        title="previous chapter">Omeka_Storage_Adapter_Filesystem</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="ZendS3.html"
+                        title="next chapter">Omeka_Storage_Adapter_ZendS3</a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/libraries/Omeka/Storage/TempFilesystem.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="ZendS3.html" title="Omeka_Storage_Adapter_ZendS3"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Filesystem.html" title="Omeka_Storage_Adapter_Filesystem"
+             >previous</a> |</li>
+    
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" >Libraries/Omeka/Storage</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

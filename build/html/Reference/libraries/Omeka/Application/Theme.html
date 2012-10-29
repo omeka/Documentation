@@ -1,0 +1,199 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_Application_Resource_Theme &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" />
+    <link rel="up" title="Libraries/Omeka/Application" href="index.html" />
+    <link rel="next" title="Omeka_Application" href="../Application.html" />
+    <link rel="prev" title="Omeka_Application_Resource_Storage" href="Storage.html" />
+    <link rel="stylesheet" href="../../../../_static/overrides.css" type="text/css" />
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../Application.html" title="Omeka_Application"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Storage.html" title="Omeka_Application_Resource_Storage"
+             accesskey="P">previous</a> |</li>
+    
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Libraries/Omeka/Application</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-application-resource-theme">
+<h1>Omeka_Application_Resource_Theme<a class="headerlink" href="#omeka-application-resource-theme" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_Application_Resource_Theme">
+<em class="property">class </em><tt class="descname">Omeka_Application_Resource_Theme</tt><a class="headerlink" href="#Omeka_Application_Resource_Theme" title="Permalink to this definition">¶</a></dt>
+<dd><p>Package: <a class="reference internal" href="../../../packages/Application/Resource/index.html"><em>Application\Resource</em></a></p>
+<p>Set up the controller plugin that determines theme view script paths.</p>
+<dl class="attr">
+<dt id="Omeka_Application_Resource_Theme::$_basePath">
+<em class="property">property </em><tt class="descname">_basePath</tt><a class="headerlink" href="#Omeka_Application_Resource_Theme::$_basePath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Theme base path.
+Set by application config.</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Application_Resource_Theme::$_webBasePath">
+<em class="property">property </em><tt class="descname">_webBasePath</tt><a class="headerlink" href="#Omeka_Application_Resource_Theme::$_webBasePath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Theme base URI.</p>
+<p>Set by application config.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Application_Resource_Theme::init">
+<tt class="descname">init</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Application_Resource_Theme::init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Application_Resource_Theme::setbasepath">
+<tt class="descname">setbasepath</tt><big>(</big><em>string $basePath</em><big>)</big><a class="headerlink" href="#Omeka_Application_Resource_Theme::setbasepath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the base path for themes.
+Used to allow <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> $_basePath} to be set by application config.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$basePath</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Application_Resource_Theme::setwebbasepath">
+<tt class="descname">setwebbasepath</tt><big>(</big><em>string $webBasePath</em><big>)</big><a class="headerlink" href="#Omeka_Application_Resource_Theme::setwebbasepath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the base URI for themes.
+Used to allow <a class="reference external" href="mailto:{&#37;&#52;&#48;link">{<span>&#64;</span>link</a> $_webBasePath} to be set by application config.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$webBasePath</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../../index.html">
+              <img class="logo" src="../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Storage.html"
+                        title="previous chapter">Omeka_Application_Resource_Storage</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../Application.html"
+                        title="next chapter">Omeka_Application</a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/libraries/Omeka/Application/Theme.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../Application.html" title="Omeka_Application"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Storage.html" title="Omeka_Application_Resource_Storage"
+             >previous</a> |</li>
+    
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" >Libraries/Omeka/Application</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+######################
+Body-related functions
+######################
+
+Up to :doc:`../index`
+
+.. toctree::
+    :maxdepth: 1
+    :glob:
+
+    */index
+    *

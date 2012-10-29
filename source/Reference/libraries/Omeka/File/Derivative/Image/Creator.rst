@@ -63,12 +63,9 @@ Omeka_File_Derivative_Image_Creator
     
         Generate a derivative image from an existing file stored in Omeka.
         
-        This image will be generated based on a constraint given in pixels.  Forexample, if the constraint is 500, the
-        resulting image file will be scaledso that the largest side is 500px. If the image is less than 500px on bothsides,
-        the image will not be resized.
+        This image will be generated based on a constraint given in pixels.  Forexample, if the constraint is 500, the resulting image file will be scaledso that the largest side is 500px. If the image is less than 500px on bothsides, the image will not be resized.
         
-        Derivative images will only be generated for files with mime typesthat can be identified with ImageMagick's
-        'identify' command
+        Derivative images will only be generated for files with mime typesthat can be identified with ImageMagick's 'identify' command
         
         :param unknown $origPath: 
         :param unknown $newPath: 
@@ -110,8 +107,7 @@ Omeka_File_Derivative_Image_Creator
         Retrieve the path to the directory containing ImageMagick's convert utility.
         Th
         
-        Uses the 'which' command-line utility to detect the path to 'convert'.Note that this will only work if the convert
-        utility is in PHP's PATH andthus can be located by 'which'.
+        Uses the 'which' command-line utility to detect the path to 'convert'.Note that this will only work if the convert utility is in PHP's PATH andthus can be located by 'which'.
         
         :returns: string The path to the directory if it can be found.  Otherwise returns an empty string.
 

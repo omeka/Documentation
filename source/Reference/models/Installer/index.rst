@@ -8,6 +8,10 @@ Models/Installer
     Exception
     InstallerInterface
     Requirements
-    Task/index
     TaskInterface
     Test
+
+
+.. toctree::
+
+    Task/index

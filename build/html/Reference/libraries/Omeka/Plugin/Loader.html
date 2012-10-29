@@ -24,6 +24,9 @@
     <script type="text/javascript" src="../../../../_static/doctools.js"></script>
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" />
+    <link rel="up" title="Libraries/Omeka/Plugin" href="index.html" />
+    <link rel="next" title="Omeka_Plugin_Mvc" href="Mvc.html" />
+    <link rel="prev" title="Omeka_Plugin_Installer" href="Installer.html" />
     <link rel="stylesheet" href="../../../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -34,12 +37,21 @@
         <li class="right" style="margin-right: 10px">
           <a href="../../../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Mvc.html" title="Omeka_Plugin_Mvc"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Installer.html" title="Omeka_Plugin_Installer"
+             accesskey="P">previous</a> |</li>
     
         <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
- 
+
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Libraries/Omeka/Plugin</a> &raquo;</li> 
       </ul>
     </div>  
 
@@ -132,9 +144,7 @@ in the plugins/ directory.</p>
 <tt class="descname">registerPlugin</tt><big>(</big><em>Plugin $plugin</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Loader::registerPlugin" title="Permalink to this definition">¶</a></dt>
 <dd><p>Register a plugin so that it can be accessed by other plugins (if necessary)
 during the load process.</p>
-<p>There should only be a single instance of a plugin per directory name.Registering a plugin more than once, i.e.
-loading a plugin again after thefirst time failed, will not cause a problem as long as the same instancewas
-registered.</p>
+<p>There should only be a single instance of a plugin per directory name.Registering a plugin more than once, i.e. loading a plugin again after thefirst time failed, will not cause a problem as long as the same instancewas registered.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -175,9 +185,7 @@ registered.</p>
 <dt id="Omeka_Plugin_Loader::load">
 <tt class="descname">load</tt><big>(</big><em>Plugin $plugin</em>, <em>boolean $force =</em>, <em>array $pluginsWaitingToLoad = Array</em><big>)</big><a class="headerlink" href="#Omeka_Plugin_Loader::load" title="Permalink to this definition">¶</a></dt>
 <dd><p>Load a plugin (and make sure the plugin API is available).</p>
-<p>To be loaded, the plugin must be installed, active, and not have a newerversion. If loaded, the plugin will attempt
-to first load all plugins,both required and optional, that the plugin uses.  However, it will notload a plugin that
-it uses if that plugin is not installed and activated.</p>
+<p>To be loaded, the plugin must be installed, active, and not have a newerversion. If loaded, the plugin will attempt to first load all plugins,both required and optional, that the plugin uses.  However, it will notload a plugin that it uses if that plugin is not installed and activated.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -372,6 +380,12 @@ be loaded) thus far.</p>
             <p class="logo"><a href="../../../../index.html">
               <img class="logo" src="../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
             </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Installer.html"
+                        title="previous chapter">Omeka_Plugin_Installer</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Mvc.html"
+                        title="next chapter">Omeka_Plugin_Mvc</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -405,12 +419,21 @@ be loaded) thus far.</p>
         <li class="right" style="margin-right: 10px">
           <a href="../../../../genindex.html" title="General Index"
              >index</a></li>
+        <li class="right" >
+          <a href="Mvc.html" title="Omeka_Plugin_Mvc"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Installer.html" title="Omeka_Plugin_Installer"
+             >previous</a> |</li>
     
         <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
     <p style="background-color: white; color:red;">
     This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
      The final release of Omeka 2.0 may have changes.</p>    
- 
+
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" >Libraries/Omeka/Plugin</a> &raquo;</li> 
       </ul>
     </div>
     <div class="footer">

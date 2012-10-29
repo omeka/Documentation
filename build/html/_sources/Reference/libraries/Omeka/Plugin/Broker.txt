@@ -45,8 +45,7 @@ Omeka_Plugin_Broker
     
         Set the currently-focused plugin by directory name.
         
-        The plugin helper functions do not have any way of determining whatplugin to is currently in focus.  These
-        get/setCurrentPluginDirNamemethods allow the broker to know how to delegate to specific plugins ifnecessary.
+        The plugin helper functions do not have any way of determining whatplugin to is currently in focus.  These get/setCurrentPluginDirNamemethods allow the broker to know how to delegate to specific plugins ifnecessary.
         
         :param string $pluginDirName: Plugin to set as current.
         :returns: void

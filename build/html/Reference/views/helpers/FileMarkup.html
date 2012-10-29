@@ -1,0 +1,676 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_View_Helper_FileMarkup &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../index.html" />
+    <link rel="up" title="Views/helpers" href="index.html" />
+    <link rel="next" title="Omeka_View_Helper_Flash" href="Flash.html" />
+    <link rel="prev" title="Omeka_View_Helper_FileId3Metadata" href="FileId3Metadata.html" />
+    <link rel="stylesheet" href="../../../_static/overrides.css" type="text/css" />
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Flash.html" title="Omeka_View_Helper_Flash"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="FileId3Metadata.html" title="Omeka_View_Helper_FileId3Metadata"
+             accesskey="P">previous</a> |</li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Views/helpers</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-view-helper-filemarkup">
+<h1>Omeka_View_Helper_FileMarkup<a class="headerlink" href="#omeka-view-helper-filemarkup" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_View_Helper_FileMarkup">
+<em class="property">class </em><tt class="descname">Omeka_View_Helper_FileMarkup</tt><a class="headerlink" href="#Omeka_View_Helper_FileMarkup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Package: <a class="reference internal" href="../../packages/View/Helper/index.html"><em>View\Helper</em></a></p>
+<p>View Helper for displaying files through Omeka.</p>
+<p>This will determine how to display any given file based on the MIME type(Internet media type) of that file. Individual rendering agents are definedby callbacks that are either contained within this class or defined byplugins. Callbacks defined by plugins will override native class methods ifdefined for existing MIME types. In order to define a rendering callback thatshould be in the core of Omeka, define a method in this class and then makesure that it responds to all the correct MIME types by modifying otherproperties in this class.</p>
+<dl class="attr">
+<dt id="Omeka_View_Helper_FileMarkup::$_callbacks">
+<em class="property">property </em><tt class="descname">_callbacks</tt><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::$_callbacks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Array of MIME types and the callbacks that can process it.</p>
+<p>Example:array(&#8216;video/avi&#8217;=&gt;&#8217;wmv&#8217;);</p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_View_Helper_FileMarkup::$_fileExtensionCallbacks">
+<em class="property">property </em><tt class="descname">_fileExtensionCallbacks</tt><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::$_fileExtensionCallbacks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Array of file extensions and the callbacks that can process them.</p>
+<p>Taken from <a class="reference external" href="http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types">http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types</a></p>
+</dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_View_Helper_FileMarkup::$_callbackOptions">
+<em class="property">property </em><tt class="descname">_callbackOptions</tt><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::$_callbackOptions" title="Permalink to this definition">¶</a></dt>
+<dd><p>The array consists of the default options which are passed to the
+callback.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::addMimeTypes">
+<tt class="descname">addMimeTypes</tt><big>(</big><em>array|string $fileIdentifiers</em>, <em>$callback</em>, <em>array $defaultOptions = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::addMimeTypes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add MIME types and/or file extensions and associated callbacks to the
+list.</p>
+<p>This allows plugins to override/define ways of displaying specific files.The most obvious example of where this
+would come in handy is to defineways of displaying uncommon files, such as QTVR, or novel ways ofdisplaying more
+common files, such as using iPaper to display PDFs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$fileIdentifiers</strong> (<em>array|string</em>) &#8211; <p>Set of MIME types (Internet media types) and/or file extensions that this specific callback will respond to. Accepts the following:</p>
+<blockquote>
+<div><ul>
+      <li>A string containing one MIME type:
+      <code>'application/msword'</code></li>
+      <li>A simple array containing MIME types:
+      <code>array('application/msword', 'application/doc')</code></li>
+      <li>A keyed array containing MIME types:
+      <code>array('mimeTypes' => array('application/msword', 'application/doc'))</code></li>
+      <li>A keyed array containing file extensions:
+      <code>array('fileExtensions' => array('doc', 'docx''DOC', 'DOCX'))</code></li>
+      <li>A keyed array containing MIME types and file extensions: <code>
+      array(
+          'mimeTypes' => array(
+              'application/msword',
+              'application/doc',
+              'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+          ),
+          'fileExtensions' => array('doc', 'docx', 'DOC', 'DOCX'),
+      )
+      </code></li>
+  </ul></div></blockquote>
+<p>Note that file extensions are case sensitive.</p>
+</li>
+<li><strong>$callback</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$defaultOptions</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">void</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::defaultDisplay">
+<tt class="descname">defaultDisplay</tt><big>(</big><em>File $file</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::defaultDisplay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default display for MIME types that do not have a valid rendering
+callback.</p>
+<p>This wraps the original filename in a link to download that file, with aclass of &#8220;download-file&#8221;.  Any behavior more
+complex than that should beprocessed with a valid callback.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string HTML</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::_linkToFile">
+<tt class="descname">_linkToFile</tt><big>(</big><em>File $file</em>, <em>array $options</em>, <em>string $html</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::_linkToFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a link for the file based on the given set of options.</p>
+<p>If the &#8216;linkToMetadata&#8217; option is true, then link to the filemetadata page (files/show).  If &#8216;linkToFile&#8217; is
+true,link to the original file, and if &#8216;linkToFile&#8217; is a string, tryto link to that specific derivative. Otherwise
+just return the$html without wrapping in a link.</p>
+<p>The attributes for the link will be based off the &#8216;linkAttributes&#8217;
+option, which should be an array.</p>
+<p>If $html is null, it defaults to original filename of the file.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; </li>
+<li><strong>$html</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::wmv">
+<tt class="descname">wmv</tt><big>(</big><em>File $file</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::wmv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve valid XHTML for displaying a wmv video file or equivalent.
+Currently this loads the video inside of an &lt;object&gt; tag, but that
+provides less flexibility than a flash wrapper, which seems to be a
+standard Web2.0 practice for video sharing.  This limitation can be
+overcome by a plugin that used a flash wrapper for displaying video.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::wma">
+<tt class="descname">wma</tt><big>(</big><em>File $file</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::wma" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve valid XHTML for displaying a wma audio file or equivalent.
+Currently this loads the video inside of an &lt;object&gt; tag, but that
+provides less flexibility than a flash wrapper, which seems to be a
+standard Web2.0 practice for video sharing.  This limitation can be
+overcome by a plugin that used a flash wrapper for displaying video.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::mov">
+<tt class="descname">mov</tt><big>(</big><em>File $file</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::mov" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve valid XHTML for displaying Quicktime video files</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; The set of default options for this includes: width, height, autoplay, controller, loop</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::_audio">
+<tt class="descname">_audio</tt><big>(</big><em>File $file</em>, <em>array $options</em>, <em>string $type</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::_audio" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default display of audio files via &lt;object&gt; tags.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; The set of default options for this includes: width, height, autoplay, controller, loop</li>
+<li><strong>$type</strong> (<em>string</em>) &#8211; The Internet media type of the file</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::ogg">
+<tt class="descname">ogg</tt><big>(</big><em>File $file</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::ogg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display OGG audio files.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::mp3">
+<tt class="descname">mp3</tt><big>(</big><em>File $file</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::mp3" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display MP3/MPEG audio files.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::aac">
+<tt class="descname">aac</tt><big>(</big><em>File $file</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::aac" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display AAC audio files.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::aiff">
+<tt class="descname">aiff</tt><big>(</big><em>File $file</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::aiff" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display AIFF audio files.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::midi">
+<tt class="descname">midi</tt><big>(</big><em>File $file</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::midi" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display MIDI audio files.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::mp4">
+<tt class="descname">mp4</tt><big>(</big><em>File $file</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::mp4" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display MP4 audio files.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::wav">
+<tt class="descname">wav</tt><big>(</big><em>File $file</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::wav" title="Permalink to this definition">¶</a></dt>
+<dd><p>Display WAV audio files.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::icon">
+<tt class="descname">icon</tt><big>(</big><em>$file</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::icon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default display of an icon to represent a file.</p>
+<p>Example usage:</p>
+<p>echo
+files_for_item(array(&#8216;showFilename&#8217;=&gt;false,&#8217;linkToFile&#8217;=&gt;false,&#8217;linkAttributes&#8217;=&gt;array(&#8216;rel&#8217;=&gt;&#8217;lightbox&#8217;),&#8217;filenameAttributes&#8217;=&gt;array(&#8216;class&#8217;=&gt;&#8217;error&#8217;),&#8217;imgAttributes&#8217;=&gt;array(&#8216;id&#8217;=&gt;&#8217;foobar&#8217;),&#8217;icons&#8217;
+=&gt; array(&#8216;audio/mpeg&#8217;=&gt;img(&#8216;audio.gif&#8217;))));</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; Available options include: &#8216;showFilename&#8217; =&gt; boolean, &#8216;linkToFile&#8217; =&gt; boolean, &#8216;linkAttributes&#8217; =&gt; array, &#8216;filenameAttributes&#8217; =&gt; array (for the filename div), &#8216;imgAttributes&#8217; =&gt; array, &#8216;icons&#8217; =&gt; array.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::derivativeImage">
+<tt class="descname">derivativeImage</tt><big>(</big><em>File $file</em>, <em>$options = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::derivativeImage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns valid XHTML markup for displaying an image that has been stored
+in Omeka.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; Options for customizing the display of images. Current options include: &#8216;imageSize&#8217;</li>
+<li><strong>$options</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string HTML for display</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::getCallback">
+<tt class="descname">getCallback</tt><big>(</big><em>$file</em>, <em>$options</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::getCallback" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$file</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$options</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::getDefaultOptions">
+<tt class="descname">getDefaultOptions</tt><big>(</big><em>mixed $callback</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::getDefaultOptions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$callback</strong> (<em>mixed</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::getHtml">
+<tt class="descname">getHtml</tt><big>(</big><em>File $file</em>, <em>callback $renderer</em>, <em>array $options</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::getHtml" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the HTML for a given file from the callback.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; </li>
+<li><strong>$renderer</strong> (<em>callback</em>) &#8211; Any valid callback that will display the HTML.</li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; Set of options passed to the rendering callback.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string HTML for displaying the file.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::fileMarkup">
+<tt class="descname">fileMarkup</tt><big>(</big><em>File $file</em>, <em>array $props = Array</em>, <em>array $wrapperAttributes = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::fileMarkup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bootstrap for the helper class.  This will retrieve the HTML for
+displaying the file and by default wrap it in a &lt;div class=&#8221;item-file&#8221;&gt;.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$file</strong> (<a class="reference internal" href="../../models/File.html#File" title="File"><em>File</em></a>) &#8211; </li>
+<li><strong>$props</strong> (<em>array</em>) &#8211; Set of options passed by a theme writer to the customize the display of any given callback.</li>
+<li><strong>$wrapperAttributes</strong> (<em>array</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string HTML</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::image_tag">
+<tt class="descname">image_tag</tt><big>(</big><em>File|Item $record</em>, <em>array $props</em>, <em>string $format</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::image_tag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a valid img tag for an image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$record</strong> (<em>File|Item</em>) &#8211; </li>
+<li><strong>$props</strong> (<em>array</em>) &#8211; </li>
+<li><strong>$format</strong> (<em>string</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_View_Helper_FileMarkup::_getCallbackKey">
+<tt class="descname">_getCallbackKey</tt><big>(</big><em>callback $callback</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::_getCallbackKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get a string key to represent a given callback.</p>
+<p>This key can be used to store and retrieve data about thecallback, like default options.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$callback</strong> (<em>callback</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../index.html">
+              <img class="logo" src="../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="FileId3Metadata.html"
+                        title="previous chapter">Omeka_View_Helper_FileId3Metadata</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Flash.html"
+                        title="next chapter">Omeka_View_Helper_Flash</a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/views/helpers/FileMarkup.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Flash.html" title="Omeka_View_Helper_Flash"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="FileId3Metadata.html" title="Omeka_View_Helper_FileId3Metadata"
+             >previous</a> |</li>
+    
+        <li><a href="../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="index.html" >Views/helpers</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

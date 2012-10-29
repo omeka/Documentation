@@ -4,7 +4,9 @@
 Hooks
 #####
 
-:ref:`usinghooks`
+.. toctree::
+
+   overview/usingHooks
 
 *********
 All Hooks
@@ -97,9 +99,8 @@ Admin Theme
     :maxdepth: 1
     
     admin*
-    show_item
-    show_itemtype
-    show_user
+    show_<model>
+
 
 ************
 Public Theme
@@ -110,6 +111,4 @@ Public Theme
     :maxdepth: 1
     
     public*
-    show_item
-    show_itemtype
-    show_user
+    show_<model>

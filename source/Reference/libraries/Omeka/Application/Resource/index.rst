@@ -26,3 +26,8 @@ Libraries/Omeka/Application/Resource
     Session
     Storage
     Theme
+
+
+.. toctree::
+
+    Jobs/index

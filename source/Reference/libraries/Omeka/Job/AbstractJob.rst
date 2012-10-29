@@ -34,8 +34,7 @@ Omeka_Job_AbstractJob
     
         Set all the options associated with this task.
         
-        This is a convenience method that calls setter methods for the optionsgiven in the array.  If an element in the
-        array does not have anassociated setter method, it will be passed into the options array.
+        This is a convenience method that calls setter methods for the optionsgiven in the array.  If an element in the array does not have anassociated setter method, it will be passed into the options array.
         
         :param unknown $options:
 

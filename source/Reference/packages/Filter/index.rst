@@ -10,6 +10,7 @@ Up to :doc:`../index`
    /Reference/libraries/Omeka/Filter/Filename.rst
    /Reference/libraries/Omeka/Filter/ForeignKey.rst
    /Reference/libraries/Omeka/Filter/HtmlPurifier.rst
+
 .. toctree::
    :glob:
 

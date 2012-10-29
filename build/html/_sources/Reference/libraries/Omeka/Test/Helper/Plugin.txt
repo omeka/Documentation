@@ -71,8 +71,7 @@ Omeka_Test_Helper_Plugin
     
         Lazy-loading for helper properties.
         
-        When a property is not set, attempts to load a default through standardOmeka global state.  If this state is
-        unavailable or undesireable,use the set*() methods before calling any of the other public methodsof this class.
+        When a property is not set, attempts to load a default through standardOmeka global state.  If this state is unavailable or undesireable,use the set*() methods before calling any of the other public methodsof this class.
         
         :param unknown $name: 
         :returns: mixed

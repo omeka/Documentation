@@ -20,8 +20,7 @@ Omeka_Job_Dispatcher_Adapter_BackgroundProcess
     
         Dispatches a background process that executes the given job.
         
-        NOTE: No user account is bootstrapped when background.php runs (since itis CLI), so if a process triggers its own
-        subprocesses, those will belisted as belonging to no user (ID = 0).
+        NOTE: No user account is bootstrapped when background.php runs (since itis CLI), so if a process triggers its own subprocesses, those will belisted as belonging to no user (ID = 0).
         
         :param unknown $encodedJob: 
         :param unknown $metadata:

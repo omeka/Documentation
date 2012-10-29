@@ -1,0 +1,269 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Omeka_Controller_Plugin_Ssl &mdash; Omeka Documentation v2.0 documentation</title>
+    <link rel="stylesheet" href="../../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    
+    <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../../../index.html" />
+    <link rel="up" title="Libraries/Omeka/Controller" href="index.html" />
+    <link rel="next" title="Omeka_Controller_Plugin_Upgrade" href="Upgrade.html" />
+    <link rel="prev" title="Omeka_Controller_Plugin_ViewScripts" href="Plugin/ViewScripts.html" />
+    <link rel="stylesheet" href="../../../../_static/overrides.css" type="text/css" />
+ 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="Upgrade.html" title="Omeka_Controller_Plugin_Upgrade"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="Plugin/ViewScripts.html" title="Omeka_Controller_Plugin_ViewScripts"
+             accesskey="P">previous</a> |</li>
+    
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" accesskey="U">Libraries/Omeka/Controller</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="omeka-controller-plugin-ssl">
+<h1>Omeka_Controller_Plugin_Ssl<a class="headerlink" href="#omeka-controller-plugin-ssl" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="Omeka_Controller_Plugin_Ssl">
+<em class="property">class </em><tt class="descname">Omeka_Controller_Plugin_Ssl</tt><a class="headerlink" href="#Omeka_Controller_Plugin_Ssl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Package: <a class="reference internal" href="../../../packages/Controller/Plugin/index.html"><em>Controller\Plugin</em></a></p>
+<p>Handle SSL configuration for Omeka sites.</p>
+<dl class="attr">
+<dt id="Omeka_Controller_Plugin_Ssl::$_sslConfig">
+<em class="property">property </em><tt class="descname">_sslConfig</tt><a class="headerlink" href="#Omeka_Controller_Plugin_Ssl::$_sslConfig" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Controller_Plugin_Ssl::$_redirector">
+<em class="property">property </em><tt class="descname">_redirector</tt><a class="headerlink" href="#Omeka_Controller_Plugin_Ssl::$_redirector" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attr">
+<dt id="Omeka_Controller_Plugin_Ssl::$_auth">
+<em class="property">property </em><tt class="descname">_auth</tt><a class="headerlink" href="#Omeka_Controller_Plugin_Ssl::$_auth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_Ssl::__construct">
+<tt class="descname">__construct</tt><big>(</big><em>$sslConfig</em>, <em>$redirector</em>, <em>Zend_Auth $auth</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_Ssl::__construct" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$sslConfig</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$redirector</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$auth</strong> (<em>Zend_Auth</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_Ssl::routeStartup">
+<tt class="descname">routeStartup</tt><big>(</big><em>Zend_Controller_Request_Abstract $request</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_Ssl::routeStartup" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$request</strong> (<em>Zend_Controller_Request_Abstract</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_Ssl::preDispatch">
+<tt class="descname">preDispatch</tt><big>(</big><em>Zend_Controller_Request_Abstract $request</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_Ssl::preDispatch" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$request</strong> (<em>Zend_Controller_Request_Abstract</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_Ssl::_isLoginRequest">
+<tt class="descname">_isLoginRequest</tt><big>(</big><em>$request</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_Ssl::_isLoginRequest" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$request</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_Ssl::_secureAuthenticatedSession">
+<tt class="descname">_secureAuthenticatedSession</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_Ssl::_secureAuthenticatedSession" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unauthenticated sessions are not as valuable to attackers, so we only
+really need to check if an authenticated session is being used.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_Ssl::_isSslRequest">
+<tt class="descname">_isSslRequest</tt><big>(</big><em>$request</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_Ssl::_isSslRequest" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$request</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_Ssl::_redirect">
+<tt class="descname">_redirect</tt><big>(</big><em>$request</em><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_Ssl::_redirect" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>$request</strong> (<em>unknown</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Controller_Plugin_Ssl::_secureAllRequests">
+<tt class="descname">_secureAllRequests</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Controller_Plugin_Ssl::_secureAllRequests" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../../../index.html">
+              <img class="logo" src="../../../../_static/logo-horizontal-200px.gif" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="Plugin/ViewScripts.html"
+                        title="previous chapter">Omeka_Controller_Plugin_ViewScripts</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="Upgrade.html"
+                        title="next chapter">Omeka_Controller_Plugin_Upgrade</a></p>
+  <h3>This Page</h3>
+  <p>See something wrong or confusing on this page?
+    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    </p>
+  <ul class="this-page-menu">
+    
+    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceReference/libraries/Omeka/Controller/Ssl.rst"
+           rel="nofollow">View Source</a>
+    </li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="Upgrade.html" title="Omeka_Controller_Plugin_Upgrade"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="Plugin/ViewScripts.html" title="Omeka_Controller_Plugin_ViewScripts"
+             >previous</a> |</li>
+    
+        <li><a href="../../../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
+    <p style="background-color: white; color:red;">
+    This documentation is currently unstable as changes continue to be made to Omeka 2.0.    
+     The final release of Omeka 2.0 may have changes.</p>    
+
+          <li><a href="../../../index.html" >Reference Documentation for Omeka</a> &raquo;</li>
+          <li><a href="../index.html" >Libraries/Omeka</a> &raquo;</li>
+          <li><a href="index.html" >Libraries/Omeka/Controller</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2012, Roy Rosenzweig Center for History and New Media.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.0.7.
+    </div>
+  </body>
+</html>

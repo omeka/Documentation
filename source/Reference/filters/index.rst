@@ -3,8 +3,10 @@
 Filters
 #######
 
-:ref:`usingfilters`
 
+.. toctree::
+
+   overview/usingFilters
 
 ***********
 All Filters

@@ -8,3 +8,7 @@ Libraries/Omeka/Storage/Adapter
     Filesystem
     TempFilesystem
     ZendS3
+
+
+.. toctree::
+
