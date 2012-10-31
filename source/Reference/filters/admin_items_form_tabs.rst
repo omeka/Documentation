@@ -26,4 +26,17 @@ Arguments
 Examples
 ********
 
+.. code-block:: php
+
+    class MyPlugin extends :php:class:`Omeka_Plugin_AbstractPlugin`
+    {
+    
+        protected $_filters = array('admin_items_form_tabs');
+        
+        public filterAdminItemsFormTabs($tabs, $args)
+        {
+            $item = $args['item'];
+            $tabs["My Plugin"] = uri('/my-plugin/edit/id/' . $item->id);
+        }    
+    }
 

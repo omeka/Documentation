@@ -32,4 +32,26 @@ Arguments
 Examples
 ********
 
+Exhibit Builder adds theme settings on a per-exhibit basis.
 
+
+.. code-block:: php
+
+    class ExhibitBuilderPlugin extends :php:class:`Omeka_Plugin_AbstractPlugin`
+    {
+    
+        protected $_filters = array('theme_options');
+        
+        public filterThemeOptions($options, $args)
+        {
+            if (Omeka_Context::getInstance()->getRequest()->getModuleName() == 'exhibit-builder' && function_exists('__v')) {
+                if ($exhibit = exhibit_builder_get_current_exhibit()) {
+                    $exhibitThemeOptions = $exhibit->getThemeOptions();
+                }
+            }
+            if (!empty($exhibitThemeOptions)) {
+                return serialize($exhibitThemeOptions);
+            }
+            return $themeOptions;
+        }    
+    }
