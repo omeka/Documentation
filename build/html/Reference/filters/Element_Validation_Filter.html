@@ -83,10 +83,10 @@
 <p><tt class="docutils literal"><span class="pre">string</span></tt>  text</p>
 <blockquote>
 <div>The text for the element</div></blockquote>
-<p><a class="reference internal" href="../packages/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Record_AbstractRecord</span></tt></a> record</p>
+<p><a class="reference internal" href="../libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Record_AbstractRecord</span></tt></a> record</p>
 <blockquote>
 <div>The record (subclass of Omeka_Record_AbstractRecord) being validated.</div></blockquote>
-<p><a class="reference internal" href="../packages/Record/Element.html#Element" title="Element"><tt class="xref php php-class docutils literal"><span class="pre">Element</span></tt></a> element</p>
+<p><a class="reference internal" href="../models/Element.html#Element" title="Element"><tt class="xref php php-class docutils literal"><span class="pre">Element</span></tt></a> element</p>
 <blockquote>
 <div>The element (e.g., Dublin Core Title) for the element text.</div></blockquote>
 </div>
@@ -95,7 +95,7 @@
 <div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MyPlugin</span> <span class="k">extends</span> <span class="nx">Omeka_Plugin_AbstractPlugin</span>
 <span class="p">{</span>
 
-    <span class="nv">$_filters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;itemTitleLengthValidator&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;Validate&#39;</span><span class="p">,</span> <span class="s1">&#39;Item&#39;</span><span class="p">,</span> <span class="s1">&#39;Dublin Core&#39;</span><span class="p">,</span> <span class="s1">&#39;Title&#39;</span><span class="p">));</span>
+    <span class="k">protected</span> <span class="nv">$_filters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;itemTitleLengthValidator&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;Validate&#39;</span><span class="p">,</span> <span class="s1">&#39;Item&#39;</span><span class="p">,</span> <span class="s1">&#39;Dublin Core&#39;</span><span class="p">,</span> <span class="s1">&#39;Title&#39;</span><span class="p">));</span>
 
     <span class="k">public</span> <span class="k">function</span> <span class="nf">itemTitleValidator</span><span class="p">(</span><span class="nv">$isValid</span><span class="p">,</span> <span class="nv">$args</span><span class="p">)</span>
     <span class="p">{</span>

@@ -64,15 +64,14 @@
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 <p>Filters the array of response contexts as passed to Zend Framework&#8217;s ContextSwitch helper.</p>
-<p>Response contexts are used to serve the same data (an Item, for example) in different formats. Omeka includes by default response contexts for JSON, RSS and XML response contexts, in addition to the default context, which produces the normal HTML output. For further information, see Response Formats.</p>
+<p>Response contexts are used to serve the same data (an Item, for example) in different formats. Omeka includes by default response contexts for JSON, RSS and XML response contexts, in addition to the default context, which produces the normal HTML output.</p>
+<p>Suffix values added to the contexts correspond to view files. Thus, to add an RSS feed at url <tt class="docutils literal"><span class="pre">my-records/browse?output=rss</span></tt>, you will have a view named <tt class="docutils literal"><span class="pre">browse.rss.php</span></tt></p>
 </div>
 <div class="section" id="value">
 <h2>Value<a class="headerlink" href="#value" title="Permalink to this headline">¶</a></h2>
 <dl class="docutils">
-<dt><tt class="docutils literal"><span class="pre">array</span></tt> contexts</dt>
-<dd><p class="first">Filters the array of response contexts as passed to Zend Framework&#8217;s ContextSwitch helper.</p>
-<p class="last">Response contexts are used to serve the same data (an Item, for example) in different formats. Omeka includes by default response contexts for JSON, RSS and XML response contexts, in addition to the default context, which produces the normal HTML output. For further information, see Response Formats.</p>
-</dd>
+<dt><tt class="docutils literal"><span class="pre">array</span></tt> $contexts</dt>
+<dd>Array of contexts, corresponding to action contexts defined by using <em class="xref std std-ref">define_action_contexts</em></dd>
 </dl>
 </div>
 <div class="section" id="arguments">
@@ -81,6 +80,21 @@
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Add an RSS feed at <tt class="docutils literal"><span class="pre">my-records/browse?output=rss</span></tt></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MyPlugin</span> <span class="k">extends</span> <span class="nx">Omeka_Plugin_AbstractPlugin</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="nv">$_filters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;define_response_contexts&#39;</span><span class="p">);</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">filterDefineResponseContexts</span><span class="p">(</span><span class="nv">$contexts</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$contexts</span><span class="p">[</span><span class="s1">&#39;rss&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;suffix&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;rss&#39;</span><span class="p">,</span>
+                                <span class="s1">&#39;headers&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;Content-Type&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;text/xml&#39;</span><span class="p">));</span>
+        <span class="k">return</span> <span class="nv">$contexts</span><span class="p">;</span>
+
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 

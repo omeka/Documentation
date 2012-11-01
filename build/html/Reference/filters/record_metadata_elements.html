@@ -63,15 +63,43 @@
 <h1>record_metadata_elements<a class="headerlink" href="#record-metadata-elements" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Filters the element sets and elements when displayed via the <a class="reference internal" href="../libraries/globals/all_element_texts.html#all_element_texts" title="all_element_texts"><tt class="xref php php-func docutils literal"><span class="pre">all_element_texts</span></tt></a> function.</p>
 </div>
 <div class="section" id="value">
 <h2>Value<a class="headerlink" href="#value" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">array</span></tt> $elementSets</dt>
+<dd>All the elements, keyed by element set.</dd>
+</dl>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Get rid of everything except Dublin Core Title and Description</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MyPlugin</span> <span class="k">extends</span> <span class="o">:</span><span class="nx">php</span><span class="o">:</span><span class="nx">class</span><span class="o">:</span><span class="sb">`Omeka_Plugin_AbstractPlugin`</span>
+<span class="p">{</span>
+
+    <span class="k">protected</span> <span class="nv">$_filters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;record_metadata_elements&#39;</span><span class="p">);</span>
+
+    <span class="k">public</span> <span class="nx">filterRecordMetadataElements</span><span class="p">(</span><span class="nv">$elementSets</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">foreach</span><span class="p">(</span><span class="nv">$elementSets</span> <span class="k">as</span> <span class="nv">$set</span><span class="o">=&gt;</span><span class="nv">$elements</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span><span class="p">(</span><span class="nv">$set</span> <span class="o">==</span> <span class="s1">&#39;Dublin Core&#39;</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">foreach</span><span class="p">(</span><span class="nv">$elements</span> <span class="k">as</span> <span class="nv">$key</span><span class="o">=&gt;</span><span class="nv">$element</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">if</span><span class="p">(</span><span class="nv">$element</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">!=</span> <span class="s1">&#39;Title&#39;</span> <span class="o">||</span> <span class="nv">$element</span><span class="o">-&gt;</span><span class="na">name</span> <span class="o">!=</span> <span class="s1">&#39;Description&#39;</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="nb">unset</span><span class="p">(</span><span class="nv">$elementSets</span><span class="p">[</span><span class="s1">&#39;Dublin Core&#39;</span><span class="p">][</span><span class="nv">$key</span><span class="p">];</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nv">$elementSets</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 

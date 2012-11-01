@@ -63,15 +63,51 @@
 <h1>define_action_contexts<a class="headerlink" href="#define-action-contexts" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Action contexts work in combination with <em class="xref std std-ref">define_response_contexts</em> to output additiona formats, such as RSS or JSON.</p>
+<p>Typically, you check whether the controller passed in the arguments is one defined by your plugin, then add your context (output format) to the array of values.</p>
+<p>Then, response contexts you define direct Omeka to the views you have defined for the output.</p>
 </div>
 <div class="section" id="value">
 <h2>Value<a class="headerlink" href="#value" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">array</span></tt> $contexts</dt>
+<dd>Array of the contexts available for a controller&#8217;s views.</dd>
+</dl>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Controller_Action</span></tt></dt>
+<dd>The controller that is producing the output.</dd>
+</dl>
+<p><cite>Zend_Controller_ActionHelper_ContextSwitch</cite> &lt;<a class="reference external" href="http://framework.zend.com/manual/1.12/en/zend.controller.actionhelpers.html#zend.controller.actionhelpers.contextswitch">http://framework.zend.com/manual/1.12/en/zend.controller.actionhelpers.html#zend.controller.actionhelpers.contextswitch</a>&gt;</p>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Make an RSS feed of your records available at <tt class="docutils literal"><span class="pre">/my-records/browse?output=rss</span></tt></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MyRecordController</span> <span class="k">extends</span> <span class="nx">Omeka_Controller_AbstractActionController</span>
+<span class="p">{</span>
+    <span class="c1">//nothing to do here, since we don&#39;t need to override anything</span>
+<span class="p">}</span>
+
+<span class="k">class</span> <span class="nc">MyPlugin</span> <span class="k">extends</span> <span class="nx">Omeka_Plugin_AbstractPlugin</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="nv">$_filters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;define_action_context&#39;</span><span class="p">);</span>
+
+    <span class="k">public</span> <span class="nx">filterDefineActionContext</span><span class="p">(</span><span class="nv">$contexts</span><span class="p">,</span> <span class="nv">$args</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span><span class="p">(</span><span class="nv">$args</span><span class="p">[</span><span class="s1">&#39;controller&#39;</span><span class="p">]</span> <span class="nx">instanceof</span> <span class="nx">MyRecordController</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nv">$contexts</span><span class="p">[</span><span class="s1">&#39;browse&#39;</span><span class="p">][]</span> <span class="o">=</span> <span class="s1">&#39;rss&#39;</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nv">$contexts</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+<p><em class="xref std std-ref">define_response_contexts</em></p>
 </div>
 </div>
 
@@ -91,6 +127,7 @@
 <li><a class="reference internal" href="#value">Value</a></li>
 <li><a class="reference internal" href="#arguments">Arguments</a></li>
 <li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#see-also">See Also</a></li>
 </ul>
 </li>
 </ul>

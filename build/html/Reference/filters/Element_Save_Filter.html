@@ -26,7 +26,7 @@
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Filters" href="index.html" />
     <link rel="next" title="Element Validation Filter" href="Element_Validation_Filter.html" />
-    <link rel="prev" title="Element Input Filter" href="Element_Input_Filter.html" />
+    <link rel="prev" title="Element Flatten Filter" href="Element_Flatten_Filter.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="Element_Validation_Filter.html" title="Element Validation Filter"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="Element_Input_Filter.html" title="Element Input Filter"
+          <a href="Element_Flatten_Filter.html" title="Element Flatten Filter"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -63,15 +63,44 @@
 <h1>Element Save Filter<a class="headerlink" href="#element-save-filter" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Customize element texts for a particular element before validating and saving a record. This is helpful if you want to prepare form data for validation automatically, limiting the possibility of a validation error.</p>
+<p><tt class="docutils literal"><span class="pre">array('Save',</span> <span class="pre">$recordType,</span> <span class="pre">$elementSetName,</span> <span class="pre">$elementName)</span></tt></p>
+<ul class="simple">
+<li>$recordType: The type of Omeka object to filter the metadata for. Most commonly, this will be &#8216;Item&#8217;.</li>
+<li>$elementSetName: The name of the element set containing the metadata field to be filtered. Possible values include &#8216;Dublin Core&#8217; and &#8216;Item Type Metadata&#8217;.</li>
+<li>$elementName: The name of the specific element within the set to be filtered.</li>
+</ul>
 </div>
 <div class="section" id="value">
 <h2>Value<a class="headerlink" href="#value" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">string</span></tt> $text</dt>
+<dd>The original text for the element</dd>
+</dl>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference internal" href="../libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Record_AbstractRecord</span></tt></a> record</dt>
+<dd>The record that this text applies to. The type will be the same as the filter&#8217;s <tt class="docutils literal"><span class="pre">$recordType</span></tt>.</dd>
+<dt><a class="reference internal" href="../models/Element.html#Element" title="Element"><tt class="xref php php-class docutils literal"><span class="pre">Element</span></tt></a> element</dt>
+<dd>The Element record for this text.</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MyPlugin</span> <span class="k">extends</span> <span class="o">:</span><span class="nx">php</span><span class="o">:</span><span class="nx">class</span><span class="o">:</span><span class="sb">`Omeka_Plugin_AbstractPlugin`</span>
+<span class="p">{</span>
+
+    <span class="k">protected</span> <span class="nv">$_filters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;addIsbnToDcId&#39;</span><span class="o">=&gt;</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;Save&#39;</span><span class="p">,</span> <span class="s1">&#39;Item&#39;</span><span class="p">,</span> <span class="s1">&#39;Dublin Core&#39;</span><span class="p">,</span> <span class="s1">&#39;Identifier&#39;</span><span class="p">);</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">addIsbnToId</span><span class="p">(</span><span class="nv">$text</span><span class="p">,</span> <span class="nv">$args</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="s2">&quot;ISBN: </span><span class="si">$text</span><span class="s2">&quot;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -96,8 +125,8 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="Element_Input_Filter.html"
-                        title="previous chapter">Element Input Filter</a></p>
+  <p class="topless"><a href="Element_Flatten_Filter.html"
+                        title="previous chapter">Element Flatten Filter</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="Element_Validation_Filter.html"
                         title="next chapter">Element Validation Filter</a></p>
@@ -138,7 +167,7 @@
           <a href="Element_Validation_Filter.html" title="Element Validation Filter"
              >next</a> |</li>
         <li class="right" >
-          <a href="Element_Input_Filter.html" title="Element Input Filter"
+          <a href="Element_Flatten_Filter.html" title="Element Flatten Filter"
              >previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>

@@ -63,7 +63,7 @@
 <h1>&lt;model&gt;_browse_params<a class="headerlink" href="#model-browse-params" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<p>Filters the parameters used when generating the browse page for records</p>
+<p>Filters the parameters used when generating the browse page for records (the model)</p>
 </div>
 <div class="section" id="value">
 <h2>Value<a class="headerlink" href="#value" title="Permalink to this headline">¶</a></h2>
@@ -77,11 +77,25 @@
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MyPlugin</span> <span class="k">extends</span> <span class="o">:</span><span class="nx">php</span><span class="o">:</span><span class="nx">class</span><span class="o">:</span><span class="sb">`Omeka_Plugin_AbstractPlugin`</span>
+<span class="p">{</span>
+
+    <span class="k">protected</span> <span class="nv">$_filters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;item_browse_params&#39;</span><span class="p">);</span>
+
+    <span class="k">public</span> <span class="nx">filterItemBrowseParams</span><span class="p">(</span><span class="nv">$params</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">//always sort by title instead of order</span>
+        <span class="nv">$params</span><span class="p">[</span><span class="s1">&#39;sort_param&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Dublin Core,Title&quot;</span><span class="p">;</span>
+        <span class="k">return</span> <span class="nv">$params</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="see-also">
 <h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference internal" href="../hooks/&lt;model&gt;_browse_sql.html#modelbrowsesql"><em>&lt;model&gt;_browse_sql</em></a>
-<a class="reference internal" href="../packages/Db/Table/Table.html#Omeka_Db_Table::getSelectForFindBy" title="Omeka_Db_Table::getSelectForFindBy"><tt class="xref php php-meth docutils literal"><span class="pre">Omeka_Db_Table::getSelectForFindBy</span></tt></a></p>
+<a class="reference internal" href="../libraries/Omeka/Db/Table.html#Omeka_Db_Table::getSelectForFindBy" title="Omeka_Db_Table::getSelectForFindBy"><tt class="xref php php-meth docutils literal"><span class="pre">Omeka_Db_Table::getSelectForFindBy</span></tt></a></p>
 </div>
 </div>
 

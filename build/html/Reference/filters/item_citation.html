@@ -73,16 +73,30 @@
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="../packages/Record/Item.html#Item" title="Item"><tt class="xref php php-class docutils literal"><span class="pre">Item</span></tt></a> item</p>
+<p><a class="reference internal" href="../models/Item.html#Item" title="Item"><tt class="xref php php-class docutils literal"><span class="pre">Item</span></tt></a> item</p>
 <blockquote>
 <div>The item for the citation</div></blockquote>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>class MyPlugin extends <a class="reference internal" href="../libraries/Omeka/Plugin/AbstractPlugin.html#Omeka_Plugin_AbstractPlugin" title="Omeka_Plugin_AbstractPlugin"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Plugin_AbstractPlugin</span></tt></a>
+{</p>
+<blockquote>
+<div><p>protected $_filters = array(&#8216;item_citation&#8217;);</p>
+<p>public filterItemCitation($citation, $args)
+{</p>
+<blockquote>
+<div>$citation = &#8220;&#8221;;
+return $citation;</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<p>}</p>
+</div></blockquote>
 </div>
 <div class="section" id="see-also">
 <h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
-<p><a class="reference internal" href="../packages/Function/View/Body/Item/item_citation.html#item_citation" title="item_citation"><tt class="xref php php-func docutils literal"><span class="pre">item_citation</span></tt></a></p>
+<p><a class="reference internal" href="../libraries/globals/item_citation.html#item_citation" title="item_citation"><tt class="xref php php-func docutils literal"><span class="pre">item_citation</span></tt></a></p>
 </div>
 </div>
 

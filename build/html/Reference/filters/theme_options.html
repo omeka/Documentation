@@ -63,7 +63,7 @@
 <h1>theme_options<a class="headerlink" href="#theme-options" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<p>Filters the theme configuration options before they are returned by a call to <a class="reference internal" href="../packages/Function/Db/Option/get_theme_option.html#get_theme_option" title="get_theme_option"><tt class="xref php php-func docutils literal"><span class="pre">get_theme_option</span></tt></a>.</p>
+<p>Filters the theme configuration options before they are returned by a call to <a class="reference internal" href="../libraries/globals/get_theme_option.html#get_theme_option" title="get_theme_option"><tt class="xref php php-func docutils literal"><span class="pre">get_theme_option</span></tt></a>.</p>
 <p>Plugins can use this filter to modify settings for particular themes, or store and use alternative settings.</p>
 <p>The options will be provided as a serialized string, so in order to modify the options, a plugin must unserialize() the array, make whatever changes are desired, then serialize() again before returning.</p>
 </div>
@@ -81,6 +81,27 @@
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<p>Exhibit Builder adds theme settings on a per-exhibit basis.</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">ExhibitBuilderPlugin</span> <span class="k">extends</span> <span class="o">:</span><span class="nx">php</span><span class="o">:</span><span class="nx">class</span><span class="o">:</span><span class="sb">`Omeka_Plugin_AbstractPlugin`</span>
+<span class="p">{</span>
+
+    <span class="k">protected</span> <span class="nv">$_filters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;theme_options&#39;</span><span class="p">);</span>
+
+    <span class="k">public</span> <span class="nx">filterThemeOptions</span><span class="p">(</span><span class="nv">$options</span><span class="p">,</span> <span class="nv">$args</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">Omeka_Context</span><span class="o">::</span><span class="na">getInstance</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getRequest</span><span class="p">()</span><span class="o">-&gt;</span><span class="na">getModuleName</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;exhibit-builder&#39;</span> <span class="o">&amp;&amp;</span> <span class="nb">function_exists</span><span class="p">(</span><span class="s1">&#39;__v&#39;</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="nv">$exhibit</span> <span class="o">=</span> <span class="nx">exhibit_builder_get_current_exhibit</span><span class="p">())</span> <span class="p">{</span>
+                <span class="nv">$exhibitThemeOptions</span> <span class="o">=</span> <span class="nv">$exhibit</span><span class="o">-&gt;</span><span class="na">getThemeOptions</span><span class="p">();</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="k">empty</span><span class="p">(</span><span class="nv">$exhibitThemeOptions</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nb">serialize</span><span class="p">(</span><span class="nv">$exhibitThemeOptions</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nv">$themeOptions</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 

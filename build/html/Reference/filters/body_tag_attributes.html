@@ -63,7 +63,7 @@
 <h1>body_tag_attributes<a class="headerlink" href="#body-tag-attributes" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
-<p>Filters the tags applied to the &lt;body&gt; element of the page</p>
+<p>Filters the tags applied to the <tt class="docutils literal"><span class="pre">&lt;body&gt;</span></tt> element of the page</p>
 </div>
 <div class="section" id="value">
 <h2>Value<a class="headerlink" href="#value" title="Permalink to this headline">¶</a></h2>
@@ -77,6 +77,23 @@
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MyPlugin</span> <span class="k">extends</span> <span class="nx">Omeka_Plugin_AbstractPlugin</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="nv">$_filters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;body_tag_attributes&#39;</span><span class="p">);</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">filterBodyTagAttributes</span><span class="p">(</span><span class="nv">$attributes</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">//add a class when users are logged in</span>
+
+        <span class="k">if</span><span class="p">(</span><span class="nx">current_user</span><span class="p">())</span> <span class="p">{</span>
+            <span class="nv">$attributes</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">trim</span><span class="p">(</span><span class="s2">&quot;logged-in &quot;</span> <span class="o">.</span> <span class="nv">$attributes</span><span class="p">[</span><span class="s1">&#39;class&#39;</span><span class="p">]);</span>
+
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nv">$attributes</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 

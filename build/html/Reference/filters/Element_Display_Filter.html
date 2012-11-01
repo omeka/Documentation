@@ -25,7 +25,7 @@
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Filters" href="index.html" />
-    <link rel="next" title="Element Flatten Filter" href="Element_Flatten_Filter.html" />
+    <link rel="next" title="Element ElementForm Filter" href="Element_ElementForm_Filter.html" />
     <link rel="prev" title="&lt;model&gt;_browse_params" href="&lt;model&gt;_browse_params.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
  
@@ -38,7 +38,7 @@
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="Element_Flatten_Filter.html" title="Element Flatten Filter"
+          <a href="Element_ElementForm_Filter.html" title="Element ElementForm Filter"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="<model>_browse_params.html" title="&lt;model&gt;_browse_params"
@@ -63,15 +63,49 @@
 <h1>Element Display Filter<a class="headerlink" href="#element-display-filter" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Alter the way an element is displayed.</p>
+<p>The name of the filter is an array:</p>
+<p><tt class="docutils literal"><span class="pre">array('Display',</span> <span class="pre">$recordType,</span> <span class="pre">$elementSetName,</span> <span class="pre">$elementName)</span></tt></p>
+<ul class="simple">
+<li>$recordType: The type of Omeka object to filter the metadata for. Most commonly, this will be &#8216;Item&#8217;.</li>
+<li>$elementSetName: The name of the element set containing the metadata field to be filtered. Possible values include &#8216;Dublin Core&#8217; and &#8216;Item Type Metadata&#8217;.</li>
+<li>$elementName: The name of the specific element within the set to be filtered.</li>
+</ul>
 </div>
 <div class="section" id="value">
 <h2>Value<a class="headerlink" href="#value" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">string</span></tt> $text</dt>
+<dd>The text to display.</dd>
+</dl>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference internal" href="../libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Record_AbstractRecord</span></tt></a> record</dt>
+<dd>The record being displayed</dd>
+<dt><a class="reference internal" href="../models/ElementText.html#ElementText" title="ElementText"><tt class="xref php php-class docutils literal"><span class="pre">ElementText</span></tt></a> element_text</dt>
+<dd>The ElementText object</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MyPlugin</span> <span class="k">extends</span> <span class="nx">Omeka_Plugin_AbstractPlugin</span>
+<span class="p">{</span>
+
+    <span class="k">protected</span> <span class="nv">$_filters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;concealDescription&#39;</span><span class="p">,</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;Display&#39;</span><span class="p">,</span> <span class="s1">&#39;Item&#39;</span><span class="p">,</span> <span class="s1">&#39;Dublin Core&#39;</span><span class="p">,</span> <span class="err">&#39;</span><span class="nx">Description</span><span class="p">));</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">concealDescription</span><span class="p">(</span><span class="nv">$text</span><span class="p">,</span> <span class="nv">$args</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">//conceal the description to non-logged in users</span>
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">get_current_user</span><span class="p">())</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="nx">str_rot12</span><span class="p">(</span><span class="nv">$text</span><span class="p">);</span>
+        <span class="p">}</span>
+        <span class="k">return</span> <span class="nv">$text</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 
@@ -99,8 +133,8 @@
   <p class="topless"><a href="&lt;model&gt;_browse_params.html"
                         title="previous chapter">&lt;model&gt;_browse_params</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="Element_Flatten_Filter.html"
-                        title="next chapter">Element Flatten Filter</a></p>
+  <p class="topless"><a href="Element_ElementForm_Filter.html"
+                        title="next chapter">Element ElementForm Filter</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -135,7 +169,7 @@
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="Element_Flatten_Filter.html" title="Element Flatten Filter"
+          <a href="Element_ElementForm_Filter.html" title="Element ElementForm Filter"
              >next</a> |</li>
         <li class="right" >
           <a href="<model>_browse_params.html" title="&lt;model&gt;_browse_params"

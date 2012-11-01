@@ -6,7 +6,7 @@ storage_path
 Usage
 *****
 
-Changes the path to where a file is stored
+Changes the path to where a file is stored. This can be a simpler solution than writing your own storage adapter class.
 
 *****
 Value
@@ -31,6 +31,23 @@ Arguments
 ********
 Examples
 ********
+
+Store files in different directories by extension.
+
+.. code-block:: php
+
+    class MyPlugin extends :php:class:`Omeka_Plugin_AbstractPlugin`
+    {
+    
+        protected $_filters = array('storage_path');
+        
+        public filterStoragePath($path, $args)
+        {
+            $explodedFileName = explode('.', $args['filename']);
+            $extension = $explodedFileName[count($explodedFileName)-1];
+            return 'files/' . $extension . '/' . $args['filename'];
+        }    
+    }
 
 
 ********

@@ -75,12 +75,25 @@
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
 <dl class="docutils">
-<dt><a class="reference internal" href="../packages/Record/Item.html#Item" title="Item"><tt class="xref php php-class docutils literal"><span class="pre">Item</span></tt></a> item</dt>
+<dt><a class="reference internal" href="../models/Item.html#Item" title="Item"><tt class="xref php php-class docutils literal"><span class="pre">Item</span></tt></a> item</dt>
 <dd>The Item being edited. Filter functions can use this parameter to change the tabs or content on an item-by-item basis.</dd>
 </dl>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MyPlugin</span> <span class="k">extends</span> <span class="o">:</span><span class="nx">php</span><span class="o">:</span><span class="nx">class</span><span class="o">:</span><span class="sb">`Omeka_Plugin_AbstractPlugin`</span>
+<span class="p">{</span>
+
+    <span class="k">protected</span> <span class="nv">$_filters</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;admin_items_form_tabs&#39;</span><span class="p">);</span>
+
+    <span class="k">public</span> <span class="nx">filterAdminItemsFormTabs</span><span class="p">(</span><span class="nv">$tabs</span><span class="p">,</span> <span class="nv">$args</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$item</span> <span class="o">=</span> <span class="nv">$args</span><span class="p">[</span><span class="s1">&#39;item&#39;</span><span class="p">];</span>
+        <span class="nv">$tabs</span><span class="p">[</span><span class="s2">&quot;My Plugin&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="nx">uri</span><span class="p">(</span><span class="s1">&#39;/my-plugin/edit/id/&#39;</span> <span class="o">.</span> <span class="nv">$item</span><span class="o">-&gt;</span><span class="na">id</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 

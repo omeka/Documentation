@@ -51,7 +51,7 @@ Examples
     class MyPlugin extends Omeka_Plugin_AbstractPlugin
     {
     
-        $_filters = array('itemTitleLengthValidator' => array('Validate', 'Item', 'Dublin Core', 'Title')); 
+        protected $_filters = array('itemTitleLengthValidator' => array('Validate', 'Item', 'Dublin Core', 'Title')); 
         
         public function itemTitleValidator($isValid, $args)
         {
