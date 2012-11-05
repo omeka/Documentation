@@ -63,12 +63,32 @@
 <h1>config<a class="headerlink" href="#config" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>This hook processes posted data from the configuration form created by the config_form hook. Most use cases will involve setting configuration options to the database using set_option().</p>
+<p>Both the config and config_form hooks must be used to creating a configuration form for a plugin.</p>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">array</span></tt> post</dt>
+<dd>The post data</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">SimplePagesPlugin</span> <span class="k">extends</span> <span class="nx">Omeka_Plugin_AbstractPlugin</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="nv">$_hooks</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;config&#39;</span><span class="p">);</span>
+
+     <span class="sd">/**</span>
+<span class="sd">     * Set the options from the config form input.</span>
+<span class="sd">     */</span>
+    <span class="k">function</span> <span class="nf">hookConfig</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="nx">set_option</span><span class="p">(</span><span class="s1">&#39;simple_pages_filter_page_content&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">int</span><span class="p">)(</span><span class="nx">boolean</span><span class="p">)</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;simple_pages_filter_page_content&#39;</span><span class="p">]);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 

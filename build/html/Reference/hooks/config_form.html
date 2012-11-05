@@ -63,12 +63,30 @@
 <h1>config_form<a class="headerlink" href="#config-form" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>This hook runs when the &#8216;Configure&#8217; button is clicked for a specific plugin on the admin plugins panel.</p>
+<p>Plugins use this hook to directly output the HTML that goes inside the &lt;form&gt; tag for the configuration form.</p>
+<p>The config hook is used to process the submitted data from the form that was created with this hook.</p>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">SimplePagesPlugin</span> <span class="k">extends</span> <span class="nx">Omeka_Plugin_AbstractPlugin</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="nv">$_hooks</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;config_form&#39;</span><span class="p">);</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * Display the plugin config form.</span>
+<span class="sd">     */</span>
+    <span class="k">function</span> <span class="nf">hookConfigForm</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">require</span> <span class="nb">dirname</span><span class="p">(</span><span class="k">__FILE__</span><span class="p">)</span> <span class="o">.</span> <span class="s1">&#39;/config_form.php&#39;</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 

@@ -26,7 +26,7 @@
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Hooks" href="index.html" />
     <link rel="next" title="admin_append_to_items_form_tags" href="admin_append_to_items_form_tags.html" />
-    <link rel="prev" title="admin_append_to_items_form_collection" href="admin_append_to_items_form_collection.html" />
+    <link rel="prev" title="admin_append_to_items_browse_simple_each" href="admin_append_to_items_browse_simple_each.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="admin_append_to_items_form_tags.html" title="admin_append_to_items_form_tags"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="admin_append_to_items_form_collection.html" title="admin_append_to_items_form_collection"
+          <a href="admin_append_to_items_browse_simple_each.html" title="admin_append_to_items_browse_simple_each"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -63,9 +63,17 @@
 <h1>admin_append_to_items_form_files<a class="headerlink" href="#admin-append-to-items-form-files" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Append content to the &#8220;Files&#8221; part of the item form.</p>
+<p>To work with the files themselves, get the <tt class="docutils literal"><span class="pre">$item</span></tt> from the <tt class="docutils literal"><span class="pre">$args</span></tt> array and look at <tt class="docutils literal"><span class="pre">$item-&gt;Files</span></tt></p>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference internal" href="../models/Item.html#Item" title="Item"><tt class="xref php php-class docutils literal"><span class="pre">Item</span></tt></a> item</dt>
+<dd>The item object</dd>
+<dt><a class="reference internal" href="../libraries/Omeka/View.html#Omeka_View" title="Omeka_View"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_View</span></tt></a> view</dt>
+<dd>The view object</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -92,8 +100,8 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="admin_append_to_items_form_collection.html"
-                        title="previous chapter">admin_append_to_items_form_collection</a></p>
+  <p class="topless"><a href="admin_append_to_items_browse_simple_each.html"
+                        title="previous chapter">admin_append_to_items_browse_simple_each</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="admin_append_to_items_form_tags.html"
                         title="next chapter">admin_append_to_items_form_tags</a></p>
@@ -134,7 +142,7 @@
           <a href="admin_append_to_items_form_tags.html" title="admin_append_to_items_form_tags"
              >next</a> |</li>
         <li class="right" >
-          <a href="admin_append_to_items_form_collection.html" title="admin_append_to_items_form_collection"
+          <a href="admin_append_to_items_browse_simple_each.html" title="admin_append_to_items_browse_simple_each"
              >previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>

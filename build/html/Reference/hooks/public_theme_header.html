@@ -63,12 +63,33 @@
 <h1>public_theme_header<a class="headerlink" href="#public-theme-header" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Adds content to the <tt class="docutils literal"><span class="pre">&lt;head&gt;</span></tt> element. Usually used to add javascript and/or css via the <tt class="xref php php-func docutils literal"><span class="pre">queue_js</span></tt> or <a href="#id1"><span class="problematic" id="id2">:php:fun:`queue_css`</span></a> functions</p>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference internal" href="../libraries/Omeka/View.html#Omeka_View" title="Omeka_View"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_View</span></tt></a> view</dt>
+<dd>The view object</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">MyPlugin</span> <span class="k">extends</span> <span class="nx">Omeka_Plugin_Abstract</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="nv">$_hooks</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;public_theme_header&#39;</span><span class="p">);</span>
+
+    <span class="k">public</span> <span class="k">function</span> <span class="nf">hookPublicThemeHeader</span><span class="p">(</span><span class="nv">$args</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nx">queue_css</span><span class="p">(</span><span class="s1">&#39;myplugin&#39;</span><span class="p">);</span> <span class="c1">// assumes myplugin has a /views/public/css/myplugin.css file</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="see-also">
+<h2>See Also<a class="headerlink" href="#see-also" title="Permalink to this headline">¶</a></h2>
+<p><a href="#id3"><span class="problematic" id="id4">:php:fun:`queue_css`</span></a>
+<a href="#id5"><span class="problematic" id="id6">:php:fun:`queue_js`</span></a></p>
 </div>
 </div>
 
@@ -87,6 +108,7 @@
 <li><a class="reference internal" href="#usage">Usage</a></li>
 <li><a class="reference internal" href="#arguments">Arguments</a></li>
 <li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#see-also">See Also</a></li>
 </ul>
 </li>
 </ul>

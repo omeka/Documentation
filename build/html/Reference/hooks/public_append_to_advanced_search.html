@@ -26,7 +26,7 @@
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Hooks" href="index.html" />
     <link rel="next" title="public_append_to_collections_browse" href="public_append_to_collections_browse.html" />
-    <link rel="prev" title="admin_theme_header" href="admin_theme_header.html" />
+    <link rel="prev" title="show_&lt;model&gt;" href="show_&lt;model&gt;.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="public_append_to_collections_browse.html" title="public_append_to_collections_browse"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="admin_theme_header.html" title="admin_theme_header"
+          <a href="show_<model>.html" title="show_&lt;model&gt;"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -63,9 +63,15 @@
 <h1>public_append_to_advanced_search<a class="headerlink" href="#public-append-to-advanced-search" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Use this hook to add form elements to the advanced search form.</p>
+<p>Additional fields should be wrapped with <tt class="docutils literal"><span class="pre">&lt;div</span> <span class="pre">class=&quot;field&quot;&gt;</span></tt>.</p>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference internal" href="../libraries/Omeka/View.html#Omeka_View" title="Omeka_View"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_View</span></tt></a> view</dt>
+<dd>The view object</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -92,8 +98,8 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="admin_theme_header.html"
-                        title="previous chapter">admin_theme_header</a></p>
+  <p class="topless"><a href="show_&lt;model&gt;.html"
+                        title="previous chapter">show_&lt;model&gt;</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="public_append_to_collections_browse.html"
                         title="next chapter">public_append_to_collections_browse</a></p>
@@ -134,7 +140,7 @@
           <a href="public_append_to_collections_browse.html" title="public_append_to_collections_browse"
              >next</a> |</li>
         <li class="right" >
-          <a href="admin_theme_header.html" title="admin_theme_header"
+          <a href="show_<model>.html" title="show_&lt;model&gt;"
              >previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>

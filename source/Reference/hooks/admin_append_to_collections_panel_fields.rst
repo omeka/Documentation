@@ -6,6 +6,7 @@ admin_append_to_collections_panel_fields
 Usage
 *****
 
+Append content just below the collection's save panel fields
 
 *********
 Arguments

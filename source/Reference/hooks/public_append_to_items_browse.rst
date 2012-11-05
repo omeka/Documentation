@@ -14,6 +14,9 @@ Arguments
 
 :php:class:`Omeka_View` view
     The view object
+    
+``array`` items
+    The array of :php:class:`Item` objects    
 
 ********
 Examples

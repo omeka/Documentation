@@ -26,7 +26,7 @@
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Hooks" href="index.html" />
     <link rel="next" title="after_save_&lt;model&gt;" href="after_save_&lt;model&gt;.html" />
-    <link rel="prev" title="&lt;model&gt;_browse_sql" href="&lt;model&gt;_browse_sql.html" />
+    <link rel="prev" title="add_&lt;model&gt;_tag" href="add_&lt;model&gt;_tag.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="after_save_<model>.html" title="after_save_&lt;model&gt;"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="<model>_browse_sql.html" title="&lt;model&gt;_browse_sql"
+          <a href="add_<model>_tag.html" title="add_&lt;model&gt;_tag"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -63,9 +63,14 @@
 <h1>after_delete_&lt;model&gt;<a class="headerlink" href="#after-delete-model" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Fires after any database model of type &lt;model&gt; is deleted.</p>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference internal" href="../libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Record_AbstractRecord</span></tt></a> record</dt>
+<dd>The record being edited</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -92,8 +97,8 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="&lt;model&gt;_browse_sql.html"
-                        title="previous chapter">&lt;model&gt;_browse_sql</a></p>
+  <p class="topless"><a href="add_&lt;model&gt;_tag.html"
+                        title="previous chapter">add_&lt;model&gt;_tag</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="after_save_&lt;model&gt;.html"
                         title="next chapter">after_save_&lt;model&gt;</a></p>
@@ -134,7 +139,7 @@
           <a href="after_save_<model>.html" title="after_save_&lt;model&gt;"
              >next</a> |</li>
         <li class="right" >
-          <a href="<model>_browse_sql.html" title="&lt;model&gt;_browse_sql"
+          <a href="add_<model>_tag.html" title="add_&lt;model&gt;_tag"
              >previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>

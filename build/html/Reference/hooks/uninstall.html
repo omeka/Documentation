@@ -63,12 +63,31 @@
 <h1>uninstall<a class="headerlink" href="#uninstall" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Runs when a plugin is uninstalled to remove database tables, settings, etc.</p>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">SimplePagesPlugin</span> <span class="k">extends</span> <span class="nx">Omeka_Plugin_AbstractPlugin</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="nv">$_hooks</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;uninstall&#39;</span><span class="p">);</span>
+
+    <span class="k">function</span> <span class="nf">hookUninstall</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="c1">// Drop the table.</span>
+        <span class="nv">$db</span> <span class="o">=</span> <span class="nx">get_db</span><span class="p">();</span>
+        <span class="nv">$sql</span> <span class="o">=</span> <span class="s2">&quot;DROP TABLE IF EXISTS `</span><span class="si">$db-&gt;SimplePagesPage</span><span class="s2">`&quot;</span><span class="p">;</span>
+        <span class="nv">$db</span><span class="o">-&gt;</span><span class="na">query</span><span class="p">(</span><span class="nv">$sql</span><span class="p">);</span>
+
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">_uninstallOptions</span><span class="p">();</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 

@@ -25,7 +25,7 @@
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Hooks" href="index.html" />
-    <link rel="next" title="show_&lt;model&gt;" href="show_&lt;model&gt;.html" />
+    <link rel="next" title="make_&lt;model&gt;_featured" href="make_&lt;model&gt;_featured.html" />
     <link rel="prev" title="before_save_&lt;model&gt;" href="before_save_&lt;model&gt;.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
  
@@ -38,7 +38,7 @@
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="show_<model>.html" title="show_&lt;model&gt;"
+          <a href="make_<model>_featured.html" title="make_&lt;model&gt;_featured"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="before_save_<model>.html" title="before_save_&lt;model&gt;"
@@ -63,9 +63,22 @@
 <h1>browse_&lt;model&gt;<a class="headerlink" href="#browse-model" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Fires on most models&#8217; browse pages. The &lt;model&gt; is the plural name of the model, e.g. &#8216;items&#8217;.</p>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">array</span></tt> records</dt>
+<dd>Array of the subclasses of <a class="reference internal" href="../libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Record_AbstractRecord</span></tt></a> being browsed.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>For <tt class="docutils literal"><span class="pre">browse_tags</span></tt>, there is an additional argument:</p>
+<dl class="last docutils">
+<dt><tt class="docutils literal"><span class="pre">mixed</span></tt> object</dt>
+<dd>The object record that the tags are applied to.</dd>
+</dl>
+</div>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -95,8 +108,8 @@
   <p class="topless"><a href="before_save_&lt;model&gt;.html"
                         title="previous chapter">before_save_&lt;model&gt;</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="show_&lt;model&gt;.html"
-                        title="next chapter">show_&lt;model&gt;</a></p>
+  <p class="topless"><a href="make_&lt;model&gt;_featured.html"
+                        title="next chapter">make_&lt;model&gt;_featured</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -131,7 +144,7 @@
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="show_<model>.html" title="show_&lt;model&gt;"
+          <a href="make_<model>_featured.html" title="make_&lt;model&gt;_featured"
              >next</a> |</li>
         <li class="right" >
           <a href="before_save_<model>.html" title="before_save_&lt;model&gt;"

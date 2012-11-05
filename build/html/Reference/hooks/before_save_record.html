@@ -25,7 +25,7 @@
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Hooks" href="index.html" />
-    <link rel="next" title="remove_record_tag" href="remove_record_tag.html" />
+    <link rel="next" title="admin_append_to_advanced_search" href="admin_append_to_advanced_search.html" />
     <link rel="prev" title="before_delete_record" href="before_delete_record.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
  
@@ -38,7 +38,7 @@
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="remove_record_tag.html" title="remove_record_tag"
+          <a href="admin_append_to_advanced_search.html" title="admin_append_to_advanced_search"
              accesskey="N">next</a> |</li>
         <li class="right" >
           <a href="before_delete_record.html" title="before_delete_record"
@@ -63,9 +63,15 @@
 <h1>before_save_record<a class="headerlink" href="#before-save-record" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Fires before any database record is saved. This includes both insert and update operations.</p>
+<p>Since this hook fires after the record is saved, the record ID will not be available, but changes made to any other record properties will be saved.</p>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference internal" href="../libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Record_AbstractRecord</span></tt></a> record</dt>
+<dd>The record being edited</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -95,8 +101,8 @@
   <p class="topless"><a href="before_delete_record.html"
                         title="previous chapter">before_delete_record</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="remove_record_tag.html"
-                        title="next chapter">remove_record_tag</a></p>
+  <p class="topless"><a href="admin_append_to_advanced_search.html"
+                        title="next chapter">admin_append_to_advanced_search</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -131,7 +137,7 @@
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="remove_record_tag.html" title="remove_record_tag"
+          <a href="admin_append_to_advanced_search.html" title="admin_append_to_advanced_search"
              >next</a> |</li>
         <li class="right" >
           <a href="before_delete_record.html" title="before_delete_record"

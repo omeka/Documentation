@@ -63,9 +63,16 @@
 <h1>upgrade<a class="headerlink" href="#upgrade" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>When Omeka detects that a user has installed a new version of the plugin, it automatically deactivates the plugin and presents an &#8220;Upgrade&#8221; button. This hook runs when a superuser clicks the &#8220;Upgrade&#8221; button. It is primarily used to migrate database tables and other data stored by older versions of the plugin.</p>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">string</span></tt> old_version</dt>
+<dd>The previous version that was installed and is being upgraded from.</dd>
+<dt><tt class="docutils literal"><span class="pre">string</span></tt> new_version</dt>
+<dd>The new, current version of the plugin.</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>

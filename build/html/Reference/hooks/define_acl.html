@@ -63,12 +63,39 @@
 <h1>define_acl<a class="headerlink" href="#define-acl" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>This hook runs when Omeka&#8217;s ACL is instantiated. It allows plugin writers to manipulate the ACL that controls user access in Omeka.</p>
+<p>In general, plugins use this hook to restrict and/or allow access for specific user roles to the pages that it creates.</p>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">array</span></tt> acl</dt>
+<dd>The Zend_Acl object</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">class</span> <span class="nc">SimplePagesPlugin</span> <span class="k">extends</span> <span class="nx">Omeka_Plugin_AbstractPlugin</span>
+<span class="p">{</span>
+    <span class="k">protected</span> <span class="nv">$_hooks</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;define_acl&#39;</span><span class="p">);</span>
+
+    <span class="k">function</span> <span class="nf">hookDefineAcl</span><span class="p">(</span><span class="nv">$args</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="nv">$acl</span> <span class="o">=</span> <span class="nv">$args</span><span class="p">[</span><span class="s1">&#39;acl&#39;</span><span class="p">];</span>
+
+        <span class="nv">$indexResource</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Zend_Acl_Resource</span><span class="p">(</span><span class="s1">&#39;SimplePages_Index&#39;</span><span class="p">);</span>
+        <span class="nv">$pageResource</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Zend_Acl_Resource</span><span class="p">(</span><span class="s1">&#39;SimplePages_Page&#39;</span><span class="p">);</span>
+        <span class="nv">$acl</span><span class="o">-&gt;</span><span class="na">add</span><span class="p">(</span><span class="nv">$indexResource</span><span class="p">);</span>
+        <span class="nv">$acl</span><span class="o">-&gt;</span><span class="na">add</span><span class="p">(</span><span class="nv">$pageResource</span><span class="p">);</span>
+
+        <span class="nv">$acl</span><span class="o">-&gt;</span><span class="na">allow</span><span class="p">(</span><span class="k">array</span><span class="p">(</span><span class="s1">&#39;super&#39;</span><span class="p">,</span> <span class="s1">&#39;admin&#39;</span><span class="p">),</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;SimplePages_Index&#39;</span><span class="p">,</span> <span class="s1">&#39;SimplePages_Page&#39;</span><span class="p">));</span>
+        <span class="nv">$acl</span><span class="o">-&gt;</span><span class="na">allow</span><span class="p">(</span><span class="k">null</span><span class="p">,</span> <span class="s1">&#39;SimplePages_Page&#39;</span><span class="p">,</span> <span class="s1">&#39;show&#39;</span><span class="p">);</span>
+        <span class="nv">$acl</span><span class="o">-&gt;</span><span class="na">deny</span><span class="p">(</span><span class="k">null</span><span class="p">,</span> <span class="s1">&#39;SimplePages_Page&#39;</span><span class="p">,</span> <span class="s1">&#39;show-unpublished&#39;</span><span class="p">);</span>
+    <span class="p">}</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
 </div>
 </div>
 

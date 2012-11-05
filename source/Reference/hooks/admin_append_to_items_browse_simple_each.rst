@@ -20,7 +20,6 @@ Arguments
     The view object
 
 
-
 ********
 Examples
 ********

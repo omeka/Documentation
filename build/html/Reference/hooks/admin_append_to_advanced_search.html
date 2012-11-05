@@ -25,8 +25,8 @@
     
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Hooks" href="index.html" />
-    <link rel="next" title="admin_append_to_collections_browse_primary" href="admin_append_to_collections_browse_primary.html" />
-    <link rel="prev" title="make_collection_public" href="make_collection_public.html" />
+    <link rel="next" title="admin_append_to_appearance_settings_form" href="admin_append_to_appearance_settings_form.html" />
+    <link rel="prev" title="before_save_record" href="before_save_record.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -38,10 +38,10 @@
           <a href="../../genindex.html" title="General Index"
              accesskey="I">index</a></li>
         <li class="right" >
-          <a href="admin_append_to_collections_browse_primary.html" title="admin_append_to_collections_browse_primary"
+          <a href="admin_append_to_appearance_settings_form.html" title="admin_append_to_appearance_settings_form"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="make_collection_public.html" title="make_collection_public"
+          <a href="before_save_record.html" title="before_save_record"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -63,9 +63,18 @@
 <h1>admin_append_to_advanced_search<a class="headerlink" href="#admin-append-to-advanced-search" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Append form elements to the advanced search area.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If your plugin adds searchable models, checkboxes for including them in your search are controlled by the site administrator.</p>
+</div>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference internal" href="../libraries/Omeka/View.html#Omeka_View" title="Omeka_View"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_View</span></tt></a> view</dt>
+<dd>The view object</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -92,11 +101,11 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="make_collection_public.html"
-                        title="previous chapter">make_collection_public</a></p>
+  <p class="topless"><a href="before_save_record.html"
+                        title="previous chapter">before_save_record</a></p>
   <h4>Next topic</h4>
-  <p class="topless"><a href="admin_append_to_collections_browse_primary.html"
-                        title="next chapter">admin_append_to_collections_browse_primary</a></p>
+  <p class="topless"><a href="admin_append_to_appearance_settings_form.html"
+                        title="next chapter">admin_append_to_appearance_settings_form</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
     Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
@@ -131,10 +140,10 @@
           <a href="../../genindex.html" title="General Index"
              >index</a></li>
         <li class="right" >
-          <a href="admin_append_to_collections_browse_primary.html" title="admin_append_to_collections_browse_primary"
+          <a href="admin_append_to_appearance_settings_form.html" title="admin_append_to_appearance_settings_form"
              >next</a> |</li>
         <li class="right" >
-          <a href="make_collection_public.html" title="make_collection_public"
+          <a href="before_save_record.html" title="before_save_record"
              >previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>

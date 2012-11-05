@@ -26,7 +26,7 @@
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Hooks" href="index.html" />
     <link rel="next" title="admin_theme_footer" href="admin_theme_footer.html" />
-    <link rel="prev" title="admin_append_to_plugin_uninstall_message" href="admin_append_to_plugin_uninstall_message.html" />
+    <link rel="prev" title="admin_append_to_themes_browse_each" href="admin_append_to_themes_browse_each.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="admin_theme_footer.html" title="admin_theme_footer"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="admin_append_to_plugin_uninstall_message.html" title="admin_append_to_plugin_uninstall_message"
+          <a href="admin_append_to_themes_browse_each.html" title="admin_append_to_themes_browse_each"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -63,9 +63,26 @@
 <h1>admin_append_to_users_form<a class="headerlink" href="#admin-append-to-users-form" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="usage">
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
+<p>Adds content to the user form.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p>If you are looking up any information about the user, wrap the operations in an if statement like so:</p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">if</span><span class="p">(</span><span class="nv">$user</span><span class="o">-&gt;</span><span class="na">id</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">//your operations and output</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p class="last">This is necessary because the admin view of users includes a form to add a user, which includes a new User object. Because it is new, it does not yet exist in the database. The result is that if your plugin tries to do any operations on it, it throws a database error. Checking for $user-&gt;id ensures that the user exists in the database first.</p>
+</div>
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt><a class="reference internal" href="../models/User.html#User" title="User"><tt class="xref php php-class docutils literal"><span class="pre">User</span></tt></a> user</dt>
+<dd>The user object</dd>
+<dt><a class="reference internal" href="../libraries/Omeka/View.html#Omeka_View" title="Omeka_View"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_View</span></tt></a> view</dt>
+<dd>The view object</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -92,8 +109,8 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="admin_append_to_plugin_uninstall_message.html"
-                        title="previous chapter">admin_append_to_plugin_uninstall_message</a></p>
+  <p class="topless"><a href="admin_append_to_themes_browse_each.html"
+                        title="previous chapter">admin_append_to_themes_browse_each</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="admin_theme_footer.html"
                         title="next chapter">admin_theme_footer</a></p>
@@ -134,7 +151,7 @@
           <a href="admin_theme_footer.html" title="admin_theme_footer"
              >next</a> |</li>
         <li class="right" >
-          <a href="admin_append_to_plugin_uninstall_message.html" title="admin_append_to_plugin_uninstall_message"
+          <a href="admin_append_to_themes_browse_each.html" title="admin_append_to_themes_browse_each"
              >previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
