@@ -1,4 +1,4 @@
-.. principlesOfOmeka2.
+.. _principlesOfOmeka2:
 
 
 #######################
@@ -6,7 +6,6 @@ Principles of Omeka 2.0
 #######################
 
 People who are familiar with conventions and patterns from Omeka 1.x will see many changes. Here are some ofbroad principles that went into the changes to Omeka 2.0
-
 
 **************
 Record-centric

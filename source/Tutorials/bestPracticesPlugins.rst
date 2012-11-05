@@ -1,4 +1,4 @@
-.. bestPracticesPlugins.
+.. _bestPracticesPlugins:
 
 
 #####################################
@@ -28,7 +28,6 @@ Similarly, whenever you override methods from abstract classes in Omeka, make su
 Also, if you use any non-standard routing in your plugin, you must override :php:meth:`Omeka_Record_AbstractRecord::getRecordUrl` so that it returns the correct url to the record. Compare the ``getRecordUrl()`` method on the ``SimplePagesPage`` model in the "Simple Pages" plugin.
 
 
-
 ***************** 
 Use View Partials
 *****************
@@ -42,6 +41,12 @@ View partials let you separate out parts of long or complicated views into separ
     <?php else: ?>
         <?php echo $this->partial('index/browse-list.php', array('simplePages' => get_simple_pages_for_loop())); ?>
     <?php endif; ?>  
+
+
+************************************
+Setting Up Your Plugin's Config Page
+************************************
+
 
 
 

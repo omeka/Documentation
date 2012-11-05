@@ -9,9 +9,9 @@ search_sql
 Usage
 *****
 
-Modifies the SQL query used when doing text search.
+Modifies the SQL query used.
 
-This hook can be used when a custom search strategy is added using the "search_query_types" filter.
+This hook can be used when a custom search strategy is added using the :ref:`search_query_types` filter.
 
 
 *********

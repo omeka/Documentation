@@ -4,6 +4,7 @@
 Hooks
 #####
 
+
 .. toctree::
 
    overview/usingHooks
@@ -45,10 +46,10 @@ Database
     :maxdepth: 1
     
     <model>_browse_sql
-    add_record_tag
-    after_upload_file
+    add_<model>_tag
+    after_ingest_file
     make_*
-    remove_record_tag
+    remove_<model>_tag
     
 
 *******
@@ -69,16 +70,19 @@ Item Records
     :glob:
     :maxdepth: 1
     
-    make_item_*
+    *item*
     
 Collection Records
 ==================
+
 
 .. toctree::
     :glob:
     :maxdepth: 1
     
-    make_collection_*
+    *collections*
+
+
 
 *****
 Users
@@ -87,6 +91,8 @@ Users
 .. toctree::
     :glob:
     :maxdepth: 1
+    
+    *user*
     
     
 
@@ -99,6 +105,7 @@ Admin Theme
     :maxdepth: 1
     
     admin*
+    browse_<model>
     show_<model>
 
 
@@ -110,5 +117,6 @@ Public Theme
     :glob:
     :maxdepth: 1
     
+    browse_<model>
     public*
     show_<model>

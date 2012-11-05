@@ -59,7 +59,7 @@
           <div class="body">
             
   <div class="section" id="best-practices-for-plugin-development">
-<h1>Best Practices for Plugin Development<a class="headerlink" href="#best-practices-for-plugin-development" title="Permalink to this headline">¶</a></h1>
+<span id="bestpracticesplugins"></span><h1>Best Practices for Plugin Development<a class="headerlink" href="#best-practices-for-plugin-development" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="method-naming-conventions">
 <h2>Method Naming Conventions<a class="headerlink" href="#method-naming-conventions" title="Permalink to this headline">¶</a></h2>
 <p>Method names must be in camelCase (e.g., <tt class="docutils literal"><span class="pre">getItem()</span></tt>).</p>
@@ -68,9 +68,9 @@
 </div>
 <div class="section" id="maintain-expected-behaviors-in-omeka">
 <h2>Maintain expected behaviors in Omeka<a class="headerlink" href="#maintain-expected-behaviors-in-omeka" title="Permalink to this headline">¶</a></h2>
-<p>Omeka defines some hooks that operate on every record. For example, Omeka&#8217;s <a class="reference internal" href="../Reference/packages/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::save" title="Omeka_Record_AbstractRecord::save"><tt class="xref php php-meth docutils literal"><span class="pre">Omeka_Record_AbstractRecord::save</span></tt></a> method fires hooks before and after saving. In most cases, you don&#8217;t need to override it, but if you do, make sure you include <tt class="docutils literal"><span class="pre">$this-&gt;runCallbacks('beforeSave',</span> <span class="pre">$callbackArgs);</span></tt> and <tt class="docutils literal"><span class="pre">$this-&gt;runCallbacks('afterSave',</span> <span class="pre">$callbackArgs);</span></tt> where appropriate.</p>
+<p>Omeka defines some hooks that operate on every record. For example, Omeka&#8217;s <a class="reference internal" href="../Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::save" title="Omeka_Record_AbstractRecord::save"><tt class="xref php php-meth docutils literal"><span class="pre">Omeka_Record_AbstractRecord::save</span></tt></a> method fires hooks before and after saving. In most cases, you don&#8217;t need to override it, but if you do, make sure you include <tt class="docutils literal"><span class="pre">$this-&gt;runCallbacks('beforeSave',</span> <span class="pre">$callbackArgs);</span></tt> and <tt class="docutils literal"><span class="pre">$this-&gt;runCallbacks('afterSave',</span> <span class="pre">$callbackArgs);</span></tt> where appropriate.</p>
 <p>Similarly, whenever you override methods from abstract classes in Omeka, make sure that you have studied the parent methods&#8217; code to include all the expected callback. This will allow other developers to work with the expected behaviors of the objects.</p>
-<p>Also, if you use any non-standard routing in your plugin, you must override <a class="reference internal" href="../Reference/packages/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::getRecordUrl" title="Omeka_Record_AbstractRecord::getRecordUrl"><tt class="xref php php-meth docutils literal"><span class="pre">Omeka_Record_AbstractRecord::getRecordUrl</span></tt></a> so that it returns the correct url to the record. Compare the <tt class="docutils literal"><span class="pre">getRecordUrl()</span></tt> method on the <tt class="docutils literal"><span class="pre">SimplePagesPage</span></tt> model in the &#8220;Simple Pages&#8221; plugin.</p>
+<p>Also, if you use any non-standard routing in your plugin, you must override <a class="reference internal" href="../Reference/libraries/Omeka/Record/AbstractRecord.html#Omeka_Record_AbstractRecord::getRecordUrl" title="Omeka_Record_AbstractRecord::getRecordUrl"><tt class="xref php php-meth docutils literal"><span class="pre">Omeka_Record_AbstractRecord::getRecordUrl</span></tt></a> so that it returns the correct url to the record. Compare the <tt class="docutils literal"><span class="pre">getRecordUrl()</span></tt> method on the <tt class="docutils literal"><span class="pre">SimplePagesPage</span></tt> model in the &#8220;Simple Pages&#8221; plugin.</p>
 </div>
 <div class="section" id="use-view-partials">
 <h2>Use View Partials<a class="headerlink" href="#use-view-partials" title="Permalink to this headline">¶</a></h2>
@@ -83,14 +83,17 @@
 </pre></div>
 </div>
 </div>
+<div class="section" id="setting-up-your-plugin-s-config-page">
+<h2>Setting Up Your Plugin&#8217;s Config Page<a class="headerlink" href="#setting-up-your-plugin-s-config-page" title="Permalink to this headline">¶</a></h2>
+</div>
 <div class="section" id="building-forms-in-admin">
 <h2>Building Forms in Admin<a class="headerlink" href="#building-forms-in-admin" title="Permalink to this headline">¶</a></h2>
-<p>Omeka 2.0 admin interface works with modern CSS and design practices, including responsive design. Omeka 2.0 therefore also includes a <a class="reference internal" href="../Reference/packages/Form/Admin.html#Omeka_Form_Admin" title="Omeka_Form_Admin"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Form_Admin</span></tt></a> class to help you quickly and easily build simple forms. It should be suitable for building basic add/edit forms. The SimplePages plugin makes uses it, can can offer a good example of usage.</p>
-<p>It is best to put your form-building logic into your controller, e.g. in a <tt class="docutils literal"><span class="pre">_getForm()</span></tt> method. The <a class="reference internal" href="../Reference/packages/Form/Admin.html#Omeka_Form_Admin" title="Omeka_Form_Admin"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Form_Admin</span></tt></a> class works basically as follows.</p>
+<p>Omeka 2.0 admin interface works with modern CSS and design practices, including responsive design. Omeka 2.0 therefore also includes a <a class="reference internal" href="../Reference/libraries/Omeka/Form/Admin.html#Omeka_Form_Admin" title="Omeka_Form_Admin"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Form_Admin</span></tt></a> class to help you quickly and easily build simple forms. It should be suitable for building basic add/edit forms. The SimplePages plugin makes uses it, can can offer a good example of usage.</p>
+<p>It is best to put your form-building logic into your controller, e.g. in a <tt class="docutils literal"><span class="pre">_getForm()</span></tt> method. The <a class="reference internal" href="../Reference/libraries/Omeka/Form/Admin.html#Omeka_Form_Admin" title="Omeka_Form_Admin"><tt class="xref php php-class docutils literal"><span class="pre">Omeka_Form_Admin</span></tt></a> class works basically as follows.</p>
 <p>If you are editing an existing record, instantiate it like so: <tt class="docutils literal"><span class="pre">$form</span> <span class="pre">=</span> <span class="pre">new</span> <span class="pre">Omeka_Form_Admin(array('record'=&gt;$record);</span></tt></p>
 <p>By default, if you pass in a record the form will assume that you want a link to the record&#8217;s public page. If not pass in an array like <tt class="docutils literal"><span class="pre">array('record'=&gt;$record,</span> <span class="pre">'hasPublicPage'=&gt;false)</span></tt></p>
 <p>Otherwise, you need not pass any argument.</p>
-<p>To add your form elements to the main editing area, use <a class="reference internal" href="../Reference/packages/Form/Admin.html#Omeka_Form_Admin::addElementToEditGroup" title="Omeka_Form_Admin::addElementToEditGroup"><tt class="xref php php-meth docutils literal"><span class="pre">Omeka_Form_Admin::addElementToEditGroup</span></tt></a>. You can either pass in a <tt class="docutils literal"><span class="pre">Zend_Form_Element</span></tt> you have already built, or pass in the parameters to build the element as if you were creating one. For example, creating a text input looks like this:</p>
+<p>To add your form elements to the main editing area, use <a class="reference internal" href="../Reference/libraries/Omeka/Form/Admin.html#Omeka_Form_Admin::addElementToEditGroup" title="Omeka_Form_Admin::addElementToEditGroup"><tt class="xref php php-meth docutils literal"><span class="pre">Omeka_Form_Admin::addElementToEditGroup</span></tt></a>. You can either pass in a <tt class="docutils literal"><span class="pre">Zend_Form_Element</span></tt> you have already built, or pass in the parameters to build the element as if you were creating one. For example, creating a text input looks like this:</p>
 <div class="highlight-php"><div class="highlight"><pre><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">addElementToEditGroup</span><span class="p">(</span><span class="s1">&#39;text&#39;</span><span class="p">,</span>
     <span class="s1">&#39;title&#39;</span><span class="p">,</span>
     <span class="k">array</span><span class="p">(</span>  <span class="s1">&#39;id&#39;</span><span class="o">=&gt;</span><span class="s1">&#39;simple-pages-title&#39;</span><span class="p">,</span>
@@ -105,7 +108,7 @@
 <p>The first argument specifies the element type (text, textarea, etc.). The second gives the name to be used on the element in the form. The third gives a keyed array of various attributes for the element, as well as a label and a description.</p>
 <p>If you build the Zend_Form_Element yourself, you can simply pass that in as the first parameter and leave the rest empty.</p>
 <p>In some cases, it makes sense to add an element directly to the save panel on the right. This should be reserved for small, peripheral data, such as whether a record is public or featured, if the model implements those features.</p>
-<p>Doing so works similarly, using the <a class="reference internal" href="../Reference/packages/Form/Admin.html#Omeka_Form_Admin::addElementToSaveGroup" title="Omeka_Form_Admin::addElementToSaveGroup"><tt class="xref php php-meth docutils literal"><span class="pre">Omeka_Form_Admin::addElementToSaveGroup</span></tt></a> method:</p>
+<p>Doing so works similarly, using the <a class="reference internal" href="../Reference/libraries/Omeka/Form/Admin.html#Omeka_Form_Admin::addElementToSaveGroup" title="Omeka_Form_Admin::addElementToSaveGroup"><tt class="xref php php-meth docutils literal"><span class="pre">Omeka_Form_Admin::addElementToSaveGroup</span></tt></a> method:</p>
 <div class="highlight-php"><div class="highlight"><pre><span class="nv">$form</span><span class="o">-&gt;</span><span class="na">addElementToSaveGroup</span><span class="p">(</span><span class="s1">&#39;checkbox&#39;</span><span class="p">,</span> <span class="s1">&#39;is_published&#39;</span><span class="p">,</span>
     <span class="k">array</span><span class="p">(</span><span class="s1">&#39;id&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;simple_pages_is_published&#39;</span><span class="p">,</span>
          <span class="s1">&#39;values&#39;</span> <span class="o">=&gt;</span> <span class="k">array</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
@@ -135,6 +138,7 @@
 <li><a class="reference internal" href="#method-naming-conventions">Method Naming Conventions</a></li>
 <li><a class="reference internal" href="#maintain-expected-behaviors-in-omeka">Maintain expected behaviors in Omeka</a></li>
 <li><a class="reference internal" href="#use-view-partials">Use View Partials</a></li>
+<li><a class="reference internal" href="#setting-up-your-plugin-s-config-page">Setting Up Your Plugin&#8217;s Config Page</a></li>
 <li><a class="reference internal" href="#building-forms-in-admin">Building Forms in Admin</a></li>
 </ul>
 </li>
@@ -148,11 +152,11 @@
                         title="next chapter">Migrating your code to Omeka 2.0</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
-    Please open an issue on <a href="https://github.com/omeka/OmekaDoc/issues.rst" rel="nofollow">Github</a>
+    Please open an issue on <a href="https://github.com/omeka/Documentation/issues.rst" rel="nofollow">Github</a>
     </p>
   <ul class="this-page-menu">
     
-    <li><a href="https://github.com/omeka/OmekaDoc/master/sourceTutorials/bestPracticesPlugins.rst"
+    <li><a href="https://github.com/omeka/Documentation/master/sourceTutorials/bestPracticesPlugins.rst"
            rel="nofollow">View Source</a>
     </li>
   </ul>
