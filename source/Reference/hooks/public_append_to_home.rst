@@ -1,12 +1,12 @@
-#############################
-public_append_to_items_browse
-#############################
+#####################
+public_append_to_home
+#####################
 
 *****
 Usage
 *****
 
-Append content to the items browse page
+Add content at the end of the home page
 
 *********
 Arguments

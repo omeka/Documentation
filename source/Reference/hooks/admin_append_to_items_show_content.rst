@@ -1,22 +1,23 @@
 ##################################
-admin_append_to_themes_browse_each
+admin_append_to_items_show_content
 ##################################
 
 *****
 Usage
 *****
 
-Add content to a theme's description
+Append content to the main item show area
 
 *********
 Arguments
 *********
 
-:php:class:`Theme` theme
-    The theme object
+:php:class:`Item` item
+    The item object
 
 :php:class:`Omeka_View` view
     The view object
+
 
 
 ********

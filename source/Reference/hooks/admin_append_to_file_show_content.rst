@@ -1,25 +1,32 @@
+
+
 #################################
-public_append_to_collections_show
+admin_append_to_file_show_content
 #################################
 
 *****
 Usage
 *****
 
-Append content to the end of a collections show page.
+Append content to the main area of a file show page.
 
 *********
 Arguments
 *********
 
+
+:php:class:`File` file
+    The file object
+
 :php:class:`Omeka_View` view
     The view object
 
-:php:class:`Collection` collection
-    The collection object
+
 
 ********
 Examples
 ********
+
+
 
 

@@ -7,6 +7,8 @@ html_purifier_form_submission
 Usage
 *****
 
+Use this hook to run HTMLPurifier on submitted text. After purifying, reset the post data on the request object.
+
 *********
 Arguments
 *********
