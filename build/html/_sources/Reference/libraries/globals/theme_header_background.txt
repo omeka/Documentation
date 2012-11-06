@@ -1,3 +1,5 @@
+.. _fthemeheaderbackground:
+
 #######################
 theme_header_background
 #######################

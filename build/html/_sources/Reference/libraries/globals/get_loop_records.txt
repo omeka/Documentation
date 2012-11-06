@@ -1,3 +1,5 @@
+.. _fgetlooprecords:
+
 ################
 get_loop_records
 ################

@@ -1,3 +1,5 @@
+.. _finsertelementset:
+
 ##################
 insert_element_set
 ##################

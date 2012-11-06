@@ -1,3 +1,5 @@
+.. _fgetpreviousitem:
+
 #################
 get_previous_item
 #################

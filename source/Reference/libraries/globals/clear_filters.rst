@@ -1,3 +1,5 @@
+.. _fclearfilters:
+
 #############
 clear_filters
 #############

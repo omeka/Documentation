@@ -1,3 +1,5 @@
+.. _fpublicnavitems:
+
 ################
 public_nav_items
 ################

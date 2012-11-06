@@ -1,3 +1,5 @@
+.. _ftotalrecords:
+
 #############
 total_records
 #############

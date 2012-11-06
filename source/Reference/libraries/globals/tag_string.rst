@@ -1,3 +1,5 @@
+.. _ftagstring:
+
 ##########
 tag_string
 ##########

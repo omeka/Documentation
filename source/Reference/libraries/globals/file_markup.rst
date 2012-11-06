@@ -1,3 +1,5 @@
+.. _ffilemarkup:
+
 ###########
 file_markup
 ###########

@@ -1,3 +1,5 @@
+.. _fisallowed:
+
 ##########
 is_allowed
 ##########

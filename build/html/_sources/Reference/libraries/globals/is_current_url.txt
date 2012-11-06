@@ -1,3 +1,5 @@
+.. _fiscurrenturl:
+
 ##############
 is_current_url
 ##############

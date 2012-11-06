@@ -1,3 +1,5 @@
+.. _fadminurl:
+
 #########
 admin_url
 #########

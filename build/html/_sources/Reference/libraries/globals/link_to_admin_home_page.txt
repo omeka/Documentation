@@ -1,3 +1,5 @@
+.. _flinktoadminhomepage:
+
 #######################
 link_to_admin_home_page
 #######################

@@ -1,3 +1,5 @@
+.. _flinktoitemsearch:
+
 ###################
 link_to_item_search
 ###################

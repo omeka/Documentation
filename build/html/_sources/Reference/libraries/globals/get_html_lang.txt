@@ -1,3 +1,5 @@
+.. _fgethtmllang:
+
 #############
 get_html_lang
 #############

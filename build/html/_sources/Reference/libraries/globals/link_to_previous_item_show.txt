@@ -1,3 +1,5 @@
+.. _flinktopreviousitemshow:
+
 ##########################
 link_to_previous_item_show
 ##########################

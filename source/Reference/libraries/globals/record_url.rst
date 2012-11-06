@@ -1,3 +1,5 @@
+.. _frecordurl:
+
 ##########
 record_url
 ##########

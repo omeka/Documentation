@@ -1,3 +1,5 @@
+.. _fgetuserroles:
+
 ##############
 get_user_roles
 ##############

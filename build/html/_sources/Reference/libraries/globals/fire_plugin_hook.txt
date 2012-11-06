@@ -1,3 +1,5 @@
+.. _ffirepluginhook:
+
 ################
 fire_plugin_hook
 ################

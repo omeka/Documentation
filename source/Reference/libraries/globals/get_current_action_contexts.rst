@@ -1,3 +1,5 @@
+.. _fgetcurrentactioncontexts:
+
 ###########################
 get_current_action_contexts
 ###########################

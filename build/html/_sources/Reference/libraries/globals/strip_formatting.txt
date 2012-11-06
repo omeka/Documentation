@@ -1,3 +1,5 @@
+.. _fstripformatting:
+
 ################
 strip_formatting
 ################

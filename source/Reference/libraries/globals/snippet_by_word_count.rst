@@ -1,3 +1,5 @@
+.. _fsnippetbywordcount:
+
 #####################
 snippet_by_word_count
 #####################

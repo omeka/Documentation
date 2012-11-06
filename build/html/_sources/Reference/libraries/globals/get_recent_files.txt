@@ -1,3 +1,5 @@
+.. _fgetrecentfiles:
+
 ################
 get_recent_files
 ################

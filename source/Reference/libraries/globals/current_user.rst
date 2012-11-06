@@ -1,3 +1,5 @@
+.. _fcurrentuser:
+
 ############
 current_user
 ############

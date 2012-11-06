@@ -1,3 +1,5 @@
+.. _felementexists:
+
 ##############
 element_exists
 ##############

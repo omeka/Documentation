@@ -1,9 +1,10 @@
+.. _fmetadata:
+
 ########
 metadata
 ########
 
 :doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
-
 
 *******
 Summary

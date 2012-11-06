@@ -1,3 +1,5 @@
+.. _f (double underscore):
+
 ######################
 __ (double underscore)
 ######################

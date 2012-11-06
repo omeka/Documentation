@@ -1,3 +1,5 @@
+.. _faddtranslationsource:
+
 ######################
 add_translation_source
 ######################

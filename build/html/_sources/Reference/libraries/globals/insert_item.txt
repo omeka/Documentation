@@ -1,3 +1,5 @@
+.. _finsertitem:
+
 ###########
 insert_item
 ###########

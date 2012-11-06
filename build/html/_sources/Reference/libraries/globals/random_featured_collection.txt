@@ -1,3 +1,5 @@
+.. _frandomfeaturedcollection:
+
 ##########################
 random_featured_collection
 ##########################

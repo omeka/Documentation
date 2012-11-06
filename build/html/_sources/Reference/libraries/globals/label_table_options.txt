@@ -1,3 +1,5 @@
+.. _flabeltableoptions:
+
 ###################
 label_table_options
 ###################

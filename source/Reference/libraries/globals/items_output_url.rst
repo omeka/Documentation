@@ -1,3 +1,5 @@
+.. _fitemsoutputurl:
+
 ################
 items_output_url
 ################

@@ -1,3 +1,5 @@
+.. _flinktocollection:
+
 ##################
 link_to_collection
 ##################

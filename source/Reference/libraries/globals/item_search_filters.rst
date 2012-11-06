@@ -1,3 +1,5 @@
+.. _fitemsearchfilters:
+
 ###################
 item_search_filters
 ###################

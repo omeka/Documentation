@@ -1,3 +1,5 @@
+.. _fpluginisactive:
+
 ################
 plugin_is_active
 ################

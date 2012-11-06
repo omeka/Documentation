@@ -1,3 +1,5 @@
+.. _fsetthemeoption:
+
 ################
 set_theme_option
 ################

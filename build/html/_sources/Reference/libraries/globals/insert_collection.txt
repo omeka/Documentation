@@ -1,3 +1,5 @@
+.. _finsertcollection:
+
 #################
 insert_collection
 #################

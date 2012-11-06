@@ -1,3 +1,5 @@
+.. _fgetrecenttags:
+
 ###############
 get_recent_tags
 ###############

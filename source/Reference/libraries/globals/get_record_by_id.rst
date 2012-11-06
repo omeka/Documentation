@@ -1,3 +1,5 @@
+.. _fgetrecordbyid:
+
 ################
 get_record_by_id
 ################

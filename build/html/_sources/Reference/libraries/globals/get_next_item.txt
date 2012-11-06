@@ -1,3 +1,5 @@
+.. _fgetnextitem:
+
 #############
 get_next_item
 #############

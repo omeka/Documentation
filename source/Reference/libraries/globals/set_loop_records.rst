@@ -1,3 +1,5 @@
+.. _fsetlooprecords:
+
 ################
 set_loop_records
 ################

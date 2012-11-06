@@ -1,3 +1,5 @@
+.. _fgetrecentitems:
+
 ################
 get_recent_items
 ################

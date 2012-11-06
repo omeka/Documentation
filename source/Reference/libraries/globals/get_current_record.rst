@@ -1,3 +1,5 @@
+.. _fgetcurrentrecord:
+
 ##################
 get_current_record
 ##################

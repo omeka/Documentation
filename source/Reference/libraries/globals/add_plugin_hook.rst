@@ -1,3 +1,5 @@
+.. _faddpluginhook:
+
 ###############
 add_plugin_hook
 ###############

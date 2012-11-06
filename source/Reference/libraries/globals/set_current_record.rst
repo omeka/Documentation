@@ -1,3 +1,5 @@
+.. _fsetcurrentrecord:
+
 ##################
 set_current_record
 ##################

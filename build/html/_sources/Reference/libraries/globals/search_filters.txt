@@ -1,3 +1,5 @@
+.. _fsearchfilters:
+
 ##############
 search_filters
 ##############

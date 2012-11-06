@@ -1,3 +1,5 @@
+.. _fgetsearchrecordtypes:
+
 #######################
 get_search_record_types
 #######################

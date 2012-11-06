@@ -61,14 +61,32 @@
           <div class="body">
             
   <div class="section" id="metadata">
-<h1>metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h1>
+<span id="fmetadata"></span><h1>metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference internal" href="../../packages/Function/View/Body/index.html"><em>Body-related functions</em></a></p>
 <div class="section" id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
+<p>Returns metadata about a record</p>
 <dl class="function">
 <dt>
-<tt class="descname">metadata</tt><big>(</big><big>)</big></dt>
-<dd></dd></dl>
+<tt class="descname">metadata</tt><big>(</big><em>Omeka_Record_AbstractRecord|string $record</em>, <em>mixed $metadata</em>, <em>array $options = Array</em><big>)</big></dt>
+<dd><p>Return a piece or pieces of metadata for a record.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$record</strong> (<em>Omeka_Record_AbstractRecord|string</em>) &#8211; The record to get metadata for. If an Omeka_Record_AbstractRecord, that record is used. If a string, that string is used to look up a record in the current view.</li>
+<li><strong>$metadata</strong> (<em>mixed</em>) &#8211; The metadata to get. If an array is given, this is Element metadata, identified by array(&#8216;Element Set&#8217;, &#8216;Element&#8217;). If a string, the metadata is a record-specific &#8220;property.&#8221;</li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; Options for getting the metadata.</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">mixed</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 </div>
 <div class="section" id="usage">

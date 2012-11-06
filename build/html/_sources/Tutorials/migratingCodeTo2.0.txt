@@ -63,15 +63,13 @@ Admin Views
 Upgrading Themes
 ****************
 
-
 The number of global functions has been cut nearly in half in Omeka 2.0. This will require many changes to your themes, but will also make the patterns of usage much easier to follow and much more consistent.
-
 
 Here are a few of the basic tasks for upgrading.
 
-* Change the various metadata-retrieval functions for different record types (e.g., ``item()``, ``collection()``, etc) to the generalized :php:func:`metadata` function.
+* Change the various metadata-retrieval functions for different record types (e.g., ``item()``, ``collection()``, etc) to the generalized :ref:`fmetadata` function.
 
-* Change the loop structure for the various record types (e.g., ``loop_items()``, ``loop_collections``, etc) to the generalized :php:func:`loop` function. Note that the structure changes from
+* Change the loop structure for the various record types (e.g., ``loop_items()``, ``loop_collections``, etc) to the generalized :ref:`loop` function. Note that the structure changes from
     
     .. code-block:: php
     
@@ -83,7 +81,12 @@ Here are a few of the basic tasks for upgrading.
     
         foreach(loop('items') as $item):
         
-        
+
+
  
-:php:func:`metadata`
+
+
+
+
+
 

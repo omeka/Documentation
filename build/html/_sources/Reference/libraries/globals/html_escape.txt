@@ -1,3 +1,5 @@
+.. _fhtmlescape:
+
 ###########
 html_escape
 ###########

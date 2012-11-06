@@ -1,3 +1,5 @@
+.. _fqueuejsfile:
+
 #############
 queue_js_file
 #############
@@ -10,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/queue_js_file.rst
 
-.. php:function:: queue_js_file(string|array $file, string $dir = javascripts)
+.. php:function:: queue_js_file(string|array $file, string $dir = javascripts, array $options = Array)
 
     Declare that a JavaScript file or files will be used on the page.
     
@@ -18,6 +20,7 @@ Summary
     
     :param string|array $file: File to use, if an array is passed, each array member will be treated like a file.
     :param string $dir: Directory to search for the file. Keeping the default is recommended.
+    :param array $options: An array of options.
 
 *****
 Usage

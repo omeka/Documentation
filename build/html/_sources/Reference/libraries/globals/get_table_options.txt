@@ -1,3 +1,5 @@
+.. _fgettableoptions:
+
 #################
 get_table_options
 #################

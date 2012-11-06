@@ -1,3 +1,5 @@
+.. _fqueuecssfile:
+
 ##############
 queue_css_file
 ##############

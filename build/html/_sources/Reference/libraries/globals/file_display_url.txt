@@ -1,3 +1,5 @@
+.. _ffiledisplayurl:
+
 ################
 file_display_url
 ################

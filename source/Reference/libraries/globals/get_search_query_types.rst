@@ -1,3 +1,5 @@
+.. _fgetsearchquerytypes:
+
 ######################
 get_search_query_types
 ######################

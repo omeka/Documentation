@@ -1,3 +1,5 @@
+.. _finsertitemtype:
+
 ################
 insert_item_type
 ################

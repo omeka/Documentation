@@ -1,3 +1,5 @@
+.. _freleaseobject:
+
 ##############
 release_object
 ##############

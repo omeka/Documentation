@@ -1,3 +1,5 @@
+.. _fhaslooprecords:
+
 ################
 has_loop_records
 ################

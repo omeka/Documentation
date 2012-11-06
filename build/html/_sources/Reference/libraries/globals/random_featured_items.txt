@@ -1,3 +1,5 @@
+.. _frandomfeatureditems:
+
 #####################
 random_featured_items
 #####################

@@ -1,3 +1,5 @@
+.. _fallelementtexts:
+
 #################
 all_element_texts
 #################

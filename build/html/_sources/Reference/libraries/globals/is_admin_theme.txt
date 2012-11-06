@@ -1,3 +1,5 @@
+.. _fisadmintheme:
+
 ##############
 is_admin_theme
 ##############

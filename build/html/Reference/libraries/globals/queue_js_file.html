@@ -61,13 +61,13 @@
           <div class="body">
             
   <div class="section" id="queue-js-file">
-<h1>queue_js_file<a class="headerlink" href="#queue-js-file" title="Permalink to this headline">¶</a></h1>
+<span id="fqueuejsfile"></span><h1>queue_js_file<a class="headerlink" href="#queue-js-file" title="Permalink to this headline">¶</a></h1>
 <p><a class="reference internal" href="../../packages/Function/View/Head/index.html"><em>Head-related functions</em></a></p>
 <div class="section" id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
 <dl class="function">
 <dt id="queue_js_file">
-<tt class="descname">queue_js_file</tt><big>(</big><em>string|array $file</em>, <em>string $dir = javascripts</em><big>)</big><a class="headerlink" href="#queue_js_file" title="Permalink to this definition">¶</a></dt>
+<tt class="descname">queue_js_file</tt><big>(</big><em>string|array $file</em>, <em>string $dir = javascripts</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#queue_js_file" title="Permalink to this definition">¶</a></dt>
 <dd><p>Declare that a JavaScript file or files will be used on the page.</p>
 <p>All &#8220;used&#8221; scripts will be included in the page&#8217;s head. This needs to becalled either before head(), or in a plugin_header hook.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -77,6 +77,7 @@
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>$file</strong> (<em>string|array</em>) &#8211; File to use, if an array is passed, each array member will be treated like a file.</li>
 <li><strong>$dir</strong> (<em>string</em>) &#8211; Directory to search for the file. Keeping the default is recommended.</li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; An array of options.</li>
 </ul>
 </td>
 </tr>

@@ -1,3 +1,5 @@
+.. _flinktoitemsincollection:
+
 ###########################
 link_to_items_in_collection
 ###########################

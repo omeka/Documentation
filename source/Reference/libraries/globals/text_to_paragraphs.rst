@@ -1,3 +1,5 @@
+.. _ftexttoparagraphs:
+
 ##################
 text_to_paragraphs
 ##################

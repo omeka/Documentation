@@ -1,3 +1,5 @@
+.. _fitemssearchform:
+
 #################
 items_search_form
 #################

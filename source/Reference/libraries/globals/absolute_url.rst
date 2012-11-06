@@ -1,3 +1,5 @@
+.. _fabsoluteurl:
+
 ############
 absolute_url
 ############

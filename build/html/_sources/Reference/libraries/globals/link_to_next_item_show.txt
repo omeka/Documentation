@@ -1,3 +1,5 @@
+.. _flinktonextitemshow:
+
 ######################
 link_to_next_item_show
 ######################

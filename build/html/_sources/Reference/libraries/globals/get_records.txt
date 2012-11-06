@@ -1,3 +1,5 @@
+.. _fgetrecords:
+
 ###########
 get_records
 ###########

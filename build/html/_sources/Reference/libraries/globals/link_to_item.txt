@@ -1,3 +1,5 @@
+.. _flinktoitem:
+
 ############
 link_to_item
 ############

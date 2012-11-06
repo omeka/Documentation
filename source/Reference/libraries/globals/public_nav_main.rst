@@ -1,3 +1,5 @@
+.. _fpublicnavmain:
+
 ###############
 public_nav_main
 ###############

@@ -1,3 +1,5 @@
+.. _fitemtypeelements:
+
 ##################
 item_type_elements
 ##################

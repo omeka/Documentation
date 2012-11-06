@@ -1,3 +1,5 @@
+.. _fgetrandomfeaturedcollection:
+
 ##############################
 get_random_featured_collection
 ##############################

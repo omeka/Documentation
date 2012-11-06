@@ -1,3 +1,5 @@
+.. _flatestomekaversion:
+
 ####################
 latest_omeka_version
 ####################

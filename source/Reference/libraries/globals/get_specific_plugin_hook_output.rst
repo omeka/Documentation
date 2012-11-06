@@ -1,3 +1,5 @@
+.. _fgetspecificpluginhookoutput:
+
 ###############################
 get_specific_plugin_hook_output
 ###############################

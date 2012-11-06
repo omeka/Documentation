@@ -1,3 +1,5 @@
+.. _fthemelogo:
+
 ##########
 theme_logo
 ##########

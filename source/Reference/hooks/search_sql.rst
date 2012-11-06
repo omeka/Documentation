@@ -1,4 +1,4 @@
-.. _search_sql:
+.. _searchsql:
 
 
 ##########

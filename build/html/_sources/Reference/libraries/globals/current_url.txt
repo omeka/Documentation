@@ -1,3 +1,5 @@
+.. _fcurrenturl:
+
 ###########
 current_url
 ###########

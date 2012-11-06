@@ -1,3 +1,5 @@
+.. _finsertfilesforitem:
+
 #####################
 insert_files_for_item
 #####################

@@ -1,3 +1,5 @@
+.. _fformatdate:
+
 ###########
 format_date
 ###########

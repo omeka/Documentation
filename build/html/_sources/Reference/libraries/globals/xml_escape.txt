@@ -1,3 +1,5 @@
+.. _fxmlescape:
+
 ##########
 xml_escape
 ##########

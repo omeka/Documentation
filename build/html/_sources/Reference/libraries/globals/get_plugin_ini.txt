@@ -1,3 +1,5 @@
+.. _fgetpluginini:
+
 ##############
 get_plugin_ini
 ##############

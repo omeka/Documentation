@@ -1,3 +1,5 @@
+.. _fgetpluginbroker:
+
 #################
 get_plugin_broker
 #################

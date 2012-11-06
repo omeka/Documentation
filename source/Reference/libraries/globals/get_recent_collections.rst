@@ -1,3 +1,5 @@
+.. _fgetrecentcollections:
+
 ######################
 get_recent_collections
 ######################

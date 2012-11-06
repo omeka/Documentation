@@ -1,3 +1,5 @@
+.. _frevertthemebaseurl:
+
 #####################
 revert_theme_base_url
 #####################

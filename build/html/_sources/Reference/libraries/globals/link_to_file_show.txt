@@ -1,3 +1,5 @@
+.. _flinktofileshow:
+
 #################
 link_to_file_show
 #################

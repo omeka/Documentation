@@ -1,3 +1,5 @@
+.. _ftagcloud:
+
 #########
 tag_cloud
 #########

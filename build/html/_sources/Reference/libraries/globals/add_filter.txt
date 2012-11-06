@@ -1,3 +1,5 @@
+.. _faddfilter:
+
 ##########
 add_filter
 ##########

@@ -1,3 +1,5 @@
+.. _ffilesforitem:
+
 ##############
 files_for_item
 ##############

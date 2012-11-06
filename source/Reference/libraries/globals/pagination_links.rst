@@ -1,3 +1,5 @@
+.. _fpaginationlinks:
+
 ################
 pagination_links
 ################

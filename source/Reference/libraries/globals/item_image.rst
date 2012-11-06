@@ -1,3 +1,5 @@
+.. _fitemimage:
+
 ##########
 item_image
 ##########

@@ -1,3 +1,5 @@
+.. _fgetthemeoption:
+
 ################
 get_theme_option
 ################

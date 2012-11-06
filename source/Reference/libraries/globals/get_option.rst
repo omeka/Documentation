@@ -1,3 +1,5 @@
+.. _fgetoption:
+
 ##########
 get_option
 ##########

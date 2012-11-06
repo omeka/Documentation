@@ -1,3 +1,5 @@
+.. _flinktoitemsrss:
+
 #################
 link_to_items_rss
 #################

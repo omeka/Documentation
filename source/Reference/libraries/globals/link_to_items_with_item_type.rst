@@ -1,3 +1,5 @@
+.. _flinktoitemswithitemtype:
+
 ############################
 link_to_items_with_item_type
 ############################

@@ -120,9 +120,9 @@
 <p>The number of global functions has been cut nearly in half in Omeka 2.0. This will require many changes to your themes, but will also make the patterns of usage much easier to follow and much more consistent.</p>
 <p>Here are a few of the basic tasks for upgrading.</p>
 <ul>
-<li><p class="first">Change the various metadata-retrieval functions for different record types (e.g., <tt class="docutils literal"><span class="pre">item()</span></tt>, <tt class="docutils literal"><span class="pre">collection()</span></tt>, etc) to the generalized <tt class="xref php php-func docutils literal"><span class="pre">metadata</span></tt> function.</p>
+<li><p class="first">Change the various metadata-retrieval functions for different record types (e.g., <tt class="docutils literal"><span class="pre">item()</span></tt>, <tt class="docutils literal"><span class="pre">collection()</span></tt>, etc) to the generalized <a class="reference internal" href="../Reference/libraries/globals/metadata.html#fmetadata"><em>metadata</em></a> function.</p>
 </li>
-<li><p class="first">Change the loop structure for the various record types (e.g., <tt class="docutils literal"><span class="pre">loop_items()</span></tt>, <tt class="docutils literal"><span class="pre">loop_collections</span></tt>, etc) to the generalized <tt class="xref php php-func docutils literal"><span class="pre">loop</span></tt> function. Note that the structure changes from</p>
+<li><p class="first">Change the loop structure for the various record types (e.g., <tt class="docutils literal"><span class="pre">loop_items()</span></tt>, <tt class="docutils literal"><span class="pre">loop_collections</span></tt>, etc) to the generalized <em class="xref std std-ref">loop</em> function. Note that the structure changes from</p>
 <blockquote>
 <div><div class="highlight-php"><div class="highlight"><pre><span class="k">while</span><span class="p">(</span><span class="nx">loop_items</span><span class="p">())</span> <span class="o">:</span>
 </pre></div>
@@ -134,7 +134,6 @@
 </div></blockquote>
 </li>
 </ul>
-<p><tt class="xref php php-func docutils literal"><span class="pre">metadata</span></tt></p>
 </div>
 </div>
 

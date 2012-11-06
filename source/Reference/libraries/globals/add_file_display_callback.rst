@@ -1,3 +1,5 @@
+.. _faddfiledisplaycallback:
+
 #########################
 add_file_display_callback
 #########################

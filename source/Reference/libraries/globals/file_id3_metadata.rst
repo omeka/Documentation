@@ -1,3 +1,5 @@
+.. _ffileid3metadata:
+
 #################
 file_id3_metadata
 #################

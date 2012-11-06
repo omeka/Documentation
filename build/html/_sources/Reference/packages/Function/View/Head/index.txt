@@ -16,8 +16,10 @@ Up to :doc:`../index`
    /Reference/libraries/globals/js_tag
    /Reference/libraries/globals/queue_css_file
    /Reference/libraries/globals/queue_css_string
+   /Reference/libraries/globals/queue_css_url
    /Reference/libraries/globals/queue_js_file
    /Reference/libraries/globals/queue_js_string
+   /Reference/libraries/globals/queue_js_url
    /Reference/libraries/globals/theme_header_background
    /Reference/libraries/globals/theme_header_image
    /Reference/libraries/globals/theme_logo

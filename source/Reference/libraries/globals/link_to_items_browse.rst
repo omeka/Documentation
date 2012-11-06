@@ -1,3 +1,5 @@
+.. _flinktoitemsbrowse:
+
 ####################
 link_to_items_browse
 ####################

@@ -1,3 +1,5 @@
+.. _fqueuecssstring:
+
 ################
 queue_css_string
 ################

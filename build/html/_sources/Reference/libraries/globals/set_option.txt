@@ -1,3 +1,5 @@
+.. _fsetoption:
+
 ##########
 set_option
 ##########

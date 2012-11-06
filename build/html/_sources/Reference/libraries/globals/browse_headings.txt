@@ -1,3 +1,5 @@
+.. _fbrowseheadings:
+
 ###############
 browse_headings
 ###############

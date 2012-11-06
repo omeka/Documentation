@@ -1,3 +1,5 @@
+.. _fautodiscoverylinktags:
+
 ########################
 auto_discovery_link_tags
 ########################

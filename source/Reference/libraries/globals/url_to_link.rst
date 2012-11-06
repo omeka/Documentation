@@ -1,3 +1,5 @@
+.. _furltolink:
+
 ###########
 url_to_link
 ###########

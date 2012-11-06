@@ -1,3 +1,5 @@
+.. _fsetthemebaseurl:
+
 ##################
 set_theme_base_url
 ##################

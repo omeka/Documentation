@@ -1,3 +1,5 @@
+.. _fpublicurl:
+
 ##########
 public_url
 ##########

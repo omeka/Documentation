@@ -1,3 +1,5 @@
+.. _ffileimage:
+
 ##########
 file_image
 ##########

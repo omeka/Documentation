@@ -1,3 +1,5 @@
+.. _foutputformatlist:
+
 ##################
 output_format_list
 ##################

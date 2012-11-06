@@ -1,3 +1,5 @@
+.. _fsearchform:
+
 ###########
 search_form
 ###########

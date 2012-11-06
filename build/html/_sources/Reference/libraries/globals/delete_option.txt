@@ -1,3 +1,5 @@
+.. _fdeleteoption:
+
 #############
 delete_option
 #############

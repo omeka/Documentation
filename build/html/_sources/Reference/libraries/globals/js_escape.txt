@@ -1,3 +1,5 @@
+.. _fjsescape:
+
 #########
 js_escape
 #########

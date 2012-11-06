@@ -1,3 +1,5 @@
+.. _fapplyfilters:
+
 #############
 apply_filters
 #############

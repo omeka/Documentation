@@ -1,3 +1,5 @@
+.. _ftagattributes:
+
 ##############
 tag_attributes
 ##############

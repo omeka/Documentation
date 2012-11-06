@@ -1,3 +1,5 @@
+.. _fgetcollectionforitem:
+
 #######################
 get_collection_for_item
 #######################
