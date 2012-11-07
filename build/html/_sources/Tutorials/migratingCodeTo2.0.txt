@@ -59,9 +59,9 @@ Admin Views
 
 
  
-****************
-Upgrading Themes
-****************
+***************
+Updating Themes
+***************
 
 The number of global functions has been cut nearly in half in Omeka 2.0. This will require many changes to your themes, but will also make the patterns of usage much easier to follow and much more consistent.
 
@@ -82,8 +82,10 @@ Here are a few of the basic tasks for upgrading.
         foreach(loop('items') as $item):
         
 
-
+* Change other global functions that have changed. There is `a complete list of old and new function names on our wiki <http://omeka.org/codex/Updating_Plugins_For_2.0#Function_Replacements>`_. 
  
+* Update calls to hooks and filters (wherever you use :ref:`ffire_plugin_hook` and :ref:`fapply_filters`). Typically, the expected variable name passed in in version 1.5 (e.g. ``$user``) becomes the key for the corresponding data in the array, e.g. ``$user = $args['user'];`` See `Updating Plugins for 2.0: Hooks and Filters <http://omeka.org/codex/Updating_Plugins_For_2.0#Hooks_and_Filters>`_
+
 
 
 

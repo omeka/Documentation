@@ -1,3 +1,4 @@
+.. _adminappendtoitemsbatcheditform:
 
 #####################################
 admin_append_to_items_batch_edit_form
@@ -8,6 +9,8 @@ Usage
 *****
 
 Appends content to the end of the batch editing screen, but before the delete option.
+
+If adding form elements, name them "custom"
 
 See the :ref:`Admin styling guide` for details on CSS styling
 
@@ -27,3 +30,9 @@ Examples
 ********
 
     
+    
+********
+See Also
+********
+
+:ref:`batchediterror`    
