@@ -27,8 +27,8 @@ Arguments
 :php:class:`User` user
     The user object
 
-:php:class:`Omeka_View` view
-    The view object
+:php:class:`Omeka_Form` form
+    The form to modify
 
 ********
 Examples
