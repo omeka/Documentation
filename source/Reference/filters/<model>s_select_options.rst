@@ -1,7 +1,7 @@
 
-######################
-<model>_select_options
-######################
+#######################
+<model>s_select_options
+#######################
 
 
 *****
@@ -9,6 +9,11 @@ Usage
 *****
 
 Filters the options for a select element for the <model>'s table. Useful if your plugin adds relations between the <model>'s table and another table.
+
+
+.. note::
+
+    Use the plural form of the <model>
 
 
 *****

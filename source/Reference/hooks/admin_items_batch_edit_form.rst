@@ -18,8 +18,6 @@ See the :ref:`Admin styling guide` for details on CSS styling
 Arguments
 *********
 
-:php:class:`ItemType` item_type
-    The item type object
 
 :php:class:`Omeka_View` view
     The view object

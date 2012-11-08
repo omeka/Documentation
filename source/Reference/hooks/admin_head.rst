@@ -21,7 +21,9 @@ Plugins will likely not need to add content to the admin-side ``<head>`` for eve
 Arguments
 *********
 
-None
+:php:class:`Omeka_View` view
+    The view object
+
 
 
 ********

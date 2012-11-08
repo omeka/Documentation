@@ -8,6 +8,7 @@ admin_item_types_show
 Usage
 *****
 
+Add content to the item types show page
 
 *********
 Arguments

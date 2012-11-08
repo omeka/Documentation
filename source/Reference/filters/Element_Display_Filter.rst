@@ -10,7 +10,9 @@ Alter the way an element is displayed.
 
 The name of the filter is an array:
 
-``array('Display', $recordType, $elementSetName, $elementName)``
+.. code-block:: php
+
+    array('Display', $recordType, $elementSetName, $elementName);
 
 * $recordType: The type of Omeka object to filter the metadata for. Most commonly, this will be 'Item'.
 

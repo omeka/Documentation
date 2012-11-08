@@ -1,8 +1,8 @@
-.. _adminfileform:
+.. _adminfilesform:
 
-###############
-admin_file_form
-###############
+################
+admin_files_form
+################
 
 *****
 Usage

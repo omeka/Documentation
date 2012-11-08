@@ -1,6 +1,6 @@
-#####################
-<model>_browse_params
-#####################
+######################
+<model>s_browse_params
+######################
 
 *****
 Usage
@@ -10,7 +10,7 @@ Filters the parameters used when generating the browse page for records (the mod
 
 .. note::
 
-    <model> is the plural form
+    Use the plural form of the <model>
 
 *****
 Value

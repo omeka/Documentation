@@ -1,6 +1,8 @@
-########################
-define_response_contexts
-########################
+.. _responsecontexts:
+
+#################
+response_contexts
+#################
 
 *****
 Usage
@@ -18,7 +20,7 @@ Value
 *****
 
 ``array`` $contexts
-    Array of contexts, corresponding to action contexts defined by using :ref:`define_action_contexts`
+    Array of contexts, corresponding to action contexts defined by using :ref:`actioncontexts`
 
 *********
 Arguments

@@ -13,8 +13,8 @@ Usage
 Arguments
 *********
 
-:php:class:`ItemType` item_type
-    The item type object
+``array`` item_types
+    The array of :php:class:`ItemType`s objects
 
 :php:class:`Omeka_View` view
     The view object

@@ -8,6 +8,7 @@ admin_item_types_form
 Usage
 *****
 
+Add content to the admin item type edit form
 
 *********
 Arguments

@@ -1,7 +1,7 @@
 
-########################################
+##############################
 admin_appearance_settings_form
-########################################
+##############################
 
 *****
 Usage
@@ -12,7 +12,7 @@ Usage
 Arguments
 *********
 
-:php:class:`Omeka_Form` appearance_settings_form
+:php:class:`Omeka_Form` form
     The form object
 
 :php:class:`Omeka_View` view

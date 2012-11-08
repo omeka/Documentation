@@ -12,7 +12,8 @@ This hook is primarily used to set options to the database and create tables, an
 Arguments
 *********
 
-None
+``integer`` plugin_id
+    The id of the plugin
 
 ********
 Examples

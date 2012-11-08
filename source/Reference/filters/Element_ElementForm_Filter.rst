@@ -16,6 +16,12 @@ The name is an array:
 
     array('ElementForm', $recordType, $elementSetName, $elementName);
 
+* $recordType: The type of Omeka object to filter the metadata for. Most commonly, this will be 'Item'.
+
+* $elementSetName: The name of the element set containing the metadata field to be filtered. Possible values include 'Dublin Core' and 'Item Type Metadata'.
+
+* $elementName: The name of the specific element within the set to be filtered. 
+
 
 *****
 Value

@@ -8,6 +8,7 @@ admin_collections_show
 Usage
 *****
 
+Append content to the admin collection show page.
 
 *********
 Arguments
