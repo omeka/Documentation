@@ -114,6 +114,7 @@ pygments_style = 'sphinx'
 # a list of builtin themes.
 html_theme = u'default'
 
+html_style = None
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -133,7 +134,7 @@ html_theme_options = {"sidebarbgcolor": "#F5F6F1",
                       }
 
 # Add any paths that contain custom themes here, relative to this directory.
-#html_theme_path = []
+html_theme_path = ['_templates']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".

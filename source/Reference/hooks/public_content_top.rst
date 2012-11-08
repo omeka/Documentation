@@ -1,12 +1,14 @@
-###################
-public_footer
-###################
+.. _publiccontenttop:
+
+##################
+public_content_top
+##################
 
 *****
 Usage
 *****
 
-Add content to the end of the public footer.
+Inserts content at the top of the page.
 
 *********
 Arguments

@@ -1,12 +1,13 @@
-###################
-public_footer
-###################
+.. _admincollectionsforms:
+
+######################
+admin_collections_form
+######################
 
 *****
 Usage
 *****
 
-Add content to the end of the public footer.
 
 *********
 Arguments

@@ -13,9 +13,6 @@ Use this hook to run HTMLPurifier on submitted text. After purifying, reset the 
 Arguments
 *********
 
-``Zend_Controller_Request_Http`` request
-    The request object
-
 ``HTMLPurifier`` purifier
     The HTMLPurifier object 
 
@@ -33,7 +30,7 @@ Examples
     
         /**
          * Filter the 'text' field of the simple-pages form, but only if the 
-         * 'simple_pages_filter_page_content' setting has been enabled from within the
+         * 'simple_pages_filter_page' setting has been enabled from within the
          * configuration form.
          * 
          * @param array $args Hook args, contains:
@@ -51,7 +48,7 @@ Examples
             }
             
             // Do not filter HTML for the request unless this configuration directive is on.
-            if (!get_option('simple_pages_filter_page_content')) {
+            if (!get_option('simple_pages_filter_page')) {
                 return;
             }
             

@@ -29,7 +29,7 @@ Examples
         function hookDefineRoutes($args)
         {
             // Don't add these routes on the admin side to avoid conflicts.
-            if (is_admin_theme()) {
+            if (is_admin()) {
                 return;
             }
     

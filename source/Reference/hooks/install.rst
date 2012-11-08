@@ -25,7 +25,7 @@ Examples
     {
         protected $_hooks = array('install');
         
-        protected $_options = array('simple_pages_filter_page_content' => '0');
+        protected $_options = array('simple_pages_filter_page' => '0');
             
         function hookInstall()
         {

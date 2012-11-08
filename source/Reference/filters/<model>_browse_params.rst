@@ -8,6 +8,9 @@ Usage
 
 Filters the parameters used when generating the browse page for records (the model)
 
+.. note::
+
+    <model> is the plural form
 
 *****
 Value

@@ -1,3 +1,5 @@
+.. _afterdeletemodel:
+
 ####################
 after_delete_<model>
 ####################

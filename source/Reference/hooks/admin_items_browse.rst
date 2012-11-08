@@ -1,12 +1,13 @@
-###################
-public_footer
-###################
+.. _adminitemsbrowse:
+
+##################
+admin_items_browse
+##################
 
 *****
 Usage
 *****
 
-Add content to the end of the public footer.
 
 *********
 Arguments

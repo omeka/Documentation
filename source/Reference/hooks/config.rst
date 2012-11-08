@@ -32,6 +32,6 @@ Examples
          */
         function hookConfig()
         {
-            set_option('simple_pages_filter_page_content', (int)(boolean)$_POST['simple_pages_filter_page_content']);
+            set_option('simple_pages_filter_page', (int)(boolean)$_POST['simple_pages_filter_page']);
         }
     }

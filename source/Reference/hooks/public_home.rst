@@ -1,12 +1,12 @@
-###################
-public_footer
-###################
+#####################
+public_home
+#####################
 
 *****
 Usage
 *****
 
-Add content to the end of the public footer.
+Add content at the end of the home page
 
 *********
 Arguments
@@ -14,7 +14,6 @@ Arguments
 
 :php:class:`Omeka_View` view
     The view object
-
 
 ********
 Examples
