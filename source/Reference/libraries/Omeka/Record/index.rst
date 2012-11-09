@@ -11,5 +11,3 @@ Libraries/Omeka/Record
 
 .. toctree::
 
-    Builder/index
-    Mixin/index

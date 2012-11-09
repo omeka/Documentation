@@ -32,4 +32,4 @@ Omeka_Navigation_Page_Uri
         If $href is an invalid uri, then return null.
         
         :param String $href: 
-        :returns: array|null
+        :returns: array

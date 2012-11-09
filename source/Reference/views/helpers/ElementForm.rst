@@ -15,12 +15,9 @@ Omeka_View_Helper_ElementForm
         The function applies filters that allow plugins to customize the display of element form components.
         Here is an example of how a plugin may add and implement an element form filter:
         
-        add_filter(array('ElementForm', 'Item', 'Dublin Core', 'Title')), 'form_item_title');function form_item_title(array
-        $components, $args){
+        add_filter(array('ElementForm', 'Item', 'Dublin Core', 'Title')), 'form_item_title');function form_item_title(array $components, $args){
         
-        // Where $components would looks like://  array(//      'label' => [...],//      'inputs' => [...],//     
-        'description' => [...],//      'comment' => [...],//      'add_input' => [...],//  )// and $args looks like:// 
-        array(//      'record' => [...],//      'element' => [...],//      'options' => [...],//  )}
+        // Where $components would looks like://  array(//      'label' => [...],//      'inputs' => [...],//      'description' => [...],//      'comment' => [...],//      'add_input' => [...],//  )// and $args looks like://  array(//      'record' => [...],//      'element' => [...],//      'options' => [...],//  )}
 
     .. php:attr:: _record
     

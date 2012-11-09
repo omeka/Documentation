@@ -10,5 +10,3 @@ Libraries/Omeka/Test
 
 .. toctree::
 
-    Helper/index
-    Resource/index

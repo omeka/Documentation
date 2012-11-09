@@ -159,7 +159,7 @@ Omeka_Controller_AbstractActionController
         Augment Zend's default action contexts.
         
         Passes Omeka's default additional contexts through the
-        'define_action_contexts' filter to allow plugins to add contexts.
+        'action_contexts' filter to allow plugins to add contexts.
 
     .. php:method:: _getDeleteForm()
     

@@ -12,7 +12,3 @@ Libraries/Omeka/Job
 
 .. toctree::
 
-    Dispatcher/index
-    Factory/index
-    Process/index
-    Worker/index
