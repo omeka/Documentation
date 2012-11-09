@@ -25,10 +25,11 @@ Value
 Arguments
 *********
 
-:php:class:`Omeka_Controller_Action`
+:php:class:`Omeka_Controller_Action` controller
     The controller that is producing the output.
     
-`Zend_Controller_ActionHelper_ContextSwitch` <http://framework.zend.com/manual/1.12/en/zend.controller.actionhelpers.html#zend.controller.actionhelpers.contextswitch>    
+`Zend_Controller_ActionHelper_ContextSwitch <http://framework.zend.com/manual/1.12/en/zend.controller.actionhelpers.html#zend.controller.actionhelpers.contextswitch> context_switch
+        
 
 ********
 Examples
