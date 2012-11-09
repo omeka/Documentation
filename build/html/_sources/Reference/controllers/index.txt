@@ -15,6 +15,7 @@ Controllers
     ItemsController
     NavigationController
     PluginsController
+    RedirectorController
     SearchController
     SecurityController
     SettingsController

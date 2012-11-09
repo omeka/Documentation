@@ -67,7 +67,10 @@
 </div>
 <div class="section" id="arguments">
 <h2>Arguments<a class="headerlink" href="#arguments" title="Permalink to this headline">¶</a></h2>
-<p>None</p>
+<dl class="docutils">
+<dt><tt class="docutils literal"><span class="pre">integer</span></tt> plugin_id</dt>
+<dd>The id of the plugin</dd>
+</dl>
 </div>
 <div class="section" id="examples">
 <h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h2>
@@ -75,7 +78,7 @@
 <span class="p">{</span>
     <span class="k">protected</span> <span class="nv">$_hooks</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;install&#39;</span><span class="p">);</span>
 
-    <span class="k">protected</span> <span class="nv">$_options</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;simple_pages_filter_page_content&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;0&#39;</span><span class="p">);</span>
+    <span class="k">protected</span> <span class="nv">$_options</span> <span class="o">=</span> <span class="k">array</span><span class="p">(</span><span class="s1">&#39;simple_pages_filter_page&#39;</span> <span class="o">=&gt;</span> <span class="s1">&#39;0&#39;</span><span class="p">);</span>
 
     <span class="k">function</span> <span class="nf">hookInstall</span><span class="p">()</span>
     <span class="p">{</span>
@@ -154,7 +157,7 @@
                         title="next chapter">initialize</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
-    Please open an issue on <a href="https://github.com/omeka/Documentation/issues.rst" rel="nofollow">Github</a>
+    Please open an issue on <a href="https://github.com/omeka/Documentation/issues" rel="nofollow">Github</a>
     </p>
   <ul class="this-page-menu">
     

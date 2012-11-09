@@ -22,7 +22,7 @@ Summary
     
     .. raw:: html
     
-    <ol>
+      <ol>
     	                 <li>convert to lowercase</li>
     	                 <li>Replace whitespace with -</li>
     	                 <li>remove all non-alphanumerics</li>

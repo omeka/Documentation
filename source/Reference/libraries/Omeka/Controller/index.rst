@@ -9,3 +9,5 @@ Libraries/Omeka/Controller
 
 .. toctree::
 
+    Exception/index
+    Plugin/index

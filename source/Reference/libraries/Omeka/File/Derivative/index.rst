@@ -9,3 +9,4 @@ Libraries/Omeka/File/Derivative
 
 .. toctree::
 
+    Image/index

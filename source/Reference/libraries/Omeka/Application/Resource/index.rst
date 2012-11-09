@@ -30,3 +30,4 @@ Libraries/Omeka/Application/Resource
 
 .. toctree::
 
+    Jobs/index

@@ -74,24 +74,6 @@ Item
     
         Get a property for display.
         
-        Available property values:
-        
-        - id
-        
-        - item type name
-        
-        - date added
-        
-        - date modified
-        
-        - collection name
-        
-        - featured
-        
-        - public
-        
-        - permalink
-        
         :param string $property: 
         :returns: mixed
 
@@ -140,9 +122,9 @@ Item
         :param unknown $post: 
         :returns: array Clean post data
 
-    .. php:method:: hasFiles()
+    .. php:method:: fileCount()
     
-        Whether or not the Item has files associated with it.
+        Retrieve the number of files assigned to this item.
         
         :returns: boolean
 
@@ -164,6 +146,14 @@ Item
         (or any derivative image).
         
         :returns: boolean
+
+    .. php:method:: getCitation()
+    
+        Return a valid citation for this item.
+        
+        Generally follows Chicago Manual of Style note format for webpages.Implementers can use the item_citation filter to return a customizedcitation.
+        
+        :returns: string
 
     .. php:method:: addFile(File $file)
     

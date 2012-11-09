@@ -64,7 +64,7 @@
 <dl class="class">
 <dt id="Omeka_View_Helper_FileMarkup">
 <em class="property">class </em><tt class="descname">Omeka_View_Helper_FileMarkup</tt><a class="headerlink" href="#Omeka_View_Helper_FileMarkup" title="Permalink to this definition">¶</a></dt>
-<dd><p>Package: <tt class="xref doc docutils literal"><span class="pre">View\Helper</span></tt></p>
+<dd><p>Package: <a class="reference internal" href="../../packages/View/Helper/index.html"><em>View\Helper</em></a></p>
 <p>View Helper for displaying files through Omeka.</p>
 <p>This will determine how to display any given file based on the MIME type(Internet media type) of that file. Individual rendering agents are definedby callbacks that are either contained within this class or defined byplugins. Callbacks defined by plugins will override native class methods ifdefined for existing MIME types. In order to define a rendering callback thatshould be in the core of Omeka, define a method in this class and then makesure that it responds to all the correct MIME types by modifying otherproperties in this class.</p>
 <dl class="attr">
@@ -93,9 +93,7 @@ callback.</p>
 <tt class="descname">addMimeTypes</tt><big>(</big><em>array|string $fileIdentifiers</em>, <em>$callback</em>, <em>array $defaultOptions = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::addMimeTypes" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add MIME types and/or file extensions and associated callbacks to the
 list.</p>
-<p>This allows plugins to override/define ways of displaying specific files.The most obvious example of where this
-would come in handy is to defineways of displaying uncommon files, such as QTVR, or novel ways ofdisplaying more
-common files, such as using iPaper to display PDFs.</p>
+<p>This allows plugins to override/define ways of displaying specific files.The most obvious example of where this would come in handy is to defineways of displaying uncommon files, such as QTVR, or novel ways ofdisplaying more common files, such as using iPaper to display PDFs.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -142,8 +140,7 @@ common files, such as using iPaper to display PDFs.</p>
 <tt class="descname">defaultDisplay</tt><big>(</big><em>File $file</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::defaultDisplay" title="Permalink to this definition">¶</a></dt>
 <dd><p>Default display for MIME types that do not have a valid rendering
 callback.</p>
-<p>This wraps the original filename in a link to download that file, with aclass of &#8220;download-file&#8221;.  Any behavior more
-complex than that should beprocessed with a valid callback.</p>
+<p>This wraps the original filename in a link to download that file, with aclass of &#8220;download-file&#8221;.  Any behavior more complex than that should beprocessed with a valid callback.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -165,9 +162,7 @@ complex than that should beprocessed with a valid callback.</p>
 <dt id="Omeka_View_Helper_FileMarkup::_linkToFile">
 <tt class="descname">_linkToFile</tt><big>(</big><em>File $file</em>, <em>array $options</em>, <em>string $html</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::_linkToFile" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a link for the file based on the given set of options.</p>
-<p>If the &#8216;linkToMetadata&#8217; option is true, then link to the filemetadata page (files/show).  If &#8216;linkToFile&#8217; is
-true,link to the original file, and if &#8216;linkToFile&#8217; is a string, tryto link to that specific derivative. Otherwise
-just return the$html without wrapping in a link.</p>
+<p>If the &#8216;linkToMetadata&#8217; option is true, then link to the filemetadata page (files/show).  If &#8216;linkToFile&#8217; is true,link to the original file, and if &#8216;linkToFile&#8217; is a string, tryto link to that specific derivative. Otherwise just return the$html without wrapping in a link.</p>
 <p>The attributes for the link will be based off the &#8216;linkAttributes&#8217;
 option, which should be an array.</p>
 <p>If $html is null, it defaults to original filename of the file.</p>
@@ -434,9 +429,7 @@ overcome by a plugin that used a flash wrapper for displaying video.</p>
 <tt class="descname">icon</tt><big>(</big><em>$file</em>, <em>array $options = Array</em><big>)</big><a class="headerlink" href="#Omeka_View_Helper_FileMarkup::icon" title="Permalink to this definition">¶</a></dt>
 <dd><p>Default display of an icon to represent a file.</p>
 <p>Example usage:</p>
-<p>echo
-files_for_item(array(&#8216;showFilename&#8217;=&gt;false,&#8217;linkToFile&#8217;=&gt;false,&#8217;linkAttributes&#8217;=&gt;array(&#8216;rel&#8217;=&gt;&#8217;lightbox&#8217;),&#8217;filenameAttributes&#8217;=&gt;array(&#8216;class&#8217;=&gt;&#8217;error&#8217;),&#8217;imgAttributes&#8217;=&gt;array(&#8216;id&#8217;=&gt;&#8217;foobar&#8217;),&#8217;icons&#8217;
-=&gt; array(&#8216;audio/mpeg&#8217;=&gt;img(&#8216;audio.gif&#8217;))));</p>
+<p>echo files_for_item(array(&#8216;showFilename&#8217;=&gt;false,&#8217;linkToFile&#8217;=&gt;false,&#8217;linkAttributes&#8217;=&gt;array(&#8216;rel&#8217;=&gt;&#8217;lightbox&#8217;),&#8217;filenameAttributes&#8217;=&gt;array(&#8216;class&#8217;=&gt;&#8217;error&#8217;),&#8217;imgAttributes&#8217;=&gt;array(&#8216;id&#8217;=&gt;&#8217;foobar&#8217;),&#8217;icons&#8217; =&gt; array(&#8216;audio/mpeg&#8217;=&gt;img(&#8216;audio.gif&#8217;))));</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -621,7 +614,7 @@ displaying the file and by default wrap it in a &lt;div class=&#8221;item-file&#
                         title="next chapter">Omeka_View_Helper_Flash</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
-    Please open an issue on <a href="https://github.com/omeka/Documentation/issues.rst" rel="nofollow">Github</a>
+    Please open an issue on <a href="https://github.com/omeka/Documentation/issues" rel="nofollow">Github</a>
     </p>
   <ul class="this-page-menu">
     

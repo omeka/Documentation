@@ -135,7 +135,7 @@
 </li>
 <li><p class="first">Change other global functions that have changed. There is <a class="reference external" href="http://omeka.org/codex/Updating_Plugins_For_2.0#Function_Replacements">a complete list of old and new function names on our wiki</a>.</p>
 </li>
-<li><p class="first">Update calls to hooks and filters (wherever you use <em class="xref std std-ref">ffire_plugin_hook</em> and <em class="xref std std-ref">fapply_filters</em>). Typically, the expected variable name passed in in version 1.5 (e.g. <tt class="docutils literal"><span class="pre">$user</span></tt>) becomes the key for the corresponding data in the array, e.g. <tt class="docutils literal"><span class="pre">$user</span> <span class="pre">=</span> <span class="pre">$args['user'];</span></tt> See <a class="reference external" href="http://omeka.org/codex/Updating_Plugins_For_2.0#Hooks_and_Filters">Updating Plugins for 2.0: Hooks and Filters</a></p>
+<li><p class="first">Update calls to hooks and filters (wherever you use <a class="reference internal" href="../Reference/libraries/globals/fire_plugin_hook.html#ffirepluginhook"><em>fire_plugin_hook</em></a> and <a class="reference internal" href="../Reference/libraries/globals/apply_filters.html#fapplyfilters"><em>apply_filters</em></a>). Typically, the expected variable name passed in in version 1.5 (e.g. <tt class="docutils literal"><span class="pre">$user</span></tt>) becomes the key for the corresponding data in the array, e.g. <tt class="docutils literal"><span class="pre">$user</span> <span class="pre">=</span> <span class="pre">$args['user'];</span></tt> See <a class="reference external" href="http://omeka.org/codex/Updating_Plugins_For_2.0#Hooks_and_Filters">Updating Plugins for 2.0: Hooks and Filters</a></p>
 </li>
 </ul>
 </div>
@@ -174,7 +174,7 @@
                         title="next chapter">Principles of Omeka 2.0</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
-    Please open an issue on <a href="https://github.com/omeka/Documentation/issues.rst" rel="nofollow">Github</a>
+    Please open an issue on <a href="https://github.com/omeka/Documentation/issues" rel="nofollow">Github</a>
     </p>
   <ul class="this-page-menu">
     

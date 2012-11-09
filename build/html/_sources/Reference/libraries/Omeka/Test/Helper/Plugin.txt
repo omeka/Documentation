@@ -33,7 +33,7 @@ Omeka_Test_Helper_Plugin
 
     .. php:method:: _defineResponseContexts()
     
-        Run the define_response_contexts filter.
+        Run the response_contexts filter.
         
         :returns: void
 

@@ -87,7 +87,7 @@
 <dt id="Omeka_Application_Resource_Helpers::_initResponseContexts">
 <tt class="descname">_initResponseContexts</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Application_Resource_Helpers::_initResponseContexts" title="Permalink to this definition">¶</a></dt>
 <dd><p>Define the custom response format contexts for Omeka.</p>
-<p>Plugin writers should use the &#8216;define_response_contexts&#8217; filter to modify or expand the list of formats that existing controllers may respond to.</p>
+<p>Plugin writers should use the &#8216;response_contexts&#8217; filter to modify or expand the list of formats that existing controllers may respond to.</p>
 <p>Example of a definition of a response context through the ZF API:</p>
 <p>$contexts-&gt;addContext(&#8216;dc&#8217;, array(&#8216;suffix&#8217;    =&gt; &#8216;dc&#8217;,&#8217;headers&#8217;   =&gt; array(&#8216;Content-Type&#8217; =&gt; &#8216;text/xml&#8217;),&#8217;callbacks&#8217; =&gt; array(&#8216;init&#8217; =&gt; &#8216;atBeginningDoThis&#8217;,&#8217;post&#8217; =&gt; &#8216;afterwardsDoThis&#8217;)));</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -140,7 +140,7 @@
                         title="next chapter">Omeka_Application_Resource_Jobs</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
-    Please open an issue on <a href="https://github.com/omeka/Documentation/issues.rst" rel="nofollow">Github</a>
+    Please open an issue on <a href="https://github.com/omeka/Documentation/issues" rel="nofollow">Github</a>
     </p>
   <ul class="this-page-menu">
     

@@ -89,8 +89,8 @@ user interface</p>
 <dd></dd></dl>
 
 <dl class="attr">
-<dt id="Omeka_Form_Admin::$_record_type">
-<em class="property">property </em><tt class="descname">_record_type</tt><a class="headerlink" href="#Omeka_Form_Admin::$_record_type" title="Permalink to this definition">¶</a></dt>
+<dt id="Omeka_Form_Admin::$_type">
+<em class="property">property </em><tt class="descname">_type</tt><a class="headerlink" href="#Omeka_Form_Admin::$_type" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attr">
@@ -153,17 +153,22 @@ user interface</p>
 
 <dl class="method">
 <dt id="Omeka_Form_Admin::addElementToDisplayGroup">
-<tt class="descname">addElementToDisplayGroup</tt><big>(</big><em>$group</em>, <em>$element</em>, <em>$name</em>, <em>$options</em><big>)</big><a class="headerlink" href="#Omeka_Form_Admin::addElementToDisplayGroup" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<tt class="descname">addElementToDisplayGroup</tt><big>(</big><em>string $group</em>, <em>Zend_Form_Element $element</em>, <em>string $name</em>, <em>array $options</em><big>)</big><a class="headerlink" href="#Omeka_Form_Admin::addElementToDisplayGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generalizes creating and adding new elements to one of the display groups</p>
+<p>You can pass in either an Zend_Form_Element you have already created, or passparameters as you would to Zend_Form::addElement</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$group</strong> (<em>unknown</em>) &#8211; </li>
-<li><strong>$element</strong> (<em>unknown</em>) &#8211; </li>
-<li><strong>$name</strong> (<em>unknown</em>) &#8211; </li>
-<li><strong>$options</strong> (<em>unknown</em>) &#8211; </li>
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$group</strong> (<em>string</em>) &#8211; Either &#8216;save&#8217; or &#8216;edit&#8217;</li>
+<li><strong>$element</strong> (<em>Zend_Form_Element</em>) &#8211; The element to add to the display group</li>
+<li><strong>$name</strong> (<em>string</em>) &#8211; </li>
+<li><strong>$options</strong> (<em>array</em>) &#8211; </li>
 </ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">Omeka_Form_Admin</p>
 </td>
 </tr>
 </tbody>
@@ -173,17 +178,28 @@ user interface</p>
 <dl class="method">
 <dt id="Omeka_Form_Admin::getSaveGroupDefaultElementDecorators">
 <tt class="descname">getSaveGroupDefaultElementDecorators</tt><big>(</big><big>)</big><a class="headerlink" href="#Omeka_Form_Admin::getSaveGroupDefaultElementDecorators" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Get the decorators for the save display group</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body">array The default decorators for the save display group</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="method">
 <dt id="Omeka_Form_Admin::setEditGroupCssClass">
-<tt class="descname">setEditGroupCssClass</tt><big>(</big><em>$cssClass</em><big>)</big><a class="headerlink" href="#Omeka_Form_Admin::setEditGroupCssClass" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<tt class="descname">setEditGroupCssClass</tt><big>(</big><em>string $cssClass</em><big>)</big><a class="headerlink" href="#Omeka_Form_Admin::setEditGroupCssClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the class for the edit display group.</p>
+<p>You can alter the default css class for the edit group panel by passing in anoption for &#8216;editGroupCssClass&#8217; when you create an instance of Omeka_Form_Admin.This should be done very sparingly, as the default class is the best match toexisting admin theme look and feel</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$cssClass</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$cssClass</strong> (<em>string</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -193,13 +209,15 @@ user interface</p>
 
 <dl class="method">
 <dt id="Omeka_Form_Admin::setSaveGroupCssClass">
-<tt class="descname">setSaveGroupCssClass</tt><big>(</big><em>$cssClass</em><big>)</big><a class="headerlink" href="#Omeka_Form_Admin::setSaveGroupCssClass" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<tt class="descname">setSaveGroupCssClass</tt><big>(</big><em>string $cssClass</em><big>)</big><a class="headerlink" href="#Omeka_Form_Admin::setSaveGroupCssClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the class for the save display group.</p>
+<p>You can alter the default css class for the save group panel by passing in anoption for &#8216;editGroupCssClass&#8217; when you create an instance of Omeka_Form_Admin.This should be done very sparingly, as the default class is the best match toexisting admin theme look and feel</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$cssClass</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$cssClass</strong> (<em>string</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -208,14 +226,16 @@ user interface</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="Omeka_Form_Admin::setRecordType">
-<tt class="descname">setRecordType</tt><big>(</big><em>$type</em><big>)</big><a class="headerlink" href="#Omeka_Form_Admin::setRecordType" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<dt id="Omeka_Form_Admin::setType">
+<tt class="descname">setType</tt><big>(</big><em>string $type</em><big>)</big><a class="headerlink" href="#Omeka_Form_Admin::setType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the record type of the object being edited (e.g., &#8216;item&#8217;)</p>
+<p>Pass in the recordType as part of the options array when you create an instance</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$type</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$type</strong> (<em>string</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -225,13 +245,15 @@ user interface</p>
 
 <dl class="method">
 <dt id="Omeka_Form_Admin::setRecord">
-<tt class="descname">setRecord</tt><big>(</big><em>$record</em><big>)</big><a class="headerlink" href="#Omeka_Form_Admin::setRecord" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<tt class="descname">setRecord</tt><big>(</big><em>Omeka_Record_AbstractRecord $record</em><big>)</big><a class="headerlink" href="#Omeka_Form_Admin::setRecord" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the record (if one exists) for the object being edited</p>
+<p>Passing the record object as part of the options when you create the formwill automatically add &#8216;Edit&#8217; and &#8216;Delete&#8217; buttons to the save panel</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$record</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$record</strong> (<a class="reference internal" href="../Record/AbstractRecord.html#Omeka_Record_AbstractRecord" title="Omeka_Record_AbstractRecord"><em>Omeka_Record_AbstractRecord</em></a>) &#8211; </li>
 </ul>
 </td>
 </tr>
@@ -241,13 +263,15 @@ user interface</p>
 
 <dl class="method">
 <dt id="Omeka_Form_Admin::setHasPublicPage">
-<tt class="descname">setHasPublicPage</tt><big>(</big><em>$value = 1</em><big>)</big><a class="headerlink" href="#Omeka_Form_Admin::setHasPublicPage" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<tt class="descname">setHasPublicPage</tt><big>(</big><em>bool $value =</em><big>)</big><a class="headerlink" href="#Omeka_Form_Admin::setHasPublicPage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set whether the save panel should display a link to the record&#8217;s public page if it exists</p>
+<p>By default, a link to a record&#8217;s public page is available if it exists. Pass false as the value of hasPublicPage in the options array to suppress this behavior.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$value</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$value</strong> (<em>bool</em>) &#8211; true</li>
 </ul>
 </td>
 </tr>
@@ -276,7 +300,7 @@ user interface</p>
                         title="next chapter">Omeka_Form_DisplayGroup</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
-    Please open an issue on <a href="https://github.com/omeka/Documentation/issues.rst" rel="nofollow">Github</a>
+    Please open an issue on <a href="https://github.com/omeka/Documentation/issues" rel="nofollow">Github</a>
     </p>
   <ul class="this-page-menu">
     

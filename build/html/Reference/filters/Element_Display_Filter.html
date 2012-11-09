@@ -26,7 +26,7 @@
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Filters" href="index.html" />
     <link rel="next" title="Element ElementForm Filter" href="Element_ElementForm_Filter.html" />
-    <link rel="prev" title="&lt;model&gt;_browse_params" href="&lt;model&gt;_browse_params.html" />
+    <link rel="prev" title="file_ingest_validators" href="file_ingest_validators.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="Element_ElementForm_Filter.html" title="Element ElementForm Filter"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="<model>_browse_params.html" title="&lt;model&gt;_browse_params"
+          <a href="file_ingest_validators.html" title="file_ingest_validators"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -65,7 +65,9 @@
 <h2>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h2>
 <p>Alter the way an element is displayed.</p>
 <p>The name of the filter is an array:</p>
-<p><tt class="docutils literal"><span class="pre">array('Display',</span> <span class="pre">$recordType,</span> <span class="pre">$elementSetName,</span> <span class="pre">$elementName)</span></tt></p>
+<div class="highlight-php"><div class="highlight"><pre><span class="k">array</span><span class="p">(</span><span class="s1">&#39;Display&#39;</span><span class="p">,</span> <span class="nv">$recordType</span><span class="p">,</span> <span class="nv">$elementSetName</span><span class="p">,</span> <span class="nv">$elementName</span><span class="p">);</span>
+</pre></div>
+</div>
 <ul class="simple">
 <li>$recordType: The type of Omeka object to filter the metadata for. Most commonly, this will be &#8216;Item&#8217;.</li>
 <li>$elementSetName: The name of the element set containing the metadata field to be filtered. Possible values include &#8216;Dublin Core&#8217; and &#8216;Item Type Metadata&#8217;.</li>
@@ -130,14 +132,14 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="&lt;model&gt;_browse_params.html"
-                        title="previous chapter">&lt;model&gt;_browse_params</a></p>
+  <p class="topless"><a href="file_ingest_validators.html"
+                        title="previous chapter">file_ingest_validators</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="Element_ElementForm_Filter.html"
                         title="next chapter">Element ElementForm Filter</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
-    Please open an issue on <a href="https://github.com/omeka/Documentation/issues.rst" rel="nofollow">Github</a>
+    Please open an issue on <a href="https://github.com/omeka/Documentation/issues" rel="nofollow">Github</a>
     </p>
   <ul class="this-page-menu">
     
@@ -172,7 +174,7 @@
           <a href="Element_ElementForm_Filter.html" title="Element ElementForm Filter"
              >next</a> |</li>
         <li class="right" >
-          <a href="<model>_browse_params.html" title="&lt;model&gt;_browse_params"
+          <a href="file_ingest_validators.html" title="file_ingest_validators"
              >previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>

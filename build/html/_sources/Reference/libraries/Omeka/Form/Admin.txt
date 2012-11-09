@@ -25,7 +25,7 @@ Omeka_Form_Admin
     
 
 
-    .. php:attr:: _record_type
+    .. php:attr:: _type
     
 
 
@@ -59,31 +59,60 @@ Omeka_Form_Admin
         :param string|null $name: 
         :param array|null $options:
 
-    .. php:method:: addElementToDisplayGroup($group, $element, $name, $options)
+    .. php:method:: addElementToDisplayGroup(string $group, Zend_Form_Element $element, string $name, array $options)
     
-        :param unknown $group: 
-        :param unknown $element: 
-        :param unknown $name: 
-        :param unknown $options:
+        Generalizes creating and adding new elements to one of the display groups
+        
+        You can pass in either an Zend_Form_Element you have already created, or passparameters as you would to Zend_Form::addElement
+        
+        :param string $group: Either 'save' or 'edit'
+        :param Zend_Form_Element $element: The element to add to the display group
+        :param string $name: 
+        :param array $options: 
+        :returns: Omeka_Form_Admin
 
     .. php:method:: getSaveGroupDefaultElementDecorators()
-
-    .. php:method:: setEditGroupCssClass($cssClass)
     
-        :param unknown $cssClass:
+        Get the decorators for the save display group
+        
+        :returns: array The default decorators for the save display group
 
-    .. php:method:: setSaveGroupCssClass($cssClass)
+    .. php:method:: setEditGroupCssClass(string $cssClass)
     
-        :param unknown $cssClass:
+        Set the class for the edit display group.
+        
+        You can alter the default css class for the edit group panel by passing in anoption for 'editGroupCssClass' when you create an instance of Omeka_Form_Admin.This should be done very sparingly, as the default class is the best match toexisting admin theme look and feel
+        
+        :param string $cssClass:
 
-    .. php:method:: setRecordType($type)
+    .. php:method:: setSaveGroupCssClass(string $cssClass)
     
-        :param unknown $type:
+        Set the class for the save display group.
+        
+        You can alter the default css class for the save group panel by passing in anoption for 'editGroupCssClass' when you create an instance of Omeka_Form_Admin.This should be done very sparingly, as the default class is the best match toexisting admin theme look and feel
+        
+        :param string $cssClass:
 
-    .. php:method:: setRecord($record)
+    .. php:method:: setType(string $type)
     
-        :param unknown $record:
+        Set the record type of the object being edited (e.g., 'item')
+        
+        Pass in the recordType as part of the options array when you create an instance
+        
+        :param string $type:
 
-    .. php:method:: setHasPublicPage($value = 1)
+    .. php:method:: setRecord(Omeka_Record_AbstractRecord $record)
     
-        :param unknown $value:
+        Set the record (if one exists) for the object being edited
+        
+        Passing the record object as part of the options when you create the formwill automatically add 'Edit' and 'Delete' buttons to the save panel
+        
+        :param Omeka_Record_AbstractRecord $record:
+
+    .. php:method:: setHasPublicPage(bool $value = )
+    
+        Set whether the save panel should display a link to the record's public page if it exists
+        
+        By default, a link to a record's public page is available if it exists. Pass false as the value of hasPublicPage in the options array to suppress this behavior.
+        
+        :param bool $value: true

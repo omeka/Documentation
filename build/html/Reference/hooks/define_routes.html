@@ -79,7 +79,7 @@
     <span class="k">function</span> <span class="nf">hookDefineRoutes</span><span class="p">(</span><span class="nv">$args</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="c1">// Don&#39;t add these routes on the admin side to avoid conflicts.</span>
-        <span class="k">if</span> <span class="p">(</span><span class="nx">is_admin_theme</span><span class="p">())</span> <span class="p">{</span>
+        <span class="k">if</span> <span class="p">(</span><span class="nx">is_admin</span><span class="p">())</span> <span class="p">{</span>
             <span class="k">return</span><span class="p">;</span>
         <span class="p">}</span>
 
@@ -141,7 +141,7 @@
                         title="next chapter">uninstall</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
-    Please open an issue on <a href="https://github.com/omeka/Documentation/issues.rst" rel="nofollow">Github</a>
+    Please open an issue on <a href="https://github.com/omeka/Documentation/issues" rel="nofollow">Github</a>
     </p>
   <ul class="this-page-menu">
     

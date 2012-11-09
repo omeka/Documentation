@@ -16,3 +16,6 @@ Libraries/Omeka/Plugin
 
 .. toctree::
 
+    Broker/index
+    Installer/index
+    Loader/index

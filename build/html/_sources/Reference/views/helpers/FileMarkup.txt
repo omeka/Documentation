@@ -32,9 +32,7 @@ Omeka_View_Helper_FileMarkup
         Add MIME types and/or file extensions and associated callbacks to the 
         list.
         
-        This allows plugins to override/define ways of displaying specific files.The most obvious example of where this
-        would come in handy is to defineways of displaying uncommon files, such as QTVR, or novel ways ofdisplaying more
-        common files, such as using iPaper to display PDFs.
+        This allows plugins to override/define ways of displaying specific files.The most obvious example of where this would come in handy is to defineways of displaying uncommon files, such as QTVR, or novel ways ofdisplaying more common files, such as using iPaper to display PDFs.
         
         :param array|string $fileIdentifiers: Set of MIME types (Internet media types) and/or file extensions that this specific callback will respond to. Accepts the following:         
         
@@ -70,8 +68,7 @@ Omeka_View_Helper_FileMarkup
         Default display for MIME types that do not have a valid rendering 
         callback.
         
-        This wraps the original filename in a link to download that file, with aclass of "download-file".  Any behavior more
-        complex than that should beprocessed with a valid callback.
+        This wraps the original filename in a link to download that file, with aclass of "download-file".  Any behavior more complex than that should beprocessed with a valid callback.
         
         :param File $file: 
         :param array $options: 
@@ -81,9 +78,7 @@ Omeka_View_Helper_FileMarkup
     
         Add a link for the file based on the given set of options.
         
-        If the 'linkToMetadata' option is true, then link to the filemetadata page (files/show).  If 'linkToFile' is
-        true,link to the original file, and if 'linkToFile' is a string, tryto link to that specific derivative. Otherwise
-        just return the$html without wrapping in a link.
+        If the 'linkToMetadata' option is true, then link to the filemetadata page (files/show).  If 'linkToFile' is true,link to the original file, and if 'linkToFile' is a string, tryto link to that specific derivative. Otherwise just return the$html without wrapping in a link.
         
         The attributes for the link will be based off the 'linkAttributes' 
         option, which should be an array.
@@ -198,9 +193,7 @@ Omeka_View_Helper_FileMarkup
         
         Example usage:
         
-        echo
-        files_for_item(array('showFilename'=>false,'linkToFile'=>false,'linkAttributes'=>array('rel'=>'lightbox'),'filenameAttributes'=>array('class'=>'error'),'imgAttributes'=>array('id'=>'foobar'),'icons'
-        => array('audio/mpeg'=>img('audio.gif'))));
+        echo files_for_item(array('showFilename'=>false,'linkToFile'=>false,'linkAttributes'=>array('rel'=>'lightbox'),'filenameAttributes'=>array('class'=>'error'),'imgAttributes'=>array('id'=>'foobar'),'icons' => array('audio/mpeg'=>img('audio.gif'))));
         
         :param unknown $file: 
         :param array $options: Available options include: 'showFilename' => boolean, 'linkToFile' => boolean, 'linkAttributes' => array, 'filenameAttributes' => array (for the filename div), 'imgAttributes' => array, 'icons' => array.

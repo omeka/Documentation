@@ -83,14 +83,66 @@
 
 <dl class="method">
 <dt id="Omeka_Application_Resource_Router::_addHomepageRoute">
-<tt class="descname">_addHomepageRoute</tt><big>(</big><em>$router</em><big>)</big><a class="headerlink" href="#Omeka_Application_Resource_Router::_addHomepageRoute" title="Permalink to this definition">¶</a></dt>
-<dd><table class="docutils field-list" frame="void" rules="none">
+<tt class="descname">_addHomepageRoute</tt><big>(</big><em>Zend_Controller_Router_Rewrite $router</em><big>)</big><a class="headerlink" href="#Omeka_Application_Resource_Router::_addHomepageRoute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds the homepage route to the router (as specified by the navigation settings page)
+The route will not be added if the user is currently on the admin theme.</p>
+<table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>$router</strong> (<em>unknown</em>) &#8211; </li>
+<li><strong>$router</strong> (<em>Zend_Controller_Router_Rewrite</em>) &#8211; The router</li>
 </ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Application_Resource_Router::addRedirectRouteForDefaultRoute">
+<tt class="descname">addRedirectRouteForDefaultRoute</tt><big>(</big><em>String $routeName</em>, <em>String $uri</em>, <em>array $params = Array</em>, <em>Zend_Controller_Router_Rewrite $router</em><big>)</big><a class="headerlink" href="#Omeka_Application_Resource_Router::addRedirectRouteForDefaultRoute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a redirect route for the default route and returns whether the route was successfully added
+If the current request matches the default route, then the flow will redirect to the
+index action of the RedirectorController, where the page will be redirected to the absolute uri
+We must use this Redirector proxy controller because a user may be redirecting to an admin page and it needs
+to reload the application from the admin context.  Also, the Zend router and dispatcher
+does not allow us to directly dispatch to an absolute uri.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$routeName</strong> (<em>String</em>) &#8211; The name of the new redirect route</li>
+<li><strong>$uri</strong> (<em>String</em>) &#8211; The absolute uri to redirect to the default route to</li>
+<li><strong>$params</strong> (<em>array</em>) &#8211; The parameters for the redirect route.</li>
+<li><strong>$router</strong> (<em>Zend_Controller_Router_Rewrite</em>) &#8211; The router</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">boolean Returns true if the route was successfully added, else false.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="Omeka_Application_Resource_Router::_leftTrim">
+<tt class="descname">_leftTrim</tt><big>(</big><em>string $s</em>, <em>string $n</em><big>)</big><a class="headerlink" href="#Omeka_Application_Resource_Router::_leftTrim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Left trims the first occurrence of a string within a string.
+Note: it will only trim the first occurrence of the string.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>$s</strong> (<em>string</em>) &#8211; The base string</li>
+<li><strong>$n</strong> (<em>string</em>) &#8211; The string to remove from the left side of the base string</li>
+</ul>
+</td>
+</tr>
+<tr class="field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">string</p>
 </td>
 </tr>
 </tbody>
@@ -118,7 +170,7 @@
                         title="next chapter">Omeka_Application_Resource_Session</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
-    Please open an issue on <a href="https://github.com/omeka/Documentation/issues.rst" rel="nofollow">Github</a>
+    Please open an issue on <a href="https://github.com/omeka/Documentation/issues" rel="nofollow">Github</a>
     </p>
   <ul class="this-page-menu">
     

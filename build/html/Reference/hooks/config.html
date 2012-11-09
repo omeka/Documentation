@@ -26,7 +26,7 @@
     <link rel="top" title="Omeka Documentation v2.0 documentation" href="../../index.html" />
     <link rel="up" title="Hooks" href="index.html" />
     <link rel="next" title="config_form" href="config_form.html" />
-    <link rel="prev" title="upgrade" href="upgrade.html" />
+    <link rel="prev" title="admin_users_form" href="users_form.html" />
     <link rel="stylesheet" href="../../_static/overrides.css" type="text/css" />
  
   </head>
@@ -41,7 +41,7 @@
           <a href="config_form.html" title="config_form"
              accesskey="N">next</a> |</li>
         <li class="right" >
-          <a href="upgrade.html" title="upgrade"
+          <a href="users_form.html" title="admin_users_form"
              accesskey="P">previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
@@ -84,7 +84,7 @@
 <span class="sd">     */</span>
     <span class="k">function</span> <span class="nf">hookConfig</span><span class="p">()</span>
     <span class="p">{</span>
-        <span class="nx">set_option</span><span class="p">(</span><span class="s1">&#39;simple_pages_filter_page_content&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">int</span><span class="p">)(</span><span class="nx">boolean</span><span class="p">)</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;simple_pages_filter_page_content&#39;</span><span class="p">]);</span>
+        <span class="nx">set_option</span><span class="p">(</span><span class="s1">&#39;simple_pages_filter_page&#39;</span><span class="p">,</span> <span class="p">(</span><span class="nx">int</span><span class="p">)(</span><span class="nx">boolean</span><span class="p">)</span><span class="nv">$_POST</span><span class="p">[</span><span class="s1">&#39;simple_pages_filter_page&#39;</span><span class="p">]);</span>
     <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
@@ -112,14 +112,14 @@
 </ul>
 
   <h4>Previous topic</h4>
-  <p class="topless"><a href="upgrade.html"
-                        title="previous chapter">upgrade</a></p>
+  <p class="topless"><a href="users_form.html"
+                        title="previous chapter">admin_users_form</a></p>
   <h4>Next topic</h4>
   <p class="topless"><a href="config_form.html"
                         title="next chapter">config_form</a></p>
   <h3>This Page</h3>
   <p>See something wrong or confusing on this page?
-    Please open an issue on <a href="https://github.com/omeka/Documentation/issues.rst" rel="nofollow">Github</a>
+    Please open an issue on <a href="https://github.com/omeka/Documentation/issues" rel="nofollow">Github</a>
     </p>
   <ul class="this-page-menu">
     
@@ -154,7 +154,7 @@
           <a href="config_form.html" title="config_form"
              >next</a> |</li>
         <li class="right" >
-          <a href="upgrade.html" title="upgrade"
+          <a href="users_form.html" title="admin_users_form"
              >previous</a> |</li>
     
         <li><a href="../../index.html">Omeka Documentation v2.0 documentation</a> &raquo;</li>
