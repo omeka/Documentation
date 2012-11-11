@@ -8,6 +8,24 @@ There are significant changes moving from Omeka 1.5 to Omeka 2.0. :ref:`principl
 
 Here, you will find a skeleton of typical tasks that will be required to migrate your code. Consult the reference section for code details, and the notes about changes in our wiki will also be helpful.
 
+*********************
+Logging and Debugging
+*********************
+
+Developers of both themes and plugins will need to be aware of the following changes in Omeka's ``.htaccess`` file and ``config.ini`` file in ``application/config``. Compare your existing files to the new ``.htaccess.changeme`` and ``config.ini.changeme`` files
+
+* ``.htaccess`` now includes an environment variable for development: ``# SetEnv APPLICATION_ENV development``
+
+* ``config.ini`` now includes a setting for the minimal level of error logging. DEBUG is the lowest level of priority, and will show all messages :ref:`fdebug` sets that level, so to debug with that function you must set that level in ``config.ini``. :ref:`flog` allows you to set your own priority, and so the setting in ``config.ini`` should be set appropriately.
+      .. code-block::
+        ; log.priority
+        ; The minimum priority level of messages that should be logged.
+        ; default: Zend_Log::WARN (Logs warnings and above)
+        log.priority = Zend_Log::DEBUG
+            
+
+
+
 *****************
 Upgrading Plugins
 *****************
