@@ -1,3 +1,5 @@
+.. _admintypepanelbuttons:
+
 ##########################
 admin_<type>_panel_buttons
 ##########################

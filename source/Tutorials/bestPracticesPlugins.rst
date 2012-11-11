@@ -60,9 +60,23 @@ It is best to put your form-building logic into your controller, e.g. in a ``_ge
 
 If you are editing an existing record, instantiate it like so: ``$form = new Omeka_Form_Admin(array('record'=>$record);``
 
-By default, if you pass in a record the form will assume that you want a link to the record's public page. If not pass in an array like ``array('record'=>$record, 'hasPublicPage'=>false)``
+If the form is for a record (which is typically the case), pass the record as one of the options. Additionally, if you want a link to the record's public page on the admin side, pass ``'hasPublicPage'=>true`` as an option:
 
-Otherwise, you need not pass any argument.
+.. code-block:: php
+    $options = array('record'=>$record, 'hasPublicPage'=>true);
+
+Other options available for :php:class:`Omeka_Form_Admin` are:
+
+``string`` type
+    Often, this will be the record type (e.g. 'simple_pages_page'), but can be anything. Hooks for the save panel follow the type that you give. See :ref:`admintypepanelbuttons` and :ref:`admintypepanelfields`.
+
+``string`` editGroupCssClass
+    Change the CSS classes for the 'main' edit area. This should rarely be necessary.
+
+``string`` saveGroupCssClass
+    Change the CSS classes for the save panel. This should rarely be necessary.
+
+
 
 To add your form elements to the main editing area, use :php:meth:`Omeka_Form_Admin::addElementToEditGroup`. You can either pass in a ``Zend_Form_Element`` you have already built, or pass in the parameters to build the element as if you were creating one. For example, creating a text input looks like this:
 

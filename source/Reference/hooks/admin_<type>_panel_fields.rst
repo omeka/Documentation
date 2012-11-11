@@ -1,3 +1,5 @@
+.. _admintypepanelfields:
+
 #########################
 admin_<type>_panel_fields
 #########################
