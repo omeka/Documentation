@@ -1,4 +1,4 @@
-.. understandingOmeka_Db_Table.
+.. _understandingomekadbtable:
 
 ############################
 Understanding Omeka_Db_Table

@@ -1,4 +1,4 @@
-.. understandingOmeka_Controller_AbstractActionController.
+.. _understandingomekacontrollerabstractactioncontroller:
 
 #######################################################
 Understanding Omeka_Controller_AbstractActionController
