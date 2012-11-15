@@ -12,11 +12,11 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/random_featured_items.rst
 
-.. php:function:: random_featured_items(int $num = 5, $hasImage)
+.. php:function:: random_featured_items(int $count = 5, $hasImage)
 
     Return HTML for random featured items.
     
-    :param int $num: 
+    :param int $count: 
     :param unknown $hasImage: 
     :returns: string
 

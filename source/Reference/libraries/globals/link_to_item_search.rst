@@ -14,9 +14,9 @@ Summary
 
 .. php:function:: link_to_item_search(string $text, array $props = Array, string $uri)
 
-    Return HTML for a link to the advanced search form.
+    Return HTML for a link to the item search form.
     
-    :param string $text: Text of the link. Default is 'Advanced Search'.
+    :param string $text: Text of the link. Default is 'Search Items'.
     :param array $props: HTML attributes for the link.
     :param string $uri: Action for the form.  Defaults to 'items/browse'.
     :returns: string
