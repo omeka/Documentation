@@ -1,6 +1,0 @@
-.. understandingPartials.
-
-######################
-Understanding Partials
-######################
-

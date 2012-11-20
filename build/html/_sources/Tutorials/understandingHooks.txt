@@ -1,6 +1,0 @@
-.. understandingHooks.
-
-###################
-Understanding Hooks
-###################
-

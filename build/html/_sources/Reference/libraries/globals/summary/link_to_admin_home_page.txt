@@ -1,1 +1,0 @@
-Creates a link to the Omeka admin anywhere in your public theme. 

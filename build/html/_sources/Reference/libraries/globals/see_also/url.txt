@@ -1,1 +1,0 @@
-:php:meth:`Omeka_View_Helper_Url::url`

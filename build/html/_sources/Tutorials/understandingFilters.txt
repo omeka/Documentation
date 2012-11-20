@@ -1,6 +1,0 @@
-.. understandingFilters.
-
-#####################
-Understanding Filters
-#####################
-
