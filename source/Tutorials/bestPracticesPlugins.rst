@@ -21,7 +21,7 @@ Method names must be in camelCase (e.g., ``getItem()``).
 
 For private or protected methods, prefix the method name with underscore (_).
 
-See also `Zend's Coding Standards <http://framework.zend.com/wiki/display/ZFDEV2/Coding+Standards#CodingStandards-FunctionsandMethods>`_
+See also `Zend's Coding Standards <http://framework.zend.com/manual/1.12/en/coding-standard.naming-conventions.html>`._
 
 ************************************
 Maintain expected behaviors in Omeka
@@ -40,7 +40,7 @@ Use View Partials
 
 View partials let you separate out parts of long or complicated views into separate files. For example, if you have a browse view that allows different ordering, it is best to use view partials to separate the code for the different orderings to be in different partials. For example:
 
-.. code-block:: php
+.. code-block:: html+php
 
     <?php if (isset($_GET['view']) && $_GET['view'] == 'hierarchy'): ?>
         <?php echo $this->partial('index/browse-hierarchy.php', array('simplePages' => get_simple_pages_for_loop())); ?>
@@ -66,9 +66,8 @@ It is best to put your form-building logic into your controller, e.g. in a ``_ge
 
 If you are editing an existing record, instantiate it like so: ``$form = new Omeka_Form_Admin(array('record'=>$record);``
 
-If the form is for a record (which is typically the case), pass the record as one of the options. Additionally, if you want a link to the record's public page on the admin side, pass ``'hasPublicPage'=>true`` as an option:
+If the form is for a record (which is typically the case), pass the record as one of the options. Additionally, if you want a link to the record's public page on the admin side, pass ``'hasPublicPage'=>true`` as an option::
 
-.. code-block:: php
     $options = array('record'=>$record, 'hasPublicPage'=>true);
 
 Other options available for :php:class:`Omeka_Form_Admin` are:
@@ -84,19 +83,19 @@ Other options available for :php:class:`Omeka_Form_Admin` are:
 
 
 
-To add your form elements to the main editing area, use :php:meth:`Omeka_Form_Admin::addElementToEditGroup`. You can either pass in a ``Zend_Form_Element`` you have already built, or pass in the parameters to build the element as if you were creating one. For example, creating a text input looks like this:
+To add your form elements to the main editing area, use :php:meth:`Omeka_Form_Admin::addElementToEditGroup`. You can either pass in a ``Zend_Form_Element`` you have already built, or pass in the parameters to build the element as if you were creating one. For example, creating a text input looks like this::
 
-.. code-block:: php
-
-     $form->addElementToEditGroup('text',
-         'title',
-         array(  'id'=>'simple-pages-title',
-                 'size'  => 40,
-                 'value' => metadata($page, 'title'),
-                 'label' => 'Title',
-                 'description' => 'The title of the page (required).',
-                 'required' => true
-         ));
+     $form->addElementToEditGroup(
+         'text', 'title',
+         array(
+             'id'=>'simple-pages-title',
+             'size'  => 40,
+             'value' => metadata($page, 'title'),
+             'label' => 'Title',
+             'description' => 'The title of the page (required).',
+             'required' => true
+         )
+     );
 
 The first argument specifies the element type (text, textarea, etc.). The second gives the name to be used on the element in the form. The third gives a keyed array of various attributes for the element, as well as a label and a description.
 
@@ -104,17 +103,18 @@ If you build the Zend_Form_Element yourself, you can simply pass that in as the 
 
 In some cases, it makes sense to add an element directly to the save panel on the right. This should be reserved for small, peripheral data, such as whether a record is public or featured, if the model implements those features.
 
-Doing so works similarly, using the :php:meth:`Omeka_Form_Admin::addElementToSaveGroup` method:
+Doing so works similarly, using the :php:meth:`Omeka_Form_Admin::addElementToSaveGroup` method::
 
-.. code-block:: php
-
-        $form->addElementToSaveGroup('checkbox', 'is_published',
-            array('id' => 'simple_pages_is_published',
-                 'values' => array(1, 0),
-                 'checked' => metadata($page, 'is_published'),
-                 'label' => 'Publish this page?',
-                 'description' => 'Checking this box will make the page public and it will appear in Simple Page navigation.'
-            ));
+        $form->addElementToSaveGroup(
+            'checkbox', 'is_published',
+            array(
+                'id' => 'simple_pages_is_published',
+                'values' => array(1, 0),
+                'checked' => metadata($page, 'is_published'),
+                'label' => 'Publish this page?',
+                'description' => 'Checking this box will make the page public and it will appear in Simple Page navigation.'
+            )
+        );
 
 As with ``addElementToEditGroup()``, you can build the element yourself and pass it as the first parameter.
 

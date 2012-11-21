@@ -17,13 +17,13 @@ Developers of both themes and plugins will need to be aware of the following cha
 * ``.htaccess`` now includes an environment variable for development: ``# SetEnv APPLICATION_ENV development``
 
 * ``config.ini`` now includes a setting for the minimal level of error logging. DEBUG is the lowest level of priority, and will show all messages :ref:`fdebug` sets that level, so to debug with that function you must set that level in ``config.ini``. :ref:`flog` allows you to set your own priority, and so the setting in ``config.ini`` should be set appropriately.
-      .. code-block::
-        ; log.priority
-        ; The minimum priority level of messages that should be logged.
-        ; default: Zend_Log::WARN (Logs warnings and above)
-        log.priority = Zend_Log::DEBUG
-            
 
+  .. code-block:: ini
+  
+      ; log.priority
+      ; The minimum priority level of messages that should be logged.
+      ; default: Zend_Log::WARN (Logs warnings and above)
+      log.priority = Zend_Log::DEBUG
 
 
 *****************
@@ -62,13 +62,17 @@ Views
 Admin Views
 -----------
 
-* Many new CSS classes are available and should be used to ensure a consistent look and feel across Omeka plugins. It will be helpful to become familiar with them. For example, this is the new code structure to use if you need to create inputs yourself:
-    
-    .. code-block:: php
-    
-       <div class="field">
-       <div id="administrator_email-label" class="two columns alpha"><label for="administrator_email" class="required">Administrator Email</label></div>
-       <div class="inputs five columns omega"><input type="text" name="administrator_email" id="administrator_email" value="knguye27@gmu.edu <mailto:value=%22knguye27@gmu.edu>"></div>
+* Many new CSS classes are available and should be used to ensure a consistent look and feel across Omeka plugins. It will be helpful to become familiar with them. For example, this is the new code structure to use if you need to create inputs yourself:  
+
+  .. code-block:: html
+
+      <div class="field">
+           <div class="two columns alpha">
+               <label for="some_input" class="required">Some Input Label</label>
+           </div>
+           <div class="inputs five columns omega">
+               <input type="text" name="some_input">
+           </div>
        </div>
 
 * Admin theme now displays an ``<h1>`` with the title you set for the page. You can remove those from your admin views
@@ -87,18 +91,14 @@ Here are a few of the basic tasks for upgrading.
 
 * Change the various metadata-retrieval functions for different record types (e.g., ``item()``, ``collection()``, etc) to the generalized :ref:`fmetadata` function.
 
-* Change the loop structure for the various record types (e.g., ``loop_items()``, ``loop_collections``, etc) to the generalized :ref:`loop` function. Note that the structure changes from
-    
-    .. code-block:: php
-    
-        while(loop_items()) :
-    
-    to
-    
-    .. code-block:: php
-    
-        foreach(loop('items') as $item):
-        
+* Change the loop structure for the various record types (e.g., ``loop_items()``, ``loop_collections``, etc) to the generalized :ref:`floop` function. Note that the structure changes from::
+
+      while(loop_items()):
+
+  to::
+
+      foreach(loop('items') as $item):
+
 
 * Change other global functions that have changed. There is `a complete list of old and new function names on our wiki <http://omeka.org/codex/Updating_Plugins_For_2.0#Function_Replacements>`_. 
  
