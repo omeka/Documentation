@@ -56,7 +56,7 @@ master_doc = u'index'
 
 
 # General information about the project.
-project = u'Omeka Documentation'
+project = u'Omeka'
 
 copyright = u'2012, Roy Rosenzweig Center for History and New Media'
 
