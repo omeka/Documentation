@@ -12,7 +12,7 @@ Appends content to the end of the batch editing screen, but before the delete op
 
 If adding form elements, name them "custom"
 
-See the :ref:`Admin styling guide` for details on CSS styling
+See :doc:`/Tutorials/understandingTheAdminCss` for details on CSS styling
 
 *********
 Arguments

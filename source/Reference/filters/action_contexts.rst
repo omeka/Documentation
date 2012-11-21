@@ -8,7 +8,7 @@ action_contexts
 Usage
 *****
 
-Action contexts work in combination with :ref:`responsecontexts` to output additiona formats, such as RSS or JSON.
+Action contexts work in combination with :doc:`response_contexts` to output additiona formats, such as RSS or JSON.
 
 Typically, you check whether the controller passed in the arguments is one defined by your plugin, then add your context (output format) to the array of values.
 
@@ -61,4 +61,4 @@ Make an RSS feed of your records available at ``/my-records/browse?output=rss``
 See Also
 ********
 
-:ref:`define_response_contexts`    
+:doc:`response_contexts`    

@@ -1,6 +1,3 @@
-.. understandingformelements
-
-
 ###########################
 Understanding Form Elements
 ###########################
@@ -51,6 +48,6 @@ For a more extended example, see the IndexController::_getForm() method in the S
 See Also
 ********
 
-:php:class:`Omeka_Form`
-:php:class:`Omeka_Form_Admin`
-:ref:`understandingomekaformadmin`
+* :php:class:`Omeka_Form`
+* :php:class:`Omeka_Form_Admin`
+* :doc:`understandingOmeka_Form_Admin`

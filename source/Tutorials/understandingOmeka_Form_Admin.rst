@@ -1,12 +1,10 @@
-.. _understandingomekaformadmin
-
 ##############################
 Understanding Omeka_Form_Admin
 ##############################
 
 :php:class:`Omeka_Form_Admin` is designed to make it easier for most plugins to conform to the look and feel of Omeka's admin interface. In most, but not all, cases, this class will let you easily construct your form. More complex forms might require building the form from scratch.
 
-Like the rest of Omeka, it relies heavily on Zend's form elements. Read :ref:`understandingformelements` for a primer.
+Like the rest of Omeka, it relies heavily on Zend's form elements. Read :doc:`understandingFormElements` for a primer.
 
 
 ******

@@ -37,7 +37,7 @@ The original array is
         'exact_match' => __('Exact match'), 
     );
 
-To implement an 'ends with' search query type, you must use both this filter, and the :ref:`search_sql` hook
+To implement an 'ends with' search query type, you must use both this filter, and the :doc:`../hooks/search_sql` hook
 
 .. code-block:: php
     

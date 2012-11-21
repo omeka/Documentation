@@ -1,5 +1,3 @@
-
-
 ###############
 navigation_form
 ###############
@@ -27,5 +25,5 @@ Examples
 See Also
 ********
 
-:php:class:`Omeka_Navigation`
-:ref:`public_navigation_main`    
+* :php:class:`Omeka_Navigation`
+* :doc:`../filters/public_navigation_main`    

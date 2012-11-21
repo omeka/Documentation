@@ -23,7 +23,7 @@ Arguments
 
 :php:class:`Omeka_Form_Login` login_form
 
-    The form to use for logging in. Can be replaced via the :ref:`login_form` filter.
+    The form to use for logging in. Can be replaced via the :doc:`login_form` filter.
 
 
 ********

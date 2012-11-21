@@ -34,6 +34,6 @@ Arguments
 See Also
 ********
 
-:ref:`adminappendtoitemsbatcheditform`
+:doc:`../hooks/admin_items_batch_edit_form`
 
     
