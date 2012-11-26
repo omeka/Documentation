@@ -32,7 +32,7 @@ Hook and filter callbacks are defined with an array. One change introduced in Om
       protected $_hooks = array('install', 'uninstall'); 
       
       
-When installing your plugin, there might be options that need to be set. You can do this easily within the install callback by adding an ``$_options`` array and calling :php:meth:`Omeka_Plugin_AbstractPlugin::_installOptions` from the install callback, and :php:meth:`Omeka_Plugin_AbstractPlugin::_installOptions` in the uninstall callback. The array is name-value pairs for the name of the option and initial value.
+When installing your plugin, there might be options that need to be set. You can do this easily within the install callback by adding an ``$_options`` array and calling :php:meth:`Omeka_Plugin_AbstractPlugin::_installOptions` from the install callback, and :php:meth:`Omeka_Plugin_AbstractPlugin::_uninstallOptions` in the uninstall callback. The array is name-value pairs for the name of the option and initial value.
 
 .. code-block:: php
 
