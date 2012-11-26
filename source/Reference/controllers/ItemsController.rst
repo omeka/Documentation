@@ -22,9 +22,9 @@ ItemsController
 
     .. php:method:: preDispatch()
 
-    .. php:method:: advancedSearchAction()
+    .. php:method:: searchAction()
     
-        This shows the advanced search form for items by going to the correct URI.
+        This shows the search form for items by going to the correct URI.
         
         This form can be loaded as a partial by calling items_search_form().
         

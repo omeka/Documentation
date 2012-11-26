@@ -10,8 +10,6 @@ SearchController
 
     .. php:method:: indexAction()
 
-    .. php:method:: settingsAction()
-
     .. php:method:: _getBrowseRecordsPerPage()
     
         Return the number of results to display per page.

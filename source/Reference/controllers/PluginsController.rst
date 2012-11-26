@@ -38,20 +38,6 @@ PluginsController
         
         :returns: void
 
-    .. php:method:: uninstalledAction()
-    
-        Action to browse only uninstalled plugins
-        
-        :returns: void
-
-    .. php:method:: activeAction()
-    
-        Action to browse only uninstalled plugins
-        
-        :returns: void
-
-    .. php:method:: inactiveAction()
-
     .. php:method:: uninstallAction()
     
         Action to uninstall a plugin

@@ -4,7 +4,6 @@ Libraries/Omeka
 
 .. toctree::
 
-    AbstractSearch
     Application
     Captcha
     Db

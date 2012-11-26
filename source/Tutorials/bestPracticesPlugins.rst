@@ -33,6 +33,12 @@ Similarly, whenever you override methods from abstract classes in Omeka, make su
 
 Also, if you use any non-standard routing in your plugin, you must override :php:meth:`Omeka_Record_AbstractRecord::getRecordUrl` so that it returns the correct url to the record. Compare the ``getRecordUrl()`` method on the ``SimplePagesPage`` model in the "Simple Pages" plugin.
 
+********************************************
+Use View Helpers instead of global functions
+********************************************
+
+
+
 
 ***************** 
 Use View Partials

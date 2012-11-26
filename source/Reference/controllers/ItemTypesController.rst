@@ -18,8 +18,6 @@ ItemTypesController
 
     .. php:method:: changeExistingElementAction()
 
-    .. php:method:: elementListAction()
-
     .. php:method:: _redirectAfterAdd($itemType)
     
         :param unknown $itemType:

@@ -10,7 +10,11 @@ SettingsController
 
     .. php:method:: browseAction()
 
-    .. php:method:: editAction()
+    .. php:method:: editSettingsAction()
+
+    .. php:method:: editSecurityAction()
+
+    .. php:method:: editSearchAction()
 
     .. php:method:: checkImagemagickAction()
     
@@ -21,8 +25,10 @@ SettingsController
         
         :returns: boolean True if the command line return status is 0 when attempting to run ImageMagick's convert utility, false otherwise.
 
-    .. php:method:: _getForm()
+    .. php:method:: getFileExtensionWhitelistAction()
 
-    .. php:method:: _setOptions(Zend_Form $form)
-    
-        :param Zend_Form $form:
+    .. php:method:: getFileMimeTypeWhitelistAction()
+
+    .. php:method:: getHtmlPurifierAllowedHtmlElementsAction()
+
+    .. php:method:: getHtmlPurifierAllowedHtmlAttributesAction()

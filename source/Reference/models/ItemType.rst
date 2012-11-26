@@ -73,10 +73,10 @@ ItemType
     .. php:method:: reorderElements(Array $elementOrderingArray)
     
         This extracts the ordering for the elements from the form's POST, then uses
-        the given ordering to resort the join records from item_types_elements into
+        the given ordering to reorder each join record from item_types_elements into
         a new ordering, which is then saved.
         
-        :param Array $elementOrderingArray: An array of numbers representing
+        :param Array $elementOrderingArray: An array of element_id => order pairs
         :returns: void
 
     .. php:method:: addElements(array $elements = Array)

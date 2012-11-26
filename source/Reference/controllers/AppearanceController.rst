@@ -10,10 +10,6 @@ AppearanceController
 
     .. php:method:: browseAction()
 
-    .. php:method:: editAction()
+    .. php:method:: editSettingsAction()
 
-    .. php:method:: _getForm()
-
-    .. php:method:: _setOptions(Zend_Form $form)
-    
-        :param Zend_Form $form:
+    .. php:method:: editNavigationAction()

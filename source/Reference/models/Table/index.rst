@@ -11,6 +11,7 @@ Models/Table
     File
     Item
     ItemType
+    ItemTypesElements
     Plugin
     Process
     RecordsTags

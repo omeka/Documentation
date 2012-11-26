@@ -89,24 +89,13 @@ Element
         
         Checks the following criteria:
         
-        
-        
         - Name is not empty.
-        
-        - Has a data type.
-        
-        - Has a record type.
-        
         - Name does not already exist within the given element set.
-        
-        :returns: void
 
     .. php:method:: _delete()
     
-        When deleting this element, delete all ElementText records associated
-        with this element.
-        
-        :returns: void
+        When deleting an element, cascade delete all element texts and item type 
+        assignments associated with the element.
 
     .. php:method:: _getElementSetId($elementSetName)
     
