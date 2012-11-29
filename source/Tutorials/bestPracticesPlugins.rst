@@ -126,4 +126,4 @@ As with ``addElementToEditGroup()``, you can build the element yourself and pass
 
 For more complex form requiring tabs and a variety of sections, you'll want to familiarize yourself with :ref:`understanding_the_admin_css`.
 
-
+See also :ref:`workingwiththeadmintheme`, which includes more details of how the HTML is constructed, and the CSS classes involved.
