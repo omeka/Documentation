@@ -37,8 +37,47 @@ Also, if you use any non-standard routing in your plugin, you must override :php
 Use View Helpers instead of global functions
 ********************************************
 
+View helpers are preferred alternatives to global theming functions. They 
+provide a convenient interface (called directly from the view object) to logic 
+and/or markup that's commonly used in view scripts. If you find yourself using 
+global functions or static methods to support your views, consider using view 
+helpers instead.
 
+First, you must add your view helper directory path to the stack during plugin 
+initialization::
 
+    public function hookInitialize()
+    {
+        get_view()->addHelperPath(dirname(__FILE__) . '/views/helpers', 'PluginName_View_Helper_');
+    }
+
+Replace *PluginName* with your plugin's name. The helpers/ directory may be 
+anywhere in your plugin's directory structure, but we recommend that you place 
+it in the views/ directory for consistency.
+
+Then create your view helper file in the helpers/ directory (named something 
+like ViewHelperName.php) and in that file write your view helper class::
+
+    class PluginName_View_Helper_ViewHelperName extends Zend_View_Helper_Abstract
+    {
+        public function viewHelperName($arg1, $arg2)
+        {
+            // Build markup.
+            return $markup;
+        }
+    }
+
+Note the use of UpperCamelCase and lowerCamelCase. The ``viewHelperName()`` 
+method can accept any number of arguments and should return something, most 
+often markup. You may add ``__construct()`` to the class if the helper needs a 
+one-time setup (e.g. to assign class properties). The constructor will not be 
+called on subsequent calls to the helper.
+
+Now you can call your view helper directly in your view script like so:
+
+.. code-block:: html+php
+
+    <p><?php echo $this->viewHelperName() ?></p>
 
 ***************** 
 Use View Partials
@@ -52,8 +91,11 @@ View partials let you separate out parts of long or complicated views into separ
         <?php echo $this->partial('index/browse-hierarchy.php', array('simplePages' => get_simple_pages_for_loop())); ?>
     <?php else: ?>
         <?php echo $this->partial('index/browse-list.php', array('simplePages' => get_simple_pages_for_loop())); ?>
-    <?php endif; ?>  
+    <?php endif; ?>
 
+When using hooks that add markup to views, such as 
+:doc:`admin_items_show </Reference/hooks/admin_items_show>`, consider using 
+partials instead of outputting markup directly in the callback.
 
 ************************************
 Setting Up Your Plugin's Config Page
