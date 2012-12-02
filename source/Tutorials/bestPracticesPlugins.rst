@@ -189,3 +189,123 @@ As with ``addElementToEditGroup()``, you can build the element yourself and pass
 For more complex form requiring tabs and a variety of sections, you'll want to familiarize yourself with :ref:`understanding_the_admin_css`.
 
 See also :ref:`workingwiththeadmintheme`, which includes more details of how the HTML is constructed, and the CSS classes involved.
+
+******
+Search
+******
+
+Omeka 2.0 allows any record to be full-text searchable, not just items, but also 
+files, collections, exhibits, etc. This includes records implemented by your 
+plugin.
+
+Individual record indexing and bulk-indexing will only work on record types that 
+have been registered via the new 
+:doc:`search_record_types </Reference/filters/search_record_types>` filter::
+    
+    public function filterSearchRecordTypes($searchableRecordTypes)
+    {
+        // Register the name of your record class. The key should be the name 
+        // of the record class; the value should be the human readable and 
+        // internationalized version of the record type.
+        $searchableRecordTypes['YourRecord'] = __('Your Record');
+        return $searchableRecordTypes;
+    }
+
+Follow this template to make your record searchable::
+
+    class YourRecord extends Omeka_Record_AbstractRecord
+    {
+        // Add the search mixin during _initializeMixins() and after any mixins
+        // that can add search text, such as Mixin_ElementText. Doing this
+        // tells Omeka that you want this record to be searchable.
+        protected function _initializeMixins()
+        {
+            // Add the search mixin.
+            $this->_mixins[] = new Mixin_Search($this);
+        }
+     
+        // Use the afterSave() hook to set the record's search text data.
+        protected function afterSave($args)
+        {
+            // A record's search text is public by default, but there are times
+            // when this is not desired, e.g. when an item is marked as
+            // private. Make a check to see if the record is public or private.
+            if ($private) {
+                // Setting the search text to private makes it invisible to
+                // most users.
+                $this->setSearchTextPrivate();
+            }
+     
+            // Set the record's title. This will be used to identify the record
+            // in the search results.
+            $this->setSearchTextTitle($recordTitle);
+     
+            // Set the record's search text. Records that implement the
+            // Mixin_ElementText mixin during _initializeMixins() will
+            // automatically have all element texts added. Note that you
+            // can add multiple search texts, which simply appends them.
+            $this->addSearchText($recordTitle);
+            $this->addSearchText($recordText);
+        }
+     
+        // The search results need a route to the record show page, so build 
+        // a routing array here. You can also assemble the URL yourself using 
+        // the URL view helper and return the entire URL as a string.
+        public function getRecordUrl($action)
+        {
+            if ('your-show-action' == $action) {
+                return $yourCustomRecordShowUrl;
+            }
+            return array(
+                'module' => 'your-module', 
+                'controller' => 'your-controller', 
+                'action' => $action,
+                'id' => $this->id, 
+            );
+        }
+    }
+
+***********************
+Customizing Search Type
+***********************
+
+Omeka now comes with three search query types: keyword (full text), boolean, and 
+exact match. Full text and boolean use `MySQL's native full text engine`_, while 
+exact match searches for all strings identical to the query.
+
+.. _`MySQL's native full text engine`: http://dev.mysql.com/doc/refman/5.0/en/fulltext-search.html
+
+Plugin authors may customize the type of search by implementing the 
+:doc:`search_query_types </Reference/filters/search_query_types>` filter. For 
+example, if you want to implement a "ends with" query type that searches for 
+records that contain at least one word that ends with a string::
+
+    public function filterSearchQueryTypes($queryTypes)
+    {
+        // Accept an array and return an array.
+        function your_search_query_types_callback($queryTypes)
+        {
+            // Register the name of your custom query type. The key should be 
+            // the type's GET query value; the values should be the human 
+            // readable and internationalized version of the query type.
+            $queryTypes['ends_with'] = __('Ends with');
+            return $queryTypes;
+        }
+    }
+
+Then you must modify the search SQL using the 
+:doc:`search_sql </Reference/hooks/search_sql>` hook, like so::
+
+    public function hookSearchSql($args)
+    {
+        $params = $args['params'];
+        if ('ends_with' == $params['query_type']) {
+            $select = $args['select'];
+            // Make sure to reset the existing WHERE clause.
+            $select->reset(Zend_Db_Select::WHERE);
+            $select->where('`text` REGEXP ?', $params['query'] . '[[:>:]]');
+        }
+    }
+
+Remember that you're searching against an aggregate of all texts associated with 
+a record, not structured data about the record.
