@@ -53,6 +53,104 @@ tables during the upgrade hook::
 .. _MyISAM: http://en.wikipedia.org/wiki/MyISAM
 .. _InnoDB: http://en.wikipedia.org/wiki/InnoDB
 
+**********
+Record API
+**********
+
+We've made some major changes to the record API. The following internal 
+callbacks have been removed:
+
+* beforeSaveForm
+* afterSaveForm
+* beforeInsert
+* afterInsert
+* beforeUpdate
+* afterUpdate
+* beforeValidate
+* afterValidate
+
+As such, the following plugin hooks have been removed, where "*" is "record" or 
+a specific record name (e.g. "item", "collection"):
+
+* before_save_form_*
+* after_save_form_*
+* before_insert_*
+* after_insert_*
+* before_update_*
+* after_update_*
+* before_validate_*
+* after_validate_*
+
+By removing these callbacks we give you full control over the timing of 
+execution. Any logic that's currently in the *SaveForm*, *Insert*, and *Update* 
+callbacks should be moved to 
+:php:meth:`beforeSave() <Omeka_Record_AbstractRecord::beforeSave()>` and 
+:php:meth:`afterSave() <Omeka_Record_AbstractRecord::afterSave()>`. Any logic 
+that's currently in the *Validate* callbacks should be moved to 
+:php:meth:`_validate() <Omeka_Record_AbstractRecord::_validate()>`. For 
+example::
+
+    // Note the order of execution.
+    public function beforeSave($args)
+    {
+        if ($args['insert']) {
+            // Do something before record insert. Equivalent to beforeInsert.
+        } else {
+            // Do something before record update. Equivalent to beforeUpdate.
+        }
+     
+        // Do something before every record save.
+     
+        if ($args['post']) {
+            // Do something with the POST data. Equivalent to beforeSaveForm.
+        }
+    }
+    
+    // Note the order of execution.
+    public function afterSave($args)
+    {
+        if ($args['insert']) {
+            // Do something after record insert. Equivalent to afterInsert.
+        } else {
+            // Do something after record update. Equivalent to afterUpdate.
+        }
+     
+        // Do something after every record save.
+     
+        if ($args['post']) {
+            // Do something with the POST data. Equivalent to afterSaveForm.
+        }
+    }
+
+Note that the signature of the ``beforeSave()`` and ``afterSave()`` has changed 
+to ``beforeSave($args)`` and ``afterSave($args)``, with no type specified for 
+``$args``. To adhere to strict standards, existing beforeSave and afterSave 
+methods should reflect that change.
+
+Another change is that ``Omeka_Record_AbstractRecord::saveForm()`` has been 
+merged into :php:meth:`save() <Omeka_Record_AbstractRecord::save()>`. Using 
+``save()`` to handle a form in your controller can be done like this::
+
+    public function editAction()
+    {
+        // Check if the form was submitted.
+        if ($this->getRequest()->isPost()) {
+            // Set the POST data to the record.
+            $record->setPostData($_POST);
+            // Save the record. Passing false prevents thrown exceptions.
+            if ($record->save(false)) {
+                $successMessage = $this->_getEditSuccessMessage($record);
+                if ($successMessage) {
+                    $this->_helper->flashMessenger($successMessage, 'success');
+                }
+                $this->_redirectAfterEdit($record);
+            // Flash an error if the record does not validate.
+            } else {
+                $this->_helper->flashMessenger($record->getErrors());
+            }
+        }
+    }
+
 ********************************************
 Use View Helpers instead of global functions
 ********************************************
