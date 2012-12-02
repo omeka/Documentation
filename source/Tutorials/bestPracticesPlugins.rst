@@ -33,6 +33,26 @@ Similarly, whenever you override methods from abstract classes in Omeka, make su
 
 Also, if you use any non-standard routing in your plugin, you must override :php:meth:`Omeka_Record_AbstractRecord::getRecordUrl` so that it returns the correct url to the record. Compare the ``getRecordUrl()`` method on the ``SimplePagesPage`` model in the "Simple Pages" plugin.
 
+****************
+Database changes
+****************
+
+Omeka 2.0 switched MySQL database engines from MyISAM_ to InnoDB_. We recommend 
+that you set all plugin tables to InnoDB. Existing plugins may alter their 
+tables during the upgrade hook::
+
+    public function hookUpgrade($args)
+    {
+        if (version_compare($args['old_version'], $newPluginVersion, '<')) {
+            // Change the storage engine to InnoDB.
+            $sql = "ALTER TABLE {$this->_db->TableName} ENGINE = INNODB";
+            $this->_db->query($sql);
+        }
+    }
+
+.. _MyISAM: http://en.wikipedia.org/wiki/MyISAM
+.. _InnoDB: http://en.wikipedia.org/wiki/InnoDB
+
 ********************************************
 Use View Helpers instead of global functions
 ********************************************
