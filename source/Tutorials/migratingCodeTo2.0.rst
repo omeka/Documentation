@@ -8,6 +8,19 @@ There are significant changes moving from Omeka 1.5 to Omeka 2.0. :ref:`principl
 
 Here, you will find a skeleton of typical tasks that will be required to migrate your code. Consult the reference section for code details, and the notes about changes in our wiki will also be helpful.
 
+*****************
+Omeka an Archive?
+*****************
+
+While archivists can (and many do) use Omeka as a presentation layer to their 
+digital holdings, Omeka is not archival management software. To underscore this 
+fact, we've removed all mention of the word "archive" in the Omeka codebase and 
+filesystem. This will require at least two additional steps when upgrading from 
+earlier versions to 2.0:
+
+1. Rename the archive/files/ directory to /archive/original/: ``$ mv /path/to/omeka/archive/files/ to /path/to/omeka/archive/original/``
+2. Rename the archive/ directory to files/: ``$ mv /path/to/omeka/archive/ /path/to/omeka/files/``
+
 *********************
 Logging and Debugging
 *********************
