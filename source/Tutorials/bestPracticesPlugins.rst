@@ -215,6 +215,57 @@ When using hooks that add markup to views, such as
 :doc:`admin_items_show </Reference/hooks/admin_items_show>`, consider using 
 partials instead of outputting markup directly in the callback.
 
+*****************************
+Use Jobs instead of Processes
+*****************************
+
+We highly recommend that all processes that may run longer than a typical web 
+process are sent to a job. The job will mediate the process, reducing the chance 
+of timeout and memory usage errors that can happen even with the best written 
+code. To run a job just write a class that contains the code to run, like so::
+
+    class YourJob extends Omeka_Job_AbstractJob
+    {
+        public function perform()
+        {
+            // code to run
+        }
+    }
+
+You have two options on how to run the code: *default* and *long-running*. The 
+default way is intended to run processes that, though are more 
+processor-intensive than the typical web process, are usually not in danger of 
+timing out. You can run these processes like so::
+
+    Zend_Registry::get('bootstrap')->getResource('jobs')->send('YourJob');
+
+Your other option is intended for processes that will most likely result in a 
+timeout error if run as a normal web script. Processes that import thousands of 
+records or convert hundreds of images are examples of such processes. You can 
+run these processes like so::
+
+    Zend_Registry::get('bootstrap')->getResource('jobs')->sendLongRunning('YourJob');
+
+It's important to note that nothing that uses the job system should assume or 
+require synchronicity with the web process. If your process has to be 
+synchronous, it shouldn't be a job.
+
+*******************************
+Load Resources for Jobs At Will
+*******************************
+
+In previous versions, long running processes were fired directly through a 
+background process via ``ProcessDispatcher::startProcess()``, which loaded 
+resources (e.g. Db, Option, Pluginbroker) in phases. Phased loading is now 
+removed in favor of loading resources when needed.
+
+When using the background process adapter for your jobs (typically used for long 
+running jobs), the following resources are pre-loaded for you: Autoloader, 
+Config, Db, Options, Pluginbroker, Plugins, Jobs, Storage, Mail. If you need 
+other resources, load them like so in your job::
+
+    Zend_Registry::get('bootstrap')->bootstrap('YourResource');
+
 ************************************
 Setting Up Your Plugin's Config Page
 ************************************
