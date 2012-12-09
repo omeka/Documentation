@@ -1,4 +1,4 @@
-.. settingUpPHPUnit.
+.. _settingUpPHPUnit:
 
 
 ##################
