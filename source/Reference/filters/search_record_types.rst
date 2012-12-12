@@ -28,8 +28,8 @@ the search results page. For example, when the "Exhibit" is a gallery and the
 "Exhibit Pages" are individual artists. To do this, in the theme's custom.php 
 file, add the following::
 
-    add_filter('search_record_types', 'your_plugin_search_record_types');
-    function your_plugin_search_record_types($recordTypes)
+    add_filter('search_record_types', 'my_site_search_record_types');
+    function my_site_search_record_types($recordTypes)
     {
         $searchRecordTypes['Exhibit'] = __('Gallery');
         $searchRecordTypes['ExhibitPage'] = __('Artist');
