@@ -16,28 +16,35 @@ Mixin_PublicFeatured
     
 
 
+    .. php:method:: __construct(Omeka_Record_AbstractRecord $record)
+    
+        Constructor
+        
+        :param Omeka_Record_AbstractRecord $record: The underlying record
+
     .. php:method:: isPublic()
     
+        Returns whether the record is public or not.
+        
         :returns: boolean
 
-    .. php:method:: setPublic($flag)
+    .. php:method:: setPublic(boolean $flag)
     
-        :param unknown $flag: 
-        :returns: void
+        Sets whether the record is public or not.
+        
+        :param boolean $flag: Whether the record is public or not
 
     .. php:method:: isFeatured()
-
-    .. php:method:: setFeatured($flag)
     
-        :param unknown $flag:
-
-    .. php:method:: getHookName($state, $flag)
-    
-        Retrieve formatted hooks like 'make_item_public', 'make_collection_not_featured', etc.
+        Returns whether the record is featured or not.
         
-        :param unknown $state: 
-        :param unknown $flag: 
-        :returns: string
+        :returns: boolean
+
+    .. php:method:: setFeatured(boolean $flag)
+    
+        Sets whether the record is featured or not.
+        
+        :param boolean $flag: Whether the record is featured or not
 
     .. php:method:: beforeSave($args)
     
@@ -46,3 +53,18 @@ Mixin_PublicFeatured
     .. php:method:: afterSave($args)
     
         :param unknown $args:
+
+    .. php:method:: _fireHook(string $state, boolean $flag)
+    
+        Fires a hooks like 'make_item_public', 'make_collection_not_featured', etc.
+        
+        :param string $state: Currently, 'public' or 'featured'
+        :param boolean $flag:
+
+    .. php:method:: _getHookName(string $state, boolean $flag)
+    
+        Retrieve formatted hooks like 'make_item_public', 'make_collection_not_featured', etc.
+        
+        :param string $state: Currently, 'public' or 'featured'
+        :param boolean $flag: 
+        :returns: string The hook name

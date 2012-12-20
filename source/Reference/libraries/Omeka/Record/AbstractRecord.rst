@@ -122,14 +122,14 @@ Omeka_Record_AbstractRecord
         :param boolean $all: (optional) Whether or not to call the same method on every mixin instance that has that method.  Defaults to false.
         :returns: mixed If $all is false, the return value from the invoked method. Otherwise there is no return value.
 
-    .. php:method:: runCallbacks($event)
+    .. php:method:: runCallbacks($event, $args = Array)
     
         Invoke all callbacks associated with a specific record event.
         
         Callbacks execute in the following order:- Omeka_Record_AbstractRecord hooks like Omeka_Record_AbstractRecord::afterDelete()- Record mixin hooks like Taggable::afterSave()- Generic record plugin hooks like 'before_delete_record'- Specific record plugin hooks like 'before_delete_item'
         
         :param unknown $event: 
-        :returns: void
+        :param unknown $args:
 
     .. php:method:: _addToCache(mixed $value, string $key)
     

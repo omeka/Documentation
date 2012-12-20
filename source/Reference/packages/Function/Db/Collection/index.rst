@@ -8,6 +8,7 @@ Up to :doc:`../index`
    :maxdepth: 1
 
    /Reference/libraries/globals/insert_collection
+   /Reference/libraries/globals/update_collection
 
 .. toctree::
    :glob:

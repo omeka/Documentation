@@ -38,4 +38,4 @@ Builder_Collection
     
         Add elements associated with the collection.
         
-        :param Omeka_Record_AbstractRecord $record:
+        :param Omeka_Record_AbstractRecord $record: The collection record

@@ -16,6 +16,8 @@ SettingsController
 
     .. php:method:: editSearchAction()
 
+    .. php:method:: editItemTypeElementsAction()
+
     .. php:method:: checkImagemagickAction()
     
         Determine whether or not ImageMagick has been correctly installed and

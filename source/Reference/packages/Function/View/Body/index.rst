@@ -9,7 +9,7 @@ Up to :doc:`../index`
 
    /Reference/libraries/globals/all_element_texts
    /Reference/libraries/globals/body_tag
-   /Reference/libraries/globals/browse_headings
+   /Reference/libraries/globals/browse_sort_links
    /Reference/libraries/globals/get_random_featured_collection
    /Reference/libraries/globals/get_random_featured_items
    /Reference/libraries/globals/get_recent_collections

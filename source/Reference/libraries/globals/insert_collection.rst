@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/insert_collection.rst
 
-.. php:function:: insert_collection(array $metadata = Array)
+.. php:function:: insert_collection(array $metadata = Array, array $elementTexts = Array)
 
     Insert a collection
     
@@ -25,6 +25,34 @@ Summary
                'public'      => [true|false],
                'featured'    => [true|false]
              )
+     
+    :param array $elementTexts: Array of element texts to assign to the collection. This follows the format:         
+    
+        .. code-block:: php 
+    
+    
+             array(
+               [element set name] => array(
+                 [element name] => array(
+                   array('text' => [string], 'html' => [false|true]),
+                   array('text' => [string], 'html' => [false|true])
+                  ),
+                 [element name] => array(
+                   array('text' => [string], 'html' => [false|true]),
+                   array('text' => [string], 'html' => [false|true])
+                 )
+               ),
+               [element set name] => array(
+                 [element name] => array(
+                   array('text' => [string], 'html' => [false|true]),
+                   array('text' => [string], 'html' => [false|true])
+                 ),
+                 [element name] => array(
+                   array('text' => [string], 'html' => [false|true]),
+                   array('text' => [string], 'html' => [false|true])
+                 )
+               )
+             );
      
     :returns: Collection
 

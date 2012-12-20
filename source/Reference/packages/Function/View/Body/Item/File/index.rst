@@ -14,6 +14,7 @@ Up to :doc:`../index`
    /Reference/libraries/globals/files_for_item
    /Reference/libraries/globals/img
    /Reference/libraries/globals/item_image
+   /Reference/libraries/globals/item_image_gallery
 
 .. toctree::
    :glob:

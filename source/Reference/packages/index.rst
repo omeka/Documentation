@@ -14,6 +14,7 @@ Packages
     File/index
     Filter/index
     Form/index
+    Function/index
     Http/index
     Install/index
     Job/index

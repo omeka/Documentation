@@ -16,6 +16,8 @@ Summary
 
     Check if records have been set to the view for iteration.
     
+    Note that this function will return false if the records variable is set butis an empty array, unlike get_loop_records(), which will return the emptyarray.
+    
     :param string $recordsVar: 
     :returns: bool
 

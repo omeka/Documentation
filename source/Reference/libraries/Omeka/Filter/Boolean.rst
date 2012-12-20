@@ -14,4 +14,4 @@ Omeka_Filter_Boolean
         Filter the value
         
         :param unknown $value: 
-        :returns: string "1" or "0"
+        :returns: int 1 or 0

@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/output_format_list.rst
 
-.. php:function:: output_format_list(bool $list = 1, string $delimiter =  | )
+.. php:function:: output_format_list(bool $list = 1, string $delimiter = , )
 
     Return an HTML list containing all available output format contexts for the
     current action.
