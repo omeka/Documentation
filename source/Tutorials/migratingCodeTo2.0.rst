@@ -50,7 +50,9 @@ Developers of both themes and plugins will need to be aware of the following cha
       ; default: Zend_Log::WARN (Logs warnings and above)
       log.priority = Zend_Log::DEBUG
   
-  .. note:: :ref:`fdebug` uses DEBUG priority, so to see messages logged by that function you must set the log priorty
+  .. note::
+
+     :ref:`fdebug` uses DEBUG priority, so to see messages logged by that function you must set the log priorty
      to DEBUG in ``config.ini``. 
 
 *****************
@@ -71,9 +73,9 @@ Typical tasks you will need to do to upgrade your plugins for Omeka 2.0 are:
   1.5 (e.g. ``$user``) becomes the key for the corresponding data in the array, e.g. ``$user = $args['user'];``.
   See `Updating Plugins for 2.0: Hooks and Filters <http://omeka.org/codex/Updating_Plugins_For_2.0#Hooks_and_Filters>`_ 
 * Update any filters you use. The third argument must now be an array to fit with the standard above.
-* Change the helper functions used in the views ** All functions of the form ``loop_{record type}``,
-  like ``loop_items()``, become ``loop("{record type}")``
-* Change usage of function that previously echoed content. For example, ``<?php head(); ?>`` should now
+* Change the helper functions used in the views
+  * All functions of the form ``loop_{record type}``, like ``loop_items()``, become ``loop("{record type}")``
+* Change usage of functions that previously echoed content. For example, ``<?php head(); ?>`` should now
   be ``<?php echo head(); ?>``.
 
 Controllers
