@@ -1,5 +1,5 @@
 `````````````
-Views/helpers
+View Helpers
 `````````````
 
 .. toctree::

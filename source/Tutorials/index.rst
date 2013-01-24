@@ -1,25 +1,31 @@
 .. _tutorials:
 
-`````````````````````````````````````````
+#########################################
 Tutorials for Plugin and Theme Developers
-`````````````````````````````````````````
+#########################################
 
-Omeka 1.5 vs Omeka 2.0
+=======================
+What's new in Omeka 2.0
+=======================
 
 .. toctree::
    
    principlesOfOmeka2
    migratingCodeTo2.0
 
-Plugins Basics
+=============
+Plugin Basics
+=============
 
 .. toctree::
     
     bestPracticesPlugins
     understandingHooks
     understandingFilters   
-   
+
+==========================
 Essential Classes in Omeka
+==========================
 
 .. toctree::
 
@@ -28,12 +34,13 @@ Essential Classes in Omeka
     understandingOmeka_Db_Table
     understandingOmeka_Controller_AbstractActionController
     
-    
-    
+===============
 The Admin Theme
+===============
 
 .. toctree::
 
     understandingTheAdminCss
     workingWithTheAdminTheme
-    understandingOmeka_Form_Admin       
+    understandingOmeka_Form_Admin
+    understandingFormElements

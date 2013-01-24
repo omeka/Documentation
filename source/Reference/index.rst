@@ -1,9 +1,6 @@
-.. Reference.
-
-
-#################################
-Reference Documentation for Omeka
-#################################
+#########
+Reference
+#########
 
 .. toctree::
    :maxdepth: 1   
