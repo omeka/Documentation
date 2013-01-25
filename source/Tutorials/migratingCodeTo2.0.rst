@@ -78,10 +78,78 @@ Typical tasks you will need to do to upgrade your plugins for Omeka 2.0 are:
 * Change usage of functions that previously echoed content. For example, ``<?php head(); ?>`` should now
   be ``<?php echo head(); ?>``.
 
+Database
+========
+
+Record classes
+--------------
+
+* The abstract class records extend from is now :php:class:`Omeka_Record_AbstractRecord`, not ``Omeka_Record``
+* The following callbacks have been **removed**, along with their associated plugin hooks:
+
+  * ``beforeSaveForm``
+  * ``afterSaveForm``
+  * ``beforeInsert``
+  * ``afterInsert``
+  * ``beforeUpdate``
+  * ``afterUpdate``
+  * ``beforeValidate``
+  * ``afterValidate``
+
+  A boolean `insert` argument for the ``beforeSave`` and ``afterSave`` callbacks replaces the insert/update hooks.
+* The ``saveForm`` and ``forceSave`` methods are **removed**. Use :php:meth:`Omeka_Record_AbstractRecord::save` instead.
+
+Table classes
+-------------
+
+* SQL aliases are no longer the initials of the underlying table, they are the full table name (without the prefix).
+  For example, the Items table alias was ``i`` in Omeka 1.x, but it is now ``items``. You can call
+  :php:meth:`Omeka_Db_Table::getTableAlias` to get the alias.
+* Table classes can now optionally use the naming pattern ``Table_{Record}`` instead of ``{Record}Table``. Omeka's
+  built-in tables use this new naming scheme.
+
+Built-in records
+----------------
+
+* The ``Entity``, ``EntitiesRelations``, and ``EntityRelationships`` models, and their underlying tables are
+  **removed**. Any code relying on them must be changed or removed.
+
+  * :php:class:`User` now directly stores the name and email data for users that was previously in the ``Entity``.
+
+Built-in mixins
+---------------
+
+* All mixins now have a prefix of ``Mixin_`` on their class name, and have a new naming convention:
+
+  * ``Ownable`` is now :php:class:`Mixin_Owner`.
+  * ``Taggable`` is now :php:class:`Mixin_Tag`.
+  * ``ActsAsElementText`` is now :php:class:`Mixin_ElementText`.
+  * ``PublicFeatured`` is now :php:class:`Mixin_PublicFeatured`.
+
+ACL and Permissions
+===================
+
+* ``Omeka_Acl`` is **removed**. All references to ``Omeka_Acl`` should be to ``Zend_Acl`` instead.
+
+  * ``loadRoleList``, ``loadResourceList``, and ``loadAllowList`` were Omeka-specific methods, and are now gone.
+    Now, just directly make individual calls to ``addRole()``, ``addResource()``, and ``allow()``. You no longer
+    need to use ``loadResourceList()`` to define the privileges for each resource.
+  * ``checkUserPermission`` is also gone. Use ``isAllowed`` instead::
+
+        $acl->isAllowed(current_user(), 'Resource', 'privilege');
+
 Controllers
 ===========
 
 * Update wrapper methods ``findById()``, ``getTable('TableName')``, ``getDb()`` 
+
+Omeka_Context
+=============
+
+* ``Omeka_Context`` is **removed**. Resources are instead available directly through ``Zend_Registry`` or through
+  the bootstrap object::
+
+      $acl = Zend_Registry::get('bootstrap')->getResource('Acl');
 
 Views
 =====
