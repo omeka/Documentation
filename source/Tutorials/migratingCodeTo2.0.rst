@@ -141,7 +141,41 @@ ACL and Permissions
 Controllers
 ===========
 
-* Update wrapper methods ``findById()``, ``getTable('TableName')``, ``getDb()`` 
+* Many methods that were previously directly called on a Controller are now controller helpers instead.
+
+  * The database wrapper methods ``findById()``, ``getTable('TableName')``, ``getDb()`` are **removed** in favor of
+    the Db helper::
+
+        // old: $record = $this->findById();
+        $record = $this->_helper->db->findById();
+
+        // old: $element = $this->getTable('Element')->find($elementId);
+        $element = $this->_helper->db->getTable('Element')->find($elementId);
+
+        // old: $db = $this->getDb();
+        $db = $this->_helper->db->getDb();
+  * The Db helper is also now used to set the default model name. The ``_modelClass`` property is **removed** in
+    favor of ``setDefaultModelName`` from the Db helper::
+
+        // 1.x
+        public function init() 
+        {
+            $this->_modelClass = 'MyModel';
+        }
+        
+        // 2.0
+        public function init() 
+        {
+            $this->_helper->db->setDefaultModelName('MyModel');
+        }
+
+  * The ``flash``, ``flashSuccess``, and ``flashError`` methods are **removed** in favor of the FlashMessenger helper::
+
+        $this->_helper->flashMessenger('A neutral message');
+        
+        $this->_helper->flashMessenger('A success message!', 'success');
+
+        $this->_helper->flashMessenger('An error message.', 'error');
 
 Omeka_Context
 =============
