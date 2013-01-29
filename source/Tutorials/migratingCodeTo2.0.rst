@@ -8,7 +8,7 @@ There are significant changes moving from Omeka 1.5 to Omeka 2.0. :ref:`principl
 guide to the principles, both for theme developers and plugin developers.
 
 Here, you will find a skeleton of typical tasks that will be required to migrate your code. Consult the
-reference section for code details, and the notes about changes in our wiki will also be helpful.
+:doc:`reference section </Reference/index>` for code details.
 
 *****************
 Omeka an Archive?
