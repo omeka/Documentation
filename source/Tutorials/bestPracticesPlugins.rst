@@ -414,6 +414,9 @@ Follow this template to make your record searchable::
         }
     }
 
+Once this is done you should enable the new search record type and re-index all 
+records in your admin interface, under Settings > Search.
+
 ***********************
 Customizing Search Type
 ***********************
