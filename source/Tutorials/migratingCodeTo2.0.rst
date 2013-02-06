@@ -229,6 +229,8 @@ Here are a few of the basic tasks for upgrading.
 
       foreach(loop('items') as $item):
 
+* Use :php:func:`get_records` when getting sets of any record within a theme. ``get_items``, ``get_tags``, and
+  ``get_collections`` are all replaced by ``get_records``.
 * Change other global functions that have changed. There is `a complete list of old and new function names on our
   wiki <http://omeka.org/codex/Updating_Plugins_For_2.0#Function_Replacements>`_.  
 * Update calls to hooks and filters (wherever you use :ref:`ffirepluginhook` and :ref:`fapplyfilters`). Typically,
