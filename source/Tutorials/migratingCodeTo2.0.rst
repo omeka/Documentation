@@ -231,7 +231,7 @@ Here are a few of the basic tasks for upgrading.
 
 * Use :php:func:`get_records` when getting sets of any record within a theme. ``get_items``, ``get_tags``, and
   ``get_collections`` are all replaced by ``get_records``.
-* Change the structure of any arrays passed to :php:func:`nav`. ``nav`` now uses the Zend_Navigation component, which
+* Change the structure of any arrays passed to :ref:`fnav`. ``nav`` now uses the Zend_Navigation component, which
   changes the way you need to specify the array of nav links. Zend has some more expansive
   `documentation <http://framework.zend.com/manual/1.12/en/zend.navigation.containers.html>`_ on the available options,
   but it's pretty simple to convert the old ``label => url`` pairs to the new style::
@@ -241,7 +241,6 @@ Here are a few of the basic tasks for upgrading.
           array('label' => 'Browse By Tag', 'uri' => url('items/tags'))
       ));
 
-echo nav($navArray);
 * Change other global functions that have changed. There is `a complete list of old and new function names on our
   wiki <http://omeka.org/codex/Updating_Plugins_For_2.0#Function_Replacements>`_.  
 * Update calls to hooks and filters (wherever you use :ref:`ffirepluginhook` and :ref:`fapplyfilters`). Typically,
