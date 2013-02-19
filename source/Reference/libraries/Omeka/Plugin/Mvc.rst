@@ -16,6 +16,10 @@ Omeka_Plugin_Mvc
     
         View script directories that have been added by plugins.
 
+    .. php:attr:: _pluginHelpersDirs
+    
+        View helper directories from plugins.
+
     .. php:method:: __construct(string $basePath)
     
         :param string $basePath: Plugins directory path.
@@ -38,6 +42,12 @@ Omeka_Plugin_Mvc
         
         :param string $moduleName: (optional) MVC module name.
         :returns: array List of indexed directory names.
+
+    .. php:method:: getHelpersDirs()
+    
+        Get all the existing plugin view helper dirs, indexed by plugin name.
+        
+        :returns: array
 
     .. php:method:: addControllerDir(string $pluginDirName, string $moduleName)
     

@@ -1,5 +1,5 @@
 `````````````
-View Helpers
+Views/helpers
 `````````````
 
 .. toctree::
@@ -12,6 +12,7 @@ View Helpers
     Flash
     GetCurrentRecord
     GetLoopRecords
+    HasLoopRecords
     ItemSearchFilters
     Loop
     MaxFileSize

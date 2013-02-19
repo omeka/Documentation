@@ -27,7 +27,6 @@ Summary
                <li>'item_type_id' (integer)</li>
                <li>'item_type_name' (string)</li>
                <li>'tags' (string, comma-delimited)</li>
-               <li>'tag_entity' (Entity, optional and only checked if 'tags' is given)</li>
                <li>'overwriteElementTexts' (boolean) -- determines whether or not to
              overwrite existing element texts.  If true, this will loop through the 
              element texts provided in $elementTexts, and it will update existing records 

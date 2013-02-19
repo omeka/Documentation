@@ -241,7 +241,7 @@ Omeka_Db_Table
         
         :param string $sql: 
         :param string $params: Parameters to substitute into SQL query.
-        :returns: Omeka_Record_AbstractRecord
+        :returns: Omeka_Record_AbstractRecord or null if no record
 
     .. php:method:: recordFromData(array $data)
     

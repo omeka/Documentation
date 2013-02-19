@@ -14,10 +14,6 @@ Omeka_Job_Process_Wrapper
     
 
 
-    .. php:attr:: _logger
-    
-
-
     .. php:method:: _getJob($str)
     
         :param unknown $str:
@@ -28,14 +24,8 @@ Omeka_Job_Process_Wrapper
         
         :param unknown $args:
 
-    .. php:method:: __construct(Process $process, $logger)
+    .. php:method:: __construct(Process $process)
     
-        :param Process $process: 
-        :param unknown $logger:
+        :param Process $process:
 
     .. php:method:: __destruct()
-
-    .. php:method:: _log($message, $priority)
-    
-        :param unknown $message: 
-        :param unknown $priority:

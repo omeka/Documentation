@@ -13,11 +13,9 @@ Controllers
     IndexController
     ItemTypesController
     ItemsController
-    NavigationController
     PluginsController
     RedirectorController
     SearchController
-    SecurityController
     SettingsController
     SystemInfoController
     TagsController

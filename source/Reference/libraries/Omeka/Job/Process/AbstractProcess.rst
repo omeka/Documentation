@@ -12,21 +12,11 @@ Omeka_Job_Process_AbstractProcess
     
 
 
-    .. php:attr:: _logger
+    .. php:method:: __construct(Process $process)
     
-
-
-    .. php:method:: __construct(Process $process, $logger)
-    
-        :param Process $process: 
-        :param unknown $logger:
+        :param Process $process:
 
     .. php:method:: __destruct()
-
-    .. php:method:: _log($message, $priority)
-    
-        :param unknown $message: 
-        :param unknown $priority:
 
     .. php:method:: run($args)
     
