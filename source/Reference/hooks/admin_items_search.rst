@@ -1,8 +1,8 @@
-.. _adminitemsadvancedsearch:
+.. _adminitemssearch:
 
-###########################
-admin_items_advanced_search
-###########################
+##################
+admin_items_search
+##################
 
 *****
 Usage
