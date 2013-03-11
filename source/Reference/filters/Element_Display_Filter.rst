@@ -46,7 +46,7 @@ Examples
     class MyPlugin extends Omeka_Plugin_AbstractPlugin
     {
     
-        protected $_filters = array('concealDescription', array('Display', 'Item', 'Dublin Core', 'Description));
+        protected $_filters = array('concealDescription', array('Display', 'Item', 'Dublin Core', 'Description'));
     
         public function concealDescription($text, $args)
         {
