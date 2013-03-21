@@ -52,7 +52,7 @@ Examples
         {
             //conceal the description to non-logged in users
             if(!get_current_user()) {
-                return str_rot12($text);
+                return str_rot13($text);
             }
             return $text;
         }    
