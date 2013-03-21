@@ -64,7 +64,7 @@ Examples
     class MyPlugin extends Omeka_Plugin_AbstractPlugin
     {
     
-        $_filters = array('relabelItemTitle', array('ElementForm', 'Item', 'Dublin Core', 'Title'));
+        $_filters = array('relabelItemTitle' => array('ElementForm', 'Item', 'Dublin Core', 'Title'));
         
         public function relabelItemTitle($components, $args)
         {
