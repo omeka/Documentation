@@ -33,4 +33,5 @@ Examples
 See Also
 ********
 
-:ref:`batchediterror`    
+* :ref:`batchediterror`
+* :doc:`items_batch_edit_custom`
