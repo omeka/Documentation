@@ -44,3 +44,11 @@ The Admin Theme
     workingWithTheAdminTheme
     understandingOmeka_Form_Admin
     understandingFormElements
+
+============================
+International Locale Support
+============================
+
+.. toctree::
+
+    i18n

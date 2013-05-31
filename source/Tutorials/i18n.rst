@@ -1,0 +1,187 @@
+####################
+Internationalization
+####################
+
+From Omeka 1.5 on, site admins can pick the locale they want Omeka to use.
+When working on the core, plugins, or themes, the code must be
+*internationalized* to make display in different languages and locales
+possible.
+
+****
+Text
+****
+
+For most plugins and themes, making user-facing text translatable will be the
+lion's share of the internationalization work. All text strings that are
+presented to the user and are not editable by the user should be translated.
+This includes obvious suspects like text in paragraphs and other visible HTML
+elements, but also less obvious places like the ``<title>`` element or ``title``
+and ``alt`` attributes.
+
+Omeka uses one function for enabling text translation, the :php:func:`__`
+function. Anything that needs to be translated must be passed through the
+double-underscore function.
+
+---------
+Bare text
+---------
+
+Before internationalization, a great deal of the user-facing text may be written
+directly in HTML or plain text, with no PHP code. Omeka's translation works
+through a PHP function, so you need to introduce a PHP block.
+
+**Untranslatable**
+
+.. code-block:: html
+
+   <p>Some text.</p>
+
+**Translatable**
+
+.. code-block:: html+php
+
+   <p><?php echo __('Some text.'); ?></p>
+
+-------------------
+Literal PHP strings
+-------------------
+
+PHP strings that will end up being shown to the user also need to get
+translated. These strings are already in PHP code blocks, so the process is
+easy. Just wrap the double-underscore function around the string that's
+already there.
+
+**Untranslatable**
+
+.. code-block:: php
+
+   <?php
+   echo head(array(
+       'title' => 'Page Title'
+   ));
+   ?>
+
+**Translatable**
+
+.. code-block:: php
+
+   <?php
+   echo head(array(
+       'title' => __('Page Title')
+   ));
+   ?>
+
+----------------------
+Strings with variables
+----------------------
+
+A common pattern in PHP is to write strings that directly contain variables.
+These need a slightly different approach to be translatable. The goal is to
+make translators only have to translate your string once, no matter what the
+particular values of the variables inside are.
+
+To do this, you replace your variables with *placeholders*, and pass your
+variables separately into the double-underscore function. (The placeholders
+used are from PHP's ``sprintf`` function.)
+
+Single variable
+^^^^^^^^^^^^^^^
+
+The basic placeholder is ``%s``. It's used when your original string simply
+contained one variable.
+
+**Untranslatable**
+
+.. code-block:: php
+
+   <?php
+   echo "The site contains $numItems items.";
+   ?>
+
+**Translatable**
+
+.. code-block:: php
+
+   <?php
+   echo __('The site contains %s items.', $numItems);
+   ?>
+
+This will output the same way as the original, but translators will work
+with the single string ``'The site contains %s items.'`` instead of many
+different ones for each possible number.
+
+Multiple variables
+^^^^^^^^^^^^^^^^^^
+
+The ``%s`` placeholder is fine for a string with only one variable. However,
+with two or more, you need to account for the possibility that some
+translations will need to reorder the variables, because their sentence
+structure differs from English. With multiple variables, you must instead
+use **numbered placeholders** like ``%1$s``, ``%2$s``, and so on.
+
+**Untranslatable**
+
+.. code-block:: php
+
+   <?php
+   echo "Added $file to $item.";
+   ?>
+
+**Translatable**
+
+.. code-block:: php
+
+   <?php
+   echo __('Added %s$1 to %s$2.', $file, $item);
+   ?>
+
+By using numbered placeholders, translators can reorder where the variables
+will appear in the string, without modifying the code to do so.
+
+***************
+Dates and times
+***************
+
+The other major thing you will often want to display differently for
+different for different locales are dates and times. Omeka comes
+pre-packaged with date formats for various locales already.
+
+Where translations run through one function, the double-underscore function,
+dates and times similarly work with one function: :php:func:`format_date`.
+``format_date`` automatically selects the right format based on the site's
+configured locale.
+
+``format_date`` takes two parameters. The first is the time you want to
+display. The second, which is optional, is the format you want to use. If
+you don't pick a format, the default is an appropriate format for displaying
+a date.
+
+----
+Time
+----
+
+There are two possible types for the time parameter for ``format_date``:
+integer and string. If you pass an integer, the time is interpreted as a
+Unix timestamp. If you pass a string, the time/date is interpreted
+according to the ISO 8601 standard (this will, among many other formats,
+correctly parse the output from MySQL date and time columns).
+
+------
+Format
+------
+
+``format_date`` uses Zend_Date internally, so the Zend documentation is
+the place to go for an `exhaustive list of available formats <http://framework.zend.com/manual/1.12/en/zend.date.constants.html#zend.date.constants.list>`.
+
+Format constants starting with ``DATE`` are used for displaying dates
+without a specific time, ones starting with ``DATETIME`` are used for
+date/time combinations, and ones starting with ``TIME`` are for times alone.
+For each, there are ``FULL``, ``LONG``, ``MEDIUM``, and ``SHORT`` variants.
+Each variant will automatically use a format specific to the current
+locale, including things like the proper order for dates and the correct
+names of months.
+
+The default format is ``Zend_Date::DATE_MEDIUM``. This will display the
+given date/time value as a date, with medium length. In the standard US
+English locale, this looks like "May 31, 2013." In a Brazilian locale, it
+would instead look like "31/05/2013."
