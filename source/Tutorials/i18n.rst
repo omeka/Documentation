@@ -19,7 +19,7 @@ elements, but also less obvious places like the ``<title>`` element or ``title``
 and ``alt`` attributes.
 
 Omeka uses one function for enabling text translation, the :php:func:`__`
-function. Anything that needs to be translated must be passed through the
+(double-underscore) function. Anything that needs to be translated must be passed through the
 double-underscore function.
 
 ---------

@@ -11,11 +11,10 @@ For documentation for end-users and site administrators, or for information abou
 `Omeka Codex <http://omeka.org/codex>`_ instead.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    
-   Reference/index
    Tutorials/index
-   
+   Reference/index
 
 Indices and tables
 ==================

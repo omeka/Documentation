@@ -1,6 +1,6 @@
-########
-Packages
-########
+########################
+Class Library by Package
+########################
 
 .. toctree::
     :maxdepth: 1

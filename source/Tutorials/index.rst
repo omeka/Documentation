@@ -1,8 +1,6 @@
-.. _tutorials:
-
-#########################################
-Tutorials for Plugin and Theme Developers
-#########################################
+#########
+Tutorials
+#########
 
 =======================
 What's new in Omeka 2.0
