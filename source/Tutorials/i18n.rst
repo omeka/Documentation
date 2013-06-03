@@ -185,3 +185,155 @@ The default format is ``Zend_Date::DATE_MEDIUM``. This will display the
 given date/time value as a date, with medium length. In the standard US
 English locale, this looks like "May 31, 2013." In a Brazilian locale, it
 would instead look like "31/05/2013."
+
+***************************
+Preparing Translation Files
+***************************
+
+Omeka reads translations from .mo files produced with GNU ``gettext``. There are three steps
+to the process. After the basic work described above is complete, you will need to 
+
+1. Create a template file that includes all of the strings to translate
+2. Create ``.po`` files that contain the actual translations
+3. Compile ``.mo`` files that Omeka will use
+
+The guide for these tasks below follows the practices used by the Omeka dev team. There are other
+tools and approaches that can accomplish the same tasks. The tool we use are
+
+* `ant build utility <http://ant.apache.org/>`_ (along with a ``build.xml`` file described below)
+* `Transifex client <https://pypi.python.org/pypi/transifex-client>`_ (requires Python)
+* `podebug <https://pypi.python.org/pypi/translate-toolkit/1.9.0>`_ (requires Python)
+
+--------------------------
+Creating the template file
+--------------------------
+
+The simplest way to produce the template file is to follow the examples in Omeka. We begin with a
+``template.base.pot`` file, which contains the basic format required to begin generating translations.
+
+.. code-block:: ini
+      
+   # Translation for the Simple Pages plugin for Omeka.
+   # Copyright (C) 2011 Roy Rosenzweig Center for History and New Media
+   # This file is distributed under the same license as the Omeka package.
+   # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+   #
+   #, fuzzy
+   msgid ""
+   msgstr ""
+   "Project-Id-Version: SimplePages\n"
+   "Report-Msgid-Bugs-To: http://github.com/omeka/plugin-SimplePages/issues\n"
+   "POT-Creation-Date: 2012-01-09 21:49-0500\n"
+   "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+   "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+   "Language-Team: LANGUAGE <LL@li.org>\n"
+   "Language: \n"
+   "MIME-Version: 1.0\n"
+   "Content-Type: text/plain; charset=UTF-8\n"
+   "Content-Transfer-Encoding: 8bit\n"
+
+This file will be used to generate the ``template.pot`` file that is used as the template for translations. 
+``template.pot`` files will begin with exactly the content shown above and then include pairs of ``msgid`` s and
+empty ``msgstr``. The ``msgid`` s contain the English string of text to translate. The ``msgstr`` s will eventually
+contain the actual translations.
+
+The ``template.base.pot`` file is also helpful if your plugin uses strings of text that are not available for
+the :php:func:`__()` function described above. For example, if your records include a flag for 
+a permission such as ``allowed`` or ``required`` in the database, those strings need to be translated, but
+might not appear directly in your plugin's display. In such cases, the strings should be added to ``template.base.pot``
+below the last line:
+
+.. code-block:: ini
+
+   msgid "allowed"
+   msgstr ""
+
+   msgid "required"
+   msgstr "" 
+
+If you have ``ant`` installed on your system, you can modify the following ``build.xml`` file. 
+
+.. code-block:: xml
+
+   <?xml version="1.0" encoding="UTF-8"?>
+   <project name="SimplePages" basedir=".">
+       <property name="lang.dir" location="languages" />
+       <property name="core.pot" location="../../application/languages/Omeka.pot" />
+       <target name="update-pot" description="Update the translation template.">
+           <property name="pot.file" location="${lang.dir}/template.pot"/>
+           <property name="pot.base" location="${lang.dir}/template.base.pot"/>
+           <tempfile property="pot.temp" suffix=".pot"/>
+           <tempfile property="pot.duplicates" suffix="-duplicates.pot" />
+           <copy file="${pot.base}" tofile="${pot.temp}"/>
+           <apply executable="xgettext" relative="true" parallel="true" verbose="true">
+               <arg value="--language=php"/>
+               <arg value="--from-code=utf-8"/>
+               <arg value="--keyword=__"/>
+               <arg value="--flag=__:1:pass-php-format"/>
+               <arg value="--add-comments=/"/>
+               <arg value="--omit-header"/>
+               <arg value="--join-existing"/>
+               <arg value="-o"/>
+               <arg file="${pot.temp}"/>
+               <fileset dir="." includes="**/*.php **/*.phtml"
+                   excludes="tests/"/>
+           </apply>
+           <exec executable="msgcomm">
+               <arg value="--omit-header" />
+               <arg value="-o" />
+               <arg file="${pot.duplicates}" />
+               <arg file="${pot.temp}" />
+               <arg file="${core.pot}" />
+           </exec>
+           <exec executable="msgcomm">
+               <arg value="--unique" />
+               <arg value="-o" />
+               <arg file="${pot.temp}" />
+               <arg file="${pot.temp}" />
+               <arg file="${pot.duplicates}" />
+           </exec>
+           <move file="${pot.temp}" tofile="${pot.file}"/>
+           <delete file="${pot.duplicates}" quiet="true" />
+       </target>
+   
+       <target name="build-mo" description="Build the MO translation files.">
+           <apply executable="msgfmt" dest="${lang.dir}" verbose="true">
+               <arg value="-o"/>
+               <targetfile />
+               <srcfile />
+               <fileset dir="${lang.dir}" includes="*.po"/>
+               <mapper type="glob" from="*.po" to="*.mo"/>
+           </apply>
+       </target>
+   </project>
+
+It creates two ant commands. The first one that is important to us here is ``ant update-pot`` . 
+It will read the ``template.base.pot`` and generate the ``template.pot`` file from the
+strings that are wrapped in :php:func:`__()`. ``template.pot`` will then contain all the ``msgid`` s
+to be translated.
+
+You will want to double-check that you have found all of the strings that require localization. The ``podebug`` utility
+can be helpful with this. It automatically generates ``.po`` files that contain pseudo-translations that will help you
+spot any strings that are not being translated, but should be.
+
+----------------------
+Creating ``.po`` files
+----------------------
+
+The ``.po`` files contain the localizations, named according to the ISO 639-1 standard. For example, ``es.po`` 
+will contain translations into Spanish, and ``es_CO.po`` will contain the more precise localization to Colombian Spanish.
+
+Omeka uses the `Transifex <https://www.transifex.com>`_ service to produce our translations. Other tools and services
+also exist to help you produce your translations, but we recommend using Transifex if possible, and setting up your
+plugin as child project to Omeka. This will widen the pool of translators and languages for your project.
+
+-----------------------
+Compiling ``.mo`` files
+-----------------------
+
+Once you have created the ``.po`` files for your localizations, the final step is to compile them into 
+binary ``.mo`` files. The second command defined by the ``build.xml`` file used above, ``ant build-mo`` will 
+perform this task for you. 
+
+All files, ``template.base.pot``, ``template.pot``, and all ``.po`` and ``.mo`` files should be in a ``languages`` directory
+at the top level of your plugin.
