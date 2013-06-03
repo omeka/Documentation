@@ -36,5 +36,6 @@ Within the main content, Omeka forms typically take up seven columns, and leave 
     </section>
 
 For reference:
-* `Official Skeleton website <http://getskeleton.com/>`
+
+* `Official Skeleton website <http://getskeleton.com/>`_
 * `Build a Responsive, Mobile-Friendly Web Page With Skeleton <http://designshack.net/articles/css/build-a-responsive-mobile-friendly-web-page-with-skeleton/>`_ (For a more detailed guide on understanding and using Skeleton.)
