@@ -9,7 +9,7 @@ Understanding the Admin Css
 Responsive Design
 *****************
 
-The Omeka Admin theme uses `Skeleton development kit <http://getskeleton.com/>` for easy, responsive styles. Each page consists of a twelve-column grid, with sections' columns defined by css classes. For example, a three column section would have the classes "three columns". 
+The Omeka Admin theme uses `Skeleton development kit <http://getskeleton.com/>`_ for easy, responsive styles. Each page consists of a twelve-column grid, with sections' columns defined by css classes. For example, a three column section would have the classes "three columns". 
 
 .. image:: ../_static/images/columns.jpg
 
