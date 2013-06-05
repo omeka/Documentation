@@ -43,6 +43,14 @@ The Admin Theme
     understandingOmeka_Form_Admin
     understandingFormElements
 
+================
+Modifying Themes
+================
+
+.. toctree::
+
+   modifyingThemes
+
 ============================
 International Locale Support
 ============================
