@@ -50,6 +50,7 @@ Modifying Themes
 .. toctree::
 
    modifyingThemes
+   workingWithPublicThemes
 
 ============================
 International Locale Support
