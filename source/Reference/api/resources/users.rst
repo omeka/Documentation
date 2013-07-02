@@ -10,9 +10,9 @@ Return data about the specified user.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    GET /users/:id
+    GET /users/:id HTTP/1.1
 
 Response
 ~~~~~~~~

@@ -10,9 +10,9 @@ Return data about the specified collection.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    GET /collections/:id
+    GET /collections/:id HTTP/1.1
 
 Response
 ~~~~~~~~
@@ -46,9 +46,9 @@ Return data about collections.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    GET /collections
+    GET /collections HTTP/1.1
 
 Parameters
 ^^^^^^^^^^
@@ -72,9 +72,9 @@ Create a new collection.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    POST /collections
+    POST /collections HTTP/1.1
 
 .. code-block:: json
 
@@ -93,8 +93,9 @@ Request
 Response
 ~~~~~~~~
 
-.. code-block:: header
+.. code-block:: http
 
+    HTTP/1.1 201 Created 
     Location: http://yourdomain.com/api/collections/:id
 
 An JSON representation of the newly created collection (see above).
@@ -107,9 +108,9 @@ Edit an existing collection.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    PUT /collections/:id
+    PUT /collections/:id HTTP/1.1
 
 .. code-block:: json
 
@@ -138,11 +139,13 @@ Delete a collection.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    DELETE /collections/:id
+    DELETE /collections/:id HTTP/1.1
 
 Response
 ~~~~~~~~
 
-An ``204 No Content`` response.
+.. code-block:: http
+
+    HTTP/1.1 204 No Content

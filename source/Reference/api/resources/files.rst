@@ -10,9 +10,9 @@ Return data about the specified file.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    GET /files/:id
+    GET /files/:id HTTP/1.1
 
 Response
 ~~~~~~~~
@@ -73,9 +73,9 @@ Return data about files.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    GET /files
+    GET /files HTTP/1.1
 
 Parameters
 ^^^^^^^^^^
@@ -101,9 +101,9 @@ Create a new file. Only one file may be uploaded at a time.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    POST /files
+    POST /files HTTP/1.1
 
 Requests must use the
 ```multipart/form-data`` <http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.2>`__
@@ -113,7 +113,7 @@ content type. The content disposition name for the file must be
 of encoding form-data requests for you, but the typical request should
 look something like this:
 
-::
+.. code-block:: http
 
     POST /api/files HTTP/1.1
     Content-Type: multipart/form-data; boundary=E19zNvXGzXaLvS5C
@@ -144,8 +144,9 @@ look something like this:
 Response
 ~~~~~~~~
 
-.. code-block:: header
+.. code-block:: http
 
+    HTTP/1.1 201 Created
     Location: http://yourdomain.com/api/files/:id
 
 An JSON representation of the newly created file (see above).
@@ -158,9 +159,9 @@ Edit an existing file.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    PUT /files/:id
+    PUT /files/:id HTTP/1.1
 
 .. code-block:: json
 
@@ -188,14 +189,16 @@ Delete a file.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    DELETE /files/:id
+    DELETE /files/:id HTTP/1.1
 
 Response
 ~~~~~~~~
 
-A ``204 No Content`` response.
+.. code-block:: http
+
+    HTTP/1.1 204 No Content
 
 Errors
 ------

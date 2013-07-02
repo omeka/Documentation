@@ -15,9 +15,9 @@ Return available API resources and information about them.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    GET /resources
+    GET /resources HTTP/1.1
 
 Response
 ~~~~~~~~

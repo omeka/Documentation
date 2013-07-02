@@ -10,9 +10,9 @@ Return information about the Omeka installation.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    GET /site
+    GET /site HTTP/1.1
 
 Response
 ~~~~~~~~

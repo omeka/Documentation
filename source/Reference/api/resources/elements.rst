@@ -10,9 +10,9 @@ Return data about the specified element:
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    GET /elements/:id
+    GET /elements/:id HTTP/1.1
 
 Response
 ~~~~~~~~
@@ -37,9 +37,9 @@ Return data about elements:
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    GET /elements
+    GET /elements HTTP/1.1
 
 Parameters
 ^^^^^^^^^^
@@ -61,9 +61,9 @@ Create a new element.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    POST /elements
+    POST /elements HTTP/1.1
 
 .. code-block:: json
 
@@ -78,8 +78,9 @@ Request
 Response
 ~~~~~~~~
 
-.. code-block:: header
+.. code-block:: http
 
+    HTTP/1.1 201 Created
     Location: http://yourdomain.com/api/elements/:id
 
 An JSON representation of the newly created element (see above).
@@ -92,9 +93,9 @@ Edit an existing element.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    PUT /elements/:id
+    PUT /elements/:id HTTP/1.1
 
 .. code-block:: json
 
@@ -120,14 +121,16 @@ element set may be deleted.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    DELETE /elements/:id
+    DELETE /elements/:id HTTP/1.1
 
 Response
 ~~~~~~~~
 
-An ``204 No Content`` response.
+.. code-block:: http
+
+    HTTP/1.1 204 No Content
 
 Errors
 ------

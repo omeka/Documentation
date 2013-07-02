@@ -10,9 +10,9 @@ Return data about the specified item type.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    GET /item_types/:id
+    GET /item_types/:id HTTP/1.1
 
 Response
 ~~~~~~~~
@@ -40,9 +40,9 @@ Return data about item types.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    GET /item_types
+    GET /item_types HTTP/1.1
 
 Parameters
 ^^^^^^^^^^
@@ -62,9 +62,9 @@ Create a new item type.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    POST /item_types
+    POST /item_types HTTP/1.1
 
 .. code-block:: json
 
@@ -81,8 +81,9 @@ Request
 Response
 ~~~~~~~~
 
-.. code-block:: header
+.. code-block:: http
 
+    HTTP/1.1 201 Created
     Location: http://yourdomain.com/api/item_types/:id
 
 An JSON representation of the newly created item type (see above).
@@ -95,9 +96,9 @@ Edit an existing item type.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    PUT /item_types/:id
+    PUT /item_types/:id HTTP/1.1
 
 .. code-block:: json
 
@@ -124,11 +125,13 @@ Delete an item type.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    DELETE /item_types/:id
+    DELETE /item_types/:id HTTP/1.1
 
 Response
 ~~~~~~~~
 
-An ``204 No Content`` response.
+.. code-block:: http
+
+    HTTP/1.1 204 No Content

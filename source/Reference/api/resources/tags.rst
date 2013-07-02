@@ -10,9 +10,9 @@ Return data about the specified tag.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    GET /tag
+    GET /tag HTTP/1.1
 
 Response
 ~~~~~~~~
@@ -33,9 +33,9 @@ Return data about tags.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    GET /tags
+    GET /tags HTTP/1.1
 
 Response
 ~~~~~~~~
@@ -55,11 +55,13 @@ Delete a tag.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    DELETE /tags/:id
+    DELETE /tags/:id HTTP/1.1
 
 Response
 ~~~~~~~~
 
-An ``204 No Content`` response.
+.. code-block:: http
+
+    HTTP/1.1 204 No Content

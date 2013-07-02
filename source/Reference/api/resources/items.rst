@@ -10,9 +10,9 @@ Return data about the specified item.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    GET /items/:id
+    GET /items/:id HTTP/1.1
 
 Response
 ~~~~~~~~
@@ -55,9 +55,9 @@ Return data about items.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    GET /items
+    GET /items HTTP/1.1
 
 Parameters
 ^^^^^^^^^^
@@ -83,9 +83,9 @@ Create a new item.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    POST /items
+    POST /items HTTP/1.1
 
 .. code-block:: json
 
@@ -110,8 +110,9 @@ Request
 Response
 ~~~~~~~~
 
-.. code-block:: header
+.. code-block:: http
 
+    HTTP/1.1 201 Created
     Location: http://yourdomain.com/api/items/:id
 
 An JSON representation of the newly created item (see above).
@@ -124,9 +125,9 @@ Edit an existing item.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    PUT /items/:id
+    PUT /items/:id HTTP/1.1
 
 .. code-block:: json
 
@@ -161,11 +162,13 @@ Delete an item.
 Request
 ~~~~~~~
 
-::
+.. code-block:: http
 
-    DELETE /items/:id
+    DELETE /items/:id HTTP/1.1
 
 Response
 ~~~~~~~~
 
-An ``204 No Content`` response.
+.. code-block:: http
+
+    HTTP/1.1 204 No Content
