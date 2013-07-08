@@ -26,7 +26,11 @@ Response
       "order": 1,
       "description": "Any textual data included in the document",
       "comment": null,
-      "element_set": {"id": 1, "url": "http://yourdomain.com/api/element_sets/1"},
+      "element_set": {
+        "id": 1, 
+        "url": "http://yourdomain.com/api/element_sets/1", 
+        "resource": "element_sets"
+      },
     }
 
 GET elements
@@ -139,5 +143,6 @@ In addition to the general errors, requests to the elements resource my
 return the following errors:
 
 -  ``400 Bad Request``
--  Invalid record. Only elements belonging to the "Item Type Metadata"
-   element set may be deleted.
+
+   -  Invalid record. Only elements belonging to the "Item Type Metadata"
+      element set may be deleted.

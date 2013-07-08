@@ -25,7 +25,11 @@ Response
       "record_type": null,
       "name": "Dublin Core",
       "description": "The Dublin Core metadata element set is common to all Omeka records.",
-      "elements": {"count": 100, "url": "http://yourdomain.com/api/elements?element_set=1"}
+      "elements": {
+        "count": 100, 
+        "url": "http://yourdomain.com/api/elements?element_set=1", 
+        "resource": "elements"
+      }
     }
 
 GET element sets

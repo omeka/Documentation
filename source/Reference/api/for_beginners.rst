@@ -5,13 +5,11 @@ APIs for beginners
 What's a REST API?
 ~~~~~~~~~~~~~~~~~~
 
-Put simply, an `API <http://en.wikipedia.org/wiki/Api>`__ (Application
-Programming Interface) is a formal line of communication between two
-programs. A
+Put simply, an `API <http://en.wikipedia.org/wiki/Api>`__  is a formal 
+line of communication between two programs. A 
 `REST <http://en.wikipedia.org/wiki/Representational_state_transfer>`__
-(REpresentational State Transfer) API is one that utilizes `inherent
-features of the
-Web <http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol>`__ to
+API is one that utilizes `inherent features of the Web 
+<http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol>`__ to
 enable communication between a client and a server. It's important to
 note that APIs aren't designed to be exposed to you, the end user,
 except through intermediary programs. Remember this when you're

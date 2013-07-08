@@ -25,11 +25,27 @@ Response
       "name": "Text",
       "description": "A resource consisting primarily of words for reading.",
       "elements": [
-        {"id": 1},
-        {"id": 2},
-        {"id": 3}
+        {
+          "id": 1, 
+          "url": "http://yourdomain.com/api/elements/1", 
+          "resource": "elements"
+        },
+        {
+          "id": 2, 
+          "url": "http://yourdomain.com/api/elements/2", 
+          "resource": "elements"
+        },
+        {
+          "id": 3, 
+          "url": "http://yourdomain.com/api/elements/3", 
+          "resource": "elements"
+        }
       ],
-      "items": {"count": 100, "url": "/items?item_type=1"}
+      "items": {
+        "count": 100, 
+        "url": "http://yourdomain.com/api/items?item_type=1", 
+        "resource": "items"
+      }
     }
 
 GET item types

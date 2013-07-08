@@ -26,14 +26,32 @@ Response
       "featured": false,
       "added": "2013-03-27T08:17:37+00:00",
       "modified": "2013-04-21T15:05:07+00:00", 
-      "owner": {"id": 1, "url": "/users/1"},
-      "items": {"count": 100, "url": "http://yourdomain.com/api/items?collection=1"},
+      "owner": {
+        "id": 1, 
+        "url": "/users/1", 
+        "resource": "users"
+      },
+      "items": {
+        "count": 100, 
+        "url": "http://yourdomain.com/api/items?collection=1", 
+        "resource": "items"
+      },
       "element_texts": [
         {
           "html": false,
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "element_set": {"id": 1, "url": "http://yourdomain.com/api/element_sets/1", "name": "Dublin Core"},
-          "element": {"id": 1, "url": "http://yourdomain.com/api/elements/1", "name": "Title"}
+          "element_set": {
+            "id": 1, 
+            "url": "http://yourdomain.com/api/element_sets/1", 
+            "resource": "element_sets", 
+            "name": "Dublin Core"
+          },
+          "element": {
+            "id": 1, 
+            "url": "http://yourdomain.com/api/elements/1", 
+            "resource": "element", 
+            "name": "Title"
+          }
         }
       ]
     }

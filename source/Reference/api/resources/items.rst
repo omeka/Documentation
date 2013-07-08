@@ -22,27 +22,55 @@ Response
     {
       "id": 1,
       "url": "http://yourdomain.com/api/items/1",
-      "item_type": {"id": 1, "url": "http://yourdomain.com/api/item_types/1", "name": "Text"},
-      "collection": {"id": 1, "url": "http://yourdomain.com/api/collections/1"},
-      "owner": {"id": 1, "url": "http://yourdomain.com/api/users/1"},
+      "item_type": {
+        "id": 1, 
+        "url": "http://yourdomain.com/api/item_types/1", 
+        "name": "Text", 
+        "resource": "item_types"
+      },
+      "collection": {
+        "id": 1, 
+        "url": "http://yourdomain.com/api/collections/1", 
+        "resource": "collections"
+      },
+      "owner": {
+        "id": 1, 
+        "url": "http://yourdomain.com/api/users/1", 
+        "resource": "users"
+      },
       "public": true,
       "featured": false,
       "added": "2013-03-27T08:17:37+00:00",
       "modified": "2013-04-21T15:05:07+00:00", 
-      "files": {"count": 100, "url": "http://yourdomain.com/api/files?item=1"},
+      "files": {
+        "count": 100, 
+        "url": "http://yourdomain.com/api/files?item=1", 
+        "resource": "files"
+      },
       "tags": [
         {
           "id": 1, 
           "url": "http://yourdomain.com/api/tags/1", 
-          "name": "foo"
+          "name": "foo", 
+          "resource": "tags"
         }
       ],
       "element_texts": [
         {
           "html": false,
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "element_set": {"id": 1, "url": "http://yourdomain.com/api/element_sets/1", "name": "Dublin Core"},
-          "element": {"id": 1, "url": "http://yourdomain.com/api/elements/1", "name": "Title"}
+          "element_set": {
+            "id": 1, 
+            "url": "http://yourdomain.com/api/element_sets/1", 
+            "name": "Dublin Core", 
+            "resource": "element_sets"
+          },
+          "element": {
+            "id": 1, 
+            "url": "http://yourdomain.com/api/elements/1", 
+            "name": "Title", 
+            "resource": "elements"
+          }
         }
       ]
     }

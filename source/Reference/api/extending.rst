@@ -170,17 +170,24 @@ You can extend the representations of existing resources by using the
         $extend['your_resources'] = array(
             'id' => 1,
             'url' => Omeka_Record_Api_AbstractRecordAdapter::getResourceUrl("/your_resources/{$resourceId->id}"),
+            'resource' => 'your_resources',
         );
         
         // Or, for multiple resources:
         $extend['your_resources'] = array(
             'count' => 10,
             'url' => Omeka_Record_Api_AbstractRecordAdapter::getResourceUrl("/your_resources?item={$item->id}"),
+            'resource' => 'your_resources',
         );
         
         return $extend;
     }
 
-| Note that the API enforces a pattern when extending a resource:
-| \* ``id`` and ``url`` for a one-to-one relationship
-| \* ``count`` and ``url`` for a one-to-many relationship
+Note that the API enforces a pattern when extending a resource:
+
+-  ``id`` and ``url`` for a one-to-one relationship
+-  ``count`` and ``url`` for a one-to-many relationship
+-  ``resource`` is recommeded but not required
+
+All other keys pass through as custom data that may be used for the client's 
+convenience.

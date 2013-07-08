@@ -28,7 +28,11 @@ Response
         "thumbnail": "http://yourdomain.com/files/thumbnails/2b42672de6e47a67698a52e1415bd2c0.jpg",
         "square_thumbnail": "http://yourdomain.com/files/square_thumbnails/2b42672de6e47a67698a52e1415bd2c0.jpg"
       },
-      "item": {"id": 1, "url": "/items/1"},
+      "item": {
+        "id": 1, 
+        "url": "http://yourdomain.com/api/items/1", 
+        "resource": "items"
+      },
       "order": null,
       "size": 1953540,
       "has_derivative_images": true,
@@ -45,8 +49,18 @@ Response
         {
           "html": false,
           "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-          "element_set": {"id": 1, "url": "/element_sets/1", "name": "Dublin Core"},
-          "element": {"id": 1, "url": "/elements/1", "name": "Title"}
+          "element_set": {
+            "id": 1, 
+            "url": "http://yourdomain.com/api/element_sets/1", 
+            "name": "Dublin Core", 
+            "resource": "element_sets"
+          },
+          "element": {
+            "id": 1, 
+            "url": "http://yourdomain.com/api/elements/1", 
+            "name": "Title", 
+            "resource": "elements"
+          }
         }
       ]
     }
@@ -207,9 +221,12 @@ In addition to the general errors, requests to the files resource may
 return the following errors:
 
 -  ``400 Bad Request``
--  Invalid request. Request body must be a JSON object.
--  Invalid request. Exactly one file must be uploaded per request.
--  Invalid request. Missing JSON data.
--  Invalid item. File must belong to an existing item.
+
+   -  Invalid request. Request body must be a JSON object.
+   -  Invalid request. Exactly one file must be uploaded per request.
+   -  Invalid request. Missing JSON data.
+   -  Invalid item. File must belong to an existing item.
+
 -  ``500 Internal Server Error``
--  Invalid request. The default job dispatcher must be synchronous.
+
+   -  Invalid request. The default job dispatcher must be synchronous.
