@@ -25,4 +25,15 @@ Arguments
 Examples
 ********
 
+.. code-block:: php
 
+   public function hookAdminItemsBrowseDetailedEach($args)
+   {
+     $item = $args['item'];
+     $embedTable = get_db()->getTable('Embed');
+     $totalEmbeds = $embedTable->totalEmbeds($item->id);
+     $html = '<p>';
+     $html .= "<a href='" . url('embed-codes/item/' . $item->id) . "'>" . __('Embeds (%d)', $totalEmbeds) . "</a>";
+     $html .= '</p>';
+     echo $html;
+   }
