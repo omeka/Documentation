@@ -120,5 +120,5 @@ Most modern browsers have plugins that do this in a user-friendly way:
    Firefox <https://addons.mozilla.org/en-us/firefox/addon/restclient/>`__
 
 If you're comfortable adding, modifying, and deleting Omeka resources,
-read the `API documentation <https://github.com/omeka/Omeka/wiki/API>`__
+read the `API documentation <https://omeka.readthedocs.org/en/latest/Reference/api/index.html>`__
 and start making requests!
