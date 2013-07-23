@@ -37,6 +37,14 @@ is essentially identical to a ``GET`` response of the same resource.
 This makes it possible to, for example, ``GET`` an item, modify the
 representation directly and ``POST`` or ``PUT`` it back to Omeka.
 
+Some servers do not accept ``PUT`` or ``DELETE`` requests. For compatibility 
+we've added support for the ``X-HTTP-Method-Override`` header, which you can use 
+to declare an unsupported HTTP method.
+
+::
+
+    X-HTTP-Method-Override: DELETE
+
 GET a resource
 ~~~~~~~~~~~~~~
 
