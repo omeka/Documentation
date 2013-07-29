@@ -1,0 +1,2 @@
+- :php:class:`Omeka_View_Helper_FileMarkup`
+- :php:func:`add_file_display_callback`
