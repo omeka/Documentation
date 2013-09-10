@@ -59,3 +59,11 @@ International Locale Support
 .. toctree::
 
     i18n
+
+==================================
+Extending Omeka's Standard Plugins
+==================================
+
+.. toctree::
+
+    extendingExhibitBuilder
