@@ -232,3 +232,24 @@ To help with keeping styles separate, Exhibit Builder automatically wraps
 your layout output in a div with the class ``layout-<your layout id``. In
 general, styles in layout.css should start with that class selector as the
 first component of every selector.
+
+**********************
+Including extra assets
+**********************
+
+Some scripts, styles or other content can be included directly in layout.php.
+But, some content may need to be placed in the ``<head>``, or may only be
+included in the page once. For these scenarios, Exhibit Builder provides a
+hook to add content to the head for exhibit pages. Note: layout.css is
+automatically included, so you don't need to write anything to include it.
+
+The hook is called `exhibit_builder_page_head`. It sends two arguments, the
+View object ``$view``, and ``$layouts``, a keyed array of the layouts in use
+on the page being shown. You can check for your layout ID in the keys of
+``$layouts`` and include whatever content your layout needs::
+
+    public function hookExhibitBuilderPageHead($args) {
+        if (array_key_exists('my-layout', $args['layouts'])) {
+            queue_js_file('my-script');
+        }
+    }
