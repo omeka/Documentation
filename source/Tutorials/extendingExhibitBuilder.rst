@@ -14,6 +14,29 @@ pages and views.
 In any plugin (including the Exhibit Builder itself), layout views go in
 the path ``views/shared/exhibit_layouts``.
 
+************************
+Registering a new layout
+************************
+
+Exhibit Builder provides a filter named ``exhibit_layouts``. To add a new
+layout, you must hook into this filter and add some information about your
+new layout. You need to decide three things:
+
+- ID: an internal name for the layout and the name of the layout folder
+- Name: the admin user-facing name for the layout
+- Description: the admin user-facing description of the layout
+
+The ID is the key into the array of layouts, and the name and description are
+keys in an internal array. A filter implementation looks like this::
+
+    public function filterExhibitLayouts($layouts) {
+        $layouts['new-layout'] = array(
+            'name' => 'New Layout',
+            'description' => 'A new layout.'
+        );
+        return $layouts;
+    }
+
 ************************************
 Basic structure of an exhibit layout
 ************************************
@@ -115,6 +138,9 @@ The layout view has three variables assigned to it.
 ``$options``
     An array of the options the user selected for this block.
 
+``$index``
+    An integer, the index within the page of the current block.
+
 Attachments
 -----------
 
@@ -193,4 +219,16 @@ attachment object, and work on them however you wish::
         $file = $attachment->getFile();
     endforeach;
 
+*************************
+Layout style - layout.css
+*************************
 
+The layout.css file is automatically loaded when the layout is used on a 
+page. Any given page can contain many different layouts simultaneously, so
+you need to take some care that you don't write styles that will interfere
+with other layouts.
+
+To help with keeping styles separate, Exhibit Builder automatically wraps
+your layout output in a div with the class ``layout-<your layout id``. In
+general, styles in layout.css should start with that class selector as the
+first component of every selector.
