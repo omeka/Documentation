@@ -35,9 +35,9 @@ Examples
     class MyPlugin extends :php:class:`Omeka_Plugin_AbstractPlugin`
     {
     
-        protected $_filters = array('item_browse_params');
+        protected $_filters = array('items_browse_params');
         
-        public filterItemBrowseParams($params)
+        public filterItemsBrowseParams($params)
         {
             //always sort by title instead of order
             $params['sort_param'] = "Dublin Core,Title";
