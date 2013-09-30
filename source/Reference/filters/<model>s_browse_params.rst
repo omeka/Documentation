@@ -50,5 +50,5 @@ Examples
 See Also
 ********
 
-:ref:`modelbrowsesql`
-:php:meth:`Omeka_Db_Table::getSelectForFindBy`
+* :ref:`modelbrowsesql`
+* :php:meth:`Omeka_Db_Table::getSelectForFindBy`
