@@ -32,7 +32,7 @@ Examples
 
 .. code-block:: php
 
-    class MyPlugin extends :php:class:`Omeka_Plugin_AbstractPlugin`
+    class MyPlugin extends Omeka_Plugin_AbstractPlugin
     {
     
         protected $_filters = array('items_browse_params');
