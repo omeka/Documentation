@@ -21,7 +21,7 @@ Method names must be in camelCase (e.g., ``getItem()``).
 
 For private or protected methods, prefix the method name with underscore (_).
 
-See also `Zend's Coding Standards <http://framework.zend.com/manual/1.12/en/coding-standard.naming-conventions.html>`._
+See also the `Zend Framework Coding Standards <http://framework.zend.com/manual/1.12/en/coding-standard.naming-conventions.html>`_.
 
 ************************************
 Maintain expected behaviors in Omeka
