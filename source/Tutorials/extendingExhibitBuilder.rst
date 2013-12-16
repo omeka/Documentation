@@ -125,7 +125,7 @@ an option named 'some-option'::
 The layout view -- layout.php
 *****************************
 
-The layout view has three variables assigned to it.
+The layout view has four variables assigned to it.
 
 ``$attachments``
     An array of the attachment objects for items the user has attached to this
