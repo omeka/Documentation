@@ -59,3 +59,11 @@ International Locale Support
 .. toctree::
 
     i18n
+
+======================
+User-Submitted Recipes
+======================
+
+.. toctree::
+
+   recipeForRetainingSearchSortOrderWhenPaging
