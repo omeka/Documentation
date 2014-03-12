@@ -67,3 +67,11 @@ User-Submitted Recipes
 .. toctree::
 
    recipeForRetainingSearchSortOrderWhenPaging
+
+==================================
+Extending Omeka's Standard Plugins
+==================================
+
+.. toctree::
+
+    extendingExhibitBuilder
