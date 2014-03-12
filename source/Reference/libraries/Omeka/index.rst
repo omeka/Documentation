@@ -4,7 +4,6 @@ Class Library by Path
 
 .. toctree::
 
-    AbstractSearch
     Application
     Captcha
     Db
