@@ -171,3 +171,30 @@ My solution requires some changes to each theme.
 		}
 	
 	    	?>
+	    	
+6.	To make custom_paging work for items within an Exhibit (and sort by DC Date): 
+
+	- Add the following before **//Browsing all items in general** in Step 1. 
+	- Replace **YOUR_SLUG_HERE** with the slug for your Exhibit.
+	- Replace **YOUR_EXHIBIT_ID_HERE** with your Exhibit ID.
+	- Do this for each of your Exhibits.::
+	
+	    //Browsing exhibit YOUR_EXHIBIT_ID_HERE items
+	    elseif (strpos($_SERVER['HTTP_REFERER'],'exhibits/show/YOUR_SLUG_HERE') != false) {
+		    $exhibit_query = "search=&advanced[0][element_id]=&advanced[0][type]=&advanced[0][terms]=&range=&collection=&type=&user=&public=&featured=&exhibit=YOUR_EXHIBIT_ID_HERE&submit_search=Search&sort_field=Dublin+Core%2CDate";
+		    parse_str($exhibit_query, $queryarray);
+		    unset($queryarray['page']);
+	
+		    if (!array_key_exists('sort_field', $queryarray))
+		    {
+			    $queryarray['sort_field'] = 'added';
+			    $queryarray['sort_dir'] = 'd';
+		    }
+		    //Get an array of the items from the query.
+		    $list = get_db()->getTable('Item')->findBy($queryarray);
+		    foreach ($list as $value) {
+			    $itemIds[] = $value->id;
+			    $list[] = $value;
+		    }
+
+	    }
