@@ -37,7 +37,7 @@ to ``/default/items/browse.php``
 For the browse page for collections, we need to first create the directory: ``/default/collections``
 
 Then we can copy ``/application/views/scripts/collections/browse.php`` 
-to ``/default/collections.php``
+to ``/default/collections/browse.php``
 
 The result in the default theme will look like::
    
