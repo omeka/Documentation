@@ -295,7 +295,7 @@ Omeka admin interface, you just need to use a simple set of CSS classes:
         </div>
         <div class="inputs five columns omega">
             <p class="explanation">
-                <?php echo __('Any explanatory text about the form element.');
+                <?php echo __('Any explanatory text about the form element.'); ?>
             </p>
             <?php echo get_view()->formInput('some-element', $someElementValue); ?>
         </div>
