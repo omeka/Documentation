@@ -40,7 +40,7 @@ extensions = ['sphinx.ext.todo', 'sphinxcontrib.phpdomain']
 
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = [u'_templates']
+#templates_path = [u'_templates']
 
 
 # The suffix of source filenames.
@@ -119,8 +119,6 @@ html_theme = u'default'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
-
-templates_path = ['_templates']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -267,3 +265,6 @@ texinfo_documents = [
 # -- Additional options --------------------------------------------------------
 
 todo_include_todos = True
+
+def setup(app):
+    app.add_stylesheet('overrides.css')
