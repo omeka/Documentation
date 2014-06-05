@@ -1,5 +1,4 @@
 {% extends "!layout.html" %}
-{% block linktags %}
-    {{ super() }}
+{%- block extrahead %}
     <link rel="stylesheet" href="{{ pathto('_static/overrides.css', 1) }}" type="text/css" />
 {% endblock %}
