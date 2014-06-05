@@ -270,7 +270,40 @@ other resources, load them like so in your job::
 Setting Up Your Plugin's Config Page
 ************************************
 
+You can provide a configuration page that will be linked from the Plugins
+page. Upon installing or upgrading a plugin that has a configuration form,
+Omeka redirects the user to the configuration page.
 
+You provide the markup for your configuration form by using the
+:doc:`/Reference/hooks/config_form` hook. Plugins often just ``require`` or
+``include`` a config_form.php file, but any form of output will work. That hook
+is also the best place to read the current value of any options or other data
+that needs to be set on the form.
+
+Omeka will provide a framework for most of the page for you: the page heading,
+the ``<form>`` element and the submit button are all provided and you do not
+need to write them. 
+
+To get form elements styled in a way that is consistent with the rest of the
+Omeka admin interface, you just need to use a simple set of CSS classes:
+
+.. code-block:: html+php
+
+    <div class="field">
+        <div class="two columns alpha">
+            <?php echo get_view()->formLabel('some-element', __('Some Element')); ?>
+        </div>
+        <div class="inputs five columns omega">
+            <p class="explanation">
+                <?php echo __('Any explanatory text about the form element.');
+            </p>
+            <?php echo get_view()->formInput('some-element', $someElementValue); ?>
+        </div>
+    </div>
+
+The submitted data will be sent back in a POST, and you can use the
+:doc:`/Reference/hooks/config` hook to handle that data and actually update the
+options or other settings.
 
 
 ***********************

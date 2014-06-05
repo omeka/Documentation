@@ -22,7 +22,6 @@ None
 Examples
 ********
 
-
 .. code-block:: php
 
     class SimplePagesPlugin extends Omeka_Plugin_AbstractPlugin
@@ -37,3 +36,9 @@ Examples
             require dirname(__FILE__) . '/config_form.php';
         }
     }
+
+********
+See Also
+********
+
+* :doc:`config`
