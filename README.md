@@ -27,7 +27,6 @@ you'll need a few things:
    probably already have these.
  * Sphinx: `easy_install -U Sphinx`
  * sphinxcontrib-phpdomain: `easy_install -U sphinxcontrib-phpdomain`
- * pygments-style-solarized: `easy_install -U pygments-style-solarized`
 
 ### Building
 
