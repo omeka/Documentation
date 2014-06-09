@@ -18,9 +18,6 @@ Those who simply want to edit the CSS without getting into preprocessors can ign
 Omeka Theme Style Guide
 ########################
 
-=====
-Intro
-=====
 This style guide is for use in writing themes for Omeka 2.0+. It borrows heavily from the `Github style guide <https://github.com/styleguide/css>`_. This style guide is a work in progress, so excuse our dust.
 
 =============
