@@ -1,8 +1,0 @@
-.. _usingfilters:
-
-#############
-Using Filters
-#############
-
-
-

@@ -1,13 +1,11 @@
-
-
 #####
 Hooks
 #####
 
-
-.. toctree::
-
-   overview/usingHooks
+Hooks are one of the main ways plugins can alter and extend Omeka. This page is a
+reference list of all the available hooks Omeka provides for plugins to use. See
+:doc:`/Tutorials/understandingHooks` for general information about using hooks in
+plugins.
 
 *********
 All Hooks

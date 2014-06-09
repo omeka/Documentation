@@ -39,7 +39,6 @@ The Admin Theme
 .. toctree::
 
     understandingTheAdminCss
-    workingWithTheAdminTheme
     understandingOmeka_Form_Admin
     understandingFormElements
 

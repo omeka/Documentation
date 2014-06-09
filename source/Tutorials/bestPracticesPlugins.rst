@@ -368,7 +368,7 @@ Doing so works similarly, using the :php:meth:`Omeka_Form_Admin::addElementToSav
 
 As with ``addElementToEditGroup()``, you can build the element yourself and pass it as the first parameter.
 
-For more complex form requiring tabs and a variety of sections, you'll want to familiarize yourself with :ref:`understanding_the_admin_css`.
+For more complex form requiring tabs and a variety of sections, you'll want to familiarize yourself with :doc:`understandingTheAdminCss`.
 
 See also :ref:`workingwiththeadmintheme`, which includes more details of how the HTML is constructed, and the CSS classes involved.
 

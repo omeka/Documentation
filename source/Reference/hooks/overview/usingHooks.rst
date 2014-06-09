@@ -1,7 +1,0 @@
-.. _usinghooks:
-
-###########
-Using Hooks
-###########
-
-

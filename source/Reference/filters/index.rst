@@ -1,12 +1,13 @@
-
 #######
 Filters
 #######
 
+Filters are one of the main ways plugins can modify and extend Omeka. Filters allow you
+to directly modify data by modifying and returning data passed to the filter in the first
+argument.
 
-.. toctree::
-
-   overview/usingFilters
+This page is a list of all the filters Omeka provides. For more about using filters in
+plugins, see :doc:`/Tutorials/understandingFilters`.
 
 ***********
 All Filters
