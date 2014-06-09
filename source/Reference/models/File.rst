@@ -8,61 +8,73 @@ File
 
     A file and its metadata.
 
+    .. php:const:: DISABLE_DEFAULT_VALIDATION_OPTION
+    
+    
+    
+        Option name for whether the file validation is disabled.
+
+    .. php:const:: DERIVATIVE_EXT
+    
+    
+    
+        File extension for all image derivatives.
+
     .. php:attr:: item_id
     
-
+        ID of the Item this File belongs to.
 
     .. php:attr:: order
     
-
+        Relative order of this File within the parent Item.
 
     .. php:attr:: filename
     
-
+        Current filename, as stored.
 
     .. php:attr:: original_filename
     
-
+        Original filename, as uploaded.
 
     .. php:attr:: size
     
-
+        Size of the file, in bytes.
 
     .. php:attr:: authentication
     
-
+        MD5 hash of the file.
 
     .. php:attr:: mime_type
     
-
+        MIME type of the file.
 
     .. php:attr:: type_os
     
-
+        Longer description of the file's type.
 
     .. php:attr:: has_derivative_image
     
-
+        Whether the file has derivative images.
 
     .. php:attr:: added
     
-
+        Date the file was added.
 
     .. php:attr:: modified
     
-
+        Date the file was last modified.
 
     .. php:attr:: stored
     
-
+        Whether the file has been moved to storage.
 
     .. php:attr:: metadata
     
-
+        Embedded metadata from the file.
 
     .. php:attr:: _pathsByType
     
-
+        Folder paths for each type of files/derivatives.
 
     .. php:method:: getProperty(string $property)
     
@@ -73,7 +85,7 @@ File
 
     .. php:method:: _initializeMixins()
     
-        Initialize mixins.
+        Initialize the mixins.
 
     .. php:method:: filterPostData(array $post)
     
@@ -84,51 +96,55 @@ File
 
     .. php:method:: beforeSave(array $args)
     
-        Do something before saving this record.
+        Before-save hook.
         
         :param array $args:
 
     .. php:method:: afterSave(array $args)
     
-        Do something after saving this record.
+        After-save hook.
         
         :param array $args:
 
     .. php:method:: getItem()
     
-        Retrieve the parent item of this record.
+        Get the Item this file belongs to.
         
         :returns: Item
 
     .. php:method:: getPath(string $type = original)
     
-        Retrieve a system path for this file.
+        Get a system path for this file.
+        
+        Local paths are only available before the file is stored.
         
         :param string $type: 
         :returns: string
 
     .. php:method:: getWebPath(string $type = original)
     
-        Retrieve a web path for this file.
+        Get a web path for this file.
         
         :param string $type: 
         :returns: string
 
     .. php:method:: getDerivativeFilename()
     
-        Retrieve the derivative filename.
+        Get the filename for this file's derivative images.
         
         :returns: string
 
     .. php:method:: hasThumbnail()
     
-        Determine whether this record has a thumbnail image.
+        Determine whether this file has a thumbnail image.
         
         :returns: bool
 
     .. php:method:: hasFullsize()
     
         Determine whether this record has a fullsize image.
+        
+        This is an alias for hasThumbnail().
         
         :returns: bool
 
@@ -138,14 +154,13 @@ File
         
         :returns: string
 
-    .. php:method:: setDefaults($filepath, $options = Array)
+    .. php:method:: setDefaults($filepath, $options)
     
         Set the default values that will be stored for this record in the 'files' 
         table.
         
         :param unknown $filepath: 
-        :param unknown $options: 
-        :returns: void
+        :param unknown $options:
 
     .. php:method:: unlinkFile()
     
@@ -163,21 +178,21 @@ File
     
         Extract ID3 metadata associated with the file.
         
-        :returns: boolean
+        :returns: bool Whether getID3 was able to read the file.
 
     .. php:method:: _getId3()
     
-        Pull down the file's extra metadata via getID3 library.
+        Read the file's embedded metadata with the getID3 library.
         
-        :returns: getID3
+        :returns: getID3|bool Returns getID3 object, or false if there was an exception.
 
     .. php:method:: storeFiles()
     
-        Store files belonging to this record.
+        Store the files belonging to this record.
 
     .. php:method:: getStoragePath(string $type = fullsize)
     
-        Get the storage path.
+        Get a storage path for the file.
         
         :param string $type: 
         :returns: string
@@ -209,4 +224,10 @@ File
         Proxies to the Item's isOwnedBy.
         
         :param User $user: 
-        :returns: boolean
+        :returns: bool
+
+    .. php:method:: getFile()
+    
+        Return the representative File for the record (this File itself).
+        
+        :returns: File

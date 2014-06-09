@@ -4,7 +4,7 @@
 item_image_gallery
 ##################
 
-:doc:`File-related functions </Reference/packages/Function/View/Body/Item/File/index>`
+:doc:`Item-related functions </Reference/packages/Function/View/Item/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/item_image_gallery.rst
 
-.. php:function:: item_image_gallery(array $attrs = Array, string $imageType = square_thumbnail, boolean $filesShow = , Item $item)
+.. php:function:: item_image_gallery(array $attrs, string $imageType = square_thumbnail, boolean $filesShow = , Item $item)
 
     Get a gallery of file thumbnails for an item.
     

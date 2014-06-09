@@ -4,7 +4,7 @@
 file_image
 ##########
 
-:doc:`File-related functions </Reference/packages/Function/View/Body/Item/File/index>`
+:doc:`File-related functions </Reference/packages/Function/View/File/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/file_image.rst
 
-.. php:function:: file_image(string $imageType, array $props = Array, $file)
+.. php:function:: file_image(string $imageType, array $props, $file)
 
     Return a customized file image tag.
     

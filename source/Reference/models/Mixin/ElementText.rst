@@ -41,6 +41,11 @@ Mixin_ElementText
     
         Whether the elements and texts have been loaded yet.
 
+    .. php:attr:: _replaceElementTexts
+    
+        Flag to indicate whether elements added to this save will replace 
+        existing element texts, not add them.
+
     .. php:attr:: _elementsByRecordType
     
         Sets of Element records indexed by record type.
@@ -259,13 +264,20 @@ Mixin_ElementText
         :param ElementText $elementTextRecord: 
         :returns: boolean
 
+    .. php:method:: setReplaceElementTexts($replaceElementTexts = 1)
+    
+        Set the flag to indicate whether elements added to this save will replace 
+        existing element texts, not add them.
+        
+        :param unknown $replaceElementTexts:
+
     .. php:method:: saveElementTexts()
     
         Save all ElementText records that were associated with a record.
         
         Typically called in the afterSave() hook for a record.
 
-    .. php:method:: deleteElementTextsByElementId($elementIdArray = Array)
+    .. php:method:: deleteElementTextsByElementId($elementIdArray)
     
         Delete all the element texts for element_id's that have been provided.
         

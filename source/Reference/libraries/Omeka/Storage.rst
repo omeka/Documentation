@@ -40,7 +40,7 @@ Omeka_Storage
         
         :param array $options: Options to set. Valid options include: * 'adapter': (string) Name of the storage adapter to use. * 'adapterOptions': (array) Array of options to pass to the adapter; see the specific adapter classes for details. * 'temp_dir': (string) Local temporary directory where files stored before they are handled by the adapter.
 
-    .. php:method:: setAdapter(Omeka_Storage_Adapter_AdapterInterface|string $adapter, array|null $options = Array)
+    .. php:method:: setAdapter(Omeka_Storage_Adapter_AdapterInterface|string $adapter, array|null $options)
     
         Set the storage adapter to be used, as well as options for that
         adapter.

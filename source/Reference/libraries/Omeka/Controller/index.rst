@@ -11,3 +11,4 @@ Libraries/Omeka/Controller
 
     Exception/index
     Plugin/index
+    Router/index

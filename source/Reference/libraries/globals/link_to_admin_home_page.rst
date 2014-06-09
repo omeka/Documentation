@@ -4,7 +4,7 @@
 link_to_admin_home_page
 #######################
 
-:doc:`Link-related functions </Reference/packages/Function/View/Body/Navigation/Link/index>`
+:doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/link_to_admin_home_page.rst
 
-.. php:function:: link_to_admin_home_page(null|string $text, array $props = Array)
+.. php:function:: link_to_admin_home_page(null|string $text, array $props)
 
     Return a link to the admin home page.
     

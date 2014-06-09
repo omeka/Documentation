@@ -4,7 +4,7 @@
 has_loop_records
 ################
 
-:doc:`Loop-related functions </Reference/packages/Function/View/Body/Loop/index>`
+:doc:`Loop-related functions </Reference/packages/Function/View/Loop/index>`
 
 *******
 Summary

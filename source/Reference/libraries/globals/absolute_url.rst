@@ -4,7 +4,7 @@
 absolute_url
 ############
 
-:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+:doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/absolute_url.rst
 
-.. php:function:: absolute_url(mixed $options = Array, string $route, mixed $queryParams = Array, bool $reset = , bool $encode = 1)
+.. php:function:: absolute_url(mixed $options, string $route, mixed $queryParams, bool $reset = , bool $encode = 1)
 
     Return an absolute URL.
     

@@ -13,6 +13,7 @@ Libraries/Omeka/Application/Resource
     Db
     Debug
     Exception
+    Filederivatives
     Frontcontroller
     Helpers
     Jobs
@@ -26,6 +27,7 @@ Libraries/Omeka/Application/Resource
     Session
     Storage
     Theme
+    View
 
 
 .. toctree::

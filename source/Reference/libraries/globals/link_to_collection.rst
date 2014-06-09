@@ -4,7 +4,7 @@
 link_to_collection
 ##################
 
-:doc:`Link-related functions </Reference/packages/Function/View/Body/Navigation/Link/index>`
+:doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/link_to_collection.rst
 
-.. php:function:: link_to_collection(string $text, array $props = Array, array $action = show, array $collectionObj)
+.. php:function:: link_to_collection(string $text, array $props, array $action = show, array $collectionObj)
 
     Return a link to a collection.
     

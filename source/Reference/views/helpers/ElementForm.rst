@@ -23,7 +23,7 @@ Omeka_View_Helper_ElementForm
     
 
 
-    .. php:method:: elementForm(Element $element, Omeka_Record_AbstractRecord $record, $options = Array)
+    .. php:method:: elementForm(Element $element, Omeka_Record_AbstractRecord $record, $options)
     
         :param Element $element: 
         :param Omeka_Record_AbstractRecord $record: 

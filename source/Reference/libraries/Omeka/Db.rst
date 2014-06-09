@@ -94,7 +94,7 @@ Omeka_Db
         :param string $alias: 
         :param Omeka_Db_Table $table:
 
-    .. php:method:: insert(string $table, array $values = Array)
+    .. php:method:: insert(string $table, array $values)
     
         Every query ends up looking like: 
         INSERT INTO table (field, field2, field3, ...) VALUES (?, ?, ?, ...) 

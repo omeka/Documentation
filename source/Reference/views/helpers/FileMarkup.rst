@@ -10,6 +10,12 @@ Omeka_View_Helper_FileMarkup
     
     This will determine how to display any given file based on the MIME type(Internet media type) of that file. Individual rendering agents are definedby callbacks that are either contained within this class or defined byplugins. Callbacks defined by plugins will override native class methods ifdefined for existing MIME types. In order to define a rendering callback thatshould be in the core of Omeka, define a method in this class and then makesure that it responds to all the correct MIME types by modifying otherproperties in this class.
 
+    .. php:const:: GENERIC_FALLBACK_IMAGE
+    
+    
+    
+        Fallback image used when no other fallbacks are appropriate.
+
     .. php:attr:: _callbacks
     
         Array of MIME types and the callbacks that can process it.
@@ -27,7 +33,11 @@ Omeka_View_Helper_FileMarkup
         The array consists of the default options which are passed to the 
         callback.
 
-    .. php:method:: addMimeTypes(array|string $fileIdentifiers, $callback, array $defaultOptions = Array)
+    .. php:attr:: _fallbackImages
+    
+        Images to show when a file has no derivative.
+
+    .. php:method:: addMimeTypes(array|string $fileIdentifiers, $callback, array $defaultOptions)
     
         Add MIME types and/or file extensions and associated callbacks to the 
         list.
@@ -63,7 +73,14 @@ Omeka_View_Helper_FileMarkup
         :param array $defaultOptions: 
         :returns: void
 
-    .. php:method:: defaultDisplay(File $file, array $options = Array)
+    .. php:method:: addFallbackImage(string $mimeType, string $image)
+    
+        Add a fallback image for the given mime type or type family.
+        
+        :param string $mimeType: The mime type this fallback is for, or the mime "prefix" it is for (video, audio, etc.)
+        :param string $image: The name of the image to use, as would be passed to img()
+
+    .. php:method:: defaultDisplay(File $file, array $options)
     
         Default display for MIME types that do not have a valid rendering 
         callback.
@@ -90,7 +107,7 @@ Omeka_View_Helper_FileMarkup
         :param string $html: 
         :returns: string
 
-    .. php:method:: wmv(File $file, array $options = Array)
+    .. php:method:: wmv(File $file, array $options)
     
         Retrieve valid XHTML for displaying a wmv video file or equivalent.  
         Currently this loads the video inside of an <object> tag, but that 
@@ -102,7 +119,7 @@ Omeka_View_Helper_FileMarkup
         :param array $options: 
         :returns: string
 
-    .. php:method:: wma(File $file, array $options = Array)
+    .. php:method:: wma(File $file, array $options)
     
         Retrieve valid XHTML for displaying a wma audio file or equivalent.  
         Currently this loads the video inside of an <object> tag, but that
@@ -114,7 +131,7 @@ Omeka_View_Helper_FileMarkup
         :param array $options: 
         :returns: string
 
-    .. php:method:: mov(File $file, array $options = Array)
+    .. php:method:: mov(File $file, array $options)
     
         Retrieve valid XHTML for displaying Quicktime video files
         
@@ -131,7 +148,7 @@ Omeka_View_Helper_FileMarkup
         :param string $type: The Internet media type of the file
         :returns: string
 
-    .. php:method:: ogg(File $file, array $options = Array)
+    .. php:method:: ogg(File $file, array $options)
     
         Display OGG audio files.
         
@@ -139,7 +156,7 @@ Omeka_View_Helper_FileMarkup
         :param array $options: 
         :returns: string
 
-    .. php:method:: mp3(File $file, array $options = Array)
+    .. php:method:: mp3(File $file, array $options)
     
         Display MP3/MPEG audio files.
         
@@ -147,7 +164,7 @@ Omeka_View_Helper_FileMarkup
         :param array $options: 
         :returns: string
 
-    .. php:method:: aac(File $file, array $options = Array)
+    .. php:method:: aac(File $file, array $options)
     
         Display AAC audio files.
         
@@ -155,7 +172,7 @@ Omeka_View_Helper_FileMarkup
         :param array $options: 
         :returns: string
 
-    .. php:method:: aiff(File $file, array $options = Array)
+    .. php:method:: aiff(File $file, array $options)
     
         Display AIFF audio files.
         
@@ -163,7 +180,7 @@ Omeka_View_Helper_FileMarkup
         :param array $options: 
         :returns: string
 
-    .. php:method:: midi(File $file, array $options = Array)
+    .. php:method:: midi(File $file, array $options)
     
         Display MIDI audio files.
         
@@ -171,7 +188,7 @@ Omeka_View_Helper_FileMarkup
         :param array $options: 
         :returns: string
 
-    .. php:method:: mp4(File $file, array $options = Array)
+    .. php:method:: mp4(File $file, array $options)
     
         Display MP4 audio files.
         
@@ -179,7 +196,7 @@ Omeka_View_Helper_FileMarkup
         :param array $options: 
         :returns: string
 
-    .. php:method:: wav(File $file, array $options = Array)
+    .. php:method:: wav(File $file, array $options)
     
         Display WAV audio files.
         
@@ -187,7 +204,7 @@ Omeka_View_Helper_FileMarkup
         :param array $options: 
         :returns: string
 
-    .. php:method:: icon($file, array $options = Array)
+    .. php:method:: icon($file, array $options)
     
         Default display of an icon to represent a file.
         
@@ -199,7 +216,7 @@ Omeka_View_Helper_FileMarkup
         :param array $options: Available options include: 'showFilename' => boolean, 'linkToFile' => boolean, 'linkAttributes' => array, 'filenameAttributes' => array (for the filename div), 'imgAttributes' => array, 'icons' => array.
         :returns: string
 
-    .. php:method:: derivativeImage(File $file, $options = Array)
+    .. php:method:: derivativeImage(File $file, $options)
     
         Returns valid XHTML markup for displaying an image that has been stored 
         in Omeka.
@@ -227,7 +244,7 @@ Omeka_View_Helper_FileMarkup
         :param array $options: Set of options passed to the rendering callback.
         :returns: string HTML for displaying the file.
 
-    .. php:method:: fileMarkup(File $file, array $props = Array, array $wrapperAttributes = Array)
+    .. php:method:: fileMarkup(File $file, array $props, array $wrapperAttributes)
     
         Bootstrap for the helper class.  This will retrieve the HTML for
         displaying the file and by default wrap it in a <div class="item-file">.
@@ -245,6 +262,15 @@ Omeka_View_Helper_FileMarkup
         :param array $props: 
         :param string $format: 
         :returns: string
+
+    .. php:method:: _getFallbackImage(File $file)
+    
+        Get the name of a fallback image to use for this file.
+        
+        The fallback used depends on the file's mime type.
+        
+        :param File $file: The file to get a fallback for.
+        :returns: string Name of the image to use.
 
     .. php:method:: _getCallbackKey(callback $callback)
     

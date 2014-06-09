@@ -60,7 +60,7 @@ Builder_Item
     
         Add tags to an item (must exist in database).
 
-    .. php:method:: addFiles(string|Omeka_File_Ingest_AbstractIngest $transferStrategy, string|array $files, $options = Array)
+    .. php:method:: addFiles(string|Omeka_File_Ingest_AbstractIngest $transferStrategy, string|array $files, $options)
     
         Add files to an item.
         
@@ -96,10 +96,4 @@ Builder_Item
 
     .. php:method:: _beforeBuild(Omeka_Record_AbstractRecord $record)
     
-        :param Omeka_Record_AbstractRecord $record:
-
-    .. php:method:: _afterBuild(Omeka_Record_AbstractRecord $record)
-    
-        Add tags to the item.
-        
         :param Omeka_Record_AbstractRecord $record:

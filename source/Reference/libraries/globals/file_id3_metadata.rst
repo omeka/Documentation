@@ -4,7 +4,7 @@
 file_id3_metadata
 #################
 
-:doc:`File-related functions </Reference/packages/Function/View/Body/Item/File/index>`
+:doc:`File-related functions </Reference/packages/Function/View/File/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/file_id3_metadata.rst
 
-.. php:function:: file_id3_metadata(array $options = Array, File|null $file)
+.. php:function:: file_id3_metadata(array $options, File|null $file)
 
     Return HTML for a file's ID3 metadata.
     

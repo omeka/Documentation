@@ -4,7 +4,7 @@
 link_to_file_show
 #################
 
-:doc:`Link-related functions </Reference/packages/Function/View/Body/Navigation/Link/index>`
+:doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/link_to_file_show.rst
 
-.. php:function:: link_to_file_show(array $attributes = Array, string $text, File|null $file)
+.. php:function:: link_to_file_show(array $attributes, string $text, File|null $file)
 
     Return a link to the file metadata page for a particular file.
     

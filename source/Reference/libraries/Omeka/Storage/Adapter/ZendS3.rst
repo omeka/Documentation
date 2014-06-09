@@ -18,7 +18,7 @@ Omeka_Storage_Adapter_ZendS3
     
 
 
-    .. php:method:: __construct(array $options = Array)
+    .. php:method:: __construct(array $options)
     
         Set options for the storage adapter.
         
@@ -54,6 +54,12 @@ Omeka_Storage_Adapter_ZendS3
         
         :param string $path: 
         :returns: string URI
+
+    .. php:method:: getS3Service()
+    
+        Return the service object being used for S3 requests.
+        
+        :returns: Zend_Service_Amazon_S3
 
     .. php:method:: _getBucketName()
     

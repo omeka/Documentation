@@ -4,7 +4,7 @@
 queue_css_string
 ################
 
-:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+:doc:`Asset-related functions </Reference/packages/Function/View/Asset/index>`
 
 *******
 Summary

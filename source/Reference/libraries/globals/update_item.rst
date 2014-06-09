@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/update_item.rst
 
-.. php:function:: update_item(Item|int $item, array $metadata = Array, array $elementTexts = Array, array $fileMetadata = Array)
+.. php:function:: update_item(Item|int $item, array $metadata, array $elementTexts, array $fileMetadata)
 
     Update an existing item.
     

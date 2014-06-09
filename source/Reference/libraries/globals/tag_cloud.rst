@@ -4,7 +4,7 @@
 tag_cloud
 #########
 
-:doc:`Tag-related functions </Reference/packages/Function/View/Body/Tag/index>`
+:doc:`Tag-related functions </Reference/packages/Function/View/Tag/index>`
 
 *******
 Summary

@@ -4,7 +4,7 @@
 auto_discovery_link_tags
 ########################
 
-:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+:doc:`Layout-related functions </Reference/packages/Function/View/Layout/index>`
 
 *******
 Summary

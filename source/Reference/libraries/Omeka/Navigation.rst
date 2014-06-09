@@ -110,20 +110,13 @@ Omeka_Navigation
         
         :param String $filterName:    The name of the filter
 
-    .. php:method:: getExpiredPagesFromNav(Omeka_Navigation $excludeNav)
+    .. php:method:: getExpiredPagesFromNav(Omeka_Navigation $freshNav)
     
         Returns an array of expired pages from this navigation, 
-        where all pages in the $excludeNav are considered non-expired.
+        where all pages in the $feshNav are considered non-expired.
         
-        :param Omeka_Navigation $excludeNav: 
+        :param Omeka_Navigation $freshNav: 
         :returns: array The array of expired pages
-
-    .. php:method:: prunePages($pages)
-    
-        Prunes pages from this navigation.
-        When a page is pruned its children pages are reattached to the first non-pruneable ancestor page.
-        
-        :param unknown $pages:
 
     .. php:method:: prunePage(Omeka_Navigation_Page_Mvc|Omeka_Navigation_Page_Uri $page)
     
@@ -173,7 +166,7 @@ Omeka_Navigation
         :param String $optionName: The option name for a stored navigation object.
         :returns: String The option value associated with the default navigation during installation. If no option is found for the option name, then it returns an empty string.
 
-    .. php:method:: _normalizePageRecursive($page, $pageOptions = Array)
+    .. php:method:: _normalizePageRecursive($page, $pageOptions)
     
         Normalizes a page and its subpages so it can be added
         

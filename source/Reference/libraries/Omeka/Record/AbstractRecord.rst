@@ -113,7 +113,7 @@ Omeka_Record_AbstractRecord
         
         Any Omeka_Record_AbstractRecord subclass that uses mixins shouldinitialize them here, since this is called on construction and whenmixins need to be reinitialized.
 
-    .. php:method:: delegateToMixins(string $method, array $args = Array, boolean $all = )
+    .. php:method:: delegateToMixins(string $method, array $args, boolean $all = )
     
         Delegate to the given method in one or more mixin instances.
         
@@ -122,7 +122,7 @@ Omeka_Record_AbstractRecord
         :param boolean $all: (optional) Whether or not to call the same method on every mixin instance that has that method.  Defaults to false.
         :returns: mixed If $all is false, the return value from the invoked method. Otherwise there is no return value.
 
-    .. php:method:: runCallbacks($event, $args = Array)
+    .. php:method:: runCallbacks($event, $args)
     
         Invoke all callbacks associated with a specific record event.
         
@@ -364,3 +364,9 @@ Omeka_Record_AbstractRecord
         
         :param string $action: 
         :returns: string|array A URL string or a routing array.
+
+    .. php:method:: getFile()
+    
+        Get a representative file for this record.
+        
+        :returns: File|null

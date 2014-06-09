@@ -16,6 +16,7 @@ Up to :doc:`../index`
    /Reference/libraries/Omeka/Application/Resource/Db.rst
    /Reference/libraries/Omeka/Application/Resource/Debug.rst
    /Reference/libraries/Omeka/Application/Resource/Exception.rst
+   /Reference/libraries/Omeka/Application/Resource/Filederivatives.rst
    /Reference/libraries/Omeka/Application/Resource/Frontcontroller.rst
    /Reference/libraries/Omeka/Application/Resource/Helpers.rst
    /Reference/libraries/Omeka/Application/Resource/Jobs.rst
@@ -30,6 +31,7 @@ Up to :doc:`../index`
    /Reference/libraries/Omeka/Application/Resource/Session.rst
    /Reference/libraries/Omeka/Application/Resource/Storage.rst
    /Reference/libraries/Omeka/Application/Resource/Theme.rst
+   /Reference/libraries/Omeka/Application/Resource/View.rst
 
 .. toctree::
    :glob:

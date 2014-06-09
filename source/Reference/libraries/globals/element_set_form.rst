@@ -4,7 +4,7 @@
 element_set_form
 ################
 
-:doc:`Form-related functions </Reference/packages/Function/View/Body/Form/index>`
+:doc:`Form-related functions </Reference/packages/Function/View/Form/index>`
 
 *******
 Summary

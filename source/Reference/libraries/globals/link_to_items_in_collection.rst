@@ -4,7 +4,7 @@
 link_to_items_in_collection
 ###########################
 
-:doc:`Link-related functions </Reference/packages/Function/View/Body/Navigation/Link/index>`
+:doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/link_to_items_in_collection.rst
 
-.. php:function:: link_to_items_in_collection(string|null $text, array $props = Array, string $action = browse, Collection $collectionObj)
+.. php:function:: link_to_items_in_collection(string|null $text, array $props, string $action = browse, Collection $collectionObj)
 
     Return a link to the collection items browse page.
     

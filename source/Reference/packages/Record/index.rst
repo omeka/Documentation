@@ -15,6 +15,7 @@ Up to :doc:`../index`
    /Reference/models/Item.rst
    /Reference/models/ItemType.rst
    /Reference/models/ItemTypesElements.rst
+   /Reference/models/Key.rst
    /Reference/libraries/Omeka/Record/AbstractRecord.rst
    /Reference/libraries/Omeka/Record/Exception.rst
    /Reference/libraries/Omeka/Record/Iterator.rst

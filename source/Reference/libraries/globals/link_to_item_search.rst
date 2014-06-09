@@ -4,7 +4,7 @@
 link_to_item_search
 ###################
 
-:doc:`Link-related functions </Reference/packages/Function/View/Body/Navigation/Link/index>`
+:doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/link_to_item_search.rst
 
-.. php:function:: link_to_item_search(string $text, array $props = Array, string $uri)
+.. php:function:: link_to_item_search(string $text, array $props, string $uri)
 
     Return HTML for a link to the item search form.
     

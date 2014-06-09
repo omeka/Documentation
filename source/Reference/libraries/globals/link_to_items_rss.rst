@@ -4,7 +4,7 @@
 link_to_items_rss
 #################
 
-:doc:`Link-related functions </Reference/packages/Function/View/Body/Navigation/Link/index>`
+:doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/link_to_items_rss.rst
 
-.. php:function:: link_to_items_rss(string $text, array $params = Array)
+.. php:function:: link_to_items_rss(string $text, array $params)
 
     Return a link the the items RSS feed.
     

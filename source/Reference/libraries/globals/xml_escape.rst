@@ -4,7 +4,7 @@
 xml_escape
 ##########
 
-:doc:`OutputFormat-related functions </Reference/packages/Function/View/OutputFormat/index>`
+:doc:`Text-related functions </Reference/packages/Function/Text/index>`
 
 *******
 Summary

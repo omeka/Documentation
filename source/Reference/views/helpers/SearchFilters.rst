@@ -8,7 +8,7 @@ Omeka_View_Helper_SearchFilters
 
     Return a list of search filters in the current request.
 
-    .. php:method:: searchFilters(array $options = Array)
+    .. php:method:: searchFilters(array $options)
     
         Return a list of current search filters in use.
         

@@ -4,7 +4,7 @@
 get_random_featured_items
 #########################
 
-:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+:doc:`Item-related functions </Reference/packages/Function/View/Item/index>`
 
 *******
 Summary

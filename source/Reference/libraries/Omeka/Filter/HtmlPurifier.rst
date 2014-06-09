@@ -54,7 +54,7 @@ Omeka_Filter_HtmlPurifier
         :param array $allowedHtmlAttributes: An array of strings representing allowed HTML attributes
         :returns: HTMLPurifier
 
-    .. php:method:: filterAttributesWithMissingElements($htmlAttributes = Array, $htmlElements = Array)
+    .. php:method:: filterAttributesWithMissingElements($htmlAttributes, $htmlElements)
     
         :param unknown $htmlAttributes: 
         :param unknown $htmlElements:

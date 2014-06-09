@@ -4,7 +4,7 @@
 files_for_item
 ##############
 
-:doc:`File-related functions </Reference/packages/Function/View/Body/Item/File/index>`
+:doc:`Item-related functions </Reference/packages/Function/View/Item/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/files_for_item.rst
 
-.. php:function:: files_for_item(array $options = Array, array $wrapperAttributes = Array, Item|null $item)
+.. php:function:: files_for_item(array $options, array $wrapperAttributes, Item|null $item)
 
     Return HTML for all files assigned to an item.
     

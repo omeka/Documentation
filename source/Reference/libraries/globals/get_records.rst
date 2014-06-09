@@ -4,7 +4,7 @@
 get_records
 ###########
 
-:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+:doc:`Db-related functions </Reference/packages/Function/Db/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/get_records.rst
 
-.. php:function:: get_records(string $recordType, array $params = Array, integer $limit = 10)
+.. php:function:: get_records(string $recordType, array $params, integer $limit = 10)
 
     Get a set of records from the database.
     

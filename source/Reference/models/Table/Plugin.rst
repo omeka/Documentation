@@ -10,6 +10,11 @@ Table_Plugin
     
 
 
+    .. php:method:: applySearchFilters($select, $params)
+    
+        :param unknown $select: 
+        :param unknown $params:
+
     .. php:method:: findAllWithIniFiles()
 
     .. php:method:: findByDirectoryName($pluginDirName)

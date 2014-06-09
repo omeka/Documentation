@@ -4,7 +4,7 @@
 get_next_item
 #############
 
-:doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
+:doc:`Item-related functions </Reference/packages/Function/View/Item/index>`
 
 *******
 Summary

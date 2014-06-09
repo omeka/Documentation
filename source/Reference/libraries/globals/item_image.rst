@@ -4,7 +4,7 @@
 item_image
 ##########
 
-:doc:`File-related functions </Reference/packages/Function/View/Body/Item/File/index>`
+:doc:`Item-related functions </Reference/packages/Function/View/Item/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/item_image.rst
 
-.. php:function:: item_image(string $imageType, array $props = Array, integer $index = 0, $item)
+.. php:function:: item_image(string $imageType, array $props, integer $index = 0, $item)
 
     Return a customized item image tag.
     

@@ -12,6 +12,7 @@ Up to :doc:`../index`
    /Reference/libraries/Omeka/Validate/Exception.rst
    /Reference/libraries/Omeka/Validate/File/Extension.rst
    /Reference/libraries/Omeka/Validate/File/MimeType.rst
+   /Reference/libraries/Omeka/Validate/HexColor.rst
    /Reference/libraries/Omeka/Validate/Uri.rst
    /Reference/libraries/Omeka/Validate/UserPassword.rst
 

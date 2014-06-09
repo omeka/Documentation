@@ -10,40 +10,46 @@ Collection
 
     .. php:attr:: public
     
-
+        Whether or not the collection is publicly accessible.
 
     .. php:attr:: featured
     
-
+        Whether or not the collection is featured.
 
     .. php:attr:: added
     
-
+        Date the collection was added.
 
     .. php:attr:: modified
     
-
+        Date the collection was last modified.
 
     .. php:attr:: owner_id
     
-
+        ID for the User that created this collection.
 
     .. php:attr:: _related
     
+        Related records.
 
+    .. php:method:: _initializeMixins()
+    
+        Initialize the mixins.
 
     .. php:method:: getProperty(string $property)
     
         Get a property about this collection.
+        
+        Valid properties for a Collection include:* (int) public* (int) featured* (string) added* (string) modified* (int) owner_id* (int) total_items
         
         :param string $property: The property to get, always lowercase.
         :returns: mixed The value of the property
 
     .. php:method:: totalItems()
     
-        Determine the total number of items associated with this collection.
+        Get the total number of items in this collection.
         
-        :returns: integer
+        :returns: int
 
     .. php:method:: setAddedBy(User $user)
     
@@ -63,13 +69,9 @@ Collection
 
     .. php:method:: hasContributor()
     
-        Returns whether or not the collection has at least 1 contributor element text
+        Return whether the collection has at least 1 contributor element text.
         
-        :returns: boolean
-
-    .. php:method:: _initializeMixins()
-    
-        Initialize the mixins
+        :returns: bool
 
     .. php:method:: filterPostData(array $post)
     
@@ -84,10 +86,30 @@ Collection
     
         All of the custom code for deleting an collection.
         
+        Delete the element texts for this record.
+        
         :returns: void
+
+    .. php:method:: _dissociateItems()
+    
+        Set items attached to this collection back to "no collection."
 
     .. php:method:: beforeSave($args)
     
+        Before-save hook.
+        
+        Fire the before-save element texts code.
+        
         :param unknown $args:
 
     .. php:method:: afterSave()
+    
+        After-save hook.
+        
+        Handle public/private status for search.
+
+    .. php:method:: getFile()
+    
+        Get a representative file for this Collection.
+        
+        :returns: File|null

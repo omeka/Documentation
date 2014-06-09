@@ -8,6 +8,7 @@ Controllers/helpers
     ContextSwitch
     Db
     FlashMessenger
+    JsonApi
     Mail
     ThemeConfiguration
 

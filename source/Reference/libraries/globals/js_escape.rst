@@ -4,7 +4,7 @@
 js_escape
 #########
 
-:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+:doc:`Text-related functions </Reference/packages/Function/Text/index>`
 
 *******
 Summary

@@ -4,7 +4,7 @@
 current_url
 ###########
 
-:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+:doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/current_url.rst
 
-.. php:function:: current_url(array $params = Array)
+.. php:function:: current_url(array $params)
 
     Return the current URL with query parameters appended.
     

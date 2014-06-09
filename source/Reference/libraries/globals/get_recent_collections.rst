@@ -4,7 +4,7 @@
 get_recent_collections
 ######################
 
-:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+:doc:`Collection-related functions </Reference/packages/Function/Db/Collection/index>`
 
 *******
 Summary

@@ -28,7 +28,7 @@ Omeka_File_MimeType_Detect
     
 
 
-    .. php:method:: __construct(string|File $file, array $strategies = Array)
+    .. php:method:: __construct(string|File $file, array $strategies)
     
         Set the required properties for detecting the MIME types of a file.
         

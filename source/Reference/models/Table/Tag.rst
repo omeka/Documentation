@@ -44,7 +44,7 @@ Table_Tag
         :param unknown $partialTagName: 
         :returns: void
 
-    .. php:method:: applySearchFilters($select, array $params = Array)
+    .. php:method:: applySearchFilters($select, array $params)
     
         Retrieve a certain number of tags
         

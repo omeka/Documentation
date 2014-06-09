@@ -10,61 +10,74 @@ Item
 
     .. php:attr:: item_type_id
     
-
+        The ID for this Item's ItemType, if any.
 
     .. php:attr:: collection_id
     
-
+        The ID for this Item's Collection, if any.
 
     .. php:attr:: featured
     
-
+        Whether this Item is featured.
 
     .. php:attr:: public
     
-
+        Whether this Item is publicly accessible.
 
     .. php:attr:: added
     
-
+        The date this Item was added.
 
     .. php:attr:: modified
     
-
+        The date this Item was last modified.
 
     .. php:attr:: owner_id
     
-
+        ID of the User who created this Item.
 
     .. php:attr:: _related
     
-
+        Records related to an Item.
 
     .. php:attr:: _files
     
-
+        Set of non-persistent File objects to attach to the item.
 
     .. php:method:: _initializeMixins()
+    
+        Initialize the mixins.
 
     .. php:method:: getCollection()
     
-        :returns: null|Collection
+        Get this Item's Collection, if any.
+        
+        :returns: Collection|null
 
     .. php:method:: getItemType()
     
-        Retrieve the ItemType record associated with this Item.
+        Get the ItemType record associated with this Item.
         
         :returns: ItemType|null
 
     .. php:method:: getFiles()
     
-        Retrieve the set of File records associated with this Item.
+        Get the set of File records associated with this Item.
         
         :returns: array
 
+    .. php:method:: getFile(integer $index = 0)
+    
+        Get a single File associated with this Item, by index.
+        
+        The default is to get the first file.
+        
+        :param integer $index: 
+        :returns: File
+
     .. php:method:: getItemTypeElements()
     
-        Retrieve a set of elements associated with the item type of the item.
+        Get a set of Elements associated with this Item's ItemType.
         
         Each one of the Element records that is retrieved should contain all theelement text values associated with it.
         
@@ -77,43 +90,38 @@ Item
         :param string $property: 
         :returns: mixed
 
-    .. php:method:: beforeSave($args)
+    .. php:method:: beforeSave(array $args)
     
-        :param unknown $args:
-
-    .. php:method:: afterSave($args)
-    
-        Logic for after the record has been saved.
+        Before-save hook.
         
-        :param unknown $args:
+        :param array $args:
+
+    .. php:method:: afterSave(array $args)
+    
+        After-save hook.
+        
+        :param array $args:
 
     .. php:method:: _delete()
     
         All of the custom code for deleting an item.
-        
-        :returns: void
 
-    .. php:method:: _deleteFiles(array $fileIds = Array)
+    .. php:method:: _deleteFiles(array $fileIds)
     
         Delete files associated with the item.
         
         If the IDs of specific files are passed in, this will delete only thosefiles (e.g. form submission).  Otherwise, it will delete all filesassociated with the item.
         
         :param array $fileIds: Optional
-        :returns: void
 
     .. php:method:: _uploadFiles()
     
         Iterate through the $_FILES array for files that have been uploaded
         to Omeka and attach each of those files to this Item.
-        
-        :returns: void
 
     .. php:method:: saveFiles()
     
         Save all the files that have been associated with this item.
-        
-        :returns: boolean
 
     .. php:method:: filterPostData($post)
     
@@ -124,19 +132,19 @@ Item
 
     .. php:method:: fileCount()
     
-        Retrieve the number of files assigned to this item.
+        Get the number of files assigned to this item.
         
-        :returns: boolean
+        :returns: int
 
     .. php:method:: previous()
     
-        Retrieve the previous Item in the database.
+        Get the previous Item in the database.
         
         :returns: Item|false
 
     .. php:method:: next()
     
-        Retrieve the next Item in the database.
+        Get the next Item in the database.
         
         :returns: Item|false
 
@@ -145,7 +153,7 @@ Item
         Determine whether or not the Item has a File with a thumbnail image
         (or any derivative image).
         
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: getCitation()
     
@@ -161,13 +169,16 @@ Item
         
         These File records will not be persisted in the database until the itemis saved or saveFiles() is invoked.
         
-        :param File $file: 
-        :returns: void
+        :param File $file:
 
     .. php:method:: getResourceId()
     
+        Identify Item records as relating to the Items ACL resource.
+        
         Required by Zend_Acl_Resource_Interface.
         
-        Identifies Item records as relating to the Items ACL resource.
-        
         :returns: string
+
+    .. php:method:: _validate()
+    
+        Validate this item.

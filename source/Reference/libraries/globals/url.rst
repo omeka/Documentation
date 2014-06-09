@@ -4,7 +4,7 @@
 url
 ###
 
-:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+:doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/url.rst
 
-.. php:function:: url(mixed $options = Array, string $route, mixed $queryParams = Array, bool $reset = , bool $encode = 1)
+.. php:function:: url(mixed $options, string $route, mixed $queryParams, bool $reset = , bool $encode = 1)
 
     Return a URL given the provided arguments.
     

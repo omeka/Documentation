@@ -4,7 +4,7 @@
 element_form
 ############
 
-:doc:`Form-related functions </Reference/packages/Function/View/Body/Form/index>`
+:doc:`Form-related functions </Reference/packages/Function/View/Form/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/element_form.rst
 
-.. php:function:: element_form(Element|array $element, Omeka_Record_AbstractRecord $record, array $options = Array)
+.. php:function:: element_form(Element|array $element, Omeka_Record_AbstractRecord $record, array $options)
 
     Return the proper HTML for a form input for a given Element record.
     

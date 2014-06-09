@@ -6,82 +6,71 @@ Element
 
     Package: :doc:`Record </Reference/packages/Record/index>`
 
-    An element and its metadata.
+    A metadata element within an element set or item type.
 
     .. php:attr:: element_set_id
     
-
+        ID of the ElementSet this Element belongs to.
 
     .. php:attr:: order
     
-
+        This Element's order within the parent ElementSet.
 
     .. php:attr:: name
     
-
+        A human-readable name
 
     .. php:attr:: description
     
-
+        A human-readable description
 
     .. php:attr:: comment
     
-
+        A user-generated comment
 
     .. php:method:: setElementSet(string $elementSetName)
     
-        Set the element set for the element.
+        Set the parent ElementSet by name.
         
-        :param string $elementSetName: 
-        :returns: void
+        :param string $elementSetName:
 
     .. php:method:: getElementSet()
     
-        Return the ElementSet objection for this element.
+        Return the parent ElementSet object for this element.
         
-        :returns: ElementSet
+        :returns: ElementSet|null
 
-    .. php:method:: setOrder(integer $order)
+    .. php:method:: setOrder(int $order)
     
         Set the order of the element within its element set.
         
-        :param integer $order: 
-        :returns: void
+        :param int $order:
 
     .. php:method:: setName(string $name)
     
-        Set the name of the element.
+        Set the Element's name.
         
-        :param string $name: 
-        :returns: void
+        :param string $name:
 
     .. php:method:: setDescription(string $description)
     
-        Set the description for the element.
+        Set the Element's description.
         
-        :param string $description: 
-        :returns: void
+        :param string $description:
 
-    .. php:method:: setComment($comment)
+    .. php:method:: setComment(string $comment)
     
-        :param unknown $comment:
+        Set the Element's comment.
+        
+        :param string $comment:
 
     .. php:method:: setArray(array|string $data)
     
-        :param array|string $data: If string, it's the name of the element. Otherwise, array of metadata for the element.  May contain the following keys in the array:         
+        Set the data for the Element in bulk.
         
-            .. raw:: html
+        * name* description* comment* order* element_set_id* element_set
         
-               <ul>
-                  <li>name</li>
-                  <li>description</li>
-                  <li>comment</li>
-                  <li>order</li>
-                  <li>element_set_id</li>
-                  <li>element_set</li>
-                 </ul>
-        
-        :returns: void
+        :param array|string $data: If string, the name of the element. Otherwise, array of metadata for the element.  The array may contain the following keys:
 
     .. php:method:: _validate()
     
@@ -89,17 +78,18 @@ Element
         
         Checks the following criteria:
         
-        - Name is not empty.
-        - Name does not already exist within the given element set.
+        * Name is not empty.
+        * Name does not already exist within the given element set.
 
     .. php:method:: _delete()
     
-        When deleting an element, cascade delete all element texts and item type 
-        assignments associated with the element.
+        Delete associated records when deleting the Element.
+        
+        Cascade delete to all element texts and item type assignments associated with the element.
 
     .. php:method:: _getElementSetId($elementSetName)
     
-        Retrieve the element set ID from the name.
+        Get an element set ID from a name.
         
         :param unknown $elementSetName: 
         :returns: int
@@ -111,3 +101,11 @@ Element
         :param unknown $elementName: 
         :param unknown $elementSetId: 
         :returns: boolean
+
+    .. php:method:: getResourceId()
+    
+        Identify Element records as relating to the Elements ACL resource.
+        
+        Required by Zend_Acl_Resource_Interface.
+        
+        :returns: string

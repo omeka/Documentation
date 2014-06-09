@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/insert_item_type.rst
 
-.. php:function:: insert_item_type(array $metadata = Array, array $elementInfos = Array)
+.. php:function:: insert_item_type(array $metadata, array $elementInfos)
 
     Insert a new item type.
     

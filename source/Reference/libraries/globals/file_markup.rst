@@ -4,7 +4,7 @@
 file_markup
 ###########
 
-:doc:`File-related functions </Reference/packages/Function/View/Body/Item/File/index>`
+:doc:`File-related functions </Reference/packages/Function/View/File/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/file_markup.rst
 
-.. php:function:: file_markup(File $files, array $props = Array, array $wrapperAttributes = Array)
+.. php:function:: file_markup(File $files, array $props, array $wrapperAttributes)
 
     Return HTML for a set of files.
     

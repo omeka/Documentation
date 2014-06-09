@@ -19,7 +19,7 @@ Omeka_Application_Resource_Router
         
         :param Zend_Controller_Router_Rewrite $router: The router
 
-    .. php:method:: addRedirectRouteForDefaultRoute(String $routeName, String $uri, array $params = Array, Zend_Controller_Router_Rewrite $router)
+    .. php:method:: addRedirectRouteForDefaultRoute(String $routeName, String $uri, array $params, Zend_Controller_Router_Rewrite $router)
     
         Adds a redirect route for the default route and returns whether the route was successfully added
         If the current request matches the default route, then the flow will redirect to the 

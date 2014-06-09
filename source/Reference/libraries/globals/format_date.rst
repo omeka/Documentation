@@ -4,7 +4,7 @@
 format_date
 ###########
 
-:doc:`Text-related functions </Reference/packages/Function/Text/index>`
+:doc:`Locale-related functions </Reference/packages/Function/Locale/index>`
 
 *******
 Summary

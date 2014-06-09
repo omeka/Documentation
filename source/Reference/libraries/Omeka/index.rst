@@ -1,9 +1,10 @@
-`````````````````````
-Class Library by Path
-`````````````````````
+```````````````
+Libraries/Omeka
+```````````````
 
 .. toctree::
 
+    AbstractSearch
     Application
     Captcha
     Db

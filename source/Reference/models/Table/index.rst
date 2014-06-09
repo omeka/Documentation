@@ -12,6 +12,7 @@ Models/Table
     Item
     ItemType
     ItemTypesElements
+    Key
     Plugin
     Process
     RecordsTags

@@ -4,7 +4,7 @@
 items_output_url
 ################
 
-:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+:doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/items_output_url.rst
 
-.. php:function:: items_output_url(string $output, array $otherParams = Array)
+.. php:function:: items_output_url(string $output, array $otherParams)
 
     Return a URL to an output page.
     

@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/insert_item.rst
 
-.. php:function:: insert_item(array $metadata = Array, array $elementTexts = Array, array $fileMetadata = Array)
+.. php:function:: insert_item(array $metadata, array $elementTexts, array $fileMetadata)
 
     Insert a new item into the Omeka database.
     

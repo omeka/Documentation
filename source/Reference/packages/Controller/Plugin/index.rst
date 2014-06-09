@@ -8,6 +8,7 @@ Up to :doc:`../index`
 
 
    /Reference/libraries/Omeka/Controller/Plugin/Admin.rst
+   /Reference/libraries/Omeka/Controller/Plugin/Api.rst
    /Reference/libraries/Omeka/Controller/Plugin/Debug.rst
    /Reference/libraries/Omeka/Controller/Plugin/HtmlPurifier.rst
    /Reference/libraries/Omeka/Controller/Plugin/Jsonp.rst

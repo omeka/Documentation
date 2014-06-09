@@ -4,7 +4,7 @@
 item_type_elements
 ##################
 
-:doc:`ItemType-related functions </Reference/packages/Function/View/Body/ItemType/index>`
+:doc:`ItemType-related functions </Reference/packages/Function/View/ItemType/index>`
 
 *******
 Summary

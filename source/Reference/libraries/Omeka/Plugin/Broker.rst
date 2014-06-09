@@ -56,7 +56,7 @@ Omeka_Plugin_Broker
         
         :returns: string
 
-    .. php:method:: callHook(string $name, array $args = Array, Plugin|string $plugin)
+    .. php:method:: callHook(string $name, array $args, Plugin|string $plugin)
     
         Call a hook by name.
         
@@ -107,7 +107,7 @@ Omeka_Plugin_Broker
         :param string|null $name: The name of the filter to clear.  If null or omitted, all filters will be cleared.
         :returns: void
 
-    .. php:method:: applyFilters(mixed $name, mixed $value, array $args = Array)
+    .. php:method:: applyFilters(mixed $name, mixed $value, array $args)
     
         Run an arbitrary value through a set of filters.
         

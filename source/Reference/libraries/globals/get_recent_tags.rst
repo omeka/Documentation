@@ -4,7 +4,7 @@
 get_recent_tags
 ###############
 
-:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+:doc:`View-related functions </Reference/packages/Function/View/index>`
 
 *******
 Summary

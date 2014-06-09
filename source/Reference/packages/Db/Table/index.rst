@@ -16,6 +16,7 @@ Up to :doc:`../index`
    /Reference/models/Table/Item.rst
    /Reference/models/Table/ItemType.rst
    /Reference/models/Table/ItemTypesElements.rst
+   /Reference/models/Table/Key.rst
    /Reference/models/Table/Plugin.rst
    /Reference/models/Table/Process.rst
    /Reference/models/Table/RecordsTags.rst

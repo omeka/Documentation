@@ -4,7 +4,7 @@
 browse_sort_links
 #################
 
-:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+:doc:`View-related functions </Reference/packages/Function/View/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/browse_sort_links.rst
 
-.. php:function:: browse_sort_links(array $links, array $wrapperTags = Array)
+.. php:function:: browse_sort_links(array $links, array $wrapperTags)
 
     Return the list of links for sorting displayed records.
     

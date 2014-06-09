@@ -6,6 +6,7 @@ Libraries/Omeka/Controller/Exception
 
     403
     404
+    Api
 
 
 .. toctree::

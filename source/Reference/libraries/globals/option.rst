@@ -4,7 +4,7 @@
 option
 ######
 
-:doc:`Option-related functions </Reference/packages/Function/View/Option/index>`
+:doc:`View-related functions </Reference/packages/Function/View/index>`
 
 *******
 Summary

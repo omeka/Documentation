@@ -81,14 +81,14 @@ Omeka_Job_Dispatcher_Default
         
         :param string $name:
 
-    .. php:method:: send(string $jobClass, array $options = Array)
+    .. php:method:: send(string $jobClass, array $options)
     
         Dispatch a job using the default dispatcher.
         
         :param string $jobClass: Class name that implements Omeka_JobInterface.
         :param array $options: Optional associative array containing options that the task needs in order to do its job. Note that all options should be primitive data types (or arrays containing primitive data types).
 
-    .. php:method:: sendLongRunning(string $jobClass, array $options = Array)
+    .. php:method:: sendLongRunning(string $jobClass, array $options)
     
         Dispatch a job using the long-running dispatcher.
         

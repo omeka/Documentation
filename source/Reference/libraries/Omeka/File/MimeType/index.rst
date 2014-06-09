@@ -10,3 +10,4 @@ Libraries/Omeka/File/MimeType
 
 .. toctree::
 
+    Detect/index

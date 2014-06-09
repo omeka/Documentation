@@ -16,7 +16,7 @@ Omeka_Job_Dispatcher_DispatcherInterface
         
         :param string $name:
 
-    .. php:method:: send(string $jobClass, array $options = Array)
+    .. php:method:: send(string $jobClass, array $options)
     
         :param string $jobClass: Name of a class that implements Omeka_JobInterface.
         :param array $options: Optional Associative array containing options that the task needs in order to do its job.  Note that all options should be primitive data types (or arrays containing primitive data types).

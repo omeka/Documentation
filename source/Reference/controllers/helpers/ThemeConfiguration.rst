@@ -20,7 +20,7 @@ Omeka_Controller_Action_Helper_ThemeConfiguration
     
 
 
-    .. php:method:: processForm(Zend_Form $form, array $data, array $originalOptions = Array)
+    .. php:method:: processForm(Zend_Form $form, array $data, array $originalOptions)
     
         Process the theme configuration form.
         

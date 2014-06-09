@@ -4,7 +4,7 @@
 label_table_options
 ###################
 
-:doc:`Form-related functions </Reference/packages/Function/View/Body/Form/index>`
+:doc:`Form-related functions </Reference/packages/Function/View/Form/index>`
 
 *******
 Summary

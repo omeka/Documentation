@@ -4,7 +4,7 @@
 img
 ###
 
-:doc:`File-related functions </Reference/packages/Function/View/Body/Item/File/index>`
+:doc:`Asset-related functions </Reference/packages/Function/View/Asset/index>`
 
 *******
 Summary

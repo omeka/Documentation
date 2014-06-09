@@ -7,6 +7,7 @@ Libraries/Omeka/Validate
     Confirmation
     Errors
     Exception
+    HexColor
     Uri
     UserPassword
 

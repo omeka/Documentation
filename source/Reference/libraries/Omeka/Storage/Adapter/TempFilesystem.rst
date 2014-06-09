@@ -50,7 +50,7 @@ Omeka_Storage_Adapter_TempFilesystem
     
         :param unknown $filepath:
 
-    .. php:method:: __construct(array $options = Array)
+    .. php:method:: __construct(array $options)
     
         Set options for the storage adapter.
         
@@ -70,6 +70,14 @@ Omeka_Storage_Adapter_TempFilesystem
 
     .. php:method:: setLocalDir($dir)
     
+        Set the path of the local directory where files are stored.
+        
+        :param unknown $dir:
+
+    .. php:method:: setWebDir($dir)
+    
+        Set the web URL that corresponds with the local dir.
+        
         :param unknown $dir:
 
     .. php:method:: _getAbsPath(string $path)

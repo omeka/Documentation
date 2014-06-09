@@ -4,7 +4,7 @@
 link_to_items_browse
 ####################
 
-:doc:`Navigation-related functions </Reference/packages/Function/View/Body/Navigation/index>`
+:doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/link_to_items_browse.rst
 
-.. php:function:: link_to_items_browse(string $text, array $browseParams = Array, array $linkProperties = Array)
+.. php:function:: link_to_items_browse(string $text, array $browseParams, array $linkProperties)
 
     Return HTML for a link to the browse page for items.
     

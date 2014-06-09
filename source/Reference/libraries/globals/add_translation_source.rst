@@ -4,7 +4,7 @@
 add_translation_source
 ######################
 
-:doc:`Translation-related functions </Reference/packages/Function/Text/Translation/index>`
+:doc:`Locale-related functions </Reference/packages/Function/Locale/index>`
 
 *******
 Summary

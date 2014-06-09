@@ -4,7 +4,7 @@
 items_search_form
 #################
 
-:doc:`Search-related functions </Reference/packages/Function/View/Body/Search/index>`
+:doc:`Search-related functions </Reference/packages/Function/View/Search/index>`
 
 *******
 Summary
@@ -12,12 +12,13 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/items_search_form.rst
 
-.. php:function:: items_search_form(array $props = Array, string $formActionUri)
+.. php:function:: items_search_form(array $props, string $formActionUri, string $buttonText)
 
     Return the HTML for an item search form.
     
     :param array $props: 
     :param string $formActionUri: 
+    :param string $buttonText: 
     :returns: string
 
 *****

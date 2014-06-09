@@ -63,7 +63,7 @@ Omeka_Plugin_Loader
         :param Plugin $plugin: 
         :returns: boolean Whether the plugin is registered or not.
 
-    .. php:method:: load(Plugin $plugin, boolean $force = , array $pluginsWaitingToLoad = Array)
+    .. php:method:: load(Plugin $plugin, boolean $force = , array $pluginsWaitingToLoad)
     
         Load a plugin (and make sure the plugin API is available).
         

@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/update_collection.rst
 
-.. php:function:: update_collection(Collection|int $collection, array $metadata = Array, array $elementTexts = Array)
+.. php:function:: update_collection(Collection|int $collection, array $metadata, array $elementTexts)
 
     Update an existing collection.
     

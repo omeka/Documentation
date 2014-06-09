@@ -8,7 +8,7 @@ Omeka_View_Helper_SearchForm
 
     Return the site-wide search form.
 
-    .. php:method:: searchForm(array $options = Array)
+    .. php:method:: searchForm(array $options)
     
         Return the site-wide search form.
         

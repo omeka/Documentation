@@ -27,3 +27,12 @@ Omeka_Application_Resource_Session
         :returns: string
 
     .. php:method:: _setOptionsFromConfig()
+
+    .. php:method:: _canUseDbSessions(array $options)
+    
+        Check if the DB is recent enough to use DB sessions by default.
+        
+        Recent enough means that the DB version is 2.0 or higher. We can'tuse the DB sessions until the upgrade is complete to 2.0+.
+        
+        :param array $options: 
+        :returns: boolean

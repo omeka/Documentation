@@ -4,7 +4,7 @@
 physical_path_to
 ################
 
-:doc:`FilePath-related functions </Reference/packages/Function/Application/FilePath/index>`
+:doc:`Asset-related functions </Reference/packages/Function/View/Asset/index>`
 
 *******
 Summary

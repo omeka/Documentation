@@ -4,7 +4,7 @@
 common
 ######
 
-:doc:`View-related functions </Reference/packages/Function/View/index>`
+:doc:`Layout-related functions </Reference/packages/Function/View/Layout/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/common.rst
 
-.. php:function:: common(string $file, array $vars = Array, string $dir = common)
+.. php:function:: common(string $file, array $vars, string $dir = common)
 
     Return HTML from a file in the common/ directory, passing variables into that 
     script.

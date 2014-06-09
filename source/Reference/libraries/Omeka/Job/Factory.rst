@@ -12,7 +12,7 @@ Omeka_Job_Factory
     
 
 
-    .. php:method:: __construct($options = Array)
+    .. php:method:: __construct($options)
     
         :param unknown $options:
 

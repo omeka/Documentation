@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/insert_files_for_item.rst
 
-.. php:function:: insert_files_for_item(Item|integer $item, string|Omeka_File_Ingest_AbstractIngest $transferStrategy, array $files, array $options = Array)
+.. php:function:: insert_files_for_item(Item|integer $item, string|Omeka_File_Ingest_AbstractIngest $transferStrategy, array $files, array $options)
 
     Add files to an item.
     

@@ -50,7 +50,7 @@ Omeka_Controller_Plugin_HtmlPurifier
         :param Omeka_Filter_HtmlPurifier $htmlPurifierFilter: 
         :returns: void
 
-    .. php:method:: _purifyArray($dataArray = Array, Omeka_Filter_HtmlPurifier $htmlPurifierFilter)
+    .. php:method:: _purifyArray($dataArray, Omeka_Filter_HtmlPurifier $htmlPurifierFilter)
     
         Recurisvely purify an array
         

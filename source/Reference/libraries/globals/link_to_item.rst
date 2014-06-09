@@ -4,7 +4,7 @@
 link_to_item
 ############
 
-:doc:`Link-related functions </Reference/packages/Function/View/Navigation/Link/index>`
+:doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/link_to_item.rst
 
-.. php:function:: link_to_item(string $text, array $props = Array, string $action = show, Item $item)
+.. php:function:: link_to_item(string $text, array $props, string $action = show, Item $item)
 
     Return a link to an item.
     

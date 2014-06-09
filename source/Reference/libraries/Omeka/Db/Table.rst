@@ -123,7 +123,7 @@ Omeka_Db_Table
         
         :returns: array Array of {@link Omeka_Record_AbstractRecord}s.
 
-    .. php:method:: findPairsForSelectForm(array $options = Array)
+    .. php:method:: findPairsForSelectForm(array $options)
     
         Retrieve an array of key=>value pairs that can be used as options in a 
         <select> form input.
@@ -139,7 +139,7 @@ Omeka_Db_Table
         
         :returns: array
 
-    .. php:method:: findBy(array $params = Array, integer $limit, integer $page)
+    .. php:method:: findBy(array $params, integer $limit, integer $page)
     
         Retrieve a set of model objects based on a given number of parameters
         
@@ -154,7 +154,7 @@ Omeka_Db_Table
         
         :returns: Omeka_Db_Select
 
-    .. php:method:: getSelectForFindBy(array $params = Array)
+    .. php:method:: getSelectForFindBy(array $params)
     
         Retrieve a select object that has had search filters applied to it.
         
@@ -195,7 +195,7 @@ Omeka_Db_Table
         :param integer|null $page: Page to retrieve, first if omitted.
         :returns: Zend_Db_Select
 
-    .. php:method:: findBySql(string $sqlWhereClause, array $params = Array, boolean $findOne = )
+    .. php:method:: findBySql(string $sqlWhereClause, array $params, boolean $findOne = )
     
         Retrieve an object or set of objects based on an SQL WHERE predicate.
         
@@ -204,14 +204,59 @@ Omeka_Db_Table
         :param boolean $findOne: optional Whether or not to retrieve a single record or the whole set (retrieve all by default).
         :returns: array|Omeka_Record_AbstractRecord|false
 
-    .. php:method:: count(array $params = Array)
+    .. php:method:: count(array $params)
     
         Retrieve a count of all the rows in the table.
         
         :param array $params: optional Set of search filters upon which to base the count.
         :returns: integer
 
-    .. php:method:: getSelectForCount(array $params = Array)
+    .. php:method:: exists(int $id)
+    
+        Check whether a row exists in the table.
+        
+        :param int $id: 
+        :returns: bool
+
+    .. php:method:: filterByPublic(Omeka_Db_Select $select, bool $isPublic)
+    
+        Apply a public/not public filter to the select object.
+        
+        A convenience function than derivative table classes may use whileapplying search filters.
+        
+        :param Omeka_Db_Select $select: 
+        :param bool $isPublic:
+
+    .. php:method:: filterByFeatured(Omeka_Db_Select $select, bool $isFeatured)
+    
+        Apply a featured/not featured filter to the select object.
+        
+        A convenience function than derivative table classes may use whileapplying search filters.
+        
+        :param Omeka_Db_Select $select: 
+        :param bool $isFeatured:
+
+    .. php:method:: filterBySince(Omeka_Db_Select $select, string $dateSince, string $dateField)
+    
+        Apply a date since filter to the select object.
+        
+        A convenience function than derivative table classes may use whileapplying search filters.
+        
+        :param Omeka_Db_Select $select: 
+        :param string $dateSince: ISO 8601 formatted date
+        :param string $dateField: "added" or "modified"
+
+    .. php:method:: filterByUser(Omeka_Db_Select $select, int $userId, $userField)
+    
+        Apply a user filter to the select object.
+        
+        A convenience function than derivative table classes may use whileapplying search filters.
+        
+        :param Omeka_Db_Select $select: 
+        :param int $userId: 
+        :param unknown $userField:
+
+    .. php:method:: getSelectForCount(array $params)
     
         Retrieve a select object used to retrieve a count of all the table rows.
         
@@ -227,7 +272,7 @@ Omeka_Db_Table
         :param int $id: The ID of the row.
         :returns: boolean
 
-    .. php:method:: fetchObjects(string $sql, array $params = Array)
+    .. php:method:: fetchObjects(string $sql, array $params)
     
         Retrieve a set of record objects based on an SQL SELECT statement.
         
@@ -235,7 +280,7 @@ Omeka_Db_Table
         :param array $params: Set of parameters to bind to the SQL statement.
         :returns: array|null Set of Omeka_Record_AbstractRecord instances, or null if none can be found.
 
-    .. php:method:: fetchObject(string $sql, string $params = Array)
+    .. php:method:: fetchObject(string $sql, string $params)
     
         Retrieve a single record object from the database.
         

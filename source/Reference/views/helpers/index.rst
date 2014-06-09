@@ -1,6 +1,6 @@
-```````````````````
-View Helpers
-```````````````````
+`````````````
+Views/helpers
+`````````````
 
 .. toctree::
 
@@ -10,6 +10,7 @@ View Helpers
     FileId3Metadata
     FileMarkup
     Flash
+    FormInput
     GetCurrentRecord
     GetLoopRecords
     HasLoopRecords
@@ -23,6 +24,7 @@ View Helpers
     SearchForm
     SetCurrentRecord
     SetLoopRecords
+    Shortcodes
     Singularize
     Url
 

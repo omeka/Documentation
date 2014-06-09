@@ -8,15 +8,7 @@ Omeka_View_Helper_Metadata
 
     Helper used to retrieve record metadata for for display.
 
-    .. php:attr:: _record
-    
-
-
-    .. php:attr:: _metadata
-    
-
-
-    .. php:method:: metadata(Omeka_Record_AbstractRecord $record, string|array $metadata, array|string|integer $options = Array)
+    .. php:method:: metadata(Omeka_Record_AbstractRecord $record, string|array $metadata, array|string|integer $options)
     
         Retrieve a specific piece of a record's metadata for display.
         
@@ -60,22 +52,26 @@ Omeka_View_Helper_Metadata
         :param string $elementName: 
         :returns: array Set of ElementText records.
 
-    .. php:method:: _process(string|ElementText $text, int|bool $snippet, bool $escape, bool $filter)
+    .. php:method:: _process(Omeka_Record_AbstractRecord $record, string|array $metadata, string|ElementText $text, int|bool $snippet, bool $escape, bool $filter)
     
         Process an individual piece of text.
         
         If given an ElementText record, the actual text string will beextracted automatically.
         
+        :param Omeka_Record_AbstractRecord $record: 
+        :param string|array $metadata: 
         :param string|ElementText $text: Text to process.
         :param int|bool $snippet: Snippet length, or false if no snippet.
         :param bool $escape: Whether to HTML escape the text.
         :param bool $filter: Whether to pass the output through plugin filters.
         :returns: string
 
-    .. php:method:: _filterText(string $text, ElementText|bool $elementText)
+    .. php:method:: _filterText(Omeka_Record_AbstractRecord $record, string|array $metadata, string $text, ElementText|bool $elementText)
     
         Apply filters to a text value.
         
+        :param Omeka_Record_AbstractRecord $record: 
+        :param string|array $metadata: 
         :param string $text: 
         :param ElementText|bool $elementText: 
         :returns: string

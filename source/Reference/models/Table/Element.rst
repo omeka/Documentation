@@ -68,7 +68,7 @@ Table_Element
                  results should belong.</li>
                  </ul>
 
-    .. php:method:: findPairsForSelectForm(array $options = Array)
+    .. php:method:: findPairsForSelectForm(array $options)
     
         Override parent class method to retrieve a multidimensional array of 
         elements, organized by element set, to be used in Zend's FormSelect view 

@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/insert_collection.rst
 
-.. php:function:: insert_collection(array $metadata = Array, array $elementTexts = Array)
+.. php:function:: insert_collection(array $metadata, array $elementTexts)
 
     Insert a collection
     

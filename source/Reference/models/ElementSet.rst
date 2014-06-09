@@ -18,21 +18,25 @@ ElementSet
 
     .. php:attr:: record_type
     
-
+        Type of record this set applies to.
 
     .. php:attr:: name
     
-
+        Name for the element set.
 
     .. php:attr:: description
     
-
+        Description for the element set.
 
     .. php:attr:: _elementsToSave
     
-
+        Child Element records to save when saving this set.
 
     .. php:method:: getElements()
+    
+        Get the Elements that are in this set.
+        
+        :returns: array
 
     .. php:method:: addElements(array $elements)
     
@@ -40,20 +44,43 @@ ElementSet
         
         :param array $elements:
 
-    .. php:method:: _buildElementRecord($options)
+    .. php:method:: _buildElementRecord(array $options)
     
-        :param unknown $options:
+        Create a new Element record with the given data.
+        
+        :param array $options: Data to set on the Element.
+        :returns: Element
 
     .. php:method:: afterSave($args)
     
+        After-save hook.
+        
+        Save the $_elementsToSave and set their orders.
+        
         :param unknown $args:
 
     .. php:method:: _delete()
     
-        Deletes all the elements associated with an element set.
+        Delete all the elements associated with an element set.
         
         :returns: void
 
     .. php:method:: _getNextElementOrder()
+    
+        Get an order value to place an Element at the end of this set.
+        
+        :returns: int
 
     .. php:method:: _validate()
+    
+        Validate the element set.
+        
+        Tests that name is non-empty and unique.
+
+    .. php:method:: getResourceId()
+    
+        Identify ElementSet records as relating to the ElementSets ACL resource.
+        
+        Required by Zend_Acl_Resource_Interface.
+        
+        :returns: string

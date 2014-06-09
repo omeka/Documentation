@@ -16,7 +16,7 @@ Omeka_Controller_AbstractActionController
         
         If this is left null, then results will not paginate. This is partiallybecause not every controller will want to paginate records and also toavoid BC breaks for plugins.
 
-    .. php:method:: __construct(Zend_Controller_Request_Abstract $request, Zend_Controller_Response_Abstract $response, array $invokeArgs = Array)
+    .. php:method:: __construct(Zend_Controller_Request_Abstract $request, Zend_Controller_Response_Abstract $response, array $invokeArgs)
     
         Base controller constructor.
         

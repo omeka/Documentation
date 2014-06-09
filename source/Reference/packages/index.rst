@@ -1,6 +1,6 @@
-########################
-Class Library by Package
-########################
+########
+Packages
+########
 
 .. toctree::
     :maxdepth: 1
@@ -11,7 +11,7 @@ Class Library by Package
     Captcha/index
     Controller/index
     Db/index
-    File/Derivative/index
+    File/Derivative/Strategy/index
     Filter/index
     Form/index
     Http/index

@@ -4,7 +4,7 @@
 body_tag
 ########
 
-:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+:doc:`View-related functions </Reference/packages/Function/View/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/body_tag.rst
 
-.. php:function:: body_tag(array $attributes = Array)
+.. php:function:: body_tag(array $attributes)
 
     Returns a <body> tag with attributes.
     

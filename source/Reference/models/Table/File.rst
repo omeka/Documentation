@@ -10,6 +10,24 @@ Table_File
     
 
 
+    .. php:method:: applySearchFilters($select, $params)
+    
+        :param unknown $select: 
+        :param unknown $params:
+
+    .. php:method:: filterBySince(Zend_Db_Select $select, string $dateSince, string $dateField)
+    
+        Filter select object by date since.
+        
+        :param Zend_Db_Select $select: 
+        :param string $dateSince: ISO 8601 formatted date
+        :param string $dateField: "added" or "modified"
+
+    .. php:method:: filterByHasDerivativeImage($select, $hasDerivative)
+    
+        :param unknown $select: 
+        :param unknown $hasDerivative:
+
     .. php:method:: getSelect()
     
         All files should only be retrieved if they join properly on the items
@@ -24,7 +42,7 @@ Table_File
         :param integer $itemId: 
         :returns: File
 
-    .. php:method:: findByItem(integer $itemId, array $fileIds = Array, string $sort = order)
+    .. php:method:: findByItem(integer $itemId, array $fileIds, string $sort = order)
     
         Retrieve files associated with an item.
         
@@ -32,6 +50,15 @@ Table_File
         :param array $fileIds: Optional If given, this will only retrieve files with these specific IDs.
         :param string $sort: The manner by which to order the files. For example: 'id': file id, 'filename' = alphabetical by filename. The default is 'order', following the user's specified order.
         :returns: array
+
+    .. php:method:: findOneByItem(integer $itemId, integer $index = 0, string $sort = order)
+    
+        Get a single file associated with an item, by index.
+        
+        :param integer $itemId: 
+        :param integer $index: 
+        :param string $sort: The manner by which to order the files. For example: 'id': file id, 'filename' = alphabetical by filename. The default is 'order', following the user's specified order.
+        :returns: File|null
 
     .. php:method:: findWithImages(integer $itemId, integer|null $index, string $sort = order)
     

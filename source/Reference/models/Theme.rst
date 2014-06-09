@@ -8,51 +8,85 @@ Theme
 
     A theme and its metadata.
     
-    Dummy model to simulate the other ActiveRecord models.
+    Unlike most other models, Themes are not stored in the database. This modelrelies only on INI data, but acts like an Omeka_Record_AbstractRecord model.
+
+    .. php:const:: THEME_IMAGE_FILE_NAME
+    
+    
+    
+        Filename for the theme screenshot.
+
+    .. php:const:: THEME_INI_FILE_NAME
+    
+    
+    
+        Filename for the theme INI file.
+
+    .. php:const:: THEME_CONFIG_FILE_NAME
+    
+    
+    
+        Filename for the theme config form INI file.
+
+    .. php:const:: PUBLIC_THEME_OPTION
+    
+    
+    
+        Option name for the current public theme.
+
+    .. php:const:: ADMIN_THEME_OPTION
+    
+    
+    
+        Option name for the current admin theme.
 
     .. php:attr:: path
     
-
+        Absolute path to the theme.
 
     .. php:attr:: directory
     
-
+        Directory name of the theme.
 
     .. php:attr:: image
     
-
+        Web path to the theme screenshot.
 
     .. php:attr:: author
     
-
+        The theme's author.
 
     .. php:attr:: title
     
-
+        The theme's title.
 
     .. php:attr:: description
     
-
+        The theme's description.
 
     .. php:attr:: license
     
-
+        The software license for the theme.
 
     .. php:attr:: website
     
-
+        A link to the theme's website.
 
     .. php:attr:: omeka_minimum_version
     
+        The minimum Omeka version the theme will run on.
 
-
-    .. php:method:: __construct($themeName)
+    .. php:method:: __construct(string $themeName)
     
-        :param unknown $themeName:
+        Set the INI and file data for the theme, given its directory name.
+        
+        :param string $themeName: Directory name.
 
-    .. php:method:: setDirectoryName($dir)
+    .. php:method:: setDirectoryName(string $dir)
     
-        :param unknown $dir:
+        Set the theme's directory name and path.
+        
+        :param string $dir: Directory name.
 
     .. php:method:: getScriptPath()
     
@@ -80,17 +114,23 @@ Theme
         :param string $pluginModuleName: (i.e., 'exhibit-builder')
         :returns: string Web path.
 
-    .. php:method:: setImage($fileName)
+    .. php:method:: setImage(string $fileName)
     
-        :param unknown $fileName:
+        Set the web path to the screenshot, if it exists.
+        
+        :param string $fileName: Relative filename of the image to check.
 
-    .. php:method:: setIni($fileName)
+    .. php:method:: setIni(string $fileName)
     
-        :param unknown $fileName:
+        Load data from the INI file at the given path.
+        
+        :param string $fileName: Relative filename of the INI file.
 
-    .. php:method:: setConfig($fileName)
+    .. php:method:: setConfig(string $fileName)
     
-        :param unknown $fileName:
+        Check for a theme config file at the given location.
+        
+        :param string $fileName: Relative filename of the theme config.ini.
 
     .. php:method:: getCurrentThemeName(string $type)
     
@@ -118,7 +158,6 @@ Theme
         
         :param string $themeName:  The name of the theme
         :param array $themeConfigOptions: An associative array of configuration options, where each key is a configuration form input name and each value is a string value of that configuration form input
-        :returns: void
 
     .. php:method:: getOptions(string $themeName)
     
@@ -141,13 +180,13 @@ Theme
         
         :param string $themeName:  The name of the theme
         :param string $themeOptionName: The name of the theme option
-        :param unknown $themeOptionValue: 
-        :returns: void
+        :param unknown $themeOptionValue:
 
     .. php:method:: getOptionName(string $themeName)
     
-        Get the name of a specific theme's option.  Each theme has a single option in the option's table, 
-        which stores all of the configuration options for that theme
+        Get the name of a specific theme's option.  Each theme has a single
+        option in the option's table, which stores all of the configuration
+        options for that theme
         
         :param string $themeName:  The name of the theme
         :returns: string The name of a specific theme's option.

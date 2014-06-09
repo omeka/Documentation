@@ -4,7 +4,7 @@
 get_recent_files
 ################
 
-:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+:doc:`Db-related functions </Reference/packages/Function/Db/index>`
 
 *******
 Summary

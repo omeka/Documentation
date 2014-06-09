@@ -4,7 +4,7 @@
 metadata
 ########
 
-:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+:doc:`View-related functions </Reference/packages/Function/View/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/metadata.rst
 
-.. php:function:: metadata(Omeka_Record_AbstractRecord|string $record, mixed $metadata, array $options = Array)
+.. php:function:: metadata(Omeka_Record_AbstractRecord|string $record, mixed $metadata, array $options)
 
     Return a piece or pieces of metadata for a record.
     

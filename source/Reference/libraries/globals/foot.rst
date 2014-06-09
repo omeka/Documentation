@@ -4,7 +4,7 @@
 foot
 ####
 
-:doc:`Foot-related functions </Reference/packages/Function/View/Foot/index>`
+:doc:`Layout-related functions </Reference/packages/Function/View/Layout/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/foot.rst
 
-.. php:function:: foot(array $vars = Array, string $file = footer)
+.. php:function:: foot(array $vars, string $file = footer)
 
     Return the view's footer HTML.
     

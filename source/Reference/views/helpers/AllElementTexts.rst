@@ -17,6 +17,10 @@ Omeka_View_Helper_AllElementTexts
     
         Flag to indicate whether to show elements that do not have text.
 
+    .. php:attr:: _showElementSetHeadings
+    
+        Whether to include a heading for each Element Set.
+
     .. php:attr:: _emptyElementString
     
         String to display if elements without text are shown.
@@ -33,7 +37,7 @@ Omeka_View_Helper_AllElementTexts
     
         Path for the view partial.
 
-    .. php:method:: allElementTexts(Omeka_Record_AbstractRecord|string $record, array $options = Array)
+    .. php:method:: allElementTexts(Omeka_Record_AbstractRecord|string $record, array $options)
     
         Get the record metadata list.
         
@@ -95,7 +99,7 @@ Omeka_View_Helper_AllElementTexts
         
         :returns: string|array
 
-    .. php:method:: _loadViewPartial(array $vars = Array)
+    .. php:method:: _loadViewPartial(array $vars)
     
         Load a view partial to display the data.
         

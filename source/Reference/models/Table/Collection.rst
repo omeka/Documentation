@@ -11,9 +11,7 @@ Table_Collection
         :param unknown $select: 
         :param unknown $params:
 
-    .. php:method:: _getColumnPairs()
-
-    .. php:method:: findPairsForSelectForm($options = Array)
+    .. php:method:: findPairsForSelectForm($options)
     
         :param unknown $options:
 
@@ -24,22 +22,6 @@ Table_Collection
         :returns: void
 
     .. php:method:: findRandomFeatured()
-
-    .. php:method:: filterByPublic($select, $isPublic)
-    
-        Apply a filter to the collections based on whether or not they are public
-        
-        :param unknown $select: 
-        :param unknown $isPublic: 
-        :returns: void
-
-    .. php:method:: filterByFeatured($select, $isFeatured)
-    
-        Apply a filter to the collections based on whether or not they are featured
-        
-        :param unknown $select: 
-        :param unknown $isFeatured: 
-        :returns: void
 
     .. php:method:: applySorting(Omeka_Db_Select $select, string $sortField, string $sortDir)
     

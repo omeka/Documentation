@@ -4,7 +4,7 @@
 all_element_texts
 #################
 
-:doc:`Body-related functions </Reference/packages/Function/View/Body/index>`
+:doc:`View-related functions </Reference/packages/Function/View/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/all_element_texts.rst
 
-.. php:function:: all_element_texts(Omeka_Record_AbstractRecord|string $record, array $options = Array)
+.. php:function:: all_element_texts(Omeka_Record_AbstractRecord|string $record, array $options)
 
     Return the set of all element text metadata for a record.
     

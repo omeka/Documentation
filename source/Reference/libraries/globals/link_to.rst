@@ -4,7 +4,7 @@
 link_to
 #######
 
-:doc:`Link-related functions </Reference/packages/Function/View/Body/Navigation/Link/index>`
+:doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/link_to.rst
 
-.. php:function:: link_to(Omeka_Record_AbstractRecord|string $record, string $action, string $text, array $props = Array, array $queryParams = Array)
+.. php:function:: link_to(Omeka_Record_AbstractRecord|string $record, string $action, string $text, array $props, array $queryParams)
 
     Return a link tag.
     

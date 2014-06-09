@@ -4,7 +4,7 @@
 head
 ####
 
-:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+:doc:`Layout-related functions </Reference/packages/Function/View/Layout/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/head.rst
 
-.. php:function:: head(array $vars = Array, string $file = header)
+.. php:function:: head(array $vars, string $file = header)
 
     Return the view's header HTML.
     

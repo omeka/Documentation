@@ -107,7 +107,7 @@ Omeka_File_Ingest_AbstractSourceIngest
         :param Item $item: 
         :returns: void
 
-    .. php:method:: factory(string $adapterName, Item $item, array $options = Array)
+    .. php:method:: factory(string $adapterName, Item $item, array $options)
     
         Factory to retrieve Omeka_File_Ingest_* instances.
         
@@ -149,7 +149,7 @@ Omeka_File_Ingest_AbstractSourceIngest
         :param Exception $e: 
         :returns: void
 
-    .. php:method:: _createFile(string $newFilePath, string $oldFilename, array $elementMetadata = Array)
+    .. php:method:: _createFile(string $newFilePath, string $oldFilename, array $elementMetadata)
     
         Insert a File record corresponding to an ingested file and its metadata.
         

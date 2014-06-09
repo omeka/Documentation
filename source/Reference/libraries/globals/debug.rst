@@ -4,7 +4,7 @@
 debug
 #####
 
-:doc:`Development-related functions </Reference/packages/Function/Development/index>`
+:doc:`Log-related functions </Reference/packages/Function/Log/index>`
 
 *******
 Summary

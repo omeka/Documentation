@@ -18,6 +18,10 @@ Mixin_Tag
     
 
 
+    .. php:attr:: _tagsToSave
+    
+
+
     .. php:method:: __construct(Omeka_Record_AbstractRecord $record)
     
         :param Omeka_Record_AbstractRecord $record:
@@ -31,8 +35,6 @@ Mixin_Tag
 
     .. php:method:: afterSave($args)
     
-        Add tags to this record's search text.
-        
         :param unknown $args:
 
     .. php:method:: deleteTaggings()
@@ -44,7 +46,7 @@ Mixin_Tag
         
         :returns: array of Taggings
 
-    .. php:method:: getTags($order = Array)
+    .. php:method:: getTags($order)
     
         Get all the Tag records associated with this record
         
@@ -77,25 +79,30 @@ Mixin_Tag
 
     .. php:method:: addTags(array|string $tags, $delimiter)
     
-        Add tags for the record
+        Set tags to be saved to the record.
         
         :param array|string $tags: Either an array of tags or a delimited string
         :param unknown $delimiter: 
         :returns: void
 
-    .. php:method:: diffTagString($string, $tags, $delimiter)
+    .. php:method:: applyTags(array $inputTags)
+    
+        Apply tags
+        
+        :param array $inputTags:
+
+    .. php:method:: diffTags($inputTags, $tags)
     
         Calculate the difference between a tag string and a set of tags
         
-        :param unknown $string: 
+        :param unknown $inputTags: 
         :param unknown $tags: 
-        :param unknown $delimiter: 
         :returns: array Keys('removed','added')
 
-    .. php:method:: applyTagString(string $string, $delimiter)
+    .. php:method:: applyTagString(string $string, string|null $delimiter)
     
-        This will add tags that are in the tag string and remove those that are no longer in the tag string
+        This will add tags that are in the tag string and remove those that are 
+        no longer in the tag string
         
         :param string $string: A string of tags delimited by $delimiter
-        :param unknown $delimiter: 
-        :returns: void
+        :param string|null $delimiter:

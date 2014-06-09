@@ -38,19 +38,6 @@ Table_Item
         :param Zend_Db_Select $select: 
         :param unknown $terms:
 
-    .. php:method:: filterByPublic($select, $isPublic)
-    
-        Apply a filter to the items based on whether or not they should be public
-        
-        :param unknown $select: 
-        :param unknown $isPublic: 
-        :returns: void
-
-    .. php:method:: filterByFeatured($select, $isFeatured)
-    
-        :param unknown $select: 
-        :param unknown $isFeatured:
-
     .. php:method:: filterByCollection($select, $collection)
     
         Filter the SELECT statement based on an item's collection
@@ -79,15 +66,6 @@ Table_Item
         :param unknown $tags: 
         :returns: void
 
-    .. php:method:: filterByUser($select, integer $userId, $isUser = 1)
-    
-        Filter the SELECT based on the user who owns the item
-        
-        :param unknown $select: 
-        :param integer $userId:  ID of the User to filter by
-        :param unknown $isUser: 
-        :returns: void
-
     .. php:method:: filterByExcludedTags($select, $tags)
     
         Filter SELECT statement based on items that are not tagged with a specific
@@ -108,9 +86,6 @@ Table_Item
 
     .. php:method:: applySearchFilters($select, $params)
     
-        Possible options: 'public','user','featured','collection','type','tag',
-        'excludeTags', 'search', 'range', 'advanced', 'hasImage',
-        
         :param unknown $select: 
         :param unknown $params: 
         :returns: void

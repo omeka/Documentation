@@ -4,7 +4,7 @@
 latest_omeka_version
 ####################
 
-:doc:`Application-related functions </Reference/packages/Function/Application/index>`
+:doc:`Utility-related functions </Reference/packages/Function/Utility/index>`
 
 *******
 Summary

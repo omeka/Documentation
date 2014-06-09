@@ -21,7 +21,7 @@ Omeka_View
     
         Flag indicated whether theme custom scripts have been loaded.
 
-    .. php:method:: __construct(array $config = Array)
+    .. php:method:: __construct(array $config)
     
         :param array $config: View configuration.
 

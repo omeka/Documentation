@@ -4,7 +4,7 @@
 queue_js_url
 ############
 
-:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+:doc:`Asset-related functions </Reference/packages/Function/View/Asset/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/queue_js_url.rst
 
-.. php:function:: queue_js_url($url, array $options = Array)
+.. php:function:: queue_js_url($url, array $options)
 
     Declare a URL to a JavaScript file to be used on the page.
     

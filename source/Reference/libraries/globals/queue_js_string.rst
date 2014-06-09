@@ -4,7 +4,7 @@
 queue_js_string
 ###############
 
-:doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
+:doc:`Asset-related functions </Reference/packages/Function/View/Asset/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/queue_js_string.rst
 
-.. php:function:: queue_js_string(string $string, array $options = Array)
+.. php:function:: queue_js_string(string $string, array $options)
 
     Declare a JavaScript string to be used on the page and included in the page's 
     head.

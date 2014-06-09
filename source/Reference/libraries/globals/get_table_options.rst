@@ -4,7 +4,7 @@
 get_table_options
 #################
 
-:doc:`Form-related functions </Reference/packages/Function/View/Body/Form/index>`
+:doc:`Form-related functions </Reference/packages/Function/View/Form/index>`
 
 *******
 Summary
@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/get_table_options.rst
 
-.. php:function:: get_table_options(string $tableClass, string $labelOption, array $searchParams = Array)
+.. php:function:: get_table_options(string $tableClass, string $labelOption, array $searchParams)
 
     Get the options array for a given table.
     

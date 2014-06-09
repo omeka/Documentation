@@ -6,7 +6,7 @@ Omeka_View_Helper_Url
 
     Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
-    .. php:method:: url($options = Array, $name, $queryParams = Array, $reset = , $encode = 1)
+    .. php:method:: url($options, $name, $queryParams, $reset = , $encode = 1)
     
         Generate a URL for use in one of Omeka's view templates.
         

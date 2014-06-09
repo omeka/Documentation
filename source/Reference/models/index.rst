@@ -12,6 +12,7 @@ Models
     Item
     ItemType
     ItemTypesElements
+    Key
     Option
     Plugin
     Process
