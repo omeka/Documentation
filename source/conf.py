@@ -40,7 +40,7 @@ extensions = ['sphinx.ext.todo', 'sphinxcontrib.phpdomain']
 
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = [u'_templates']
+#templates_path = [u'_templates']
 
 
 # The suffix of source filenames.
@@ -101,7 +101,7 @@ exclude_patterns = ['Reference/libraries/globals/examples', 'Reference/libraries
 #show_authors = False
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'solarizedlight'
+#pygments_style = 'solarizedlight'
 
 # A list of ignored prefixes for module index sorting.
 #modindex_common_prefix = []
@@ -119,9 +119,6 @@ html_theme = u'default'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {}
-
-# Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ['_templates']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
@@ -268,3 +265,6 @@ texinfo_documents = [
 # -- Additional options --------------------------------------------------------
 
 todo_include_todos = True
+
+def setup(app):
+    app.add_stylesheet('overrides.css')

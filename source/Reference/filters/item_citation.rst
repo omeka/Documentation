@@ -28,9 +28,10 @@ Arguments
 Examples
 ********
 
+.. code-block:: php
+
     class MyPlugin extends :php:class:`Omeka_Plugin_AbstractPlugin`
     {
-    
         protected $_filters = array('item_citation');
         
         public filterItemCitation($citation, $args)

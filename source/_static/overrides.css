@@ -1,7 +1,3 @@
-p.topless {
-    word-wrap: break-word;
-}
-
-pre {
-    background: #fdf6e3;
+.wy-side-nav-search, .wy-nav-top {
+    background-color: #9F1D20 !important;
 }

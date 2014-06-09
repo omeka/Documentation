@@ -23,15 +23,23 @@ Examples
 
 .. code-block:: php
 
-    class SimplePagesPlugin extends Omeka_Plugin_AbstractPlugin
+    class ExamplePlugin extends Omeka_Plugin_AbstractPlugin
     {
-        protected $_hooks = array('config');
-                
-         /**
+        protected $_hooks = array('config', 'config_form');
+
+        /* --snip-- */
+
+        /**
          * Set the options from the config form input.
          */
-        function hookConfig()
+        function hookConfig($args)
         {
-            set_option('simple_pages_filter_page', (int)(boolean)$_POST['simple_pages_filter_page']);
+            set_option('example_plugin_setting', $args['post']['example_plugin_setting']);
         }
     }
+
+********
+See Also
+********
+
+* :doc:`config_form`

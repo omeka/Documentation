@@ -29,7 +29,7 @@ Filtering Queries
 :php:meth:`Omeka_Db_Table::findBy` calls method :php:meth:`Omeka_Db_Table::applySearchFilters`. It 
 takes a ``$select`` argument, and a ``$params`` argument.  By default, this method simply checks 
 the ``$params`` array passed in, looking for keys that match column names. For each match, 
-a ``WHERE`` clause.
+a ``WHERE`` clause is generated.
 
 Sometimes, though, it makes sense to add more complex logic. For example, you might want to filter
 a query by conditions on joining another table, or you might need to call a method in your subclass
