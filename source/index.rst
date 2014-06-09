@@ -12,7 +12,8 @@ For documentation for end-users and site administrators, or for information abou
 
 .. toctree::
    :maxdepth: 2
-   
+
+   whatsnew/index
    Tutorials/index
    Reference/index
 

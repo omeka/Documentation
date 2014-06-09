@@ -1,8 +1,47 @@
+#######################
+What's new in Omeka 2.0
+#######################
+
+.. _principlesOfOmeka2:
+
+***********************
+Principles of Omeka 2.0
+***********************
+
+People who are familiar with conventions and patterns from Omeka 1.x will see many changes. Here are some ofbroad principles that went into the changes to Omeka 2.0
+
+Record-independent Functionality
+================================
+
+The design of Omeka 1.x tended to treat different database records as superficially very different, despite the fact they all inherit from the same class. Thus, we had functions ``item()`` alongside ``collection()``, both of which performed very similar jobs of retrieving data from a record. Similarly, we had ``loop_items()`` and ``loop_collections()``. That pattern extended into our plugins, e.g. ``simple_page()`` and ``loop_simple_pages()``. This created excessive duplication of functionality.
+
+In Omeka 2.0, we instead concentrated on the similarity across all records, designing single functions for similar tasks that work by either passing in a record or by passing in the name of the record type current in a view. For example, to retrieve the id from the current item in a view, use ``metadata('item', 'id')``. For a collection: ``metadata('collection', 'id')``.
+
+This requires some attention to the names of your models and how they are assigned to the view. The first parameter to ``metadata()`` will be made singular, with the assumption that the view object has a record assigned to that property name. Similarly, looping assumes a plural form, an sets the current record to the singular name.
+
+New Function Conventions
+========================
+
+To make our function names more consistent and easier to understand, we have introduced
+the following conventions:
+
+* Functions that return an array or object begin with ``get_``
+* Functions that return a boolean begin with ``is_`` or ``has_``
+* Functions do not echo a string, instead they return the string
+
+New Class Naming Conventions
+============================
+
+In anticipation of an eventual move to using Zend Framework 2, we have reorganized our directories and class names to conform with those conventions. Abstract classes and interfaces now reflect that status in their names, and class names are generally laid out to read more naturally.
+
+Also, the classes representing records and the table for them are no longer in the same directory. Instead, there is a ``Table`` directory inside the directory containing the models. The name of the table class should be the model's class name prefixed with ``Table_``, e.g. ``Table_SimplePagesPage``. 
+
+
 .. _migrating:
 
-################################
+********************************
 Migrating your code to Omeka 2.0
-################################
+********************************
 
 There are significant changes moving from Omeka 1.5 to Omeka 2.0. :ref:`principlesOfOmeka2` offers an overall
 guide to the principles, both for theme developers and plugin developers.
@@ -10,9 +49,8 @@ guide to the principles, both for theme developers and plugin developers.
 Here, you will find a skeleton of typical tasks that will be required to migrate your code. Consult the
 :doc:`reference section </Reference/index>` for code details.
 
-*****************
 Omeka an Archive?
-*****************
+=================
 
 While archivists can (and many do) use Omeka as a presentation layer to their 
 digital holdings, Omeka is not archival management software. To underscore this 
@@ -32,9 +70,8 @@ earlier versions to 2.0:
       
       $ mv /path/to/omeka/archive/ /path/to/omeka/files/
 
-*********************
 Logging and Debugging
-*********************
+=====================
 
 Developers of both themes and plugins will need to be aware of the following changes in Omeka's ``.htaccess`` file and ``config.ini`` file in ``application/config``. Compare your existing files to the new ``.htaccess.changeme`` and ``config.ini.changeme`` files
 
@@ -55,9 +92,8 @@ Developers of both themes and plugins will need to be aware of the following cha
      :ref:`fdebug` uses DEBUG priority, so to see messages logged by that function you must set the log priorty
      to DEBUG in ``config.ini``. 
 
-*****************
 Upgrading Plugins
-*****************
+=================
 
 As you look through the lists of typical tasks below, you might also want to consult :ref:`bestPracticesPlugins`
 
@@ -79,10 +115,10 @@ Typical tasks you will need to do to upgrade your plugins for Omeka 2.0 are:
   be ``<?php echo head(); ?>``.
 
 Database
-========
+--------
 
 Record classes
---------------
+++++++++++++++
 
 * The abstract class records extend from is now :php:class:`Omeka_Record_AbstractRecord`, not ``Omeka_Record``
 * The following callbacks have been **removed**, along with their associated plugin hooks:
@@ -100,7 +136,7 @@ Record classes
 * The ``saveForm`` and ``forceSave`` methods are **removed**. Use :php:meth:`Omeka_Record_AbstractRecord::save` instead.
 
 Table classes
--------------
++++++++++++++
 
 * SQL aliases are no longer the initials of the underlying table, they are the full table name (without the prefix).
   For example, the Items table alias was ``i`` in Omeka 1.x, but it is now ``items``. You can call
@@ -109,7 +145,7 @@ Table classes
   built-in tables use this new naming scheme.
 
 Built-in records
-----------------
+++++++++++++++++
 
 * The ``Entity``, ``EntitiesRelations``, and ``EntityRelationships`` models, and their underlying tables are
   **removed**. Any code relying on them must be changed or removed.
@@ -117,7 +153,7 @@ Built-in records
   * :php:class:`User` now directly stores the name and email data for users that was previously in the ``Entity``.
 
 Built-in mixins
----------------
++++++++++++++++
 
 * All mixins now have a prefix of ``Mixin_`` on their class name, and have a new naming convention:
 
@@ -127,7 +163,7 @@ Built-in mixins
   * ``PublicFeatured`` is now :php:class:`Mixin_PublicFeatured`.
 
 ACL and Permissions
-===================
+-------------------
 
 * ``Omeka_Acl`` is **removed**. All references to ``Omeka_Acl`` should be to ``Zend_Acl`` instead.
 
@@ -139,7 +175,7 @@ ACL and Permissions
         $acl->isAllowed(current_user(), 'Resource', 'privilege');
 
 Controllers
-===========
+-----------
 
 * Many methods that were previously directly called on a Controller are now controller helpers instead.
 
@@ -178,7 +214,7 @@ Controllers
         $this->_helper->flashMessenger('An error message.', 'error');
 
 Omeka_Context
-=============
+-------------
 
 * ``Omeka_Context`` is **removed**. Resources are instead available directly through ``Zend_Registry`` or through
   the bootstrap object::
@@ -186,10 +222,10 @@ Omeka_Context
       $acl = Zend_Registry::get('bootstrap')->getResource('Acl');
 
 Views
-=====
+-----
 
 Admin Views
------------
++++++++++++
 
 * Many new CSS classes are available and should be used to ensure a consistent look and feel across Omeka plugins.
   It will be helpful to become familiar with them. For example, this is the new code structure to use if you need
@@ -209,9 +245,8 @@ Admin Views
 * Admin theme now displays an ``<h1>`` with the title you set for the page. You can remove those from your admin views. 
 * Use new save panel features. For ease of use in the most common cases, the :php:class:`Omeka_Form_Admin` is available.
  
-***************
 Updating Themes
-***************
+===============
 
 The number of global functions has been cut nearly in half in Omeka 2.0. This will require many changes to your themes,
 but will also make the patterns of usage much easier to follow and much more consistent.

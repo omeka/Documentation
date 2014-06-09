@@ -2,15 +2,6 @@
 Tutorials
 #########
 
-=======================
-What's new in Omeka 2.0
-=======================
-
-.. toctree::
-   
-   principlesOfOmeka2
-   migratingCodeTo2.0
-
 =============
 Plugin Basics
 =============
