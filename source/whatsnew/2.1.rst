@@ -1,0 +1,27 @@
+#######################
+What's new in Omeka 2.1
+#######################
+
+.. note::
+
+    Because of an update to Zend Framework, Omeka's PHP version requirement increases to
+    5.2.11 in Omeka 2.1.
+
+========
+REST API
+========
+
+Omeka 2.1 adds a REST API. The standard Omeka data types like Item, Collection, File,
+and Item Type are exposed, and plugins can hook into the API as well to add new
+resources or add data to existing ones.
+
+For in-depth information about the API, see
+:doc:`the REST API section of the documentation </Reference/api/index>`.
+
+=========
+New hooks
+=========
+
+* :doc:`/Reference/hooks/activate`
+* :doc:`/Reference/hooks/deactivate`
+* :doc:`/Reference/hooks/admin_collections_show_sidebar`

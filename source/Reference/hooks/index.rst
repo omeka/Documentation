@@ -17,6 +17,20 @@ All Hooks
     
     *
     
+***************
+Plugin-specific
+***************
+
+.. toctree::
+   :maxdepth: 1
+
+   activate
+   config
+   config_form
+   deactivate
+   install
+   uninstall
+   upgrade
 
 ***********
 Application
@@ -26,14 +40,9 @@ Application
     :glob:
     :maxdepth: 1
     
-    config
-    config_form
-    install
     initialize
     define_acl
     define_routes
-    uninstall
-    upgrade
 
 ********
 Database
