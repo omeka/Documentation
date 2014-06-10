@@ -18,6 +18,12 @@ resources or add data to existing ones.
 For in-depth information about the API, see
 :doc:`the REST API section of the documentation </Reference/api/index>`.
 
+=============
+New Functions
+=============
+
+* :php:func:`get_record`
+
 =========
 New hooks
 =========
