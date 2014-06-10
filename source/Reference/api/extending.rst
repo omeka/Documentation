@@ -9,7 +9,7 @@ Registering Your Resource
 You can extend the API to include custom resources. Most resources are
 correlated to Omeka records, but you may include non-record resources as
 well. In your plugin class, register your resource using the
-``api_resources`` filter, following this format:
+:doc:`/Reference/filters/api_resources` filter, following this format:
 
 .. code-block:: php
 
@@ -154,7 +154,8 @@ Extending Existing Resources
 ----------------------------
 
 You can extend the representations of existing resources by using the
-``api_extend_*`` filter, where \* is the resource you want to extend.
+:doc:`/Reference/filters/api_extend_\<resource\>` filter, where
+<resource> is the resource you want to extend.
 
 .. code-block:: php
 

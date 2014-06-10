@@ -2,6 +2,7 @@
 api_extend_<resource>
 #####################
 
+.. versionadded:: 2.1
 
 *****
 Usage

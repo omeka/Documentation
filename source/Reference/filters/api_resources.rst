@@ -2,6 +2,8 @@
 api_resources
 #############
 
+.. versionadded:: 2.1
+
 *****
 Usage
 *****

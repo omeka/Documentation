@@ -25,3 +25,10 @@ New hooks
 * :doc:`/Reference/hooks/activate`
 * :doc:`/Reference/hooks/deactivate`
 * :doc:`/Reference/hooks/admin_collections_show_sidebar`
+
+===========
+New filters
+===========
+
+* :doc:`/Reference/filters/api_resources`
+* :doc:`/Reference/filters/api_extend_\<resource\>`
