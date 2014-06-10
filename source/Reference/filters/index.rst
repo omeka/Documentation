@@ -121,6 +121,3 @@ Public Views
     body_tag_attributes
 
 
-Shared Views
-============
-

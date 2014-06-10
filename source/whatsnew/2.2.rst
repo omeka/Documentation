@@ -1,0 +1,50 @@
+#######################
+What's new in Omeka 2.2
+#######################
+
+=======
+Classes
+=======
+
+* :php:class:`Omeka_File_Derivative_Creator`
+* :php:class:`Omeka_File_Derivative_Strategy_ExternalImageMagick`
+* :php:class:`Omeka_File_Derivative_Strategy_Imagick`
+* :php:class:`Omeka_Form_Element_Input`
+* :php:class:`Omeka_Validate_HexColor`
+* :php:class:`Omeka_View_Helper_FormInput`
+* :php:class:`Omeka_View_Helper_Shortcodes`
+* Removed :php:class:`!Omeka_File_Derivative_Image_Creator`
+
+==========
+Interfaces
+==========
+
+* :php:interface:`Omeka_File_Derivative_StrategyInterface`
+
+=======
+Methods
+=======
+
+* :php:meth:`Omeka_Record_AbstractRecord::getFile`
+
+=========
+Functions
+=========
+
+* :php:func:`add_file_fallback_image`
+* :php:func:`add_shortcode`
+* :php:func:`record_image`
+* :php:func:`recent_items`
+
+=====
+Hooks
+=====
+
+* :doc:`admin_users_panel_buttons </Reference/hooks/admin_<type>_panel_buttons>`
+
+=======
+Filters
+=======
+
+* :doc:`/Reference/filters/admin_files_form_tabs`
+* :doc:`/Reference/filters/admin_navigation_users`

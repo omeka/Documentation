@@ -18,7 +18,7 @@ Arguments
 :php:class:`Omeka_View` view
     The view object
     
-:php:class:`Omeka_Record_AbstractRecord`|null record
+:php:class:`Omeka_Record_AbstractRecord`\|null record
     The record being edited, if a record was passed in when creating the form. Otherwise, null.
 
     

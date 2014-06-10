@@ -14,7 +14,7 @@ Append content just below the save panel fields when editing using the :php:clas
 Arguments
 *********
 
-:php:class:`Omeka_Record_AbstractRecord`|null record
+:php:class:`Omeka_Record_AbstractRecord`\|null record
     The record being edited, if one was passed in when the form was created. Otherwise, null
 
 :php:class:`Omeka_View` view
