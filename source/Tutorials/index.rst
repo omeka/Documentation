@@ -50,14 +50,6 @@ International Locale Support
 
     i18n
 
-======================
-User-Submitted Recipes
-======================
-
-.. toctree::
-
-   recipeForRetainingSearchSortOrderWhenPaging
-
 ==================================
 Extending Omeka's Standard Plugins
 ==================================
@@ -65,3 +57,12 @@ Extending Omeka's Standard Plugins
 .. toctree::
 
     extendingExhibitBuilder
+    shortcodes
+
+======================
+User-Submitted Recipes
+======================
+
+.. toctree::
+
+   recipeForRetainingSearchSortOrderWhenPaging

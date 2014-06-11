@@ -2,6 +2,16 @@
 What's new in Omeka 2.2
 #######################
 
+==========
+Shortcodes
+==========
+
+Omeka 2.2 adds support for shortcodes, allowing users to embed complex content
+into free-text fields with a simple syntax. You can read more about
+using shortcodes `on the Omeka Codex <http://omeka.org/codex/Shortcodes>`_ or
+about supporting shortcodes in your own add-ons in the new Tutorial
+:doc:`/Tutorials/shortcodes`.
+
 =======
 Classes
 =======
