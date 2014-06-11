@@ -10,7 +10,7 @@ Plugin Basics
     
     bestPracticesPlugins
     understandingHooks
-    understandingFilters   
+    understandingFilters
 
 ==========================
 Essential Classes in Omeka
@@ -33,9 +33,9 @@ The Admin Theme
     understandingOmeka_Form_Admin
     understandingFormElements
 
-================
-Modifying Themes
-================
+=============
+Public Themes
+=============
 
 .. toctree::
 
@@ -50,9 +50,9 @@ International Locale Support
 
     i18n
 
-==================================
-Extending Omeka's Standard Plugins
-==================================
+========================================
+Extending Omeka and the Standard Plugins
+========================================
 
 .. toctree::
 

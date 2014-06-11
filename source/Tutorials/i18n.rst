@@ -171,7 +171,7 @@ Format
 ------
 
 ``format_date`` uses Zend_Date internally, so the Zend documentation is
-the place to go for an `exhaustive list of available formats <http://framework.zend.com/manual/1.12/en/zend.date.constants.html#zend.date.constants.list>`.
+the place to go for an `exhaustive list of available formats <http://framework.zend.com/manual/1.12/en/zend.date.constants.html#zend.date.constants.list>`_.
 
 Format constants starting with ``DATE`` are used for displaying dates
 without a specific time, ones starting with ``DATETIME`` are used for

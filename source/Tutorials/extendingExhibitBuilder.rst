@@ -42,7 +42,7 @@ Basic structure of an exhibit layout
 ************************************
 
 Each layout has its own folder under the path mentioned above. The folder name
-is the layouts ID, which will be used internally by the Exhibit Builder to find
+is the layout's ID, which will be used internally by the Exhibit Builder to find
 and store the layouts picked by the user. An ID is simply a text string, and
 the convention is that layout IDs be ASCII, lowercase, and hyphen-separated:
 ``sample-layout``, not ``SampleLayout`` or ``SampleLayout``.
