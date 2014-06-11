@@ -37,10 +37,10 @@ Examples
     
         protected $_filters = array('items_browse_params');
         
-        public filterItemsBrowseParams($params)
+        public function filterItemsBrowseParams($params)
         {
             //always sort by title instead of order
-            $params['sort_param'] = "Dublin Core,Title";
+            $params['sort_field'] = "Dublin Core,Title";
             return $params;
         }    
     }
