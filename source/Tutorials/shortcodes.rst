@@ -33,7 +33,7 @@ The callback will be called whenever a shortcode is encountered in text, and
 is responsible for returning the markup that will actually be rendered on the
 page in place of the shortcode. Two parameters are passed to the callback.
 The first is an array of the arguments the user included in the shortcode (i.e.
-``[some-shortcode arg1="value 1" arg2="value 2"]`` results in
+``[my_shortcode arg1="value 1" arg2="value 2"]`` results in
 ``array('arg1' => 'value 1', 'arg2' => 'value 2')`` as the first parameter). The
 second argument is an :php:class:`Omeka_View` instance, to simplify calling
 view helpers or reading data from the view.
