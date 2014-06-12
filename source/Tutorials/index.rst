@@ -42,6 +42,14 @@ Public Themes
    modifyingThemes
    workingWithPublicThemes
 
+============
+File Display
+============
+
+.. toctree::
+
+   fallbackThumbnails
+
 ============================
 International Locale Support
 ============================
