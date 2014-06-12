@@ -1,3 +1,13 @@
 .wy-side-nav-search, .wy-nav-top {
     background-color: #9F1D20 !important;
 }
+
+#omeka-developer-documentation > .toctree-wrapper > ul > li {
+    list-style-type: none
+    margin-top: 2em;
+    margin-left: 0;
+}
+
+#omeka-developer-documentation > .toctree-wrapper > ul > li > a {
+    font-size: 1.6em;
+}
