@@ -13,7 +13,6 @@ Value
 *****
 
 ``array`` $nav
-
     An array of arrays as used by Zend_Navigation.
     
 
