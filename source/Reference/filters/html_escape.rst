@@ -13,7 +13,6 @@ Value
 *****
 
 ``string`` $string
-
     The string to escape
 
 *********

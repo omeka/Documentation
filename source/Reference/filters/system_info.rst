@@ -13,7 +13,6 @@ Value
 *****
 
 ``array`` $info
-
     The array of system information
 
 *********
@@ -31,5 +30,5 @@ Examples
 See Also
 ********
 
-:php:meth:`SystemInfoController::_getInfoArray`
+* :php:meth:`SystemInfoController::_getInfoArray`
 

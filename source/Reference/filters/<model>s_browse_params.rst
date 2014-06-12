@@ -17,7 +17,6 @@ Value
 *****
 
 ``array`` $params
-
     Params passed to the browse query. May include both filtering and sorting parameters
 
 *********

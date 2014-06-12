@@ -13,7 +13,6 @@ Value
 *****
 
 :php:class:`Omeka_Form_Login` $form
-
     Omeka's login form.
 
 *********

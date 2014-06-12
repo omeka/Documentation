@@ -17,7 +17,6 @@ Value
 *****
 
 ``string`` $themeOptions
-
     The set of all theme configuration options for a theme. This is a serialized array. 
 
 *********
@@ -25,7 +24,6 @@ Arguments
 *********
 
 ``string`` theme_name
-
     The name of the theme
 
 ********

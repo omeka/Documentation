@@ -14,7 +14,6 @@ Value
 *****
 
 ``array`` $navArray
-
     An array of arrays as used by Zend_Navigation.
 
 *********

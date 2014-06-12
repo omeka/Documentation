@@ -17,7 +17,6 @@ Value
 *****
 
 ``array`` $extend 
-
    Array of representations that extend the resource
    
 *********
@@ -25,7 +24,6 @@ Arguments
 *********
 
 :php:class:`Omeka_Record_AbstractRecord` record
-
    The record whose representation in the API you are extending
    
 ********

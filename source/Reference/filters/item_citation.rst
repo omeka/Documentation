@@ -13,7 +13,6 @@ Value
 *****
 
 ``string`` $citation
-
     The citation created by Omeka
 
 *********
@@ -21,7 +20,6 @@ Arguments
 *********
 
 :php:class:`Item` item
-
     The item for the citation
 
 ********

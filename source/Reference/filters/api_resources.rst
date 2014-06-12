@@ -15,7 +15,6 @@ Value
 *****
 
 ``array`` $apiResources
-
    An array of the resources registered with the API
    
 *********

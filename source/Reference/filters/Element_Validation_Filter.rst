@@ -23,7 +23,6 @@ Value
 *****
 
 ``bool`` $isValid
-
     Whether the element text is valid.
 
 *********
@@ -31,15 +30,12 @@ Arguments
 *********
 
 ``string``  text
-
     The text for the element
     
 :php:class:`Omeka_Record_AbstractRecord` record
-
     The record (subclass of Omeka_Record_AbstractRecord) being validated.
     
 :php:class:`Element` element
-
     The element (e.g., Dublin Core Title) for the element text.
 
 ********

@@ -13,7 +13,6 @@ Value
 *****
 
 ``array`` $whitelist
-    
     An array containing arrays of controller-view pairs that do not require logging in to access
 
 

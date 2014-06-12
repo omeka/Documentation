@@ -13,7 +13,6 @@ Value
 *****
 
 ``array`` $validators
-
     A keyed array of validators to use. Validators are subclasses of Zend_Validate_Abstract.
 
 *********

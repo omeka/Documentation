@@ -13,7 +13,6 @@ Value
 *****
 
 ``array`` $attributes
-
     Attributes to add to or alter
 
 

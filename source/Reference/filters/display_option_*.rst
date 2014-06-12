@@ -10,14 +10,13 @@ This family of filters is used whenever the :php:func:`option` theme function is
 to filter the value returned from the database before it is displayed.
 
 The name of the particular filter that should be used is made by appending the name of the 
-option to "display_option_". 
+option to "display_option\_". 
 
 *****
 Value
 *****
 
 ``string`` $option
-
     The original value of the option.
 
 ********

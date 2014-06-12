@@ -34,7 +34,6 @@ Value
 *****
 
 ``string`` $flatText
-
     The flattened text to return. Initially ``null``.
 
 *********
@@ -42,11 +41,9 @@ Arguments
 *********
 
 ``array`` post_array
-
     The posted data, like ``array('text' => 'The text', 'html'=>0);``
     
 :php:class:`Element` element
-
     The element being saved.
 
 ********

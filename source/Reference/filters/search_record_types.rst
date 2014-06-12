@@ -14,17 +14,14 @@ Value
 *****
 
 ``array`` $searchRecordTypes
-
    A key-value array where keys are names of record types and values are the internationalized
-   forms of their labels:
-   
-.. code-block:: php
+   forms of their labels::
 
-    $searchRecordTypes = array(
-     'Item'       => __('Item'), 
-     'File'       => __('File'), 
-     'Collection' => __('Collection'), 
-   );
+      $searchRecordTypes = array(
+          'Item'       => __('Item'), 
+          'File'       => __('File'), 
+          'Collection' => __('Collection'), 
+      );
 
 
 *********

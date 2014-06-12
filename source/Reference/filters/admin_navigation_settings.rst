@@ -12,9 +12,7 @@ Filters the navigation for the settings page of the admin theme.
 Value
 *****
 
-
 ``array`` $nav
-
     An array of arrays as used by Zend_Navigation.
     
 

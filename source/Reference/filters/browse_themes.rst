@@ -13,7 +13,6 @@ Value
 *****
 
 ``array`` $themes
-
     Array of themes keyed by their directory name.
 
 

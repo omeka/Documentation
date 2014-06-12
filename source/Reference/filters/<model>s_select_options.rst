@@ -33,8 +33,8 @@ None
 See Also
 ********
 
-:ref:`fgettableoptions`
-:ref:`flabeltableoptions`
-:php:meth:`Omeka_Db_Table::findPairsForSelectForm`
+* :ref:`fgettableoptions`
+* :ref:`flabeltableoptions`
+* :php:meth:`Omeka_Db_Table::findPairsForSelectForm`
 
 

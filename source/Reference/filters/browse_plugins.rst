@@ -13,7 +13,6 @@ Value
 *****
 
 ``array`` $plugins
-
     Array of plugins keyed by their directory name.
 
 

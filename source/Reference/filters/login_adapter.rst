@@ -13,7 +13,6 @@ Value
 *****
 
 :php:class:`Omeka_Auth_Adapter_UserTable` $authAdapter
-
     The adapter to use for authenticating a user. You can return your own adapter if necessary for more complex authentication systems.
 
 
@@ -22,7 +21,6 @@ Arguments
 *********
 
 :php:class:`Omeka_Form_Login` login_form
-
     The form to use for logging in. Can be replaced via the :doc:`login_form` filter.
 
 

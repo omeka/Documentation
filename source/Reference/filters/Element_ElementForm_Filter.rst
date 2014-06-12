@@ -26,7 +26,6 @@ Value
 *****
 
 ``array`` $components
-
     The form components, like::
 
         $components = array(
@@ -43,15 +42,12 @@ Arguments
 *********
 
 :php:class:`Omeka_Record_AbstractRecord` record
-
     The model being edited.
     
 :php:class:`Element` element
-
     The element being edited
     
 ``array`` options
-
     An array of additional options for the form
 
 ********

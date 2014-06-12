@@ -13,7 +13,6 @@ Value
 *****
 
 ``string`` $theme_name
-
     The name of the theme being used
 
 
