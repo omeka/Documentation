@@ -1,8 +1,8 @@
-#############################
-Extending Exhibit Builder 3.0
-#############################
+###########################
+Extending Exhibit Builder 3
+###########################
 
-Exhibit Builder 3.0 allows other plugins to add their own layouts.
+Exhibit Builder 3 allows other plugins to add their own layouts.
 
 **********************************
 Placing layouts within your plugin

@@ -1,9 +1,9 @@
 .. _recipeForRetainingSearchSortOrderWhenPaging:
 
 
-###################################################################
-Recipe for Retaining Search or Sort Order when Paging through Items
-###################################################################
+########################################################
+Retaining Search or Sort Order when Paging through Items
+########################################################
 
 ********
 Problem
