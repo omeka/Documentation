@@ -49,6 +49,7 @@ File Display
 .. toctree::
 
    fallbackThumbnails
+   representativeFiles
 
 ============================
 International Locale Support

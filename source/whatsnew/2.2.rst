@@ -9,8 +9,30 @@ Shortcodes
 Omeka 2.2 adds support for shortcodes, allowing users to embed complex content
 into free-text fields with a simple syntax. You can read more about
 using shortcodes `on the Omeka Codex <http://omeka.org/codex/Shortcodes>`_ or
-about supporting shortcodes in your own add-ons in the new Tutorial
+about supporting shortcodes in your own add-ons in the new tutorial
 :doc:`/Tutorials/shortcodes`.
+
+====================
+Representative Files
+====================
+
+Omeka 2.2 adds a new and generalized system for using Files for representing
+records beyond just Items. This system allows Omeka to display thumbnails in
+places like the sitewide search that deal with multiple record types at the
+same time.
+
+Read the new tutorial :doc:`/Tutorials/representativeFiles` for more information.
+
+========================================
+Extensible fallback thumbnails for Files
+========================================
+
+Omeka 2.2 expands from the single fallback image for Files (the "blank page" icon)
+to allow different fallbacks for every MIME type or family of MIME types. Omeka 2.2
+itself adds new specific icons for audio, video, and images, and plugins can also
+add new fallbacks for specific filetypes.
+
+Read the new tutorial :doc:`/Tutorials/fallbackThumbnails` for more information.
 
 =======
 Classes
