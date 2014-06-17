@@ -12,6 +12,17 @@ using shortcodes `on the Omeka Codex <http://omeka.org/codex/Shortcodes>`_ or
 about supporting shortcodes in your own add-ons in the new tutorial
 :doc:`/Tutorials/shortcodes`.
 
+===============================
+Pluggable Derivative Strategies
+===============================
+
+The file derivative process is refactored so administrators can switch between
+different strategies to change how the file derivatives (thumbnails) are
+created. Strategies can also take in options from the configuration file to
+change their behavior without requiring a completely new strategy.
+
+Read the new tutorial :doc:`/Tutorials/derivativeStrategies` for more information.
+
 ====================
 Representative Files
 ====================
@@ -38,6 +49,7 @@ Read the new tutorial :doc:`/Tutorials/fallbackThumbnails` for more information.
 Classes
 =======
 
+* :php:class:`Omeka_File_Derivative_AbstractStrategy`
 * :php:class:`Omeka_File_Derivative_Creator`
 * :php:class:`Omeka_File_Derivative_Strategy_ExternalImageMagick`
 * :php:class:`Omeka_File_Derivative_Strategy_Imagick`
