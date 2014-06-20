@@ -39,12 +39,11 @@ Also, the classes representing records and the table for them are no longer in t
 
 .. _migrating:
 
-********************************
-Migrating your code to Omeka 2.0
-********************************
+*******************
+Migrating your code
+*******************
 
-There are significant changes moving from Omeka 1.5 to Omeka 2.0. :ref:`principlesOfOmeka2` offers an overall
-guide to the principles, both for theme developers and plugin developers.
+There are significant changes moving from Omeka 1.5 to Omeka 2.0.
 
 Here, you will find a skeleton of typical tasks that will be required to migrate your code. Consult the
 :doc:`reference section </Reference/index>` for code details.
@@ -132,7 +131,16 @@ Record classes
   * ``beforeValidate``
   * ``afterValidate``
 
-  A boolean `insert` argument for the ``beforeSave`` and ``afterSave`` callbacks replaces the insert/update hooks.
+  Any logic currently in the ``SaveForm``, ``Insert``, or ``Updare`` callbacks should be moved to
+  :php:meth:`~Omeka_Record_AbstractRecord::beforeSave` or
+  :php:meth:`~Omeka_Record_AbstractRecord::afterSave`. Anything using the associated hooks should be
+  moved to :doc:`/Reference/hooks/before_save_\<model\>` or
+  :doc:`/Reference/hooks/after_save_\<model\>`.
+  The ``Validate`` callbacks should be replaced by code in
+  :php:meth:`~Omeka_Record_AbstractRecord::_validate`.
+  
+  A boolean `insert` argument for the ``beforeSave`` and ``afterSave`` callbacks and
+  hooks replaces the insert and update-specific versions.
 * The ``saveForm`` and ``forceSave`` methods are **removed**. Use :php:meth:`Omeka_Record_AbstractRecord::save` instead.
 
 Table classes
@@ -150,7 +158,9 @@ Built-in records
 * The ``Entity``, ``EntitiesRelations``, and ``EntityRelationships`` models, and their underlying tables are
   **removed**. Any code relying on them must be changed or removed.
 
-  * :php:class:`User` now directly stores the name and email data for users that was previously in the ``Entity``.
+* :php:class:`User` now directly stores the name and email data for users that was previously in the ``Entity``.
+
+  * The separate first, middle, and last name fields for Users are combined into a single name field.
 
 Built-in mixins
 +++++++++++++++
@@ -173,6 +183,7 @@ ACL and Permissions
   * ``checkUserPermission`` is also gone. Use ``isAllowed`` instead::
 
         $acl->isAllowed(current_user(), 'Resource', 'privilege');
+* The ``has_permission`` global function is replaced by :php:func:`is_allowed`.
 
 Controllers
 -----------
