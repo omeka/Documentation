@@ -8,7 +8,8 @@ Plugin Basics
 
 .. toctree::
     :maxdepth: 1
-    
+
+    pluginStructure
     bestPracticesPlugins
     understandingHooks
     understandingFilters

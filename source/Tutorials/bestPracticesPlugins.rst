@@ -6,13 +6,6 @@ Best Practices for Plugin Development
 #####################################
 
 
-*******************************
-Use Omeka_Plugin_AbstractPlugin
-*******************************
-
-:php:class:`Omeka_Plugin_AbstractPlugin` is here to ease common steps in setting up your plugin. See :ref:`understandingomekapluginabstractplugin` for details.
-
-
 *************************
 Method Naming Conventions
 *************************
