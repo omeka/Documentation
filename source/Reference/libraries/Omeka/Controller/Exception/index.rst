@@ -1,13 +1,12 @@
 ````````````````````````````````````
-Libraries/Omeka/Controller/Exception
+libraries/Omeka/Controller/Exception
 ````````````````````````````````````
 
 .. toctree::
 
-    403
-    404
-    Api
-
-
-.. toctree::
-
+   Omeka_Controller_Exception_404
+   Omeka_Controller_Exception_403
+   403
+   404
+   Api
+   Omeka_Controller_Exception_Api

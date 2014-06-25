@@ -1,8 +1,12 @@
 .. _faddshortcode:
 
-#############
-add_shortcode
-#############
+######################################
+``add_shortcode`` — Add a shortcode.
+######################################
+
+.. versionadded:: 2.2
+
+:doc:`View-related functions </Reference/packages/Function/View/index>`
 
 *******
 Summary
@@ -10,12 +14,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/add_shortcode.rst
 
-.. php:function:: add_shortcode($shortcodeName, $function $function)
+.. php:function:: add_shortcode($shortcodeName, $function)
 
-    Add a shortcode
+    Add a shortcode.
     
-    :param unknown $shortcodeName: 
-    :param $function $function: name
+    :type $shortcodeName: string
+    :param $shortcodeName: Name of the new shortcode.
+    :type $function: callback
+    :param $function: Callback to execute for this shortcode.
 
 *****
 Usage

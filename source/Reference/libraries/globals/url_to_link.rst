@@ -1,8 +1,8 @@
 .. _furltolink:
 
-###########
-url_to_link
-###########
+################################################################
+``url_to_link`` — Convert any URLs in a given string to links.
+################################################################
 
 :doc:`Text-related functions </Reference/packages/Function/Text/index>`
 
@@ -12,11 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/url_to_link.rst
 
-.. php:function:: url_to_link(string $str)
+.. php:function:: url_to_link($str)
 
     Convert any URLs in a given string to links.
     
-    :param string $str: The string to be searched for URLs to convert to links.
+    :type $str: string
+    :param $str: The string to be searched for URLs to convert to links.
     :returns: string
 
 *****

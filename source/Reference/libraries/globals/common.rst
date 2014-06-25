@@ -1,8 +1,8 @@
 .. _fcommon:
 
-######
-common
-######
+##################################################################
+``common`` — Get HTML from a view file in the common/ directory.
+##################################################################
 
 :doc:`Layout-related functions </Reference/packages/Function/View/Layout/index>`
 
@@ -12,14 +12,19 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/common.rst
 
-.. php:function:: common(string $file, array $vars, string $dir = common)
+.. php:function:: common($file, $vars = array(), $dir = 'common')
 
-    Return HTML from a file in the common/ directory, passing variables into that 
-    script.
+    Get HTML from a view file in the common/ directory.
     
-    :param string $file: Filename
-    :param array $vars: A keyed array of variables to be extracted into the script
-    :param string $dir: Defaults to 'common'
+    Optionally, parameters can be passed to the view, and the view can be
+    loaded from a different directory.
+    
+    :type $file: string
+    :param $file: Filename
+    :type $vars: array
+    :param $vars: A keyed array of variables to be extracted into the script
+    :type $dir: string
+    :param $dir: Defaults to 'common'
     :returns: string
 
 *****

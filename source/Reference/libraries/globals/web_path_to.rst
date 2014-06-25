@@ -1,8 +1,8 @@
 .. _fwebpathto:
 
-###########
-web_path_to
-###########
+##################################################
+``web_path_to`` — Get the URL for a local asset.
+##################################################
 
 :doc:`Asset-related functions </Reference/packages/Function/View/Asset/index>`
 
@@ -12,11 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/web_path_to.rst
 
-.. php:function:: web_path_to(string $file)
+.. php:function:: web_path_to($file)
 
-    Return the web path for an asset/resource within the theme.
+    Get the URL for a local asset.
     
-    :param string $file: The filename.
+    :type $file: string
+    :param $file: The filename.
     :returns: string
 
 *****

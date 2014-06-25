@@ -1,8 +1,8 @@
 .. _frecordurl:
 
-##########
-record_url
-##########
+#########################################
+``record_url`` — Get a URL to a record.
+#########################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
@@ -12,14 +12,18 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/record_url.rst
 
-.. php:function:: record_url(Omeka_Record_AbstractRecord|string $record, string|null $action, bool $getAbsoluteUrl = , array $queryParams)
+.. php:function:: record_url($record, $action = null, $getAbsoluteUrl = false, $queryParams = array())
 
-    Return a URL to a record.
+    Get a URL to a record.
     
-    :param Omeka_Record_AbstractRecord|string $record: 
-    :param string|null $action: 
-    :param bool $getAbsoluteUrl: 
-    :param array $queryParams: 
+    :type $record: Omeka_Record_AbstractRecord|string
+    :param $record:
+    :type $action: string|null
+    :param $action:
+    :type $getAbsoluteUrl: bool
+    :param $getAbsoluteUrl:
+    :type $queryParams: array
+    :param $queryParams:
     :returns: string
 
 *****

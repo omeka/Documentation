@@ -1,8 +1,8 @@
 .. _frandomfeaturedcollection:
 
-##########################
-random_featured_collection
-##########################
+########################################################################################
+``random_featured_collection`` — Get HTML for displaying a random featured collection.
+########################################################################################
 
 :doc:`View-related functions </Reference/packages/Function/View/index>`
 
@@ -14,7 +14,7 @@ Summary
 
 .. php:function:: random_featured_collection()
 
-    Returns the HTML for displaying a random featured collection.
+    Get HTML for displaying a random featured collection.
     
     :returns: string
 

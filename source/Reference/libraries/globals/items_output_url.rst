@@ -1,8 +1,8 @@
 .. _fitemsoutputurl:
 
-################
-items_output_url
-################
+############################################################
+``items_output_url`` — Get a URL to an output format page.
+############################################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/items_output_url.rst
 
-.. php:function:: items_output_url(string $output, array $otherParams)
+.. php:function:: items_output_url($output, $otherParams = array())
 
-    Return a URL to an output page.
+    Get a URL to an output format page.
     
-    :param string $output: 
-    :param array $otherParams: 
+    :type $output: string
+    :param $output:
+    :type $otherParams: array
+    :param $otherParams:
     :returns: string
 
 *****

@@ -1,8 +1,8 @@
 .. _fgetview:
 
-########
-get_view
-########
+#####################################
+``get_view`` — Get the view object.
+#####################################
 
 :doc:`View-related functions </Reference/packages/Function/View/index>`
 
@@ -16,7 +16,8 @@ Summary
 
     Get the view object.
     
-    Should be used only to avoid function scope issues within other theme helperfunctions.
+    Should be used only to avoid function scope issues within other theme
+    helper functions.
     
     :returns: Omeka_View
 

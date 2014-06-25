@@ -1,8 +1,8 @@
 .. _fiscurrenturl:
 
-##############
-is_current_url
-##############
+##############################################################################
+``is_current_url`` — Check if the given URL matches the current request URL.
+##############################################################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
@@ -12,13 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/is_current_url.rst
 
-.. php:function:: is_current_url(string $url)
+.. php:function:: is_current_url($url)
 
-    Determine whether the given URI matches the current request URI.
+    Check if the given URL matches the current request URL.
     
     Instantiates view helpers directly because a view may not be registered.
     
-    :param string $url: 
+    :type $url: string
+    :param $url:
     :returns: boolean
 
 *****

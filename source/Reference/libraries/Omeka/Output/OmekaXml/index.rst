@@ -1,11 +1,8 @@
 ```````````````````````````````
-Libraries/Omeka/Output/OmekaXml
+libraries/Omeka/Output/OmekaXml
 ```````````````````````````````
 
 .. toctree::
 
-    AbstractOmekaXml
-
-
-.. toctree::
-
+   Omeka_Output_OmekaXml_AbstractOmekaXml
+   AbstractOmekaXml

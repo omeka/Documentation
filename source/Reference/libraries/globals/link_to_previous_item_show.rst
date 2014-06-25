@@ -1,8 +1,8 @@
 .. _flinktopreviousitemshow:
 
-##########################
-link_to_previous_item_show
-##########################
+#############################################################################################
+``link_to_previous_item_show`` — Get a link to the item immediately before the current one.
+#############################################################################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/link_to_previous_item_show.rst
 
-.. php:function:: link_to_previous_item_show(string $text, array $props)
+.. php:function:: link_to_previous_item_show($text = null, $props = array())
 
-    Return a link to the item immediately before the current one.
+    Get a link to the item immediately before the current one.
     
-    :param string $text: 
-    :param array $props: 
+    :type $text: string
+    :param $text:
+    :type $props: array
+    :param $props:
     :returns: string
 
 *****

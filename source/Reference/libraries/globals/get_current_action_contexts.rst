@@ -1,8 +1,8 @@
 .. _fgetcurrentactioncontexts:
 
-###########################
-get_current_action_contexts
-###########################
+###########################################################################################
+``get_current_action_contexts`` — Get all output formats available in the current action.
+###########################################################################################
 
 :doc:`OutputFormat-related functions </Reference/packages/Function/View/OutputFormat/index>`
 

@@ -1,8 +1,8 @@
 .. _freleaseobject:
 
-##############
-release_object
-##############
+#####################################################
+``release_object`` — Release an object from memory.
+#####################################################
 
 :doc:`Utility-related functions </Reference/packages/Function/Utility/index>`
 
@@ -16,9 +16,11 @@ Summary
 
     Release an object from memory.
     
-    Use this fuction after you are done using an Omeka model object to preventmemory leaks.  Required because PHP 5.2 does not do garbage collection oncircular references.
+    Use this fuction after you are done using an Omeka model object to prevent
+    memory leaks.  Required because PHP 5.2 does not do garbage collection on
+    circular references.
     
-    :param unknown $var:
+    :param $var:
 
 *****
 Usage

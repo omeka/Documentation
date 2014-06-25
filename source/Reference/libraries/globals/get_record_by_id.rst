@@ -1,8 +1,8 @@
 .. _fgetrecordbyid:
 
-################
-get_record_by_id
-################
+################################################
+``get_record_by_id`` — Get a record by its ID.
+################################################
 
 :doc:`Db-related functions </Reference/packages/Function/Db/index>`
 
@@ -12,13 +12,15 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/get_record_by_id.rst
 
-.. php:function:: get_record_by_id(string $recordVar, int $recordId)
+.. php:function:: get_record_by_id($modelName, $recordId)
 
     Get a record by its ID.
     
-    :param string $recordVar: 
-    :param int $recordId: 
-    :returns: Omeka_Record_AbstractRecord|null
+    :type $modelName: string
+    :param $modelName: Name of the Record model being looked up (e.g., 'Item')
+    :type $recordId: int
+    :param $recordId: The ID of the specific record to find.
+    :returns: Omeka_Record_AbstractRecord|null The record, or null if it cannot be found.
 
 *****
 Usage

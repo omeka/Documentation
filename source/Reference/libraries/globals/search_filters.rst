@@ -1,8 +1,8 @@
 .. _fsearchfilters:
 
-##############
-search_filters
-##############
+#############################################################################
+``search_filters`` — Get a list of current site-wide search filters in use.
+#############################################################################
 
 :doc:`Search-related functions </Reference/packages/Function/Search/index>`
 
@@ -12,11 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/search_filters.rst
 
-.. php:function:: search_filters(array $options)
+.. php:function:: search_filters($options = array())
 
-    Return a list of current site-wide search filters in use.
+    Get a list of current site-wide search filters in use.
     
-    :param array $options: Valid options are as follows: - id (string): the value of the div wrapping the filters.
+    :type $options: array
+    :param $options: Valid options are as follows: - id (string): the value of the div wrapping the filters.
     :returns: string
 
 *****

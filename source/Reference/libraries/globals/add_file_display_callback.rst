@@ -1,8 +1,8 @@
 .. _faddfiledisplaycallback:
 
-#########################
-add_file_display_callback
-#########################
+#############################################################################################################
+``add_file_display_callback`` — Add a callback for displaying files with a given mimetype and/or extension.
+#############################################################################################################
 
 :doc:`Plugin-related functions </Reference/packages/Function/Plugin/index>`
 
@@ -12,14 +12,17 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/add_file_display_callback.rst
 
-.. php:function:: add_file_display_callback(array|string $fileIdentifiers, callback $callback, array $options)
+.. php:function:: add_file_display_callback($fileIdentifiers, $callback, $options = array())
 
-    Declare a callback function that will be used to display files with a given
-    MIME type and/or file extension.
+    Add a callback for displaying files with a given mimetype and/or
+    extension.
     
-    :param array|string $fileIdentifiers: Set of MIME types and/or file extensions to which the provided callback will respond.
-    :param callback $callback: Any valid callback.
-    :param array $options:
+    :type $fileIdentifiers: array|string
+    :param $fileIdentifiers: Set of MIME types and/or file extensions to which the provided callback will respond.
+    :type $callback: callback
+    :param $callback: Any valid callback.
+    :type $options: array
+    :param $options:
 
 *****
 Usage

@@ -1,8 +1,8 @@
 .. _fbodytag:
 
-########
-body_tag
-########
+##################################################
+``body_tag`` — Get a <body> tag with attributes.
+##################################################
 
 :doc:`View-related functions </Reference/packages/Function/View/index>`
 
@@ -12,13 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/body_tag.rst
 
-.. php:function:: body_tag(array $attributes)
+.. php:function:: body_tag($attributes = array())
 
-    Returns a <body> tag with attributes.
+    Get a <body> tag with attributes.
     
     Attributes can be filtered using the 'body_tag_attributes' filter.
     
-    :param array $attributes: 
+    :type $attributes: array
+    :param $attributes:
     :returns: string An HTML <body> tag with attributes and their values.
 
 *****

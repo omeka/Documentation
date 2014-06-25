@@ -1,8 +1,8 @@
 .. _fcurrentuser:
 
-############
-current_user
-############
+################################################################
+``current_user`` — Return the currently logged in User record.
+################################################################
 
 :doc:`User-related functions </Reference/packages/Function/User/index>`
 

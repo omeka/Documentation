@@ -1,8 +1,8 @@
 .. _fsetthemeoption:
 
-################
-set_theme_option
-################
+############################################
+``set_theme_option`` — Set a theme option.
+############################################
 
 :doc:`Option-related functions </Reference/packages/Function/Db/Option/index>`
 
@@ -12,13 +12,16 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/set_theme_option.rst
 
-.. php:function:: set_theme_option(string $optionName, string $optionValue, string $themeName)
+.. php:function:: set_theme_option($optionName, $optionValue, $themeName = null)
 
     Set a theme option.
     
-    :param string $optionName: The option name.
-    :param string $optionValue: The option value.
-    :param string $themeName: The theme name. If null, it will use the current public theme.
+    :type $optionName: string
+    :param $optionName: The option name.
+    :type $optionValue: string
+    :param $optionValue: The option value.
+    :type $themeName: string
+    :param $themeName: The theme name. If null, it will use the current public theme.
 
 *****
 Usage

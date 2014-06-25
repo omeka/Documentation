@@ -1,14 +1,12 @@
 ``````````````````
-Libraries/Omeka/Db
+libraries/Omeka/Db
 ``````````````````
 
 .. toctree::
 
-    Select
-    Table
-
-
-.. toctree::
-
-    Migration/index
-    Select/index
+   Select
+   Table
+   Migration/index
+   Omeka_Db_Select
+   Omeka_Db_Table
+   Select/index

@@ -1,8 +1,8 @@
 .. _felementexists:
 
-##############
-element_exists
-##############
+################################################################################
+``element_exists`` — Check whether an element set contains a specific element.
+################################################################################
 
 :doc:`ElementSet-related functions </Reference/packages/Function/Db/ElementSet/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/element_exists.rst
 
-.. php:function:: element_exists(string $elementSetName, string $elementName)
+.. php:function:: element_exists($elementSetName, $elementName)
 
-    Determine whether an element set contains a specific element.
+    Check whether an element set contains a specific element.
     
-    :param string $elementSetName: The element set name.
-    :param string $elementName: The element name.
+    :type $elementSetName: string
+    :param $elementSetName: The element set name.
+    :type $elementName: string
+    :param $elementName: The element name.
     :returns: bool
 
 *****

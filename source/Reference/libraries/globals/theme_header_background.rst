@@ -1,8 +1,8 @@
 .. _fthemeheaderbackground:
 
-#######################
-theme_header_background
-#######################
+##############################################################################
+``theme_header_background`` — Get the theme's header background image style.
+##############################################################################
 
 :doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
 
@@ -14,7 +14,7 @@ Summary
 
 .. php:function:: theme_header_background()
 
-    Return the theme's header background image style.
+    Get the theme's header background image style.
     
     :returns: string|null
 

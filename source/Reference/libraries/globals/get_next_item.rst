@@ -1,8 +1,8 @@
 .. _fgetnextitem:
 
-#############
-get_next_item
-#############
+########################################################
+``get_next_item`` — Get the next item in the database.
+########################################################
 
 :doc:`Item-related functions </Reference/packages/Function/View/Item/index>`
 
@@ -12,11 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/get_next_item.rst
 
-.. php:function:: get_next_item(Item|null $item)
+.. php:function:: get_next_item($item = null)
 
     Get the next item in the database.
     
-    :param Item|null $item: Check for this specific item record (current item if null).
+    :type $item: Item|null
+    :param $item: Check for this specific item record (current item if null).
     :returns: Item|null
 
 *****

@@ -1,8 +1,8 @@
 .. _floop:
 
-####
-loop
-####
+##################################################################
+``loop`` — Get an iterator for looping over an array of records.
+##################################################################
 
 :doc:`Loop-related functions </Reference/packages/Function/View/Loop/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/loop.rst
 
-.. php:function:: loop(string $recordsVar, array|null $records)
+.. php:function:: loop($recordsVar, $records = null)
 
-    Return an iterator used for looping an array of records.
+    Get an iterator for looping over an array of records.
     
-    :param string $recordsVar: 
-    :param array|null $records: 
+    :type $recordsVar: string
+    :param $recordsVar: The name of the variable the records are stored in.
+    :type $records: array|null
+    :param $records:
     :returns: Omeka_Record_Iterator
 
 *****

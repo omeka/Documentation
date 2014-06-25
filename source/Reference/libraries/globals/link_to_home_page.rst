@@ -1,8 +1,8 @@
 .. _flinktohomepage:
 
-#################
-link_to_home_page
-#################
+#############################################################
+``link_to_home_page`` — Get a link to the public home page.
+#############################################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/link_to_home_page.rst
 
-.. php:function:: link_to_home_page(null|string $text, array $props)
+.. php:function:: link_to_home_page($text = null, $props = array())
 
-    Return a link to the public home page.
+    Get a link to the public home page.
     
-    :param null|string $text: 
-    :param array $props: 
+    :type $text: null|string
+    :param $text:
+    :type $props: array
+    :param $props:
     :returns: string
 
 *****

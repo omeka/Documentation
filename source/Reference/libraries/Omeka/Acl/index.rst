@@ -1,11 +1,7 @@
 ```````````````````
-Libraries/Omeka/Acl
+libraries/Omeka/Acl
 ```````````````````
 
 .. toctree::
 
-
-
-.. toctree::
-
-    Assert/index
+   Assert/index

@@ -1,8 +1,8 @@
 .. _finsertcollection:
 
-#################
-insert_collection
-#################
+#############################################
+``insert_collection`` — Insert a collection
+#############################################
 
 :doc:`Collection-related functions </Reference/packages/Function/Db/Collection/index>`
 
@@ -12,48 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/insert_collection.rst
 
-.. php:function:: insert_collection(array $metadata, array $elementTexts)
+.. php:function:: insert_collection($metadata = array(), $elementTexts = array())
 
     Insert a collection
     
-    :param array $metadata: Follows the format:         
-    
-        .. code-block:: php 
-    
-    
-             array(
-               'public'      => [true|false],
-               'featured'    => [true|false]
-             )
-     
-    :param array $elementTexts: Array of element texts to assign to the collection. This follows the format:         
-    
-        .. code-block:: php 
-    
-    
-             array(
-               [element set name] => array(
-                 [element name] => array(
-                   array('text' => [string], 'html' => [false|true]),
-                   array('text' => [string], 'html' => [false|true])
-                  ),
-                 [element name] => array(
-                   array('text' => [string], 'html' => [false|true]),
-                   array('text' => [string], 'html' => [false|true])
-                 )
-               ),
-               [element set name] => array(
-                 [element name] => array(
-                   array('text' => [string], 'html' => [false|true]),
-                   array('text' => [string], 'html' => [false|true])
-                 ),
-                 [element name] => array(
-                   array('text' => [string], 'html' => [false|true]),
-                   array('text' => [string], 'html' => [false|true])
-                 )
-               )
-             );
-     
+    :type $metadata: array
+    :param $metadata: Follows the format: <code> array( 'public'      => [true|false], 'featured'    => [true|false] ) </code>
+    :type $elementTexts: array
+    :param $elementTexts: Array of element texts to assign to the collection. This follows the format: <code> array( [element set name] => array( [element name] => array( array('text' => [string], 'html' => [false|true]), array('text' => [string], 'html' => [false|true]) ), [element name] => array( array('text' => [string], 'html' => [false|true]), array('text' => [string], 'html' => [false|true]) ) ), [element set name] => array( [element name] => array( array('text' => [string], 'html' => [false|true]), array('text' => [string], 'html' => [false|true]) ), [element name] => array( array('text' => [string], 'html' => [false|true]), array('text' => [string], 'html' => [false|true]) ) ) ); </code>
     :returns: Collection
 
 *****

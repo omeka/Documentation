@@ -1,8 +1,8 @@
 .. _fsetlooprecords:
 
-################
-set_loop_records
-################
+###########################################################################
+``set_loop_records`` — Set records to the view for iteration with loop().
+###########################################################################
 
 :doc:`Loop-related functions </Reference/packages/Function/View/Loop/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/set_loop_records.rst
 
-.. php:function:: set_loop_records(string $recordsVar, array $records)
+.. php:function:: set_loop_records($recordsVar, $records)
 
-    Set records to the view for iteration.
+    Set records to the view for iteration with loop().
     
-    :param string $recordsVar: 
-    :param array $records:
+    :type $recordsVar: string
+    :param $recordsVar: The name of the variable to store the records in.
+    :type $records: array
+    :param $records: The records to store for later looping.
 
 *****
 Usage

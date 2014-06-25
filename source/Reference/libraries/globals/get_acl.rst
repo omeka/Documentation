@@ -1,8 +1,8 @@
 .. _fgetacl:
 
-#######
-get_acl
-#######
+###################################
+``get_acl`` — Get the ACL object.
+###################################
 
 :doc:`User-related functions </Reference/packages/Function/User/index>`
 

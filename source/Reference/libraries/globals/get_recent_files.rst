@@ -1,8 +1,8 @@
 .. _fgetrecentfiles:
 
-################
-get_recent_files
-################
+###################################################
+``get_recent_files`` — Get the most recent files.
+###################################################
 
 :doc:`Db-related functions </Reference/packages/Function/Db/index>`
 
@@ -12,11 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/get_recent_files.rst
 
-.. php:function:: get_recent_files(integer $num = 10)
+.. php:function:: get_recent_files($num = 10)
 
     Get the most recent files.
     
-    :param integer $num: The maximum number of recent files to return
+    :type $num: integer
+    :param $num: The maximum number of recent files to return
     :returns: array
 
 *****

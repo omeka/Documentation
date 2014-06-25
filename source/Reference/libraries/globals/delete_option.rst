@@ -1,8 +1,8 @@
 .. _fdeleteoption:
 
-#############
-delete_option
-#############
+##############################################################
+``delete_option`` — Delete an option from the options table.
+##############################################################
 
 :doc:`Option-related functions </Reference/packages/Function/Db/Option/index>`
 
@@ -12,11 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/delete_option.rst
 
-.. php:function:: delete_option(string $name)
+.. php:function:: delete_option($name)
 
     Delete an option from the options table.
     
-    :param string $name: The option name.
+    :type $name: string
+    :param $name: The option name.
 
 *****
 Usage

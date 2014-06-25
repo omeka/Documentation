@@ -1,8 +1,8 @@
 .. _flinktoitemsearch:
 
-###################
-link_to_item_search
-###################
+########################################################################
+``link_to_item_search`` — Get HTML for a link to the item search form.
+########################################################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
@@ -12,13 +12,16 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/link_to_item_search.rst
 
-.. php:function:: link_to_item_search(string $text, array $props, string $uri)
+.. php:function:: link_to_item_search($text = null, $props = array(), $uri = null)
 
-    Return HTML for a link to the item search form.
+    Get HTML for a link to the item search form.
     
-    :param string $text: Text of the link. Default is 'Search Items'.
-    :param array $props: HTML attributes for the link.
-    :param string $uri: Action for the form.  Defaults to 'items/browse'.
+    :type $text: string
+    :param $text: Text of the link. Default is 'Search Items'.
+    :type $props: array
+    :param $props: HTML attributes for the link.
+    :type $uri: string
+    :param $uri: Action for the form.  Defaults to 'items/browse'.
     :returns: string
 
 *****

@@ -1,8 +1,8 @@
 .. _ffiledisplayurl:
 
-################
-file_display_url
-################
+#####################################################
+``file_display_url`` — Get the provided file's URL.
+#####################################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/file_display_url.rst
 
-.. php:function:: file_display_url(File $file, string $format = fullsize)
+.. php:function:: file_display_url(File $file, $format = 'fullsize')
 
-    Return the provided file's URL.
+    Get the provided file's URL.
     
-    :param File $file: 
-    :param string $format: 
+    :type $file: File
+    :param $file:
+    :type $format: string
+    :param $format:
     :returns: string
 
 *****

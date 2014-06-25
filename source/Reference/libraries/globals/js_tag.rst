@@ -1,8 +1,8 @@
 .. _fjstag:
 
-######
-js_tag
-######
+###############################################################
+``js_tag`` — Get a tag for including a local JavaScript file.
+###############################################################
 
 :doc:`Asset-related functions </Reference/packages/Function/View/Asset/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/js_tag.rst
 
-.. php:function:: js_tag(string $file, string $dir = javascripts)
+.. php:function:: js_tag($file, $dir = 'javascripts')
 
-    Return a javascript tag.
+    Get a tag for including a local JavaScript file.
     
-    :param string $file: The name of the file, without .js extension.
-    :param string $dir: The directory in which to look for javascript files. Recommended to leave the default value.
+    :type $file: string
+    :param $file: The name of the file, without .js extension.
+    :type $dir: string
+    :param $dir: The directory in which to look for javascript files. Recommended to leave the default value.
     :returns: string
 
 *****

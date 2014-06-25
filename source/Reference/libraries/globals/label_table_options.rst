@@ -1,8 +1,8 @@
 .. _flabeltableoptions:
 
-###################
-label_table_options
-###################
+##################################################################################################
+``label_table_options`` — Add a "Select Below" or other label option to a set of select options.
+##################################################################################################
 
 :doc:`Form-related functions </Reference/packages/Function/View/Form/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/label_table_options.rst
 
-.. php:function:: label_table_options(array $options, string|null $labelOption)
+.. php:function:: label_table_options($options, $labelOption = null)
 
     Add a "Select Below" or other label option to a set of select options.
     
-    :param array $options: 
-    :param string|null $labelOption: 
+    :type $options: array
+    :param $options:
+    :type $labelOption: string|null
+    :param $labelOption:
     :returns: array
 
 *****

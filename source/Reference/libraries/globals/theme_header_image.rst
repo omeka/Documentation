@@ -1,8 +1,8 @@
 .. _fthemeheaderimage:
 
-##################
-theme_header_image
-##################
+############################################################
+``theme_header_image`` — Get the theme's header image tag.
+############################################################
 
 :doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
 
@@ -14,7 +14,7 @@ Summary
 
 .. php:function:: theme_header_image()
 
-    Return the theme's header image tag.
+    Get the theme's header image tag.
     
     :returns: string|null
 

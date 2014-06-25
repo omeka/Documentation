@@ -1,8 +1,8 @@
 .. _fimg:
 
-###
-img
-###
+##############################################
+``img`` — Get the URL to a local image file.
+##############################################
 
 :doc:`Asset-related functions </Reference/packages/Function/View/Asset/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/img.rst
 
-.. php:function:: img(string $file, string $dir = images)
+.. php:function:: img($file, $dir = 'images')
 
-    Return the web path to an image file.
+    Get the URL to a local image file.
     
-    :param string $file: Filename, including the extension.
-    :param string $dir: Directory within the theme to look for image files. Defaults to 'images'.
+    :type $file: string
+    :param $file: Filename, including the extension.
+    :type $dir: string
+    :param $dir: Directory within the theme to look for image files. Defaults to 'images'.
     :returns: string
 
 *****

@@ -1,8 +1,8 @@
 .. _foutputformatlist:
 
-##################
-output_format_list
-##################
+#####################################################################################
+``output_format_list`` — Get an HTML list of output formats for the current action.
+#####################################################################################
 
 :doc:`OutputFormat-related functions </Reference/packages/Function/View/OutputFormat/index>`
 
@@ -12,13 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/output_format_list.rst
 
-.. php:function:: output_format_list(bool $list = 1, string $delimiter = , )
+.. php:function:: output_format_list($list = true, $delimiter = ', ')
 
-    Return an HTML list containing all available output format contexts for the
-    current action.
+    Get an HTML list of output formats for the current action.
     
-    :param bool $list: True = unordered list; False = use delimiter
-    :param string $delimiter: If the first argument is false, use this as a delimiter.
+    :type $list: bool
+    :param $list: If true or omitted, return an unordered list, if false, return a simple string list using the delimiter.
+    :type $delimiter: string
+    :param $delimiter: If the first argument is false, use this as the delimiter for the list.
     :returns: string|bool HTML
 
 *****

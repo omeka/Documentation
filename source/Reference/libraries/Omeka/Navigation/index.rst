@@ -1,11 +1,7 @@
 ``````````````````````````
-Libraries/Omeka/Navigation
+libraries/Omeka/Navigation
 ``````````````````````````
 
 .. toctree::
 
-
-
-.. toctree::
-
-    Page/index
+   Page/index

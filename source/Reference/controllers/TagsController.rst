@@ -2,9 +2,11 @@
 TagsController
 --------------
 
+Package: :doc:`Controller </Reference/packages/Controller/index>`
+
 .. php:class:: TagsController
 
-    Package: :doc:`Controller </Reference/packages/Controller/index>`
+extends :php:class:`Omeka_Controller_AbstractActionController`
 
     .. php:method:: init()
 
@@ -15,7 +17,7 @@ TagsController
     .. php:method:: editTags()
 
     .. php:method:: browseAction()
-    
+
         :returns: void
 
     .. php:method:: autocompleteAction()

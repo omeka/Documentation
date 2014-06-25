@@ -1,8 +1,8 @@
 .. _fupdateitem:
 
-###########
-update_item
-###########
+############################################
+``update_item`` — Update an existing item.
+############################################
 
 :doc:`Item-related functions </Reference/packages/Function/Db/Item/index>`
 
@@ -12,14 +12,18 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/update_item.rst
 
-.. php:function:: update_item(Item|int $item, array $metadata, array $elementTexts, array $fileMetadata)
+.. php:function:: update_item($item, $metadata = array(), $elementTexts = array(), $fileMetadata = array())
 
     Update an existing item.
     
-    :param Item|int $item: Either an Item object or the ID for the item.
-    :param array $metadata: Set of options that can be passed to the item.
-    :param array $elementTexts: 
-    :param array $fileMetadata: 
+    :type $item: Item|int
+    :param $item: Either an Item object or the ID for the item.
+    :type $metadata: array
+    :param $metadata: Set of options that can be passed to the item.
+    :type $elementTexts: array
+    :param $elementTexts: Element texts to assign. See insert_item() for details.
+    :type $fileMetadata: array
+    :param $fileMetadata: File ingest data. See insert_item() for details.
     :returns: Item
 
 *****

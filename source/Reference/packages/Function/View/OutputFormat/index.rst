@@ -9,7 +9,6 @@ Up to :doc:`../index`
 
    /Reference/libraries/globals/get_current_action_contexts
    /Reference/libraries/globals/output_format_list
-   /Reference/libraries/globals/xml_escape
 
 .. toctree::
    :glob:

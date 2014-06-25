@@ -1,8 +1,8 @@
 .. _fgetrecentcollections:
 
-######################
-get_recent_collections
-######################
+#######################################################################
+``get_recent_collections`` — Get the most recently added collections.
+#######################################################################
 
 :doc:`Collection-related functions </Reference/packages/Function/Db/Collection/index>`
 
@@ -12,11 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/get_recent_collections.rst
 
-.. php:function:: get_recent_collections(integer $num = 10)
+.. php:function:: get_recent_collections($num = 10)
 
     Get the most recently added collections.
     
-    :param integer $num: The maximum number of recent collections to return
+    :type $num: integer
+    :param $num: The maximum number of recent collections to return
     :returns: array
 
 *****

@@ -1,8 +1,8 @@
 .. _fautodiscoverylinktags:
 
-########################
-auto_discovery_link_tags
-########################
+##########################################################################
+``auto_discovery_link_tags`` — Get link tags for the RSS and Atom feeds.
+##########################################################################
 
 :doc:`Layout-related functions </Reference/packages/Function/View/Layout/index>`
 
@@ -14,7 +14,7 @@ Summary
 
 .. php:function:: auto_discovery_link_tags()
 
-    Return a link tag for the RSS feed so the browser can auto-discover the field.
+    Get link tags for the RSS and Atom feeds.
     
     :returns: string HTML
 

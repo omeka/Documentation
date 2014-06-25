@@ -1,8 +1,8 @@
 .. _fsrc:
 
-###
-src
-###
+#############################################
+``src`` — Get a URL for a given local file.
+#############################################
 
 :doc:`Asset-related functions </Reference/packages/Function/View/Asset/index>`
 
@@ -12,13 +12,16 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/src.rst
 
-.. php:function:: src(string $file, string|null $dir, string $ext)
+.. php:function:: src($file, $dir = null, $ext = null)
 
-    Return a valid src attribute value for a given file.
+    Get a URL for a given local file.
     
-    :param string $file: The filename.
-    :param string|null $dir: The file's directory.
-    :param string $ext: The file's extension.
+    :type $file: string
+    :param $file: The filename.
+    :type $dir: string|null
+    :param $dir: The file's directory.
+    :type $ext: string
+    :param $ext: The file's extension.
     :returns: string
 
 *****

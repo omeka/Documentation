@@ -2,9 +2,11 @@
 ItemTypesController
 -------------------
 
+Package: :doc:`Controller </Reference/packages/Controller/index>`
+
 .. php:class:: ItemTypesController
 
-    Package: :doc:`Controller </Reference/packages/Controller/index>`
+extends :php:class:`Omeka_Controller_AbstractActionController`
 
     .. php:method:: init()
 
@@ -19,17 +21,17 @@ ItemTypesController
     .. php:method:: changeExistingElementAction()
 
     .. php:method:: _redirectAfterAdd($itemType)
-    
-        :param unknown $itemType:
+
+        :param $itemType:
 
     .. php:method:: _getDeleteConfirmMessage($itemType)
-    
-        :param unknown $itemType:
+
+        :param $itemType:
 
     .. php:method:: _getAddSuccessMessage($itemType)
-    
-        :param unknown $itemType:
+
+        :param $itemType:
 
     .. php:method:: _getForm($itemType)
-    
-        :param unknown $itemType:
+
+        :param $itemType:

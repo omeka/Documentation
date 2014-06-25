@@ -1,8 +1,8 @@
 .. _fgetcustomsearchrecordtypes:
 
-##############################
-get_custom_search_record_types
-##############################
+#######################################################################################################
+``get_custom_search_record_types`` — Get all record types that have been customized to be searchable.
+#######################################################################################################
 
 :doc:`Search-related functions </Reference/packages/Function/Search/index>`
 

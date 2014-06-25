@@ -1,8 +1,8 @@
 .. _fsnippet:
 
-#######
-snippet
-#######
+############################################################
+``snippet`` — Return a substring of a given piece of text.
+############################################################
 
 :doc:`Text-related functions </Reference/packages/Function/Text/index>`
 
@@ -12,16 +12,21 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/snippet.rst
 
-.. php:function:: snippet(string $text, int $startPos, int $endPos, string $append = …)
+.. php:function:: snippet($text, $startPos, $endPos, $append = '…')
 
     Return a substring of a given piece of text.
     
-    Note: this will only split strings on the space character.this will also strip html tags from the text before getting a snippet
+    Note: this will only split strings on the space character.
+    this will also strip html tags from the text before getting a snippet
     
-    :param string $text: Text to take snippet of
-    :param int $startPos: Starting position of snippet in string
-    :param int $endPos: Maximum length of snippet
-    :param string $append: String to append to snippet if truncated
+    :type $text: string
+    :param $text: Text to take snippet of
+    :type $startPos: int
+    :param $startPos: Starting position of snippet in string
+    :type $endPos: int
+    :param $endPos: Maximum length of snippet
+    :type $append: string
+    :param $append: String to append to snippet if truncated
     :returns: string Snippet of given text
 
 *****

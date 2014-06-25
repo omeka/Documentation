@@ -1,8 +1,8 @@
 .. _foption:
 
-######
-option
-######
+######################################################################
+``option`` — Get the value of a particular site setting for display.
+######################################################################
 
 :doc:`View-related functions </Reference/packages/Function/View/index>`
 
@@ -12,14 +12,16 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/option.rst
 
-.. php:function:: option(string $name)
+.. php:function:: option($name)
 
-    Return the value of a particular site setting.  This can be used to display
-    any option that would be retrieved with get_option().
+    Get the value of a particular site setting for display.
     
-    Content for any specific option can be filtered by using a filter named'display_option_(option)' where (option) is the name of the option, e.g.'display_option_site_title'.
+    Content for any specific option can be filtered by using a filter named
+    'display_option_(option)' where (option) is the name of the option, e.g.
+    'display_option_site_title'.
     
-    :param string $name: The name of the option
+    :type $name: string
+    :param $name: The name of the option
     :returns: string
 
 *****

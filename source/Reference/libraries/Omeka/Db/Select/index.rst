@@ -1,11 +1,8 @@
 `````````````````````````
-Libraries/Omeka/Db/Select
+libraries/Omeka/Db/Select
 `````````````````````````
 
 .. toctree::
 
-    PublicPermissions
-
-
-.. toctree::
-
+   Omeka_Db_Select_PublicPermissions
+   PublicPermissions

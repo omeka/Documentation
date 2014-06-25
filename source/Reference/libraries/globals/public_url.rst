@@ -1,8 +1,8 @@
 .. _fpublicurl:
 
-##########
-public_url
-##########
+#################################################
+``public_url`` — Get a URL to the public theme.
+#################################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
@@ -14,7 +14,7 @@ Summary
 
 .. php:function:: public_url()
 
-    Return a URL to the public theme.
+    Get a URL to the public theme.
     
     :returns: string
 

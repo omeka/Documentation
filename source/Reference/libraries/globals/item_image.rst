@@ -1,8 +1,8 @@
 .. _fitemimage:
 
-##########
-item_image
-##########
+###################################################
+``item_image`` — Get a customized item image tag.
+###################################################
 
 :doc:`Item-related functions </Reference/packages/Function/View/Item/index>`
 
@@ -12,14 +12,17 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/item_image.rst
 
-.. php:function:: item_image(string $imageType, array $props, integer $index = 0, $item)
+.. php:function:: item_image($imageType, $props = array(), $index = 0, $item = null)
 
-    Return a customized item image tag.
+    Get a customized item image tag.
     
-    :param string $imageType: 
-    :param array $props: 
-    :param integer $index: 
-    :param unknown $item:
+    :type $imageType: string
+    :param $imageType: Image size: thumbnail, square thumbnail, fullsize
+    :type $props: array
+    :param $props: HTML attributes for the img tag
+    :type $index: integer
+    :param $index: Which file within the item to use, by order. Default is the first file.
+    :param $item:
 
 *****
 Usage

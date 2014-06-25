@@ -1,8 +1,8 @@
 .. _fheadcss:
 
-########
-head_css
-########
+#####################################################################
+``head_css`` — Get the CSS link tags that will be used on the page.
+#####################################################################
 
 :doc:`Asset-related functions </Reference/packages/Function/View/Asset/index>`
 
@@ -14,9 +14,10 @@ Summary
 
 .. php:function:: head_css()
 
-    Return the CSS link tags that will be used on the page.
+    Get the CSS link tags that will be used on the page.
     
-    This should generally be used with echo to print the scripts in the pagehead.
+    This should generally be used with echo to print the scripts in the page
+    head.
     
     :returns: string
 

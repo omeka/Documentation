@@ -1,8 +1,8 @@
 .. _fgetrecords:
 
-###########
-get_records
-###########
+###########################################################
+``get_records`` — Get a set of records from the database.
+###########################################################
 
 :doc:`Db-related functions </Reference/packages/Function/Db/index>`
 
@@ -12,13 +12,16 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/get_records.rst
 
-.. php:function:: get_records(string $recordType, array $params, integer $limit = 10)
+.. php:function:: get_records($recordType, $params = array(), $limit = 10)
 
     Get a set of records from the database.
     
-    :param string $recordType: Type of records to get.
-    :param array $params: Array of search parameters for records.
-    :param integer $limit: Maximum number of records to return.
+    :type $recordType: string
+    :param $recordType: Type of records to get.
+    :type $params: array
+    :param $params: Array of search parameters for records.
+    :type $limit: integer
+    :param $limit: Maximum number of records to return.
     :returns: array An array of result records (of $recordType).
 
 *****

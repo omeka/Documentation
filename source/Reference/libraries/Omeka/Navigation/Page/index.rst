@@ -1,12 +1,11 @@
 ```````````````````````````````
-Libraries/Omeka/Navigation/Page
+libraries/Omeka/Navigation/Page
 ```````````````````````````````
 
 .. toctree::
 
-    Mvc
-    Uri
-
-
-.. toctree::
-
+   Uri
+   Mvc
+   Omeka_Navigation_Page_Uri
+   Uri/index
+   Omeka_Navigation_Page_Mvc

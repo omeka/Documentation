@@ -1,14 +1,12 @@
 ````````````````````
-Libraries/Omeka/Test
+libraries/Omeka/Test
 ````````````````````
 
 .. toctree::
 
-    AppTestCase
-    Bootstrap
-
-
-.. toctree::
-
-    Helper/index
-    Resource/index
+   Bootstrap
+   Omeka_Test_Bootstrap
+   Helper/index
+   Resource/index
+   Omeka_Test_AppTestCase
+   AppTestCase

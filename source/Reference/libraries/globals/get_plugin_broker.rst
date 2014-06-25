@@ -1,8 +1,8 @@
 .. _fgetpluginbroker:
 
-#################
-get_plugin_broker
-#################
+##################################################################
+``get_plugin_broker`` — Get the broker object for Omeka plugins.
+##################################################################
 
 :doc:`Plugin-related functions </Reference/packages/Function/Plugin/index>`
 

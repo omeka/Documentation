@@ -1,8 +1,8 @@
 .. _fisallowed:
 
-##########
-is_allowed
-##########
+########################################################################
+``is_allowed`` — Check whether the current user has a give permission.
+########################################################################
 
 :doc:`User-related functions </Reference/packages/Function/User/index>`
 
@@ -14,16 +14,13 @@ Summary
 
 .. php:function:: is_allowed($resource, $privilege)
 
-    Check the ACL to determine whether the current user has proper permissions.
+    Check whether the current user has a give permission.
     
-    .. code-block:: php 
-    
-    
-    	                   is_allowed('Items', 'showNotPublic');
-    Will check if the user has permission to view Items that are not public.
-    
-    :param unknown $resource: 
-    :param unknown $privilege:
+    :type $resource: string|Zend_Acl_Resource_Interface
+    :param $resource: The name of a resource, or a record implementing Zend_Acl_Resource_Interface
+    :type $privilege: string|null
+    :param $privilege: The privilege to check for the resource.
+    :returns: boolean
 
 *****
 Usage

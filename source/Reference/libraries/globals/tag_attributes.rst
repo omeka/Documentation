@@ -1,8 +1,8 @@
 .. _ftagattributes:
 
-##############
-tag_attributes
-##############
+###########################################################
+``tag_attributes`` — Generate attributes for an HTML tag.
+###########################################################
 
 :doc:`View-related functions </Reference/packages/Function/View/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/tag_attributes.rst
 
-.. php:function:: tag_attributes(array|string $attributes, string $value)
+.. php:function:: tag_attributes($attributes, $value = null)
 
-    Generate attributes for HTML tags.
+    Generate attributes for an HTML tag.
     
-    :param array|string $attributes: Attributes for the tag.  If this is a string, it will assign both 'name' and 'id' attributes that value for the tag.
-    :param string $value: 
+    :type $attributes: array|string
+    :param $attributes: Attributes for the tag.  If this is a string, it will assign both 'name' and 'id' attributes that value for the tag.
+    :type $value: string
+    :param $value:
     :returns: string
 
 *****

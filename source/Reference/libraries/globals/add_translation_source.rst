@@ -1,8 +1,8 @@
 .. _faddtranslationsource:
 
-######################
-add_translation_source
-######################
+###################################################################
+``add_translation_source`` — Add an translation source directory.
+###################################################################
 
 :doc:`Locale-related functions </Reference/packages/Function/Locale/index>`
 
@@ -12,13 +12,16 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/add_translation_source.rst
 
-.. php:function:: add_translation_source(string $dir)
+.. php:function:: add_translation_source($dir)
 
     Add an translation source directory.
     
-    The directory's contents should be .mo files following the naming scheme ofOmeka's application/languages directory. If a .mo for the current localeexists, the translations will be loaded.
+    The directory's contents should be .mo files following the naming scheme
+    of Omeka's application/languages directory. If a .mo for the current
+    locale exists, the translations will be loaded.
     
-    :param string $dir: Directory from which to load translations.
+    :type $dir: string
+    :param $dir: Directory from which to load translations.
 
 *****
 Usage

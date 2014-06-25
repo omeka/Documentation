@@ -1,8 +1,8 @@
 .. _fgettableoptions:
 
-#################
-get_table_options
-#################
+##################################################################
+``get_table_options`` — Get the options array for a given table.
+##################################################################
 
 :doc:`Form-related functions </Reference/packages/Function/View/Form/index>`
 
@@ -12,13 +12,16 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/get_table_options.rst
 
-.. php:function:: get_table_options(string $tableClass, string $labelOption, array $searchParams)
+.. php:function:: get_table_options($tableClass, $labelOption = null, $searchParams = array())
 
     Get the options array for a given table.
     
-    :param string $tableClass: 
-    :param string $labelOption: 
-    :param array $searchParams: search parameters on table.
+    :type $tableClass: string
+    :param $tableClass:
+    :type $labelOption: string
+    :param $labelOption:
+    :type $searchParams: array
+    :param $searchParams: search parameters on table.
 
 *****
 Usage

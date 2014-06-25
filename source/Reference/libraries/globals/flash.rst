@@ -1,8 +1,8 @@
 .. _fflash:
 
-#####
-flash
-#####
+###########################################################
+``flash`` — Return a flashed message from the controller.
+###########################################################
 
 :doc:`View-related functions </Reference/packages/Function/View/index>`
 

@@ -1,8 +1,8 @@
 .. _fcurrenturl:
 
-###########
-current_url
-###########
+#######################################################################
+``current_url`` — Get the current URL with query parameters appended.
+#######################################################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
@@ -12,13 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/current_url.rst
 
-.. php:function:: current_url(array $params)
+.. php:function:: current_url($params = array())
 
-    Return the current URL with query parameters appended.
+    Get the current URL with query parameters appended.
     
     Instantiates view helpers directly because a view may not be registered.
     
-    :param array $params: 
+    :type $params: array
+    :param $params:
     :returns: string
 
 *****

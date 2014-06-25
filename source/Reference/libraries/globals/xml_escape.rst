@@ -1,8 +1,8 @@
 .. _fxmlescape:
 
-##########
-xml_escape
-##########
+#################################################
+``xml_escape`` — Escape a value for use in XML.
+#################################################
 
 :doc:`Text-related functions </Reference/packages/Function/Text/index>`
 
@@ -12,11 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/xml_escape.rst
 
-.. php:function:: xml_escape(string $value)
+.. php:function:: xml_escape($value)
 
-    Escape the value for use in XML.
+    Escape a value for use in XML.
     
-    :param string $value: 
+    :type $value: string
+    :param $value:
     :returns: string
 
 *****

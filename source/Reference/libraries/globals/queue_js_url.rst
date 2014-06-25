@@ -1,8 +1,8 @@
 .. _fqueuejsurl:
 
-############
-queue_js_url
-############
+######################################################################
+``queue_js_url`` — Add a JavaScript file to the current page by URL.
+######################################################################
 
 :doc:`Asset-related functions </Reference/packages/Function/View/Asset/index>`
 
@@ -12,14 +12,16 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/queue_js_url.rst
 
-.. php:function:: queue_js_url($url, array $options)
+.. php:function:: queue_js_url($url, $options = array())
 
-    Declare a URL to a JavaScript file to be used on the page.
+    Add a JavaScript file to the current page by URL.
     
-    This needs to be called either before head() or in a plugin_header hook.
+    The script link will appear in the head element. This needs to be called
+    either before head() or in a plugin_header hook.
     
-    :param unknown $url: 
-    :param array $options: An array of options.
+    :param $url:
+    :type $options: array
+    :param $options: An array of options.
 
 *****
 Usage

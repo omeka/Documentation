@@ -1,8 +1,8 @@
 .. _fmetadata:
 
-########
-metadata
-########
+###########################################
+``metadata`` — Get metadata for a record.
+###########################################
 
 :doc:`View-related functions </Reference/packages/Function/View/index>`
 
@@ -12,13 +12,16 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/metadata.rst
 
-.. php:function:: metadata(Omeka_Record_AbstractRecord|string $record, mixed $metadata, array $options)
+.. php:function:: metadata($record, $metadata, $options = array())
 
-    Return a piece or pieces of metadata for a record.
+    Get metadata for a record.
     
-    :param Omeka_Record_AbstractRecord|string $record: The record to get metadata for. If an Omeka_Record_AbstractRecord, that record is used. If a string, that string is used to look up a record in the current view.
-    :param mixed $metadata: The metadata to get. If an array is given, this is Element metadata, identified by array('Element Set', 'Element'). If a string, the metadata is a record-specific "property."
-    :param array $options: Options for getting the metadata.
+    :type $record: Omeka_Record_AbstractRecord|string
+    :param $record: The record to get metadata for. If an Omeka_Record_AbstractRecord, that record is used. If a string, that string is used to look up a record in the current view.
+    :type $metadata: mixed
+    :param $metadata: The metadata to get. If an array is given, this is Element metadata, identified by array('Element Set', 'Element'). If a string, the metadata is a record-specific "property."
+    :type $options: array
+    :param $options: Options for getting the metadata.
     :returns: mixed
 
 *****

@@ -1,8 +1,8 @@
 .. _fheadjs:
 
-#######
-head_js
-#######
+######################################################################
+``head_js`` — Get the JavaScript tags that will be used on the page.
+######################################################################
 
 :doc:`Asset-related functions </Reference/packages/Function/View/Asset/index>`
 
@@ -12,13 +12,15 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/head_js.rst
 
-.. php:function:: head_js(bool $includeDefaults = 1)
+.. php:function:: head_js($includeDefaults = true)
 
-    Return the JavaScript tags that will be used on the page.
+    Get the JavaScript tags that will be used on the page.
     
-    This should generally be used with echo to print the scripts in the pagehead.
+    This should generally be used with echo to print the scripts in the page
+    head.
     
-    :param bool $includeDefaults: Whether the default javascripts should be included. Defaults to true.
+    :type $includeDefaults: bool
+    :param $includeDefaults: Whether the default javascripts should be included. Defaults to true.
     :returns: string
 
 *****

@@ -1,8 +1,8 @@
 .. _fpublicnavitems:
 
-################
-public_nav_items
-################
+######################################################
+``public_nav_items`` — Get the navigation for items.
+######################################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/public_nav_items.rst
 
-.. php:function:: public_nav_items(array $navArray, integer|null $maxDepth = 0)
+.. php:function:: public_nav_items($navArray = null, $maxDepth = 0)
 
-    Return the navigation for items.
+    Get the navigation for items.
     
-    :param array $navArray: 
-    :param integer|null $maxDepth: 
+    :type $navArray: array
+    :param $navArray:
+    :type $maxDepth: integer|null
+    :param $maxDepth:
     :returns: string
 
 *****

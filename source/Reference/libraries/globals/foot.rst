@@ -1,8 +1,8 @@
 .. _ffoot:
 
-####
-foot
-####
+########################################
+``foot`` — Get the view's footer HTML.
+########################################
 
 :doc:`Layout-related functions </Reference/packages/Function/View/Layout/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/foot.rst
 
-.. php:function:: foot(array $vars, string $file = footer)
+.. php:function:: foot($vars = array(), $file = 'footer')
 
-    Return the view's footer HTML.
+    Get the view's footer HTML.
     
-    :param array $vars: Keyed array of variables
-    :param string $file: Filename of footer script (defaults to 'footer')
+    :type $vars: array
+    :param $vars: Keyed array of variables
+    :type $file: string
+    :param $file: Filename of footer script (defaults to 'footer')
     :returns: string
 
 *****

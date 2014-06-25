@@ -1,12 +1,10 @@
 ````````````````````````````
-Libraries/Omeka/Auth/Adapter
+libraries/Omeka/Auth/Adapter
 ````````````````````````````
 
 .. toctree::
 
-    KeyTable
-    UserTable
-
-
-.. toctree::
-
+   Omeka_Auth_Adapter_KeyTable
+   Omeka_Auth_Adapter_UserTable
+   UserTable
+   KeyTable

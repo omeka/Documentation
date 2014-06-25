@@ -1,8 +1,8 @@
 .. _fphysicalpathto:
 
-################
-physical_path_to
-################
+###################################################################
+``physical_path_to`` — Get the filesystem path for a local asset.
+###################################################################
 
 :doc:`Asset-related functions </Reference/packages/Function/View/Asset/index>`
 
@@ -12,12 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/physical_path_to.rst
 
-.. php:function:: physical_path_to(string $file)
+.. php:function:: physical_path_to($file)
 
-    Return the physical path for an asset/resource within the theme (or plugins, 
-    shared, etc.)
+    Get the filesystem path for a local asset.
     
-    :param string $file: The filename.
+    :type $file: string
+    :param $file: The filename.
     :returns: string
 
 *****

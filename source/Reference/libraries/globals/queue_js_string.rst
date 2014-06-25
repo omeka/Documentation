@@ -1,8 +1,8 @@
 .. _fqueuejsstring:
 
-###############
-queue_js_string
-###############
+####################################################################
+``queue_js_string`` — Add a JavaScript string to the current page.
+####################################################################
 
 :doc:`Asset-related functions </Reference/packages/Function/View/Asset/index>`
 
@@ -12,15 +12,17 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/queue_js_string.rst
 
-.. php:function:: queue_js_string(string $string, array $options)
+.. php:function:: queue_js_string($string, $options = array())
 
-    Declare a JavaScript string to be used on the page and included in the page's 
-    head.
+    Add a JavaScript string to the current page.
     
-    This needs to be called either before head() or in a plugin_header hook.
+    The script will appear in the head element. This needs to be called either
+    before head() or in a plugin_header hook.
     
-    :param string $string: JavaScript string to include.
-    :param array $options: An array of options.
+    :type $string: string
+    :param $string: JavaScript string to include.
+    :type $options: array
+    :param $options: An array of options.
 
 *****
 Usage

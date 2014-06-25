@@ -1,8 +1,8 @@
 .. _flatestomekaversion:
 
-####################
-latest_omeka_version
-####################
+#######################################################################
+``latest_omeka_version`` — Get the latest available version of Omeka.
+#######################################################################
 
 :doc:`Utility-related functions </Reference/packages/Function/Utility/index>`
 
@@ -14,8 +14,7 @@ Summary
 
 .. php:function:: latest_omeka_version()
 
-    Return the latest available version of Omeka by accessing the appropriate
-    URI on omeka.org.
+    Get the latest available version of Omeka.
     
     :returns: string|false The latest available version of Omeka, or false if the request failed for some reason.
 

@@ -1,8 +1,8 @@
 .. _fthemelogo:
 
-##########
-theme_logo
-##########
+##################################################
+``theme_logo`` — Get the theme's logo image tag.
+##################################################
 
 :doc:`Head-related functions </Reference/packages/Function/View/Head/index>`
 
@@ -14,7 +14,7 @@ Summary
 
 .. php:function:: theme_logo()
 
-    Return the theme's logo image tag.
+    Get the theme's logo image tag.
     
     :returns: string|null
 

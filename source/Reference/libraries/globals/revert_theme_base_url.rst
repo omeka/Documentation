@@ -1,8 +1,8 @@
 .. _frevertthemebaseurl:
 
-#####################
-revert_theme_base_url
-#####################
+########################################################################
+``revert_theme_base_url`` — Revert the base URL to its previous state.
+########################################################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 

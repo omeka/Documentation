@@ -1,8 +1,8 @@
 .. _fhtmlescape:
 
-###########
-html_escape
-###########
+###############################################################
+``html_escape`` — Escape a value to display properly as HTML.
+###############################################################
 
 :doc:`Text-related functions </Reference/packages/Function/Text/index>`
 
@@ -12,13 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/html_escape.rst
 
-.. php:function:: html_escape(string $value)
+.. php:function:: html_escape($value)
 
-    Escape the value to display properly as HTML.
+    Escape a value to display properly as HTML.
     
     This uses the 'html_escape' filter for escaping.
     
-    :param string $value: 
+    :type $value: string
+    :param $value:
     :returns: string
 
 *****

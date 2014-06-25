@@ -1,8 +1,8 @@
 .. _faddpluginhook:
 
-###############
-add_plugin_hook
-###############
+#############################################################################
+``add_plugin_hook`` — Declare a plugin hook implementation within a plugin.
+#############################################################################
 
 :doc:`Plugin-related functions </Reference/packages/Function/Plugin/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/add_plugin_hook.rst
 
-.. php:function:: add_plugin_hook(string $hook, mixed $callback)
+.. php:function:: add_plugin_hook($hook, $callback)
 
     Declare a plugin hook implementation within a plugin.
     
-    :param string $hook: Name of hook being implemented.
-    :param mixed $callback: Any valid PHP callback.
+    :type $hook: string
+    :param $hook: Name of hook being implemented.
+    :type $callback: mixed
+    :param $callback: Any valid PHP callback.
 
 *****
 Usage

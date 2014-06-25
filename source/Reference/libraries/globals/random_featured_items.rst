@@ -1,8 +1,8 @@
 .. _frandomfeatureditems:
 
-#####################
-random_featured_items
-#####################
+#################################################################
+``random_featured_items`` — Get HTML for random featured items.
+#################################################################
 
 :doc:`Item-related functions </Reference/packages/Function/View/Item/index>`
 
@@ -12,12 +12,13 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/random_featured_items.rst
 
-.. php:function:: random_featured_items(int $count = 5, $hasImage)
+.. php:function:: random_featured_items($count = 5, $hasImage = null)
 
-    Return HTML for random featured items.
+    Get HTML for random featured items.
     
-    :param int $count: 
-    :param unknown $hasImage: 
+    :type $count: int
+    :param $count: Maximum number of items to show.
+    :param $hasImage:
     :returns: string
 
 *****

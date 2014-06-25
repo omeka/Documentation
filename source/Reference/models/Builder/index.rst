@@ -1,14 +1,14 @@
 ``````````````
-Models/Builder
+models/Builder
 ``````````````
 
 .. toctree::
 
-    Collection
-    ElementSet
-    Item
-    ItemType
-
-
-.. toctree::
-
+   Builder_Collection
+   ElementSet
+   ItemType
+   Item
+   Builder_Item
+   Builder_ItemType
+   Builder_ElementSet
+   Collection

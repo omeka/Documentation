@@ -1,8 +1,8 @@
 .. _fhead:
 
-####
-head
-####
+########################################
+``head`` — Get the view's header HTML.
+########################################
 
 :doc:`Layout-related functions </Reference/packages/Function/View/Layout/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/head.rst
 
-.. php:function:: head(array $vars, string $file = header)
+.. php:function:: head($vars = array(), $file = 'header')
 
-    Return the view's header HTML.
+    Get the view's header HTML.
     
-    :param array $vars: Keyed array of variables
-    :param string $file: Filename of header script (defaults to 'header')
+    :type $vars: array
+    :param $vars: Keyed array of variables
+    :type $file: string
+    :param $file: Filename of header script (defaults to 'header')
     :returns: string
 
 *****

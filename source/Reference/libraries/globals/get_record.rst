@@ -1,8 +1,10 @@
 .. _fgetrecord:
 
-##########
-get_record
-##########
+#########################################################
+``get_record`` — Get a single record from the database.
+#########################################################
+
+.. versionadded:: 2.1
 
 :doc:`Db-related functions </Reference/packages/Function/Db/index>`
 
@@ -12,12 +14,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/get_record.rst
 
-.. php:function:: get_record(string $recordType, array $params)
+.. php:function:: get_record($recordType, $params = array())
 
     Get a single record from the database.
     
-    :param string $recordType: Type of records to get.
-    :param array $params: Array of search parameters for records.
+    :type $recordType: string
+    :param $recordType: Type of records to get.
+    :type $params: array
+    :param $params: Array of search parameters for records.
     :returns: object An object of result records (of $recordType).
 
 *****

@@ -1,8 +1,8 @@
 .. _fgetrandomfeatureditems:
 
-#########################
-get_random_featured_items
-#########################
+############################################################
+``get_random_featured_items`` — Get random featured items.
+############################################################
 
 :doc:`Item-related functions </Reference/packages/Function/View/Item/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/get_random_featured_items.rst
 
-.. php:function:: get_random_featured_items(integer $num = 5, boolean|null $hasImage)
+.. php:function:: get_random_featured_items($num = 5, $hasImage = null)
 
     Get random featured items.
     
-    :param integer $num: The maximum number of recent items to return
-    :param boolean|null $hasImage: 
+    :type $num: integer
+    :param $num: The maximum number of recent items to return
+    :type $hasImage: boolean|null
+    :param $hasImage:
     :returns: array|Item
 
 *****

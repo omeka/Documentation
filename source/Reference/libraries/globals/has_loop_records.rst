@@ -1,8 +1,8 @@
 .. _fhaslooprecords:
 
-################
-has_loop_records
-################
+##################################################################################
+``has_loop_records`` — Check if records have been set to the view for iteration.
+##################################################################################
 
 :doc:`Loop-related functions </Reference/packages/Function/View/Loop/index>`
 
@@ -12,13 +12,16 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/has_loop_records.rst
 
-.. php:function:: has_loop_records(string $recordsVar)
+.. php:function:: has_loop_records($recordsVar)
 
     Check if records have been set to the view for iteration.
     
-    Note that this function will return false if the records variable is set butis an empty array, unlike get_loop_records(), which will return the emptyarray.
+    Note that this function will return false if the records variable is set
+    but is an empty array, unlike get_loop_records(), which will return the
+    empty array.
     
-    :param string $recordsVar: 
+    :type $recordsVar: string
+    :param $recordsVar: View variable to check.
     :returns: bool
 
 *****

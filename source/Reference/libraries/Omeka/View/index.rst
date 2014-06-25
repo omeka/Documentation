@@ -1,13 +1,10 @@
 ````````````````````
-Libraries/Omeka/View
+libraries/Omeka/View
 ````````````````````
 
 .. toctree::
 
-    AbstractSearch
-    Exception
-
-
-.. toctree::
-
-    Helper/index
+   AbstractSearch
+   Helper/index
+   Exception
+   Omeka_View_Exception

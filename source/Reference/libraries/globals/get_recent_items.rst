@@ -1,8 +1,8 @@
 .. _fgetrecentitems:
 
-################
-get_recent_items
-################
+###########################################################
+``get_recent_items`` — Get the most recently added items.
+###########################################################
 
 :doc:`Item-related functions </Reference/packages/Function/View/Item/index>`
 
@@ -12,11 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/get_recent_items.rst
 
-.. php:function:: get_recent_items(integer $num = 10)
+.. php:function:: get_recent_items($num = 10)
 
     Get the most recently added items.
     
-    :param integer $num: The maximum number of recent items to return
+    :type $num: integer
+    :param $num: The maximum number of recent items to return
     :returns: array
 
 *****

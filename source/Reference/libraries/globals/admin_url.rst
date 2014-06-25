@@ -1,8 +1,8 @@
 .. _fadminurl:
 
-#########
-admin_url
-#########
+###############################################
+``admin_url`` — Get a URL to the admin theme.
+###############################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
@@ -14,7 +14,7 @@ Summary
 
 .. php:function:: admin_url()
 
-    Return a URL to the admin theme.
+    Get a URL to the admin theme.
     
     :returns: string
 

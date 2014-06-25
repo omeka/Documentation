@@ -1,8 +1,8 @@
 .. _flinktocollectionforitem:
 
-###########################
-link_to_collection_for_item
-###########################
+###########################################################################################
+``link_to_collection_for_item`` — Get a link to the collection to which the item belongs.
+###########################################################################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
@@ -12,15 +12,20 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/link_to_collection_for_item.rst
 
-.. php:function:: link_to_collection_for_item(string|null $text, array $props, string $action = show)
+.. php:function:: link_to_collection_for_item($text = null, $props = array(), $action = 'show')
 
-    Return a link to the collection to which the item belongs.
+    Get a link to the collection to which the item belongs.
     
-    The default text displayed for this link will be the name of the collection,but that can be changed by passing a string argument.
+    The default text displayed for this link will be the name of the
+    collection,
+    but that can be changed by passing a string argument.
     
-    :param string|null $text: Text for the link.
-    :param array $props: HTML attributes for the <a> tag.
-    :param string $action: 'show' by default.
+    :type $text: string|null
+    :param $text: Text for the link.
+    :type $props: array
+    :param $props: HTML attributes for the <a> tag.
+    :type $action: string
+    :param $action: 'show' by default.
     :returns: string
 
 *****

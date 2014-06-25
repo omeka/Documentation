@@ -1,8 +1,8 @@
 .. _finsertitemtype:
 
-################
-insert_item_type
-################
+################################################
+``insert_item_type`` — Insert a new item type.
+################################################
 
 :doc:`ItemType-related functions </Reference/packages/Function/Db/ItemType/index>`
 
@@ -12,42 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/insert_item_type.rst
 
-.. php:function:: insert_item_type(array $metadata, array $elementInfos)
+.. php:function:: insert_item_type($metadata = array(), $elementInfos = array())
 
     Insert a new item type.
     
-    :param array $metadata: Follows the format:         
-    
-        .. code-block:: php 
-    
-    
-             array(
-               'name'        => [string],
-               'description' => [string]
-             );
-     
-    :param array $elementInfos: An array containing element data. Each entry follows one or more of the following formats:         
-    
-        .. raw:: html
-    
-           <ol>
-               <li>An array containing element metadata</li>
-               <li>An Element object</li>
-             </ol>
-             
-    
-        .. code-block:: php 
-    
-    
-             array(
-               array(
-                 'name' => [(string) name, required],
-                 'description' => [(string) description, optional],
-                 'order' => [(int) order, optional],
-               ),
-               [(Element)],
-             );
-     
+    :type $metadata: array
+    :param $metadata: Follows the format: <code> array( 'name'        => [string], 'description' => [string] ); </code>
+    :type $elementInfos: array
+    :param $elementInfos: An array containing element data. Each entry follows one or more of the following formats: <ol> <li>An array containing element metadata</li> <li>An Element object</li> </ol> <code> array( array( 'name' => [(string) name, required], 'description' => [(string) description, optional], 'order' => [(int) order, optional], ), [(Element)], ); </code>
     :returns: ItemType
 
 *****

@@ -1,33 +1,52 @@
 `````````````
-Views/helpers
+views/helpers
 `````````````
 
 .. toctree::
 
-    AllElementTexts
-    ElementForm
-    ElementInput
-    FileId3Metadata
-    FileMarkup
-    Flash
-    FormInput
-    GetCurrentRecord
-    GetLoopRecords
-    HasLoopRecords
-    ItemSearchFilters
-    Loop
-    MaxFileSize
-    Metadata
-    Pluralize
-    RecordUrl
-    SearchFilters
-    SearchForm
-    SetCurrentRecord
-    SetLoopRecords
-    Shortcodes
-    Singularize
-    Url
-
-
-.. toctree::
-
+   Pluralize
+   ItemSearchFilters
+   Omeka_View_Helper_Flash
+   Singularize
+   Omeka_View_Helper_ItemSearchFilters
+   Omeka_View_Helper_GetCurrentRecord
+   Omeka_View_Helper_FormInput
+   HasLoopRecords
+   Omeka_View_Helper_FileId3Metadata
+   Omeka_View_Helper_FileMarkup
+   FormInput
+   Omeka_View_Helper_SearchForm
+   SearchFilters
+   ElementInput
+   ElementForm
+   Omeka_View_Helper_Metadata
+   Omeka_View_Helper_SearchFilters
+   Omeka_View_Helper_Shortcodes
+   SearchForm
+   Omeka_View_Helper_ElementForm
+   Omeka_View_Helper_Singularize
+   Omeka_View_Helper_MaxFileSize
+   SetLoopRecords
+   Loop
+   Omeka_View_Helper_SetCurrentRecord
+   RecordUrl
+   Omeka_View_Helper_GetLoopRecords
+   MaxFileSize
+   Omeka_View_Helper_SetLoopRecords
+   GetCurrentRecord
+   Omeka_View_Helper_HasLoopRecords
+   FileId3Metadata
+   Omeka_View_Helper_AllElementTexts
+   AllElementTexts
+   Omeka_View_Helper_ElementInput
+   Flash
+   Metadata
+   Shortcodes
+   Omeka_View_Helper_Url
+   Omeka_View_Helper_RecordUrl
+   FileMarkup
+   Url
+   GetLoopRecords
+   Omeka_View_Helper_Loop
+   SetCurrentRecord
+   Omeka_View_Helper_Pluralize

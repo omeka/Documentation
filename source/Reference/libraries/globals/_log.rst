@@ -1,8 +1,8 @@
 .. _flog:
 
-####
-_log
-####
+###########################
+``_log`` — Log a message.
+###########################
 
 :doc:`Log-related functions </Reference/packages/Function/Log/index>`
 
@@ -12,14 +12,16 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/_log.rst
 
-.. php:function:: _log(mixed $msg, integer $priority = 6)
+.. php:function:: _log($msg, $priority = Zend_Log::INFO)
 
     Log a message.
     
     Enabled via config.ini: log.errors.
     
-    :param mixed $msg: The log message.
-    :param integer $priority: See Zend_Log for a list of available priorities.
+    :type $msg: mixed
+    :param $msg: The log message.
+    :type $priority: integer
+    :param $priority: See Zend_Log for a list of available priorities.
 
 *****
 Usage

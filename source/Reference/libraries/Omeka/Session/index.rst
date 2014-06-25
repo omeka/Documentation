@@ -1,11 +1,7 @@
 ```````````````````````
-Libraries/Omeka/Session
+libraries/Omeka/Session
 ```````````````````````
 
 .. toctree::
 
-
-
-.. toctree::
-
-    SaveHandler/index
+   SaveHandler/index

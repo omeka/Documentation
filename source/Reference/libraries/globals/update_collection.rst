@@ -1,8 +1,8 @@
 .. _fupdatecollection:
 
-#################
-update_collection
-#################
+########################################################
+``update_collection`` — Update an existing collection.
+########################################################
 
 :doc:`Collection-related functions </Reference/packages/Function/Db/Collection/index>`
 
@@ -12,13 +12,16 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/update_collection.rst
 
-.. php:function:: update_collection(Collection|int $collection, array $metadata, array $elementTexts)
+.. php:function:: update_collection($collection, $metadata = array(), $elementTexts = array())
 
     Update an existing collection.
     
-    :param Collection|int $collection: Either an Collection object or the ID for the collection.
-    :param array $metadata: Set of options that can be passed to the collection.
-    :param array $elementTexts: The element texts for the collection
+    :type $collection: Collection|int
+    :param $collection: Either an Collection object or the ID for the collection.
+    :type $metadata: array
+    :param $metadata: Set of options that can be passed to the collection.
+    :type $elementTexts: array
+    :param $elementTexts: The element texts for the collection.
     :returns: Collection
 
 *****

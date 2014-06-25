@@ -1,8 +1,8 @@
 .. _fmaxfilesize:
 
-#############
-max_file_size
-#############
+#######################################################
+``max_file_size`` — Get the maximum file upload size.
+#######################################################
 
 :doc:`Utility-related functions </Reference/packages/Function/Utility/index>`
 
@@ -14,7 +14,7 @@ Summary
 
 .. php:function:: max_file_size()
 
-    Return the maximum file size.
+    Get the maximum file upload size.
     
     :returns: Zend_Measure_Binary
 

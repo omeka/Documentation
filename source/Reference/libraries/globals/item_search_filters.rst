@@ -1,8 +1,8 @@
 .. _fitemsearchfilters:
 
-###################
-item_search_filters
-###################
+#################################################################################
+``item_search_filters`` — Get a list of the current search item filters in use.
+#################################################################################
 
 :doc:`Search-related functions </Reference/packages/Function/Search/index>`
 
@@ -12,11 +12,11 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/item_search_filters.rst
 
-.. php:function:: item_search_filters($params)
+.. php:function:: item_search_filters($params = null)
 
-    Return a list of the current search item filters in use.
+    Get a list of the current search item filters in use.
     
-    :param unknown $params: 
+    :param $params:
     :returns: string
 
 *****

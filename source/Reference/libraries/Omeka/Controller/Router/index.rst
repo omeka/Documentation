@@ -1,11 +1,8 @@
 `````````````````````````````````
-Libraries/Omeka/Controller/Router
+libraries/Omeka/Controller/Router
 `````````````````````````````````
 
 .. toctree::
 
-    Api
-
-
-.. toctree::
-
+   Omeka_Controller_Router_Api
+   Api

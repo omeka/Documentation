@@ -1,8 +1,8 @@
 .. _fgetoption:
 
-##########
-get_option
-##########
+########################################################
+``get_option`` — Get an option from the options table.
+########################################################
 
 :doc:`Option-related functions </Reference/packages/Function/Db/Option/index>`
 
@@ -16,14 +16,15 @@ Summary
 
     Get an option from the options table.
     
-    If the returned value represents an object or array, it must be unserializedby the caller before use. For example:	               
+    If the returned value represents an object or array, it must be
+    unserialized by the caller before use. For example:
+    <code>
+    $object = unserialize(get_option('plugin_object'));
+    </code>
     
-    .. code-block:: php 
-    
-    
-    	                   $object = unserialize(get_option('plugin_object'));
-    
-    :param unknown $name:
+    :type $name: string
+    :param $name: The option name.
+    :returns: string The option value.
 
 *****
 Usage

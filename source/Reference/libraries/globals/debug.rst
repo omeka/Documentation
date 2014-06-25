@@ -1,8 +1,8 @@
 .. _fdebug:
 
-#####
-debug
-#####
+##################################################
+``debug`` — Log a message with 'DEBUG' priority.
+##################################################
 
 :doc:`Log-related functions </Reference/packages/Function/Log/index>`
 
@@ -12,11 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/debug.rst
 
-.. php:function:: debug(string $msg)
+.. php:function:: debug($msg)
 
     Log a message with 'DEBUG' priority.
     
-    :param string $msg:
+    :type $msg: string
+    :param $msg:
 
 *****
 Usage

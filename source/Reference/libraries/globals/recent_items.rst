@@ -1,8 +1,10 @@
 .. _frecentitems:
 
-############
-recent_items
-############
+###############################################
+``recent_items`` — Get HTML for recent items.
+###############################################
+
+.. versionadded:: 2.2
 
 :doc:`Item-related functions </Reference/packages/Function/View/Item/index>`
 
@@ -12,11 +14,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/recent_items.rst
 
-.. php:function:: recent_items(int $count = 10)
+.. php:function:: recent_items($count = 10)
 
-    Return HTML for recent items.
+    Get HTML for recent items.
     
-    :param int $count: 
+    :type $count: int
+    :param $count: Maximum number of recent items to show.
     :returns: string
 
 *****

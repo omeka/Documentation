@@ -1,8 +1,8 @@
 .. _fallelementtexts:
 
-#################
-all_element_texts
-#################
+#####################################################################
+``all_element_texts`` — Get all element text metadata for a record.
+#####################################################################
 
 :doc:`View-related functions </Reference/packages/Function/View/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/all_element_texts.rst
 
-.. php:function:: all_element_texts(Omeka_Record_AbstractRecord|string $record, array $options)
+.. php:function:: all_element_texts($record, $options = array())
 
-    Return the set of all element text metadata for a record.
+    Get all element text metadata for a record.
     
-    :param Omeka_Record_AbstractRecord|string $record: The record to get the element text metadata for.
-    :param array $options: Options for getting the metadata.
+    :type $record: Omeka_Record_AbstractRecord|string
+    :param $record: The record to get the element text metadata for.
+    :type $options: array
+    :param $options: Options for getting the metadata.
     :returns: string|array
 
 *****

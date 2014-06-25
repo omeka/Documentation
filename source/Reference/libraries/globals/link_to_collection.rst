@@ -1,8 +1,8 @@
 .. _flinktocollection:
 
-##################
-link_to_collection
-##################
+######################################################
+``link_to_collection`` — Get a link to a collection.
+######################################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
@@ -12,14 +12,22 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/link_to_collection.rst
 
-.. php:function:: link_to_collection(string $text, array $props, array $action = show, array $collectionObj)
+.. php:function:: link_to_collection($text = null, $props = array(), $action = 'show', $collectionObj = null)
 
-    Return a link to a collection.
+    Get a link to a collection.
     
-    :param string $text: text to use for the title of the collection.  Default behavior is to use the name of the collection.
-    :param array $props: Set of attributes to use for the link.
-    :param array $action: The action to link to for the collection.
-    :param array $collectionObj: Collection record can be passed to this to override the collection object retrieved by get_current_record().
+    The only differences from link_to() are that this function will
+    automatically use the "current" collection, and will use the collection
+    title as the link text.
+    
+    :type $text: string
+    :param $text: text to use for the title of the collection.  Default behavior is to use the name of the collection.
+    :type $props: array
+    :param $props: Set of attributes to use for the link.
+    :type $action: array
+    :param $action: The action to link to for the collection.
+    :type $collectionObj: array
+    :param $collectionObj: Collection record can be passed to this to override the collection object retrieved by get_current_record().
     :returns: string
 
 *****

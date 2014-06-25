@@ -1,8 +1,8 @@
 .. _faddfilter:
 
-##########
-add_filter
-##########
+###################################################
+``add_filter`` — Declare a filter implementation.
+###################################################
 
 :doc:`Plugin-related functions </Reference/packages/Function/Plugin/index>`
 
@@ -12,13 +12,16 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/add_filter.rst
 
-.. php:function:: add_filter(string|array $name, callback $callback, integer $priority = 10)
+.. php:function:: add_filter($name, $callback, $priority = 10)
 
     Declare a filter implementation.
     
-    :param string|array $name: The filter name.
-    :param callback $callback: The function to call.
-    :param integer $priority: Defaults to 10.
+    :type $name: string|array
+    :param $name: The filter name.
+    :type $callback: callback
+    :param $callback: The function to call.
+    :type $priority: integer
+    :param $priority: Defaults to 10.
 
 *****
 Usage

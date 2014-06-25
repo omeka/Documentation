@@ -1,8 +1,8 @@
 .. _ftexttoparagraphs:
 
-##################
-text_to_paragraphs
-##################
+###################################################################################
+``text_to_paragraphs`` — Replace newlines in a block of text with paragraph tags.
+###################################################################################
 
 :doc:`Text-related functions </Reference/packages/Function/Text/index>`
 
@@ -12,13 +12,16 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/text_to_paragraphs.rst
 
-.. php:function:: text_to_paragraphs(string $str)
+.. php:function:: text_to_paragraphs($str)
 
-    Replace new lines in a block of text with paragraph tags.
+    Replace newlines in a block of text with paragraph tags.
     
-    Looks for 2 consecutive line breaks resembling a paragraph break and wrapseach of the paragraphs with a <p> tag.  If no paragraphs are found, then theoriginal text will be wrapped with line breaks.
+    Looks for 2 consecutive line breaks resembling a paragraph break and wraps
+    each of the paragraphs with a <p> tag.  If no paragraphs are found, then
+    the original text will be wrapped with line breaks.
     
-    :param string $str: 
+    :type $str: string
+    :param $str:
     :returns: string
 
 *****

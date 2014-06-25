@@ -1,11 +1,8 @@
 ````````````````````````````
-Libraries/Omeka/Form/Element
+libraries/Omeka/Form/Element
 ````````````````````````````
 
 .. toctree::
 
-    Input
-
-
-.. toctree::
-
+   Omeka_Form_Element_Input
+   Input

@@ -1,8 +1,8 @@
 .. _fgetspecificpluginhookoutput:
 
-###############################
-get_specific_plugin_hook_output
-###############################
+###############################################################################################
+``get_specific_plugin_hook_output`` — Get the output of a specific plugin's hook as a string.
+###############################################################################################
 
 :doc:`Plugin-related functions </Reference/packages/Function/Plugin/index>`
 
@@ -16,7 +16,8 @@ Summary
 
     Get the output of a specific plugin's hook as a string.
     
-    This is like get_plugin_hook_output() but only calls the hook within theprovided plugin.
+    This is like get_plugin_hook_output() but only calls the hook within the
+    provided plugin.
     
     :returns: string|null
 

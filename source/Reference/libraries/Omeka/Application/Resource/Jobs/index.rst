@@ -1,11 +1,8 @@
 `````````````````````````````````````````
-Libraries/Omeka/Application/Resource/Jobs
+libraries/Omeka/Application/Resource/Jobs
 `````````````````````````````````````````
 
 .. toctree::
 
-    InvalidAdapterException
-
-
-.. toctree::
-
+   Omeka_Application_Resource_Jobs_InvalidAdapterException
+   InvalidAdapterException

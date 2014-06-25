@@ -1,8 +1,8 @@
 .. _frecordimage:
 
-############
-record_image
-############
+###################################################
+``record_image`` — Get an image tag for a record.
+###################################################
 
 :doc:`View-related functions </Reference/packages/Function/View/index>`
 
@@ -12,13 +12,16 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/record_image.rst
 
-.. php:function:: record_image(Omeka_Record_AbstractRecord|string $record, string $imageType, array $props)
+.. php:function:: record_image($record, $imageType, $props = array())
 
-    Return an image tag for a record.
+    Get an image tag for a record.
     
-    :param Omeka_Record_AbstractRecord|string $record: 
-    :param string $imageType: 
-    :param array $props: 
+    :type $record: Omeka_Record_AbstractRecord|string
+    :param $record:
+    :type $imageType: string
+    :param $imageType: Image size: thumbnail, square thumbnail, fullsize
+    :type $props: array
+    :param $props: HTML attributes for the img tag
     :returns: string
 
 *****

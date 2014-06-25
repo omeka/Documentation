@@ -1,8 +1,8 @@
 .. _fgetuserroles:
 
-##############
-get_user_roles
-##############
+#######################################################
+``get_user_roles`` — Get the names of all user roles.
+#######################################################
 
 :doc:`User-related functions </Reference/packages/Function/User/index>`
 
@@ -14,7 +14,7 @@ Summary
 
 .. php:function:: get_user_roles()
 
-    Get an array of all user role names.
+    Get the names of all user roles.
     
     :returns: array
 

@@ -1,8 +1,8 @@
 .. _flinktoitemswithitemtype:
 
-############################
-link_to_items_with_item_type
-############################
+###############################################################################
+``link_to_items_with_item_type`` — Get a link to item type items browse page.
+###############################################################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
@@ -12,14 +12,17 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/link_to_items_with_item_type.rst
 
-.. php:function:: link_to_items_with_item_type(string|null $text, array $props, string $action = browse, $itemTypeObj)
+.. php:function:: link_to_items_with_item_type($text = null, $props = array(), $action = 'browse', $itemTypeObj = null)
 
-    Return a link to item type items browse page.
+    Get a link to item type items browse page.
     
-    :param string|null $text: 
-    :param array $props: 
-    :param string $action: 
-    :param unknown $itemTypeObj: 
+    :type $text: string|null
+    :param $text:
+    :type $props: array
+    :param $props:
+    :type $action: string
+    :param $action:
+    :param $itemTypeObj:
     :returns: string
 
 *****

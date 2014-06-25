@@ -2,9 +2,11 @@
 SystemInfoController
 --------------------
 
+Package: :doc:`Controller </Reference/packages/Controller/index>`
+
 .. php:class:: SystemInfoController
 
-    Package: :doc:`Controller </Reference/packages/Controller/index>`
+extends :php:class:`Omeka_Controller_AbstractActionController`
 
     .. php:method:: preDispatch()
 
@@ -13,13 +15,13 @@ SystemInfoController
     .. php:method:: _getInfoArray()
 
     .. php:method:: _addExtensionInfo($info)
-    
-        :param unknown $info:
+
+        :param $info:
 
     .. php:method:: _addPluginInfo($info)
-    
-        :param unknown $info:
+
+        :param $info:
 
     .. php:method:: _addThemeInfo($info)
-    
-        :param unknown $info:
+
+        :param $info:

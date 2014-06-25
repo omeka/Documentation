@@ -11,9 +11,10 @@ Packages
     Captcha/index
     Controller/index
     Db/index
-    File/Derivative/Strategy/index
+    File/Derivative/index
     Filter/index
     Form/index
+    Function/index
     Http/index
     Install/index
     Job/index

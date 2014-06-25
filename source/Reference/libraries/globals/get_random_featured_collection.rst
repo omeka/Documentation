@@ -1,8 +1,8 @@
 .. _fgetrandomfeaturedcollection:
 
-##############################
-get_random_featured_collection
-##############################
+########################################################################
+``get_random_featured_collection`` — Get a random featured collection.
+########################################################################
 
 :doc:`Collection-related functions </Reference/packages/Function/Db/Collection/index>`
 

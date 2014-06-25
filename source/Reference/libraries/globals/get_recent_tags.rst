@@ -1,8 +1,8 @@
 .. _fgetrecenttags:
 
-###############
-get_recent_tags
-###############
+#################################################
+``get_recent_tags`` — Get the most recent tags.
+#################################################
 
 :doc:`View-related functions </Reference/packages/Function/View/index>`
 
@@ -12,11 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/get_recent_tags.rst
 
-.. php:function:: get_recent_tags(integer $limit = 10)
+.. php:function:: get_recent_tags($limit = 10)
 
     Get the most recent tags.
     
-    :param integer $limit: The maximum number of recent tags to return
+    :type $limit: integer
+    :param $limit: The maximum number of recent tags to return
     :returns: array
 
 *****

@@ -2,8 +2,10 @@
 RedirectorController
 --------------------
 
+Package: :doc:`Controller </Reference/packages/Controller/index>`
+
 .. php:class:: RedirectorController
 
-    Package: :doc:`Controller </Reference/packages/Controller/index>`
+extends :php:class:`Omeka_Controller_AbstractActionController`
 
     .. php:method:: indexAction()

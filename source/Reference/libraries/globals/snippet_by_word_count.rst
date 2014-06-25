@@ -1,8 +1,8 @@
 .. _fsnippetbywordcount:
 
-#####################
-snippet_by_word_count
-#####################
+########################################################################################
+``snippet_by_word_count`` — Return a substring of the text by limiting the word count.
+########################################################################################
 
 :doc:`Text-related functions </Reference/packages/Function/Text/index>`
 
@@ -12,15 +12,18 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/snippet_by_word_count.rst
 
-.. php:function:: snippet_by_word_count(string $text, integer $maxWords = 20, string $ellipsis = ...)
+.. php:function:: snippet_by_word_count($text, $maxWords = 20, $ellipsis = '...')
 
     Return a substring of the text by limiting the word count.
     
     Note: it strips the HTML tags from the text before getting the snippet
     
-    :param string $text: 
-    :param integer $maxWords: 
-    :param string $ellipsis: 
+    :type $text: string
+    :param $text:
+    :type $maxWords: integer
+    :param $maxWords:
+    :type $ellipsis: string
+    :param $ellipsis:
     :returns: string
 
 *****

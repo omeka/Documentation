@@ -1,8 +1,8 @@
 .. _fgetdb:
 
-######
-get_db
-######
+#######################################
+``get_db`` — Get the database object.
+#######################################
 
 :doc:`Db-related functions </Reference/packages/Function/Db/index>`
 

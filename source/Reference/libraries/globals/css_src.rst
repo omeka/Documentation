@@ -1,8 +1,8 @@
 .. _fcsssrc:
 
-#######
-css_src
-#######
+################################################
+``css_src`` — Get the URL to a local css file.
+################################################
 
 :doc:`Asset-related functions </Reference/packages/Function/View/Asset/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/css_src.rst
 
-.. php:function:: css_src(string $file, string $dir = css)
+.. php:function:: css_src($file, $dir = 'css')
 
-    Return the web path to a css file.
+    Get the URL to a local css file.
     
-    :param string $file: Should not include the .css extension
-    :param string $dir: Defaults to 'css'
+    :type $file: string
+    :param $file: Should not include the .css extension
+    :type $dir: string
+    :param $dir: Defaults to 'css'
     :returns: string
 
 *****

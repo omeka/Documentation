@@ -1,8 +1,8 @@
 .. _ftexttoid:
 
-##########
-text_to_id
-##########
+###############################################################
+``text_to_id`` — Convert a word or phrase to a valid HTML ID.
+###############################################################
 
 :doc:`Text-related functions </Reference/packages/Function/Text/index>`
 
@@ -12,27 +12,23 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/text_to_id.rst
 
-.. php:function:: text_to_id($text, $prepend, $delimiter = -)
+.. php:function:: text_to_id($text, $prepend = null, $delimiter = '-')
 
-    Convert a word or phrase to dashed format, i.e. Foo Bar => foo-bar.
+    Convert a word or phrase to a valid HTML ID.
     
-    This is primarily for easy creation of HTML ids within Omeka
+    For example: 'Foo Bar' becomes 'foo-bar'.
     
-    	               
+    This function converts to lowercase, replaces whitespace with hyphens,
+    removes all non-alphanumerics, removes leading or trailing delimiters,
+    and optionally prepends a piece of text.
     
-    .. raw:: html
-    
-    <ol>
-    	                 <li>convert to lowercase</li>
-    	                 <li>Replace whitespace with -</li>
-    	                 <li>remove all non-alphanumerics</li>
-    	                 <li>remove leading/trailing delimiters</li>
-    	                 <li>optionally prepend a piece of text</li>
-    	                </ol>
-    
-    :param unknown $text: 
-    :param unknown $prepend: 
-    :param unknown $delimiter:
+    :type $text: string
+    :param $text: The text to convert
+    :type $prepend: string
+    :param $prepend: Another string to prepend to the ID
+    :type $delimiter: string
+    :param $delimiter: The delimiter to use (- by default)
+    :returns: string
 
 *****
 Usage

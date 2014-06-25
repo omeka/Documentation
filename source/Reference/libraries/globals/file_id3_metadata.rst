@@ -1,8 +1,8 @@
 .. _ffileid3metadata:
 
-#################
-file_id3_metadata
-#################
+################################################################
+``file_id3_metadata`` — Return HTML for a file's ID3 metadata.
+################################################################
 
 :doc:`File-related functions </Reference/packages/Function/View/File/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/file_id3_metadata.rst
 
-.. php:function:: file_id3_metadata(array $options, File|null $file)
+.. php:function:: file_id3_metadata($options = array(), $file = null)
 
     Return HTML for a file's ID3 metadata.
     
-    :param array $options: 
-    :param File|null $file: 
+    :type $options: array
+    :param $options: Options for varying the display. Currently ignored.
+    :type $file: File|null
+    :param $file: File to get the metadata for. If omitted, the current file is used.
     :returns: string|array
 
 *****

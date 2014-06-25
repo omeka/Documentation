@@ -1,8 +1,8 @@
 .. _fgetsearchrecordtypes:
 
-#######################
-get_search_record_types
-#######################
+########################################################################################
+``get_search_record_types`` — Get all record types that may be indexed and searchable.
+########################################################################################
 
 :doc:`Search-related functions </Reference/packages/Function/Search/index>`
 
@@ -16,9 +16,12 @@ Summary
 
     Get all record types that may be indexed and searchable.
     
-    Plugins may add record types via the "search_record_types" filter. Thekeys should be the record's class name and the respective values shouldbe the human readable and internationalized version of the record type.
+    Plugins may add record types via the "search_record_types" filter. The
+    keys should be the record's class name and the respective values should be
+    the human readable and internationalized version of the record type.
     
-    These record classes must extend Omeka_Record_AbstractRecord andimplement this search mixin (Mixin_Search).
+    These record classes must extend Omeka_Record_AbstractRecord and implement
+    this search mixin (Mixin_Search).
     
     :returns: array
 

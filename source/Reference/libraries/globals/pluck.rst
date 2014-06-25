@@ -1,8 +1,8 @@
 .. _fpluck:
 
-#####
-pluck
-#####
+########################################################################
+``pluck`` — Return one column of a multidimensional array as an array.
+########################################################################
 
 :doc:`Utility-related functions </Reference/packages/Function/Utility/index>`
 
@@ -12,12 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/pluck.rst
 
-.. php:function:: pluck(string|integer $col, array $array)
+.. php:function:: pluck($col, $array)
 
     Return one column of a multidimensional array as an array.
     
-    :param string|integer $col: The column to pluck.
-    :param array $array: The array from which to pluck.
+    :type $col: string|integer
+    :param $col: The column to pluck.
+    :type $array: array
+    :param $array: The array from which to pluck.
     :returns: array The column as an array.
 
 *****

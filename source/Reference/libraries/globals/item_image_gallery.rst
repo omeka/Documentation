@@ -1,8 +1,8 @@
 .. _fitemimagegallery:
 
-##################
-item_image_gallery
-##################
+########################################################################
+``item_image_gallery`` — Get a gallery of file thumbnails for an item.
+########################################################################
 
 :doc:`Item-related functions </Reference/packages/Function/View/Item/index>`
 
@@ -12,14 +12,18 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/item_image_gallery.rst
 
-.. php:function:: item_image_gallery(array $attrs, string $imageType = square_thumbnail, boolean $filesShow = , Item $item)
+.. php:function:: item_image_gallery($attrs = array(), $imageType = 'square_thumbnail', $filesShow = false, $item = null)
 
     Get a gallery of file thumbnails for an item.
     
-    :param array $attrs: HTML attributes for the components of the gallery, in sub-arrays for 'wrapper', 'linkWrapper', 'link', and 'image'. Set a wrapper to null to omit it.
-    :param string $imageType: The type of derivative image to display.
-    :param boolean $filesShow: Whether to link to the files/show. Defaults to false, links to the original file.
-    :param Item $item: The Item to use, the current item if omitted.
+    :type $attrs: array
+    :param $attrs: HTML attributes for the components of the gallery, in sub-arrays for 'wrapper', 'linkWrapper', 'link', and 'image'. Set a wrapper to null to omit it.
+    :type $imageType: string
+    :param $imageType: The type of derivative image to display.
+    :type $filesShow: boolean
+    :param $filesShow: Whether to link to the files/show. Defaults to false, links to the original file.
+    :type $item: Item
+    :param $item: The Item to use, the current item if omitted.
     :returns: string
 
 *****

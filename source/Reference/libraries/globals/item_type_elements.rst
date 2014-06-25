@@ -1,8 +1,8 @@
 .. _fitemtypeelements:
 
-##################
-item_type_elements
-##################
+########################################################################
+``item_type_elements`` — Get the set of values for item type elements.
+########################################################################
 
 :doc:`ItemType-related functions </Reference/packages/Function/View/ItemType/index>`
 
@@ -12,11 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/item_type_elements.rst
 
-.. php:function:: item_type_elements(Item|null $item)
+.. php:function:: item_type_elements($item = null)
 
-    Return the set of values for item type elements.
+    Get the set of values for item type elements.
     
-    :param Item|null $item: Check for this specific item record (current item if null).
+    :type $item: Item|null
+    :param $item: Check for this specific item record (current item if null).
     :returns: array
 
 *****

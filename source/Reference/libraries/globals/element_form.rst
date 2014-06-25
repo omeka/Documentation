@@ -1,8 +1,8 @@
 .. _felementform:
 
-############
-element_form
-############
+#######################################################################
+``element_form`` — Get the HTML for a form input for a given Element.
+#######################################################################
 
 :doc:`Form-related functions </Reference/packages/Function/View/Form/index>`
 
@@ -12,20 +12,30 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/element_form.rst
 
-.. php:function:: element_form(Element|array $element, Omeka_Record_AbstractRecord $record, array $options)
+.. php:function:: element_form($element, $record, $options = array())
 
-    Return the proper HTML for a form input for a given Element record.
+    Get the HTML for a form input for a given Element.
     
-    Assume that the given element has access to all of its values (for example,
+    Assume that the given element has access to all of its values (for
+    example,
     all values of a Title element for a given Item).
     
-    This will output as many form inputs as there are values for a given element.In addition to that, it will give each set of inputs a label and a span withclass="tooltip" containing the description for the element. This span caneither be displayed, hidden with CSS or converted into a tooltip withjavascript.
+    This will output as many form inputs as there are values for a given
+    element.
+    In addition to that, it will give each set of inputs a label and a span
+    with class="tooltip" containing the description for the element. This span
+    can either be displayed, hidden with CSS or converted into a tooltip with
+    javascript.
     
-    All sets of form inputs for elements will be wrapped in a div withclass="field".
+    All sets of form inputs for elements will be wrapped in a div with
+    class="field".
     
-    :param Element|array $element: 
-    :param Omeka_Record_AbstractRecord $record: 
-    :param array $options: 
+    :type $element: Element|array
+    :param $element:
+    :type $record: Omeka_Record_AbstractRecord
+    :param $record:
+    :type $options: array
+    :param $options:
     :returns: string HTML
 
 *****

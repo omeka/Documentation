@@ -1,8 +1,8 @@
 .. _fsetthemebaseurl:
 
-##################
-set_theme_base_url
-##################
+####################################################################
+``set_theme_base_url`` — Set the base URL for the specified theme.
+####################################################################
 
 :doc:`Navigation-related functions </Reference/packages/Function/View/Navigation/index>`
 
@@ -12,11 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/set_theme_base_url.rst
 
-.. php:function:: set_theme_base_url(string $theme)
+.. php:function:: set_theme_base_url($theme = null)
 
     Set the base URL for the specified theme.
     
-    :param string $theme:
+    :type $theme: string
+    :param $theme:
 
 *****
 Usage

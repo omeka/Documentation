@@ -1,8 +1,8 @@
 .. _fclearfilters:
 
-#############
-clear_filters
-#############
+##############################################################################
+``clear_filters`` — Clear all implementations for a filter (or all filters).
+##############################################################################
 
 :doc:`Plugin-related functions </Reference/packages/Function/Plugin/index>`
 
@@ -12,11 +12,11 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/clear_filters.rst
 
-.. php:function:: clear_filters($filterName)
+.. php:function:: clear_filters($filterName = null)
 
     Clear all implementations for a filter (or all filters).
     
-    :param unknown $filterName:
+    :param $filterName:
 
 *****
 Usage
