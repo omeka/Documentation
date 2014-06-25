@@ -8,7 +8,7 @@ Usage
 
 This hook allows the plugin writer to add routes to Omeka.
 
-Routes can be used to create custom URLs that are different than the default ones provided by Omeka for plugin pages. 
+Routes can be used to create custom URLs that are different than the default ones provided by Omeka for plugin pages.
 
 *********
 Arguments
@@ -56,8 +56,3 @@ Examples
     }
     
     
-********
-See Also
-********
-
-:doc:`/Tutorials/understandingRoutes`    
