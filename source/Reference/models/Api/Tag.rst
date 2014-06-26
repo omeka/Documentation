@@ -2,13 +2,16 @@
 Api_Tag
 -------
 
+Package: :doc:`Record\\Api </Reference/packages/Record/Api/index>`
+
 .. php:class:: Api_Tag
 
-    Package: :doc:`Record\\Api </Reference/packages/Record/Api/index>`
+extends :php:class:`Omeka_Record_Api_AbstractRecordAdapter`
 
     .. php:method:: getRepresentation(Omeka_Record_AbstractRecord $record)
-    
+
         Get the REST representation of a tag.
-        
-        :param Omeka_Record_AbstractRecord $record: 
+
+        :type $record: Omeka_Record_AbstractRecord
+        :param $record:
         :returns: array

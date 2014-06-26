@@ -2,45 +2,35 @@
 Omeka_File_MimeType_Exception
 -----------------------------
 
+Package: :doc:`File\\MimeType </Reference/packages/File/MimeType/index>`
+
 .. php:class:: Omeka_File_MimeType_Exception
 
-    Package: :doc:`File\\MimeType </Reference/packages/File/MimeType/index>`
+extends :php:class:`Exception`
 
     .. php:attr:: message
-    
 
-
-    .. php:attr:: string
-    
-
+        protected
 
     .. php:attr:: code
-    
 
+        protected
 
     .. php:attr:: file
-    
 
+        protected
 
     .. php:attr:: line
-    
 
-
-    .. php:attr:: trace
-    
-
-
-    .. php:attr:: previous
-    
-
+        protected
 
     .. php:method:: __clone()
 
     .. php:method:: __construct($message, $code, $previous)
-    
-        :param unknown $message: 
-        :param unknown $code: 
-        :param unknown $previous:
+
+        :param $message:
+        :param $code:
+        :param $previous:
 
     .. php:method:: getMessage()
 

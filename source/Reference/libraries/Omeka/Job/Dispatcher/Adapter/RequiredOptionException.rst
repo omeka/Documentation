@@ -2,36 +2,38 @@
 Omeka_Job_Dispatcher_Adapter_RequiredOptionException
 ----------------------------------------------------
 
+Package: :doc:`Job\\Dispatcher\\Adapter </Reference/packages/Job/Dispatcher/Adapter/index>`
+
 .. php:class:: Omeka_Job_Dispatcher_Adapter_RequiredOptionException
 
-    Package: :doc:`Job\\Dispatcher\\Adapter </Reference/packages/Job/Dispatcher/Adapter/index>`
+extends :php:class:`LogicException`
 
-    Exception thrown when required options have not been passed to the 
+    Exception thrown when required options have not been passed to the
     Omeka_Job_Dispatcher_Adapter_AdapterInterface's constructor.
 
     .. php:attr:: message
-    
 
+        protected
 
     .. php:attr:: code
-    
 
+        protected
 
     .. php:attr:: file
-    
 
+        protected
 
     .. php:attr:: line
-    
 
+        protected
 
     .. php:method:: __clone()
 
     .. php:method:: __construct($message, $code, $previous)
-    
-        :param unknown $message: 
-        :param unknown $code: 
-        :param unknown $previous:
+
+        :param $message:
+        :param $code:
+        :param $previous:
 
     .. php:method:: getMessage()
 

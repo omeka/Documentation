@@ -2,15 +2,18 @@
 Omeka_View_Helper_SearchFilters
 -------------------------------
 
+Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+
 .. php:class:: Omeka_View_Helper_SearchFilters
 
-    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+extends :php:class:`Omeka_View_Helper_AbstractSearch`
 
     Return a list of search filters in the current request.
 
-    .. php:method:: searchFilters(array $options)
-    
+    .. php:method:: searchFilters($options = array())
+
         Return a list of current search filters in use.
-        
-        :param array $options: Valid options are as follows: - id (string): the ID of the filter wrapping div.
+
+        :type $options: array
+        :param $options: Valid options are as follows: - id (string): the ID of the filter wrapping div.
         :returns: string

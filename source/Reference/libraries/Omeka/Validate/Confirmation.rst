@@ -2,53 +2,62 @@
 Omeka_Validate_Confirmation
 ---------------------------
 
+Package: :doc:`Validate </Reference/packages/Validate/index>`
+
 .. php:class:: Omeka_Validate_Confirmation
 
-    Package: :doc:`Validate </Reference/packages/Validate/index>`
+extends :php:class:`Zend_Validate_Abstract`
 
     Adapted from Zend Framework documentation on custom validators.
 
     .. php:const:: NOT_MATCH
-    
-    
-    
+
         Error message for non-matching confirmation.
 
     .. php:attr:: _field
-    
+
+        protected string
+
         Field needing confirmation.
 
     .. php:attr:: _messageTemplates
-    
+
+        protected array
+
         Error messages.
 
     .. php:attr:: _messageVariables
-    
+
+        protected array
+
         Error message replace variables.
 
     .. php:method:: __construct($field)
-    
-        Sets validator options
-        
-        :param unknown $field:
 
-    .. php:method:: isValid(string $value, string|array $context)
-    
+        Sets validator options
+
+        :param $field:
+
+    .. php:method:: isValid($value, $context = null)
+
         Check that the value is valid.
-        
-        :param string $value: 
-        :param string|array $context: 
+
+        :type $value: string
+        :param $value:
+        :type $context: string|array
+        :param $context:
         :returns: boolean
 
     .. php:method:: getField()
-    
+
         Get the name of the field that needs confirmation.
-        
+
         :returns: string
 
-    .. php:method:: setField(string $field)
-    
+    .. php:method:: setField($field)
+
         Set the name of the field that needs confirmation.
-        
-        :param string $field: 
+
+        :type $field: string
+        :param $field:
         :returns: void

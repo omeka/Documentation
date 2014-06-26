@@ -2,48 +2,38 @@
 Omeka_Record_Builder_Exception
 ------------------------------
 
+Package: :doc:`Record\\Builder </Reference/packages/Record/Builder/index>`
+
 .. php:class:: Omeka_Record_Builder_Exception
 
-    Package: :doc:`Record\\Builder </Reference/packages/Record/Builder/index>`
+extends :php:class:`Exception`
 
     Exception thrown when there is an error creating a Record using
     {@link Omeka_Record_Builder_AbstractBuilder}.
 
     .. php:attr:: message
-    
 
-
-    .. php:attr:: string
-    
-
+        protected
 
     .. php:attr:: code
-    
 
+        protected
 
     .. php:attr:: file
-    
 
+        protected
 
     .. php:attr:: line
-    
 
-
-    .. php:attr:: trace
-    
-
-
-    .. php:attr:: previous
-    
-
+        protected
 
     .. php:method:: __clone()
 
     .. php:method:: __construct($message, $code, $previous)
-    
-        :param unknown $message: 
-        :param unknown $code: 
-        :param unknown $previous:
+
+        :param $message:
+        :param $code:
+        :param $previous:
 
     .. php:method:: getMessage()
 

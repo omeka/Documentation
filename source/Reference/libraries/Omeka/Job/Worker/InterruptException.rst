@@ -2,48 +2,38 @@
 Omeka_Job_Worker_InterruptException
 -----------------------------------
 
+Package: :doc:`Job\\Worker </Reference/packages/Job/Worker/index>`
+
 .. php:class:: Omeka_Job_Worker_InterruptException
 
-    Package: :doc:`Job\\Worker </Reference/packages/Job/Worker/index>`
+extends :php:class:`Exception`
 
-    Exception thrown when the type of job could not be inferred from the message 
+    Exception thrown when the type of job could not be inferred from the message
     passed to the factory.
 
     .. php:attr:: message
-    
 
-
-    .. php:attr:: string
-    
-
+        protected
 
     .. php:attr:: code
-    
 
+        protected
 
     .. php:attr:: file
-    
 
+        protected
 
     .. php:attr:: line
-    
 
-
-    .. php:attr:: trace
-    
-
-
-    .. php:attr:: previous
-    
-
+        protected
 
     .. php:method:: __clone()
 
     .. php:method:: __construct($message, $code, $previous)
-    
-        :param unknown $message: 
-        :param unknown $code: 
-        :param unknown $previous:
+
+        :param $message:
+        :param $code:
+        :param $previous:
 
     .. php:method:: getMessage()
 

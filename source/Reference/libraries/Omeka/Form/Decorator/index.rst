@@ -6,5 +6,3 @@ libraries/Omeka/Form/Decorator
 
    SavePanelHook
    SavePanelAction
-   Omeka_Form_Decorator_SavePanelAction
-   Omeka_Form_Decorator_SavePanelHook

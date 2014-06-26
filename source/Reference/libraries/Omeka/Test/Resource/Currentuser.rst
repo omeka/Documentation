@@ -2,9 +2,11 @@
 Omeka_Test_Resource_Currentuser
 -------------------------------
 
+Package: :doc:`Test\\Resource </Reference/packages/Test/Resource/index>`
+
 .. php:class:: Omeka_Test_Resource_Currentuser
 
-    Package: :doc:`Test\\Resource </Reference/packages/Test/Resource/index>`
+extends :php:class:`Zend_Application_Resource_ResourceAbstract`
 
     Mask the behavior of Omeka_Application_Resource_Currentuser in tests.
 

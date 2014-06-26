@@ -2,14 +2,19 @@
 Omeka_View_Helper_SetCurrentRecord
 ----------------------------------
 
+Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+
 .. php:class:: Omeka_View_Helper_SetCurrentRecord
 
-    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+extends :php:class:`Zend_View_Helper_Abstract`
 
-    .. php:method:: setCurrentRecord(string $recordVar, Omeka_Record_AbstractRecord $record, bool $setPreviousRecord = )
-    
+    .. php:method:: setCurrentRecord($recordVar, Omeka_Record_AbstractRecord $record, $setPreviousRecord = false)
+
         Set a record to the view as the current record.
-        
-        :param string $recordVar: 
-        :param Omeka_Record_AbstractRecord $record: 
-        :param bool $setPreviousRecord:
+
+        :type $recordVar: string
+        :param $recordVar:
+        :type $record: Omeka_Record_AbstractRecord
+        :param $record:
+        :type $setPreviousRecord: bool
+        :param $setPreviousRecord:

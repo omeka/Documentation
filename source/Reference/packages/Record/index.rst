@@ -16,9 +16,9 @@ Up to :doc:`../index`
    /Reference/models/ItemType.rst
    /Reference/models/ItemTypesElements.rst
    /Reference/models/Key.rst
-   /Reference/libraries/Omeka/Record/Omeka_Record_AbstractRecord.rst
-   /Reference/libraries/Omeka/Record/Omeka_Record_Exception.rst
-   /Reference/libraries/Omeka/Record/Omeka_Record_Iterator.rst
+   /Reference/libraries/Omeka/Record/AbstractRecord.rst
+   /Reference/libraries/Omeka/Record/Exception.rst
+   /Reference/libraries/Omeka/Record/Iterator.rst
    /Reference/models/Option.rst
    /Reference/models/Plugin.rst
    /Reference/models/Process.rst

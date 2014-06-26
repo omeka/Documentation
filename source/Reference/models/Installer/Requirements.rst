@@ -2,25 +2,9 @@
 Installer_Requirements
 ----------------------
 
+Package: :doc:`Install </Reference/packages/Install/index>`
+
 .. php:class:: Installer_Requirements
-
-    Package: :doc:`Install </Reference/packages/Install/index>`
-
-    .. php:attr:: _dbAdapter
-    
-
-
-    .. php:attr:: _storage
-    
-
-
-    .. php:attr:: _errorMessages
-    
-
-
-    .. php:attr:: _warningMessages
-    
-
 
     .. php:method:: check()
 
@@ -33,12 +17,14 @@ Installer_Requirements
     .. php:method:: hasWarning()
 
     .. php:method:: setDbAdapter(Zend_Db_Adapter_Abstract $db)
-    
-        :param Zend_Db_Adapter_Abstract $db:
+
+        :type $db: Zend_Db_Adapter_Abstract
+        :param $db:
 
     .. php:method:: setStorage(Omeka_Storage $storage)
-    
-        :param Omeka_Storage $storage:
+
+        :type $storage: Omeka_Storage
+        :param $storage:
 
     .. php:method:: _checkPhpVersionIsValid()
 

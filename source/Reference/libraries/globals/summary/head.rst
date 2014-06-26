@@ -1,1 +1,0 @@
-This function includes the file header.php in a theme. A view script needs to use this function along with :php:func:`foot` to create the structure of the page. 

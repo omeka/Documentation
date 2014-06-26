@@ -7,8 +7,8 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/libraries/Omeka/Omeka_Storage.rst
-   /Reference/libraries/Omeka/Storage/Omeka_Storage_Exception.rst
+   /Reference/libraries/Omeka/Storage.rst
+   /Reference/libraries/Omeka/Storage/Exception.rst
 
 .. toctree::
    :glob:

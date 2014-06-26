@@ -2,168 +2,192 @@
 Omeka_File_Ingest_AbstractIngest
 --------------------------------
 
+Package: :doc:`File\\Ingest </Reference/packages/File/Ingest/index>`
+
 .. php:class:: Omeka_File_Ingest_AbstractIngest
 
-    Package: :doc:`File\\Ingest </Reference/packages/File/Ingest/index>`
-
     An abstract class that handles ingesting files into Omeka and database.
-    
+
     Specific responsibilities handled by this class:
-    
     - Parsing/validating arbitrary inputs that somehow identify the files to be ingested.
-    
     - Iterating through the parsed file information, validating, and transferring each file to Omeka.
-    
-    - Inserting a new record into the files table that corresponds to thetransferred file's metadata.
-    
-    - Returning a collection of the records associated with the ingestedfiles.
-    
+    - Inserting a new record into the files table that corresponds to the transferred file's metadata.
+    - Returning a collection of the records associated with the ingested files.
+
     Typical usage is via the factory() method:
-    
-    	               
-    
-        .. code-block:: php 
-    
-    
-    	               $ingest = Omeka_File_Ingest_AbstractIngest::factory('Url', $item);
-    	               $fileRecords = $ingest->ingest('http://www.example.com');
+
+    <code>
+    $ingest = Omeka_File_Ingest_AbstractIngest::factory('Url', $item);
+    $fileRecords = $ingest->ingest('http://www.example.com');
+    </code>
 
     .. php:attr:: _item
-    
 
+        protected Item
 
     .. php:attr:: _options
-    
+
+        protected array
+
         Set of arbitrary options to use when ingesting files.
 
-    .. php:attr:: _validators
-    
-        Set of validators implementing Zend_Validate_Interface.
-
     .. php:attr:: mimeType
-    
+
+        string
+
         The current validated file MIME type.
 
     .. php:method:: setItem(Item $item)
-    
+
         Set the item to use as a target when ingesting files.
-        
-        :param Item $item: 
+
+        :type $item: Item
+        :param $item:
         :returns: void
 
-    .. php:method:: factory(string $adapterName, Item $item, array $options)
-    
+    .. php:method:: factory($adapterName, $item, $options = array())
+
         Factory to retrieve Omeka_File_Ingest_* instances.
-        
-        :param string $adapterName: Ingest adapter.
-        :param Item $item: 
-        :param array $options: 
+
+        :type $adapterName: string
+        :param $adapterName: Ingest adapter.
+        :type $item: Item
+        :param $item:
+        :type $options: array
+        :param $options:
         :returns: Omeka_File_Ingest_AbstractIngest
 
-    .. php:method:: _getOriginalFilename(array $fileInfo)
-    
+    .. php:method:: _getOriginalFilename($fileInfo)
+
         Retrieve the original filename of the file.
-        
-        :param array $fileInfo: 
+
+        :type $fileInfo: array
+        :param $fileInfo:
         :returns: string
 
-    .. php:method:: _transferFile(array $fileInfo, string $originalFilename)
-    
+    .. php:method:: _transferFile($fileInfo, $originalFilename)
+
         Transfer the file to Omeka.
-        
-        To indicate validation errors, Omeka_File_Ingest_InvalidException can bethrown at any time.  To indicate other types of non-recoverable errorsrelated to file ingest, throw Omeka_File_Ingest_Exception.
-        
-        :param array $fileInfo: 
-        :param string $originalFilename: 
+
+        To indicate validation errors, Omeka_File_Ingest_InvalidException can be
+        thrown at any time.  To indicate other types of non-recoverable errors
+        related to file ingest, throw Omeka_File_Ingest_Exception.
+
+        :type $fileInfo: array
+        :param $fileInfo:
+        :type $originalFilename: string
+        :param $originalFilename:
         :returns: string Real path to the transferred file.
 
-    .. php:method:: _parseFileInfo(mixed $files)
-    
+    .. php:method:: _parseFileInfo($files)
+
         Ingest classes receive arbitrary information.  This method needs to
         parse that information into an iterable array so that multiple files
         can be ingested from a single identifier.
-        
+
         Example use case is Omeka_File_Ingest_Upload.
-        
-        :param mixed $files: 
+
+        :type $files: mixed
+        :param $files:
         :returns: array
 
-    .. php:method:: setOptions(array $options)
-    
+    .. php:method:: setOptions($options)
+
         Set options for ingesting files.
-        
-        :param array $options: Available options include: - 'ignore_invalid_files': boolean false by default.  Determine whether or not to throw exceptions when a file is not valid.  This can be based on a number of factors:  whether or not the original identifier is valid (i.e. a valid URL), whether or not the file itself is valid (i.e. invalid file extension), or whether the basic algorithm for ingesting the file fails (i.e., files cannot be transferred because the files/ directory is not writeable). This option is primarily useful for skipping known invalid files when ingesting large data sets.
+
+        :type $options: array
+        :param $options: Available options include: - 'ignore_invalid_files': boolean false by default.  Determine whether or not to throw exceptions when a file is not valid.  This can be based on a number of factors:  whether or not the original identifier is valid (i.e. a valid URL), whether or not the file itself is valid (i.e. invalid file extension), or whether the basic algorithm for ingesting the file fails (i.e., files cannot be transferred because the files/ directory is not writeable). This option is primarily useful for skipping known invalid files when ingesting large data sets.
         :returns: void
 
-    .. php:method:: ingest(mixed $fileInfo)
-    
+    .. php:method:: ingest($fileInfo)
+
         Ingest based on arbitrary file identifier info.
-        
-        If this is an array that has a 'metadata' key, that should be an arrayrepresenting element text metadata to assign to the file.  SeeActsAsElementText::addElementTextsByArray() for more details.
-        
-        :param mixed $fileInfo: An arbitrary input (array, string, object, etc.) that corresponds to one or more files to be ingested into Omeka.
+
+        If this is an array that has a 'metadata' key, that should be an array
+        representing element text metadata to assign to the file.  See
+        ActsAsElementText::addElementTextsByArray() for more details.
+
+        :type $fileInfo: mixed
+        :param $fileInfo: An arbitrary input (array, string, object, etc.) that corresponds to one or more files to be ingested into Omeka.
         :returns: array Ingested file records.
 
     .. php:method:: _ignoreIngestErrors()
-    
-        Determine whether or not to ignore file ingest errors.  Based on 
+
+        Determine whether or not to ignore file ingest errors.  Based on
         'ignore_invalid_files', which is false by default.
-        
+
         :returns: boolean
 
     .. php:method:: _logException(Exception $e)
-    
+
         Log any exceptions that are thrown as a result of attempting to ingest
         invalid files.
-        
-        These are logged as warnings because they are being ignored by the script,so they don't actually kill the file ingest process.
-        
-        :param Exception $e: 
+
+        These are logged as warnings because they are being ignored by the script,
+        so they don't actually kill the file ingest process.
+
+        :type $e: Exception
+        :param $e:
         :returns: void
 
-    .. php:method:: _createFile(string $newFilePath, string $oldFilename, array $elementMetadata)
-    
+    .. php:method:: _createFile($newFilePath, $oldFilename, $elementMetadata = array())
+
         Insert a File record corresponding to an ingested file and its metadata.
-        
-        :param string $newFilePath: Path to the file within Omeka.
-        :param string $oldFilename: The original filename for the file.  This will usually be displayed to the end user.
-        :param array $elementMetadata: See ActsAsElementText::addElementTextsByArray() for more information about the format of this array.
+
+        :type $newFilePath: string
+        :param $newFilePath: Path to the file within Omeka.
+        :type $oldFilename: string
+        :param $oldFilename: The original filename for the file.  This will usually be displayed to the end user.
+        :type $elementMetadata: array
+        :param $elementMetadata: See ActsAsElementText::addElementTextsByArray() for more information about the format of this array.
         :returns: File
 
-    .. php:method:: _getDestination(string $fromFilename)
-    
+    .. php:method:: _getDestination($fromFilename)
+
         Retrieve the destination path for the file to be transferred.
-        
-        This will generate an archival filename in order to prevent naming conflicts between ingested files.
-        
-        This should be used as necessary by Omeka_File_Ingest_AbstractIngestimplementations in order to determine where to transfer any given file.
-        
-        :param string $fromFilename: The filename from which to derive the archival filename.
+
+        This will generate an archival filename in order to prevent naming
+        conflicts between ingested files.
+
+        This should be used as necessary by Omeka_File_Ingest_AbstractIngest
+        implementations in order to determine where to transfer any given file.
+
+        :type $fromFilename: string
+        :param $fromFilename: The filename from which to derive the archival filename.
         :returns: string
 
     .. php:method:: addValidator(Zend_Validate_Interface $validator)
-    
+
         Add Zend Framework file validators.
-        
+
         Emulates the way Zend Framework adds validators.
-        
-        :param Zend_Validate_Interface $validator: 
+
+        :type $validator: Zend_Validate_Interface
+        :param $validator:
         :returns: Omeka_File_Ingest_AbstractIngest
 
-    .. php:method:: _validateFile(string $filePath, array $fileInfo)
-    
+    .. php:method:: _validateFile($filePath, $fileInfo)
+
         Validate a file that has been transferred to Omeka.
-        
-        Implementations of Omeka_File_Ingest_AbstractIngest should use this to validate the uploaded file based on user-defined security criteria.
-        
-        Important: $fileInfo may need to contain the following keys in order to work with particular Zend_Validate_File_* validation classes:
-        
-        
-        
-        - 'name': string filename (for Zend_Validate_File_Extension) If ZF is unable to determine the file extension when validating, it willcheck the 'name' attribute instead.  Current use cases involve saving thefile to a temporary location before transferring to Omeka. Mosttemporary files do not maintain the original file extension.
-        
-        - 'type': string MIME type (for Zend_Validate_File_MimeType) If ZFis unable to determine the mime type from the transferred file.  Unlessthe server running Omeka has a mime_magic file or has installed theFileInfo extension, this will be necessary.
-        
-        :param string $filePath: Absolute path to the file.  The file should be local and readable, which is required by most (if not all) of the Zend_Validate_File_* classes.
-        :param array $fileInfo: Set of file info that describes a given file being ingested.
+
+        Implementations of Omeka_File_Ingest_AbstractIngest should use this to
+        validate the uploaded file based on user-defined security criteria.
+
+        Important: $fileInfo may need to contain the following keys in order to
+        work with particular Zend_Validate_File_* validation classes:
+
+        - 'name': string filename (for Zend_Validate_File_Extension) If ZF is
+        unable to determine the file extension when validating, it will check the
+        'name' attribute instead.  Current use cases involve saving the file to a
+        temporary location before transferring to Omeka. Most temporary files do
+        not maintain the original file extension.
+        - 'type': string MIME type (for Zend_Validate_File_MimeType) If ZF is
+        unable to determine the mime type from the transferred file.  Unless the
+        server running Omeka has a mime_magic file or has installed the FileInfo
+        extension, this will be necessary.
+
+        :type $filePath: string
+        :param $filePath: Absolute path to the file.  The file should be local and readable, which is required by most (if not all) of the Zend_Validate_File_* classes.
+        :type $fileInfo: array
+        :param $fileInfo: Set of file info that describes a given file being ingested.
         :returns: boolean True if valid, otherwise throws an exception.

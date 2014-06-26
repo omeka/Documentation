@@ -2,45 +2,35 @@
 Installer_Exception
 -------------------
 
+Package: :doc:`Install </Reference/packages/Install/index>`
+
 .. php:class:: Installer_Exception
 
-    Package: :doc:`Install </Reference/packages/Install/index>`
+extends :php:class:`Exception`
 
     .. php:attr:: message
-    
 
-
-    .. php:attr:: string
-    
-
+        protected
 
     .. php:attr:: code
-    
 
+        protected
 
     .. php:attr:: file
-    
 
+        protected
 
     .. php:attr:: line
-    
 
-
-    .. php:attr:: trace
-    
-
-
-    .. php:attr:: previous
-    
-
+        protected
 
     .. php:method:: __clone()
 
     .. php:method:: __construct($message, $code, $previous)
-    
-        :param unknown $message: 
-        :param unknown $code: 
-        :param unknown $previous:
+
+        :param $message:
+        :param $code:
+        :param $previous:
 
     .. php:method:: getMessage()
 

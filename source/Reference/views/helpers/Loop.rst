@@ -2,14 +2,18 @@
 Omeka_View_Helper_Loop
 ----------------------
 
+Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+
 .. php:class:: Omeka_View_Helper_Loop
 
-    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+extends :php:class:`Zend_View_Helper_Abstract`
 
-    .. php:method:: loop(string $recordsVar, array|null $records)
-    
+    .. php:method:: loop($recordsVar, $records = null)
+
         Return an iterator used for looping an array of records.
-        
-        :param string $recordsVar: 
-        :param array|null $records: 
+
+        :type $recordsVar: string
+        :param $recordsVar:
+        :type $records: array|null
+        :param $records:
         :returns: Omeka_Record_Iterator

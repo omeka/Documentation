@@ -17,10 +17,10 @@ Up to :doc:`../index`
    /Reference/controllers/IndexController.rst
    /Reference/controllers/ItemTypesController.rst
    /Reference/controllers/ItemsController.rst
-   /Reference/libraries/Omeka/Controller/Omeka_Controller_AbstractActionController.rst
-   /Reference/libraries/Omeka/Controller/Exception/Omeka_Controller_Exception_403.rst
-   /Reference/libraries/Omeka/Controller/Exception/Omeka_Controller_Exception_404.rst
-   /Reference/libraries/Omeka/Controller/Exception/Omeka_Controller_Exception_Api.rst
+   /Reference/libraries/Omeka/Controller/AbstractActionController.rst
+   /Reference/libraries/Omeka/Controller/Exception/403.rst
+   /Reference/libraries/Omeka/Controller/Exception/404.rst
+   /Reference/libraries/Omeka/Controller/Exception/Api.rst
    /Reference/controllers/PluginsController.rst
    /Reference/controllers/RedirectorController.rst
    /Reference/controllers/api/ResourcesController.rst

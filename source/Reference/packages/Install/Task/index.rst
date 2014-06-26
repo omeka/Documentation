@@ -7,7 +7,7 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/models/Installer/Task/Installer_Task_User.rst
+   /Reference/models/Installer/Task/User.rst
 
 .. toctree::
    :glob:

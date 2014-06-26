@@ -2,14 +2,14 @@
 Omeka_Job_JobInterface
 ----------------------
 
-.. php:class:: Omeka_Job_JobInterface
+Package: :doc:`Job </Reference/packages/Job/index>`
 
-    Package: :doc:`Job </Reference/packages/Job/index>`
+.. php:interface:: Omeka_Job_JobInterface
 
     Interface for jobs.
 
     .. php:method:: __construct($options)
-    
-        :param unknown $options:
+
+        :param $options:
 
     .. php:method:: perform()

@@ -2,13 +2,17 @@
 Omeka_View_Helper_SetLoopRecords
 --------------------------------
 
+Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+
 .. php:class:: Omeka_View_Helper_SetLoopRecords
 
-    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+extends :php:class:`Zend_View_Helper_Abstract`
 
-    .. php:method:: setLoopRecords(string $recordsVar, array $records)
-    
+    .. php:method:: setLoopRecords($recordsVar, $records)
+
         Set records to the view for iteration.
-        
-        :param string $recordsVar: 
-        :param array $records:
+
+        :type $recordsVar: string
+        :param $recordsVar:
+        :type $records: array
+        :param $records:

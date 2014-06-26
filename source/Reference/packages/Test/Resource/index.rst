@@ -7,13 +7,13 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/libraries/Omeka/Test/Resource/Omeka_Test_Resource_Config.rst
-   /Reference/libraries/Omeka/Test/Resource/Omeka_Test_Resource_Currentuser.rst
-   /Reference/libraries/Omeka/Test/Resource/Omeka_Test_Resource_Db.rst
-   /Reference/libraries/Omeka/Test/Resource/Omeka_Test_Resource_Debug.rst
-   /Reference/libraries/Omeka/Test/Resource/Omeka_Test_Resource_Mail.rst
-   /Reference/libraries/Omeka/Test/Resource/Omeka_Test_Resource_Storage.rst
-   /Reference/libraries/Omeka/Test/Resource/Omeka_Test_Resource_Tempdir.rst
+   /Reference/libraries/Omeka/Test/Resource/Config.rst
+   /Reference/libraries/Omeka/Test/Resource/Currentuser.rst
+   /Reference/libraries/Omeka/Test/Resource/Db.rst
+   /Reference/libraries/Omeka/Test/Resource/Debug.rst
+   /Reference/libraries/Omeka/Test/Resource/Mail.rst
+   /Reference/libraries/Omeka/Test/Resource/Storage.rst
+   /Reference/libraries/Omeka/Test/Resource/Tempdir.rst
 
 .. toctree::
    :glob:

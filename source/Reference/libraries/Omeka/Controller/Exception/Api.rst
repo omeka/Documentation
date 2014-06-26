@@ -2,54 +2,47 @@
 Omeka_Controller_Exception_Api
 ------------------------------
 
+Package: :doc:`Controller </Reference/packages/Controller/index>`
+
 .. php:class:: Omeka_Controller_Exception_Api
 
-    Package: :doc:`Controller </Reference/packages/Controller/index>`
+extends :php:class:`Exception`
 
     API exception.
-    
+
     API implementers should throw this exception for controller errors.
 
     .. php:attr:: _errors
-    
 
+        protected array
 
     .. php:attr:: message
-    
 
-
-    .. php:attr:: string
-    
-
+        protected
 
     .. php:attr:: code
-    
 
+        protected
 
     .. php:attr:: file
-    
 
+        protected
 
     .. php:attr:: line
-    
 
+        protected
 
-    .. php:attr:: trace
-    
+    .. php:method:: __construct($message, $code, $errors = array())
 
-
-    .. php:attr:: previous
-    
-
-
-    .. php:method:: __construct(string $message, int $code, array $errors)
-    
-        :param string $message: 
-        :param int $code: 
-        :param array $errors: Custom errors
+        :type $message: string
+        :param $message:
+        :type $code: int
+        :param $code:
+        :type $errors: array
+        :param $errors: Custom errors
 
     .. php:method:: getErrors()
-    
+
         :returns: array
 
     .. php:method:: __clone()

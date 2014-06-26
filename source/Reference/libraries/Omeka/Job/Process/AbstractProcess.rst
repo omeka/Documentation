@@ -2,22 +2,23 @@
 Omeka_Job_Process_AbstractProcess
 ---------------------------------
 
-.. php:class:: Omeka_Job_Process_AbstractProcess
+Package: :doc:`Job\\Process </Reference/packages/Job/Process/index>`
 
-    Package: :doc:`Job\\Process </Reference/packages/Job/Process/index>`
+.. php:class:: Omeka_Job_Process_AbstractProcess
 
     Base class background processes descend from.
 
     .. php:attr:: _process
-    
 
+        protected
 
     .. php:method:: __construct(Process $process)
-    
-        :param Process $process:
+
+        :type $process: Process
+        :param $process:
 
     .. php:method:: __destruct()
 
     .. php:method:: run($args)
-    
-        :param unknown $args:
+
+        :param $args:

@@ -2,20 +2,16 @@
 Omeka_Plugin_Broker_Factory
 ---------------------------
 
+Package: :doc:`Plugin\\Broker </Reference/packages/Plugin/Broker/index>`
+
 .. php:class:: Omeka_Plugin_Broker_Factory
 
-    Package: :doc:`Plugin\\Broker </Reference/packages/Plugin/Broker/index>`
-
-    .. php:attr:: _basePluginDir
-    
-
-
     .. php:method:: __construct($basePluginDir)
-    
-        :param unknown $basePluginDir:
+
+        :param $basePluginDir:
 
     .. php:method:: getAll()
 
     .. php:method:: _register($objs)
-    
-        :param unknown $objs:
+
+        :param $objs:

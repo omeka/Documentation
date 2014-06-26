@@ -2,46 +2,55 @@
 Omeka_Db_Migration_AbstractMigration
 ------------------------------------
 
+Package: :doc:`Db\\Migration </Reference/packages/Db/Migration/index>`
+
 .. php:class:: Omeka_Db_Migration_AbstractMigration
 
-    Package: :doc:`Db\\Migration </Reference/packages/Db/Migration/index>`
+implements :php:interface:`Omeka_Db_Migration_MigrationInterface`
 
     Database migration classes may inherit from this one.
 
     .. php:attr:: db
-    
 
+        protected
 
     .. php:method:: setDb(Omeka_Db $db)
-    
+
         Set the database to migrate.
-        
-        :param Omeka_Db $db: 
+
+        :type $db: Omeka_Db
+        :param $db:
         :returns: void
 
     .. php:method:: getDb()
-    
+
         :returns: Omeka_Db
 
     .. php:method:: down()
-    
-        Template method for reversing the migration.
-        
-        This is defined as a template method instead of leaving it abstract becausepre-existing implementations of Omeka_Db_Migration were not required toimplement the down() method.  This ensures backwards compatibility forthose migrations.
 
-    .. php:method:: __call(string $m, array $a)
-    
+        Template method for reversing the migration.
+
+        This is defined as a template method instead of leaving it abstract
+        because pre-existing implementations of Omeka_Db_Migration were not
+        required to implement the down() method.  This ensures backwards
+        compatibility for those migrations.
+
+    .. php:method:: __call($m, $a)
+
         Proxy calls to Omeka_Db.
-        
+
         Allows migration writers to call db methods directly on $this.
-        
-        :param string $m: Method name.
-        :param array $a: Method arguments.
+
+        :type $m: string
+        :param $m: Method name.
+        :type $a: array
+        :param $a: Method arguments.
 
     .. php:method:: form()
-    
-        If the migration requires a form submission, here's where to handle display of it
-        
+
+        If the migration requires a form submission, here's where to handle
+        display of it
+
         :returns: void
 
     .. php:method:: up()

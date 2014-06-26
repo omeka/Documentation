@@ -2,35 +2,39 @@
 Omeka_Application_Resource_Jobs_InvalidAdapterException
 -------------------------------------------------------
 
+Package: :doc:`Application\\Resource </Reference/packages/Application/Resource/index>`
+
 .. php:class:: Omeka_Application_Resource_Jobs_InvalidAdapterException
 
-    Package: :doc:`Application\\Resource </Reference/packages/Application/Resource/index>`
+extends :php:class:`InvalidArgumentException`
+
+implements :php:interface:`Omeka_Application_Resource_Exception`
 
     Exception thrown when an invalid job dispatcher has been configured.
 
     .. php:attr:: message
-    
 
+        protected
 
     .. php:attr:: code
-    
 
+        protected
 
     .. php:attr:: file
-    
 
+        protected
 
     .. php:attr:: line
-    
 
+        protected
 
     .. php:method:: __clone()
 
     .. php:method:: __construct($message, $code, $previous)
-    
-        :param unknown $message: 
-        :param unknown $code: 
-        :param unknown $previous:
+
+        :param $message:
+        :param $code:
+        :param $previous:
 
     .. php:method:: getMessage()
 

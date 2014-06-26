@@ -7,10 +7,10 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/libraries/Omeka/File/Derivative/Omeka_File_Derivative_AbstractStrategy.rst
-   /Reference/libraries/Omeka/File/Derivative/Omeka_File_Derivative_StrategyInterface.rst
-   /Reference/libraries/Omeka/File/Derivative/Strategy/Omeka_File_Derivative_Strategy_ExternalImageMagick.rst
-   /Reference/libraries/Omeka/File/Derivative/Strategy/Omeka_File_Derivative_Strategy_Imagick.rst
+   /Reference/libraries/Omeka/File/Derivative/AbstractStrategy.rst
+   /Reference/libraries/Omeka/File/Derivative/StrategyInterface.rst
+   /Reference/libraries/Omeka/File/Derivative/Strategy/ExternalImageMagick.rst
+   /Reference/libraries/Omeka/File/Derivative/Strategy/Imagick.rst
 
 .. toctree::
    :glob:

@@ -11,30 +11,22 @@ libraries/Omeka
    Captcha
    Form/index
    Form
-   Omeka_Application
    Application
-   Omeka_Form
    Test/index
    Http/index
    Acl/index
    Output/index
    Job/index
-   AbstractSearch
    Storage
    Session/index
    Navigation/index
    View
-   Omeka_Captcha
-   Omeka_View
    Auth/index
    File/index
-   Omeka_Navigation
-   Omeka_Storage
    Validate/index
    Plugin/index
    Record/index
    Controller/index
    Navigation
-   Omeka_Db
    Filter/index
    Storage/index

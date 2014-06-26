@@ -1,3 +1,0 @@
-Returns a URL to a page in an Omeka site. This function can be used to create links between different pages on the site.
-
-Plugin and theme writers should always use this helper when linking between pages. Hand-written or "bare" URLs are generally only valid for a particular Omeka installation. This helper generates relative URLs that are valid regardless of where an Omeka installation is located on a server. 

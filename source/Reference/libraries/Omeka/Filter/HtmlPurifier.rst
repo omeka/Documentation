@@ -2,59 +2,56 @@
 Omeka_Filter_HtmlPurifier
 -------------------------
 
+Package: :doc:`Filter </Reference/packages/Filter/index>`
+
 .. php:class:: Omeka_Filter_HtmlPurifier
 
-    Package: :doc:`Filter </Reference/packages/Filter/index>`
+implements :php:interface:`Zend_Filter_Interface`
 
     A Zend_Filter implementation that uses HtmlPurifier to purify a string.
 
-    .. php:attr:: _purifier
-    
-
-
-    .. php:attr:: _purifierConfig
-    
-
-
     .. php:method:: filter($value)
-    
+
         Filter the value
-        
-        :param unknown $value: 
+
+        :param $value:
         :returns: string An html purified string
 
     .. php:method:: getDefaultAllowedHtmlElements()
-    
+
         Get the default allowed html elements.
-        
+
         :returns: array An array of strings corresponding to the allowed html elements
 
     .. php:method:: getDefaultAllowedHtmlAttributes()
-    
+
         Get the default allowed html attributes.
-        
+
         :returns: array An array of strings corresponding to the allowed html attributes
 
     .. php:method:: getHtmlPurifier()
-    
+
         Gets the html purifier singleton
-        
+
         :returns: HTMLPurifier $purifier
 
-    .. php:method:: setHtmlPurifier(HTMLPurifier $purifier)
-    
+    .. php:method:: setHtmlPurifier($purifier)
+
         Sets the html purifier singleton
-        
-        :param HTMLPurifier $purifier: 
+
+        :type $purifier: HTMLPurifier
+        :param $purifier:
         :returns: void
 
-    .. php:method:: createHtmlPurifier(array $allowedHtmlElements, array $allowedHtmlAttributes)
-    
-        :param array $allowedHtmlElements: An array of strings representing allowed HTML elements
-        :param array $allowedHtmlAttributes: An array of strings representing allowed HTML attributes
+    .. php:method:: createHtmlPurifier($allowedHtmlElements = null, $allowedHtmlAttributes = null)
+
+        :type $allowedHtmlElements: array
+        :param $allowedHtmlElements: An array of strings representing allowed HTML elements
+        :type $allowedHtmlAttributes: array
+        :param $allowedHtmlAttributes: An array of strings representing allowed HTML attributes
         :returns: HTMLPurifier
 
-    .. php:method:: filterAttributesWithMissingElements($htmlAttributes, $htmlElements)
-    
-        :param unknown $htmlAttributes: 
-        :param unknown $htmlElements:
+    .. php:method:: filterAttributesWithMissingElements($htmlAttributes = array(), $htmlElements = array())
+
+        :param $htmlAttributes:
+        :param $htmlElements:

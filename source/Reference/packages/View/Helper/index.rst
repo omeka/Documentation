@@ -7,30 +7,30 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/libraries/Omeka/View/Helper/Omeka_View_Helper_AbstractSearch.rst
-   /Reference/views/helpers/Omeka_View_Helper_AllElementTexts.rst
-   /Reference/views/helpers/Omeka_View_Helper_ElementForm.rst
-   /Reference/views/helpers/Omeka_View_Helper_ElementInput.rst
-   /Reference/views/helpers/Omeka_View_Helper_FileId3Metadata.rst
-   /Reference/views/helpers/Omeka_View_Helper_FileMarkup.rst
-   /Reference/views/helpers/Omeka_View_Helper_Flash.rst
-   /Reference/views/helpers/Omeka_View_Helper_FormInput.rst
-   /Reference/views/helpers/Omeka_View_Helper_GetCurrentRecord.rst
-   /Reference/views/helpers/Omeka_View_Helper_GetLoopRecords.rst
-   /Reference/views/helpers/Omeka_View_Helper_HasLoopRecords.rst
-   /Reference/views/helpers/Omeka_View_Helper_ItemSearchFilters.rst
-   /Reference/views/helpers/Omeka_View_Helper_Loop.rst
-   /Reference/views/helpers/Omeka_View_Helper_MaxFileSize.rst
-   /Reference/views/helpers/Omeka_View_Helper_Metadata.rst
-   /Reference/views/helpers/Omeka_View_Helper_Pluralize.rst
-   /Reference/views/helpers/Omeka_View_Helper_RecordUrl.rst
-   /Reference/views/helpers/Omeka_View_Helper_SearchFilters.rst
-   /Reference/views/helpers/Omeka_View_Helper_SearchForm.rst
-   /Reference/views/helpers/Omeka_View_Helper_SetCurrentRecord.rst
-   /Reference/views/helpers/Omeka_View_Helper_SetLoopRecords.rst
-   /Reference/views/helpers/Omeka_View_Helper_Shortcodes.rst
-   /Reference/views/helpers/Omeka_View_Helper_Singularize.rst
-   /Reference/views/helpers/Omeka_View_Helper_Url.rst
+   /Reference/libraries/Omeka/View/Helper/AbstractSearch.rst
+   /Reference/views/helpers/AllElementTexts.rst
+   /Reference/views/helpers/ElementForm.rst
+   /Reference/views/helpers/ElementInput.rst
+   /Reference/views/helpers/FileId3Metadata.rst
+   /Reference/views/helpers/FileMarkup.rst
+   /Reference/views/helpers/Flash.rst
+   /Reference/views/helpers/FormInput.rst
+   /Reference/views/helpers/GetCurrentRecord.rst
+   /Reference/views/helpers/GetLoopRecords.rst
+   /Reference/views/helpers/HasLoopRecords.rst
+   /Reference/views/helpers/ItemSearchFilters.rst
+   /Reference/views/helpers/Loop.rst
+   /Reference/views/helpers/MaxFileSize.rst
+   /Reference/views/helpers/Metadata.rst
+   /Reference/views/helpers/Pluralize.rst
+   /Reference/views/helpers/RecordUrl.rst
+   /Reference/views/helpers/SearchFilters.rst
+   /Reference/views/helpers/SearchForm.rst
+   /Reference/views/helpers/SetCurrentRecord.rst
+   /Reference/views/helpers/SetLoopRecords.rst
+   /Reference/views/helpers/Shortcodes.rst
+   /Reference/views/helpers/Singularize.rst
+   /Reference/views/helpers/Url.rst
 
 .. toctree::
    :glob:

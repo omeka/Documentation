@@ -7,8 +7,8 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/libraries/Omeka/File/Derivative/Omeka_File_Derivative_Creator.rst
-   /Reference/libraries/Omeka/File/Derivative/Omeka_File_Derivative_Exception.rst
+   /Reference/libraries/Omeka/File/Derivative/Creator.rst
+   /Reference/libraries/Omeka/File/Derivative/Exception.rst
 
 .. toctree::
    :glob:

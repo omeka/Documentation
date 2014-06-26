@@ -2,14 +2,16 @@
 Table_UsersActivations
 ----------------------
 
+Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
+
 .. php:class:: Table_UsersActivations
 
-    Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
+extends :php:class:`Omeka_Db_Table`
 
     .. php:method:: findByUrl($url)
-    
-        :param unknown $url:
+
+        :param $url:
 
     .. php:method:: findByUser($user)
-    
-        :param unknown $user:
+
+        :param $user:

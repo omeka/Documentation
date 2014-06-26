@@ -6,6 +6,5 @@ libraries/Omeka/Controller
 
    Exception/index
    Router/index
-   Omeka_Controller_AbstractActionController
    AbstractActionController
    Plugin/index

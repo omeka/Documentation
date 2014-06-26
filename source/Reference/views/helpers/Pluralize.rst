@@ -2,10 +2,12 @@
 Omeka_View_Helper_Pluralize
 ---------------------------
 
+Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+
 .. php:class:: Omeka_View_Helper_Pluralize
 
-    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+extends :php:class:`Zend_View_Helper_Abstract`
 
     .. php:method:: pluralize($var)
-    
-        :param unknown $var:
+
+        :param $var:

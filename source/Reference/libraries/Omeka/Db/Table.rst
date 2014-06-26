@@ -2,311 +2,386 @@
 Omeka_Db_Table
 --------------
 
+Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
+
 .. php:class:: Omeka_Db_Table
 
-    Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
-
     Database table classes.
-    
-    Subclasses attached to models must follow the naming convention:Table_TableName, e.g. Table_ElementSet in models/Table/ElementSet.php.
+
+    Subclasses attached to models must follow the naming convention:
+    Table_TableName, e.g. Table_ElementSet in models/Table/ElementSet.php.
 
     .. php:attr:: _target
-    
+
+        protected string
+
         The name of the model for which this table will retrieve objects.
 
     .. php:attr:: _name
-    
+
+        protected string
+
         The name of the table (sans prefix).
-        
+
         If this is not given, it will be inflected.
 
     .. php:attr:: _tablePrefix
-    
+
+        protected string
+
         The table prefix.
-        
+
         Generally used to differentiate Omeka installations sharing a database.
 
     .. php:attr:: _db
-    
+
+        protected Omeka_Db
+
         The Omeka database object.
 
-    .. php:method:: __construct(string $targetModel, Omeka_Db $db)
-    
-        Construct the database table object.
-        
-        Do not instantiate this by itself. Access instances only viaOmeka_Db::getTable().
-        
-        :param string $targetModel: Class name of the table's model.
-        :param Omeka_Db $db: Database object to use for queries.
+    .. php:method:: __construct($targetModel, $db)
 
-    .. php:method:: __call(string $m, array $a)
-    
+        Construct the database table object.
+
+        Do not instantiate this by itself. Access instances only via
+        Omeka_Db::getTable().
+
+        :type $targetModel: string
+        :param $targetModel: Class name of the table's model.
+        :type $db: Omeka_Db
+        :param $db: Database object to use for queries.
+
+    .. php:method:: __call($m, $a)
+
         Delegate to the database adapter.
-        
-        Used primarily as a convenience method. For example, you can callfetchOne() and fetchAll() directly from this object.
-        
-        :param string $m: Method name.
-        :param array $a: Method arguments.
+
+        Used primarily as a convenience method. For example, you can call
+        fetchOne() and fetchAll() directly from this object.
+
+        :type $m: string
+        :param $m: Method name.
+        :type $a: array
+        :param $a: Method arguments.
         :returns: mixed
 
     .. php:method:: getTableAlias()
-    
+
         Retrieve the alias for this table (the name without the prefix).
-        
+
         :returns: string
 
     .. php:method:: getDb()
-    
+
         Retrieve the Omeka_Db instance.
-        
+
         :returns: Omeka_Db
 
-    .. php:method:: hasColumn(string $field)
-    
+    .. php:method:: hasColumn($field)
+
         Determine whether a model has a given column.
-        
-        :param string $field: Field name.
+
+        :type $field: string
+        :param $field: Field name.
         :returns: bool
 
     .. php:method:: getColumns()
-    
+
         Retrieve a list of all the columns for a given model.
-        
-        This should be here and not in the model class because get_class_vars()returns private/protected properties when called from within the class.Will only return public properties when called in this fashion.
-        
+
+        This should be here and not in the model class because get_class_vars()
+        returns private/protected properties when called from within the class.
+        Will only return public properties when called in this fashion.
+
         :returns: array
 
     .. php:method:: getTableName()
-    
-        Retrieve the name of the table for the current table (used in SQL 
+
+        Retrieve the name of the table for the current table (used in SQL
         statements).
-        
+
         If the table name has not been set, it will inflect the table name.
-        
+
         :returns: string
 
-    .. php:method:: setTableName(string $name)
-    
+    .. php:method:: setTableName($name = null)
+
         Set the name of the database table accessed by this class.
-        
-        If no name is provided, it will inflect the table name from the name ofthe model defined in the constructor. For example, Item -> items.
-        
-        :param string $name: (optional) Table name.
+
+        If no name is provided, it will inflect the table name from the name of
+        the model defined in the constructor. For example, Item -> items.
+
+        :type $name: string
+        :param $name: (optional) Table name.
         :returns: void
 
     .. php:method:: getTablePrefix()
-    
+
         Retrieve the table prefix for this table instance.
-        
+
         :returns: string
 
-    .. php:method:: setTablePrefix(string|null $tablePrefix)
-    
-        Set the table prefix.
-        
-        Defaults to the table prefix defined by the Omeka_Db instance. Thisshould remain the default in most cases. However, edge cases may requirecustomization, e.g. creating wrappers for tables generated by otherapplications.
-        
-        :param string|null $tablePrefix:
+    .. php:method:: setTablePrefix($tablePrefix = null)
 
-    .. php:method:: find(integer $id)
-    
+        Set the table prefix.
+
+        Defaults to the table prefix defined by the Omeka_Db instance. This should
+        remain the default in most cases. However, edge cases may require
+        customization, e.g. creating wrappers for tables generated by other
+        applications.
+
+        :type $tablePrefix: string|null
+        :param $tablePrefix:
+
+    .. php:method:: find($id)
+
         Retrieve a single record given an ID.
-        
-        :param integer $id: 
+
+        :type $id: integer
+        :param $id:
         :returns: Omeka_Record_AbstractRecord|false
 
     .. php:method:: findAll()
-    
+
         Get a set of objects corresponding to all the rows in the table
-        
-        WARNING: This will be memory intensive and is thus not recommended forlarge data sets.
-        
+
+        WARNING: This will be memory intensive and is thus not recommended for
+        large data sets.
+
         :returns: array Array of {@link Omeka_Record_AbstractRecord}s.
 
-    .. php:method:: findPairsForSelectForm(array $options)
-    
-        Retrieve an array of key=>value pairs that can be used as options in a 
+    .. php:method:: findPairsForSelectForm($options = array())
+
+        Retrieve an array of key=>value pairs that can be used as options in a
         <select> form input.
-        
-        :param array $options: (optional) Set of parameters for searching/ filtering results.
+
+        :type $options: array
+        :param $options: (optional) Set of parameters for searching/ filtering results.
         :returns: array
 
     .. php:method:: _getColumnPairs()
-    
+
         Retrieve the array of columns that are used by findPairsForSelectForm().
-        
-        This is a template method because these columns are different for everytable, but the underlying logic that retrieves the pairs from thedatabase is the same in every instance.
-        
+
+        This is a template method because these columns are different for every
+        table, but the underlying logic that retrieves the pairs from the database
+        is the same in every instance.
+
         :returns: array
 
-    .. php:method:: findBy(array $params, integer $limit, integer $page)
-    
+    .. php:method:: findBy($params = array(), $limit = null, $page = null)
+
         Retrieve a set of model objects based on a given number of parameters
-        
-        :param array $params: A set of parameters by which to filter the objects that get returned from the database.
-        :param integer $limit: Number of objects to return per "page".
-        :param integer $page: Page to retrieve.
+
+        :type $params: array
+        :param $params: A set of parameters by which to filter the objects that get returned from the database.
+        :type $limit: integer
+        :param $limit: Number of objects to return per "page".
+        :type $page: integer
+        :param $page: Page to retrieve.
         :returns: array|null The set of objects that is returned
 
     .. php:method:: getSelect()
-    
+
         Retrieve a select object for this table.
-        
+
         :returns: Omeka_Db_Select
 
-    .. php:method:: getSelectForFindBy(array $params)
-    
+    .. php:method:: getSelectForFindBy($params = array())
+
         Retrieve a select object that has had search filters applied to it.
-        
-        :param array $params: optional Set of named search parameters.
+
+        :type $params: array
+        :param $params: optional Set of named search parameters.
         :returns: Omeka_Db_Select
 
-    .. php:method:: getSelectForFind(integer $recordId)
-    
-        Retrieve a select object that is used for retrieving a single record from 
+    .. php:method:: getSelectForFind($recordId)
+
+        Retrieve a select object that is used for retrieving a single record from
         the database.
-        
-        :param integer $recordId: 
+
+        :type $recordId: integer
+        :param $recordId:
         :returns: Omeka_Db_Select
 
-    .. php:method:: applySearchFilters(Omeka_Db_Select $select, array $params)
-    
+    .. php:method:: applySearchFilters($select, $params)
+
         Apply a set of filters to a Select object based on the parameters given.
-        
-        By default, this simply checks the params for keys corresponding to databasecolumn names. For more complex filtering (e.g., when other tables are involved),or to use keys other than column names, override this method and optionallycall this parent method.
-        
-        :param Omeka_Db_Select $select: 
-        :param array $params:
 
-    .. php:method:: applySorting(Omeka_Db_Select $select, string $sortField, string $sortDir)
-    
+        By default, this simply checks the params for keys corresponding to
+        database column names. For more complex filtering (e.g., when other tables
+        are involved),
+        or to use keys other than column names, override this method and
+        optionally call this parent method.
+
+        :type $select: Omeka_Db_Select
+        :param $select:
+        :type $params: array
+        :param $params:
+
+    .. php:method:: applySorting($select, $sortField, $sortDir)
+
         Apply default column-based sorting for a table.
-        
-        :param Omeka_Db_Select $select: 
-        :param string $sortField: Field to sort on.
-        :param string $sortDir: Direction to sort.
 
-    .. php:method:: applyPagination(Zend_Db_Select $select, integer $limit, integer|null $page)
-    
+        :type $select: Omeka_Db_Select
+        :param $select:
+        :type $sortField: string
+        :param $sortField: Field to sort on.
+        :type $sortDir: string
+        :param $sortDir: Direction to sort.
+
+    .. php:method:: applyPagination($select, $limit, $page = null)
+
         Apply pagination to a select object via the LIMIT and OFFSET clauses.
-        
-        :param Zend_Db_Select $select: 
-        :param integer $limit: Number of results per "page".
-        :param integer|null $page: Page to retrieve, first if omitted.
+
+        :type $select: Zend_Db_Select
+        :param $select:
+        :type $limit: integer
+        :param $limit: Number of results per "page".
+        :type $page: integer|null
+        :param $page: Page to retrieve, first if omitted.
         :returns: Zend_Db_Select
 
-    .. php:method:: findBySql(string $sqlWhereClause, array $params, boolean $findOne = )
-    
+    .. php:method:: findBySql($sqlWhereClause, $params = array(), $findOne = false)
+
         Retrieve an object or set of objects based on an SQL WHERE predicate.
-        
-        :param string $sqlWhereClause: 
-        :param array $params: optional Set of parameters to bind to the WHERE clause. Used to prevent security flaws.
-        :param boolean $findOne: optional Whether or not to retrieve a single record or the whole set (retrieve all by default).
+
+        :type $sqlWhereClause: string
+        :param $sqlWhereClause:
+        :type $params: array
+        :param $params: optional Set of parameters to bind to the WHERE clause. Used to prevent security flaws.
+        :type $findOne: boolean
+        :param $findOne: optional Whether or not to retrieve a single record or the whole set (retrieve all by default).
         :returns: array|Omeka_Record_AbstractRecord|false
 
-    .. php:method:: count(array $params)
-    
+    .. php:method:: count($params = array())
+
         Retrieve a count of all the rows in the table.
-        
-        :param array $params: optional Set of search filters upon which to base the count.
+
+        :type $params: array
+        :param $params: optional Set of search filters upon which to base the count.
         :returns: integer
 
-    .. php:method:: exists(int $id)
-    
+    .. php:method:: exists($id)
+
         Check whether a row exists in the table.
-        
-        :param int $id: 
+
+        :type $id: int
+        :param $id:
         :returns: bool
 
-    .. php:method:: filterByPublic(Omeka_Db_Select $select, bool $isPublic)
-    
+    .. php:method:: filterByPublic(Omeka_Db_Select $select, $isPublic)
+
         Apply a public/not public filter to the select object.
-        
-        A convenience function than derivative table classes may use whileapplying search filters.
-        
-        :param Omeka_Db_Select $select: 
-        :param bool $isPublic:
 
-    .. php:method:: filterByFeatured(Omeka_Db_Select $select, bool $isFeatured)
-    
+        A convenience function than derivative table classes may use while
+        applying search filters.
+
+        :type $select: Omeka_Db_Select
+        :param $select:
+        :type $isPublic: bool
+        :param $isPublic:
+
+    .. php:method:: filterByFeatured(Omeka_Db_Select $select, $isFeatured)
+
         Apply a featured/not featured filter to the select object.
-        
-        A convenience function than derivative table classes may use whileapplying search filters.
-        
-        :param Omeka_Db_Select $select: 
-        :param bool $isFeatured:
 
-    .. php:method:: filterBySince(Omeka_Db_Select $select, string $dateSince, string $dateField)
-    
+        A convenience function than derivative table classes may use while
+        applying search filters.
+
+        :type $select: Omeka_Db_Select
+        :param $select:
+        :type $isFeatured: bool
+        :param $isFeatured:
+
+    .. php:method:: filterBySince(Omeka_Db_Select $select, $dateSince, $dateField)
+
         Apply a date since filter to the select object.
-        
-        A convenience function than derivative table classes may use whileapplying search filters.
-        
-        :param Omeka_Db_Select $select: 
-        :param string $dateSince: ISO 8601 formatted date
-        :param string $dateField: "added" or "modified"
 
-    .. php:method:: filterByUser(Omeka_Db_Select $select, int $userId, $userField)
-    
+        A convenience function than derivative table classes may use while
+        applying search filters.
+
+        :type $select: Omeka_Db_Select
+        :param $select:
+        :type $dateSince: string
+        :param $dateSince: ISO 8601 formatted date
+        :type $dateField: string
+        :param $dateField: "added" or "modified"
+
+    .. php:method:: filterByUser(Omeka_Db_Select $select, $userId, $userField)
+
         Apply a user filter to the select object.
-        
-        A convenience function than derivative table classes may use whileapplying search filters.
-        
-        :param Omeka_Db_Select $select: 
-        :param int $userId: 
-        :param unknown $userField:
 
-    .. php:method:: getSelectForCount(array $params)
-    
+        A convenience function than derivative table classes may use while
+        applying search filters.
+
+        :type $select: Omeka_Db_Select
+        :param $select:
+        :type $userId: int
+        :param $userId:
+        :param $userField:
+
+    .. php:method:: getSelectForCount($params = array())
+
         Retrieve a select object used to retrieve a count of all the table rows.
-        
-        :param array $params: optional Set of search filters.
+
+        :type $params: array
+        :param $params: optional Set of search filters.
         :returns: Omeka_Db_Select
 
-    .. php:method:: checkExists(int $id)
-    
+    .. php:method:: checkExists($id)
+
         Check whether a given row exists in the database.
-        
-        Currently used to verify that a row exists even though the current usermay not have permissions to access it.
-        
-        :param int $id: The ID of the row.
+
+        Currently used to verify that a row exists even though the current user
+        may not have permissions to access it.
+
+        :type $id: int
+        :param $id: The ID of the row.
         :returns: boolean
 
-    .. php:method:: fetchObjects(string $sql, array $params)
-    
+    .. php:method:: fetchObjects($sql, $params = array())
+
         Retrieve a set of record objects based on an SQL SELECT statement.
-        
-        :param string $sql: This could be either a string or any object that can be cast to a string (commonly Omeka_Db_Select).
-        :param array $params: Set of parameters to bind to the SQL statement.
+
+        :type $sql: string
+        :param $sql: This could be either a string or any object that can be cast to a string (commonly Omeka_Db_Select).
+        :type $params: array
+        :param $params: Set of parameters to bind to the SQL statement.
         :returns: array|null Set of Omeka_Record_AbstractRecord instances, or null if none can be found.
 
-    .. php:method:: fetchObject(string $sql, string $params)
-    
+    .. php:method:: fetchObject($sql, $params = array())
+
         Retrieve a single record object from the database.
-        
-        :param string $sql: 
-        :param string $params: Parameters to substitute into SQL query.
+
+        :type $sql: string
+        :param $sql:
+        :type $params: string
+        :param $params: Parameters to substitute into SQL query.
         :returns: Omeka_Record_AbstractRecord or null if no record
 
-    .. php:method:: recordFromData(array $data)
-    
+    .. php:method:: recordFromData($data)
+
         Populate a record object with data retrieved from the database.
-        
-        :param array $data: A keyed array representing a row from the database.
+
+        :type $data: array
+        :param $data: A keyed array representing a row from the database.
         :returns: Omeka_Record_AbstractRecord
 
-    .. php:method:: _getSortParams(array $params)
-    
+    .. php:method:: _getSortParams($params)
+
         Get and parse sorting parameters to pass to applySorting.
-        
-        A sorting direction of 'ASC' will be used if no direction parameter ispassed.
-        
-        :param array $params: 
+
+        A sorting direction of 'ASC' will be used if no direction parameter is
+        passed.
+
+        :type $params: array
+        :param $params:
         :returns: array|null Array of sort field, sort dir if params exist, null otherwise.
 
-    .. php:method:: _getHookName(string $suffix)
-    
+    .. php:method:: _getHookName($suffix)
+
         Get the name for a model-specific hook or filter..
-        
-        :param string $suffix: The hook-specific part of the hook name.
+
+        :type $suffix: string
+        :param $suffix: The hook-specific part of the hook name.
         :returns: string

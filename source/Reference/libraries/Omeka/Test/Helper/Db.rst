@@ -2,81 +2,79 @@
 Omeka_Test_Helper_Db
 --------------------
 
-.. php:class:: Omeka_Test_Helper_Db
+Package: :doc:`Test\\Helper </Reference/packages/Test/Helper/index>`
 
-    Package: :doc:`Test\\Helper </Reference/packages/Test/Helper/index>`
+.. php:class:: Omeka_Test_Helper_Db
 
     Catch-all class for database helper methods that are shared across test cases.
 
-    .. php:attr:: _dbAdapter
-    
-        Database adapter object.
-
-    .. php:attr:: _prefix
-    
-
-
     .. php:method:: __construct(Zend_Db_Adapter_Abstract $dbAdapter, $prefix)
-    
-        :param Zend_Db_Adapter_Abstract $dbAdapter: 
-        :param unknown $prefix:
 
-    .. php:method:: __call(string $method, array $args)
-    
+        :type $dbAdapter: Zend_Db_Adapter_Abstract
+        :param $dbAdapter:
+        :param $prefix:
+
+    .. php:method:: __call($method, $args)
+
         Proxy to the db adapter object for all other requests.
-        
-        :param string $method: Method name.
-        :param array $args: Method arguments.
+
+        :type $method: string
+        :param $method: Method name.
+        :type $args: array
+        :param $args: Method arguments.
         :returns: array
 
     .. php:method:: factory($dbConfig)
-    
-        Create an instance of the helper that is configured for the correct 
-        database.
-        
-        :param unknown $dbConfig:
 
-    .. php:method:: tableExists(string $tableName)
-    
+        Create an instance of the helper that is configured for the correct
+        database.
+
+        :param $dbConfig:
+
+    .. php:method:: tableExists($tableName)
+
         Check whether a table exists in the database.
-        
-        :param string $tableName: 
+
+        :type $tableName: string
+        :param $tableName:
         :returns: boolean
 
-    .. php:method:: getTableCount(string $prefix)
-    
+    .. php:method:: getTableCount($prefix = null)
+
         Get the number of tables in the database.
-        
-        :param string $prefix: 
+
+        :type $prefix: string
+        :param $prefix:
         :returns: integer
 
-    .. php:method:: dropTables($tables)
-    
+    .. php:method:: dropTables($tables = null)
+
         Drop the tables from the database.
-        
-        :param unknown $tables: 
+
+        :param $tables:
         :returns: void
 
-    .. php:method:: truncateTables($tables)
-    
+    .. php:method:: truncateTables($tables = null)
+
         Truncate the tables from the database.
-        
-        :param unknown $tables: 
+
+        :param $tables:
         :returns: void
 
     .. php:method:: install()
 
     .. php:method:: getTableNames()
-    
+
         Get the tables in the database.
-        
+
         :returns: array
 
-    .. php:method:: getRowCount(string $tableName)
-    
+    .. php:method:: getRowCount($tableName)
+
         Get the number of rows in a table.
-        
-        :param string $tableName: 
+
+        :type $tableName: string
+        :param $tableName:
         :returns: integer
 
     .. php:method:: getAdapter()

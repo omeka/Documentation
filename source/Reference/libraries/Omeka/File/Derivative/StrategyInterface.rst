@@ -2,29 +2,37 @@
 Omeka_File_Derivative_StrategyInterface
 ---------------------------------------
 
-.. php:class:: Omeka_File_Derivative_StrategyInterface
+Package: :doc:`File\\Derivative\\Strategy </Reference/packages/File/Derivative/Strategy/index>`
+
+.. php:interface:: Omeka_File_Derivative_StrategyInterface
 
     Interface for pluggable file derivative creation strategies.
 
-    .. php:method:: createImage(string $sourcePath, string $destPath, string $type, int $sizeConstraint, string $mimeType)
-    
+    .. php:method:: createImage($sourcePath, $destPath, $type, $sizeConstraint, $mimeType)
+
         Create an derivative of the given image.
-        
-        :param string $sourcePath: Local path to the source file.
-        :param string $destPath: Local path to write the derivative to.
-        :param string $type: The type of derivative being created.
-        :param int $sizeConstraint: Size limitation on the derivative.
-        :param string $mimeType: MIME type of the original file.
+
+        :type $sourcePath: string
+        :param $sourcePath: Local path to the source file.
+        :type $destPath: string
+        :param $destPath: Local path to write the derivative to.
+        :type $type: string
+        :param $type: The type of derivative being created.
+        :type $sizeConstraint: int
+        :param $sizeConstraint: Size limitation on the derivative.
+        :type $mimeType: string
+        :param $mimeType: MIME type of the original file.
         :returns: bool
 
-    .. php:method:: setOptions(array $options)
-    
+    .. php:method:: setOptions($options)
+
         Set options for the derivative strategy.
-        
-        :param array $options:
+
+        :type $options: array
+        :param $options:
 
     .. php:method:: getOptions()
-    
+
         Get the options for the strategy.
-        
+
         :returns: array

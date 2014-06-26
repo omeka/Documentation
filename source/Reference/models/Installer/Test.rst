@@ -2,47 +2,42 @@
 Installer_Test
 --------------
 
+Package: :doc:`Install </Reference/packages/Install/index>`
+
 .. php:class:: Installer_Test
 
-    Package: :doc:`Install </Reference/packages/Install/index>`
+extends :php:class:`Installer_Default`
+
+implements :php:interface:`Installer_InstallerInterface`
 
     Installer for test cases that require database access.
 
-    .. php:attr:: _testDefaults
-    
-
-
-    .. php:attr:: _db
-    
-
-
-    .. php:attr:: _form
-    
-
-
     .. php:method:: _getValue($fieldName)
-    
+
         Overridden to retrieve values only from a predefined array.
-        
-        :param unknown $fieldName:
+
+        :param $fieldName:
 
     .. php:method:: install()
 
     .. php:method:: addItem(Omeka_Db $db)
-    
-        :param Omeka_Db $db:
+
+        :type $db: Omeka_Db
+        :param $db:
 
     .. php:method:: __construct(Omeka_Db $db)
-    
+
         Constructor.
-        
-        :param Omeka_Db $db:
+
+        :type $db: Omeka_Db
+        :param $db:
 
     .. php:method:: setForm(Zend_Form $form)
-    
+
         Set the form from which to extract data for the installer.
-        
-        :param Zend_Form $form:
+
+        :type $form: Zend_Form
+        :param $form:
 
     .. php:method:: getDb()
 

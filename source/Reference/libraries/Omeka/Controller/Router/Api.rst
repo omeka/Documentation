@@ -2,101 +2,117 @@
 Omeka_Controller_Router_Api
 ---------------------------
 
+Package: :doc:`Controller\\Router </Reference/packages/Controller/Router/index>`
+
 .. php:class:: Omeka_Controller_Router_Api
 
-    Package: :doc:`Controller\\Router </Reference/packages/Controller/Router/index>`
+extends :php:class:`Zend_Controller_Router_Route_Abstract`
 
     Router for the Omeka API.
 
     .. php:const:: DEFAULT_MODULE
-    
-    
-    
+
         The default controller name.
 
     .. php:const:: DEFAULT_CONTROLLER
-    
-    
-    
+
         The default controller name.
 
     .. php:attr:: _legalActions
-    
 
+        protected All
 
     .. php:attr:: _legalParams
-    
 
+        protected GET
 
     .. php:attr:: _legalIndexParams
-    
 
+        protected GET
 
     .. php:method:: getInstance(Zend_Config $config)
-    
-        :param Zend_Config $config:
 
-    .. php:method:: match(Zend_Controller_Request_Http $request)
-    
+        :type $config: Zend_Config
+        :param $config:
+
+    .. php:method:: match($request)
+
         Match the user submitted path.
-        
-        Via Omeka_Application_Resource_Router, this is the only available routefor API requests.
-        
-        :param Zend_Controller_Request_Http $request: 
+
+        Via Omeka_Application_Resource_Router, this is the only available route
+        for API requests.
+
+        :type $request: Zend_Controller_Request_Http
+        :param $request:
         :returns: array|false
 
-    .. php:method:: assemble($data, $reset = , $encode = )
-    
-        :param unknown $data: 
-        :param unknown $reset: 
-        :param unknown $encode:
+    .. php:method:: assemble($data = array(), $reset = false, $encode = false)
 
-    .. php:method:: _getResource(string $resource, array $apiResources)
-    
+        :param $data:
+        :param $reset:
+        :param $encode:
+
+    .. php:method:: _getResource($resource, $apiResources)
+
         Return this route's resource.
-        
-        :param string $resource: 
-        :param array $apiResources: 
+
+        :type $resource: string
+        :param $resource:
+        :type $apiResources: array
+        :param $apiResources:
         :returns: string
 
-    .. php:method:: _getRecordType(string $resource, array $apiResources)
-    
+    .. php:method:: _getRecordType($resource, $apiResources)
+
         Return this route's record type.
-        
-        :param string $resource: 
-        :param array $apiResources: 
+
+        :type $resource: string
+        :param $resource:
+        :type $apiResources: array
+        :param $apiResources:
         :returns: string|null
 
-    .. php:method:: _getModule(string $resource, array $apiResources)
-    
+    .. php:method:: _getModule($resource, $apiResources)
+
         Return this route's module.
-        
-        :param string $resource: 
-        :param array $apiResources: 
+
+        :type $resource: string
+        :param $resource:
+        :type $apiResources: array
+        :param $apiResources:
         :returns: string
 
-    .. php:method:: _getController(string $resource, array $apiResources)
-    
+    .. php:method:: _getController($resource, $apiResources)
+
         Return this route's controller.
-        
-        :param string $resource: 
-        :param array $apiResources: 
+
+        :type $resource: string
+        :param $resource:
+        :type $apiResources: array
+        :param $apiResources:
         :returns: string
 
-    .. php:method:: _getAction(string $method, array $params, string $resource, array $apiResources)
-    
+    .. php:method:: _getAction($method, $params, $resource, $apiResources)
+
         Return this route's action.
-        
-        :param string $method: 
-        :param array $params: 
-        :param string $resource: 
-        :param array $apiResources: 
+
+        :type $method: string
+        :param $method:
+        :type $params: array
+        :param $params:
+        :type $resource: string
+        :param $resource:
+        :type $apiResources: array
+        :param $apiResources:
         :returns: string
 
-    .. php:method:: _validateParams(string $action, string $resource, array $apiResources)
-    
+    .. php:method:: _validateParams($action, $resource, $apiResources)
+
         Validate the GET parameters against the whitelist.
-        
-        :param string $action: 
-        :param string $resource: 
-        :param array $apiResources:
+
+        :type $action: string
+        :param $action:
+        :type $resource: string
+        :param $resource:
+        :type $apiResources: array
+        :param $apiResources:

@@ -2,107 +2,104 @@
 Mixin_Tag
 ---------
 
+Package: :doc:`Record\\Mixin </Reference/packages/Record/Mixin/index>`
+
 .. php:class:: Mixin_Tag
 
-    Package: :doc:`Record\\Mixin </Reference/packages/Record/Mixin/index>`
-
-    .. php:attr:: _tagTable
-    
-
-
-    .. php:attr:: _joinTable
-    
-
-
-    .. php:attr:: _type
-    
-
-
-    .. php:attr:: _tagsToSave
-    
-
+extends :php:class:`Omeka_Record_Mixin_AbstractMixin`
 
     .. php:method:: __construct(Omeka_Record_AbstractRecord $record)
-    
-        :param Omeka_Record_AbstractRecord $record:
+
+        :type $record: Omeka_Record_AbstractRecord
+        :param $record:
 
     .. php:method:: beforeDelete()
-    
+
         Fires whenever deleting a record that is taggable
-        This will actually delete all the references to a specific tag for a specific record
-        
+        This will actually delete all the references to a specific tag for a
+        specific record
+
         :returns: void
 
     .. php:method:: afterSave($args)
-    
-        :param unknown $args:
+
+        :param $args:
 
     .. php:method:: deleteTaggings()
 
     .. php:method:: getTaggings()
-    
-        Retrieve all the Taggings objects that represent between a specific tag and the current record
+
+        Retrieve all the Taggings objects that represent between a specific tag
+        and the current record
         Called by whatever record has enabled this module
-        
+
         :returns: array of Taggings
 
-    .. php:method:: getTags($order)
-    
+    .. php:method:: getTags($order = array())
+
         Get all the Tag records associated with this record
-        
-        :param unknown $order: 
+
+        :param $order:
         :returns: array of Tag
 
-    .. php:method:: deleteTags(string|array $tags, string $delimiter)
-    
+    .. php:method:: deleteTags($tags, $delimiter = null)
+
         Delete a tag from the record
-        
-        :param string|array $tags: The tag name or array of tag names to delete from the record
-        :param string $delimiter: The delimiter of the tags. Not applicable if $tags is an array
+
+        :type $tags: string|array
+        :param $tags: The tag name or array of tag names to delete from the record
+        :type $delimiter: string
+        :param $delimiter: The delimiter of the tags. Not applicable if $tags is an array
         :returns: bool Returns whether a tag in $tags was deleted. Returns false if $tags is empty. Returns true if at least one tag in $tags is deleted.
 
     .. php:method:: hasTag($tag)
-    
-        If the $tag were a string and the keys of Tags were just the names of the tags, this would be:
+
+        If the $tag were a string and the keys of Tags were just the names of the
+        tags, this would be:
         in_array(array_keys($this->Tags))
-        
-        :param unknown $tag: 
+
+        :param $tag:
         :returns: boolean
 
-    .. php:method:: _getTagsFromString(string $string, $delimiter)
-    
+    .. php:method:: _getTagsFromString($string, $delimiter = null)
+
         Converts a delimited string of tags into an array of tag strings
-        
-        :param string $string: A delimited string of tags
-        :param unknown $delimiter: 
+
+        :type $string: string
+        :param $string: A delimited string of tags
+        :param $delimiter:
         :returns: array An array of tag strings
 
-    .. php:method:: addTags(array|string $tags, $delimiter)
-    
+    .. php:method:: addTags($tags, $delimiter = null)
+
         Set tags to be saved to the record.
-        
-        :param array|string $tags: Either an array of tags or a delimited string
-        :param unknown $delimiter: 
+
+        :type $tags: array|string
+        :param $tags: Either an array of tags or a delimited string
+        :param $delimiter:
         :returns: void
 
-    .. php:method:: applyTags(array $inputTags)
-    
-        Apply tags
-        
-        :param array $inputTags:
+    .. php:method:: applyTags($inputTags)
 
-    .. php:method:: diffTags($inputTags, $tags)
-    
+        Apply tags
+
+        :type $inputTags: array
+        :param $inputTags:
+
+    .. php:method:: diffTags($inputTags, $tags = null)
+
         Calculate the difference between a tag string and a set of tags
-        
-        :param unknown $inputTags: 
-        :param unknown $tags: 
+
+        :param $inputTags:
+        :param $tags:
         :returns: array Keys('removed','added')
 
-    .. php:method:: applyTagString(string $string, string|null $delimiter)
-    
-        This will add tags that are in the tag string and remove those that are 
+    .. php:method:: applyTagString($string, $delimiter = null)
+
+        This will add tags that are in the tag string and remove those that are
         no longer in the tag string
-        
-        :param string $string: A string of tags delimited by $delimiter
-        :param string|null $delimiter:
+
+        :type $string: string
+        :param $string: A string of tags delimited by $delimiter
+        :type $delimiter: string|null
+        :param $delimiter:

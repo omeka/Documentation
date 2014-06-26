@@ -2,53 +2,45 @@
 Omeka_Validate_Exception
 ------------------------
 
+Package: :doc:`Validate </Reference/packages/Validate/index>`
+
 .. php:class:: Omeka_Validate_Exception
 
-    Package: :doc:`Validate </Reference/packages/Validate/index>`
+extends :php:class:`Exception`
 
     Exception that is thrown when a form could not be validated correctly.
 
     .. php:attr:: _errors
-    
+
+        protected string
+
         Message representing form errors.
 
     .. php:attr:: message
-    
 
-
-    .. php:attr:: string
-    
-
+        protected
 
     .. php:attr:: code
-    
 
+        protected
 
     .. php:attr:: file
-    
 
+        protected
 
     .. php:attr:: line
-    
 
-
-    .. php:attr:: trace
-    
-
-
-    .. php:attr:: previous
-    
-
+        protected
 
     .. php:method:: __construct($errors)
-    
-        :param unknown $errors: 
+
+        :param $errors:
         :returns: void
 
     .. php:method:: getErrors()
-    
+
         Get the error message that caused this exception.
-        
+
         :returns: string
 
     .. php:method:: __clone()

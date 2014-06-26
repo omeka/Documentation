@@ -7,16 +7,16 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/models/Api/Api_Collection.rst
-   /Reference/models/Api/Api_Element.rst
-   /Reference/models/Api/Api_ElementSet.rst
-   /Reference/models/Api/Api_File.rst
-   /Reference/models/Api/Api_Item.rst
-   /Reference/models/Api/Api_ItemType.rst
-   /Reference/models/Api/Api_Tag.rst
-   /Reference/models/Api/Api_User.rst
-   /Reference/libraries/Omeka/Record/Api/Omeka_Record_Api_AbstractRecordAdapter.rst
-   /Reference/libraries/Omeka/Record/Api/Omeka_Record_Api_RecordAdapterInterface.rst
+   /Reference/models/Api/Collection.rst
+   /Reference/models/Api/Element.rst
+   /Reference/models/Api/ElementSet.rst
+   /Reference/models/Api/File.rst
+   /Reference/models/Api/Item.rst
+   /Reference/models/Api/ItemType.rst
+   /Reference/models/Api/Tag.rst
+   /Reference/models/Api/User.rst
+   /Reference/libraries/Omeka/Record/Api/AbstractRecordAdapter.rst
+   /Reference/libraries/Omeka/Record/Api/RecordAdapterInterface.rst
 
 .. toctree::
    :glob:

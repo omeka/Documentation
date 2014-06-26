@@ -2,64 +2,39 @@
 Installer_Task_User
 -------------------
 
+Package: :doc:`Install\\Task </Reference/packages/Install/Task/index>`
+
 .. php:class:: Installer_Task_User
 
-    Package: :doc:`Install\\Task </Reference/packages/Install/Task/index>`
+implements :php:interface:`Installer_TaskInterface`
 
     Create a default user for an Omeka installation.
 
-    .. php:attr:: _username
-    
-
-
-    .. php:attr:: _password
-    
-
-
-    .. php:attr:: _email
-    
-
-
-    .. php:attr:: _name
-    
-
-
-    .. php:attr:: _lastName
-    
-
-
-    .. php:attr:: _active
-    
-
-
-    .. php:attr:: _role
-    
-
-
     .. php:method:: setUsername($username)
-    
-        :param unknown $username:
+
+        :param $username:
 
     .. php:method:: setPassword($password)
-    
-        :param unknown $password:
+
+        :param $password:
 
     .. php:method:: setEmail($email)
-    
-        :param unknown $email:
+
+        :param $email:
 
     .. php:method:: setName($name)
-    
-        :param unknown $name:
+
+        :param $name:
 
     .. php:method:: setIsActive($active)
-    
-        :param unknown $active:
+
+        :param $active:
 
     .. php:method:: setRole($role)
-    
-        :param unknown $role:
+
+        :param $role:
 
     .. php:method:: install(Omeka_Db $db)
-    
-        :param Omeka_Db $db:
+
+        :type $db: Omeka_Db
+        :param $db:

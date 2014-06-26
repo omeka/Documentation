@@ -2,16 +2,18 @@
 Table_RecordsTags
 -----------------
 
+Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
+
 .. php:class:: Table_RecordsTags
 
-    Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
+extends :php:class:`Omeka_Db_Table`
 
-    .. php:method:: applySearchFilters($select, $params)
-    
-        :param unknown $select: 
-        :param unknown $params:
+    .. php:method:: applySearchFilters($select, $params = array())
+
+        :param $select:
+        :param $params:
 
     .. php:method:: findForRecordAndTag($record, $tag)
-    
-        :param unknown $record: 
-        :param unknown $tag:
+
+        :param $record:
+        :param $tag:

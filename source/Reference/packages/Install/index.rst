@@ -7,16 +7,16 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/models/Installer/Installer_Default.rst
-   /Reference/models/Installer/Installer_Exception.rst
-   /Reference/models/Installer/Installer_InstallerInterface.rst
-   /Reference/models/Installer/Installer_Requirements.rst
-   /Reference/models/Installer/Installer_TaskInterface.rst
-   /Reference/models/Installer/Task/Installer_Task_Exception.rst
-   /Reference/models/Installer/Task/Installer_Task_Migrations.rst
-   /Reference/models/Installer/Task/Installer_Task_Options.rst
-   /Reference/models/Installer/Task/Installer_Task_Schema.rst
-   /Reference/models/Installer/Installer_Test.rst
+   /Reference/models/Installer/Default.rst
+   /Reference/models/Installer/Exception.rst
+   /Reference/models/Installer/InstallerInterface.rst
+   /Reference/models/Installer/Requirements.rst
+   /Reference/models/Installer/TaskInterface.rst
+   /Reference/models/Installer/Task/Exception.rst
+   /Reference/models/Installer/Task/Migrations.rst
+   /Reference/models/Installer/Task/Options.rst
+   /Reference/models/Installer/Task/Schema.rst
+   /Reference/models/Installer/Test.rst
 
 .. toctree::
    :glob:

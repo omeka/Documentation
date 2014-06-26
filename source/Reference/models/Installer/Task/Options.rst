@@ -2,26 +2,21 @@
 Installer_Task_Options
 ----------------------
 
+Package: :doc:`Install </Reference/packages/Install/index>`
+
 .. php:class:: Installer_Task_Options
 
-    Package: :doc:`Install </Reference/packages/Install/index>`
+implements :php:interface:`Installer_TaskInterface`
 
     Installer task for inserting options into the options table.
 
-    .. php:attr:: _expectedOptions
-    
-
-
-    .. php:attr:: _options
-    
-
-
     .. php:method:: setOptions($options)
-    
+
         Set the key value pairs that will correspond to database options.
-        
-        :param unknown $options:
+
+        :param $options:
 
     .. php:method:: install(Omeka_Db $db)
-    
-        :param Omeka_Db $db:
+
+        :type $db: Omeka_Db
+        :param $db:

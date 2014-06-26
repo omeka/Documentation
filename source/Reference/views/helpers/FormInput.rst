@@ -2,17 +2,22 @@
 Omeka_View_Helper_FormInput
 ---------------------------
 
+Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+
 .. php:class:: Omeka_View_Helper_FormInput
 
-    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+extends :php:class:`Zend_View_Helper_FormElement`
 
     Helper for generic HTML5 input with settable type.
 
-    .. php:method:: formInput(string|array $name, mixed $value, array $attribs)
-    
+    .. php:method:: formInput($name, $value = null, $attribs = null)
+
         Generate an input element.
-        
-        :param string|array $name: If a string, the element name.  If an array, all other parameters are ignored, and the array elements are used in place of added parameters.
-        :param mixed $value: The element value.
-        :param array $attribs: Attributes for the element tag.
+
+        :type $name: string|array
+        :param $name: If a string, the element name.  If an array, all other parameters are ignored, and the array elements are used in place of added parameters.
+        :type $value: mixed
+        :param $value: The element value.
+        :type $attribs: array
+        :param $attribs: Attributes for the element tag.
         :returns: string The element XHTML.

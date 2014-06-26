@@ -2,14 +2,18 @@
 Omeka_View_Helper_GetCurrentRecord
 ----------------------------------
 
+Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+
 .. php:class:: Omeka_View_Helper_GetCurrentRecord
 
-    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+extends :php:class:`Zend_View_Helper_Abstract`
 
-    .. php:method:: getCurrentRecord(string $recordVar, bool $throwException = 1)
-    
+    .. php:method:: getCurrentRecord($recordVar, $throwException = true)
+
         Get the current record from the view.
-        
-        :param string $recordVar: 
-        :param bool $throwException: 
+
+        :type $recordVar: string
+        :param $recordVar:
+        :type $throwException: bool
+        :param $throwException:
         :returns: Omeka_Record_AbstractRecord|false

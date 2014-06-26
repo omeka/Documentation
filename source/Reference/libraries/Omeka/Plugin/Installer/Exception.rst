@@ -2,48 +2,38 @@
 Omeka_Plugin_Installer_Exception
 --------------------------------
 
+Package: :doc:`Plugin\\Installer </Reference/packages/Plugin/Installer/index>`
+
 .. php:class:: Omeka_Plugin_Installer_Exception
 
-    Package: :doc:`Plugin\\Installer </Reference/packages/Plugin/Installer/index>`
+extends :php:class:`Exception`
 
-    An exception thrown when the plugin installer is unable to install, 
+    An exception thrown when the plugin installer is unable to install,
     uninstall, activate, deactivate, or upgrade a plugin.
 
     .. php:attr:: message
-    
 
-
-    .. php:attr:: string
-    
-
+        protected
 
     .. php:attr:: code
-    
 
+        protected
 
     .. php:attr:: file
-    
 
+        protected
 
     .. php:attr:: line
-    
 
-
-    .. php:attr:: trace
-    
-
-
-    .. php:attr:: previous
-    
-
+        protected
 
     .. php:method:: __clone()
 
     .. php:method:: __construct($message, $code, $previous)
-    
-        :param unknown $message: 
-        :param unknown $code: 
-        :param unknown $previous:
+
+        :param $message:
+        :param $code:
+        :param $previous:
 
     .. php:method:: getMessage()
 

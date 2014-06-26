@@ -5,51 +5,27 @@ libraries/Omeka/Application/Resource
 .. toctree::
 
    Db
-   Omeka_Application_Resource_Pluginbroker
    Autoloader
-   Omeka_Application_Resource_Frontcontroller
    Logger
    Acl
-   Omeka_Application_Resource_Debug
    Jobs/index
-   Omeka_Application_Resource_Autoloader
    Pluginbroker
-   Omeka_Application_Resource_Cachemanager
-   Omeka_Application_Resource_Logger
-   Omeka_Application_Resource_Session
-   Omeka_Application_Resource_Storage
-   Omeka_Application_Resource_Mail
-   Omeka_Application_Resource_Theme
    Options
    Router
-   Omeka_Application_Resource_Db
    Currentuser
    Storage
    Filederivatives
    Frontcontroller
-   Omeka_Application_Resource_Exception
    Auth
-   Omeka_Application_Resource_Options
-   Omeka_Application_Resource_Helpers
-   Omeka_Application_Resource_Router
    Theme
-   Omeka_Application_Resource_View
-   Omeka_Application_Resource_Currentuser
    Session
-   Omeka_Application_Resource_Config
-   Omeka_Application_Resource_Locale
    View
    Exception
-   Omeka_Application_Resource_Auth
-   Omeka_Application_Resource_Filederivatives
    Debug
    Helpers
    Plugins
    Mail
    Locale
    Config
-   Omeka_Application_Resource_Jobs
-   Omeka_Application_Resource_Plugins
-   Omeka_Application_Resource_Acl
    Cachemanager
    Jobs

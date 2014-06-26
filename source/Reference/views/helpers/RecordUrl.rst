@@ -2,16 +2,22 @@
 Omeka_View_Helper_RecordUrl
 ---------------------------
 
+Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+
 .. php:class:: Omeka_View_Helper_RecordUrl
 
-    Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
+extends :php:class:`Zend_View_Helper_Abstract`
 
-    .. php:method:: recordUrl(Omeka_Record_AbstractRecord|string $record, string|null $action, bool $getAbsoluteUrl = , array $queryParams)
-    
+    .. php:method:: recordUrl($record, $action = null, $getAbsoluteUrl = false, $queryParams = array())
+
         Return a URL to a record.
-        
-        :param Omeka_Record_AbstractRecord|string $record: 
-        :param string|null $action: 
-        :param bool $getAbsoluteUrl: 
-        :param array $queryParams: 
+
+        :type $record: Omeka_Record_AbstractRecord|string
+        :param $record:
+        :type $action: string|null
+        :param $action:
+        :type $getAbsoluteUrl: bool
+        :param $getAbsoluteUrl:
+        :type $queryParams: array
+        :param $queryParams:
         :returns: string
