@@ -11,7 +11,6 @@ Controllers
    ResourcesController
    ErrorController
    ElementSetsController
-   helpers/index
    ThemesController
    SiteController
    FilesController
@@ -23,7 +22,8 @@ Controllers
    AppearanceController
    TagsController
    PluginsController
-   api/index
    UsersController
    ItemsController
    SettingsController
+   api/index
+   helpers/index

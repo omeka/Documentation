@@ -1,5 +1,5 @@
 ```````````````
-controllers/api
+API Controllers
 ```````````````
 
 .. toctree::
