@@ -1,5 +1,5 @@
 `````
-views
+Views
 `````
 
 .. toctree::
