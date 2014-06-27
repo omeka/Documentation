@@ -1,0 +1,1 @@
+Returns a link to the public home page of an Omeka site.

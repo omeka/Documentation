@@ -1,0 +1,4 @@
+
+.. code-block:: php
+
+   echo __("String to translate");
