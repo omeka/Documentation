@@ -4,5 +4,9 @@ libraries/Omeka/File/Derivative/Strategy
 
 .. toctree::
 
-   ExternalImageMagick
-   Imagick
+    ExternalImageMagick
+    Imagick
+
+
+.. toctree::
+

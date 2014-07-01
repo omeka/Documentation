@@ -1,6 +1,6 @@
-########################
-Class Library by Package
-########################
+########
+Packages
+########
 
 .. toctree::
     :maxdepth: 1
@@ -14,6 +14,7 @@ Class Library by Package
     File/Derivative/index
     Filter/index
     Form/index
+    Function/index
     Http/index
     Install/index
     Job/index

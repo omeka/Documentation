@@ -1,13 +1,17 @@
-``````````````````
-Controller Helpers
-``````````````````
+```````````````````
+controllers/helpers
+```````````````````
 
 .. toctree::
 
-   FlashMessenger
-   Db
-   ThemeConfiguration
-   Acl
-   ContextSwitch
-   Mail
-   JsonApi
+    Acl
+    ContextSwitch
+    Db
+    FlashMessenger
+    JsonApi
+    Mail
+    ThemeConfiguration
+
+
+.. toctree::
+

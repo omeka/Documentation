@@ -4,6 +4,10 @@ libraries/Omeka/Job/Process
 
 .. toctree::
 
-   Dispatcher
-   Wrapper
-   AbstractProcess
+    AbstractProcess
+    Dispatcher
+    Wrapper
+
+
+.. toctree::
+

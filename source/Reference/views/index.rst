@@ -1,7 +1,11 @@
 `````
-Views
+views
 `````
 
 .. toctree::
 
-   helpers/index
+
+
+.. toctree::
+
+    helpers/index

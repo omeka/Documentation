@@ -4,4 +4,8 @@ libraries/Omeka/Acl
 
 .. toctree::
 
-   Assert/index
+
+
+.. toctree::
+
+    Assert/index

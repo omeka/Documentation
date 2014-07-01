@@ -4,4 +4,8 @@ libraries/Omeka/Navigation
 
 .. toctree::
 
-   Page/index
+
+
+.. toctree::
+
+    Page/index

@@ -4,8 +4,12 @@ models/Installer/Task
 
 .. toctree::
 
-   Options
-   User
-   Exception
-   Migrations
-   Schema
+    Exception
+    Migrations
+    Options
+    Schema
+    User
+
+
+.. toctree::
+

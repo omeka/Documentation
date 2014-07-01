@@ -4,9 +4,13 @@ models/Mixin
 
 .. toctree::
 
-   ElementText
-   Timestamp
-   Owner
-   Search
-   PublicFeatured
-   Tag
+    ElementText
+    Owner
+    PublicFeatured
+    Search
+    Tag
+    Timestamp
+
+
+.. toctree::
+

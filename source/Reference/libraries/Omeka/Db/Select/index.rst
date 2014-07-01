@@ -4,4 +4,8 @@ libraries/Omeka/Db/Select
 
 .. toctree::
 
-   PublicPermissions
+    PublicPermissions
+
+
+.. toctree::
+

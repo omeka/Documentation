@@ -4,19 +4,23 @@ models/Table
 
 .. toctree::
 
-   ElementText
-   SearchText
-   File
-   RecordsTags
-   ElementSet
-   ItemType
-   Element
-   Item
-   User
-   Tag
-   Process
-   Key
-   UsersActivations
-   ItemTypesElements
-   Collection
-   Plugin
+    Collection
+    Element
+    ElementSet
+    ElementText
+    File
+    Item
+    ItemType
+    ItemTypesElements
+    Key
+    Plugin
+    Process
+    RecordsTags
+    SearchText
+    Tag
+    User
+    UsersActivations
+
+
+.. toctree::
+

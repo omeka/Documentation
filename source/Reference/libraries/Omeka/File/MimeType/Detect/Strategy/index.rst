@@ -4,8 +4,12 @@ libraries/Omeka/File/MimeType/Detect/Strategy
 
 .. toctree::
 
-   MimeContentType
-   Fileinfo
-   FileCommand
-   Browser
-   GetId3
+    Browser
+    FileCommand
+    Fileinfo
+    GetId3
+    MimeContentType
+
+
+.. toctree::
+

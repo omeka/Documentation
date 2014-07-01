@@ -4,4 +4,8 @@ libraries/Omeka/View/Helper
 
 .. toctree::
 
-   AbstractSearch
+    AbstractSearch
+
+
+.. toctree::
+

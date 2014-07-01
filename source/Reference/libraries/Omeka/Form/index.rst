@@ -4,7 +4,11 @@ libraries/Omeka/Form
 
 .. toctree::
 
-   DisplayGroup
-   Decorator/index
-   Element/index
-   Admin
+    Admin
+    DisplayGroup
+
+
+.. toctree::
+
+    Decorator/index
+    Element/index

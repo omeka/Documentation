@@ -4,14 +4,18 @@ libraries/Omeka/Plugin
 
 .. toctree::
 
-   Loader
-   Mvc
-   Ini
-   Factory
-   Installer/index
-   Broker/index
-   Exception
-   Installer
-   AbstractPlugin
-   Broker
-   Loader/index
+    AbstractPlugin
+    Broker
+    Exception
+    Factory
+    Ini
+    Installer
+    Loader
+    Mvc
+
+
+.. toctree::
+
+    Broker/index
+    Installer/index
+    Loader/index

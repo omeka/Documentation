@@ -1,29 +1,33 @@
 ```````````
-Controllers
+controllers
 ```````````
 
 .. toctree::
 
-   CollectionsController
-   ApiController
-   ItemTypesController
-   RedirectorController
-   ResourcesController
-   ErrorController
-   ElementSetsController
-   ThemesController
-   SiteController
-   FilesController
-   ElementsController
-   SystemInfoController
-   SearchController
-   UpgradeController
-   IndexController
-   AppearanceController
-   TagsController
-   PluginsController
-   UsersController
-   ItemsController
-   SettingsController
-   api/index
-   helpers/index
+    ApiController
+    AppearanceController
+    CollectionsController
+    ElementSetsController
+    ElementsController
+    ErrorController
+    FilesController
+    IndexController
+    ItemTypesController
+    ItemsController
+    PluginsController
+    RedirectorController
+    ResourcesController
+    SearchController
+    SettingsController
+    SiteController
+    SystemInfoController
+    TagsController
+    ThemesController
+    UpgradeController
+    UsersController
+
+
+.. toctree::
+
+    api/index
+    helpers/index

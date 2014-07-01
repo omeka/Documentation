@@ -4,5 +4,9 @@ libraries/Omeka/Record/Builder
 
 .. toctree::
 
-   AbstractBuilder
-   Exception
+    AbstractBuilder
+    Exception
+
+
+.. toctree::
+

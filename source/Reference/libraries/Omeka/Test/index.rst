@@ -4,7 +4,11 @@ libraries/Omeka/Test
 
 .. toctree::
 
-   Bootstrap
-   Helper/index
-   Resource/index
-   AppTestCase
+    AppTestCase
+    Bootstrap
+
+
+.. toctree::
+
+    Helper/index
+    Resource/index

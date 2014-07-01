@@ -4,12 +4,16 @@ libraries/Omeka/Controller/Plugin
 
 .. toctree::
 
-   Jsonp
-   Upgrade
-   Debug
-   Admin
-   ViewScripts
-   Api
-   Ssl
-   DefaultContentType
-   HtmlPurifier
+    Admin
+    Api
+    Debug
+    DefaultContentType
+    HtmlPurifier
+    Jsonp
+    Ssl
+    Upgrade
+    ViewScripts
+
+
+.. toctree::
+

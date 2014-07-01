@@ -4,4 +4,8 @@ libraries/Omeka/Plugin/Loader
 
 .. toctree::
 
-   Exception
+    Exception
+
+
+.. toctree::
+

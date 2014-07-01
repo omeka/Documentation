@@ -4,4 +4,8 @@ libraries/Omeka/Application/Resource/Jobs
 
 .. toctree::
 
-   InvalidAdapterException
+    InvalidAdapterException
+
+
+.. toctree::
+

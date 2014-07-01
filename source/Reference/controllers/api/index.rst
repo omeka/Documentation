@@ -1,13 +1,17 @@
 ```````````````
-API Controllers
+controllers/api
 ```````````````
 
 .. toctree::
 
-   ApiController
-   ResourcesController
-   ErrorController
-   ElementSetsController
-   SiteController
-   FilesController
-   ElementsController
+    ApiController
+    ElementSetsController
+    ElementsController
+    ErrorController
+    FilesController
+    ResourcesController
+    SiteController
+
+
+.. toctree::
+

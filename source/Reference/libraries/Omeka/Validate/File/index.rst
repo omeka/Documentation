@@ -4,5 +4,9 @@ libraries/Omeka/Validate/File
 
 .. toctree::
 
-   Extension
-   MimeType
+    Extension
+    MimeType
+
+
+.. toctree::
+

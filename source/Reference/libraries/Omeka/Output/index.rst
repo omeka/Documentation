@@ -4,4 +4,8 @@ libraries/Omeka/Output
 
 .. toctree::
 
-   OmekaXml/index
+
+
+.. toctree::
+
+    OmekaXml/index

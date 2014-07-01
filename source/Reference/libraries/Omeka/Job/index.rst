@@ -4,11 +4,15 @@ libraries/Omeka/Job
 
 .. toctree::
 
-   Mock
-   Dispatcher/index
-   Factory/index
-   Factory
-   AbstractJob
-   Worker/index
-   JobInterface
-   Process/index
+    AbstractJob
+    Factory
+    JobInterface
+    Mock
+
+
+.. toctree::
+
+    Dispatcher/index
+    Factory/index
+    Process/index
+    Worker/index

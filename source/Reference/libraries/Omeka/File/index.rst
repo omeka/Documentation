@@ -4,6 +4,10 @@ libraries/Omeka/File
 
 .. toctree::
 
-   MimeType/index
-   Derivative/index
-   Ingest/index
+
+
+.. toctree::
+
+    Derivative/index
+    Ingest/index
+    MimeType/index

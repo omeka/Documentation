@@ -4,5 +4,9 @@ libraries/Omeka/View
 
 .. toctree::
 
-   Helper/index
-   Exception
+    Exception
+
+
+.. toctree::
+
+    Helper/index

@@ -1,29 +1,33 @@
-````````````
-View Helpers
-````````````
+`````````````
+views/helpers
+`````````````
 
 .. toctree::
 
-   Pluralize
-   ItemSearchFilters
-   Singularize
-   HasLoopRecords
-   FormInput
-   SearchFilters
-   ElementInput
-   ElementForm
-   SearchForm
-   SetLoopRecords
-   Loop
-   RecordUrl
-   MaxFileSize
-   GetCurrentRecord
-   FileId3Metadata
-   AllElementTexts
-   Flash
-   Metadata
-   Shortcodes
-   FileMarkup
-   Url
-   GetLoopRecords
-   SetCurrentRecord
+    AllElementTexts
+    ElementForm
+    ElementInput
+    FileId3Metadata
+    FileMarkup
+    Flash
+    FormInput
+    GetCurrentRecord
+    GetLoopRecords
+    HasLoopRecords
+    ItemSearchFilters
+    Loop
+    MaxFileSize
+    Metadata
+    Pluralize
+    RecordUrl
+    SearchFilters
+    SearchForm
+    SetCurrentRecord
+    SetLoopRecords
+    Shortcodes
+    Singularize
+    Url
+
+
+.. toctree::
+

@@ -4,4 +4,8 @@ libraries/Omeka/Http
 
 .. toctree::
 
-   Client
+    Client
+
+
+.. toctree::
+

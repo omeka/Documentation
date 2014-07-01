@@ -4,5 +4,9 @@ libraries/Omeka/Job/Worker
 
 .. toctree::
 
-   InterruptException
-   Beanstalk
+    Beanstalk
+    InterruptException
+
+
+.. toctree::
+

@@ -4,4 +4,8 @@ libraries/Omeka/Record/Mixin
 
 .. toctree::
 
-   AbstractMixin
+    AbstractMixin
+
+
+.. toctree::
+

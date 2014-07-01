@@ -4,11 +4,15 @@ models/Api
 
 .. toctree::
 
-   File
-   ElementSet
-   ItemType
-   Element
-   Item
-   User
-   Tag
-   Collection
+    Collection
+    Element
+    ElementSet
+    File
+    Item
+    ItemType
+    Tag
+    User
+
+
+.. toctree::
+

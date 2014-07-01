@@ -4,7 +4,11 @@ libraries/Omeka/Test/Helper
 
 .. toctree::
 
-   Db
-   DbProfiler
-   Mail
-   Plugin
+    Db
+    DbProfiler
+    Mail
+    Plugin
+
+
+.. toctree::
+

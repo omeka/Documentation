@@ -4,4 +4,8 @@ libraries/Omeka/Session/SaveHandler
 
 .. toctree::
 
-   DbTable
+    DbTable
+
+
+.. toctree::
+

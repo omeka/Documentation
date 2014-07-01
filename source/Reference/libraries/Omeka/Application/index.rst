@@ -4,4 +4,8 @@ libraries/Omeka/Application
 
 .. toctree::
 
-   Resource/index
+
+
+.. toctree::
+
+    Resource/index

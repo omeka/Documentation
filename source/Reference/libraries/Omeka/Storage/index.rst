@@ -4,5 +4,9 @@ libraries/Omeka/Storage
 
 .. toctree::
 
-   Exception
-   Adapter/index
+    Exception
+
+
+.. toctree::
+
+    Adapter/index

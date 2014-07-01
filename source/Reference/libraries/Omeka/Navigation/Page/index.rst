@@ -4,6 +4,10 @@ libraries/Omeka/Navigation/Page
 
 .. toctree::
 
-   Uri
-   Mvc
-   Uri/index
+    Mvc
+    Uri
+
+
+.. toctree::
+
+    Uri/index

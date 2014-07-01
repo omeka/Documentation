@@ -4,4 +4,8 @@ libraries/Omeka/Plugin/Broker
 
 .. toctree::
 
-   Factory
+    Factory
+
+
+.. toctree::
+

@@ -4,4 +4,8 @@ libraries/Omeka/Controller/Router
 
 .. toctree::
 
-   Api
+    Api
+
+
+.. toctree::
+

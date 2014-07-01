@@ -4,4 +4,8 @@ libraries/Omeka/Session
 
 .. toctree::
 
-   SaveHandler/index
+
+
+.. toctree::
+
+    SaveHandler/index

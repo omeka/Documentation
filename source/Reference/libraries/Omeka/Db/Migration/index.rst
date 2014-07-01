@@ -4,7 +4,11 @@ libraries/Omeka/Db/Migration
 
 .. toctree::
 
-   AbstractMigration
-   Manager
-   MigrationInterface
-   Exception
+    AbstractMigration
+    Exception
+    Manager
+    MigrationInterface
+
+
+.. toctree::
+
