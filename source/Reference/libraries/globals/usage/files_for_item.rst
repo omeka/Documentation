@@ -2,7 +2,7 @@ Valid keys for the ``$options`` array are:
 
 * ``showFilename``: Whether to display the filename. Takes a boolean value and the default is "true".
 
-* ``linkToFile``: Whether to add link to item to  . Takes a boolean value and default is "true".
+* ``linkToFile``: Whether icon includes a link to the file. Takes a boolean value and default is "true".
 
 * ``linkAttributes``: Array of additional attributes for the item link. Default attributes are ``array('class'=>'download-file', 'href'=>$file->getWebPath($derivative))``.
 
