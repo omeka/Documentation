@@ -7,8 +7,6 @@ Valid keys for the ``$options`` array are:
 
 * ``linkAttributes``: Array of additional attributes for the image link. Default attributes are ``array('class'=>'download-file', 'href'=>$file->getWebPath($derivative))``.
 
-* ``filenameAttributes``: Array of selector names and values for the filename element. Default is none.
-
 * ``imgAttributes``: Array of selector names and values for the image element. Default is none.
 
 * ``icons``: Array to change default image icon. Takes the mimetype and image names in ``application/views/scripts/images``.
