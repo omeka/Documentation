@@ -1,10 +1,11 @@
+Controls the display of an icon to represent a file.
+
 Valid keys for the ``$options`` array are:
 
-* ``showFilename``: Whether to display the filename. Takes a boolean value and the default is "true".
 
 * ``linkToFile``: Whether icon includes a link to the file. Takes a boolean value and default is "true".
 
-* ``linkAttributes``: Array of additional attributes for the item link. Default attributes are ``array('class'=>'download-file', 'href'=>$file->getWebPath($derivative))``.
+* ``linkAttributes``: Array of additional attributes for the image link. Default attributes are ``array('class'=>'download-file', 'href'=>$file->getWebPath($derivative))``.
 
 * ``filenameAttributes``: Array of selector names and values for the filename element. Default is none.
 
