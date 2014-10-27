@@ -1,4 +1,4 @@
-Load one javascript file from the default 'javascripts' folder:
+Load one javascript file from the default 'javascripts' folder within the theme directory:
 
 .. code-block:: php
 
