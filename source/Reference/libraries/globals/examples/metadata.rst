@@ -1,4 +1,4 @@
-Use ``metadata`` function to get the description information for a collection. Use options array to display only the first 150 characters of the description.
+Use ``metadata`` function to get the description information for a collection. Use options array to limit the description to only the first 150 characters.
 
 .. code-block:: php
     
