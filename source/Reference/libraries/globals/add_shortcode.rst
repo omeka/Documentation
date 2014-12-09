@@ -6,7 +6,7 @@
 
 .. versionadded:: 2.2
 
-:doc:`View-related functions </Reference/packages/Function/View/index>`
+:doc:`Plugin-related functions </Reference/packages/Function/Plugin/index>`
 
 *******
 Summary
@@ -17,7 +17,7 @@ Summary
 .. php:function:: add_shortcode($shortcodeName, $function)
 
     Add a shortcode.
-    
+
     :type $shortcodeName: string
     :param $shortcodeName: Name of the new shortcode.
     :type $function: callback
@@ -40,4 +40,3 @@ See Also
 ********
 
 .. include:: /Reference/libraries/globals/see_also/add_shortcode.rst
-
