@@ -7,7 +7,6 @@ Up to :doc:`../index`
 .. toctree::
    :maxdepth: 1
 
-   /Reference/libraries/globals/add_shortcode
    /Reference/libraries/globals/all_element_texts
    /Reference/libraries/globals/body_tag
    /Reference/libraries/globals/browse_sort_links
