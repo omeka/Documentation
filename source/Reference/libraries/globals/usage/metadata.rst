@@ -1,10 +1,66 @@
-The first parameter can be either a record or the name of the current record type. The latter usage is helpful when
-looping through records.
+------
+Record
+------
 
-For records that carry Element Set metadata, get the value for an element by passing the element set and element name
-as an array in the second parameter, e.g. ``array('Dublin Core', 'Title')``
+The first parameter can be either a record object or the string name of a
+record type. The string form is used when accessing "current" records set
+through :php:func:`set_current_record` or :php:func:`loop`.
 
-You can also get properties of the record by passing the name of the property as a string in the second parameter.
+--------
+Metadata
+--------
+
+For records that carry Element Set metadata, get the value for an element by
+passing the element set and element name as an array in the second parameter,
+e.g. ``array('Dublin Core', 'Title')``.
+
+You can also get properties of the record by passing the name of the property as
+a string in the second parameter. Valid property names differ between record
+types. Every public property of a record (sometimes called the "columns"
+of the record because this is the data stored in the columns of the database) is
+a valid metadata name here. Many records have special additional properties that
+are available as well:
+
+* Collection
+
+  * ``total_items``
+
+* File
+
+  * ``uri``
+
+  * ``fullsize_uri``
+
+  * ``thumbnail_uri``
+
+  * ``square_thumbnail_uri``
+
+  * ``permalink``
+
+  * ``display_title``
+
+* Item
+
+  * ``item_type_name``
+
+  * ``collection_name``
+
+  * ``permalink``
+
+  * ``has_files``
+
+  * ``file_count``
+
+  * ``has_thumbnail``
+
+  * ``citation``
+
+The above list only covers core records. For other records, like those added by plugins,
+see the plugin's documentation or the ``getProperty()`` method of the record.
+
+-------
+Options
+-------
 
 Valid keys for the ``$options`` array are:
  
