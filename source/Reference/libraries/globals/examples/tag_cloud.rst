@@ -4,7 +4,7 @@ Add a tag cloud to a page. Use the ``$link`` parameter to set the base url for t
 
   <?php echo tag_cloud($tags, 'exhibits/browse'); ?>
 
-Use the ``$maxClasses`` parameter to set the max count used to calculate tag size. Available range is 1-9.
+Use the ``$maxClasses`` parameter to set the max count used to calculate tag size. Range supported by themes is 1-9.
 
 .. code-block:: php
 
