@@ -20,7 +20,9 @@ Arguments
     The select object
     
 ``array`` params
-    The parameters being used to build the select object    
+    The parameters being used to build the select object. For web requests, GET parameters and Zend routing params
+    will appear in this array. For internal queries, the params here will be the ones passed to 
+    :php:meth:`Omeke_Db_Table::findBy`.
 
 
 ********
