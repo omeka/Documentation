@@ -1,5 +1,5 @@
 ``````
-models
+Models
 ``````
 
 .. toctree::
