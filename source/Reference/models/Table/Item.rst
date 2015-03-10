@@ -8,16 +8,6 @@ Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
 
 extends :php:class:`Omeka_Db_Table`
 
-    .. php:method:: filterByRange($select, $range)
-
-        Can specify a range of valid Item IDs or an individual ID
-
-        :type $select: Omeka_Db_Select
-        :param $select:
-        :type $range: string
-        :param $range: Example: 1-4, 75, 89
-        :returns: void
-
     .. php:method:: filterBySearch($select, $params)
 
         Run the search filter on the SELECT statement

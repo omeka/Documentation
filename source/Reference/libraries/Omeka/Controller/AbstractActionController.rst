@@ -22,6 +22,22 @@ extends :php:class:`Zend_Controller_Action`
         because not every controller will want to paginate records and also to
         avoid BC breaks for plugins.
 
+        Setting this to self::RECORDS_PER_PAGE_SETTING will cause the
+        admin-configured page limits to be used (which is often what you want).
+
+    .. php:attr:: _autoCsrfProtection
+
+        protected boolean
+
+        Whether to automatically generate and check for a CSRF token on
+        add and edit.
+
+        If set to true, a variable $csrf will be assigned to the add and edit
+        views, you must echo it inside the form on those pages, or else the
+        requests will fail.
+
+        Note: default deletion always uses a token, regardless of this setting.
+
     .. php:method:: __construct(Zend_Controller_Request_Abstract $request, Zend_Controller_Response_Abstract $response, $invokeArgs = array())
 
         Base controller constructor.
@@ -98,14 +114,26 @@ extends :php:class:`Zend_Controller_Action`
 
         :returns: User|bool User object if a user is logged in, false otherwise.
 
-    .. php:method:: _getBrowseRecordsPerPage()
+    .. php:method:: _getBrowseRecordsPerPage($pluralName = null)
 
         Return the number of records to display per page.
 
-        By default this will return null, disabling pagination. This can be
-        overridden in subclasses by redefining this method.
+        By default this will read from the _browseRecordsPerPage property, which
+        in turn defaults to null, disabling pagination. This can be overridden in
+        subclasses by redefining the property or this method.
 
+        Setting the property to self::RECORDS_PER_PAGE_SETTING will enable
+        pagination using the admin-configued page limits.
+
+        :type $pluralName: string|null
+        :param $pluralName:
         :returns: integer|null
+
+    .. php:method:: _getBrowseDefaultSort()
+
+        Return the default sorting parameters to use when none are specified.
+
+        :returns: array|null Array of parameters, with the first element being the sort_field parameter, and the second (optionally) the sort_dir.
 
     .. php:method:: _getAddSuccessMessage($record)
 

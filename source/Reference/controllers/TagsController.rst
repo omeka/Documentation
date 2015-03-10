@@ -10,11 +10,9 @@ extends :php:class:`Omeka_Controller_AbstractActionController`
 
     .. php:method:: init()
 
+    .. php:method:: addAction()
+
     .. php:method:: editAction()
-
-    .. php:method:: getTagsForAdministration()
-
-    .. php:method:: editTags()
 
     .. php:method:: browseAction()
 

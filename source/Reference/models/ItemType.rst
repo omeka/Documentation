@@ -70,7 +70,10 @@ implements :php:interface:`Zend_Acl_Resource_Interface`
 
     .. php:method:: _delete()
 
-        Delete all the ItemTypesElements rows joined to this type.
+        Clean up the associated records for this Item Type.
+
+        Delete all the ItemTypesElements rows joined to this type, and remove the
+        type ID from any associated items.
 
     .. php:method:: afterSave($args)
 
@@ -159,3 +162,7 @@ implements :php:interface:`Zend_Acl_Resource_Interface`
         Required by Zend_Acl_Resource_Interface.
 
         :returns: string
+
+    .. php:method:: _dissociateItems()
+
+        Set items attached to this item type back to null.

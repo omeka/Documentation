@@ -48,13 +48,13 @@ Package: :doc:`Plugin </Reference/packages/Plugin/index>`
         :param $moduleName: MVC module name.
         :returns: void
 
-    .. php:method:: getModuleViewScriptDirs($moduleName = null)
+    .. php:method:: getViewScriptDirs($themeType)
 
         Retrieve the list of plugin-added view script directories.
 
-        :type $moduleName: string
-        :param $moduleName: (optional) MVC module name.
-        :returns: array List of indexed directory names.
+        :type $themeType: string
+        :param $themeType: Type of theme (public or admin)
+        :returns: array Module-name-indexed directory names.
 
     .. php:method:: getHelpersDirs()
 

@@ -1,5 +1,5 @@
 ```````````
-Controllers
+controllers
 ```````````
 
 .. toctree::

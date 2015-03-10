@@ -15,3 +15,9 @@ extends :php:class:`Omeka_Controller_AbstractActionController`
     .. php:method:: editSettingsAction()
 
     .. php:method:: editNavigationAction()
+
+    .. php:method:: resetNavigationConfirmAction()
+
+    .. php:method:: resetNavigationAction()
+
+    .. php:method:: _getResetForm()

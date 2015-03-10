@@ -292,12 +292,12 @@ extends :php:class:`Zend_View_Helper_Abstract`
 
         Return a valid img tag for an image.
 
-        :type $record: File|Item
+        :type $record: Omeka_Record_AbstractRecord
         :param $record:
         :type $props: array
-        :param $props:
+        :param $props: Image tag attributes
         :type $format: string
-        :param $format:
+        :param $format: Derivative image type (thumbnail, etc.)
         :returns: string
 
     .. php:method:: _getFallbackImage($file)

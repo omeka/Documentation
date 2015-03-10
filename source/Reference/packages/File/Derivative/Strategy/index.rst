@@ -10,6 +10,7 @@ Up to :doc:`../index`
    /Reference/libraries/Omeka/File/Derivative/AbstractStrategy.rst
    /Reference/libraries/Omeka/File/Derivative/StrategyInterface.rst
    /Reference/libraries/Omeka/File/Derivative/Strategy/ExternalImageMagick.rst
+   /Reference/libraries/Omeka/File/Derivative/Strategy/GD.rst
    /Reference/libraries/Omeka/File/Derivative/Strategy/Imagick.rst
 
 .. toctree::

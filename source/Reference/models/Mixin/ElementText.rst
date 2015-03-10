@@ -139,6 +139,12 @@ extends :php:class:`Omeka_Record_Mixin_AbstractMixin`
 
         :returns: array Set of ElementText records.
 
+    .. php:method:: getAllElementTextsByElement()
+
+        Retrieve all of the record's ElementTexts, indexed by element ID.
+
+        :returns: array Set of ElementText records, indexed by element_id.
+
     .. php:method:: getElementsBySetName($elementSetName)
 
         Retrieve the Element records for the given ElementSet.

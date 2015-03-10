@@ -8,6 +8,10 @@ Package: :doc:`Controller </Reference/packages/Controller/index>`
 
 extends :php:class:`Omeka_Controller_AbstractActionController`
 
+    .. php:attr:: _autoCsrfProtection
+
+        protected
+
     .. php:attr:: contexts
 
     .. php:method:: init()

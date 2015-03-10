@@ -23,29 +23,18 @@ extends :php:class:`Zend_Application_Resource_Router`
         :type $router: Zend_Controller_Router_Rewrite
         :param $router: The router
 
-    .. php:method:: addRedirectRouteForDefaultRoute($routeName, $uri, $params = array(), $router = null)
+    .. php:method:: _addHomepageRedirect($uri, $router)
 
-        Adds a redirect route for the default route and returns whether the route
-        was successfully added
-        If the current request matches the default route, then the flow will
-        redirect to the
-        index action of the RedirectorController, where the page will be
-        redirected to the absolute uri
-        We must use this Redirector proxy controller because a user may be
-        redirecting to an admin page and it needs
-        to reload the application from the admin context.  Also, the Zend router
-        and dispatcher
-        does not allow us to directly dispatch to an absolute uri.
+        Adds a redirect route for the homepage.
 
-        :type $routeName: String
-        :param $routeName: The name of the new redirect route
-        :type $uri: String
+        A redirect is required to make a "homepage" that is an external URL, an
+        admin URL, or a URL with a query string.
+
+        :type $uri: string
         :param $uri: The absolute uri to redirect to the default route to
-        :type $params: array
-        :param $params: The parameters for the redirect route.
         :type $router: Zend_Controller_Router_Rewrite
         :param $router: The router
-        :returns: boolean Returns true if the route was successfully added, else false.
+        :returns: boolean True if the route was successfully added, else false.
 
     .. php:method:: _leftTrim($s, $n)
 

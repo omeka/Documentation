@@ -12,14 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/tag_attributes.rst
 
-.. php:function:: tag_attributes($attributes, $value = null)
+.. php:function:: tag_attributes($attributes)
 
     Generate attributes for an HTML tag.
     
     :type $attributes: array|string
     :param $attributes: Attributes for the tag.  If this is a string, it will assign both 'name' and 'id' attributes that value for the tag.
-    :type $value: string
-    :param $value:
     :returns: string
 
 *****

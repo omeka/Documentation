@@ -33,3 +33,5 @@ extends :php:class:`Omeka_Record_AbstractRecord`
         string
 
         Timestamp when this linkage was created.
+
+    .. php:method:: _initializeMixins()

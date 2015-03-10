@@ -320,6 +320,18 @@ Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
         :param $userId:
         :param $userField:
 
+    .. php:method:: filterByRange($select, $range)
+
+        Filter returned records by ID.
+
+        Can specify a range of valid record IDs or an individual ID
+
+        :type $select: Omeka_Db_Select
+        :param $select:
+        :type $range: string
+        :param $range: Example: 1-4, 75, 89
+        :returns: void
+
     .. php:method:: getSelectForCount($params = array())
 
         Retrieve a select object used to retrieve a count of all the table rows.

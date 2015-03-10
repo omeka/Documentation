@@ -11,6 +11,7 @@ Up to :doc:`../index`
    /Reference/libraries/Omeka/Form/Admin.rst
    /Reference/libraries/Omeka/Form/DisplayGroup.rst
    /Reference/libraries/Omeka/Form/Element/Input.rst
+   /Reference/libraries/Omeka/Form/Element/SessionCsrfToken.rst
 
 .. toctree::
    :glob:

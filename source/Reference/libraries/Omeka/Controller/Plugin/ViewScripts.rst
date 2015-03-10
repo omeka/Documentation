@@ -58,44 +58,12 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
         :param $request: Request object.
         :returns: void
 
-    .. php:method:: _setupPathsForPlugin($pluginModuleName, $themeType)
+    .. php:method:: _addPathsToView($paths)
 
-        Set up the asset paths for a plugin.
+        Add multiple script paths.
 
-        If you're in a plugin, check in this order:
-        1. plugin view scripts (only for that plugin)
-        2. plugin view scripts for other plugins
-        3. theme view scripts
-
-        This means that it needs to add the paths in the reverse order of what
-        needs to be checked first, so theme paths first and then plugin paths.
-
-        :type $pluginModuleName: string
-        :param $pluginModuleName: The module name for the plugin.
-        :type $themeType: string
-        :param $themeType: The type of theme: 'admin' or 'public'.
-        :returns: void
-
-    .. php:method:: _setupPathsForTheme($themeType)
-
-        Set up the asset paths for the theme.
-
-        If you're in one of the themes, check in this order:
-        1. theme view scripts 2. all plugin view scripts
-
-        :type $themeType: string
-        :param $themeType: The type of theme: 'admin' or 'public'.
-        :returns: void
-
-    .. php:method:: _addPluginPaths($themeType, $pluginModuleName = null)
-
-        Add asset paths for a plugin.
-
-        :type $themeType: string
-        :param $themeType: The type of theme: 'admin' or 'public'.
-        :type $pluginModuleName: string
-        :param $pluginModuleName: The module name for the plugin.
-        :returns: void
+        :type $paths: array
+        :param $paths: The paths to add.
 
     .. php:method:: _addPathToView($scriptPath)
 

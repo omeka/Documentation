@@ -12,13 +12,19 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/get_specific_plugin_hook_output.rst
 
-.. php:function:: get_specific_plugin_hook_output()
+.. php:function:: get_specific_plugin_hook_output($pluginName, $hookName, $args = array())
 
     Get the output of a specific plugin's hook as a string.
     
     This is like get_plugin_hook_output() but only calls the hook within the
     provided plugin.
     
+    :type $pluginName: string
+    :param $pluginName: Directory name of the plugin to execute the hook for.
+    :type $hookName: string
+    :param $hookName: Name of the hook to fire.
+    :type $args: mixed
+    :param $args: Any arguments to be passed to the hook implementation.
     :returns: string|null
 
 *****

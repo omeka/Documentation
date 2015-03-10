@@ -8,6 +8,14 @@ Package: :doc:`Controller </Reference/packages/Controller/index>`
 
 extends :php:class:`Omeka_Controller_AbstractActionController`
 
+    .. php:attr:: _autoCsrfProtection
+
+        protected
+
+    .. php:attr:: _browseRecordsPerPage
+
+        protected
+
     .. php:attr:: contexts
 
     .. php:method:: init()
@@ -70,13 +78,7 @@ extends :php:class:`Omeka_Controller_AbstractActionController`
 
         :returns: void
 
-    .. php:method:: _getBrowseRecordsPerPage()
-
-        Retrieve the number of items to display on any given browse page.
-        This can be modified as a query parameter provided that a user is
-        actually logged in.
-
-        :returns: integer
+    .. php:method:: _getBrowseDefaultSort()
 
     .. php:method:: changeTypeAction()
 

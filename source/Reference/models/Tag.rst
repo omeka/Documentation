@@ -34,17 +34,6 @@ extends :php:class:`Omeka_Record_AbstractRecord`
 
         The tag "name" must be non-empty and unique.
 
-    .. php:method:: fieldIsUnique($field, $value = null)
-
-        Check whether a field is unique.
-
-        The check for unique tag names must take into account CASE SENSITIVITY,
-        which is accomplished via COLLATE utf8_bin sql
-
-        :param $field:
-        :param $value:
-        :returns: bool
-
     .. php:method:: rename($new_names)
 
         Rename a tag.

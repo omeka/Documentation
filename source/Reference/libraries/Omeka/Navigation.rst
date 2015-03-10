@@ -199,13 +199,11 @@ extends :php:class:`Zend_Navigation`
         :param $reattach: Whether the subpages of the $page should be reattached to $parentContainer
         :returns: boolean Whether the page was removed
 
-    .. php:method:: getNavigationOptionValueForInstall($optionName)
+    .. php:method:: getNavigationOptionValueForInstall()
 
         Returns the option value associated with the default navigation during
         installation
 
-        :type $optionName: String
-        :param $optionName: The option name for a stored navigation object.
         :returns: String The option value associated with the default navigation during installation. If no option is found for the option name, then it returns an empty string.
 
     .. php:method:: _normalizePageRecursive($page, $pageOptions = array())
