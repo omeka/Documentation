@@ -6,7 +6,7 @@
 Usage
 *****
 
-Filters the number of <model> records returned in browse queries.
+Filters the number of <model> records returned per page in browse queries.
 
 .. note::
 

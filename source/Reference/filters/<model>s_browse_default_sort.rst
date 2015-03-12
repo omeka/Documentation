@@ -6,7 +6,7 @@
 Usage
 *****
 
-Filters the sort parameters of <model> records returned in browse queries.
+Filters the sort parameters of <model> records returned in default browse queries. If a sort param is passed in the query, this will not apply.
 
 .. note::
 
