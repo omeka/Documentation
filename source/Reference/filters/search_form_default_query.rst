@@ -2,6 +2,8 @@
 search_form_default_query
 #########################
 
+.. versionadded:: 2.3
+
 *****
 Usage
 *****

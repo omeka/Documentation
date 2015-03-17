@@ -1,0 +1,22 @@
+#######################
+What's new in Omeka 2.3
+#######################
+
+=======
+Classes
+=======
+
+* :php:class:`Omeka_File_Derivative_Strategy_GD`
+* Removed :php:class:`!Omeka_View_Helper_AbstractSearch`
+
+=======
+Filters
+=======
+
+* :doc:`/Reference/filters/<model>s_browse_default_sort`
+* :doc:`/Reference/filters/<model>s_browse_per_page`
+* :doc:`/Reference/filters/search_element_texts`
+* :doc:`/Reference/filters/search_form`
+* :doc:`/Reference/filters/search_form_default_query`
+* :doc:`/Reference/filters/search_form_default_query_type`
+* :doc:`/Reference/filters/search_form_default_record_types`

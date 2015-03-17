@@ -2,6 +2,8 @@
 <model>s_browse_default_sort
 ############################
 
+.. versionadded:: 2.3
+
 *****
 Usage
 *****

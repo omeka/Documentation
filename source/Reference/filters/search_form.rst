@@ -2,6 +2,8 @@
 search_form
 ###########
 
+.. versionadded:: 2.3
+
 *****
 Usage
 *****

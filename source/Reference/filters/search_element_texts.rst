@@ -1,8 +1,8 @@
-.. _search_element_texts:
-
 ####################
 search_element_texts
 ####################
+
+.. versionadded:: 2.3
 
 *****
 Usage

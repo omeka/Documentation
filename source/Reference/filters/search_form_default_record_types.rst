@@ -2,6 +2,8 @@
 search_form_default_record_types
 ################################
 
+.. versionadded:: 2.3
+
 *****
 Usage
 *****

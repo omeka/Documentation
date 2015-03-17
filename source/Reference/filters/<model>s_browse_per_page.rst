@@ -2,6 +2,8 @@
 <model>s_browse_per_page
 ########################
 
+.. versionadded:: 2.3
+
 *****
 Usage
 *****
