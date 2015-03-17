@@ -11,7 +11,7 @@ Packages
     Captcha/index
     Controller/index
     Db/index
-    File/Derivative/index
+    File/index
     Filter/index
     Form/index
     Function/index
