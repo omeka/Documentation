@@ -6,7 +6,3 @@ libraries/Omeka/View
 
     Exception
 
-
-.. toctree::
-
-    Helper/index

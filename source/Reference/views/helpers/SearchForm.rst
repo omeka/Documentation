@@ -6,7 +6,7 @@ Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
 .. php:class:: Omeka_View_Helper_SearchForm
 
-extends :php:class:`Omeka_View_Helper_AbstractSearch`
+extends :php:class:`Zend_View_Helper_Abstract`
 
     Return the site-wide search form.
 

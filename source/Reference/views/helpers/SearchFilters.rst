@@ -6,7 +6,7 @@ Package: :doc:`View\\Helper </Reference/packages/View/Helper/index>`
 
 .. php:class:: Omeka_View_Helper_SearchFilters
 
-extends :php:class:`Omeka_View_Helper_AbstractSearch`
+extends :php:class:`Zend_View_Helper_Abstract`
 
     Return a list of search filters in the current request.
 

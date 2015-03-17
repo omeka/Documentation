@@ -7,7 +7,6 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/libraries/Omeka/View/Helper/AbstractSearch.rst
    /Reference/views/helpers/AllElementTexts.rst
    /Reference/views/helpers/ElementForm.rst
    /Reference/views/helpers/ElementInput.rst
