@@ -1,5 +1,3 @@
-.. _search_form:
-
 ###########
 search_form
 ###########
@@ -8,7 +6,9 @@ search_form
 Usage
 *****
 
-Alter the search form generated in application/views/scripts/search/search-form.php.
+Alter the sitewide search form created by :php:func:`search_form`.
+
+The original form can be altered, added to, or replaced using this filter.
 
 *****
 Value
@@ -22,10 +22,10 @@ Arguments
 *********
 
 ``array`` options
-    Options to pass to the form partial as $options
+    Options passed to the form partial as $options
     
 ``array`` filters
-    Filters to pass to the form partial as $filters
+    Filters passed to the form partial as $filters
     
 ``array`` query_types
     Query types for the form to make available
