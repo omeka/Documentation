@@ -65,6 +65,8 @@ Return data about resources (most often records):
     GET /:resources HTTP/1.1
 
 - **page**: integer
+- **sort_field**: string
+- **sort_dir**: string (``'a'`` or ``'d'``)
 
 A response of a resource using the default controller will include a
 non-standard ``Omeka-Total-Results`` header set to the total count of

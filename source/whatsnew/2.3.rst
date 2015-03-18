@@ -2,6 +2,35 @@
 What's new in Omeka 2.3
 #######################
 
+============================
+Automatic page limit support
+============================
+
+Controllers extending :php:class:`Omeka_Controller_AbstractActionController`
+can now easily set their controllers to use the admin and public-side page
+limits configured by the site administrator in Appearance Settings. The
+user-set ``per_page`` GET parameter is also now available to all controllers
+using the built-in pagination support.
+
+To use the configured limits, set the
+:php:attr:`Omeka_Controller_AbstractActionController::$_browseRecordsPerPage`
+property to :php:const:`Omeka_Controller_AbstractActionController::RECORDS_PER_PAGE_SETTING`.
+
+In general, plugins that previously were overriding the ``_getBrowseRecordsPerPage``
+method or manually selecting a hardcoded page size limit should use this new
+constant instead.
+
+To maintain backwards compatibility, controllers will still default to
+performing no pagination of the results.
+
+===
+API
+===
+
+All "browse" actions within the API now support ``sort_field`` and ``sort_dir``
+GET parameters to allow custom sorting of the result set. The parameters behave
+the same way as for normal, non-API browse actions.
+
 =======
 Classes
 =======
