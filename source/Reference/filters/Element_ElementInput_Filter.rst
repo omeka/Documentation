@@ -67,7 +67,7 @@ Examples
     class MyPlugin extends Omeka_Plugin_AbstractPlugin
     {
     
-        $_filters = array('shortenSubjectField', array('ElementInput', 'Item', 'Dublin Core', 'Title'));
+        protected $_filters = array('shortenSubjectField' => array('ElementInput', 'Item', 'Dublin Core', 'Title'));
         
         public function shortenSubjectField($components, $args)
         {
