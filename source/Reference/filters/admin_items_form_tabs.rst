@@ -32,7 +32,7 @@ Examples
     {
         protected $_filters = array('admin_items_form_tabs');
         
-        public filterAdminItemsFormTabs($tabs, $args)
+        public function filterAdminItemsFormTabs($tabs, $args)
         {
             $item = $args['item'];
             $tabs["My Plugin"] = uri('/my-plugin/edit/id/' . $item->id);
