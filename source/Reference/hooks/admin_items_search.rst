@@ -10,9 +10,6 @@ Usage
 
 Append form elements to the advanced search area.
 
-.. note::
-    If your plugin adds searchable models, checkboxes for including them in your search are controlled by the site administrator.
-
 *********
 Arguments
 *********
