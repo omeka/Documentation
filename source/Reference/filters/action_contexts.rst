@@ -46,9 +46,9 @@ Make an RSS feed of your records available at ``/my-records/browse?output=rss``
 
     class MyPlugin extends Omeka_Plugin_AbstractPlugin
     {
-        protected $_filters = array('define_action_context');
+        protected $_filters = array('action_contexts');
     
-        public filterDefineActionContext($contexts, $args)
+        public filterActionContexts($contexts, $args)
         {
             if($args['controller'] instanceof MyRecordController) {
                 $contexts['browse'][] = 'rss'; 

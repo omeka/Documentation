@@ -39,9 +39,9 @@ Add an RSS feed at ``my-records/browse?output=rss``
 
     class MyPlugin extends Omeka_Plugin_AbstractPlugin
     {
-        protected $_filters = array('define_response_contexts');
+        protected $_filters = array('response_contexts');
         
-        public function filterDefineResponseContexts($contexts)
+        public function filterResponseContexts($contexts)
         {
             $contexts['rss'] = array('suffix' => 'rss', 
                                     'headers' => array('Content-Type' => 'text/xml'));
