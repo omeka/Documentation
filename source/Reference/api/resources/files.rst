@@ -120,7 +120,7 @@ Request
     POST /files HTTP/1.1
 
 Requests must use the
-```multipart/form-data`` <http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.2>`__
+`multipart/form-data <http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.2>`__
 content type. The content disposition name for the file must be
 ``file``. The content disposition name for the JSON data must be
 ``data``. We highly recommend that you use a HTTP client that is capable
