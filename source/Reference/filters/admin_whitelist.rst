@@ -48,4 +48,5 @@ To make your plugin's admin page accessible without login
     {
         $whitelist[] = array('controller' => 'my-controller' , 'action' => 'my-view');
         return $whitelist;
+    }
     
