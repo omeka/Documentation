@@ -40,7 +40,7 @@ view helpers or reading data from the view.
 
 So, in all, a plugin can add a shortcode with very little code::
 
-    class MyPlugin extends Omeka_PluginAbstractPlugin
+    class MyPlugin extends Omeka_Plugin_AbstractPlugin
     {
         protected $_hooks = array('initialize');
 
