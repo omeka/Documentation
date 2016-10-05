@@ -71,7 +71,7 @@ Examples
         
         public function shortenSubjectField($components, $args)
         {
-            $components['input'] = get_view()->formText($args['input_name_stem'], $args['value']);
+            $components['input'] = get_view()->formText($args['input_name_stem'] . '[text]', $args['value']);
             return $components;
         }
     }    
