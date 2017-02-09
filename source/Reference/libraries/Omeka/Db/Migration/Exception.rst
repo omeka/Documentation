@@ -8,6 +8,8 @@ Package: :doc:`Db\\Migration </Reference/packages/Db/Migration/index>`
 
 extends :php:class:`Exception`
 
+implements :php:interface:`Throwable`
+
     Indicates an error during the database migration process.
 
     .. php:attr:: message
@@ -33,6 +35,8 @@ extends :php:class:`Exception`
         :param $message:
         :param $code:
         :param $previous:
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

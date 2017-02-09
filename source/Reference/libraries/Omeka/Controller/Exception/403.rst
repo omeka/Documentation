@@ -8,6 +8,8 @@ Package: :doc:`Controller </Reference/packages/Controller/index>`
 
 extends :php:class:`Exception`
 
+implements :php:interface:`Throwable`
+
     If thrown by a controller, this exception will be caught within the
     ErrorController, which will then render a 403 Forbidden page.
 
@@ -34,6 +36,8 @@ extends :php:class:`Exception`
         :param $message:
         :param $code:
         :param $previous:
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

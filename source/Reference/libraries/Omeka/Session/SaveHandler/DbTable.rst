@@ -15,3 +15,13 @@ extends :php:class:`Zend_Session_SaveHandler_DbTable`
     Note that this must be updated meticulously after any changes to the sessions table schema.
 
     .. php:method:: init()
+
+    .. php:method:: write($id, $data)
+
+        Write session data
+
+        :type $id: string
+        :param $id:
+        :type $data: string
+        :param $data:
+        :returns: boolean

@@ -9,7 +9,6 @@ Up to :doc:`../index`
 
    /Reference/libraries/Omeka/Application/Resource/Acl.rst
    /Reference/libraries/Omeka/Application/Resource/Auth.rst
-   /Reference/libraries/Omeka/Application/Resource/Autoloader.rst
    /Reference/libraries/Omeka/Application/Resource/Cachemanager.rst
    /Reference/libraries/Omeka/Application/Resource/Config.rst
    /Reference/libraries/Omeka/Application/Resource/Currentuser.rst

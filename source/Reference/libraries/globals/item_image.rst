@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/item_image.rst
 
-.. php:function:: item_image($imageType, $props = array(), $index = 0, $item = null)
+.. php:function:: item_image($imageType = null, $props = array(), $index = 0, $item = null)
 
     Get a customized item image tag.
     

@@ -8,6 +8,8 @@ Package: :doc:`Job\\Dispatcher\\Adapter </Reference/packages/Job/Dispatcher/Adap
 
 extends :php:class:`LogicException`
 
+implements :php:interface:`Throwable`
+
     Exception thrown when required options have not been passed to the
     Omeka_Job_Dispatcher_Adapter_AdapterInterface's constructor.
 
@@ -34,6 +36,8 @@ extends :php:class:`LogicException`
         :param $message:
         :param $code:
         :param $previous:
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

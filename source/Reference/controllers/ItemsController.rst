@@ -96,3 +96,9 @@ extends :php:class:`Omeka_Controller_AbstractActionController`
         Processes batch edit information. Only accessible via POST.
 
         :returns: void
+
+    .. php:method:: _batchEditAllSave()
+
+        Processes batch edit all information. Only accessible via POST.
+
+        :returns: void

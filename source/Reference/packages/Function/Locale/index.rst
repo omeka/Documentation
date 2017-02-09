@@ -11,6 +11,7 @@ Up to :doc:`../index`
    /Reference/libraries/globals/add_translation_source
    /Reference/libraries/globals/format_date
    /Reference/libraries/globals/get_html_lang
+   /Reference/libraries/globals/plural
 
 .. toctree::
    :glob:

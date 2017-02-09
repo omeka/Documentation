@@ -57,26 +57,26 @@ extends :php:class:`Omeka_File_Derivative_AbstractStrategy`
         :param $sizeConstraint: Maximum size in pixels.
         :returns: boolean Returns true on success or false on failure.
 
-    .. php:method:: _getCropOffsetX($resizedX, $sizeConstraint)
+    .. php:method:: _getOffsetX($width, $size)
 
-        Get the required crop offset on the X axis.
+        Get the required offset on the X axis.
 
-        This respects the Imagick 'gravity' setting.
+        This respects the 'gravity' setting.
 
-        :type $resizedX: int
-        :param $resizedX: Pre-crop image width
-        :type $sizeConstraint: int
-        :param $sizeConstraint:
+        :type $width: int
+        :param $width: Original image width
+        :type $size: int
+        :param $size: Side size of the square region being selected
         :returns: int
 
-    .. php:method:: _getCropOffsetY($resizedY, $sizeConstraint)
+    .. php:method:: _getOffsetY($height, $size)
 
-        Get the required crop offset on the Y axis.
+        Get the required offset on the Y axis.
 
-        This respects the Imagick 'gravity' setting.
+        This respects the 'gravity' setting.
 
-        :type $resizedY: int
-        :param $resizedY: Pre-crop image height
-        :type $sizeConstraint: int
-        :param $sizeConstraint:
+        :type $height: int
+        :param $height: Original image height
+        :type $size: int
+        :param $size: Side size of square region being selected
         :returns: int

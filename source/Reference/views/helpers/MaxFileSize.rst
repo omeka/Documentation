@@ -10,7 +10,7 @@ extends :php:class:`Zend_View_Helper_Abstract`
 
     .. php:attr:: _maxFileSize
 
-        protected Zend_Measure_Binary
+        protected string
 
     .. php:method:: __construct()
 
@@ -23,12 +23,12 @@ extends :php:class:`Zend_View_Helper_Abstract`
 
         Return the maximum file size.
 
-        :returns: Zend_Measure_Binary
+        :returns: string
 
-    .. php:method:: _getSizeMeasure($size)
+    .. php:method:: _parseSize($sizeString)
 
-        Get the binary measurements for file size.
+        Get the size in bytes represented by the given php ini config string
 
-        :type $size: string|int
-        :param $size:
-        :returns: Zend_Measure_Binary
+        :type $sizeString: string
+        :param $sizeString:
+        :returns: int Size in bytes

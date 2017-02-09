@@ -64,6 +64,10 @@ extends :php:class:`Omeka_Db_Table`
 
         :returns: Omeka_Db_Select
 
+    .. php:method:: getSelectForCount($params = array())
+
+        :param $params:
+
     .. php:method:: findTagNamesLike($partialName, $limit = 10)
 
         :param $partialName:

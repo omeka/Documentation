@@ -16,7 +16,7 @@ Summary
 
     Get the maximum file upload size.
     
-    :returns: Zend_Measure_Binary
+    :returns: string
 
 *****
 Usage

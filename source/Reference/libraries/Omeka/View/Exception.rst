@@ -8,6 +8,8 @@ Package: :doc:`View </Reference/packages/View/index>`
 
 extends :php:class:`Exception`
 
+implements :php:interface:`Throwable`
+
     Exceptions thrown by Omeka view code and helpers.
 
     .. php:attr:: message
@@ -33,6 +35,8 @@ extends :php:class:`Exception`
         :param $message:
         :param $code:
         :param $previous:
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

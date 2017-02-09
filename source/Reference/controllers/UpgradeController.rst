@@ -24,3 +24,7 @@ extends :php:class:`Zend_Controller_Action`
         in a pretty way
 
         :returns: void
+
+    .. php:method:: _satisfiesPhpRequirement()
+
+    .. php:method:: _displayPhpRequirementMessage()

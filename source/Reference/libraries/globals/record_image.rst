@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/record_image.rst
 
-.. php:function:: record_image($record, $imageType, $props = array())
+.. php:function:: record_image($record, $imageType = null, $props = array())
 
     Get an image tag for a record.
     

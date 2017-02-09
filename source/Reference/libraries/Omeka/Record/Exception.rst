@@ -8,6 +8,8 @@ Package: :doc:`Record </Reference/packages/Record/index>`
 
 extends :php:class:`Exception`
 
+implements :php:interface:`Throwable`
+
     .. php:attr:: message
 
         protected
@@ -31,6 +33,8 @@ extends :php:class:`Exception`
         :param $message:
         :param $code:
         :param $previous:
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

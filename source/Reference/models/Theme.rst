@@ -162,6 +162,12 @@ Package: :doc:`Record </Reference/packages/Record/index>`
 
         :returns: array An array of theme objects
 
+    .. php:method:: getAllAdminThemes()
+
+        Retrieve all admin themes
+
+        :returns: array An array of theme objects
+
     .. php:method:: getTheme($themeName)
 
         Retrieve a theme.

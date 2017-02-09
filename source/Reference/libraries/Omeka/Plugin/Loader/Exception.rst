@@ -8,6 +8,8 @@ Package: :doc:`Plugin\\Loader </Reference/packages/Plugin/Loader/index>`
 
 extends :php:class:`Exception`
 
+implements :php:interface:`Throwable`
+
     An exception thrown when the plugin loader is unable to load a plugin.
 
     .. php:attr:: message
@@ -33,6 +35,8 @@ extends :php:class:`Exception`
         :param $message:
         :param $code:
         :param $previous:
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

@@ -8,6 +8,8 @@ Package: :doc:`File\\Ingest </Reference/packages/File/Ingest/index>`
 
 extends :php:class:`Exception`
 
+implements :php:interface:`Throwable`
+
     An exception to be thrown when something goes wrong during the file ingest
     process.
 
@@ -34,6 +36,8 @@ extends :php:class:`Exception`
         :param $message:
         :param $code:
         :param $previous:
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

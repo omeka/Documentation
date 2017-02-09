@@ -8,6 +8,8 @@ Package: :doc:`Validate </Reference/packages/Validate/index>`
 
 extends :php:class:`Exception`
 
+implements :php:interface:`Throwable`
+
     Exception that is thrown when a form could not be validated correctly.
 
     .. php:attr:: _errors
@@ -44,6 +46,8 @@ extends :php:class:`Exception`
         :returns: string
 
     .. php:method:: __clone()
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

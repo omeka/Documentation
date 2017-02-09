@@ -26,6 +26,9 @@ extends :php:class:`Omeka_Record_Builder_AbstractBuilder`
         :param $elementMetadata:
         :returns: void
 
-    .. php:method:: _beforeBuild()
+    .. php:method:: _beforeBuild(Omeka_Record_AbstractRecord $record)
 
         Add elements to be associated with the Item Type.
+
+        :type $record: Omeka_Record_AbstractRecord
+        :param $record:

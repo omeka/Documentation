@@ -1,12 +1,12 @@
 .. _faddshortcode:
 
-####################################
+######################################
 ``add_shortcode`` — Add a shortcode.
-####################################
+######################################
 
 .. versionadded:: 2.2
 
-:doc:`Plugin-related functions </Reference/packages/Function/Plugin/index>`
+:doc:`View-related functions </Reference/packages/Function/View/index>`
 
 *******
 Summary

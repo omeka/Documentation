@@ -8,6 +8,8 @@ Package: :doc:`File\\Derivative </Reference/packages/File/Derivative/index>`
 
 extends :php:class:`Exception`
 
+implements :php:interface:`Throwable`
+
     Exception to throw when something goes wrong in the process of creating
     derivative images.
 
@@ -34,6 +36,8 @@ extends :php:class:`Exception`
         :param $message:
         :param $code:
         :param $previous:
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

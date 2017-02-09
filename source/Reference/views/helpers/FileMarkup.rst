@@ -103,35 +103,7 @@ extends :php:class:`Zend_View_Helper_Abstract`
         :param $html:
         :returns: string
 
-    .. php:method:: wmv($file, $options = array())
-
-        Retrieve valid XHTML for displaying a wmv video file or equivalent.
-        Currently this loads the video inside of an <object> tag, but that
-        provides less flexibility than a flash wrapper, which seems to be a
-        standard Web2.0 practice for video sharing.  This limitation can be
-        overcome by a plugin that used a flash wrapper for displaying video.
-
-        :type $file: File
-        :param $file:
-        :type $options: array
-        :param $options:
-        :returns: string
-
-    .. php:method:: wma($file, $options = array())
-
-        Retrieve valid XHTML for displaying a wma audio file or equivalent.
-        Currently this loads the video inside of an <object> tag, but that
-        provides less flexibility than a flash wrapper, which seems to be a
-        standard Web2.0 practice for video sharing.  This limitation can be
-        overcome by a plugin that used a flash wrapper for displaying video.
-
-        :type $file: File
-        :param $file:
-        :type $options: array
-        :param $options:
-        :returns: string
-
-    .. php:method:: mov($file, $options = array())
+    .. php:method:: video($file, $options = array())
 
         Retrieve valid XHTML for displaying Quicktime video files
 
@@ -141,87 +113,21 @@ extends :php:class:`Zend_View_Helper_Abstract`
         :param $options: The set of default options for this includes: width, height, autoplay, controller, loop
         :returns: string
 
-    .. php:method:: _audio($file, $options, $type)
+    .. php:method:: audio($file, $options)
 
-        Default display of audio files via <object> tags.
+        Default display of audio files via <audio> tag.
 
         :type $file: File
         :param $file:
         :type $options: array
         :param $options: The set of default options for this includes: width, height, autoplay, controller, loop
-        :type $type: string
-        :param $type: The Internet media type of the file
         :returns: string
 
-    .. php:method:: ogg($file, $options = array())
+    .. php:method:: _media($type, $file, $options)
 
-        Display OGG audio files.
-
-        :type $file: File
+        :param $type:
         :param $file:
-        :type $options: array
         :param $options:
-        :returns: string
-
-    .. php:method:: mp3($file, $options = array())
-
-        Display MP3/MPEG audio files.
-
-        :type $file: File
-        :param $file:
-        :type $options: array
-        :param $options:
-        :returns: string
-
-    .. php:method:: aac($file, $options = array())
-
-        Display AAC audio files.
-
-        :type $file: File
-        :param $file:
-        :type $options: array
-        :param $options:
-        :returns: string
-
-    .. php:method:: aiff($file, $options = array())
-
-        Display AIFF audio files.
-
-        :type $file: File
-        :param $file:
-        :type $options: array
-        :param $options:
-        :returns: string
-
-    .. php:method:: midi($file, $options = array())
-
-        Display MIDI audio files.
-
-        :type $file: File
-        :param $file:
-        :type $options: array
-        :param $options:
-        :returns: string
-
-    .. php:method:: mp4($file, $options = array())
-
-        Display MP4 audio files.
-
-        :type $file: File
-        :param $file:
-        :type $options: array
-        :param $options:
-        :returns: string
-
-    .. php:method:: wav($file, $options = array())
-
-        Display WAV audio files.
-
-        :type $file: File
-        :param $file:
-        :type $options: array
-        :param $options:
-        :returns: string
 
     .. php:method:: icon($file, $options = array())
 

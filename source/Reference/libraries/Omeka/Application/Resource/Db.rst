@@ -10,6 +10,10 @@ extends :php:class:`Zend_Application_Resource_Db`
 
     Set up the default database connection for Omeka.
 
+    .. php:const:: INIT_COMMAND
+
+        Command to run at connect time; currently sets the SQL mode
+
     .. php:method:: init()
 
         :returns: Omeka_Db

@@ -8,6 +8,8 @@ Package: :doc:`Record\\Builder </Reference/packages/Record/Builder/index>`
 
 extends :php:class:`Exception`
 
+implements :php:interface:`Throwable`
+
     Exception thrown when there is an error creating a Record using
     {@link Omeka_Record_Builder_AbstractBuilder}.
 
@@ -34,6 +36,8 @@ extends :php:class:`Exception`
         :param $message:
         :param $code:
         :param $previous:
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

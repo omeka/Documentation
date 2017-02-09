@@ -360,3 +360,14 @@ extends :php:class:`Omeka_Record_Mixin_AbstractMixin`
         :type $elementName: string
         :param $elementName: Element name
         :returns: boolean
+
+    .. php:method:: getDisplayTitle($default = null)
+
+        Return the title of this record for display/interface purposes
+
+        If no title is present or the title contains no text, returns the passed
+        $default value.
+        If no $default is given, returns the translated string [Untitled].
+
+        :param $default:
+        :returns: string Raw (unescaped) title string for the record.

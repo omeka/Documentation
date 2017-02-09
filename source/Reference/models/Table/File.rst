@@ -17,17 +17,6 @@ extends :php:class:`Omeka_Db_Table`
         :param $select:
         :param $params:
 
-    .. php:method:: filterBySince($select, $dateSince, $dateField)
-
-        Filter select object by date since.
-
-        :type $select: Zend_Db_Select
-        :param $select:
-        :type $dateSince: string
-        :param $dateSince: ISO 8601 formatted date
-        :type $dateField: string
-        :param $dateField: "added" or "modified"
-
     .. php:method:: filterByHasDerivativeImage($select, $hasDerivative)
 
         :param $select:

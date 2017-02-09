@@ -12,12 +12,12 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/__.rst
 
-.. php:function:: __($string)
+.. php:function:: __($msgid)
 
     Translate a string.
     
-    :type $string: string
-    :param $string: The string to be translated.
+    :type $msgid: string|array
+    :param $msgid: The string to be translated, or Array for plural translations.
     :returns: string The translated string.
 
 *****

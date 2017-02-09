@@ -8,6 +8,8 @@ Package: :doc:`Controller </Reference/packages/Controller/index>`
 
 extends :php:class:`Exception`
 
+implements :php:interface:`Throwable`
+
     If thrown within a controller, this will be caught in the ErrorController,
     which will render a 404 Not Found page.
 
@@ -34,6 +36,8 @@ extends :php:class:`Exception`
         :param $message:
         :param $code:
         :param $previous:
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

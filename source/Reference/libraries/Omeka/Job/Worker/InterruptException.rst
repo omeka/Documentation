@@ -8,6 +8,8 @@ Package: :doc:`Job\\Worker </Reference/packages/Job/Worker/index>`
 
 extends :php:class:`Exception`
 
+implements :php:interface:`Throwable`
+
     Exception thrown when the type of job could not be inferred from the message
     passed to the factory.
 
@@ -34,6 +36,8 @@ extends :php:class:`Exception`
         :param $message:
         :param $code:
         :param $previous:
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

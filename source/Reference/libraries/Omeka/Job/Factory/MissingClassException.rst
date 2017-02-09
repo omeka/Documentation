@@ -8,6 +8,8 @@ Package: :doc:`Job\\Factory </Reference/packages/Job/Factory/index>`
 
 extends :php:class:`InvalidArgumentException`
 
+implements :php:interface:`Throwable`
+
     Exception thrown when the type of job could not be inferred from the message
     passed to the factory.
 
@@ -34,6 +36,8 @@ extends :php:class:`InvalidArgumentException`
         :param $message:
         :param $code:
         :param $previous:
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

@@ -8,6 +8,8 @@ Package: :doc:`Plugin\\Installer </Reference/packages/Plugin/Installer/index>`
 
 extends :php:class:`Exception`
 
+implements :php:interface:`Throwable`
+
     An exception thrown when the plugin installer is unable to install,
     uninstall, activate, deactivate, or upgrade a plugin.
 
@@ -34,6 +36,8 @@ extends :php:class:`Exception`
         :param $message:
         :param $code:
         :param $previous:
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

@@ -28,6 +28,8 @@ Package: :doc:`Install </Reference/packages/Install/index>`
 
     .. php:method:: _checkPhpVersionIsValid()
 
+    .. php:method:: _checkPhpExtensionsAreAvailable()
+
     .. php:method:: _checkMysqliIsAvailable()
 
     .. php:method:: _checkMysqlVersionIsValid()

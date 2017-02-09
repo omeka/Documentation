@@ -127,11 +127,13 @@ implements :php:interface:`Zend_Acl_Resource_Interface`
 
         :param $args:
 
-    .. php:method:: afterSave()
+    .. php:method:: afterSave($args)
 
         After-save hook.
 
         Handle public/private status for search.
+
+        :param $args:
 
     .. php:method:: getFile()
 

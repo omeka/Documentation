@@ -49,3 +49,7 @@ extends :php:class:`Omeka_File_Derivative_AbstractStrategy`
         :type $sizeConstraint: int
         :param $sizeConstraint:
         :returns: int
+
+    .. php:method:: _autoOrient($imagick)
+
+        :param $imagick:

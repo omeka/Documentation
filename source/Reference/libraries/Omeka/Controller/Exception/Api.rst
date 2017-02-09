@@ -8,6 +8,8 @@ Package: :doc:`Controller </Reference/packages/Controller/index>`
 
 extends :php:class:`Exception`
 
+implements :php:interface:`Throwable`
+
     API exception.
 
     API implementers should throw this exception for controller errors.
@@ -46,6 +48,8 @@ extends :php:class:`Exception`
         :returns: array
 
     .. php:method:: __clone()
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

@@ -8,6 +8,7 @@ Package: :doc:`Application\\Resource </Reference/packages/Application/Resource/i
 
 extends :php:class:`InvalidArgumentException`
 
+implements :php:interface:`Throwable`
 implements :php:interface:`Omeka_Application_Resource_Exception`
 
     Exception thrown when an invalid job dispatcher has been configured.
@@ -35,6 +36,8 @@ implements :php:interface:`Omeka_Application_Resource_Exception`
         :param $message:
         :param $code:
         :param $previous:
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

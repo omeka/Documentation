@@ -262,9 +262,3 @@ implements :php:interface:`Zend_Acl_Resource_Interface`
         Return the representative File for the record (this File itself).
 
         :returns: File
-
-    .. php:method:: getDisplayTitle()
-
-        Get a title suitable for display through metadata()
-
-        :returns: string

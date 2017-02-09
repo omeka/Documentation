@@ -8,6 +8,8 @@ Package: :doc:`Plugin </Reference/packages/Plugin/index>`
 
 extends :php:class:`Exception`
 
+implements :php:interface:`Throwable`
+
     Exception type thrown by the Omeka_Plugin class.
 
     .. php:attr:: message
@@ -33,6 +35,8 @@ extends :php:class:`Exception`
         :param $message:
         :param $code:
         :param $previous:
+
+    .. php:method:: __wakeup()
 
     .. php:method:: getMessage()
 

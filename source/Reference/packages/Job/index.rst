@@ -9,6 +9,7 @@ Up to :doc:`../index`
 
    /Reference/models/Job/FileProcessUpload.rst
    /Reference/models/Job/ItemBatchEdit.rst
+   /Reference/models/Job/ItemBatchEditAll.rst
    /Reference/models/Job/SearchTextIndex.rst
    /Reference/libraries/Omeka/Job/AbstractJob.rst
    /Reference/libraries/Omeka/Job/JobInterface.rst

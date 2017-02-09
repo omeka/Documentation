@@ -6,6 +6,7 @@ models/Job
 
     FileProcessUpload
     ItemBatchEdit
+    ItemBatchEditAll
     SearchTextIndex
 
 

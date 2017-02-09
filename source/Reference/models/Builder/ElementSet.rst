@@ -25,14 +25,9 @@ extends :php:class:`Omeka_Record_Builder_AbstractBuilder`
         :type $elements: array
         :param $elements:
 
-    .. php:method:: setRecordMetadata($metadata)
-
-        Overrides setRecordMetadata() to allow giving the name of the element as
-        a string.
-
-        :type $metadata: string|array
-        :param $metadata:
-
-    .. php:method:: _beforeBuild()
+    .. php:method:: _beforeBuild(Omeka_Record_AbstractRecord $record)
 
         Add elements to be associated with the element set.
+
+        :type $record: Omeka_Record_AbstractRecord
+        :param $record:
