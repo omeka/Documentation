@@ -287,9 +287,426 @@ Here are a few of the basic tasks for upgrading.
           array('label' => 'Browse By Tag', 'uri' => url('items/tags'))
       ));
 
-* Change other global functions that have changed. There is `a complete list of old and new function names on our
-  wiki <http://omeka.org/codex/Updating_Plugins_For_2.0#Function_Replacements>`_.  
 * Update calls to hooks and filters (wherever you use :ref:`ffirepluginhook` and :ref:`fapplyfilters`). Typically,
   the expected variable name passed in in version 1.5 (e.g. ``$user``) becomes the key for the corresponding data in
   the array, e.g. ``$user = $args['user'];`` See
   `Updating Plugins for 2.0: Hooks and Filters <http://omeka.org/codex/Updating_Plugins_For_2.0#Hooks_and_Filters>`_
+
+Changed Function Names
+======================
+
+.. raw:: html
+
+    <table>
+    <thead>
+    <tr class="header">
+    <th align="left"><p>Old Function</p></th>
+    <th align="left"><p>New Function</p></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="odd">
+    <td align="left"><p>random_featured_item()</p></td>
+    <td align="left"><p>random_featured_items(1)</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>has_tags()</p></td>
+    <td align="left"><p>metadata($record, 'has tags')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>item_has_tags()</p></td>
+    <td align="left"><p>metadata($item, 'has tags')</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>item_has_files()</p></td>
+    <td align="left"><p>metadata($item, 'has files')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>item_has_thumbnail()</p></td>
+    <td align="left"><p>metadata($item, 'has thumbnail')</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>item_citation()</p></td>
+    <td align="left"><p>metadata($item, 'citation')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>n/a</p></td>
+    <td align="left"><p>metadata($item, 'file count')</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>item_fullsize()</p></td>
+    <td align="left"><p>item_image('fullsize')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>item_thumbnail()</p></td>
+    <td align="left"><p>item_image('thumbnail')</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>item_square_thumbnail()</p></td>
+    <td align="left"><p>item_image('square_thumbnail')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>setting()</p></td>
+    <td align="left"><p>option()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>display_js()</p></td>
+    <td align="left"><p>head_js()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>display_css()</p></td>
+    <td align="left"><p>head_css()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>css()</p></td>
+    <td align="left"><p>css_src()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>js()</p></td>
+    <td align="left"><p>js_tag()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>queue_js()</p></td>
+    <td align="left"><p>queue_js_file()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>queue_css()</p></td>
+    <td align="left"><p>queue_css_file()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>display_random_featured_collection()</p></td>
+    <td align="left"><p>random_featured_collection()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>recent_collections()</p></td>
+    <td align="left"><p>get_recent_collections()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>random_featured_collection()</p></td>
+    <td align="left"><p>get_random_featured_collection()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>get_latest_omeka_version()</p></td>
+    <td align="left"><p>latest_omeka_version()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>display_file()</p></td>
+    <td align="left"><p>file_markup()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>display_files()</p></td>
+    <td align="left"><p>file_markup()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>recent_files()</p></td>
+    <td align="left"><p>get_recent_files()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>show_file_metadata()</p></td>
+    <td align="left"><p>all_element_texts()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>_tag_attributes()</p></td>
+    <td align="left"><p>tag_attributes()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>simple_search()</p></td>
+    <td align="left"><p>simple_search_form()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>display_form_input_for_element()</p></td>
+    <td align="left"><p>element_form()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>display_element_set_form()</p></td>
+    <td align="left"><p>element_set_form()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>label_options()</p></td>
+    <td align="left"><p>label_table_options()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>display_search_filters()</p></td>
+    <td align="left"><p>search_filters()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>current_action_contexts()</p></td>
+    <td align="left"><p>get_current_action_contexts()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>__v()</p></td>
+    <td align="left"><p>get_view()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>display_files_for_item()</p></td>
+    <td align="left"><p>files_for_item()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>display_random_featured_item()</p></td>
+    <td align="left"><p>random_featured_item()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>display_random_featured_items()</p></td>
+    <td align="left"><p>random_featured_items()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>recent_items()</p></td>
+    <td align="left"><p>get_recent_items()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>random_featured_items()</p></td>
+    <td align="left"><p>get_random_featured_items()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>random_featured_item()</p></td>
+    <td align="left"><p>get_random_featured_item()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>show_item_metadata()</p></td>
+    <td align="left"><p>all_element_texts()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>link_to_advanced_search()</p></td>
+    <td align="left"><p>link_to_item_search()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>link_to_file_metadata()</p></td>
+    <td align="left"><p>link_to_file_show()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>link_to_next_item()</p></td>
+    <td align="left"><p>link_to_next_item_show()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>link_to_previous_item()</p></td>
+    <td align="left"><p>link_to_previous_item_show()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>link_to_browse_items()</p></td>
+    <td align="left"><p>link_to_items_browse()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>nls2p()</p></td>
+    <td align="left"><p>text_to_paragraphs()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>recent_tags()</p></td>
+    <td align="left"><p>get_recent_tags()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>item_tags_as_string()</p></td>
+    <td align="left"><p>tag_string('item')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>item_tags_as_cloud()</p></td>
+    <td align="left"><p>tag_cloud('item')</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>has_permission()</p></td>
+    <td align="left"><p>is_allowed()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>uri()</p></td>
+    <td align="left"><p>url()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>abs_uri()</p></td>
+    <td align="left"><p>absolute_url()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>abs_item_uri()</p></td>
+    <td align="left"><p>record_url($item, 'show', true)</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>record_uri()</p></td>
+    <td align="left"><p>record_url()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>item_uri()</p></td>
+    <td align="left"><p>record_url($item)</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>current_uri()</p></td>
+    <td align="left"><p>current_url()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>is_current_uri()</p></td>
+    <td align="left"><p>is_current_url()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>items_output_uri()</p></td>
+    <td align="left"><p>items_output_url()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>file_display_uri()</p></td>
+    <td align="left"><p>file_display_url()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>public_uri()</p></td>
+    <td align="left"><p>public_url()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>admin_uri()</p></td>
+    <td align="left"><p>admin_url()</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>set_theme_base_uri()</p></td>
+    <td align="left"><p>set_theme_base_url()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>revert_theme_base_uri()</p></td>
+    <td align="left"><p>revert_theme_base_url</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>loop_records()</p></td>
+    <td align="left"><p>loop()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>loop_files()</p></td>
+    <td align="left"><p>loop('files')</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>loop_collections()</p></td>
+    <td align="left"><p>loop('collections')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>loop_items()</p></td>
+    <td align="left"><p>loop('items')</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>loop_item_types()</p></td>
+    <td align="left"><p>loop('item_types')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>loop_items_in_collection()</p></td>
+    <td align="left"><p>loop('items')</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>loop_files_for_item()</p></td>
+    <td align="left"><p>loop('files')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>set_current_file()</p></td>
+    <td align="left"><p>set_current_record('file', $file)</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>set_current_collection()</p></td>
+    <td align="left"><p>set_current_record('collection', $collection)</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>set_current_item()</p></td>
+    <td align="left"><p>set_current_record('item', $item)</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>get_current_item()</p></td>
+    <td align="left"><p>get_current_record('item')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>get_current_collection()</p></td>
+    <td align="left"><p>get_current_record('collection')</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>get_current_file()</p></td>
+    <td align="left"><p>get_current_record('file')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>get_current_item_type()</p></td>
+    <td align="left"><p>get_current_record('item_type')</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>set_current_item_type()</p></td>
+    <td align="left"><p>set_current_record('item_type')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>set_items_for_loop()</p></td>
+    <td align="left"><p>set_loop_records('items', $items)</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>get_items_for_loop()</p></td>
+    <td align="left"><p>get_loop_records('items')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>has_items_for_loop()</p></td>
+    <td align="left"><p>has_loop_records('items')</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>set_collections_for_loop()</p></td>
+    <td align="left"><p>set_loop_records('collections', $items)</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>get_collections_for_loop()</p></td>
+    <td align="left"><p>get_loop_records('collections')</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>has_collections_for_loop()</p></td>
+    <td align="left"><p>has_loop_records('collections')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>set_files_for_loop()</p></td>
+    <td align="left"><p>set_loop_records('files', $items)</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>get_files_for_loop()</p></td>
+    <td align="left"><p>get_loop_records('files')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>has_files_for_loop()</p></td>
+    <td align="left"><p>has_loop_records('files')</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>set_item_types_for_loop()</p></td>
+    <td align="left"><p>set_loop_records('item_types', $itemTypes)</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>get_item_types_for_loop()</p></td>
+    <td align="left"><p>get_loop_records('item_types')</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>has_item_types_for_loop()</p></td>
+    <td align="left"><p>has_loop_records('item_types')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>get_item_by_id()</p></td>
+    <td align="left"><p>get_record_by_id('item', $id)</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>get_collection_by_id()</p></td>
+    <td align="left"><p>get_record_by_id('collection', $id)</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>get_user_by_id()</p></td>
+    <td align="left"><p>get_record_by_id('user', $id)</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>_select_from_table()</p></td>
+    <td align="left"><p>get_table_options() with Zend's formSelect()</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>is_odd($num)</p></td>
+    <td align="left"><p>n/a; use $num &amp; 1</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>form_error()</p></td>
+    <td align="left"><p>n/a; Use Zend Form Validations</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>collection_is_featured</p></td>
+    <td align="left"><p>metadata('collection', 'featured')</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>collection_is_public</p></td>
+    <td align="left"><p>metadata('collection', 'public')</p></td>
+    </tr>
+    <tr class="odd">
+    <td align="left"><p>button_to</p></td>
+    <td align="left"><p>n/a; use Zend's form helpers or hand-write HTML buttons.</p></td>
+    </tr>
+    <tr class="even">
+    <td align="left"><p>delete_button</p></td>
+    <td align="left"><p>link_to($record, 'delete-confirm', 'Delete', ...)</p></td>
+    </tr>
+    <tr class="odd">
+    </tr>
+    </tbody>
+    </table>
+
