@@ -17,12 +17,11 @@ file there corresponds to an Omeka global function that has automatically genera
 Function Examples
 *****************
 
-If you would like to contribute how you have used or modified one of these functions, you can
-use the :ref:`exampletemplate` file as a starting point. Also, look at
-the :doc:`Metadata <https://github.com/omeka/Documentation/blob/master/source/Reference/libraries/globals/examples/metadata.rst>`_ file as a working sample.
-Just branch the corresponding file within
-GitHub (or create your own local copy), fill in the details of what you did, and submit a new
-pull request.
+If you would like to contribute how you have used or modified one of these functions, 
+you can use the :ref:`exampletemplate` file as a starting point. Also, look at 
+the `Metadata <https://github.com/omeka/Documentation/blob/master/source/Reference/libraries/globals/examples/metadata.rst>`_ 
+file as a working sample.Just branch the corresponding file within GitHub 
+(or create your own local copy), fill in the details of what you did, and submit a new pull request.
 
 ***************
 Recipe Examples
@@ -32,4 +31,4 @@ A second, broader, need is for recipes that fill out larger tasks. A recipe migh
 functions or plugin structures to solve a large task.
 These are found under ``Tutorials/recipes``. New ones can also be added via pull request.
 There is also a :ref:`recipetemplate` for these, but the structure you use can follow whatever structures explain the process best.
-Here is an example for :doc:`Retaining Search Order <https://github.com/omeka/Documentation/blob/master/source/Tutorials/recipes/retainingSearchSortOrderWhenPaging.rst>`_.
+Here is an example for `Retaining Search Order <https://github.com/omeka/Documentation/blob/master/source/Tutorials/recipes/retainingSearchSortOrderWhenPaging.rst>`_.
