@@ -16,6 +16,7 @@ For documentation for end-users and site administrators, or for information abou
    whatsnew/index
    Tutorials/index
    Reference/index
+   Helping/index
 
 Indices and tables
 ==================

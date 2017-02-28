@@ -1,3 +1,4 @@
+
 Use the ``metadata`` function to get the Element Set metadata for a collection. The ``snippet`` option can be used to limit the information to only the first 150 characters.
 
 .. code-block:: php
