@@ -17,10 +17,10 @@ file there corresponds to an Omeka global function that has automatically genera
 Function Examples
 *****************
 
-If you would like to contribute how you have used or modified one of these functions, 
+If you would like to contribute how you have used or modified one of the Omeka globals functions, 
 you can use the :ref:`exampletemplate` file as a starting point. Also, look at 
 the `Metadata <https://github.com/omeka/Documentation/blob/master/source/Reference/libraries/globals/examples/metadata.rst>`_ 
-file as a working sample.Just branch the corresponding file within GitHub 
+file as a working sample. Just branch the corresponding file within GitHub 
 (or create your own local copy), fill in the details of what you did, and submit a new pull request.
 
 ***************
