@@ -47,7 +47,7 @@ Submitting Additions and Changes
 ********************************
 
 A pull request is the best way to contribute. We'll give a quick look and provide feedback as
-needed. Generally we want to help you get your contribution available for everyone working
+needed. We want to help you get your contribution available for everyone working
 with Omeka as quickly as possible. You can do that either from a fork of the Documentation you
 work on locally, or directly from GitHub. We'll be watching over the Docathon and respond as
 quickly as we can.
@@ -59,3 +59,6 @@ Talking About Additions and Changes
 For simplicity, we've created a couple of issues on the Documentation repo that reflect the guides
 above. Adding comments there will be the quickest way to ask us a question. We'll be watching, and will 
 respond as quickly as we can.
+
+Hannah has also created a #cunygc channel in the `Docathon's Slack <http://docathon.slack.com>`_. That'll 
+also be a good place to ask questions.
