@@ -5,7 +5,7 @@ Docathon Participation
 ######################
 
 Thanks to the CUNY Graduate Center, Omeka will be one of the projects tackled in 
-`Docathon <https://bids.github.io/docathon/pages/hosts/gc.html> `_ the week of March 6, 2017.
+`Docathon <https://bids.github.io/docathon/pages/hosts/gc.html>`_ the week of March 6, 2017.
 
 You can find some guides to technical aspects in the :ref:`helping` guide and in the 
 `Documentation <https://github.com/omeka/Documentation>`_ README.
