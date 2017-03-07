@@ -21,3 +21,5 @@ This example uses two different parameters in the ``$params`` array to narrow do
 - ``tags`` uses a string of tag names to lookup exhibits by tag
 
 In both cases, you can then iterate through the array of records that is returned in order to display them or perform further processing.
+
+The complete list of parameters that you can filter records by can be found in the model objects that extend **Omeka_Db_Table**. See list of classes in the  ``application/models/Table`` directory. In particular, look at the ``applySearchFilters()`` method that is attached to each class.
