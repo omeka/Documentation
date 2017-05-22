@@ -1,14 +1,6 @@
-Controls the display of icons to represent the files associated with an item.
+Valid keys for the ``$options`` array are the same as those for the ``file_markup`` function's
+``$props`` argument. For details, see :ref:`the Usage section for
+file_markup <file-markup-options>`.
 
-Valid keys for the ``$options`` array are:
-
-
-* ``linkToFile``: Whether icon includes a link to the file. Takes a boolean value and default is "true".
-
-* ``linkAttributes``: Takes an array of additional attributes for the image link. Default attributes are ``array('class'=>'download-file', 'href'=>$file->getWebPath($derivative))``.
-
-* ``imgAttributes``: Takes an array of selector names and values for the image element. Default is none.
-
-* ``imageSize``: Takes a value of the image size to be displayed. Valid values are ``fullsize``, ``thumbnail``, and ``square_thumbnail``.
-
-* ``icons``: Takes an array of the MIME type and the name of an image file in ``application/views/scripts/images`` to change default image icon.
+Attributes given in ``$wrapperAttributes`` are also simply passed as-is to the
+corresponding argument to ``file_markup``.

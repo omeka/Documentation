@@ -1,3 +1,5 @@
+.. _file-markup-options:
+
 The second argument, ``$props``, is an array of options to customize the display of files. Which options are valid depend on the particular file type and on whether a plugin has added a new method for displaying that file, but
 there are some fairly standard available options.
 
