@@ -8,6 +8,9 @@ Usage
 
 When Omeka detects that a user has installed a new version of the plugin, it automatically deactivates the plugin and presents an "Upgrade" button. This hook runs when a superuser clicks the "Upgrade" button. It is primarily used to migrate database tables and other data stored by older versions of the plugin. 
 
+To abort the upgrade and report an error to the user, throw an
+:php:exc:`Omeka_Plugin_Installer_Exception`.
+
 *********
 Arguments
 *********
