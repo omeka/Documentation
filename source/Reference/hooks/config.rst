@@ -8,7 +8,10 @@ Usage
 
 This hook processes posted data from the configuration form created by the config_form hook. Most use cases will involve setting configuration options to the database using set_option().
 
-Both the config and config_form hooks must be used to creating a configuration form for a plugin. 
+Both the config and config_form hooks must be used to creating a configuration form for a plugin.
+
+To reject the passed configuration and report an error to the user, throw an
+:php:exc:`Omeka_Validate_Exception`.
 
 *********
 Arguments
