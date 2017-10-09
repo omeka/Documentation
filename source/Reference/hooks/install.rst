@@ -8,6 +8,9 @@ Usage
 
 This hook is primarily used to set options to the database and create tables, and any other initial actions required for your plugin to function, such as initial records or setting options. 
 
+To abort installation and report an error to the user, throw an
+:php:exc:`Omeka_Plugin_Installer_Exception`.
+
 *********
 Arguments
 *********
