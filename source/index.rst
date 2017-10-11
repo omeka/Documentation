@@ -17,6 +17,7 @@ For documentation for end-users and site administrators, or for information abou
    Tutorials/index
    Reference/index
    Helping/index
+   registerAnAddon
 
 Indices and tables
 ==================
