@@ -23,14 +23,9 @@ initially registered. The ``{AddonZipName}`` can be anything, but we
 recommend that it's the same as ``{AddonDirName}``. Afterwards, attach
 this ZIP file to the release as a binary.
 
-Then, to complete the process, click "Publish release". If everything
-checks out, we'll automatically register the release within 24 hours. If
-you subsequently set the release to be a prerelease or draft, we will
-remove the release from our registry.
+Then, to complete the process, click "Publish release". If everything checks out, we'll register the release shortly. After we have added it to the registry, updates following the same procedure will be automatically updated. If you subsequently set the release to be a prerelease or draft, we will remove the release from our registry.
 
-Note that we pull in your GitHub repository's README and publish it
-alongside your addon versions. Make sure the README is ready for
-publication.
+Note that we pull in your GitHub repository's README and publish it alongside your addon versions. Make sure the README is ready for publication.
 
 Before registring your releases we check that certain things are true:
 
