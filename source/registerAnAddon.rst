@@ -1,7 +1,7 @@
 Registering a new module or theme with omeka.org
 ================================================
 
-After you [register your GitHub repository](http://dev.omeka.org/addons/register) as an Omeka addon we'll
+After you [register your GitHub repository](http://omeka.org/s/docs/developer/register_an_addon/) as an Omeka addon we'll
 automatically identify and publish new versions of your addon if you
 follow these steps.
 
