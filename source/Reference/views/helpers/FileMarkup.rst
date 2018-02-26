@@ -54,7 +54,6 @@ extends :php:class:`Zend_View_Helper_Abstract`
         :param $callback:
         :type $defaultOptions: array
         :param $defaultOptions:
-        :returns: void
 
     .. php:method:: addFallbackImage($mimeType, $image)
 

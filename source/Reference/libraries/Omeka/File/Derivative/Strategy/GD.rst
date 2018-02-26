@@ -23,7 +23,7 @@ extends :php:class:`Omeka_File_Derivative_AbstractStrategy`
         :param $type:
         :param $sizeConstraint:
         :param $mimeType:
-        :returns: boolean Returns true on success or false on failure.
+        :returns: bool Returns true on success or false on failure.
 
     .. php:method:: _loadImageResource($source)
 
@@ -41,9 +41,9 @@ extends :php:class:`Omeka_File_Derivative_AbstractStrategy`
         :param $source: Path of the source.
         :type $destination: string
         :param $destination: Path of the destination.
-        :type $sizeConstraint: integer
+        :type $sizeConstraint: int
         :param $sizeConstraint: Maximum size in pixels.
-        :returns: boolean Returns true on success or false on failure.
+        :returns: bool Returns true on success or false on failure.
 
     .. php:method:: _makeSquareThumbnail($source, $destination, $sizeConstraint)
 
@@ -53,9 +53,9 @@ extends :php:class:`Omeka_File_Derivative_AbstractStrategy`
         :param $source: Path of the source.
         :type $destination: string
         :param $destination: Path of the destination.
-        :type $sizeConstraint: integer
+        :type $sizeConstraint: int
         :param $sizeConstraint: Maximum size in pixels.
-        :returns: boolean Returns true on success or false on failure.
+        :returns: bool Returns true on success or false on failure.
 
     .. php:method:: _getOffsetX($width, $size)
 

@@ -46,7 +46,6 @@ Package: :doc:`Plugin </Reference/packages/Plugin/index>`
         :param $themeType: Type of theme ('public', 'admin', or 'shared').
         :type $moduleName: string
         :param $moduleName: MVC module name.
-        :returns: void
 
     .. php:method:: getViewScriptDirs($themeType)
 
@@ -75,7 +74,6 @@ Package: :doc:`Plugin </Reference/packages/Plugin/index>`
         :param $pluginDirName: Plugin name.
         :type $moduleName: string
         :param $moduleName: MVC module name.
-        :returns: void
 
     .. php:method:: addApplicationDirs($pluginDirName)
 
@@ -93,7 +91,6 @@ Package: :doc:`Plugin </Reference/packages/Plugin/index>`
 
         :type $pluginDirName: string
         :param $pluginDirName: Plugin name.
-        :returns: void
 
     .. php:method:: _getModuleName($pluginDirName)
 
@@ -110,4 +107,4 @@ Package: :doc:`Plugin </Reference/packages/Plugin/index>`
 
         :type $path: string
         :param $path:
-        :returns: boolean
+        :returns: bool

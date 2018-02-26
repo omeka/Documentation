@@ -19,7 +19,6 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
 
         :type $request: Zend_Controller_Request_Abstract
         :param $request: Request object.
-        :returns: void
 
     .. php:method:: _dbNeedsUpgrade()
 
@@ -31,4 +30,3 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
 
         :type $request: Zend_Controller_Request_Abstract
         :param $request: Request object (not used).
-        :returns: void

@@ -37,7 +37,7 @@ Package: :doc:`Test\\Helper </Reference/packages/Test/Helper/index>`
 
         :type $tableName: string
         :param $tableName:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: getTableCount($prefix = null)
 
@@ -45,21 +45,19 @@ Package: :doc:`Test\\Helper </Reference/packages/Test/Helper/index>`
 
         :type $prefix: string
         :param $prefix:
-        :returns: integer
+        :returns: int
 
     .. php:method:: dropTables($tables = null)
 
         Drop the tables from the database.
 
         :param $tables:
-        :returns: void
 
     .. php:method:: truncateTables($tables = null)
 
         Truncate the tables from the database.
 
         :param $tables:
-        :returns: void
 
     .. php:method:: install()
 
@@ -75,7 +73,7 @@ Package: :doc:`Test\\Helper </Reference/packages/Test/Helper/index>`
 
         :type $tableName: string
         :param $tableName:
-        :returns: integer
+        :returns: int
 
     .. php:method:: getAdapter()
 

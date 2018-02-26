@@ -19,13 +19,13 @@ extends :php:class:`Zend_View_Helper_Abstract`
 
     .. php:attr:: _showEmptyElements
 
-        protected boolean
+        protected bool
 
         Flag to indicate whether to show elements that do not have text.
 
     .. php:attr:: _showElementSetHeadings
 
-        protected boolean
+        protected bool
 
         Whether to include a heading for each Element Set.
 
@@ -69,7 +69,6 @@ extends :php:class:`Zend_View_Helper_Abstract`
 
         :type $options: array
         :param $options:
-        :returns: void
 
     .. php:method:: _getElementsBySet()
 
@@ -93,7 +92,7 @@ extends :php:class:`Zend_View_Helper_Abstract`
         :param $element:
         :type $texts: array
         :param $texts:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: _getFormattedElementTexts($record, $metadata)
 

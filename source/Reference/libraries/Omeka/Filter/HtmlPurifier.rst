@@ -41,7 +41,6 @@ implements :php:interface:`Zend_Filter_Interface`
 
         :type $purifier: HTMLPurifier
         :param $purifier:
-        :returns: void
 
     .. php:method:: createHtmlPurifier($allowedHtmlElements = null, $allowedHtmlAttributes = null)
 

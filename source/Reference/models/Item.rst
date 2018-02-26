@@ -88,7 +88,7 @@ implements :php:interface:`Zend_Acl_Resource_Interface`
 
         The default is to get the first file.
 
-        :type $index: integer
+        :type $index: int
         :param $index:
         :returns: File
 

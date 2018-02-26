@@ -21,4 +21,4 @@ extends :php:class:`Zend_Db_Select`
 
         :type $name: string
         :param $name: Table name.
-        :returns: boolean
+        :returns: bool

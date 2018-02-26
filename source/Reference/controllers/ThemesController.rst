@@ -16,5 +16,3 @@ extends :php:class:`Omeka_Controller_AbstractActionController`
 
         Load the configuration form for a specific theme.
         That configuration form will be POSTed back to this URL.
-
-        :returns: void

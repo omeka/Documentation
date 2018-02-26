@@ -51,7 +51,7 @@ extends :php:class:`Omeka_File_Derivative_AbstractStrategy`
         The convert binary must be within the directory and executable.
 
         :param $dirToIm:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: getDefaultImageMagickDir()
 

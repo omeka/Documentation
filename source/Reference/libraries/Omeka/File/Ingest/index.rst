@@ -4,14 +4,10 @@ libraries/Omeka/File/Ingest
 
 .. toctree::
 
-    AbstractIngest
-    AbstractSourceIngest
-    Exception
-    Filesystem
-    InvalidException
-    Upload
-    Url
-
-
-.. toctree::
-
+   InvalidException
+   AbstractIngest
+   Exception
+   Url
+   AbstractSourceIngest
+   Upload
+   Filesystem

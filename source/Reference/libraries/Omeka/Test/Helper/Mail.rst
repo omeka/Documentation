@@ -31,7 +31,7 @@ Package: :doc:`Test\\Helper </Reference/packages/Test/Helper/index>`
 
         :type $file: SplFileInfo
         :param $file:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: getMailText($index = 0)
 
@@ -40,7 +40,7 @@ Package: :doc:`Test\\Helper </Reference/packages/Test/Helper/index>`
         Note that this will not return correct results if reset() was not invoked
         between test runs.
 
-        :type $index: integer
+        :type $index: int
         :param $index:
         :returns: string
 

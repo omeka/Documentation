@@ -20,7 +20,6 @@ implements :php:interface:`Omeka_Db_Migration_MigrationInterface`
 
         :type $db: Omeka_Db
         :param $db:
-        :returns: void
 
     .. php:method:: getDb()
 
@@ -50,7 +49,5 @@ implements :php:interface:`Omeka_Db_Migration_MigrationInterface`
 
         If the migration requires a form submission, here's where to handle
         display of it
-
-        :returns: void
 
     .. php:method:: up()

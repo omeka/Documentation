@@ -56,7 +56,6 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
 
         :type $request: Zend_Controller_Request_Abstract
         :param $request: Request object.
-        :returns: void
 
     .. php:method:: _addPathsToView($paths)
 
@@ -71,7 +70,6 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
 
         :type $scriptPath: string
         :param $scriptPath: Path from plugins dir to script dir.
-        :returns: void
 
     .. php:method:: _getView()
 
@@ -85,15 +83,12 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
 
         Add the global views from the view scripts directory to the view.
 
-        :returns: void
-
     .. php:method:: _addThemePaths($theme)
 
         Add script and asset paths for a theme to the view.
 
         :type $theme: string
         :param $theme: Theme type; either 'public' or 'admin'.
-        :returns: void
 
     .. php:method:: _addOverridePathForPlugin($theme, $pluginModuleName)
 

@@ -22,8 +22,6 @@ extends :php:class:`Omeka_Db_Table`
         Apply permissions checks to all SQL statements retrieving collections from
         the table
 
-        :returns: void
-
     .. php:method:: findRandomFeatured()
 
     .. php:method:: applySorting($select, $sortField, $sortDir)

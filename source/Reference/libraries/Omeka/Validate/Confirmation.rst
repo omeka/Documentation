@@ -46,7 +46,7 @@ extends :php:class:`Zend_Validate_Abstract`
         :param $value:
         :type $context: string|array
         :param $context:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: getField()
 
@@ -60,4 +60,3 @@ extends :php:class:`Zend_Validate_Abstract`
 
         :type $field: string
         :param $field:
-        :returns: void

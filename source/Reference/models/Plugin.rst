@@ -58,13 +58,13 @@ implements :php:interface:`Zend_Acl_Resource_Interface`
 
     .. php:attr:: _loaded
 
-        protected boolean
+        protected bool
 
         Whether the plugin has been loaded.
 
     .. php:attr:: _hasConfig
 
-        protected boolean
+        protected bool
 
         Whether the plugin has a custom configuration form.
 

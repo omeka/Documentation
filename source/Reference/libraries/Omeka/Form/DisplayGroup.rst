@@ -14,5 +14,3 @@ extends :php:class:`Zend_Form_DisplayGroup`
     .. php:method:: loadDefaultDecorators()
 
         Cause display groups to render as HTML fieldset elements.
-
-        :returns: void

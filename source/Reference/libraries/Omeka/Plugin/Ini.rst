@@ -44,7 +44,7 @@ Package: :doc:`Plugin </Reference/packages/Plugin/index>`
 
         :type $pluginDirName: string
         :param $pluginDirName: Plugin name.
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: getPluginIniFilePath($pluginDirName)
 
@@ -60,4 +60,3 @@ Package: :doc:`Plugin </Reference/packages/Plugin/index>`
 
         :type $plugin: Plugin
         :param $plugin: The plugin model to initialize.
-        :returns: void

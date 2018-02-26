@@ -4,11 +4,7 @@ libraries/Omeka/Storage/Adapter
 
 .. toctree::
 
-    AdapterInterface
-    Filesystem
-    TempFilesystem
-    ZendS3
-
-
-.. toctree::
-
+   ZendS3
+   Filesystem
+   TempFilesystem
+   AdapterInterface

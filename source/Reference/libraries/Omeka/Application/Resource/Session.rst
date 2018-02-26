@@ -40,4 +40,4 @@ extends :php:class:`Zend_Application_Resource_Session`
 
         :type $options: array
         :param $options:
-        :returns: boolean
+        :returns: bool

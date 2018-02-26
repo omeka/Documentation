@@ -52,7 +52,7 @@ implements :php:interface:`Zend_Acl_Resource_Interface`
 
         :type $count: int
         :param $count: The maximum number of items to return.
-        :type $recent: boolean
+        :type $recent: bool
         :param $recent: Whether the most recent items should be chosen.
         :returns: array The Item objects associated with the item type.
 

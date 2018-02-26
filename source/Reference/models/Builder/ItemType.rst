@@ -24,7 +24,6 @@ extends :php:class:`Omeka_Record_Builder_AbstractBuilder`
 
         :type $elementMetadata: array
         :param $elementMetadata:
-        :returns: void
 
     .. php:method:: _beforeBuild(Omeka_Record_AbstractRecord $record)
 

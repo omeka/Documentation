@@ -4,14 +4,10 @@ libraries/Omeka/Validate
 
 .. toctree::
 
-    Confirmation
-    Errors
-    Exception
-    HexColor
-    Uri
-    UserPassword
-
-
-.. toctree::
-
-    File/index
+   UserPassword
+   Confirmation
+   Exception
+   HexColor
+   Uri
+   File/index
+   Errors

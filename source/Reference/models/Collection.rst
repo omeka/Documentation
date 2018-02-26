@@ -113,8 +113,6 @@ implements :php:interface:`Zend_Acl_Resource_Interface`
 
         Delete the element texts for this record.
 
-        :returns: void
-
     .. php:method:: _dissociateItems()
 
         Set items attached to this collection back to "no collection."

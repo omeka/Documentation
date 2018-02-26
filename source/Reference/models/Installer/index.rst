@@ -4,14 +4,10 @@ models/Installer
 
 .. toctree::
 
-    Default
-    Exception
-    InstallerInterface
-    Requirements
-    TaskInterface
-    Test
-
-
-.. toctree::
-
-    Task/index
+   Task/index
+   TaskInterface
+   Requirements
+   Exception
+   Test
+   Default
+   InstallerInterface

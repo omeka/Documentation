@@ -20,10 +20,6 @@ extends :php:class:`Omeka_Controller_AbstractActionController`
 
     .. php:method:: init()
 
-    .. php:method:: browseAction()
-
-        The browse collections action.
-
     .. php:method:: showAction()
 
         The show collection action
@@ -63,3 +59,5 @@ extends :php:class:`Omeka_Controller_AbstractActionController`
         Gets the element sets for the 'Collection' record type.
 
         :returns: array The element sets for the 'Collection' record type
+
+    .. php:method:: _getBrowseDefaultSort()

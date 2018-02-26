@@ -23,8 +23,6 @@ extends :php:class:`Zend_Controller_Action`
         Run the migration script, obtain any success/error output and display it
         in a pretty way
 
-        :returns: void
-
     .. php:method:: _satisfiesPhpRequirement()
 
     .. php:method:: _displayPhpRequirementMessage()

@@ -48,4 +48,4 @@ extends :php:class:`Omeka_Record_Mixin_AbstractMixin`
 
         :type $user: User
         :param $user:
-        :returns: boolean
+        :returns: bool

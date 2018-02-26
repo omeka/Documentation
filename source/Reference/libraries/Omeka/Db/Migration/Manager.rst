@@ -38,14 +38,10 @@ Package: :doc:`Db\\Migration </Reference/packages/Db/Migration/index>`
         This creates the 'schema_migrations' table, drops the 'migration' option
         and adds the 'omeka_version' option to the database.
 
-        :returns: void
-
     .. php:method:: markAllAsMigrated()
 
         Mark all of the migrations as having been run.  Used by the installer as
         a way of indicating that the database is entirely up to date.
-
-        :returns: void
 
     .. php:method:: migrate($endTimestamp = null)
 
@@ -53,7 +49,6 @@ Package: :doc:`Db\\Migration </Reference/packages/Db/Migration/index>`
 
         :type $endTimestamp: string
         :param $endTimestamp: (optional) Timestamp corresponding to the stop point for the migration.  If older than the current time, database will migrate down to that point.  If newer, the opposite.  Defaults to the current timestamp.
-        :returns: void
 
     .. php:method:: canUpgrade()
 
@@ -61,8 +56,6 @@ Package: :doc:`Db\\Migration </Reference/packages/Db/Migration/index>`
 
         This is based entirely on whether there exist any migrations that have not
         yet been applied.
-
-        :returns: void
 
     .. php:method:: dbNeedsUpgrade()
 
@@ -108,7 +101,6 @@ Package: :doc:`Db\\Migration </Reference/packages/Db/Migration/index>`
 
         :type $stopAt: DateTime
         :param $stopAt:
-        :returns: void
 
     .. php:method:: _loadMigration($filename)
 
@@ -134,4 +126,3 @@ Package: :doc:`Db\\Migration </Reference/packages/Db/Migration/index>`
 
         :type $time: string
         :param $time:
-        :returns: void

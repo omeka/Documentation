@@ -57,7 +57,7 @@ implements :php:interface:`IteratorAggregate`
 
         Get the number of errors.
 
-        :returns: integer
+        :returns: int
 
     .. php:method:: __toString()
 

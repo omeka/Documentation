@@ -4,9 +4,5 @@ libraries/Omeka/File/MimeType/Detect
 
 .. toctree::
 
-    StrategyInterface
-
-
-.. toctree::
-
-    Strategy/index
+   StrategyInterface
+   Strategy/index

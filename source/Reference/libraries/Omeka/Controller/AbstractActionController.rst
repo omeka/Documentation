@@ -27,7 +27,7 @@ extends :php:class:`Zend_Controller_Action`
 
     .. php:attr:: _autoCsrfProtection
 
-        protected boolean
+        protected bool
 
         Whether to automatically generate and check for a CSRF token on
         add and edit.
@@ -127,7 +127,7 @@ extends :php:class:`Zend_Controller_Action`
 
         :type $pluralName: string|null
         :param $pluralName:
-        :returns: integer|null
+        :returns: int|null
 
     .. php:method:: _getBrowseDefaultSort()
 

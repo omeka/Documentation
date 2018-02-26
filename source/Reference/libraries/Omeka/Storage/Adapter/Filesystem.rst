@@ -45,7 +45,7 @@ implements :php:interface:`Omeka_Storage_Adapter_AdapterInterface`
         Specifically, this checks to see if the local storage directory is
         writable.
 
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: store($source, $dest)
 
@@ -108,4 +108,4 @@ implements :php:interface:`Omeka_Storage_Adapter_AdapterInterface`
 
         :param $source:
         :param $dest:
-        :returns: boolean
+        :returns: bool

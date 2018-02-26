@@ -41,7 +41,6 @@ extends :php:class:`Omeka_Record_Builder_AbstractBuilder`
 
         :type $metadata: array
         :param $metadata:
-        :returns: void
 
     .. php:method:: _addElementTexts()
 
@@ -104,7 +103,6 @@ extends :php:class:`Omeka_Record_Builder_AbstractBuilder`
 
         :type $ingester: Omeka_File_Ingest_AbstractIngest
         :param $ingester:
-        :returns: void
 
     .. php:method:: _beforeBuild(Omeka_Record_AbstractRecord $record)
 

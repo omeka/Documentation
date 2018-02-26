@@ -28,8 +28,6 @@ extends :php:class:`Omeka_Db_Table`
 
         Return the element's name and id for <select> tags on it.
 
-        :returns: void
-
     .. php:method:: orderElements($select)
 
         :param $select:

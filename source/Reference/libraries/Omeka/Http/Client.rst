@@ -22,5 +22,5 @@ extends :php:class:`Zend_Http_Client`
 
         Set the maximum number of retries to make when a request times out.
 
-        :type $count: integer
+        :type $count: int
         :param $count:

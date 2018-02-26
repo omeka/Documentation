@@ -19,4 +19,4 @@ Package: :doc:`Captcha </Reference/packages/Captcha/index>`
         Return whether the captcha is configured.
         If this returns true, getCaptcha will not return null.
 
-        :returns: boolean
+        :returns: bool

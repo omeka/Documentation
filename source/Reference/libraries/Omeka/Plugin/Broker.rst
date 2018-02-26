@@ -43,7 +43,6 @@ Package: :doc:`Plugin\\Broker </Reference/packages/Plugin/Broker/index>`
         :param $callback: PHP callback for the hook implementation.
         :type $plugin: string|null
         :param $plugin: Optional name of the plugin for which to add the hook. If omitted, the current plugin is used.
-        :returns: void
 
     .. php:method:: getHook($pluginDirName, $hook)
 
@@ -65,7 +64,6 @@ Package: :doc:`Plugin\\Broker </Reference/packages/Plugin/Broker/index>`
 
         :type $pluginDirName: string
         :param $pluginDirName: Plugin to set as current.
-        :returns: void
 
     .. php:method:: getCurrentPluginDirName()
 
@@ -85,7 +83,6 @@ Package: :doc:`Plugin\\Broker </Reference/packages/Plugin/Broker/index>`
         :param $args: Arguments to be passed to the hook implementations.
         :type $plugin: Plugin|string
         :param $plugin: Name of the plugin that will invoke the hook.
-        :returns: void
 
     .. php:method:: addFilter($name, $callback, $priority = 10)
 
@@ -96,7 +93,6 @@ Package: :doc:`Plugin\\Broker </Reference/packages/Plugin/Broker/index>`
         :type $callback: callback
         :param $callback: PHP callback for filter implementation.
         :param $priority:
-        :returns: void
 
     .. php:method:: _getFilterNamespace()
 
@@ -130,7 +126,6 @@ Package: :doc:`Plugin\\Broker </Reference/packages/Plugin/Broker/index>`
 
         :type $name: string|null
         :param $name: The name of the filter to clear.  If null or omitted, all filters will be cleared.
-        :returns: void
 
     .. php:method:: applyFilters($name, $value, $args = array())
 
@@ -148,5 +143,3 @@ Package: :doc:`Plugin\\Broker </Reference/packages/Plugin/Broker/index>`
 
         Register the plugin broker so that plugin writers can use global functions
         like add_plugin_hook() to interact with the plugin API.
-
-        :returns: void

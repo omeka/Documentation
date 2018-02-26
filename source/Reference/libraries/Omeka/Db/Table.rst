@@ -112,7 +112,6 @@ Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
 
         :type $name: string
         :param $name: (optional) Table name.
-        :returns: void
 
     .. php:method:: getTablePrefix()
 
@@ -136,7 +135,7 @@ Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
 
         Retrieve a single record given an ID.
 
-        :type $id: integer
+        :type $id: int
         :param $id:
         :returns: Omeka_Record_AbstractRecord|false
 
@@ -174,9 +173,9 @@ Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
 
         :type $params: array
         :param $params: A set of parameters by which to filter the objects that get returned from the database.
-        :type $limit: integer
+        :type $limit: int
         :param $limit: Number of objects to return per "page".
-        :type $page: integer
+        :type $page: int
         :param $page: Page to retrieve.
         :returns: array|null The set of objects that is returned
 
@@ -199,7 +198,7 @@ Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
         Retrieve a select object that is used for retrieving a single record from
         the database.
 
-        :type $recordId: integer
+        :type $recordId: int
         :param $recordId:
         :returns: Omeka_Db_Select
 
@@ -235,9 +234,9 @@ Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
 
         :type $select: Zend_Db_Select
         :param $select:
-        :type $limit: integer
+        :type $limit: int
         :param $limit: Number of results per "page".
-        :type $page: integer|null
+        :type $page: int|null
         :param $page: Page to retrieve, first if omitted.
         :returns: Zend_Db_Select
 
@@ -249,7 +248,7 @@ Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
         :param $sqlWhereClause:
         :type $params: array
         :param $params: optional Set of parameters to bind to the WHERE clause. Used to prevent security flaws.
-        :type $findOne: boolean
+        :type $findOne: bool
         :param $findOne: optional Whether or not to retrieve a single record or the whole set (retrieve all by default).
         :returns: array|Omeka_Record_AbstractRecord|false
 
@@ -259,7 +258,7 @@ Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
 
         :type $params: array
         :param $params: optional Set of search filters upon which to base the count.
-        :returns: integer
+        :returns: int
 
     .. php:method:: exists($id)
 
@@ -330,7 +329,6 @@ Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
         :param $select:
         :type $range: string
         :param $range: Example: 1-4, 75, 89
-        :returns: void
 
     .. php:method:: getSelectForCount($params = array())
 
@@ -349,7 +347,7 @@ Package: :doc:`Db\\Table </Reference/packages/Db/Table/index>`
 
         :type $id: int
         :param $id: The ID of the row.
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: fetchObjects($sql, $params = array())
 

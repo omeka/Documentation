@@ -20,7 +20,6 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
 
         :type $request: Zend_Controller_Request_Abstract
         :param $request:
-        :returns: void
 
     .. php:method:: preDispatch(Zend_Controller_Request_Abstract $request)
 
@@ -29,7 +28,6 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
 
         :type $request: Zend_Controller_Request_Abstract
         :param $request:
-        :returns: void
 
     .. php:method:: isFormSubmission($request)
 
@@ -38,7 +36,7 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
 
         :type $request: Zend_Controller_Request_Abstract
         :param $request:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: filterCollectionsForm($request, $htmlPurifierFilter = null)
 
@@ -49,7 +47,6 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
         :param $request:
         :type $htmlPurifierFilter: Omeka_Filter_HtmlPurifier
         :param $htmlPurifierFilter:
-        :returns: void
 
     .. php:method:: filterThemesForm($request, $htmlPurifierFilter = null)
 
@@ -59,7 +56,6 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
         :param $request:
         :type $htmlPurifierFilter: Omeka_Filter_HtmlPurifier
         :param $htmlPurifierFilter:
-        :returns: void
 
     .. php:method:: _purifyArray($dataArray = array(), $htmlPurifierFilter = null)
 
@@ -78,7 +74,6 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
         :param $request:
         :type $htmlPurifierFilter: Omeka_Filter_HtmlPurifier
         :param $htmlPurifierFilter:
-        :returns: void
 
     .. php:method:: _filterElementsFromPost($post, $htmlPurifierFilter = null)
 
@@ -88,6 +83,5 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
         :param $post:
         :type $htmlPurifierFilter: Omeka_Filter_HtmlPurifier
         :param $htmlPurifierFilter:
-        :returns: void
 
     .. php:method:: _setupHtmlPurifierOptions()

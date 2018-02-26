@@ -58,9 +58,8 @@ Package: :doc:`Plugin\\Loader </Reference/packages/Plugin/Loader/index>`
 
         :type $plugins: array
         :param $plugins: List of Plugin records to load.
-        :type $force: boolean
+        :type $force: bool
         :param $force: If true, throws exceptions for plugins that cannot be loaded for some reason.
-        :returns: void
 
     .. php:method:: registerPlugin(Plugin $plugin)
 
@@ -75,7 +74,6 @@ Package: :doc:`Plugin\\Loader </Reference/packages/Plugin/Loader/index>`
 
         :type $plugin: Plugin
         :param $plugin: Record of plugin to register.
-        :returns: void
 
     .. php:method:: isRegistered(Plugin $plugin)
 
@@ -83,7 +81,7 @@ Package: :doc:`Plugin\\Loader </Reference/packages/Plugin/Loader/index>`
 
         :type $plugin: Plugin
         :param $plugin:
-        :returns: boolean Whether the plugin is registered or not.
+        :returns: bool Whether the plugin is registered or not.
 
     .. php:method:: load(Plugin $plugin, $force = false, $pluginsWaitingToLoad = array())
 
@@ -96,11 +94,10 @@ Package: :doc:`Plugin\\Loader </Reference/packages/Plugin/Loader/index>`
 
         :type $plugin: Plugin
         :param $plugin:
-        :type $force: boolean
+        :type $force: bool
         :param $force: If true, throws exceptions if a plugin can't be loaded.
         :type $pluginsWaitingToLoad: array
         :param $pluginsWaitingToLoad: Plugins waiting to be loaded
-        :returns: void
 
     .. php:method:: _canLoad($plugin, $force)
 
@@ -115,9 +112,9 @@ Package: :doc:`Plugin\\Loader </Reference/packages/Plugin/Loader/index>`
 
         :type $plugin: Plugin
         :param $plugin: Plugin to test.
-        :type $force: boolean
+        :type $force: bool
         :param $force: If true, throw an exception if the plugin can't be loaded.
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: hasPluginBootstrap($pluginDirName)
 
@@ -125,7 +122,7 @@ Package: :doc:`Plugin\\Loader </Reference/packages/Plugin/Loader/index>`
 
         :type $pluginDirName: string|Plugin
         :param $pluginDirName:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: getPluginClassName($pluginDirName)
 
@@ -172,4 +169,3 @@ Package: :doc:`Plugin\\Loader </Reference/packages/Plugin/Loader/index>`
 
         :type $plugin: Plugin
         :param $plugin:
-        :returns: void

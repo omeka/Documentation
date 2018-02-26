@@ -10,7 +10,7 @@ Package: :doc:`Storage\\Adapter </Reference/packages/Storage/Adapter/index>`
 
     Classes that implement this interface handle the actual work ofstoring and retrieving files.
 
-    .. php:method:: __construct($options = null)
+    .. php:method:: __construct($options = array())
 
         Set options for the storage adapter.
 
@@ -30,7 +30,7 @@ Package: :doc:`Storage\\Adapter </Reference/packages/Storage/Adapter/index>`
         Check whether the adapter is set up correctly to be able to store
         files.
 
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: store($source, $dest)
 

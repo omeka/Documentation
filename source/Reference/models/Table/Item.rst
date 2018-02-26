@@ -14,7 +14,6 @@ extends :php:class:`Omeka_Db_Table`
 
         :param $select:
         :param $params:
-        :returns: void
 
     .. php:method:: _simpleSearch($select, $terms)
 
@@ -39,21 +38,23 @@ extends :php:class:`Omeka_Db_Table`
         :param $select:
         :param $terms:
 
-    .. php:method:: filterByCollection($select, $collection)
+    .. php:method:: filterByCollection($select, $collections)
 
         Filter the SELECT statement based on an item's collection
 
+        :type $select: Zend_Db_Select
         :param $select:
-        :param $collection:
-        :returns: void
+        :type $collections: Collection|int|array
+        :param $collections: Either a Collection object, or the collection id or an array of collection object or id.
 
-    .. php:method:: filterByItemType($select, $type)
+    .. php:method:: filterByItemType($select, $types)
 
         Filter the SELECT statement based on the item Type
 
+        :type $select: Zend_Db_Select
         :param $select:
-        :param $type:
-        :returns: void
+        :type $types: Type|int|string|array
+        :param $types: One or multiple Item Type object, Item Type ID or Item Type name.
 
     .. php:method:: filterByTags($select, $tags)
 
@@ -76,7 +77,6 @@ extends :php:class:`Omeka_Db_Table`
 
         :param $select:
         :param $tags:
-        :returns: void
 
     .. php:method:: filterByExcludedTags($select, $tags)
 
@@ -85,7 +85,6 @@ extends :php:class:`Omeka_Db_Table`
 
         :param $select:
         :param $tags:
-        :returns: void
 
     .. php:method:: filterByHasDerivativeImage($select, $hasDerivativeImage = true)
 
@@ -93,15 +92,13 @@ extends :php:class:`Omeka_Db_Table`
         file.
 
         :param $select:
-        :type $hasDerivativeImage: boolean
+        :type $hasDerivativeImage: bool
         :param $hasDerivativeImage: Whether items should have a derivative image file.
-        :returns: void
 
     .. php:method:: applySearchFilters($select, $params)
 
         :param $select:
         :param $params:
-        :returns: void
 
     .. php:method:: applySorting($select, $sortField, $sortDir)
 

@@ -27,4 +27,3 @@ extends :php:class:`Zend_Application_Resource_ResourceAbstract`
         to the new timestamped migrations.
 
         :param $options:
-        :returns: void.

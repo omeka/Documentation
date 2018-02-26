@@ -40,7 +40,6 @@ extends :php:class:`Zend_View_Abstract`
         :param $physical: Local filesystem path.
         :type $web: string
         :param $web: URL path.
-        :returns: void
 
     .. php:method:: setAssetPath($physical, $web)
 
@@ -50,7 +49,6 @@ extends :php:class:`Zend_View_Abstract`
         :param $physical: Local filesystem path.
         :type $web: string
         :param $web: URL path.
-        :returns: void
 
     .. php:method:: _run()
 
@@ -67,14 +65,10 @@ extends :php:class:`Zend_View_Abstract`
         Now you can reference it simply by using:
         $themes;
 
-        :returns: void
-
     .. php:method:: _loadCustomThemeScripts()
 
         Look for a 'custom.php' script in all script paths and include the file if
         it exists.
-
-        :returns: void
 
     .. php:method:: addScriptPath($path)
 

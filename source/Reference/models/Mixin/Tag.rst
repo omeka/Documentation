@@ -19,8 +19,6 @@ extends :php:class:`Omeka_Record_Mixin_AbstractMixin`
         This will actually delete all the references to a specific tag for a
         specific record
 
-        :returns: void
-
     .. php:method:: afterSave($args)
 
         :param $args:
@@ -59,7 +57,7 @@ extends :php:class:`Omeka_Record_Mixin_AbstractMixin`
         in_array(array_keys($this->Tags))
 
         :param $tag:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: _getTagsFromString($string, $delimiter = null)
 
@@ -77,7 +75,6 @@ extends :php:class:`Omeka_Record_Mixin_AbstractMixin`
         :type $tags: array|string
         :param $tags: Either an array of tags or a delimited string
         :param $delimiter:
-        :returns: void
 
     .. php:method:: applyTags($inputTags)
 

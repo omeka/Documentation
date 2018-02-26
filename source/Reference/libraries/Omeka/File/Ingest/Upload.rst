@@ -39,8 +39,6 @@ extends :php:class:`Omeka_File_Ingest_AbstractIngest`
 
         Create a ZF HTTP file transfer adapter.
 
-        :returns: void
-
     .. php:method:: setOptions($options)
 
         In addition to the default options available for
@@ -56,7 +54,6 @@ extends :php:class:`Omeka_File_Ingest_AbstractIngest`
 
         :type $options: array
         :param $options:
-        :returns: void
 
     .. php:method:: _getOriginalFilename($fileInfo)
 
@@ -92,7 +89,6 @@ extends :php:class:`Omeka_File_Ingest_AbstractIngest`
 
         :type $validator: Zend_Validate_Interface
         :param $validator:
-        :returns: void
 
     .. php:method:: setItem(Item $item)
 
@@ -100,7 +96,6 @@ extends :php:class:`Omeka_File_Ingest_AbstractIngest`
 
         :type $item: Item
         :param $item:
-        :returns: void
 
     .. php:method:: factory($adapterName, $item, $options = array())
 
@@ -131,7 +126,7 @@ extends :php:class:`Omeka_File_Ingest_AbstractIngest`
         Determine whether or not to ignore file ingest errors.  Based on
         'ignore_invalid_files', which is false by default.
 
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: _logException(Exception $e)
 
@@ -143,7 +138,6 @@ extends :php:class:`Omeka_File_Ingest_AbstractIngest`
 
         :type $e: Exception
         :param $e:
-        :returns: void
 
     .. php:method:: _createFile($newFilePath, $oldFilename, $elementMetadata = array())
 
@@ -195,4 +189,4 @@ extends :php:class:`Omeka_File_Ingest_AbstractIngest`
         :param $filePath: Absolute path to the file.  The file should be local and readable, which is required by most (if not all) of the Zend_Validate_File_* classes.
         :type $fileInfo: array
         :param $fileInfo: Set of file info that describes a given file being ingested.
-        :returns: boolean True if valid, otherwise throws an exception.
+        :returns: bool True if valid, otherwise throws an exception.

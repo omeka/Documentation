@@ -44,15 +44,11 @@ extends :php:class:`Omeka_Controller_AbstractActionController`
 
     .. php:method:: addAction()
 
-        :returns: void
-
     .. php:method:: editAction()
 
         Similar to 'add' action, except this requires a pre-existing record.
 
         The ID For this record must be passed via the 'id' parameter.
-
-        :returns: void
 
     .. php:method:: changePasswordAction()
 
@@ -77,7 +73,7 @@ extends :php:class:`Omeka_Controller_AbstractActionController`
 
         :type $user: User
         :param $user:
-        :returns: boolean True if the email was successfully sent, false otherwise.
+        :returns: bool True if the email was successfully sent, false otherwise.
 
     .. php:method:: loginAction()
 

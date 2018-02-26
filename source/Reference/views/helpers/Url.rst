@@ -59,8 +59,8 @@ extends :php:class:`Zend_View_Helper_Abstract`
         :param $name: Optional If $options is an array, $name should be the route name (string) or null. If $options is a string, $name should be the set of query string parameters (array) or null.
         :type $queryParams: array
         :param $queryParams: Optional Set of query string parameters.
-        :type $reset: boolean
+        :type $reset: bool
         :param $reset: Optional Whether or not to reset the route parameters implied by the current request, e.g. if the current controller is 'items', then 'controller'=>'items' will be inferred when assembling the route.
-        :type $encode: boolean
+        :type $encode: bool
         :param $encode:
         :returns: string
