@@ -1,8 +1,8 @@
 .. Omeka Documentation master file.
 
-#############################
+#####################################
 Omeka Classic Developer Documentation
-#############################
+#####################################
 
 This is the developer documentation for `Omeka <http://omeka.org/classic>`_ Classic. If you're working on an Omeka theme or
 plugin, or on Omeka itself, you've come to the right place.
