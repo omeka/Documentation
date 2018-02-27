@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/src.rst
 
-.. php:function:: src($file, $dir = null, $ext = null)
+.. php:function:: src($file, $dir = null, $ext = null, $version = null)
 
     Get a URL for a given local file.
     
@@ -22,6 +22,8 @@ Summary
     :param $dir: The file's directory.
     :type $ext: string
     :param $ext: The file's extension.
+    :type $version: mixed
+    :param $version: Optional version number.
     :returns: string
 
 *****

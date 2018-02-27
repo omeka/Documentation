@@ -21,7 +21,7 @@ Summary
     being accessed, but should not be relied upon in place of using the ACL
     for controlling access to scripts.
     
-    :returns: boolean
+    :returns: bool
 
 *****
 Usage

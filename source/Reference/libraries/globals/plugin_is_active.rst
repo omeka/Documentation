@@ -41,7 +41,7 @@ Summary
     :param $version: Version of the plugin to check.
     :type $compOperator: string
     :param $compOperator: Comparison operator to use when checking the installed version of ExhibitBuilder.
-    :returns: boolean
+    :returns: bool
 
 *****
 Usage

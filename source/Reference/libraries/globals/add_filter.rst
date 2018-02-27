@@ -20,7 +20,7 @@ Summary
     :param $name: The filter name.
     :type $callback: callback
     :param $callback: The function to call.
-    :type $priority: integer
+    :type $priority: int
     :param $priority: Defaults to 10.
 
 *****

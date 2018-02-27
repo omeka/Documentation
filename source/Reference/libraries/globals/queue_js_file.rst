@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/queue_js_file.rst
 
-.. php:function:: queue_js_file($file, $dir = 'javascripts', $options = array())
+.. php:function:: queue_js_file($file, $dir = 'javascripts', $options = array(), $version = OMEKA_VERSION)
 
     Add a local JavaScript file or files to the current page.
     
@@ -25,6 +25,8 @@ Summary
     :param $dir: Directory to search for the file. Keeping the default is recommended.
     :type $options: array
     :param $options: An array of options.
+    :type $version: mixed
+    :param $version: Version number. By default OMEKA_VERSION.
 
 *****
 Usage

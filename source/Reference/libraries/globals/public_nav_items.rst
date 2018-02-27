@@ -18,7 +18,7 @@ Summary
     
     :type $navArray: array
     :param $navArray:
-    :type $maxDepth: integer|null
+    :type $maxDepth: int|null
     :param $maxDepth:
     :returns: string
 

@@ -7,10 +7,10 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/libraries/Omeka/Navigation.rst
-   /Reference/libraries/Omeka/Navigation/Page/Mvc.rst
-   /Reference/libraries/Omeka/Navigation/Page/Uri.rst
-   /Reference/libraries/Omeka/Navigation/Page/Uri/Exception.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Navigation.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Navigation/Page/Mvc.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Navigation/Page/Uri.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Navigation/Page/Uri/Exception.rst
 
 .. toctree::
    :glob:

@@ -7,8 +7,8 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/libraries/Omeka/Form/Decorator/SavePanelAction.rst
-   /Reference/libraries/Omeka/Form/Decorator/SavePanelHook.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Form/Decorator/SavePanelAction.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Form/Decorator/SavePanelHook.rst
 
 .. toctree::
    :glob:

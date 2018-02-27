@@ -7,8 +7,8 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/libraries/Omeka/Plugin/Broker.rst
-   /Reference/libraries/Omeka/Plugin/Broker/Factory.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Plugin/Broker.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Plugin/Broker/Factory.rst
 
 .. toctree::
    :glob:

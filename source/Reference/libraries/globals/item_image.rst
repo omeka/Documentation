@@ -20,7 +20,7 @@ Summary
     :param $imageType: Image size: thumbnail, square thumbnail, fullsize
     :type $props: array
     :param $props: HTML attributes for the img tag
-    :type $index: integer
+    :type $index: int
     :param $index: Which file within the item to use, by order. Default is the first file.
     :param $item:
 

@@ -16,7 +16,7 @@ Summary
 
     Get the most recently added collections.
     
-    :type $num: integer
+    :type $num: int
     :param $num: The maximum number of recent collections to return
     :returns: array
 

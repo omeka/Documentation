@@ -20,7 +20,7 @@ Summary
     :param $resource: The name of a resource, or a record implementing Zend_Acl_Resource_Interface
     :type $privilege: string|null
     :param $privilege: The privilege to check for the resource.
-    :returns: boolean
+    :returns: bool
 
 *****
 Usage
