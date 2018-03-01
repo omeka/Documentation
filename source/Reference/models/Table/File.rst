@@ -33,7 +33,7 @@ extends :php:class:`Omeka_Db_Table`
 
         Retrieve a random file with an image associated with an item.
 
-        :type $itemId: integer
+        :type $itemId: int
         :param $itemId:
         :returns: File
 
@@ -41,7 +41,7 @@ extends :php:class:`Omeka_Db_Table`
 
         Retrieve files associated with an item.
 
-        :type $itemId: integer
+        :type $itemId: int
         :param $itemId:
         :type $fileIds: array
         :param $fileIds: Optional If given, this will only retrieve files with these specific IDs.
@@ -53,9 +53,9 @@ extends :php:class:`Omeka_Db_Table`
 
         Get a single file associated with an item, by index.
 
-        :type $itemId: integer
+        :type $itemId: int
         :param $itemId:
-        :type $index: integer
+        :type $index: int
         :param $index:
         :type $sort: string
         :param $sort: The manner by which to order the files. For example: 'id': file id, 'filename' = alphabetical by filename. The default is 'order', following the user's specified order.
@@ -65,9 +65,9 @@ extends :php:class:`Omeka_Db_Table`
 
         Retrieve files for an item that has derivative images.
 
-        :type $itemId: integer
+        :type $itemId: int
         :param $itemId: The ID of the item to get images for.
-        :type $index: integer|null
+        :type $index: int|null
         :param $index: Optional If given, this specifies the file to retrieve for an item, based upon the ordering of its files.
         :type $sort: string
         :param $sort: The manner by which to order the files. For example: 'id': file id, 'filename': alphabetical by filename. The default is 'order', following the user's specified order.
@@ -80,4 +80,3 @@ extends :php:class:`Omeka_Db_Table`
         :param $select:
         :type $sort: string
         :param $sort: The manner in which to order the files by. For example: 'id' = file id 'filename' = alphabetical by filename
-        :returns: void

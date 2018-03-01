@@ -12,7 +12,7 @@ extends :php:class:`Zend_Test_PHPUnit_ControllerTestCase`
 
     .. php:attr:: _isAdminTest
 
-        protected boolean
+        protected bool
 
         Flag that determines whether the test should run against admin or public.
 
@@ -21,8 +21,6 @@ extends :php:class:`Zend_Test_PHPUnit_ControllerTestCase`
     .. php:method:: setUp()
 
         Bootstrap the application on each test run.
-
-        :returns: void
 
     .. php:method:: __get($property)
 
@@ -37,8 +35,6 @@ extends :php:class:`Zend_Test_PHPUnit_ControllerTestCase`
 
         Bootstrap the application.
 
-        :returns: void
-
     .. php:method:: setUpBootstrap($bootstrap)
 
         Subclasses can override this to perform specialized setup on the Omeka
@@ -46,21 +42,17 @@ extends :php:class:`Zend_Test_PHPUnit_ControllerTestCase`
 
         :type $bootstrap: Zend_Application_Bootstrap
         :param $bootstrap:
-        :returns: void
 
     .. php:method:: tearDown()
 
         Reset objects that carry global state between test runs.
 
-        :returns: void
-
     .. php:method:: dispatch($url = null, $throwExceptions = true)
 
         :type $url: string
         :param $url:
-        :type $throwExceptions: boolean
+        :type $throwExceptions: bool
         :param $throwExceptions:
-        :returns: void
 
     .. php:method:: _authenticateUser(User $user)
 
@@ -68,7 +60,6 @@ extends :php:class:`Zend_Test_PHPUnit_ControllerTestCase`
 
         :type $user: User
         :param $user:
-        :returns: void
 
     .. php:method:: _getDefaultUser()
 

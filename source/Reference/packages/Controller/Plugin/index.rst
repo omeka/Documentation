@@ -7,15 +7,14 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/libraries/Omeka/Controller/Plugin/Admin.rst
-   /Reference/libraries/Omeka/Controller/Plugin/Api.rst
-   /Reference/libraries/Omeka/Controller/Plugin/Debug.rst
-   /Reference/libraries/Omeka/Controller/Plugin/DefaultContentType.rst
-   /Reference/libraries/Omeka/Controller/Plugin/HtmlPurifier.rst
-   /Reference/libraries/Omeka/Controller/Plugin/Jsonp.rst
-   /Reference/libraries/Omeka/Controller/Plugin/Ssl.rst
-   /Reference/libraries/Omeka/Controller/Plugin/Upgrade.rst
-   /Reference/libraries/Omeka/Controller/Plugin/ViewScripts.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Controller/Plugin/Admin.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Controller/Plugin/Api.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Controller/Plugin/Debug.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Controller/Plugin/DefaultContentType.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Controller/Plugin/HtmlPurifier.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Controller/Plugin/Ssl.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Controller/Plugin/Upgrade.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Controller/Plugin/ViewScripts.rst
 
 .. toctree::
    :glob:

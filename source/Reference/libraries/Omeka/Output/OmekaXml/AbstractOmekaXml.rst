@@ -87,7 +87,6 @@ Package: :doc:`Output </Reference/packages/Output/index>`
 
         :type $parentElement: DOMElement
         :param $parentElement:
-        :returns: void
 
     .. php:method:: _getElemetSetsByElementTexts(Omeka_Record_AbstractRecord $record, $getItemType = false)
 

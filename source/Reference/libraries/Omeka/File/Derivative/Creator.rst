@@ -18,7 +18,7 @@ Package: :doc:`File\\Derivative </Reference/packages/File/Derivative/index>`
         :param $derivFilename:
         :type $mimeType: string
         :param $mimeType:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: addDerivative($storageType, $size)
 
@@ -26,7 +26,7 @@ Package: :doc:`File\\Derivative </Reference/packages/File/Derivative/index>`
 
         :type $storageType: string
         :param $storageType:
-        :type $size: integer
+        :type $size: int
         :param $size: The size constraint for the image, meaning it will have that maximum width or height, depending on whether the image is landscape or portrait.
 
     .. php:method:: setStrategy(Omeka_File_Derivative_StrategyInterface $strategy)
@@ -66,7 +66,7 @@ Package: :doc:`File\\Derivative </Reference/packages/File/Derivative/index>`
         :param $filePath:
         :type $mimeType: string
         :param $mimeType:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: _passesBlacklist($mimeType)
 

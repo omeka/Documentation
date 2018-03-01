@@ -31,7 +31,7 @@ extends :php:class:`Zend_Controller_Action_Helper_Abstract`
 
     .. php:attr:: _autoloadResourceObject
 
-        protected boolean
+        protected bool
 
         Whether we should automatically try to set the resource object.
 
@@ -53,8 +53,6 @@ extends :php:class:`Zend_Controller_Action_Helper_Abstract`
         page.
         Otherwise, give the user an opportunity to login before trying again.
 
-        :returns: void
-
     .. php:method:: isAllowed($privilege, $resource = null)
 
         Notifies whether the logged-in user has permission for a given resource/
@@ -75,7 +73,7 @@ extends :php:class:`Zend_Controller_Action_Helper_Abstract`
         :type $privilege: string
         :param $privilege:
         :param $resource:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: getResourceName()
 
@@ -95,7 +93,7 @@ extends :php:class:`Zend_Controller_Action_Helper_Abstract`
 
         :type $rule: string
         :param $rule:
-        :type $isAllowed: boolean
+        :type $isAllowed: bool
         :param $isAllowed:
 
     .. php:method:: setAutoloadResourceObject($autoload)
@@ -103,7 +101,7 @@ extends :php:class:`Zend_Controller_Action_Helper_Abstract`
         Set whether the ACL helper should try to automatically load
         a resource object from the request.
 
-        :type $autoload: boolean
+        :type $autoload: bool
         :param $autoload:
 
     .. php:method:: _getResourceObjectFromRequest()

@@ -13,5 +13,3 @@ extends :php:class:`Omeka_Output_OmekaXml_AbstractOmekaXml`
     .. php:method:: _buildNode()
 
         Create a node to contain Item nodes.
-
-        :returns: void

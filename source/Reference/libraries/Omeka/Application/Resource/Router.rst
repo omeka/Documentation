@@ -34,7 +34,7 @@ extends :php:class:`Zend_Application_Resource_Router`
         :param $uri: The absolute uri to redirect to the default route to
         :type $router: Zend_Controller_Router_Rewrite
         :param $router: The router
-        :returns: boolean True if the route was successfully added, else false.
+        :returns: bool True if the route was successfully added, else false.
 
     .. php:method:: _leftTrim($s, $n)
 

@@ -4,9 +4,5 @@ libraries/Omeka/Form/Decorator
 
 .. toctree::
 
-    SavePanelAction
-    SavePanelHook
-
-
-.. toctree::
-
+   SavePanelHook
+   SavePanelAction

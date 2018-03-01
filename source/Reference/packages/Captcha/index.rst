@@ -7,7 +7,7 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/libraries/Omeka/Captcha.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Captcha.rst
 
 .. toctree::
    :glob:

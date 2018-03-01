@@ -4,8 +4,4 @@ libraries/Omeka/Auth
 
 .. toctree::
 
-
-
-.. toctree::
-
-    Adapter/index
+   Adapter/index

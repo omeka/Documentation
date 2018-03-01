@@ -126,7 +126,7 @@ implements :php:interface:`Zend_Acl_Resource_Interface`
 
         :param $elementName:
         :param $elementSetId:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: getResourceId()
 

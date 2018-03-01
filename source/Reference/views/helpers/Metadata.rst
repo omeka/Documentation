@@ -18,7 +18,7 @@ extends :php:class:`Zend_View_Helper_Abstract`
         :param $record: Database record representing the item from which to retrieve field data.
         :type $metadata: string|array
         :param $metadata: The metadata field to retrieve. If a string, refers to a property of the record itself. If an array, refers to an Element: the first entry is the set name, the second is the element name.
-        :type $options: array|string|integer
+        :type $options: array|string|int
         :param $options: Options for formatting the metadata for display. - Array options: - 'all': If true, return an array containing all values for the field. - 'delimiter': Return the entire set of metadata as a string, where entries are separated by the given delimiter. - 'index': Return the metadata entry at the given zero-based index. - 'no_escape' => If true, do not escape the resulting values for HTML entities. - 'no_filter': If true, return the set of metadata without running any of the filters. - 'snippet': Trim the length of each piece of text to the given length in characters. - Passing simply the string 'all' is equivalent to array('all' => true) - Passing simply an integer is equivalent to array('index' => [the integer])
         :returns: string|array|null Null if field does not exist for item. Array if certain options are passed.  String otherwise.
 
@@ -28,7 +28,7 @@ extends :php:class:`Zend_View_Helper_Abstract`
         which functions as a handy shortcut for theme writers.  This converts
         the short form of the options into its proper array form.
 
-        :type $options: string|integer|array
+        :type $options: string|int|array
         :param $options:
         :returns: array
 

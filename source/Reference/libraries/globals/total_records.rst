@@ -18,7 +18,7 @@ Summary
     
     :type $recordType: string
     :param $recordType: Type of record to count.
-    :returns: integer Number of records of $recordType in the database.
+    :returns: int Number of records of $recordType in the database.
 
 *****
 Usage

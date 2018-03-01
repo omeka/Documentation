@@ -38,7 +38,7 @@ extends :php:class:`Zend_Application_Resource_Db`
         Set the flag that indicates whether or not to run the installer during
         init().
 
-        :type $flag: boolean
+        :type $flag: bool
         :param $flag:
 
     .. php:method:: getDbAdapter()

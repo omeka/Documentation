@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/css_src.rst
 
-.. php:function:: css_src($file, $dir = 'css')
+.. php:function:: css_src($file, $dir = 'css', $version = OMEKA_VERSION)
 
     Get the URL to a local css file.
     
@@ -20,6 +20,8 @@ Summary
     :param $file: Should not include the .css extension
     :type $dir: string
     :param $dir: Defaults to 'css'
+    :type $version: mixed
+    :param $version: Version number. By default OMEKA_VERSION.
     :returns: string
 
 *****

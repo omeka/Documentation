@@ -53,7 +53,6 @@ Package: :doc:`Record\\Builder </Reference/packages/Record/Builder/index>`
 
         :type $metadata: array
         :param $metadata:
-        :returns: void
 
     .. php:method:: getRecordMetadata()
 
@@ -77,9 +76,8 @@ Package: :doc:`Record\\Builder </Reference/packages/Record/Builder/index>`
 
         Set the record upon which this builder will act.
 
-        :type $record: Omeka_Record_AbstractRecord|integer|null
+        :type $record: Omeka_Record_AbstractRecord|int|null
         :param $record:
-        :returns: void
 
     .. php:method:: _beforeBuild(Omeka_Record_AbstractRecord $record)
 
@@ -89,7 +87,6 @@ Package: :doc:`Record\\Builder </Reference/packages/Record/Builder/index>`
 
         :type $record: Omeka_Record_AbstractRecord
         :param $record:
-        :returns: void
 
     .. php:method:: _afterBuild(Omeka_Record_AbstractRecord $record)
 
@@ -100,7 +97,6 @@ Package: :doc:`Record\\Builder </Reference/packages/Record/Builder/index>`
 
         :type $record: Omeka_Record_AbstractRecord
         :param $record:
-        :returns: void
 
     .. php:method:: _setRecordProperties($record)
 
@@ -109,4 +105,3 @@ Package: :doc:`Record\\Builder </Reference/packages/Record/Builder/index>`
 
         :type $record: Omeka_Record_AbstractRecord
         :param $record:
-        :returns: void

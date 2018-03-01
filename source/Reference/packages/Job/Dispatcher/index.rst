@@ -7,8 +7,8 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/libraries/Omeka/Job/Dispatcher/Default.rst
-   /Reference/libraries/Omeka/Job/Dispatcher/DispatcherInterface.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Job/Dispatcher/Default.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Job/Dispatcher/DispatcherInterface.rst
 
 .. toctree::
    :glob:

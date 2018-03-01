@@ -21,26 +21,26 @@ extends :php:class:`Omeka_Record_Mixin_AbstractMixin`
 
         Returns whether the record is public or not.
 
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: setPublic($flag)
 
         Sets whether the record is public or not.
 
-        :type $flag: boolean
+        :type $flag: bool
         :param $flag: Whether the record is public or not
 
     .. php:method:: isFeatured()
 
         Returns whether the record is featured or not.
 
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: setFeatured($flag)
 
         Sets whether the record is featured or not.
 
-        :type $flag: boolean
+        :type $flag: bool
         :param $flag: Whether the record is featured or not
 
     .. php:method:: beforeSave($args)
@@ -58,7 +58,7 @@ extends :php:class:`Omeka_Record_Mixin_AbstractMixin`
 
         :type $state: string
         :param $state: Currently, 'public' or 'featured'
-        :type $flag: boolean
+        :type $flag: bool
         :param $flag:
 
     .. php:method:: _getHookName($state, $flag)
@@ -68,6 +68,6 @@ extends :php:class:`Omeka_Record_Mixin_AbstractMixin`
 
         :type $state: string
         :param $state: Currently, 'public' or 'featured'
-        :type $flag: boolean
+        :type $flag: bool
         :param $flag:
         :returns: string The hook name

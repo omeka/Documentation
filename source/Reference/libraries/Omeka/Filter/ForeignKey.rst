@@ -20,4 +20,4 @@ implements :php:interface:`Zend_Filter_Interface`
 
         :type $value: mixed
         :param $value: Input value.
-        :returns: integer
+        :returns: int

@@ -34,13 +34,13 @@ extends :php:class:`Zend_Controller_Action_Helper_Abstract`
 
         Clear all messages from the previous request & specified status
 
-        :returns: boolean True if messages were cleared, false if none existed
+        :returns: bool True if messages were cleared, false if none existed
 
     .. php:method:: clearCurrentMessages()
 
         Clear all current messages with specified status
 
-        :returns: boolean True if messages were cleared, false if none existed
+        :returns: bool True if messages were cleared, false if none existed
 
     .. php:method:: hasMessages()
 
@@ -58,4 +58,3 @@ extends :php:class:`Zend_Controller_Action_Helper_Abstract`
 
         :param $message:
         :param $status:
-        :returns: void

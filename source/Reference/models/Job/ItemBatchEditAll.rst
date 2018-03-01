@@ -22,9 +22,9 @@ extends :php:class:`Omeka_Job_AbstractJob`
 
         Check if the item can be processed, then process it if possible.
 
-        :type $itemId: integer
+        :type $itemId: int
         :param $itemId:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: _logProcessedItem($message, $priority)
 
@@ -34,4 +34,3 @@ extends :php:class:`Omeka_Job_AbstractJob`
         :param $message:
         :type $priority: string
         :param $priority:
-        :returns: void

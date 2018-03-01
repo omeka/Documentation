@@ -14,7 +14,6 @@ Package: :doc:`Output </Reference/packages/Output/index>`
 
         :type $items: array
         :param $items: An array of Item records.
-        :returns: void
 
     .. php:method:: _getFeedLinks($items)
 

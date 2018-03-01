@@ -18,7 +18,7 @@ extends :php:class:`Zend_Form`
 
     .. php:attr:: _autoApplyOmekaStyles
 
-        protected boolean
+        protected bool
 
         Whether or not to automatically apply Omeka-specific decorators
         and styling information to form elements prior to rendering.
@@ -27,13 +27,9 @@ extends :php:class:`Zend_Form`
 
         Set up Omeka-specific form elements and decorators.
 
-        :returns: void
-
     .. php:method:: loadDefaultDecorators()
 
         Set up base form decorators.
-
-        :returns: void
 
     .. php:method:: getDefaultElementDecorators()
 
@@ -49,8 +45,6 @@ extends :php:class:`Zend_Form`
 
         This may be called after elements to the form, as the decorator
         configuration in init() runs before elements can be added.
-
-        :returns: void
 
     .. php:method:: getMessagesAsString($messageDelimiter = '  ', $elementDelimiter = ', ')
 
@@ -72,7 +66,6 @@ extends :php:class:`Zend_Form`
 
         :type $flag: mixed
         :param $flag: A boolean or boolean-equivalent.
-        :returns: void
 
     .. php:method:: render(Zend_View_Interface $view = null)
 
@@ -90,4 +83,3 @@ extends :php:class:`Zend_Form`
         :param $element:
         :type $className: string
         :param $className:
-        :returns: void

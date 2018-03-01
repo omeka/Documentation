@@ -34,13 +34,10 @@ Package: :doc:`Test\\Helper </Reference/packages/Test/Helper/index>`
 
         :type $pluginName: string
         :param $pluginName: If omitted, initialize all installed plugins.
-        :returns: void
 
     .. php:method:: _defineResponseContexts()
 
         Run the response_contexts filter.
-
-        :returns: void
 
     .. php:method:: setPluginLoader($pluginLoader)
 

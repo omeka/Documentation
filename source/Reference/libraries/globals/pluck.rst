@@ -16,7 +16,7 @@ Summary
 
     Return one column of a multidimensional array as an array.
     
-    :type $col: string|integer
+    :type $col: string|int
     :param $col: The column to pluck.
     :type $array: array
     :param $array: The array from which to pluck.

@@ -1,36 +1,32 @@
-`````````````````````
-Class Library by Path
-`````````````````````
+```````````````
+libraries/Omeka
+```````````````
 
 .. toctree::
 
-    Application
-    Captcha
-    Db
-    Form
-    Navigation
-    Storage
-    View
-
-
-.. toctree::
-
-    Acl/index
-    Application/index
-    Auth/index
-    Controller/index
-    Db/index
-    File/index
-    Filter/index
-    Form/index
-    Http/index
-    Job/index
-    Navigation/index
-    Output/index
-    Plugin/index
-    Record/index
-    Session/index
-    Storage/index
-    Test/index
-    Validate/index
-    View/index
+   Db/index
+   Plugin/index
+   Http/index
+   Controller/index
+   Application
+   View
+   Auth/index
+   Test/index
+   Record/index
+   Storage
+   Application/index
+   View/index
+   Output/index
+   Db
+   Storage/index
+   Acl/index
+   Filter/index
+   Form
+   Validate/index
+   Session/index
+   Captcha
+   Navigation/index
+   File/index
+   Job/index
+   Form/index
+   Navigation

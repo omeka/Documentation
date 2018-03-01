@@ -7,7 +7,7 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/libraries/Omeka/Application.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Application.rst
 
 .. toctree::
    :glob:

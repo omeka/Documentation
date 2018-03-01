@@ -4,15 +4,11 @@ libraries/Omeka/Job/Dispatcher/Adapter
 
 .. toctree::
 
-    AbstractAdapter
-    AdapterInterface
-    Array
-    BackgroundProcess
-    Beanstalk
-    RequiredOptionException
-    Synchronous
-    ZendQueue
-
-
-.. toctree::
-
+   Beanstalk
+   RequiredOptionException
+   Synchronous
+   Array
+   AbstractAdapter
+   BackgroundProcess
+   AdapterInterface
+   ZendQueue

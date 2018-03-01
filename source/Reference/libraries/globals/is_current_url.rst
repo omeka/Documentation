@@ -20,7 +20,7 @@ Summary
     
     :type $url: string
     :param $url:
-    :returns: boolean
+    :returns: bool
 
 *****
 Usage

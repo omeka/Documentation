@@ -24,4 +24,4 @@ extends :php:class:`Zend_Session_SaveHandler_DbTable`
         :param $id:
         :type $data: string
         :param $data:
-        :returns: boolean
+        :returns: bool

@@ -4,11 +4,7 @@ models/Builder
 
 .. toctree::
 
-    Collection
-    ElementSet
-    Item
-    ItemType
-
-
-.. toctree::
-
+   ElementSet
+   Collection
+   ItemType
+   Item

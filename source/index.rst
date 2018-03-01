@@ -1,14 +1,14 @@
 .. Omeka Documentation master file.
 
-#############################
-Omeka Developer Documentation
-#############################
+#####################################
+Omeka Classic Developer Documentation
+#####################################
 
-This is the developer documentation for `Omeka <http://omeka.org>`_ 2. If you're working on an Omeka theme or
+This is the developer documentation for `Omeka <http://omeka.org/classic>`_ Classic. If you're working on an Omeka theme or
 plugin, or on Omeka itself, you've come to the right place.
 
 For documentation for end-users and site administrators, or for information about older Omeka versions, please visit the
-`Omeka Codex <http://omeka.org/codex>`_ instead.
+`Omeka Classic Documentation <http://omeka.org/classic/docs/>`_ instead. For information about Omeka S, please visit the `Omeka S pages <http://omeka.org/s>`_
 
 .. toctree::
    :maxdepth: 2

@@ -119,7 +119,7 @@ implements :php:interface:`Zend_Acl_Role_Interface`
         :param $username:
         :type $password: string
         :param $password:
-        :returns: boolean False if incorrect username/password given, otherwise true when password can be or has been upgraded.
+        :returns: bool False if incorrect username/password given, otherwise true when password can be or has been upgraded.
 
     .. php:method:: getRoleId()
 

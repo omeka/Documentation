@@ -34,8 +34,6 @@ extends :php:class:`Zend_Application_Resource_ResourceAbstract`
         )
         ));
 
-        :returns: void
-
     .. php:method:: getDefaultResponseContexts()
 
         Returns the default response contexts for Omeka.

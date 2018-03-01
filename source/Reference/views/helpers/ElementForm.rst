@@ -68,7 +68,7 @@ extends :php:class:`Zend_View_Helper_Abstract`
 
         How many form inputs to display for a given element.
 
-        :returns: integer
+        :returns: int
 
     .. php:method:: _getPostValueForField($index)
 
@@ -91,7 +91,6 @@ extends :php:class:`Zend_View_Helper_Abstract`
         If index is not given, return all texts.
 
         :param $index:
-        :returns: void
 
     .. php:method:: _getInputsComponent($extraFieldCount = null)
 

@@ -79,7 +79,7 @@ Package: :doc:`Db </Reference/packages/Db/index>`
 
         Check whether the database tables have a prefix.
 
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: getTable($class)
 
@@ -124,7 +124,7 @@ Package: :doc:`Db </Reference/packages/Db/index>`
         :param $table: Table model class name.
         :type $values: array
         :param $values: Rows to insert (or update).
-        :returns: integer The ID for the row that got inserted (or updated).
+        :returns: int The ID for the row that got inserted (or updated).
 
     .. php:method:: log($sql)
 

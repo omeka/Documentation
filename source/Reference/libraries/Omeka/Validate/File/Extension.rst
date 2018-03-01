@@ -32,7 +32,6 @@ extends :php:class:`Zend_Validate_File_Extension`
 
         :type $options: mixed
         :param $options:
-        :returns: void
 
     .. php:method:: isValid($value, $file = null)
 
@@ -43,4 +42,4 @@ extends :php:class:`Zend_Validate_File_Extension`
         :param $value: Real file to check for extension.
         :type $file: array
         :param $file: File data from Zend_File_Transfer.
-        :returns: boolean
+        :returns: bool

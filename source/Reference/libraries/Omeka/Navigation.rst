@@ -195,9 +195,9 @@ extends :php:class:`Zend_Navigation`
         :param $page: The page to remove from the parent container and all its subpages.
         :type $parentContainer: Zend_Navigation_Container
         :param $parentContainer: The parent container (by default it is this navigation) from which to remove the page from its subpages
-        :type $reattach: boolean
+        :type $reattach: bool
         :param $reattach: Whether the subpages of the $page should be reattached to $parentContainer
-        :returns: boolean Whether the page was removed
+        :returns: bool Whether the page was removed
 
     .. php:method:: getNavigationOptionValueForInstall()
 

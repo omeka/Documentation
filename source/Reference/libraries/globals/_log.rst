@@ -20,7 +20,7 @@ Summary
     
     :type $msg: mixed
     :param $msg: The log message.
-    :type $priority: integer
+    :type $priority: int
     :param $priority: See Zend_Log for a list of available priorities.
 
 *****

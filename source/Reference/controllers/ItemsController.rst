@@ -28,8 +28,6 @@ extends :php:class:`Omeka_Controller_AbstractActionController`
 
         This form can be loaded as a partial by calling items_search_form().
 
-        :returns: void
-
     .. php:method:: _getItemElementSets()
 
         Gets the element sets for the 'Item' record type.
@@ -68,15 +66,11 @@ extends :php:class:`Omeka_Controller_AbstractActionController`
 
         Finds all tags associated with items (used for tag cloud)
 
-        :returns: void
-
     .. php:method:: browseAction()
 
         Browse the items.  Encompasses search, pagination, and filtering of
         request parameters.  Should perhaps be split into a separate
         mechanism.
-
-        :returns: void
 
     .. php:method:: _getBrowseDefaultSort()
 
@@ -89,16 +83,10 @@ extends :php:class:`Omeka_Controller_AbstractActionController`
         Batch editing of Items. If this is an AJAX request, it will
         render the 'batch-edit' as a partial.
 
-        :returns: void
-
     .. php:method:: batchEditSaveAction()
 
         Processes batch edit information. Only accessible via POST.
 
-        :returns: void
-
     .. php:method:: _batchEditAllSave()
 
         Processes batch edit all information. Only accessible via POST.
-
-        :returns: void

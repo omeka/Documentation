@@ -4,9 +4,5 @@ libraries/Omeka/Job/Factory
 
 .. toctree::
 
-    MalformedJobException
-    MissingClassException
-
-
-.. toctree::
-
+   MissingClassException
+   MalformedJobException

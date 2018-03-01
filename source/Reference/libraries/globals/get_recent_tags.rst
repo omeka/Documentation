@@ -16,7 +16,7 @@ Summary
 
     Get the most recent tags.
     
-    :type $limit: integer
+    :type $limit: int
     :param $limit: The maximum number of recent tags to return
     :returns: array
 

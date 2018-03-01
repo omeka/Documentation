@@ -37,7 +37,6 @@ implements :php:interface:`Throwable`
     .. php:method:: __construct($errors)
 
         :param $errors:
-        :returns: void
 
     .. php:method:: getErrors()
 

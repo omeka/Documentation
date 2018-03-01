@@ -14,5 +14,3 @@ extends :php:class:`Zend_Controller_Action_Helper_ContextSwitch`
 
         This extends the default ZF JSON serialization to work with JSONP, which
         enables cross-site AJAX using JSON.
-
-        :returns: void

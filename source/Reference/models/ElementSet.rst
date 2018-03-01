@@ -75,8 +75,6 @@ implements :php:interface:`Zend_Acl_Resource_Interface`
 
         Delete all the elements associated with an element set.
 
-        :returns: void
-
     .. php:method:: _getNextElementOrder()
 
         Get an order value to place an Element at the end of this set.

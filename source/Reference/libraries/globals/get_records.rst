@@ -20,7 +20,7 @@ Summary
     :param $recordType: Type of records to get.
     :type $params: array
     :param $params: Array of search parameters for records.
-    :type $limit: integer
+    :type $limit: int
     :param $limit: Maximum number of records to return.
     :returns: array An array of result records (of $recordType).
 

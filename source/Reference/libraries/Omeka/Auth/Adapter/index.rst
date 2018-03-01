@@ -4,9 +4,5 @@ libraries/Omeka/Auth/Adapter
 
 .. toctree::
 
-    KeyTable
-    UserTable
-
-
-.. toctree::
-
+   KeyTable
+   UserTable

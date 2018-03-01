@@ -16,7 +16,7 @@ Summary
 
     Add files to an item.
     
-    :type $item: Item|integer
+    :type $item: Item|int
     :param $item: Item record or ID of item to add files to
     :type $transferStrategy: string|Omeka_File_Ingest_AbstractIngest
     :param $transferStrategy: Strategy to use when ingesting the file. The strings 'Url', 'Filesystem' and 'Upload' correspond to those built-in strategies. Alternatively a strategy object can be passed.

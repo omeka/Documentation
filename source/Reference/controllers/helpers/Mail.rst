@@ -45,7 +45,7 @@ extends :php:class:`Zend_Controller_Action_Helper_Abstract`
 
         :type $viewScript: string
         :param $viewScript: View script path.
-        :type $html: boolean
+        :type $html: bool
         :param $html: Whether or not the assigned view script will render as HTML.  Defaults to false.
 
     .. php:method:: send($transport = null)

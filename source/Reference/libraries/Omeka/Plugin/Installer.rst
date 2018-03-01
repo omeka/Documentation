@@ -33,7 +33,6 @@ Package: :doc:`Plugin\\Installer </Reference/packages/Plugin/Installer/index>`
 
         :type $plugin: Plugin
         :param $plugin: Plugin to activate.
-        :returns: void
 
     .. php:method:: deactivate(Plugin $plugin)
 
@@ -41,7 +40,6 @@ Package: :doc:`Plugin\\Installer </Reference/packages/Plugin/Installer/index>`
 
         :type $plugin: Plugin
         :param $plugin: Plugin to deactivate.
-        :returns: void
 
     .. php:method:: upgrade(Plugin $plugin)
 
@@ -51,7 +49,6 @@ Package: :doc:`Plugin\\Installer </Reference/packages/Plugin/Installer/index>`
 
         :type $plugin: Plugin
         :param $plugin: Plugin to upgrade.
-        :returns: void
 
     .. php:method:: install(Plugin $plugin)
 
@@ -61,7 +58,6 @@ Package: :doc:`Plugin\\Installer </Reference/packages/Plugin/Installer/index>`
 
         :type $plugin: Plugin
         :param $plugin: Plugin to install.
-        :returns: void
 
     .. php:method:: uninstall(Plugin $plugin)
 
@@ -72,4 +68,3 @@ Package: :doc:`Plugin\\Installer </Reference/packages/Plugin/Installer/index>`
 
         :type $plugin: Plugin
         :param $plugin: Plugin to uninstall.
-        :returns: void

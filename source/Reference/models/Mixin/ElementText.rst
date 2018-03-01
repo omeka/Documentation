@@ -94,9 +94,8 @@ extends :php:class:`Omeka_Record_Mixin_AbstractMixin`
         Also load all the Element records and index those by their name and set
         name.
 
-        :type $reload: boolean
+        :type $reload: bool
         :param $reload: Whether or not reload all the data that was previously loaded.
-        :returns: void
 
     .. php:method:: _loadElements($reload = false)
 
@@ -313,7 +312,7 @@ extends :php:class:`Omeka_Record_Mixin_AbstractMixin`
 
         :type $elementTextRecord: ElementText
         :param $elementTextRecord:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: setReplaceElementTexts($replaceElementTexts = true)
 
@@ -333,13 +332,13 @@ extends :php:class:`Omeka_Record_Mixin_AbstractMixin`
         Delete all the element texts for element_id's that have been provided.
 
         :param $elementIdArray:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: deleteElementTexts()
 
         Delete all the element texts assigned to the current record ID.
 
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: hasElementText($elementSetName, $elementName)
 
@@ -349,7 +348,7 @@ extends :php:class:`Omeka_Record_Mixin_AbstractMixin`
         :param $elementSetName: Element set name
         :type $elementName: string
         :param $elementName: Element name
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: getElementTextCount($elementSetName, $elementName)
 
@@ -359,7 +358,7 @@ extends :php:class:`Omeka_Record_Mixin_AbstractMixin`
         :param $elementSetName: Element set name
         :type $elementName: string
         :param $elementName: Element name
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: getDisplayTitle($default = null)
 

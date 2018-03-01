@@ -7,8 +7,8 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /Reference/libraries/Omeka/Acl/Assert/Ownership.rst
-   /Reference/libraries/Omeka/Acl/Assert/User.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Acl/Assert/Ownership.rst
+   /var/www/html/Documentation/source/Reference/libraries/Omeka/Acl/Assert/User.rst
 
 .. toctree::
    :glob:

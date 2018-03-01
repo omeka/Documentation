@@ -21,7 +21,6 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
 
         :type $request: Zend_Controller_Request_Abstract
         :param $request: Request object.
-        :returns: void
 
     .. php:method:: postDispatch(Zend_Controller_Request_Abstract $request)
 
@@ -33,8 +32,6 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
         Print database profiling info.
 
         Enabled conditionally when debug.profileDb = true in config.ini.
-
-        :returns: void
 
     .. php:method:: _getProfilerMarkup(Zend_Db_Profiler $profiler)
 

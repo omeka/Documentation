@@ -4,12 +4,8 @@ libraries/Omeka/File/Derivative
 
 .. toctree::
 
-    AbstractStrategy
-    Creator
-    Exception
-    StrategyInterface
-
-
-.. toctree::
-
-    Strategy/index
+   StrategyInterface
+   Exception
+   AbstractStrategy
+   Creator
+   Strategy/index

@@ -4,11 +4,7 @@ models/Job
 
 .. toctree::
 
-    FileProcessUpload
-    ItemBatchEdit
-    ItemBatchEditAll
-    SearchTextIndex
-
-
-.. toctree::
-
+   SearchTextIndex
+   FileProcessUpload
+   ItemBatchEdit
+   ItemBatchEditAll

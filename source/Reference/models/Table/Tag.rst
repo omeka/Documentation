@@ -18,7 +18,6 @@ extends :php:class:`Omeka_Db_Table`
 
         :param $select:
         :param $record:
-        :returns: void
 
     .. php:method:: applySorting($select, $sortField, $sortDir)
 
@@ -40,7 +39,6 @@ extends :php:class:`Omeka_Db_Table`
 
         :param $select:
         :param $type:
-        :returns: void
 
     .. php:method:: filterByTagNameLike($select, $partialTagName)
 
@@ -49,7 +47,6 @@ extends :php:class:`Omeka_Db_Table`
 
         :param $select:
         :param $partialTagName:
-        :returns: void
 
     .. php:method:: applySearchFilters($select, $params = array())
 
@@ -58,7 +55,6 @@ extends :php:class:`Omeka_Db_Table`
         :param $select:
         :type $params: array
         :param $params: 'limit' => integer 'record' => instanceof Omeka_Record_AbstractRecord 'like' => partial_tag_name 'type' => tag_type
-        :returns: void
 
     .. php:method:: getSelect()
 

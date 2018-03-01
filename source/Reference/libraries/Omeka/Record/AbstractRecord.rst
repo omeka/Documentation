@@ -13,7 +13,7 @@ implements :php:interface:`ArrayAccess`
 
     .. php:attr:: id
 
-        integer
+        int
 
         Unique ID for the record.
 
@@ -80,8 +80,6 @@ implements :php:interface:`ArrayAccess`
         Subclasses of Omeka_Record_AbstractRecord can override this function to
         add behavior to the constructor without overriding __construct.
 
-        :returns: void
-
     .. php:method:: __destruct()
 
         Unsets mixins, which contain circular references, upon record destruction
@@ -126,7 +124,7 @@ implements :php:interface:`ArrayAccess`
         :param $method:
         :type $args: array
         :param $args:
-        :type $all: boolean
+        :type $all: bool
         :param $all: (optional) Whether or not to call the same method on every mixin instance that has that method.  Defaults to false.
         :returns: mixed If $all is false, the return value from the invoked method. Otherwise there is no return value.
 
@@ -152,7 +150,6 @@ implements :php:interface:`ArrayAccess`
         :param $value:
         :type $key: string
         :param $key:
-        :returns: void
 
     .. php:method:: _getCached($name)
 
@@ -177,7 +174,7 @@ implements :php:interface:`ArrayAccess`
         For simplicity, non-persistent records are indicated by the lack of a
         value for the 'id' column.
 
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: _validate()
 
@@ -185,13 +182,11 @@ implements :php:interface:`ArrayAccess`
 
         Should be overridden by subclasses.
 
-        :returns: void
-
     .. php:method:: isValid()
 
         Determine whether or not the record is valid.
 
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: getErrors()
 
@@ -203,7 +198,7 @@ implements :php:interface:`ArrayAccess`
 
         Determine whether or not this record has any validation errors.
 
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: addError($field, $msg)
 
@@ -216,7 +211,6 @@ implements :php:interface:`ArrayAccess`
         :param $field: Name of the field.  This can be null to indicate a general error not associated with a specific field.
         :type $msg: string
         :param $msg: The error message.
-        :returns: void
 
     .. php:method:: addErrorsFrom(Omeka_Record_AbstractRecord $record)
 
@@ -225,7 +219,6 @@ implements :php:interface:`ArrayAccess`
 
         :type $record: Omeka_Record_AbstractRecord
         :param $record:
-        :returns: void
 
     .. php:method:: lock()
 
@@ -234,8 +227,6 @@ implements :php:interface:`ArrayAccess`
         Can be used to prevent accidentally saving/deleting a record if its state
         may change but saving would be undesirable, such as modifying a record for
         display purposes.
-
-        :returns: void
 
     .. php:method:: getTable($class = null)
 
@@ -262,9 +253,9 @@ implements :php:interface:`ArrayAccess`
 
         Save the record.
 
-        :type $throwIfInvalid: boolean
+        :type $throwIfInvalid: bool
         :param $throwIfInvalid:
-        :returns: boolean Whether the save was successful.
+        :returns: bool Whether the save was successful.
 
     .. php:method:: __clone()
 
@@ -275,8 +266,6 @@ implements :php:interface:`ArrayAccess`
     .. php:method:: delete()
 
         Delete the record.
-
-        :returns: void
 
     .. php:method:: _delete()
 
@@ -289,8 +278,6 @@ implements :php:interface:`ArrayAccess`
 
         Common use cases include emulating cascading deletes with other database
         rows.
-
-        :returns: void
 
     .. php:method:: beforeSave($args)
 
@@ -318,7 +305,6 @@ implements :php:interface:`ArrayAccess`
 
         :type $data: array|Traversable
         :param $data:
-        :returns: void
 
     .. php:method:: getPluginBroker()
 
@@ -334,7 +320,7 @@ implements :php:interface:`ArrayAccess`
 
         :type $name: string
         :param $name:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: offsetUnset($name)
 
@@ -344,7 +330,6 @@ implements :php:interface:`ArrayAccess`
 
         :type $name: string
         :param $name:
-        :returns: void
 
     .. php:method:: offsetGet($name)
 
@@ -366,7 +351,6 @@ implements :php:interface:`ArrayAccess`
         :param $name:
         :type $value: mixed
         :param $value:
-        :returns: void
 
     .. php:method:: filterPostData($post)
 
@@ -394,7 +378,7 @@ implements :php:interface:`ArrayAccess`
         :param $field:
         :type $value: mixed
         :param $value: Optional If null, this will check the value of the record's $field.  Otherwise check the uniqueness of this value for the given field.
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: getRecordUrl($action = 'show')
 

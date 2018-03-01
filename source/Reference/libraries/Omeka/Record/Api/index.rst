@@ -4,9 +4,5 @@ libraries/Omeka/Record/Api
 
 .. toctree::
 
-    AbstractRecordAdapter
-    RecordAdapterInterface
-
-
-.. toctree::
-
+   RecordAdapterInterface
+   AbstractRecordAdapter

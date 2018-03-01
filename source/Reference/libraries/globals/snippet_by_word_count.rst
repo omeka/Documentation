@@ -20,7 +20,7 @@ Summary
     
     :type $text: string
     :param $text:
-    :type $maxWords: integer
+    :type $maxWords: int
     :param $maxWords:
     :type $ellipsis: string
     :param $ellipsis:

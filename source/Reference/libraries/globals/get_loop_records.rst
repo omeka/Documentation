@@ -21,7 +21,7 @@ Summary
     
     :type $recordsVar: string
     :param $recordsVar: The name of the variable the records are stored in.
-    :type $throwException: boolean
+    :type $throwException: bool
     :param $throwException: Whether to throw an exception if the $recordsVar is unset. Default is to throw.
     :returns: array|bool
 

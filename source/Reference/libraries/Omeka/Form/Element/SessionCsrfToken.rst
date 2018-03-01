@@ -41,8 +41,6 @@ extends :php:class:`Zend_Form_Element_Xhtml`
         Creates session namespace for CSRF token, and adds validator for CSRF
         token.
 
-        :returns: void
-
     .. php:method:: setSession($session)
 
         Set session object
@@ -76,8 +74,6 @@ extends :php:class:`Zend_Form_Element_Xhtml`
 
         Override getLabel() to always be empty
 
-        :returns: null
-
     .. php:method:: _initToken()
 
         Set the CSRF token
@@ -96,5 +92,3 @@ extends :php:class:`Zend_Form_Element_Xhtml`
     .. php:method:: _generateToken()
 
         Generate CSRF token
-
-        :returns: void

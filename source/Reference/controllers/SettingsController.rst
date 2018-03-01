@@ -33,7 +33,7 @@ extends :php:class:`Omeka_Controller_AbstractActionController`
         non-zero status code for some reason.  Keep in mind that a 0 status code
         always indicates success.
 
-        :returns: boolean True if the command line return status is 0 when attempting to run ImageMagick's convert utility, false otherwise.
+        :returns: bool True if the command line return status is 0 when attempting to run ImageMagick's convert utility, false otherwise.
 
     .. php:method:: getFileExtensionWhitelistAction()
 

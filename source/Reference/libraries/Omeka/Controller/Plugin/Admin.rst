@@ -29,7 +29,6 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
 
         :type $request: Zend_Controller_Request_Abstract
         :param $request:
-        :returns: void
 
     .. php:method:: preDispatch(Zend_Controller_Request_Abstract $request)
 
@@ -40,7 +39,6 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
 
         :type $request: Zend_Controller_Request_Abstract
         :param $request:
-        :returns: void
 
     .. php:method:: getRedirector()
 
@@ -60,4 +58,4 @@ extends :php:class:`Zend_Controller_Plugin_Abstract`
         user.
 
         :param $request:
-        :returns: boolean
+        :returns: bool

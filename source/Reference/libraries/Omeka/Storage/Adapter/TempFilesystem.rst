@@ -106,4 +106,4 @@ implements :php:interface:`Omeka_Storage_Adapter_AdapterInterface`
 
         :param $source:
         :param $dest:
-        :returns: boolean
+        :returns: bool

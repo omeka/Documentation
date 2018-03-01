@@ -16,9 +16,9 @@ Summary
 
     Get random featured items.
     
-    :type $num: integer
+    :type $num: int
     :param $num: The maximum number of recent items to return
-    :type $hasImage: boolean|null
+    :type $hasImage: bool|null
     :param $hasImage:
     :returns: array|Item
 

@@ -26,6 +26,6 @@ Package: :doc:`Test\\Helper </Reference/packages/Test/Helper/index>`
 
         Assert that the given number of SQL queries were made.
 
-        :type $queryCount: integer
+        :type $queryCount: int
         :param $queryCount:
         :param $msg:

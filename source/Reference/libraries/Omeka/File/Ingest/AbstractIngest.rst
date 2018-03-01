@@ -43,7 +43,6 @@ Package: :doc:`File\\Ingest </Reference/packages/File/Ingest/index>`
 
         :type $item: Item
         :param $item:
-        :returns: void
 
     .. php:method:: factory($adapterName, $item, $options = array())
 
@@ -97,7 +96,6 @@ Package: :doc:`File\\Ingest </Reference/packages/File/Ingest/index>`
 
         :type $options: array
         :param $options: Available options include: - 'ignore_invalid_files': boolean false by default.  Determine whether or not to throw exceptions when a file is not valid.  This can be based on a number of factors:  whether or not the original identifier is valid (i.e. a valid URL), whether or not the file itself is valid (i.e. invalid file extension), or whether the basic algorithm for ingesting the file fails (i.e., files cannot be transferred because the files/ directory is not writeable). This option is primarily useful for skipping known invalid files when ingesting large data sets.
-        :returns: void
 
     .. php:method:: ingest($fileInfo)
 
@@ -116,7 +114,7 @@ Package: :doc:`File\\Ingest </Reference/packages/File/Ingest/index>`
         Determine whether or not to ignore file ingest errors.  Based on
         'ignore_invalid_files', which is false by default.
 
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: _logException(Exception $e)
 
@@ -128,7 +126,6 @@ Package: :doc:`File\\Ingest </Reference/packages/File/Ingest/index>`
 
         :type $e: Exception
         :param $e:
-        :returns: void
 
     .. php:method:: _createFile($newFilePath, $oldFilename, $elementMetadata = array())
 
@@ -190,4 +187,4 @@ Package: :doc:`File\\Ingest </Reference/packages/File/Ingest/index>`
         :param $filePath: Absolute path to the file.  The file should be local and readable, which is required by most (if not all) of the Zend_Validate_File_* classes.
         :type $fileInfo: array
         :param $fileInfo: Set of file info that describes a given file being ingested.
-        :returns: boolean True if valid, otherwise throws an exception.
+        :returns: bool True if valid, otherwise throws an exception.

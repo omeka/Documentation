@@ -16,8 +16,6 @@ extends :php:class:`Omeka_Controller_AbstractActionController`
 
         Generic action to render a 404 page.
 
-        :returns: void
-
     .. php:method:: forbiddenAction()
 
     .. php:method:: methodNotAllowedAction()
@@ -34,7 +32,7 @@ extends :php:class:`Omeka_Controller_AbstractActionController`
         :type $e: Exception
         :param $e:
         :param $handler:
-        :returns: boolean
+        :returns: bool
 
     .. php:method:: is403(Exception $e)
 
