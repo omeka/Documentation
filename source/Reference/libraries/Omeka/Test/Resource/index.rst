@@ -4,10 +4,10 @@ libraries/Omeka/Test/Resource
 
 .. toctree::
 
-   Currentuser
-   Storage
    Config
+   Currentuser
    Db
-   Mail
-   Tempdir
    Debug
+   Mail
+   Storage
+   Tempdir

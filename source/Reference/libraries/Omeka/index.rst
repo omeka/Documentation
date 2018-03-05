@@ -4,29 +4,29 @@ libraries/Omeka
 
 .. toctree::
 
-   Db/index
-   Plugin/index
-   Http/index
-   Controller/index
-   Application
-   View
-   Auth/index
-   Test/index
-   Record/index
-   Storage
-   Application/index
-   View/index
-   Output/index
-   Db
-   Storage/index
    Acl/index
-   Filter/index
-   Form
-   Validate/index
-   Session/index
+   Application/index
+   Application
+   Auth/index
    Captcha
-   Navigation/index
+   Controller/index
+   Db/index
+   Db
    File/index
-   Job/index
+   Filter/index
    Form/index
+   Form
+   Http/index
+   Job/index
+   Navigation/index
    Navigation
+   Output/index
+   Plugin/index
+   Record/index
+   Session/index
+   Storage/index
+   Storage
+   Test/index
+   Validate/index
+   View/index
+   View

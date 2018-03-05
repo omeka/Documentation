@@ -7,14 +7,14 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /var/www/html/Documentation/source/Reference/libraries/Omeka/Validate/Confirmation.rst
-   /var/www/html/Documentation/source/Reference/libraries/Omeka/Validate/Errors.rst
-   /var/www/html/Documentation/source/Reference/libraries/Omeka/Validate/Exception.rst
-   /var/www/html/Documentation/source/Reference/libraries/Omeka/Validate/File/Extension.rst
-   /var/www/html/Documentation/source/Reference/libraries/Omeka/Validate/File/MimeType.rst
-   /var/www/html/Documentation/source/Reference/libraries/Omeka/Validate/HexColor.rst
-   /var/www/html/Documentation/source/Reference/libraries/Omeka/Validate/Uri.rst
-   /var/www/html/Documentation/source/Reference/libraries/Omeka/Validate/UserPassword.rst
+   /Reference/libraries/Omeka/Validate/Confirmation.rst
+   /Reference/libraries/Omeka/Validate/Errors.rst
+   /Reference/libraries/Omeka/Validate/Exception.rst
+   /Reference/libraries/Omeka/Validate/File/Extension.rst
+   /Reference/libraries/Omeka/Validate/File/MimeType.rst
+   /Reference/libraries/Omeka/Validate/HexColor.rst
+   /Reference/libraries/Omeka/Validate/Uri.rst
+   /Reference/libraries/Omeka/Validate/UserPassword.rst
 
 .. toctree::
    :glob:

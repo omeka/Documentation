@@ -7,13 +7,13 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /var/www/html/Documentation/source/Reference/models/Job/FileProcessUpload.rst
-   /var/www/html/Documentation/source/Reference/models/Job/ItemBatchEdit.rst
-   /var/www/html/Documentation/source/Reference/models/Job/ItemBatchEditAll.rst
-   /var/www/html/Documentation/source/Reference/models/Job/SearchTextIndex.rst
-   /var/www/html/Documentation/source/Reference/libraries/Omeka/Job/AbstractJob.rst
-   /var/www/html/Documentation/source/Reference/libraries/Omeka/Job/JobInterface.rst
-   /var/www/html/Documentation/source/Reference/libraries/Omeka/Job/Mock.rst
+   /Reference/models/Job/FileProcessUpload.rst
+   /Reference/models/Job/ItemBatchEdit.rst
+   /Reference/models/Job/ItemBatchEditAll.rst
+   /Reference/models/Job/SearchTextIndex.rst
+   /Reference/libraries/Omeka/Job/AbstractJob.rst
+   /Reference/libraries/Omeka/Job/JobInterface.rst
+   /Reference/libraries/Omeka/Job/Mock.rst
 
 .. toctree::
    :glob:

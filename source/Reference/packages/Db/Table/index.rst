@@ -7,23 +7,23 @@ Up to :doc:`../index`
 .. toctree::
 
 
-   /var/www/html/Documentation/source/Reference/libraries/Omeka/Db/Table.rst
-   /var/www/html/Documentation/source/Reference/models/Table/Collection.rst
-   /var/www/html/Documentation/source/Reference/models/Table/Element.rst
-   /var/www/html/Documentation/source/Reference/models/Table/ElementSet.rst
-   /var/www/html/Documentation/source/Reference/models/Table/ElementText.rst
-   /var/www/html/Documentation/source/Reference/models/Table/File.rst
-   /var/www/html/Documentation/source/Reference/models/Table/Item.rst
-   /var/www/html/Documentation/source/Reference/models/Table/ItemType.rst
-   /var/www/html/Documentation/source/Reference/models/Table/ItemTypesElements.rst
-   /var/www/html/Documentation/source/Reference/models/Table/Key.rst
-   /var/www/html/Documentation/source/Reference/models/Table/Plugin.rst
-   /var/www/html/Documentation/source/Reference/models/Table/Process.rst
-   /var/www/html/Documentation/source/Reference/models/Table/RecordsTags.rst
-   /var/www/html/Documentation/source/Reference/models/Table/SearchText.rst
-   /var/www/html/Documentation/source/Reference/models/Table/Tag.rst
-   /var/www/html/Documentation/source/Reference/models/Table/User.rst
-   /var/www/html/Documentation/source/Reference/models/Table/UsersActivations.rst
+   /Reference/libraries/Omeka/Db/Table.rst
+   /Reference/models/Table/Collection.rst
+   /Reference/models/Table/Element.rst
+   /Reference/models/Table/ElementSet.rst
+   /Reference/models/Table/ElementText.rst
+   /Reference/models/Table/File.rst
+   /Reference/models/Table/Item.rst
+   /Reference/models/Table/ItemType.rst
+   /Reference/models/Table/ItemTypesElements.rst
+   /Reference/models/Table/Key.rst
+   /Reference/models/Table/Plugin.rst
+   /Reference/models/Table/Process.rst
+   /Reference/models/Table/RecordsTags.rst
+   /Reference/models/Table/SearchText.rst
+   /Reference/models/Table/Tag.rst
+   /Reference/models/Table/User.rst
+   /Reference/models/Table/UsersActivations.rst
 
 .. toctree::
    :glob:

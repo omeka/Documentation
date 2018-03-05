@@ -4,10 +4,10 @@ controllers/api
 
 .. toctree::
 
+   ApiController
    ElementSetsController
    ElementsController
-   FilesController
-   SiteController
-   ResourcesController
    ErrorController
-   ApiController
+   FilesController
+   ResourcesController
+   SiteController

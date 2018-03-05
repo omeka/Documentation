@@ -4,9 +4,9 @@ libraries/Omeka/Record
 
 .. toctree::
 
-   Builder/index
    AbstractRecord
-   Mixin/index
    Api/index
+   Builder/index
    Exception
    Iterator
+   Mixin/index

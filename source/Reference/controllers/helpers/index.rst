@@ -4,10 +4,10 @@ controllers/helpers
 
 .. toctree::
 
-   ThemeConfiguration
+   Acl
+   ContextSwitch
    Db
    FlashMessenger
-   Mail
-   ContextSwitch
-   Acl
    JsonApi
+   Mail
+   ThemeConfiguration

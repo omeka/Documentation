@@ -4,7 +4,7 @@ libraries/Omeka/Filter
 
 .. toctree::
 
+   Boolean
+   Filename
    ForeignKey
    HtmlPurifier
-   Filename
-   Boolean

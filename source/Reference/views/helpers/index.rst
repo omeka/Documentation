@@ -4,26 +4,26 @@ views/helpers
 
 .. toctree::
 
-   MaxFileSize
+   AllElementTexts
+   ElementForm
+   ElementInput
    FileId3Metadata
-   SetLoopRecords
    FileMarkup
-   GetLoopRecords
-   SearchForm
-   Metadata
+   Flash
    FormInput
+   GetCurrentRecord
+   GetLoopRecords
+   HasLoopRecords
+   ItemSearchFilters
    Loop
+   MaxFileSize
+   Metadata
+   Pluralize
    RecordUrl
    SearchFilters
-   ElementInput
-   HasLoopRecords
-   GetCurrentRecord
-   Url
-   Pluralize
-   Shortcodes
-   ItemSearchFilters
+   SearchForm
    SetCurrentRecord
-   ElementForm
-   AllElementTexts
+   SetLoopRecords
+   Shortcodes
    Singularize
-   Flash
+   Url

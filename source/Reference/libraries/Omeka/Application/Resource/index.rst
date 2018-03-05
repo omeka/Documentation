@@ -4,27 +4,27 @@ libraries/Omeka/Application/Resource
 
 .. toctree::
 
-   Logger
-   Cachemanager
-   Plugins
-   Frontcontroller
-   Session
-   Router
-   View
-   Theme
-   Locale
-   Auth
-   Options
-   Currentuser
-   Storage
-   Pluginbroker
-   Config
-   Db
-   Filederivatives
-   Exception
-   Jobs/index
-   Mail
    Acl
-   Jobs
+   Auth
+   Cachemanager
+   Config
+   Currentuser
+   Db
    Debug
+   Exception
+   Filederivatives
+   Frontcontroller
    Helpers
+   Jobs/index
+   Jobs
+   Locale
+   Logger
+   Mail
+   Options
+   Pluginbroker
+   Plugins
+   Router
+   Session
+   Storage
+   Theme
+   View

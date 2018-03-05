@@ -4,7 +4,7 @@ libraries/Omeka/Db
 
 .. toctree::
 
-   Table
-   Select
-   Select/index
    Migration/index
+   Select/index
+   Select
+   Table

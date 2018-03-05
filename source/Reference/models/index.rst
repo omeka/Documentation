@@ -4,28 +4,28 @@ models
 
 .. toctree::
 
-   Key
-   UsersActivations
-   Builder/index
-   ElementSet
-   Option
-   Collection
-   Tag
-   Mixin/index
-   Theme
    Api/index
-   ElementText
-   RecordsTags
-   Output/index
-   SearchText
-   ItemTypesElements
-   Installer/index
-   Plugin
-   ItemType
-   Item
-   User
-   Table/index
+   Builder/index
+   Collection
    Element
-   Process
+   ElementSet
+   ElementText
    File
+   Installer/index
+   Item
+   ItemType
+   ItemTypesElements
    Job/index
+   Key
+   Mixin/index
+   Option
+   Output/index
+   Plugin
+   Process
+   RecordsTags
+   SearchText
+   Table/index
+   Tag
+   Theme
+   User
+   UsersActivations
