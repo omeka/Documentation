@@ -55,6 +55,10 @@ are available as well:
 
   * ``citation``
 
+Since version 2.5, all the Element Set-carrying records (Collection, File and Item) also
+have the special property ``display_title`` that returns a simplified version of their
+title.
+
 The above list only covers core records. For other records, like those added by plugins,
 see the plugin's documentation or the ``getProperty()`` method of the record.
 
@@ -75,7 +79,9 @@ Valid keys for the ``$options`` array are:
 * ``no_filter``: If true, return the set of metadata without running any :doc:`filters </Tutorials/understandingFilters>`. 
  
 * ``snippet``: Trim the length of each piece of text to the given length in characters.
- 
+
+* ``ignore_unknown``: If true, do not throw an error if the requested metadata element does not exist. (Since version 2.5)
+
 * Passing simply the string 'all' is equivalent to ``array('all' => true)``
  
 * Passing simply an integer is equivalent to ``array('index' => [the integer])``

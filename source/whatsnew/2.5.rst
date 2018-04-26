@@ -1,3 +1,103 @@
 #######################
 What's new in Omeka 2.5
 #######################
+
+========================
+Unsaved changes warnings
+========================
+
+Starting with version 2.5, Omeka will warn users on the admin interface if they
+attempt to navigate away from a page without saving their changes first. This
+is accomplished with JavaScript that stores the initial state of every POSTed
+``<form>`` element on an admin page. Before navigation, Omeka checks if the
+current state of the form differs from its initial state, and if there's a
+difference on any form (except one being submitted), then we show the warning.
+
+For most forms this should work fine out of the box with no alterations, but
+for some that are using non-standard methods for mananging the form, we
+provide some ways to alter the process.
+
+The original state of the form is stored as HTML5 data on the form element
+with the name ``omekaFormOriginalData``. Developers can alter this if the
+state of a form isn't really initialized until some time after the
+document's ``ready`` event.
+
+Another HTML5 data attribute can be used to unconditionally trigger the warning:
+``omekaFormDirty``. If this is present on the form element and set to true, Omeka
+will always treat the form state as changed. This can be useful to account for
+changes that don't actually cause the form's state to be changed.
+
+A custom event ``o:before-form-unload`` is fired on every form before it's checked.
+Developers can use this to alter the form state or set the "dirty" flag just in
+time for the check to occur.
+
+To opt a form out of the unsaved warning system completely, either make sure it
+isn't using the POST method, or add the class ``disable-unsaved-warning`` to the
+``<form>``.
+
+======================================
+``display_title`` property for records
+======================================
+
+In previous versions of Omeka, getting a title for a record suitable for use in a
+table or in a ``<title>`` element could involve checking several pieces of metadata,
+manually stripping HTML if it was present, and even then could run into problems,
+particularly when dealing with HTML data.
+
+Version 2.5 introduces a ``display_title`` property, usable with the
+:php:func:`metadata` helper function for Items, Collections, and Files.
+``display_title`` willautomatically handle and remove HTML formatting and decoding
+entities in titles, as well as falling back to a default if no Dublin Core Title
+exists.
+
+The implementation is shared between the record types, and is actually provided
+by the :php:class:`ElementText mixin <Mixin_ElementText>`.
+
+All applications needing a "simple" version of a title for usage in places like
+attributes, tables, citations, link text, and other places where some content
+is required or where HTML tags are not allowed or desirable are suggested to use
+the ``display_title`` property through the ``metadata`` helper.
+
+==============================
+User control of thumbnail type
+==============================
+
+Omeka 2.5 adds a "Use Square Thumbnails" setting in the appearance settings, to
+allow administrators to choose between square thumbnails and "regular,"
+aspect-ratio-preserving thumbnails.
+
+Themes and plugins that want to opt in to this behavior will need to change some
+code if they're displaying their own thumbnails: instead of specifying ``'thumbnail'``
+or ``'square_thumbnail'`` as the image type, they should pass ``null`` (or omit the
+argument, where possible). :php:func:`record_image` and :php:func:`item_image` have
+been updated to allow passing null for their imageType arguments.
+
+============================================
+``ignore_unknown`` option for ``metadata()``
+============================================
+
+The :php:func:`metadata` function throws an exception if a developer requests
+an Element which is unknown in the system. In some particular cases such as
+Item Type Metadata where users can freely add and delete elements, this can
+cause undesirable and sometimes confusing errors.
+
+To account for this, a new option is now available for ``metadata``:
+``ignore_unknown``. When set to true, a call requesting a nonexistent Element
+will simply return nothing rather than causing an error.
+
+====================================
+API: simple search enabled for items
+====================================
+
+The ``search`` GET parameter is now allowed when browsing for items in the REST
+API.
+
+===========================================
+New "next" and "previous" filters for items
+===========================================
+
+Many administrators and users prefer the "next" and "previous" item links to
+have different behavior than the default of going to the next and previous
+record by ID, globally. To allow this more easily, Omeka 2.5 adds two new
+filters: :doc:`/Reference/filters/item_next` and :doc:`/Reference/filters/item_previous`,
+allowing a plugin to alter where those links will go.

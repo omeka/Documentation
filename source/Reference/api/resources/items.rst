@@ -97,6 +97,12 @@ Parameters
 -  **added\_since**: string (ISO 8601)
 -  **modified\_since**: string (ISO 8601)
 -  **owner** (user): integer
+-  **tags**: string (since 2.3.1)
+-  **excludeTags**: string (since 2.3.1)
+-  **hasImage**: boolean (since 2.3.1)
+-  **range**: string (since 2.3.1)
+-  **search** (simple search): string (since 2.5)
+
 
 Response
 ~~~~~~~~
