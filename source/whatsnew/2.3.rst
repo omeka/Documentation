@@ -39,6 +39,12 @@ Classes
 * Removed :php:class:`!Omeka_View_Helper_AbstractSearch`
 
 =======
+Methods
+=======
+
+* :php:meth:`Mixin_ElementText::getAllElementTextsByElement`
+
+=======
 Filters
 =======
 
