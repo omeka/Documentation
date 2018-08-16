@@ -28,7 +28,7 @@ Examples
     
         public function hookPublicHead($args)
         {
-            queue_css('myplugin'); // assumes myplugin has a /views/public/css/myplugin.css file
+            queue_css_file('myplugin'); // assumes myplugin has a /views/public/css/myplugin.css file
         }    
     }
 
@@ -37,5 +37,5 @@ Examples
 See Also
 ********
 
-:php:func:`queue_css`
+:php:func:`queue_css_file`
 :php:func:`queue_js`
