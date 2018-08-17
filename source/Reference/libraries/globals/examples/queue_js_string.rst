@@ -1,4 +1,4 @@
-Use to add arbitrary javascript code to a page. Combine with head_js() to add to the page head inside ``<script></script>`` tags.
+Use to add arbitrary javascript code to a page.
 
 .. code-block:: php
 
@@ -8,4 +8,3 @@ Use to add arbitrary javascript code to a page. Combine with head_js() to add to
           }, false);
     "); ?>
 
-    <?php head_js(); ?>
