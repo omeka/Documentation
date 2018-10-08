@@ -79,7 +79,7 @@ Package: :doc:`Test\\Helper </Reference/packages/Test/Helper/index>`
         Lazy-loading for helper properties.
 
         When a property is not set, attempts to load a default through standard
-        Omeka global state.  If this state is unavailable or undesireable,
+        Omeka global state.  If this state is unavailable or undesirable,
         use the set*() methods before calling any of the other public methods of
         this class.
 

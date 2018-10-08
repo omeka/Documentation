@@ -15,7 +15,7 @@ functionality that depends on File records by choosing a "representative"
 file. Omeka uses this functionality in the views for some records like
 Collections and Files, and also in the search results page.
 
-Themes and plugins can use a new helper funtion to display thumbnails for
+Themes and plugins can use a new helper function to display thumbnails for
 records with representative files, and plugins can also select and expose
 representatives for their own records.
 
