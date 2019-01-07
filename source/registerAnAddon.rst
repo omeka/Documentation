@@ -1,7 +1,7 @@
 Registering a new module or theme with omeka.org
 ================================================
 
-After you [register your GitHub repository](http://omeka.org/register/) as an Omeka addon we'll
+After you `register your GitHub repository <http://omeka.org/register/>`_ as an Omeka addon we'll
 automatically identify and publish new versions of your addon if you
 follow these steps.
 
@@ -14,7 +14,7 @@ changelog, etc.), but it's not required.
 Then, on your own computer, create a ZIP archive of the packaged,
 ready-for-release addon; we recommend using Git's ``archive`` command:
 
-::
+..code-block:: none
 
     $ git archive --output={AddonZipName}.zip --prefix={AddonDirName}/ {tagname}
 
