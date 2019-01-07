@@ -41,10 +41,9 @@ Before registring your releases we check that certain things are true:
    registered
 -  The ZIP file contains a .jpg thumbnail (themes only)
 -  The ZIP file contains an INI file at the correct path:
--  classic plugin: /plugin.ini
--  classic theme: /theme.ini
--  S module: /config/module.ini
--  S theme: /config/theme.ini
+
+   -  for plugins: /plugin.ini
+   -  for themes: /theme.ini
 -  The INI file has no parsing errors
 -  The INI file has an ``[info]`` section
 -  The INI file has a ``version``
