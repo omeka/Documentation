@@ -14,7 +14,7 @@ changelog, etc.), but it's not required.
 Then, on your own computer, create a ZIP archive of the packaged,
 ready-for-release addon; we recommend using Git's ``archive`` command:
 
-..code-block:: none
+.. code-block:: none
 
     $ git archive --output={AddonZipName}.zip --prefix={AddonDirName}/ {tagname}
 
