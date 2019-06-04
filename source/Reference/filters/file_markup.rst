@@ -32,4 +32,8 @@ Arguments
 ``string`` wrapper_attributes
     Attributes to apply to the wrapping ``<div>`` element
     
-            
+********
+See Also
+********
+
+:php:func:`file_markup`, the function

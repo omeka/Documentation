@@ -30,7 +30,20 @@ Database
     :maxdepth: 1
         
     file_ingest_validators
+
+
+**********************
+File and Image Display
+**********************
+
+.. toctree::
+    :maxdepth: 1
     
+    file_markup
+    file_markup_files
+    file_markup_options
+    files_for_item
+    image_tag_attributes
     
 *******
 Records
@@ -40,7 +53,10 @@ Records
     :glob:
     :maxdepth: 1
         
-    <model>_*
+    <model>s_browse_default_sort
+    <model>s_browse_params
+    <model>s_browse_per_page
+    <model>s_select_options
     
 
 Record Metadata
@@ -51,8 +67,6 @@ Record Metadata
     :maxdepth: 1    
 
     Element_*   
-    record_metadata_elements
-    
     
     
 ******
@@ -83,14 +97,6 @@ Text
 Views
 *****
 
-.. toctree::
-    :glob:
-    :maxdepth: 1
-        
-    define*    
-    
-            
-
 Admin Views
 ===========
 
@@ -99,7 +105,6 @@ Admin Views
     :maxdepth: 1
         
     admin*
-
 
     
 Forms
@@ -119,5 +124,6 @@ Public Views
     :maxdepth: 1
           
     body_tag_attributes
+    public*
 
 
