@@ -119,3 +119,86 @@ Here is an example plugin.ini that uses all the possible fields:
     omeka_target_version = "2.2"
     required_plugins = "ExhibitBuilder,SimplePages"
     optional_plugins = "Bar,Baz"
+
+********************
+Other common folders
+********************
+
+For a plugin that merely needs to use hooks and filters to modify existing things in Omeka, the bare basics are enough,
+and pretty much everything can be done within the main plugin file alone.
+
+===================================
+Adding Pages: Controllers and Views
+===================================
+
+Plugins that want to add totally new pages to Omeka must do so using Controllers and Views.
+
+Controllers are PHP classes that handle basically the "glue" necessary to make a page work:
+retrieving data from the database, determining if a user has permission to see what's on the
+page, and other necessary tasks for getting whatever data is necessary for the page to be
+displayed.
+
+Views are PHP files containing code for displaying a page. Typically, a view will take data
+set by its corresponding controller and print it out as HTML.
+
+-----------
+Controllers
+-----------
+
+The ``controllers/`` folder within a plugin contains controller classes. In plugins, the
+*internal* name of a controller class must prepend the name of the plugin, but the name
+of the file must not. For example, to create an "index" controller for MyPlugin, you would
+create a class named ``MyPlugin_IndexController`` and place it at ``controllers/IndexController.php``.
+
+Controllers extend an Omeka class :php:class:`Omeka_Controller_AbstractActionController`,
+but the controller system is all built off of Zend Framework. See the `Zend documentation on
+controllers <https://framework.zend.com/manual/1.12/en/zend.controller.action.html>`_ for
+some basic information on controllers.
+
+-----
+Views
+-----
+
+The ``views/`` folder contains view files. Generally, each view file corresponds with a *controller*
+and an *action* (together, a controller and action basically describe one page).
+
+Views are bare PHP files, not classes: they simply contain code to display a page. (Some views actually
+display just part of a page or something else; these are called "partials.")
+
+In a plugin, the ``views/`` folder has three subfolders:
+
+- ``views/admin/`` for view files visible only in the Omeka admin interface
+- ``views/public/`` for view files visible only on public pages
+- ``views/shared/`` for view files available on both the admin and public sides
+
+Under each subfolder the structure is the same: a folder for each controller, and inside that folder, a
+view file for each action. Names of controllers and actions, when used in views, are written in
+hyphen-separated-lowercase. As an example, Public-facing views for the previous example's
+``MyPlugin_IndexController`` controller would correspond to a folder ``views/public/index``.
+
+==============================
+Custom database tables: Models
+==============================
+
+Plugins with simple needs can often store data without needing to create their own database tables, just
+using existing Omeka systems like options or element texts. For plugins with different or more complicated
+needs, they can create their own tables and manage them with models in the ``models/`` folder.
+
+Two types of files are used as models: :doc:`record classes </Tutorials/understandingOmeka_Record_AbstractRecord>`
+and :doc:`table classes </Tutorials/understandingOmeka_Db_Table>`. More information on each is available at their
+respective links.
+
+==========================
+Additional code: Libraries
+==========================
+
+The ``libraries/`` folder simply contains additional PHP classes used by the plugin. Files under this folder are
+automatically set up to be autoloaded using the `PSR-0 <https://www.php-fig.org/psr/psr-0/>`_ file/folder structure.
+Code here can include classes written specifically for the plugin, as well as external libraries.
+
+====================
+Internationalization
+====================
+
+The ``languages/`` folder contains translations of the plugin's text into different languages. For more
+information about internationalization, see the :doc:`/Tutorials/i18n` page.
