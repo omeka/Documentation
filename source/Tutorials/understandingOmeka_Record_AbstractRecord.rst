@@ -28,7 +28,7 @@ in the class name. For example, a model named ``MyPluginThing`` would be located
     }
 
 Note that an ``$id`` property is inherited from ``Omeka_Plugin_AbstractRecord``. All Omeka ORM models have an ``id`` property/column
-representing the primary key. Tables that would normally have a composite primary key, like "junction" tables representing
+that uniquely identifies a particular record. Tables that would normally have a composite primary key, like "junction" tables representing
 many-to-many relationships, must either have a redundant ``id`` column or be managed outside the ORM.
 
 ***************
@@ -41,7 +41,7 @@ name as a property (``$db->MyPluginThing``) from the DB object will return the t
 configured database prefix. This is the preferred way to get the table name when needed for SQL queries (like a ``CREATE TABLE`` query).
 
 To create the tables in the database table for a plugin, use the :doc:`install hook </Reference/hooks/install>`. The table must contain
-a column for each public property of the model, as well as an auto-incrementing ``id`` column as the primary key. For example, this code
+a column for each public property of the model, as well as an auto-incrementing ``id`` column, usually as the primary key. For example, this code
 in a plugin would create a table for the above model:
 
 .. code-block:: php
