@@ -55,4 +55,8 @@ Examples
 
     }
     
-    
+********
+See Also
+********
+
+For possible types and configurations of routes, see `Zend Framework's router documentation <https://framework.zend.com/manual/1.12/en/zend.controller.router.html>`_.
