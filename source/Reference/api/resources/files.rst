@@ -138,8 +138,8 @@ look something like this:
     {
       "order": 2,
       "item": {
-        "id": 1,
-      }
+        "id": 1
+      },
       "element_texts": [
         {
           "html": false,
