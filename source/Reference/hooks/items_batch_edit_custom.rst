@@ -11,6 +11,10 @@ Handles custom content added to the batch edit form by plugins using the
 
 The hook fires once for each item being edited.
 
+Note: changes made in this hook are not automaticaly saved, so you must call
+``save()`` on the item yourself, or use a function like :php:func:`update_item`
+that also saves.
+
 *********
 Arguments
 *********
