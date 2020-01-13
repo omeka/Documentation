@@ -48,3 +48,23 @@ The result in the default theme will look like::
    collections/
       browse.php
 
+****************************
+Adding custom configuration variables to a theme
+****************************
+
+For interface elements in a theme that you want site administrators to be able to edit from the Omeka UI (like homepage text, footer text, etc.), you may want to create new custom theme configuration variables. Theme configuration items are controlled by the  ``config.ini`` file in your theme's root directory. 
+
+To add a new variable to your theme's configuration, you'll need to add lines like the following to the ``[config]`` section of your theme's ``config.ini`` file (at a minimum) ::
+
+   my_custom_theme_variable.type = "text"
+   my_custom_theme_variable.options.label = "Label for this variable which will be displayed on the theme config page"
+   my_custom_theme_varaible.options.value = "Default value"
+   my_custom_theme.variable.options.description = "Description for this variable which will be displayed on the theme config page"
+   
+Note that the ``.options.label`` setting is also how you will access this variable in code, by calling ``get_theme_option('Label for this variable')``.
+
+The theme config interface uses the Zend Framework Form API on the back-end, and the ``type`` option defines which subclass of ``Zend\Form\Element\`` will be used to render this config item in the UI. So for example, you can use ``textarea``, ``text``, ``color``, ``checkbox``, etc. Each of these different element types will have their own config options. You may want to look through some of the different Omeka themes to see how these different elements are used (for example, Thanks Roy makes use of the ``color`` element).
+
+The ``config.ini`` file also has a ``[groups]`` section which defines groupings by which the config is displayed in the user interface. To add a new element to an existing grouping, just add a new line of the form ::
+
+   grouping.elements[] = "my_new_element"
