@@ -32,7 +32,7 @@ Examples
     {
         protected $_filters = array('item_citation');
         
-        public filterItemCitation($citation, $args)
+        public function filterItemCitation($citation, $args)
         {
             $citation = "";
             return $citation;
