@@ -1,8 +1,6 @@
-
-
-###########################
-admin_general_settings_form
-###########################
+###################
+admin_settings_form
+###################
 
 *****
 Usage
@@ -16,6 +14,9 @@ Arguments
 
 :php:class:`Omeka_Form` form
     The form
+
+:php:class:`Omeka_View` view
+    The view object
     
 ********
 Examples
