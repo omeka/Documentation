@@ -21,7 +21,7 @@ well. In your plugin class, register your resource using the
         // For the resource URI: /api/your_resources/[:id]
         $apiResources['your_resources'] = array(
             // Module associated with your resource.
-            'module' => 'your-plugin-name', 
+            'module' => 'your-plugin-name',
             // Controller associated with your resource.
             'controller' => 'your-resource-controller',
             // Type of record associated with your resource.
@@ -33,9 +33,9 @@ well. In your plugin class, register your resource using the
                 'post',   // POST request
                 'put',    // PUT request (ID is required)
                 'delete', // DELETE request (ID is required)
-            ), 
+            ),
             // List of GET parameters available for your index action.
-            'index_params' => array('foo', 'bar'), 
+            'index_params' => array('foo', 'bar'),
         );
         return $apiResources;
     }
@@ -73,13 +73,13 @@ YourPlugin/models/Api/YourRecordType.php:
         {
             // Return a PHP array, representing the passed record.
         }
-        
+
         // Set data to a record during a POST request.
         public function setPostData(Omeka_Record_AbstractRecord $record, $data)
         {
             // Set properties directly to a new record.
         }
-        
+
         // Set data to a record during a PUT request.
         public function setPutData(Omeka_Record_AbstractRecord $record, $data)
         {
@@ -144,7 +144,7 @@ should protect unauthorized API users from viewing non-public records:
     {
         $select = parent::getSelect();
         $permissions = new Omeka_Db_Select_PublicPermissions('YourPlugin_YourRecords');
-        // Where "your_records" is the table alias, "owner_column" is the user column to check against, 
+        // Where "your_records" is the table alias, "owner_column" is the user column to check against,
         // and "public_column" is the permissions column to check against.
         $permissions->apply($select, 'your_records', 'owner_column', 'public_column');
         return $select;
@@ -165,7 +165,7 @@ You can extend the representations of existing resources by using the
     public function filterApiExtendItems($extend, $args)
     {
         $item = $args['record'];
-        
+
         // For one resource:
         $resourceId = $this->_db->getTable('YourResource')->findByItemId($item->id);
         $extend['your_resources'] = array(
@@ -173,14 +173,14 @@ You can extend the representations of existing resources by using the
             'url' => Omeka_Record_Api_AbstractRecordAdapter::getResourceUrl("/your_resources/{$resourceId->id}"),
             'resource' => 'your_resources',
         );
-        
+
         // Or, for multiple resources:
         $extend['your_resources'] = array(
             'count' => 10,
             'url' => Omeka_Record_Api_AbstractRecordAdapter::getResourceUrl("/your_resources?item={$item->id}"),
             'resource' => 'your_resources',
         );
-        
+
         return $extend;
     }
 
@@ -188,7 +188,7 @@ Note that the API enforces a pattern when extending a resource:
 
 -  ``id`` and ``url`` for a one-to-one relationship
 -  ``count`` and ``url`` for a one-to-many relationship
--  ``resource`` is recommeded but not required
+-  ``resource`` is recommended but not required
 
-All other keys pass through as custom data that may be used for the client's 
+All other keys pass through as custom data that may be used for the client's
 convenience.

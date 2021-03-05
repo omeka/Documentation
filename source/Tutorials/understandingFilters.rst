@@ -15,7 +15,7 @@ Filter Basics
 
 Filters work similarly to hooks, but are focused on modifying data rather
 than simply executing code or producing output in some particular place.
-Filter functions always recieve two parameters.
+Filter functions always receive two parameters.
 
 The first parameter is always the value being filtered. The documentation
 page for a filter will describe this parameter under the heading "Value."
