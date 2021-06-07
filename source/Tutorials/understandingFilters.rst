@@ -24,8 +24,7 @@ modify it somehow (though this can include completely replacing it or
 leaving it unchanged), and return the result. That returned value is what's
 passed to any later functions attached to the same filter, and eventually
 back to the code that applied the filter in the first place. Since filters
-work this way, there's aclear distinction from how hooks work in this case:
-filter functions filter functions  **must** return a value.
+work this way, there's a clear distinction from how hooks work in this case: filter functions  **must** return a value.
 
 The second parameter to a filter function is conventionally called ``$args``.
 Just like with hooks, ``$args`` is an array of arguments, optional useful
