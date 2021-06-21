@@ -40,7 +40,7 @@ Add ``target="_blank"`` to all links to original files:
     {
         protected $_filters = array('file_markup_options');
         
-        public filterHtmlPurifierConfigSetup($options, $args)
+        public filterFileMarkupOptions($options, $args)
         {
             $options['linkAttributes']['target'] = '_blank';
             return $options;
