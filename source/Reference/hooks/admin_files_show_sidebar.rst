@@ -1,7 +1,7 @@
-.. _adminfileshowsidebar:
+.. _adminfilesshowsidebar:
 
 #######################
-admin_file_show_sidebar
+admin_files_show_sidebar
 #######################
 
 *****
