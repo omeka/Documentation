@@ -19,6 +19,7 @@ Up to :doc:`../index`
    /Reference/libraries/globals/option
    /Reference/libraries/globals/random_featured_collection
    /Reference/libraries/globals/record_image
+   /Reference/libraries/globals/record_image_url
    /Reference/libraries/globals/tag_attributes
 
 .. toctree::

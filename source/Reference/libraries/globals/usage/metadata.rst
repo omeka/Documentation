@@ -25,6 +25,10 @@ are available as well:
 
   * ``total_items``
 
+  * ``display_title``
+
+  * ``rich_title``
+
 * File
 
   * ``uri``
@@ -38,6 +42,8 @@ are available as well:
   * ``permalink``
 
   * ``display_title``
+
+  * ``rich_title``
 
 * Item
 
@@ -55,9 +61,19 @@ are available as well:
 
   * ``citation``
 
-Since version 2.5, all the Element Set-carrying records (Collection, File and Item) also
+  * ``display_title``
+
+  * ``rich_title``
+
+Since version 2.5, all the Element Set-carrying records (Collection, File and Item)
 have the special property ``display_title`` that returns a simplified version of their
-title.
+title without any HTML tags.
+
+Since version 2.8, the same records also have a special property ``rich_title`` that
+preserves only simple inline formatting HTML tags in the title (``em``, ``strong``,
+``i``, ``b``, and ``u``), suitable for use when printing a title within HTML and allowing
+some formatting while avoiding interference with any wrapping markup around the title like
+links or headings.
 
 The above list only covers core records. For other records, like those added by plugins,
 see the plugin's documentation or the ``getProperty()`` method of the record.
