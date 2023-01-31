@@ -12,11 +12,11 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/public_nav_items.rst
 
-.. php:function:: public_nav_items($navArray = null, $maxDepth = 0)
+.. php:function:: public_nav_items(?array $navArray = null, $maxDepth = 0)
 
     Get the navigation for items.
     
-    :type $navArray: array
+    :type $navArray: ?array
     :param $navArray:
     :type $maxDepth: int|null
     :param $maxDepth:

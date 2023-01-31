@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/fire_plugin_hook.rst
 
-.. php:function:: fire_plugin_hook($name, $args = array())
+.. php:function:: fire_plugin_hook($name, array $args = array())
 
     Declare the point of execution for a specific plugin hook.
     

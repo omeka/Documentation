@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/search_filters.rst
 
-.. php:function:: search_filters($options = array())
+.. php:function:: search_filters(array $options = array())
 
     Get a list of current site-wide search filters in use.
     

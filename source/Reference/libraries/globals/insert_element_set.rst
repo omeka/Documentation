@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/insert_element_set.rst
 
-.. php:function:: insert_element_set($elementSetMetadata = array(), $elements = array())
+.. php:function:: insert_element_set($elementSetMetadata = array(), array $elements = array())
 
     Insert an element set and its elements into the database.
     

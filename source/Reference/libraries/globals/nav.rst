@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/nav.rst
 
-.. php:function:: nav($navLinks, $name = null, $args = array())
+.. php:function:: nav(array $navLinks, $name = null, array $args = array())
 
     Create a navigation menu of links.
     

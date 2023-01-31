@@ -12,14 +12,14 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/file_markup.rst
 
-.. php:function:: file_markup($files, $props = array(), $wrapperAttributes = array('class' => 'item-file'))
+.. php:function:: file_markup($files, array $options = array(), $wrapperAttributes = array('class' => 'item-file'))
 
     Get HTML for a set of files.
     
     :type $files: File
     :param $files: A file record or an array of File records to display.
-    :type $props: array
-    :param $props: Properties to customize display for different file types.
+    :type $options: array
+    :param $options: Options to customize display for different file types.
     :type $wrapperAttributes: array
     :param $wrapperAttributes: Attributes HTML attributes for the div that wraps each displayed file. If empty or null, this will not wrap the displayed file in a div.
     :returns: string HTML

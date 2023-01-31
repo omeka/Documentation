@@ -12,10 +12,11 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/item_search_filters.rst
 
-.. php:function:: item_search_filters($params = null)
+.. php:function:: item_search_filters(?array $params = null)
 
     Get a list of the current search item filters in use.
     
+    :type $params: ?array
     :param $params:
     :returns: string
 

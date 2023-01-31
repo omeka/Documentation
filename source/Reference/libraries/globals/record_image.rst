@@ -18,8 +18,8 @@ Summary
     
     :type $record: Omeka_Record_AbstractRecord|string
     :param $record:
-    :type $imageType: string
-    :param $imageType: Image size: thumbnail, square thumbnail, fullsize
+    :type $imageType: string|null
+    :param $imageType: Image size: thumbnail, etc. Pass null to use admin-configured default size
     :type $props: array
     :param $props: HTML attributes for the img tag
     :returns: string

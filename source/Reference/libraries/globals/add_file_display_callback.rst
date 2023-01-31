@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/add_file_display_callback.rst
 
-.. php:function:: add_file_display_callback($fileIdentifiers, $callback, $options = array())
+.. php:function:: add_file_display_callback($fileIdentifiers, $callback, array $options = array())
 
     Add a callback for displaying files with a given mimetype and/or
     extension.

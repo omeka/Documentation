@@ -1,8 +1,8 @@
 .. _frecordimageurl:
 
-###################################################
+#######################################################
 ``record_image_url`` — Get an image URL for a record.
-###################################################
+#######################################################
 
 .. versionadded:: 3.1
 
@@ -20,7 +20,7 @@ Summary
     
     :type $record: Omeka_Record_AbstractRecord|string
     :param $record:
-    :type $imageType: string
+    :type $imageType: string|null
     :param $imageType: Image size: thumbnail, etc. Pass null to use admin-configured default size
     :returns: string
 

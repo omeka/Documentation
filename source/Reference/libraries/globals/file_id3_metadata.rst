@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/file_id3_metadata.rst
 
-.. php:function:: file_id3_metadata($options = array(), $file = null)
+.. php:function:: file_id3_metadata(array $options = array(), $file = null)
 
     Return HTML for a file's ID3 metadata.
     

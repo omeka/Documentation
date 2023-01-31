@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/current_url.rst
 
-.. php:function:: current_url($params = array())
+.. php:function:: current_url(array $params = array())
 
     Get the current URL with query parameters appended.
     

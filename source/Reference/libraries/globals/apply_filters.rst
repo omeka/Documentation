@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/apply_filters.rst
 
-.. php:function:: apply_filters($name, $value, $args = array())
+.. php:function:: apply_filters($name, $value, array $args = array())
 
     Apply a set of plugin filters to a given value.
     

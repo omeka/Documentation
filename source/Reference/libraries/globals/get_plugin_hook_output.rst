@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/get_plugin_hook_output.rst
 
-.. php:function:: get_plugin_hook_output($name, $args = array())
+.. php:function:: get_plugin_hook_output($name, array $args = array())
 
     Get the output of fire_plugin_hook() as a string.
     

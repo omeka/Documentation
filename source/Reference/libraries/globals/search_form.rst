@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/search_form.rst
 
-.. php:function:: search_form($options = array())
+.. php:function:: search_form(array $options = array())
 
     Get the site-wide search form.
     

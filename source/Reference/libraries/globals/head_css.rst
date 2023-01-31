@@ -12,13 +12,15 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/head_css.rst
 
-.. php:function:: head_css()
+.. php:function:: head_css($includeDefaults = true)
 
     Get the CSS link tags that will be used on the page.
     
     This should generally be used with echo to print the scripts in the page
     head.
     
+    :type $includeDefaults: bool
+    :param $includeDefaults: Whether the default stylesheets should be included. Defaults to true.
     :returns: string
 
 *****

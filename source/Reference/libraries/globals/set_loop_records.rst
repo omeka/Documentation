@@ -12,7 +12,7 @@ Summary
 
 .. include:: /Reference/libraries/globals/summary/set_loop_records.rst
 
-.. php:function:: set_loop_records($recordsVar, $records)
+.. php:function:: set_loop_records($recordsVar, array $records)
 
     Set records to the view for iteration with loop().
     
