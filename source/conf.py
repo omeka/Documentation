@@ -36,7 +36,7 @@ highlight_language = 'php'
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.todo', 'sphinxcontrib.phpdomain']
+extensions = ['sphinx.ext.todo', 'sphinxcontrib.phpdomain', 'sphinx_rtd_theme']
 
 
 # Add any paths that contain templates here, relative to this directory.
@@ -111,7 +111,7 @@ exclude_patterns = ['Reference/libraries/globals/examples', 'Reference/libraries
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-html_theme = u'default'
+html_theme = u'sphinx_rtd_theme'
 
 #html_style = None
 
