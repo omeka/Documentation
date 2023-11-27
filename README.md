@@ -1,7 +1,7 @@
-Omeka Documentation
-===================
+Omeka Classic Developer Documentation
+=====================================
 
-This is the developer documentation for Omeka. If you're looking to improve
+This is the developer documentation for Omeka Classic. If you're looking to improve
 the documentation or see how it works, you're in the right place. Otherwise,
 you can see a human-readable and up-to-date version of the docs at [our
 Read the Docs site](http://omeka.readthedocs.org).
