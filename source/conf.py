@@ -267,4 +267,4 @@ texinfo_documents = [
 todo_include_todos = True
 
 def setup(app):
-    app.add_stylesheet('overrides.css')
+    app.add_css_file('overrides.css')
