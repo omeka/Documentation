@@ -1,0 +1,16 @@
+#######################
+What's new in Omeka 2.7
+#######################
+
+===========
+New filters
+===========
+
+Omeka 2.7 adds several filters:
+
+* :doc:`/Reference/filters/html_purifier_config_setup`
+* :doc:`/Reference/filters/image_tag_attributes`
+* :doc:`/Reference/filters/files_for_item`
+* :doc:`/Reference/filters/file_markup_options`
+* :doc:`/Reference/filters/file_markup_files`
+
