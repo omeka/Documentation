@@ -37,6 +37,9 @@ Value
             'html' => null 
         );
 
+Except for ``'html'``, the array elements are the components that will be combined together to make the element form.
+Uniquely, setting a string to the ``'html'`` key will use that string directly as the complete HTML for the element form, ignoring all other values.
+
 *********
 Arguments
 *********
