@@ -3,6 +3,12 @@ Tutorials
 #########
 
 =============
+Accessibility
+=============
+
+The Omeka Team strives to adhere to the principles and guidelines for accessibility that are articulate in `Web Content Accessibility Guidelines 2.1 <https://www.w3.org/WAI/standards-guidelines/wcag/>`_. Contributions to the core and addons should also uphold those standards.  
+
+=============
 Plugin Basics
 =============
 
