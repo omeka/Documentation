@@ -32,3 +32,9 @@ functions or plugin structures to solve a large task.
 These are found under ``Tutorials/recipes``. New ones can also be added via pull request.
 There is also a :ref:`recipetemplate` for these, but the structure you use can follow whatever structures explain the process best.
 Here is an example for `Retaining Search Order <https://github.com/omeka/Documentation/blob/master/source/Tutorials/recipes/retainingSearchSortOrderWhenPaging.rst>`_.
+
+*****************
+Submissions
+*****************
+
+To maintain the collegiality and integrity of the resources provided on the Omeka site, the Omeka Team reserves the right to remove or refuse to post forum submissions and addons.   

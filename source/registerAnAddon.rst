@@ -52,3 +52,9 @@ If all these things are true we register and publish the release. Keep
 in mind that we do not check if the addon works as expected. It is your
 responsibility to set your release to a tag or commit that's in working
 condition.
+
+*****************
+Submissions
+*****************
+
+To maintain the collegiality and integrity of the resources provided on the Omeka site, the Omeka Team reserves the right to remove or refuse to post forum submissions and addons.   
