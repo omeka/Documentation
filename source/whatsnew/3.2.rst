@@ -1,0 +1,51 @@
+#######################
+What's new in Omeka 3.2
+#######################
+
+==============================
+New featured records functions
+==============================
+
+Omeka Classic 3.2 adds two new functions with the goal of combining and
+simplifying the common theme task of displaying "featured" records. There have
+been several record-specific functions for doing this, with various
+limitations: not all types of records are covered, the functions are
+inconsistent between allowing multiple records or just one, and themes need
+fiddly checks around code that intends to display records from plugins.
+
+The new functions :php:func:`display_records` and
+:php:func:`get_display_records` aim to address these problems.
+
+Both functions will work with any record type, can return multiple records,
+allow for using a different partial for displaying the records, and allow
+using a different query than the default "random featured" one. Plugin-added
+records are handled using a filter, :doc:`/Reference/filters/display_records_types`,
+and will gracefully and automatically handle the case where the plugin isn't
+installed or active.
+
+They differ only in what they return: ``display_records`` returning a string
+of all the record markup together, and ``get_display_records`` returning an
+array with each record's markup as a separate member of the array.
+
+=======================
+Extensible lightGallery
+=======================
+
+The lightGallery viewer used by several themes originally had a fixed set of
+supported media types. Omeka Classic 3.2 adds a new callback system, simlilar
+to the one used for the "normal" file display with :php:func:`file_markup`.
+This allows modifying how filetypes are displayed in the gallery, and allows
+for adding support for new mimetypes that the core doesn't support by itself.
+
+For details on how this works, see :doc:`/Reference/filters/light_gallery_callbacks`.
+
+===========
+New filters
+===========
+
+Omeka Classic 3.2 adds several new filters:
+
+* :doc:`/Reference/filters/all_element_texts_options`
+* :doc:`/Reference/filters/display_records_types`
+* :doc:`/Reference/filters/light_gallery_callbacks`
+
