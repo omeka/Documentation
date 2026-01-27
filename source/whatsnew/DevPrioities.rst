@@ -3,6 +3,21 @@ Development Priorities
 #######################
 
 ========================
+2026
+========================
+
+* Infrastructure maintenance and updates
+* Accessibility and usability improvements and documentation
+* Improved exhibit authoring and design flexibility
+* Improved action logging and oversight
+* Core Asset handling
+* Mapping centered theme
+* Continued geospatial feature development
+* Continued work on sustainability and preservation paths
+* Continued improvements to developer and designer documentation
+* Continued improvement of community engagement and support pathways
+
+========================
 2025
 ========================
 
